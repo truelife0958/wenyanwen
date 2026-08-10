@@ -1,0 +1,15 @@
+import { chromium } from 'playwright-core';
+const CHROME = '/home/truel/.cache/ms-playwright/chromium-1234/chrome-linux64/chrome';
+const browser = await chromium.launch({ executablePath: CHROME, headless: true });
+const page = await browser.newPage({ viewport: { width: 1280, height: 900 } });
+const errs = [];
+page.on('pageerror', e => errs.push('PAGEERROR: ' + e.message.split('\n')[0]));
+await page.goto('http://localhost:8765/articles/jc-yueyanglouji/learn', { waitUntil: 'networkidle' });
+await page.waitForTimeout(1200);
+console.log('annot-gloss count:', await page.locator('.annot-gloss').count());
+console.log('para-orig count:', await page.locator('.para-orig').count());
+const box = await page.locator('.annot-gloss').first().boundingBox();
+console.log('annot-gloss bbox:', JSON.stringify(box));
+console.log('viewport:', await page.evaluate(() => ({ vw: innerWidth, vh: innerHeight, scrollY, docH: document.documentElement.scrollHeight })));
+console.log('JS错误:', errs);
+await browser.close();

@@ -18,7 +18,9 @@ const FONT_SCALES = [0.9, 1, 1.15] as const;
 
 function loadSetting(key: string, def: number): number {
   try {
-    const v = Number(localStorage.getItem(key));
+    const raw = localStorage.getItem(key);
+    if (raw == null || raw === '') return def; // 未设置时用默认 (Number(null)=0 会错误返回 0)
+    const v = Number(raw);
     return Number.isFinite(v) ? v : def;
   } catch { return def; }
 }

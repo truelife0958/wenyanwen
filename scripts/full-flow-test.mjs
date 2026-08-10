@@ -30,7 +30,7 @@ console.log('=== 1. 首屏 ===');
 check('标题', (await page.title()).includes('文言文'));
 check('顶部导航已移除', await page.locator('.app-nav').count() === 0);
 check('入口卡 1 张', await page.locator('.entry-card').count() === 1);
-check('统计动态', /\d+ 篇 · \d+ 词义 · \d+ 题/.test(await page.locator('.app-header-info').textContent()));
+check('统计动态', /\d+ 篇课文 · \d+ 篇默写/.test(await page.locator('.app-header-info').textContent()));
 check('首页卡片', await page.locator('.article-card').count() >= 15);
 
 // ============ 2. 学习流 ============
@@ -51,52 +51,23 @@ check('译文展开', await page.locator('.para-trans').count() > 0);
 check('笔记清单', await page.locator('.note-list').count() === 1);
 check('朗读按钮', await page.locator('.read-btn').count() >= 1);
 
-// ============ 3. 练习流 ============
-console.log('\n=== 3. 练习流 (单题流: 逐题作答→判分→结果) ===');
-await page.locator('.workspace-tabs a:has-text("练习")').click();
+// ============ 3. 默写流 (学习页 → 默写入口 → 对答案 → 自评错题) ============
+console.log('\n=== 3. 默写流 (学习页默写入口/自评/错题入库) ===');
+await page.locator('.workspace-tabs a:has-text("默写")').click();
 await page.waitForTimeout(700);
-check('题目加载', await page.locator('.q-item').count() > 0);
-check('逐题进度条', await page.locator('.ps-progress').count() === 1);
-// 单题流: 每页一题, 作答→提交本题→(自评)→下一题/查看结果
-let flowSteps = 0;
-let flowFinished = false;
-while (flowSteps < 300 && !flowFinished) {
-  await page.waitForTimeout(250);
-  // 作答当前题: 选择题点第一个选项, 主观题填内容
-  const opt = page.locator('.q-option').first();
-  const input = page.locator('.q-input').first();
-  if (await opt.count() > 0) {
-    await opt.click();
-  } else if (await input.count() > 0) {
-    await input.fill('我的作答');
-  }
-  await page.waitForTimeout(150);
-  const submitBtn = page.locator('button:has-text("提交本题判分")');
-  if (await submitBtn.count() > 0 && await submitBtn.isEnabled().catch(() => false)) {
-    await submitBtn.click();
-    await page.waitForTimeout(250);
-    // 主观题自评
-    const noBtn = page.locator('.qsj-btn.no').first();
-    if (await noBtn.count() > 0) { await noBtn.click(); await page.waitForTimeout(150); }
-    flowSteps++;
-  }
-  const finishBtn = page.locator('button:has-text("查看结果")');
-  if (await finishBtn.count() > 0) {
-    check('结果按钮激活', await finishBtn.isEnabled().catch(() => false));
-    await finishBtn.click();
-    flowFinished = true;
-    break;
-  }
-  const nextBtn = page.locator('button:has-text("下一题")');
-  if (await nextBtn.count() > 0) {
-    await nextBtn.click();
-    continue;
-  }
-  break;
-}
-check('完成全部题目', flowFinished, `步数=${flowSteps}`);
+check('默写入口卡', await page.locator('.moxie-entry-card').count() === 1);
+await page.locator('.moxie-entry-card a').first().click();
 await page.waitForTimeout(700);
-check('结果页出现', await page.locator('.result-summary').count() === 1);
+check('进入默写篇目页', page.url().includes('/moxie/'));
+check('题型 tab >= 4', await page.locator('.workspace-tabs button').count() >= 4);
+check('题卡加载', await page.locator('.moxie-q').count() > 0);
+// 对答案 → 自评(答错) → 错题入库
+await page.locator('.mq-reveal').first().click();
+await page.waitForTimeout(250);
+check('答案展示', await page.locator('.mq-answer').count() >= 1);
+await page.locator('.mq-judge-btn.bad').first().click();
+await page.waitForTimeout(250);
+check('自评答错状态', await page.locator('.moxie-q.bad').count() >= 1);
 const wrongAfterPractice = await page.evaluate(() => {
   const raw = localStorage.getItem('wyw_errorbook_v2');
   const arr = raw ? JSON.parse(raw) : [];
@@ -105,26 +76,25 @@ const wrongAfterPractice = await page.evaluate(() => {
 check('错题自动入本', wrongAfterPractice > 0, `错题数 ${wrongAfterPractice}`);
 // ============ 4. 鉴赏流 ============
 console.log('\n=== 4. 鉴赏流 (逐段赏析/整篇鉴赏) ===');
+await goto('/articles/jc-yueyanglouji/appreciate');
+await page.waitForTimeout(700);
 await page.locator('.workspace-tabs a:has-text("鉴赏")').click();
 await page.waitForTimeout(600);
 check('鉴赏逐段', await page.locator('.appr-para').count() > 0);
 check('整篇鉴赏', await page.locator('.appr-whole .analysis-card, .appr-whole').count() > 0);
 check('段落赏析', await page.locator('.appr-ana').count() > 0);
 
-// ============ 5. 错题本 ============
-console.log('\n=== 5. 错题本 (独立页: 分组/移除) ===');
-await goto('/errors');
+// ============ 5. 默写错题本 ============
+console.log('\n=== 5. 默写错题本 (分组/重练) ===');
+await goto('/moxie/errors');
 await page.waitForTimeout(900);
-check('错题页渲染', await page.locator('.errbook-title').count() >= 1);
-const errCount = await page.locator('.errbook-group').count();
-check('错题分组显示', errCount > 0, `${errCount} 组`);
-if (errCount > 0) {
-  const beforeDel = await page.evaluate(() => (JSON.parse(localStorage.getItem('wyw_errorbook_v2') || '[]')).length);
-  await page.locator('.errbook-del').first().click();
-  await page.waitForTimeout(300);
-  const errAfter = await page.evaluate(() => (JSON.parse(localStorage.getItem('wyw_errorbook_v2') || '[]')).length);
-  check('移除错题(分组删除)', errAfter < beforeDel, `${beforeDel} → ${errAfter}`);
-}
+check('错题页渲染', await page.locator('.moxie-err-group').count() >= 1);
+check('错题分组显示', await page.locator('.meg-item').count() > 0);
+const beforeDel = await page.evaluate(() => (JSON.parse(localStorage.getItem('wyw_errorbook_v2') || '[]')).length);
+await page.locator('.meg-remove').first().click();
+await page.waitForTimeout(300);
+const errAfter = await page.evaluate(() => (JSON.parse(localStorage.getItem('wyw_errorbook_v2') || '[]')).length);
+check('移除错题', errAfter < beforeDel, `${beforeDel} → ${errAfter}`);
 
 // ============ 6. 默写模块 ============
 console.log('\n=== 6. 默写模块 (列表/练习/错题) ===');

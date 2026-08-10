@@ -128,7 +128,11 @@ for (const page of mainArticles) {
   const target = mergedByKey.get(key);
   for (const sec of page.sections || []) {
     const ts = target.sections.find((s) => s.type === sec.type);
-    if (ts) ts.items.push(...(sec.items || []));
+    if (ts) {
+      // 跨页合并时重写 qid, 避免同 section 内 key 重复
+      const base = ts.items.length;
+      ts.items.push(...(sec.items || []).map((it, i) => ({ ...it, qid: it.qid.replace(/:\d+$/, `:${base + i}`) })));
+    }
     else target.sections.push({ ...sec });
   }
 }

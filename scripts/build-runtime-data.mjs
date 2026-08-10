@@ -25,7 +25,7 @@ function titleKey(value) {
     .replace(/^[一二三四五六七八九十]+、/, '')
     .replace(/[《》]/g, '')
     .replace(/[（(][^）)]*[）)]/g, '')
-    .replace(/[\s，,。！？；：、·_—-]/g, '')
+    .replace(/[\s，,。！？；：、·・_—-]/g, '')
     .toLowerCase();
 }
 
@@ -754,7 +754,11 @@ if (existsSync(moxieBookPath)) {
   if (existsSync(moxieLegacyPath)) {
     const legacy = JSON.parse(await readFile(moxieLegacyPath, 'utf8'));
     for (const l of legacy) {
-      const target = moxie.find((m) => titleKey(m.title) === titleKey(l.title));
+      const lk = titleKey(l.title);
+      const target = moxie.find((m) => {
+        const mk = titleKey(m.title);
+        return mk === lk || (lk.length >= 4 && mk.length >= 4 && (mk.endsWith(lk) || lk.endsWith(mk)) && Math.abs(mk.length - lk.length) <= 6);
+      });
       if (!target) {
         moxie.push(l);
         continue;
@@ -772,11 +776,21 @@ if (existsSync(moxieBookPath)) {
       }
     }
   }
-  moxie = moxie.map((m, idx) => ({
-    ...m,
-    id: m.id || `moxie-${slug(m.title)}-${idx}`,
-    grade: grade(m.grade),
-  }));
+  const VALID_GRADES = new Set(['七上', '七下', '八上', '八下', '九上', '九下']);
+  moxie = moxie.map((m, idx) => {
+    const g = grade(m.grade);
+    const artId = m.id || `moxie-${slug(m.title)}-${idx}`;
+    return {
+      ...m,
+      id: artId,
+      grade: VALID_GRADES.has(g) ? g : '附录',
+      // 统一重写 qid: 篇目+题型序号+题序号, 保证全局唯一 (legacy 合并的 items 可能缺 qid)
+      sections: (m.sections || []).map((sec, si) => ({
+        ...sec,
+        items: (sec.items || []).map((it, ii) => ({ ...it, qid: it.qid || `${artId}:${si}:${ii}` })),
+      })),
+    };
+  });
 }
 await output('moxie.json', moxie);
 // 轻量元数据: 首页/导航只依赖此文件, 避免首屏加载全量 articles/words/questions

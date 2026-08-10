@@ -40,12 +40,15 @@ function buildBatches() {
 
 const PROMPT = (batch) => `你是语文试题归类专家。以下是某篇课文的旧版练习题（来自一文一练/中考真题/手写题），请将每道题归类或改写为【默写题】的固定 4 步题型，输出 JSON。
 
+篇目: ${batch.title} | 年级: ${batch.grade}
+
 输入题目:
 ${JSON.stringify(batch.questions, null, 1).slice(0, 12000)}
 
 输出 JSON 结构:
 {
   "title": "${batch.title}",
+  "grade": "${batch.grade}",
   "sections": [
     { "type": "原文默写", "items": [ { "q": "挖空题目(原文句子,空处___), 多空用多个___", "answers": ["各空答案"] } ] },
     { "type": "理解性默写", "items": [ { "q": "题干(带____填空), 保留中考来源标注", "answers": ["答案"] } ] },
@@ -143,7 +146,7 @@ const merged = [];
 for (const f of readdirSync(OUT_DIR).filter((f) => f.endsWith('.json')).sort()) {
   try {
     const d = JSON.parse(readFileSync(resolve(OUT_DIR, f), 'utf8'));
-    merged.push({ id: `moxie-${slug(d.title)}`, title: d.title, grade: '', book_page: 0, source: 'legacy-converted', articleId: null, sections: d.sections || [] });
+    merged.push({ id: `moxie-${slug(d.title)}`, title: d.title, grade: d.grade || '', book_page: 0, source: 'legacy-converted', articleId: null, sections: d.sections || [] });
   } catch { console.warn('跳过损坏:', f); }
 }
 writeFileSync(resolve(RAW, 'moxie-legacy.json'), JSON.stringify(merged, null, 2));
