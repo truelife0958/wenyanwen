@@ -1,0 +1,2009 @@
+
+> wuhan-wenyanwen-app@2.0.0 validate
+> node scripts/validate-data.mjs
+
+
+=== 1. 文章完整性 ===
+  ✓ 文章总数 126
+  ✓ [jc-zuoqianzhilanguanshizhizunxiang] 包含 id
+  ✓ [jc-zuoqianzhilanguanshizhizunxiang] 包含 title
+  ✓ [jc-zuoqianzhilanguanshizhizunxiang] 包含 author
+  ✓ [jc-zuoqianzhilanguanshizhizunxiang] 包含 dynasty
+  ✓ [jc-zuoqianzhilanguanshizhizunxiang] 包含 grade
+  ✓ [jc-zuoqianzhilanguanshizhizunxiang] 包含 reading
+  ✓ [jc-zuoqianzhilanguanshizhizunxiang] reading.original 存在
+  ✓ [jc-zuoqianzhilanguanshizhizunxiang] reading.translation 存在
+  ✓ [jc-zuoqianzhilanguanshizhizunxiang] reading.paragraphs 存在
+  ✓ [jc-zuoqianzhilanguanshizhizunxiang] 原文非空
+  ✓ [jc-zuoqianzhilanguanshizhizunxiang] analysis.theme 存在
+  ✓ [jc-zuoqianzhilanguanshizhizunxiang] analysis.outline 存在
+  ✓ [jc-zuoqianzhilanguanshizhizunxiang] analysis.writing 存在
+  ✓ [jc-zuoqianzhilanguanshizhizunxiang] analysis.culture 存在
+  ✓ [jc-zuoqianzhilanguanshizhizunxiang] 年级有效: 九上
+  ✓ [jc-ly] 包含 id
+  ✓ [jc-ly] 包含 title
+  ✓ [jc-ly] 包含 author
+  ✓ [jc-ly] 包含 dynasty
+  ✓ [jc-ly] 包含 grade
+  ✓ [jc-ly] 包含 reading
+  ✓ [jc-ly] reading.original 存在
+  ✓ [jc-ly] reading.translation 存在
+  ✓ [jc-ly] reading.paragraphs 存在
+  ✓ [jc-ly] 原文非空
+  ✓ [jc-ly] analysis.theme 存在
+  ✓ [jc-ly] analysis.outline 存在
+  ✓ [jc-ly] analysis.writing 存在
+  ✓ [jc-ly] analysis.culture 存在
+  ✓ [jc-ly] 年级有效: 七上
+  ✓ [jc-sanxia] 包含 id
+  ✓ [jc-sanxia] 包含 title
+  ✓ [jc-sanxia] 包含 author
+  ✓ [jc-sanxia] 包含 dynasty
+  ✓ [jc-sanxia] 包含 grade
+  ✓ [jc-sanxia] 包含 reading
+  ✓ [jc-sanxia] reading.original 存在
+  ✓ [jc-sanxia] reading.translation 存在
+  ✓ [jc-sanxia] reading.paragraphs 存在
+  ✓ [jc-sanxia] 原文非空
+  ✓ [jc-sanxia] analysis.theme 存在
+  ✓ [jc-sanxia] analysis.outline 存在
+  ✓ [jc-sanxia] analysis.writing 存在
+  ✓ [jc-sanxia] analysis.culture 存在
+  ✓ [jc-sanxia] 年级有效: 八上
+  ✓ [jc-yuzhuyuansishu] 包含 id
+  ✓ [jc-yuzhuyuansishu] 包含 title
+  ✓ [jc-yuzhuyuansishu] 包含 author
+  ✓ [jc-yuzhuyuansishu] 包含 dynasty
+  ✓ [jc-yuzhuyuansishu] 包含 grade
+  ✓ [jc-yuzhuyuansishu] 包含 reading
+  ✓ [jc-yuzhuyuansishu] reading.original 存在
+  ✓ [jc-yuzhuyuansishu] reading.translation 存在
+  ✓ [jc-yuzhuyuansishu] reading.paragraphs 存在
+  ✓ [jc-yuzhuyuansishu] 原文非空
+  ✓ [jc-yuzhuyuansishu] analysis.theme 存在
+  ✓ [jc-yuzhuyuansishu] analysis.outline 存在
+  ✓ [jc-yuzhuyuansishu] analysis.writing 存在
+  ✓ [jc-yuzhuyuansishu] analysis.culture 存在
+  ✓ [jc-yuzhuyuansishu] 年级有效: 八上
+  ✓ [jc-chounuer-shuboshandaozhongbi] 包含 id
+  ✓ [jc-chounuer-shuboshandaozhongbi] 包含 title
+  ✓ [jc-chounuer-shuboshandaozhongbi] 包含 author
+  ✓ [jc-chounuer-shuboshandaozhongbi] 包含 dynasty
+  ✓ [jc-chounuer-shuboshandaozhongbi] 包含 grade
+  ✓ [jc-chounuer-shuboshandaozhongbi] 包含 reading
+  ✓ [jc-chounuer-shuboshandaozhongbi] reading.original 存在
+  ✓ [jc-chounuer-shuboshandaozhongbi] reading.translation 存在
+  ✓ [jc-chounuer-shuboshandaozhongbi] reading.paragraphs 存在
+  ✓ [jc-chounuer-shuboshandaozhongbi] 原文非空
+  ✓ [jc-chounuer-shuboshandaozhongbi] analysis.theme 存在
+  ✓ [jc-chounuer-shuboshandaozhongbi] analysis.outline 存在
+  ✓ [jc-chounuer-shuboshandaozhongbi] analysis.writing 存在
+  ✓ [jc-chounuer-shuboshandaozhongbi] analysis.culture 存在
+  ✓ [jc-chounuer-shuboshandaozhongbi] 年级有效: 九上
+  ✓ [jc-ljxydxg] 包含 id
+  ✓ [jc-ljxydxg] 包含 title
+  ✓ [jc-ljxydxg] 包含 author
+  ✓ [jc-ljxydxg] 包含 dynasty
+  ✓ [jc-ljxydxg] 包含 grade
+  ✓ [jc-ljxydxg] 包含 reading
+  ✓ [jc-ljxydxg] reading.original 存在
+  ✓ [jc-ljxydxg] reading.translation 存在
+  ✓ [jc-ljxydxg] reading.paragraphs 存在
+  ✓ [jc-ljxydxg] 原文非空
+  ✓ [jc-ljxydxg] analysis.theme 存在
+  ✓ [jc-ljxydxg] analysis.outline 存在
+  ✓ [jc-ljxydxg] analysis.writing 存在
+  ✓ [jc-ljxydxg] analysis.culture 存在
+  ✓ [jc-ljxydxg] 年级有效: 九下
+  ✓ [jc-boyaguqin] 包含 id
+  ✓ [jc-boyaguqin] 包含 title
+  ✓ [jc-boyaguqin] 包含 author
+  ✓ [jc-boyaguqin] 包含 dynasty
+  ✓ [jc-boyaguqin] 包含 grade
+  ✓ [jc-boyaguqin] 包含 reading
+  ✓ [jc-boyaguqin] reading.original 存在
+  ✓ [jc-boyaguqin] reading.translation 存在
+  ✓ [jc-boyaguqin] reading.paragraphs 存在
+  ✓ [jc-boyaguqin] 原文非空
+  ✓ [jc-boyaguqin] analysis.theme 存在
+  ✓ [jc-boyaguqin] analysis.outline 存在
+  ✓ [jc-boyaguqin] analysis.writing 存在
+  ✓ [jc-boyaguqin] analysis.culture 存在
+  ✓ [jc-boyaguqin] 年级有效: 九下
+  ✓ [jc-shizhisaishang] 包含 id
+  ✓ [jc-shizhisaishang] 包含 title
+  ✓ [jc-shizhisaishang] 包含 author
+  ✓ [jc-shizhisaishang] 包含 dynasty
+  ✓ [jc-shizhisaishang] 包含 grade
+  ✓ [jc-shizhisaishang] 包含 reading
+  ✓ [jc-shizhisaishang] reading.original 存在
+  ✓ [jc-shizhisaishang] reading.translation 存在
+  ✓ [jc-shizhisaishang] reading.paragraphs 存在
+  ✓ [jc-shizhisaishang] 原文非空
+  ✓ [jc-shizhisaishang] analysis.theme 存在
+  ✓ [jc-shizhisaishang] analysis.outline 存在
+  ✓ [jc-shizhisaishang] analysis.writing 存在
+  ✓ [jc-shizhisaishang] analysis.culture 存在
+  ✓ [jc-shizhisaishang] 年级有效: 八上
+  ✓ [jc-guanju] 包含 id
+  ✓ [jc-guanju] 包含 title
+  ✓ [jc-guanju] 包含 author
+  ✓ [jc-guanju] 包含 dynasty
+  ✓ [jc-guanju] 包含 grade
+  ✓ [jc-guanju] 包含 reading
+  ✓ [jc-guanju] reading.original 存在
+  ✓ [jc-guanju] reading.translation 存在
+  ✓ [jc-guanju] reading.paragraphs 存在
+  ✓ [jc-guanju] 原文非空
+  ✓ [jc-guanju] analysis.theme 存在
+  ✓ [jc-guanju] analysis.outline 存在
+  ✓ [jc-guanju] analysis.writing 存在
+  ✓ [jc-guanju] analysis.culture 存在
+  ✓ [jc-guanju] 年级有效: 八下
+  ✓ [jc-chushibiao] 包含 id
+  ✓ [jc-chushibiao] 包含 title
+  ✓ [jc-chushibiao] 包含 author
+  ✓ [jc-chushibiao] 包含 dynasty
+  ✓ [jc-chushibiao] 包含 grade
+  ✓ [jc-chushibiao] 包含 reading
+  ✓ [jc-chushibiao] reading.original 存在
+  ✓ [jc-chushibiao] reading.translation 存在
+  ✓ [jc-chushibiao] reading.paragraphs 存在
+  ✓ [jc-chushibiao] 原文非空
+  ✓ [jc-chushibiao] analysis.theme 存在
+  ✓ [jc-chushibiao] analysis.outline 存在
+  ✓ [jc-chushibiao] analysis.writing 存在
+  ✓ [jc-chushibiao] analysis.culture 存在
+  ✓ [jc-chushibiao] 年级有效: 九上
+  ✓ [jc-bieyunjian] 包含 id
+  ✓ [jc-bieyunjian] 包含 title
+  ✓ [jc-bieyunjian] 包含 author
+  ✓ [jc-bieyunjian] 包含 dynasty
+  ✓ [jc-bieyunjian] 包含 grade
+  ✓ [jc-bieyunjian] 包含 reading
+  ✓ [jc-bieyunjian] reading.original 存在
+  ✓ [jc-bieyunjian] reading.translation 存在
+  ✓ [jc-bieyunjian] reading.paragraphs 存在
+  ✓ [jc-bieyunjian] 原文非空
+  ✓ [jc-bieyunjian] analysis.theme 存在
+  ✓ [jc-bieyunjian] analysis.outline 存在
+  ✓ [jc-bieyunjian] analysis.writing 存在
+  ✓ [jc-bieyunjian] analysis.culture 存在
+  ✓ [jc-bieyunjian] 年级有效: 九下
+  ✓ [jc-beimingyouyu] 包含 id
+  ✓ [jc-beimingyouyu] 包含 title
+  ✓ [jc-beimingyouyu] 包含 author
+  ✓ [jc-beimingyouyu] 包含 dynasty
+  ✓ [jc-beimingyouyu] 包含 grade
+  ✓ [jc-beimingyouyu] 包含 reading
+  ✓ [jc-beimingyouyu] reading.original 存在
+  ✓ [jc-beimingyouyu] reading.translation 存在
+  ✓ [jc-beimingyouyu] reading.paragraphs 存在
+  ✓ [jc-beimingyouyu] 原文非空
+  ✓ [jc-beimingyouyu] analysis.theme 存在
+  ✓ [jc-beimingyouyu] analysis.outline 存在
+  ✓ [jc-beimingyouyu] analysis.writing 存在
+  ✓ [jc-beimingyouyu] analysis.culture 存在
+  ✓ [jc-beimingyouyu] 年级有效: 八下
+  ✓ [jc-shiyiyuesirifengyudazuoer] 包含 id
+  ✓ [jc-shiyiyuesirifengyudazuoer] 包含 title
+  ✓ [jc-shiyiyuesirifengyudazuoer] 包含 author
+  ✓ [jc-shiyiyuesirifengyudazuoer] 包含 dynasty
+  ✓ [jc-shiyiyuesirifengyudazuoer] 包含 grade
+  ✓ [jc-shiyiyuesirifengyudazuoer] 包含 reading
+  ✓ [jc-shiyiyuesirifengyudazuoer] reading.original 存在
+  ✓ [jc-shiyiyuesirifengyudazuoer] reading.translation 存在
+  ✓ [jc-shiyiyuesirifengyudazuoer] reading.paragraphs 存在
+  ✓ [jc-shiyiyuesirifengyudazuoer] 原文非空
+  ✓ [jc-shiyiyuesirifengyudazuoer] analysis.theme 存在
+  ✓ [jc-shiyiyuesirifengyudazuoer] analysis.outline 存在
+  ✓ [jc-shiyiyuesirifengyudazuoer] analysis.writing 存在
+  ✓ [jc-shiyiyuesirifengyudazuoer] analysis.culture 存在
+  ✓ [jc-shiyiyuesirifengyudazuoer] 年级有效: 七上
+  ✓ [jc-shiwucongjunzheng] 包含 id
+  ✓ [jc-shiwucongjunzheng] 包含 title
+  ✓ [jc-shiwucongjunzheng] 包含 author
+  ✓ [jc-shiwucongjunzheng] 包含 dynasty
+  ✓ [jc-shiwucongjunzheng] 包含 grade
+  ✓ [jc-shiwucongjunzheng] 包含 reading
+  ✓ [jc-shiwucongjunzheng] reading.original 存在
+  ✓ [jc-shiwucongjunzheng] reading.translation 存在
+  ✓ [jc-shiwucongjunzheng] reading.paragraphs 存在
+  ✓ [jc-shiwucongjunzheng] 原文非空
+  ✓ [jc-shiwucongjunzheng] analysis.theme 存在
+  ✓ [jc-shiwucongjunzheng] analysis.outline 存在
+  ✓ [jc-shiwucongjunzheng] analysis.writing 存在
+  ✓ [jc-shiwucongjunzheng] analysis.culture 存在
+  ✓ [jc-shiwucongjunzheng] 年级有效: 九上
+  ✓ [jc-maiyouweng] 包含 id
+  ✓ [jc-maiyouweng] 包含 title
+  ✓ [jc-maiyouweng] 包含 author
+  ✓ [jc-maiyouweng] 包含 dynasty
+  ✓ [jc-maiyouweng] 包含 grade
+  ✓ [jc-maiyouweng] 包含 reading
+  ✓ [jc-maiyouweng] reading.original 存在
+  ✓ [jc-maiyouweng] reading.translation 存在
+  ✓ [jc-maiyouweng] reading.paragraphs 存在
+  ✓ [jc-maiyouweng] 原文非空
+  ✓ [jc-maiyouweng] analysis.theme 存在
+  ✓ [jc-maiyouweng] analysis.outline 存在
+  ✓ [jc-maiyouweng] analysis.writing 存在
+  ✓ [jc-maiyouweng] analysis.culture 存在
+  ✓ [jc-maiyouweng] 年级有效: 七下
+  ✓ [jc-maitanweng] 包含 id
+  ✓ [jc-maitanweng] 包含 title
+  ✓ [jc-maitanweng] 包含 author
+  ✓ [jc-maitanweng] 包含 dynasty
+  ✓ [jc-maitanweng] 包含 grade
+  ✓ [jc-maitanweng] 包含 reading
+  ✓ [jc-maitanweng] reading.original 存在
+  ✓ [jc-maitanweng] reading.translation 存在
+  ✓ [jc-maitanweng] reading.paragraphs 存在
+  ✓ [jc-maitanweng] 原文非空
+  ✓ [jc-maitanweng] analysis.theme 存在
+  ✓ [jc-maitanweng] analysis.outline 存在
+  ✓ [jc-maitanweng] analysis.writing 存在
+  ✓ [jc-maitanweng] analysis.culture 存在
+  ✓ [jc-maitanweng] 年级有效: 八下
+  ✓ [jc-nxz] 包含 id
+  ✓ [jc-nxz] 包含 title
+  ✓ [jc-nxz] 包含 author
+  ✓ [jc-nxz] 包含 dynasty
+  ✓ [jc-nxz] 包含 grade
+  ✓ [jc-nxz] 包含 reading
+  ✓ [jc-nxz] reading.original 存在
+  ✓ [jc-nxz] reading.translation 存在
+  ✓ [jc-nxz] reading.paragraphs 存在
+  ✓ [jc-nxz] 原文非空
+  ✓ [jc-nxz] analysis.theme 存在
+  ✓ [jc-nxz] analysis.outline 存在
+  ✓ [jc-nxz] analysis.writing 存在
+  ✓ [jc-nxz] analysis.culture 存在
+  ✓ [jc-nxz] 年级有效: 九上
+  ✓ [jc-nananjun] 包含 id
+  ✓ [jc-nananjun] 包含 title
+  ✓ [jc-nananjun] 包含 author
+  ✓ [jc-nananjun] 包含 dynasty
+  ✓ [jc-nananjun] 包含 grade
+  ✓ [jc-nananjun] 包含 reading
+  ✓ [jc-nananjun] reading.original 存在
+  ✓ [jc-nananjun] reading.translation 存在
+  ✓ [jc-nananjun] reading.paragraphs 存在
+  ✓ [jc-nananjun] 原文非空
+  ✓ [jc-nananjun] analysis.theme 存在
+  ✓ [jc-nananjun] analysis.outline 存在
+  ✓ [jc-nananjun] analysis.writing 存在
+  ✓ [jc-nananjun] analysis.culture 存在
+  ✓ [jc-nananjun] 年级有效: 九下
+  ✓ [jc-busuanzi-yongmei] 包含 id
+  ✓ [jc-busuanzi-yongmei] 包含 title
+  ✓ [jc-busuanzi-yongmei] 包含 author
+  ✓ [jc-busuanzi-yongmei] 包含 dynasty
+  ✓ [jc-busuanzi-yongmei] 包含 grade
+  ✓ [jc-busuanzi-yongmei] 包含 reading
+  ✓ [jc-busuanzi-yongmei] reading.original 存在
+  ✓ [jc-busuanzi-yongmei] reading.translation 存在
+  ✓ [jc-busuanzi-yongmei] reading.paragraphs 存在
+  ✓ [jc-busuanzi-yongmei] 原文非空
+  ✓ [jc-busuanzi-yongmei] analysis.theme 存在
+  ✓ [jc-busuanzi-yongmei] analysis.outline 存在
+  ✓ [jc-busuanzi-yongmei] analysis.writing 存在
+  ✓ [jc-busuanzi-yongmei] analysis.culture 存在
+  ✓ [jc-busuanzi-yongmei] 年级有效: 八下
+  ✓ [jc-bsz] 包含 id
+  ✓ [jc-bsz] 包含 title
+  ✓ [jc-bsz] 包含 author
+  ✓ [jc-bsz] 包含 dynasty
+  ✓ [jc-bsz] 包含 grade
+  ✓ [jc-bsz] 包含 reading
+  ✓ [jc-bsz] reading.original 存在
+  ✓ [jc-bsz] reading.translation 存在
+  ✓ [jc-bsz] reading.paragraphs 存在
+  ✓ [jc-bsz] 原文非空
+  ✓ [jc-bsz] analysis.theme 存在
+  ✓ [jc-bsz] analysis.outline 存在
+  ✓ [jc-bsz] analysis.writing 存在
+  ✓ [jc-bsz] analysis.culture 存在
+  ✓ [jc-bsz] 年级有效: 八下
+  ✓ [jc-dengyouzhoutaige] 包含 id
+  ✓ [jc-dengyouzhoutaige] 包含 title
+  ✓ [jc-dengyouzhoutaige] 包含 author
+  ✓ [jc-dengyouzhoutaige] 包含 dynasty
+  ✓ [jc-dengyouzhoutaige] 包含 grade
+  ✓ [jc-dengyouzhoutaige] 包含 reading
+  ✓ [jc-dengyouzhoutaige] reading.original 存在
+  ✓ [jc-dengyouzhoutaige] reading.translation 存在
+  ✓ [jc-dengyouzhoutaige] reading.paragraphs 存在
+  ✓ [jc-dengyouzhoutaige] 原文非空
+  ✓ [jc-dengyouzhoutaige] analysis.theme 存在
+  ✓ [jc-dengyouzhoutaige] analysis.outline 存在
+  ✓ [jc-dengyouzhoutaige] analysis.writing 存在
+  ✓ [jc-dengyouzhoutaige] analysis.culture 存在
+  ✓ [jc-dengyouzhoutaige] 年级有效: 七下
+  ✓ [guancanghai-013] 包含 id
+  ✓ [guancanghai-013] 包含 title
+  ✓ [guancanghai-013] 包含 author
+  ✓ [guancanghai-013] 包含 dynasty
+  ✓ [guancanghai-013] 包含 grade
+  ✓ [guancanghai-013] 包含 reading
+  ✓ [guancanghai-013] reading.original 存在
+  ✓ [guancanghai-013] reading.translation 存在
+  ✓ [guancanghai-013] reading.paragraphs 存在
+  ✓ [guancanghai-013] 原文非空
+  ✓ [guancanghai-013] analysis.theme 存在
+  ✓ [guancanghai-013] analysis.outline 存在
+  ✓ [guancanghai-013] analysis.writing 存在
+  ✓ [guancanghai-013] analysis.culture 存在
+  ✓ [guancanghai-013] 年级有效: 七上
+  ✓ [jc-zhouyafu] 包含 id
+  ✓ [jc-zhouyafu] 包含 title
+  ✓ [jc-zhouyafu] 包含 author
+  ✓ [jc-zhouyafu] 包含 dynasty
+  ✓ [jc-zhouyafu] 包含 grade
+  ✓ [jc-zhouyafu] 包含 reading
+  ✓ [jc-zhouyafu] reading.original 存在
+  ✓ [jc-zhouyafu] reading.translation 存在
+  ✓ [jc-zhouyafu] reading.paragraphs 存在
+  ✓ [jc-zhouyafu] 原文非空
+  ✓ [jc-zhouyafu] analysis.theme 存在
+  ✓ [jc-zhouyafu] analysis.outline 存在
+  ✓ [jc-zhouyafu] analysis.writing 存在
+  ✓ [jc-zhouyafu] analysis.culture 存在
+  ✓ [jc-zhouyafu] 年级有效: 八上
+  ✓ [jc-yongxue] 包含 id
+  ✓ [jc-yongxue] 包含 title
+  ✓ [jc-yongxue] 包含 author
+  ✓ [jc-yongxue] 包含 dynasty
+  ✓ [jc-yongxue] 包含 grade
+  ✓ [jc-yongxue] 包含 reading
+  ✓ [jc-yongxue] reading.original 存在
+  ✓ [jc-yongxue] reading.translation 存在
+  ✓ [jc-yongxue] reading.paragraphs 存在
+  ✓ [jc-yongxue] 原文非空
+  ✓ [jc-yongxue] analysis.theme 存在
+  ✓ [jc-yongxue] analysis.outline 存在
+  ✓ [jc-yongxue] analysis.writing 存在
+  ✓ [jc-yongxue] analysis.culture 存在
+  ✓ [jc-yongxue] 年级有效: 七上
+  ✓ [jc-xycdl] 包含 id
+  ✓ [jc-xycdl] 包含 title
+  ✓ [jc-xycdl] 包含 author
+  ✓ [jc-xycdl] 包含 dynasty
+  ✓ [jc-xycdl] 包含 grade
+  ✓ [jc-xycdl] 包含 reading
+  ✓ [jc-xycdl] reading.original 存在
+  ✓ [jc-xycdl] reading.translation 存在
+  ✓ [jc-xycdl] reading.paragraphs 存在
+  ✓ [jc-xycdl] 原文非空
+  ✓ [jc-xycdl] analysis.theme 存在
+  ✓ [jc-xycdl] analysis.outline 存在
+  ✓ [jc-xycdl] analysis.writing 存在
+  ✓ [jc-xycdl] analysis.culture 存在
+  ✓ [jc-xycdl] 年级有效: 九上
+  ✓ [jc-yewang] 包含 id
+  ✓ [jc-yewang] 包含 title
+  ✓ [jc-yewang] 包含 author
+  ✓ [jc-yewang] 包含 dynasty
+  ✓ [jc-yewang] 包含 grade
+  ✓ [jc-yewang] 包含 reading
+  ✓ [jc-yewang] reading.original 存在
+  ✓ [jc-yewang] reading.translation 存在
+  ✓ [jc-yewang] reading.paragraphs 存在
+  ✓ [jc-yewang] 原文非空
+  ✓ [jc-yewang] analysis.theme 存在
+  ✓ [jc-yewang] analysis.outline 存在
+  ✓ [jc-yewang] analysis.writing 存在
+  ✓ [jc-yewang] analysis.culture 存在
+  ✓ [jc-yewang] 年级有效: 八上
+  ✓ [jc-tangjuburushiming] 包含 id
+  ✓ [jc-tangjuburushiming] 包含 title
+  ✓ [jc-tangjuburushiming] 包含 author
+  ✓ [jc-tangjuburushiming] 包含 dynasty
+  ✓ [jc-tangjuburushiming] 包含 grade
+  ✓ [jc-tangjuburushiming] 包含 reading
+  ✓ [jc-tangjuburushiming] reading.original 存在
+  ✓ [jc-tangjuburushiming] reading.translation 存在
+  ✓ [jc-tangjuburushiming] reading.paragraphs 存在
+  ✓ [jc-tangjuburushiming] 原文非空
+  ✓ [jc-tangjuburushiming] analysis.theme 存在
+  ✓ [jc-tangjuburushiming] analysis.outline 存在
+  ✓ [jc-tangjuburushiming] analysis.writing 存在
+  ✓ [jc-tangjuburushiming] analysis.culture 存在
+  ✓ [jc-tangjuburushiming] 年级有效: 九下
+  ✓ [jc-shangshanzaoxing] 包含 id
+  ✓ [jc-shangshanzaoxing] 包含 title
+  ✓ [jc-shangshanzaoxing] 包含 author
+  ✓ [jc-shangshanzaoxing] 包含 dynasty
+  ✓ [jc-shangshanzaoxing] 包含 grade
+  ✓ [jc-shangshanzaoxing] 包含 reading
+  ✓ [jc-shangshanzaoxing] reading.original 存在
+  ✓ [jc-shangshanzaoxing] reading.translation 存在
+  ✓ [jc-shangshanzaoxing] reading.paragraphs 存在
+  ✓ [jc-shangshanzaoxing] 原文非空
+  ✓ [jc-shangshanzaoxing] analysis.theme 存在
+  ✓ [jc-shangshanzaoxing] analysis.outline 存在
+  ✓ [jc-shangshanzaoxing] analysis.writing 存在
+  ✓ [jc-shangshanzaoxing] analysis.culture 存在
+  ✓ [jc-shangshanzaoxing] 年级有效: 九上
+  ✓ [jc-yeshangshouxiangchengwendi] 包含 id
+  ✓ [jc-yeshangshouxiangchengwendi] 包含 title
+  ✓ [jc-yeshangshouxiangchengwendi] 包含 author
+  ✓ [jc-yeshangshouxiangchengwendi] 包含 dynasty
+  ✓ [jc-yeshangshouxiangchengwendi] 包含 grade
+  ✓ [jc-yeshangshouxiangchengwendi] 包含 reading
+  ✓ [jc-yeshangshouxiangchengwendi] reading.original 存在
+  ✓ [jc-yeshangshouxiangchengwendi] reading.translation 存在
+  ✓ [jc-yeshangshouxiangchengwendi] reading.paragraphs 存在
+  ✓ [jc-yeshangshouxiangchengwendi] 原文非空
+  ✓ [jc-yeshangshouxiangchengwendi] analysis.theme 存在
+  ✓ [jc-yeshangshouxiangchengwendi] analysis.outline 存在
+  ✓ [jc-yeshangshouxiangchengwendi] analysis.writing 存在
+  ✓ [jc-yeshangshouxiangchengwendi] analysis.culture 存在
+  ✓ [jc-yeshangshouxiangchengwendi] 年级有效: 七上
+  ✓ [jc-yeyujibei] 包含 id
+  ✓ [jc-yeyujibei] 包含 title
+  ✓ [jc-yeyujibei] 包含 author
+  ✓ [jc-yeyujibei] 包含 dynasty
+  ✓ [jc-yeyujibei] 包含 grade
+  ✓ [jc-yeyujibei] 包含 reading
+  ✓ [jc-yeyujibei] reading.original 存在
+  ✓ [jc-yeyujibei] reading.translation 存在
+  ✓ [jc-yeyujibei] reading.paragraphs 存在
+  ✓ [jc-yeyujibei] 原文非空
+  ✓ [jc-yeyujibei] analysis.theme 存在
+  ✓ [jc-yeyujibei] analysis.outline 存在
+  ✓ [jc-yeyujibei] analysis.writing 存在
+  ✓ [jc-yeyujibei] analysis.culture 存在
+  ✓ [jc-yeyujibei] 年级有效: 七上
+  ✓ [jc-dadaozhixingye] 包含 id
+  ✓ [jc-dadaozhixingye] 包含 title
+  ✓ [jc-dadaozhixingye] 包含 author
+  ✓ [jc-dadaozhixingye] 包含 dynasty
+  ✓ [jc-dadaozhixingye] 包含 grade
+  ✓ [jc-dadaozhixingye] 包含 reading
+  ✓ [jc-dadaozhixingye] reading.original 存在
+  ✓ [jc-dadaozhixingye] reading.translation 存在
+  ✓ [jc-dadaozhixingye] reading.paragraphs 存在
+  ✓ [jc-dadaozhixingye] 原文非空
+  ✓ [jc-dadaozhixingye] analysis.theme 存在
+  ✓ [jc-dadaozhixingye] analysis.outline 存在
+  ✓ [jc-dadaozhixingye] analysis.writing 存在
+  ✓ [jc-dadaozhixingye] analysis.culture 存在
+  ✓ [jc-dadaozhixingye] 年级有效: 八下
+  ✓ [tianjingsha-qiusi] 包含 id
+  ✓ [tianjingsha-qiusi] 包含 title
+  ✓ [tianjingsha-qiusi] 包含 author
+  ✓ [tianjingsha-qiusi] 包含 dynasty
+  ✓ [tianjingsha-qiusi] 包含 grade
+  ✓ [tianjingsha-qiusi] 包含 reading
+  ✓ [tianjingsha-qiusi] reading.original 存在
+  ✓ [tianjingsha-qiusi] reading.translation 存在
+  ✓ [tianjingsha-qiusi] reading.paragraphs 存在
+  ✓ [tianjingsha-qiusi] 原文非空
+  ✓ [tianjingsha-qiusi] analysis.theme 存在
+  ✓ [tianjingsha-qiusi] analysis.outline 存在
+  ✓ [tianjingsha-qiusi] analysis.writing 存在
+  ✓ [tianjingsha-qiusi] analysis.culture 存在
+  ✓ [tianjingsha-qiusi] 年级有效: 七上
+  ✓ [jc-taichangyin] 包含 id
+  ✓ [jc-taichangyin] 包含 title
+  ✓ [jc-taichangyin] 包含 author
+  ✓ [jc-taichangyin] 包含 dynasty
+  ✓ [jc-taichangyin] 包含 grade
+  ✓ [jc-taichangyin] 包含 reading
+  ✓ [jc-taichangyin] reading.original 存在
+  ✓ [jc-taichangyin] reading.translation 存在
+  ✓ [jc-taichangyin] reading.paragraphs 存在
+  ✓ [jc-taichangyin] 原文非空
+  ✓ [jc-taichangyin] analysis.theme 存在
+  ✓ [jc-taichangyin] analysis.outline 存在
+  ✓ [jc-taichangyin] analysis.writing 存在
+  ✓ [jc-taichangyin] analysis.culture 存在
+  ✓ [jc-taichangyin] 年级有效: 九下
+  ✓ [jc-rumengling] 包含 id
+  ✓ [jc-rumengling] 包含 title
+  ✓ [jc-rumengling] 包含 author
+  ✓ [jc-rumengling] 包含 dynasty
+  ✓ [jc-rumengling] 包含 grade
+  ✓ [jc-rumengling] 包含 reading
+  ✓ [jc-rumengling] reading.original 存在
+  ✓ [jc-rumengling] reading.translation 存在
+  ✓ [jc-rumengling] reading.paragraphs 存在
+  ✓ [jc-rumengling] 原文非空
+  ✓ [jc-rumengling] analysis.theme 存在
+  ✓ [jc-rumengling] analysis.outline 存在
+  ✓ [jc-rumengling] analysis.writing 存在
+  ✓ [jc-rumengling] analysis.culture 存在
+  ✓ [jc-rumengling] 年级有效: 八上
+  ✓ [jc-zijin] 包含 id
+  ✓ [jc-zijin] 包含 title
+  ✓ [jc-zijin] 包含 author
+  ✓ [jc-zijin] 包含 dynasty
+  ✓ [jc-zijin] 包含 grade
+  ✓ [jc-zijin] 包含 reading
+  ✓ [jc-zijin] reading.original 存在
+  ✓ [jc-zijin] reading.translation 存在
+  ✓ [jc-zijin] reading.paragraphs 存在
+  ✓ [jc-zijin] 原文非空
+  ✓ [jc-zijin] analysis.theme 存在
+  ✓ [jc-zijin] analysis.outline 存在
+  ✓ [jc-zijin] analysis.writing 存在
+  ✓ [jc-zijin] analysis.culture 存在
+  ✓ [jc-zijin] 年级有效: 八下
+  ✓ [jc-sunquanquanxue] 包含 id
+  ✓ [jc-sunquanquanxue] 包含 title
+  ✓ [jc-sunquanquanxue] 包含 author
+  ✓ [jc-sunquanquanxue] 包含 dynasty
+  ✓ [jc-sunquanquanxue] 包含 grade
+  ✓ [jc-sunquanquanxue] 包含 reading
+  ✓ [jc-sunquanquanxue] reading.original 存在
+  ✓ [jc-sunquanquanxue] reading.translation 存在
+  ✓ [jc-sunquanquanxue] reading.paragraphs 存在
+  ✓ [jc-sunquanquanxue] 原文非空
+  ✓ [jc-sunquanquanxue] analysis.theme 存在
+  ✓ [jc-sunquanquanxue] analysis.outline 存在
+  ✓ [jc-sunquanquanxue] analysis.writing 存在
+  ✓ [jc-sunquanquanxue] analysis.culture 存在
+  ✓ [jc-sunquanquanxue] 年级有效: 七下
+  ✓ [jc-dingfengbo] 包含 id
+  ✓ [jc-dingfengbo] 包含 title
+  ✓ [jc-dingfengbo] 包含 author
+  ✓ [jc-dingfengbo] 包含 dynasty
+  ✓ [jc-dingfengbo] 包含 grade
+  ✓ [jc-dingfengbo] 包含 reading
+  ✓ [jc-dingfengbo] reading.original 存在
+  ✓ [jc-dingfengbo] reading.translation 存在
+  ✓ [jc-dingfengbo] reading.paragraphs 存在
+  ✓ [jc-dingfengbo] 原文非空
+  ✓ [jc-dingfengbo] analysis.theme 存在
+  ✓ [jc-dingfengbo] analysis.outline 存在
+  ✓ [jc-dingfengbo] analysis.writing 存在
+  ✓ [jc-dingfengbo] analysis.culture 存在
+  ✓ [jc-dingfengbo] 年级有效: 九下
+  ✓ [jc-fugueibunengyin] 包含 id
+  ✓ [jc-fugueibunengyin] 包含 title
+  ✓ [jc-fugueibunengyin] 包含 author
+  ✓ [jc-fugueibunengyin] 包含 dynasty
+  ✓ [jc-fugueibunengyin] 包含 grade
+  ✓ [jc-fugueibunengyin] 包含 reading
+  ✓ [jc-fugueibunengyin] reading.original 存在
+  ✓ [jc-fugueibunengyin] reading.translation 存在
+  ✓ [jc-fugueibunengyin] reading.paragraphs 存在
+  ✓ [jc-fugueibunengyin] 原文非空
+  ✓ [jc-fugueibunengyin] analysis.theme 存在
+  ✓ [jc-fugueibunengyin] analysis.outline 存在
+  ✓ [jc-fugueibunengyin] analysis.writing 存在
+  ✓ [jc-fugueibunengyin] analysis.culture 存在
+  ✓ [jc-fugueibunengyin] 年级有效: 八上
+  ✓ [jc-xiaoshitanji] 包含 id
+  ✓ [jc-xiaoshitanji] 包含 title
+  ✓ [jc-xiaoshitanji] 包含 author
+  ✓ [jc-xiaoshitanji] 包含 dynasty
+  ✓ [jc-xiaoshitanji] 包含 grade
+  ✓ [jc-xiaoshitanji] 包含 reading
+  ✓ [jc-xiaoshitanji] reading.original 存在
+  ✓ [jc-xiaoshitanji] reading.translation 存在
+  ✓ [jc-xiaoshitanji] reading.paragraphs 存在
+  ✓ [jc-xiaoshitanji] 原文非空
+  ✓ [jc-xiaoshitanji] analysis.theme 存在
+  ✓ [jc-xiaoshitanji] analysis.outline 存在
+  ✓ [jc-xiaoshitanji] analysis.writing 存在
+  ✓ [jc-xiaoshitanji] analysis.culture 存在
+  ✓ [jc-xiaoshitanji] 年级有效: 八下
+  ✓ [jc-shanpoyang-tongguanhaigu] 包含 id
+  ✓ [jc-shanpoyang-tongguanhaigu] 包含 title
+  ✓ [jc-shanpoyang-tongguanhaigu] 包含 author
+  ✓ [jc-shanpoyang-tongguanhaigu] 包含 dynasty
+  ✓ [jc-shanpoyang-tongguanhaigu] 包含 grade
+  ✓ [jc-shanpoyang-tongguanhaigu] 包含 reading
+  ✓ [jc-shanpoyang-tongguanhaigu] reading.original 存在
+  ✓ [jc-shanpoyang-tongguanhaigu] reading.translation 存在
+  ✓ [jc-shanpoyang-tongguanhaigu] reading.paragraphs 存在
+  ✓ [jc-shanpoyang-tongguanhaigu] 原文非空
+  ✓ [jc-shanpoyang-tongguanhaigu] analysis.theme 存在
+  ✓ [jc-shanpoyang-tongguanhaigu] analysis.outline 存在
+  ✓ [jc-shanpoyang-tongguanhaigu] analysis.writing 存在
+  ✓ [jc-shanpoyang-tongguanhaigu] analysis.culture 存在
+  ✓ [jc-shanpoyang-tongguanhaigu] 年级有效: 九上
+  ✓ [jc-shanpoyanglishan] 包含 id
+  ✓ [jc-shanpoyanglishan] 包含 title
+  ✓ [jc-shanpoyanglishan] 包含 author
+  ✓ [jc-shanpoyanglishan] 包含 dynasty
+  ✓ [jc-shanpoyanglishan] 包含 grade
+  ✓ [jc-shanpoyanglishan] 包含 reading
+  ✓ [jc-shanpoyanglishan] reading.original 存在
+  ✓ [jc-shanpoyanglishan] reading.translation 存在
+  ✓ [jc-shanpoyanglishan] reading.paragraphs 存在
+  ✓ [jc-shanpoyanglishan] 原文非空
+  ✓ [jc-shanpoyanglishan] analysis.theme 存在
+  ✓ [jc-shanpoyanglishan] analysis.outline 存在
+  ✓ [jc-shanpoyanglishan] analysis.writing 存在
+  ✓ [jc-shanpoyanglishan] analysis.culture 存在
+  ✓ [jc-shanpoyanglishan] 年级有效: 九下
+  ✓ [jc-yueyanglouji] 包含 id
+  ✓ [jc-yueyanglouji] 包含 title
+  ✓ [jc-yueyanglouji] 包含 author
+  ✓ [jc-yueyanglouji] 包含 dynasty
+  ✓ [jc-yueyanglouji] 包含 grade
+  ✓ [jc-yueyanglouji] 包含 reading
+  ✓ [jc-yueyanglouji] reading.original 存在
+  ✓ [jc-yueyanglouji] reading.translation 存在
+  ✓ [jc-yueyanglouji] reading.paragraphs 存在
+  ✓ [jc-yueyanglouji] 原文非空
+  ✓ [jc-yueyanglouji] analysis.theme 存在
+  ✓ [jc-yueyanglouji] analysis.outline 存在
+  ✓ [jc-yueyanglouji] analysis.writing 存在
+  ✓ [jc-yueyanglouji] analysis.culture 存在
+  ✓ [jc-yueyanglouji] 年级有效: 九上
+  ✓ [jc-emeishanyuege] 包含 id
+  ✓ [jc-emeishanyuege] 包含 title
+  ✓ [jc-emeishanyuege] 包含 author
+  ✓ [jc-emeishanyuege] 包含 dynasty
+  ✓ [jc-emeishanyuege] 包含 grade
+  ✓ [jc-emeishanyuege] 包含 reading
+  ✓ [jc-emeishanyuege] reading.original 存在
+  ✓ [jc-emeishanyuege] reading.translation 存在
+  ✓ [jc-emeishanyuege] reading.paragraphs 存在
+  ✓ [jc-emeishanyuege] 原文非空
+  ✓ [jc-emeishanyuege] analysis.theme 存在
+  ✓ [jc-emeishanyuege] analysis.outline 存在
+  ✓ [jc-emeishanyuege] analysis.writing 存在
+  ✓ [jc-emeishanyuege] analysis.culture 存在
+  ✓ [jc-emeishanyuege] 年级有效: 七上
+  ✓ [jc-jihaizashi5] 包含 id
+  ✓ [jc-jihaizashi5] 包含 title
+  ✓ [jc-jihaizashi5] 包含 author
+  ✓ [jc-jihaizashi5] 包含 dynasty
+  ✓ [jc-jihaizashi5] 包含 grade
+  ✓ [jc-jihaizashi5] 包含 reading
+  ✓ [jc-jihaizashi5] reading.original 存在
+  ✓ [jc-jihaizashi5] reading.translation 存在
+  ✓ [jc-jihaizashi5] reading.paragraphs 存在
+  ✓ [jc-jihaizashi5] 原文非空
+  ✓ [jc-jihaizashi5] analysis.theme 存在
+  ✓ [jc-jihaizashi5] analysis.outline 存在
+  ✓ [jc-jihaizashi5] analysis.writing 存在
+  ✓ [jc-jihaizashi5] analysis.culture 存在
+  ✓ [jc-jihaizashi5] 年级有效: 七下
+  ✓ [jc-zhuangzi-huizi-haoliang] 包含 id
+  ✓ [jc-zhuangzi-huizi-haoliang] 包含 title
+  ✓ [jc-zhuangzi-huizi-haoliang] 包含 author
+  ✓ [jc-zhuangzi-huizi-haoliang] 包含 dynasty
+  ✓ [jc-zhuangzi-huizi-haoliang] 包含 grade
+  ✓ [jc-zhuangzi-huizi-haoliang] 包含 reading
+  ✓ [jc-zhuangzi-huizi-haoliang] reading.original 存在
+  ✓ [jc-zhuangzi-huizi-haoliang] reading.translation 存在
+  ✓ [jc-zhuangzi-huizi-haoliang] reading.paragraphs 存在
+  ✓ [jc-zhuangzi-huizi-haoliang] 原文非空
+  ✓ [jc-zhuangzi-huizi-haoliang] analysis.theme 存在
+  ✓ [jc-zhuangzi-huizi-haoliang] analysis.outline 存在
+  ✓ [jc-zhuangzi-huizi-haoliang] analysis.writing 存在
+  ✓ [jc-zhuangzi-huizi-haoliang] analysis.culture 存在
+  ✓ [jc-zhuangzi-huizi-haoliang] 年级有效: 八下
+  ✓ [jc-tingzhongyouqishu] 包含 id
+  ✓ [jc-tingzhongyouqishu] 包含 title
+  ✓ [jc-tingzhongyouqishu] 包含 author
+  ✓ [jc-tingzhongyouqishu] 包含 dynasty
+  ✓ [jc-tingzhongyouqishu] 包含 grade
+  ✓ [jc-tingzhongyouqishu] 包含 reading
+  ✓ [jc-tingzhongyouqishu] reading.original 存在
+  ✓ [jc-tingzhongyouqishu] reading.translation 存在
+  ✓ [jc-tingzhongyouqishu] reading.paragraphs 存在
+  ✓ [jc-tingzhongyouqishu] 原文非空
+  ✓ [jc-tingzhongyouqishu] analysis.theme 存在
+  ✓ [jc-tingzhongyouqishu] analysis.outline 存在
+  ✓ [jc-tingzhongyouqishu] analysis.writing 存在
+  ✓ [jc-tingzhongyouqishu] analysis.culture 存在
+  ✓ [jc-tingzhongyouqishu] 年级有效: 八上
+  ✓ [jc-shiwei] 包含 id
+  ✓ [jc-shiwei] 包含 title
+  ✓ [jc-shiwei] 包含 author
+  ✓ [jc-shiwei] 包含 dynasty
+  ✓ [jc-shiwei] 包含 grade
+  ✓ [jc-shiwei] 包含 reading
+  ✓ [jc-shiwei] reading.original 存在
+  ✓ [jc-shiwei] reading.translation 存在
+  ✓ [jc-shiwei] reading.paragraphs 存在
+  ✓ [jc-shiwei] 原文非空
+  ✓ [jc-shiwei] analysis.theme 存在
+  ✓ [jc-shiwei] analysis.outline 存在
+  ✓ [jc-shiwei] analysis.writing 存在
+  ✓ [jc-shiwei] analysis.culture 存在
+  ✓ [jc-shiwei] 年级有效: 八下
+  ✓ [jc-ddzd] 包含 id
+  ✓ [jc-ddzd] 包含 title
+  ✓ [jc-ddzd] 包含 author
+  ✓ [jc-ddzd] 包含 dynasty
+  ✓ [jc-ddzd] 包含 grade
+  ✓ [jc-ddzd] 包含 reading
+  ✓ [jc-ddzd] reading.original 存在
+  ✓ [jc-ddzd] reading.translation 存在
+  ✓ [jc-ddzd] reading.paragraphs 存在
+  ✓ [jc-ddzd] 原文非空
+  ✓ [jc-ddzd] analysis.theme 存在
+  ✓ [jc-ddzd] analysis.outline 存在
+  ✓ [jc-ddzd] analysis.writing 存在
+  ✓ [jc-ddzd] analysis.culture 存在
+  ✓ [jc-ddzd] 年级有效: 八上
+  ✓ [jc-yugongyishan] 包含 id
+  ✓ [jc-yugongyishan] 包含 title
+  ✓ [jc-yugongyishan] 包含 author
+  ✓ [jc-yugongyishan] 包含 dynasty
+  ✓ [jc-yugongyishan] 包含 grade
+  ✓ [jc-yugongyishan] 包含 reading
+  ✓ [jc-yugongyishan] reading.original 存在
+  ✓ [jc-yugongyishan] reading.translation 存在
+  ✓ [jc-yugongyishan] reading.paragraphs 存在
+  ✓ [jc-yugongyishan] 原文非空
+  ✓ [jc-yugongyishan] analysis.theme 存在
+  ✓ [jc-yugongyishan] analysis.outline 存在
+  ✓ [jc-yugongyishan] analysis.writing 存在
+  ✓ [jc-yugongyishan] analysis.culture 存在
+  ✓ [jc-yugongyishan] 年级有效: 八上
+  ✓ [jc-wuti] 包含 id
+  ✓ [jc-wuti] 包含 title
+  ✓ [jc-wuti] 包含 author
+  ✓ [jc-wuti] 包含 dynasty
+  ✓ [jc-wuti] 包含 grade
+  ✓ [jc-wuti] 包含 reading
+  ✓ [jc-wuti] reading.original 存在
+  ✓ [jc-wuti] reading.translation 存在
+  ✓ [jc-wuti] reading.paragraphs 存在
+  ✓ [jc-wuti] 原文非空
+  ✓ [jc-wuti] analysis.theme 存在
+  ✓ [jc-wuti] analysis.outline 存在
+  ✓ [jc-wuti] analysis.writing 存在
+  ✓ [jc-wuti] analysis.culture 存在
+  ✓ [jc-wuti] 年级有效: 九上
+  ✓ [jc-chunyelochengwendi] 包含 id
+  ✓ [jc-chunyelochengwendi] 包含 title
+  ✓ [jc-chunyelochengwendi] 包含 author
+  ✓ [jc-chunyelochengwendi] 包含 dynasty
+  ✓ [jc-chunyelochengwendi] 包含 grade
+  ✓ [jc-chunyelochengwendi] 包含 reading
+  ✓ [jc-chunyelochengwendi] reading.original 存在
+  ✓ [jc-chunyelochengwendi] reading.translation 存在
+  ✓ [jc-chunyelochengwendi] reading.paragraphs 存在
+  ✓ [jc-chunyelochengwendi] 原文非空
+  ✓ [jc-chunyelochengwendi] analysis.theme 存在
+  ✓ [jc-chunyelochengwendi] analysis.outline 存在
+  ✓ [jc-chunyelochengwendi] analysis.writing 存在
+  ✓ [jc-chunyelochengwendi] analysis.culture 存在
+  ✓ [jc-chunyelochengwendi] 年级有效: 七下
+  ✓ [jc-chunwang] 包含 id
+  ✓ [jc-chunwang] 包含 title
+  ✓ [jc-chunwang] 包含 author
+  ✓ [jc-chunwang] 包含 dynasty
+  ✓ [jc-chunwang] 包含 grade
+  ✓ [jc-chunwang] 包含 reading
+  ✓ [jc-chunwang] reading.original 存在
+  ✓ [jc-chunwang] reading.translation 存在
+  ✓ [jc-chunwang] reading.paragraphs 存在
+  ✓ [jc-chunwang] 原文非空
+  ✓ [jc-chunwang] analysis.theme 存在
+  ✓ [jc-chunwang] analysis.outline 存在
+  ✓ [jc-chunwang] analysis.writing 存在
+  ✓ [jc-chunwang] analysis.culture 存在
+  ✓ [jc-chunwang] 年级有效: 八上
+  ✓ [jc-wanchun] 包含 id
+  ✓ [jc-wanchun] 包含 title
+  ✓ [jc-wanchun] 包含 author
+  ✓ [jc-wanchun] 包含 dynasty
+  ✓ [jc-wanchun] 包含 grade
+  ✓ [jc-wanchun] 包含 reading
+  ✓ [jc-wanchun] reading.original 存在
+  ✓ [jc-wanchun] reading.translation 存在
+  ✓ [jc-wanchun] reading.paragraphs 存在
+  ✓ [jc-wanchun] 原文非空
+  ✓ [jc-wanchun] analysis.theme 存在
+  ✓ [jc-wanchun] analysis.outline 存在
+  ✓ [jc-wanchun] analysis.writing 存在
+  ✓ [jc-wanchun] analysis.culture 存在
+  ✓ [jc-wanchun] 年级有效: 七下
+  ✓ [jc-caoguilunzhan] 包含 id
+  ✓ [jc-caoguilunzhan] 包含 title
+  ✓ [jc-caoguilunzhan] 包含 author
+  ✓ [jc-caoguilunzhan] 包含 dynasty
+  ✓ [jc-caoguilunzhan] 包含 grade
+  ✓ [jc-caoguilunzhan] 包含 reading
+  ✓ [jc-caoguilunzhan] reading.original 存在
+  ✓ [jc-caoguilunzhan] reading.translation 存在
+  ✓ [jc-caoguilunzhan] reading.paragraphs 存在
+  ✓ [jc-caoguilunzhan] 原文非空
+  ✓ [jc-caoguilunzhan] analysis.theme 存在
+  ✓ [jc-caoguilunzhan] analysis.outline 存在
+  ✓ [jc-caoguilunzhan] analysis.writing 存在
+  ✓ [jc-caoguilunzhan] analysis.culture 存在
+  ✓ [jc-caoguilunzhan] 年级有效: 九上
+  ✓ [jc-yueyeyishedi] 包含 id
+  ✓ [jc-yueyeyishedi] 包含 title
+  ✓ [jc-yueyeyishedi] 包含 author
+  ✓ [jc-yueyeyishedi] 包含 dynasty
+  ✓ [jc-yueyeyishedi] 包含 grade
+  ✓ [jc-yueyeyishedi] 包含 reading
+  ✓ [jc-yueyeyishedi] reading.original 存在
+  ✓ [jc-yueyeyishedi] reading.translation 存在
+  ✓ [jc-yueyeyishedi] reading.paragraphs 存在
+  ✓ [jc-yueyeyishedi] 原文非空
+  ✓ [jc-yueyeyishedi] analysis.theme 存在
+  ✓ [jc-yueyeyishedi] analysis.outline 存在
+  ✓ [jc-yueyeyishedi] analysis.writing 存在
+  ✓ [jc-yueyeyishedi] analysis.culture 存在
+  ✓ [jc-yueyeyishedi] 年级有效: 九上
+  ✓ [jc-wangyue] 包含 id
+  ✓ [jc-wangyue] 包含 title
+  ✓ [jc-wangyue] 包含 author
+  ✓ [jc-wangyue] 包含 dynasty
+  ✓ [jc-wangyue] 包含 grade
+  ✓ [jc-wangyue] 包含 reading
+  ✓ [jc-wangyue] reading.original 存在
+  ✓ [jc-wangyue] reading.translation 存在
+  ✓ [jc-wangyue] reading.paragraphs 存在
+  ✓ [jc-wangyue] 原文非空
+  ✓ [jc-wangyue] analysis.theme 存在
+  ✓ [jc-wangyue] analysis.outline 存在
+  ✓ [jc-wangyue] analysis.writing 存在
+  ✓ [jc-wangyue] analysis.culture 存在
+  ✓ [jc-wangyue] 年级有效: 七下
+  ✓ [jc-wangdongtinghushangzhangchengxiang] 包含 id
+  ✓ [jc-wangdongtinghushangzhangchengxiang] 包含 title
+  ✓ [jc-wangdongtinghushangzhangchengxiang] 包含 author
+  ✓ [jc-wangdongtinghushangzhangchengxiang] 包含 dynasty
+  ✓ [jc-wangdongtinghushangzhangchengxiang] 包含 grade
+  ✓ [jc-wangdongtinghushangzhangchengxiang] 包含 reading
+  ✓ [jc-wangdongtinghushangzhangchengxiang] reading.original 存在
+  ✓ [jc-wangdongtinghushangzhangchengxiang] reading.translation 存在
+  ✓ [jc-wangdongtinghushangzhangchengxiang] reading.paragraphs 存在
+  ✓ [jc-wangdongtinghushangzhangchengxiang] 原文非空
+  ✓ [jc-wangdongtinghushangzhangchengxiang] analysis.theme 存在
+  ✓ [jc-wangdongtinghushangzhangchengxiang] analysis.outline 存在
+  ✓ [jc-wangdongtinghushangzhangchengxiang] analysis.writing 存在
+  ✓ [jc-wangdongtinghushangzhangchengxiang] analysis.culture 存在
+  ✓ [jc-wangdongtinghushangzhangchengxiang] 年级有效: 八下
+  ✓ [jc-chao-tian-zi-yong-la-ba] 包含 id
+  ✓ [jc-chao-tian-zi-yong-la-ba] 包含 title
+  ✓ [jc-chao-tian-zi-yong-la-ba] 包含 author
+  ✓ [jc-chao-tian-zi-yong-la-ba] 包含 dynasty
+  ✓ [jc-chao-tian-zi-yong-la-ba] 包含 grade
+  ✓ [jc-chao-tian-zi-yong-la-ba] 包含 reading
+  ✓ [jc-chao-tian-zi-yong-la-ba] reading.original 存在
+  ✓ [jc-chao-tian-zi-yong-la-ba] reading.translation 存在
+  ✓ [jc-chao-tian-zi-yong-la-ba] reading.paragraphs 存在
+  ✓ [jc-chao-tian-zi-yong-la-ba] 原文非空
+  ✓ [jc-chao-tian-zi-yong-la-ba] analysis.theme 存在
+  ✓ [jc-chao-tian-zi-yong-la-ba] analysis.outline 存在
+  ✓ [jc-chao-tian-zi-yong-la-ba] analysis.writing 存在
+  ✓ [jc-chao-tian-zi-yong-la-ba] analysis.culture 存在
+  ✓ [jc-chao-tian-zi-yong-la-ba] 年级有效: 九下
+  ✓ [jc-mulanshi] 包含 id
+  ✓ [jc-mulanshi] 包含 title
+  ✓ [jc-mulanshi] 包含 author
+  ✓ [jc-mulanshi] 包含 dynasty
+  ✓ [jc-mulanshi] 包含 grade
+  ✓ [jc-mulanshi] 包含 reading
+  ✓ [jc-mulanshi] reading.original 存在
+  ✓ [jc-mulanshi] reading.translation 存在
+  ✓ [jc-mulanshi] reading.paragraphs 存在
+  ✓ [jc-mulanshi] 原文非空
+  ✓ [jc-mulanshi] analysis.theme 存在
+  ✓ [jc-mulanshi] analysis.outline 存在
+  ✓ [jc-mulanshi] analysis.writing 存在
+  ✓ [jc-mulanshi] analysis.culture 存在
+  ✓ [jc-mulanshi] 年级有效: 七下
+  ✓ [jc-qirenyoutian] 包含 id
+  ✓ [jc-qirenyoutian] 包含 title
+  ✓ [jc-qirenyoutian] 包含 author
+  ✓ [jc-qirenyoutian] 包含 dynasty
+  ✓ [jc-qirenyoutian] 包含 grade
+  ✓ [jc-qirenyoutian] 包含 reading
+  ✓ [jc-qirenyoutian] reading.original 存在
+  ✓ [jc-qirenyoutian] reading.translation 存在
+  ✓ [jc-qirenyoutian] reading.paragraphs 存在
+  ✓ [jc-qirenyoutian] 原文非空
+  ✓ [jc-qirenyoutian] analysis.theme 存在
+  ✓ [jc-qirenyoutian] analysis.outline 存在
+  ✓ [jc-qirenyoutian] analysis.writing 存在
+  ✓ [jc-qirenyoutian] analysis.culture 存在
+  ✓ [jc-qirenyoutian] 年级有效: 七上
+  ✓ [jc-hezhouji] 包含 id
+  ✓ [jc-hezhouji] 包含 title
+  ✓ [jc-hezhouji] 包含 author
+  ✓ [jc-hezhouji] 包含 dynasty
+  ✓ [jc-hezhouji] 包含 grade
+  ✓ [jc-hezhouji] 包含 reading
+  ✓ [jc-hezhouji] reading.original 存在
+  ✓ [jc-hezhouji] reading.translation 存在
+  ✓ [jc-hezhouji] reading.paragraphs 存在
+  ✓ [jc-hezhouji] 原文非空
+  ✓ [jc-hezhouji] analysis.theme 存在
+  ✓ [jc-hezhouji] analysis.outline 存在
+  ✓ [jc-hezhouji] analysis.writing 存在
+  ✓ [jc-hezhouji] analysis.culture 存在
+  ✓ [jc-hezhouji] 年级有效: 八下
+  ✓ [jc-thyj] 包含 id
+  ✓ [jc-thyj] 包含 title
+  ✓ [jc-thyj] 包含 author
+  ✓ [jc-thyj] 包含 dynasty
+  ✓ [jc-thyj] 包含 grade
+  ✓ [jc-thyj] 包含 reading
+  ✓ [jc-thyj] reading.original 存在
+  ✓ [jc-thyj] reading.translation 存在
+  ✓ [jc-thyj] reading.paragraphs 存在
+  ✓ [jc-thyj] 原文非空
+  ✓ [jc-thyj] analysis.theme 存在
+  ✓ [jc-thyj] analysis.outline 存在
+  ✓ [jc-thyj] analysis.writing 存在
+  ✓ [jc-thyj] analysis.culture 存在
+  ✓ [jc-thyj] 年级有效: 八下
+  ✓ [liangfuxing-caozhi] 包含 id
+  ✓ [liangfuxing-caozhi] 包含 title
+  ✓ [liangfuxing-caozhi] 包含 author
+  ✓ [liangfuxing-caozhi] 包含 dynasty
+  ✓ [liangfuxing-caozhi] 包含 grade
+  ✓ [liangfuxing-caozhi] 包含 reading
+  ✓ [liangfuxing-caozhi] reading.original 存在
+  ✓ [liangfuxing-caozhi] reading.translation 存在
+  ✓ [liangfuxing-caozhi] reading.paragraphs 存在
+  ✓ [liangfuxing-caozhi] 原文非空
+  ✓ [liangfuxing-caozhi] analysis.theme 存在
+  ✓ [liangfuxing-caozhi] analysis.outline 存在
+  ✓ [liangfuxing-caozhi] analysis.writing 存在
+  ✓ [liangfuxing-caozhi] analysis.culture 存在
+  ✓ [liangfuxing-caozhi] 年级有效: 八上
+  ✓ [jc-cibeigushanxia] 包含 id
+  ✓ [jc-cibeigushanxia] 包含 title
+  ✓ [jc-cibeigushanxia] 包含 author
+  ✓ [jc-cibeigushanxia] 包含 dynasty
+  ✓ [jc-cibeigushanxia] 包含 grade
+  ✓ [jc-cibeigushanxia] 包含 reading
+  ✓ [jc-cibeigushanxia] reading.original 存在
+  ✓ [jc-cibeigushanxia] reading.translation 存在
+  ✓ [jc-cibeigushanxia] reading.paragraphs 存在
+  ✓ [jc-cibeigushanxia] 原文非空
+  ✓ [jc-cibeigushanxia] analysis.theme 存在
+  ✓ [jc-cibeigushanxia] analysis.outline 存在
+  ✓ [jc-cibeigushanxia] analysis.writing 存在
+  ✓ [jc-cibeigushanxia] analysis.culture 存在
+  ✓ [jc-cibeigushanxia] 年级有效: 七上
+  ✓ [jc-shuidiaogetou-mingyuejishiyou] 包含 id
+  ✓ [jc-shuidiaogetou-mingyuejishiyou] 包含 title
+  ✓ [jc-shuidiaogetou-mingyuejishiyou] 包含 author
+  ✓ [jc-shuidiaogetou-mingyuejishiyou] 包含 dynasty
+  ✓ [jc-shuidiaogetou-mingyuejishiyou] 包含 grade
+  ✓ [jc-shuidiaogetou-mingyuejishiyou] 包含 reading
+  ✓ [jc-shuidiaogetou-mingyuejishiyou] reading.original 存在
+  ✓ [jc-shuidiaogetou-mingyuejishiyou] reading.translation 存在
+  ✓ [jc-shuidiaogetou-mingyuejishiyou] reading.paragraphs 存在
+  ✓ [jc-shuidiaogetou-mingyuejishiyou] 原文非空
+  ✓ [jc-shuidiaogetou-mingyuejishiyou] analysis.theme 存在
+  ✓ [jc-shuidiaogetou-mingyuejishiyou] analysis.outline 存在
+  ✓ [jc-shuidiaogetou-mingyuejishiyou] analysis.writing 存在
+  ✓ [jc-shuidiaogetou-mingyuejishiyou] analysis.culture 存在
+  ✓ [jc-shuidiaogetou-mingyuejishiyou] 年级有效: 九上
+  ✓ [jc-jiangnanfengliguinian] 包含 id
+  ✓ [jc-jiangnanfengliguinian] 包含 title
+  ✓ [jc-jiangnanfengliguinian] 包含 author
+  ✓ [jc-jiangnanfengliguinian] 包含 dynasty
+  ✓ [jc-jiangnanfengliguinian] 包含 grade
+  ✓ [jc-jiangnanfengliguinian] 包含 reading
+  ✓ [jc-jiangnanfengliguinian] reading.original 存在
+  ✓ [jc-jiangnanfengliguinian] reading.translation 存在
+  ✓ [jc-jiangnanfengliguinian] reading.paragraphs 存在
+  ✓ [jc-jiangnanfengliguinian] 原文非空
+  ✓ [jc-jiangnanfengliguinian] analysis.theme 存在
+  ✓ [jc-jiangnanfengliguinian] analysis.outline 存在
+  ✓ [jc-jiangnanfengliguinian] analysis.writing 存在
+  ✓ [jc-jiangnanfengliguinian] analysis.culture 存在
+  ✓ [jc-jiangnanfengliguinian] 年级有效: 七上
+  ✓ [jc-jiangchengzi-mizhouchulie] 包含 id
+  ✓ [jc-jiangchengzi-mizhouchulie] 包含 title
+  ✓ [jc-jiangchengzi-mizhouchulie] 包含 author
+  ✓ [jc-jiangchengzi-mizhouchulie] 包含 dynasty
+  ✓ [jc-jiangchengzi-mizhouchulie] 包含 grade
+  ✓ [jc-jiangchengzi-mizhouchulie] 包含 reading
+  ✓ [jc-jiangchengzi-mizhouchulie] reading.original 存在
+  ✓ [jc-jiangchengzi-mizhouchulie] reading.translation 存在
+  ✓ [jc-jiangchengzi-mizhouchulie] reading.paragraphs 存在
+  ✓ [jc-jiangchengzi-mizhouchulie] 原文非空
+  ✓ [jc-jiangchengzi-mizhouchulie] analysis.theme 存在
+  ✓ [jc-jiangchengzi-mizhouchulie] analysis.outline 存在
+  ✓ [jc-jiangchengzi-mizhouchulie] analysis.writing 存在
+  ✓ [jc-jiangchengzi-mizhouchulie] analysis.culture 存在
+  ✓ [jc-jiangchengzi-mizhouchulie] 年级有效: 九下
+  ✓ [jc-boqinhuai] 包含 id
+  ✓ [jc-boqinhuai] 包含 title
+  ✓ [jc-boqinhuai] 包含 author
+  ✓ [jc-boqinhuai] 包含 dynasty
+  ✓ [jc-boqinhuai] 包含 grade
+  ✓ [jc-boqinhuai] 包含 reading
+  ✓ [jc-boqinhuai] reading.original 存在
+  ✓ [jc-boqinhuai] reading.translation 存在
+  ✓ [jc-boqinhuai] reading.paragraphs 存在
+  ✓ [jc-boqinhuai] 原文非空
+  ✓ [jc-boqinhuai] analysis.theme 存在
+  ✓ [jc-boqinhuai] analysis.outline 存在
+  ✓ [jc-boqinhuai] analysis.writing 存在
+  ✓ [jc-boqinhuai] analysis.culture 存在
+  ✓ [jc-boqinhuai] 年级有效: 七下
+  ✓ [jc-huoban] 包含 id
+  ✓ [jc-huoban] 包含 title
+  ✓ [jc-huoban] 包含 author
+  ✓ [jc-huoban] 包含 dynasty
+  ✓ [jc-huoban] 包含 grade
+  ✓ [jc-huoban] 包含 reading
+  ✓ [jc-huoban] reading.original 存在
+  ✓ [jc-huoban] reading.translation 存在
+  ✓ [jc-huoban] reading.paragraphs 存在
+  ✓ [jc-huoban] 原文非空
+  ✓ [jc-huoban] analysis.theme 存在
+  ✓ [jc-huoban] analysis.outline 存在
+  ✓ [jc-huoban] analysis.writing 存在
+  ✓ [jc-huoban] analysis.culture 存在
+  ✓ [jc-huoban] 年级有效: 七下
+  ✓ [jc-huanxisha-mmqh] 包含 id
+  ✓ [jc-huanxisha-mmqh] 包含 title
+  ✓ [jc-huanxisha-mmqh] 包含 author
+  ✓ [jc-huanxisha-mmqh] 包含 dynasty
+  ✓ [jc-huanxisha-mmqh] 包含 grade
+  ✓ [jc-huanxisha-mmqh] 包含 reading
+  ✓ [jc-huanxisha-mmqh] reading.original 存在
+  ✓ [jc-huanxisha-mmqh] reading.translation 存在
+  ✓ [jc-huanxisha-mmqh] reading.paragraphs 存在
+  ✓ [jc-huanxisha-mmqh] 原文非空
+  ✓ [jc-huanxisha-mmqh] analysis.theme 存在
+  ✓ [jc-huanxisha-mmqh] analysis.outline 存在
+  ✓ [jc-huanxisha-mmqh] analysis.writing 存在
+  ✓ [jc-huanxisha-mmqh] analysis.culture 存在
+  ✓ [jc-huanxisha-mmqh] 年级有效: 九上
+  ✓ [jc-huanxisha-sxysnpx] 包含 id
+  ✓ [jc-huanxisha-sxysnpx] 包含 title
+  ✓ [jc-huanxisha-sxysnpx] 包含 author
+  ✓ [jc-huanxisha-sxysnpx] 包含 dynasty
+  ✓ [jc-huanxisha-sxysnpx] 包含 grade
+  ✓ [jc-huanxisha-sxysnpx] 包含 reading
+  ✓ [jc-huanxisha-sxysnpx] reading.original 存在
+  ✓ [jc-huanxisha-sxysnpx] reading.translation 存在
+  ✓ [jc-huanxisha-sxysnpx] reading.paragraphs 存在
+  ✓ [jc-huanxisha-sxysnpx] 原文非空
+  ✓ [jc-huanxisha-sxysnpx] analysis.theme 存在
+  ✓ [jc-huanxisha-sxysnpx] analysis.outline 存在
+  ✓ [jc-huanxisha-sxysnpx] analysis.writing 存在
+  ✓ [jc-huanxisha-sxysnpx] analysis.culture 存在
+  ✓ [jc-huanxisha-sxysnpx] 年级有效: 九下
+  ✓ [jc-huanxisha-yiquxincijiuyibei] 包含 id
+  ✓ [jc-huanxisha-yiquxincijiuyibei] 包含 title
+  ✓ [jc-huanxisha-yiquxincijiuyibei] 包含 author
+  ✓ [jc-huanxisha-yiquxincijiuyibei] 包含 dynasty
+  ✓ [jc-huanxisha-yiquxincijiuyibei] 包含 grade
+  ✓ [jc-huanxisha-yiquxincijiuyibei] 包含 reading
+  ✓ [jc-huanxisha-yiquxincijiuyibei] reading.original 存在
+  ✓ [jc-huanxisha-yiquxincijiuyibei] reading.translation 存在
+  ✓ [jc-huanxisha-yiquxincijiuyibei] reading.paragraphs 存在
+  ✓ [jc-huanxisha-yiquxincijiuyibei] 原文非空
+  ✓ [jc-huanxisha-yiquxincijiuyibei] analysis.theme 存在
+  ✓ [jc-huanxisha-yiquxincijiuyibei] analysis.outline 存在
+  ✓ [jc-huanxisha-yiquxincijiuyibei] analysis.writing 存在
+  ✓ [jc-huanxisha-yiquxincijiuyibei] analysis.culture 存在
+  ✓ [jc-huanxisha-yiquxincijiuyibei] 年级有效: 八上
+  ✓ [jc-yujiaao-tianjieyuntaolianxiaowu] 包含 id
+  ✓ [jc-yujiaao-tianjieyuntaolianxiaowu] 包含 title
+  ✓ [jc-yujiaao-tianjieyuntaolianxiaowu] 包含 author
+  ✓ [jc-yujiaao-tianjieyuntaolianxiaowu] 包含 dynasty
+  ✓ [jc-yujiaao-tianjieyuntaolianxiaowu] 包含 grade
+  ✓ [jc-yujiaao-tianjieyuntaolianxiaowu] 包含 reading
+  ✓ [jc-yujiaao-tianjieyuntaolianxiaowu] reading.original 存在
+  ✓ [jc-yujiaao-tianjieyuntaolianxiaowu] reading.translation 存在
+  ✓ [jc-yujiaao-tianjieyuntaolianxiaowu] reading.paragraphs 存在
+  ✓ [jc-yujiaao-tianjieyuntaolianxiaowu] 原文非空
+  ✓ [jc-yujiaao-tianjieyuntaolianxiaowu] analysis.theme 存在
+  ✓ [jc-yujiaao-tianjieyuntaolianxiaowu] analysis.outline 存在
+  ✓ [jc-yujiaao-tianjieyuntaolianxiaowu] analysis.writing 存在
+  ✓ [jc-yujiaao-tianjieyuntaolianxiaowu] analysis.culture 存在
+  ✓ [jc-yujiaao-tianjieyuntaolianxiaowu] 年级有效: 八上
+  ✓ [jc-yujiaaoqiusi] 包含 id
+  ✓ [jc-yujiaaoqiusi] 包含 title
+  ✓ [jc-yujiaaoqiusi] 包含 author
+  ✓ [jc-yujiaaoqiusi] 包含 dynasty
+  ✓ [jc-yujiaaoqiusi] 包含 grade
+  ✓ [jc-yujiaaoqiusi] 包含 reading
+  ✓ [jc-yujiaaoqiusi] reading.original 存在
+  ✓ [jc-yujiaaoqiusi] reading.translation 存在
+  ✓ [jc-yujiaaoqiusi] reading.paragraphs 存在
+  ✓ [jc-yujiaaoqiusi] 原文非空
+  ✓ [jc-yujiaaoqiusi] analysis.theme 存在
+  ✓ [jc-yujiaaoqiusi] analysis.outline 存在
+  ✓ [jc-yujiaaoqiusi] analysis.writing 存在
+  ✓ [jc-yujiaaoqiusi] analysis.culture 存在
+  ✓ [jc-yujiaaoqiusi] 年级有效: 九下
+  ✓ [jc-dujingmensongbie] 包含 id
+  ✓ [jc-dujingmensongbie] 包含 title
+  ✓ [jc-dujingmensongbie] 包含 author
+  ✓ [jc-dujingmensongbie] 包含 dynasty
+  ✓ [jc-dujingmensongbie] 包含 grade
+  ✓ [jc-dujingmensongbie] 包含 reading
+  ✓ [jc-dujingmensongbie] reading.original 存在
+  ✓ [jc-dujingmensongbie] reading.translation 存在
+  ✓ [jc-dujingmensongbie] reading.paragraphs 存在
+  ✓ [jc-dujingmensongbie] 原文非空
+  ✓ [jc-dujingmensongbie] analysis.theme 存在
+  ✓ [jc-dujingmensongbie] analysis.outline 存在
+  ✓ [jc-dujingmensongbie] analysis.writing 存在
+  ✓ [jc-dujingmensongbie] analysis.culture 存在
+  ✓ [jc-dujingmensongbie] 年级有效: 八上
+  ✓ [jc-youshanxicun] 包含 id
+  ✓ [jc-youshanxicun] 包含 title
+  ✓ [jc-youshanxicun] 包含 author
+  ✓ [jc-youshanxicun] 包含 dynasty
+  ✓ [jc-youshanxicun] 包含 grade
+  ✓ [jc-youshanxicun] 包含 reading
+  ✓ [jc-youshanxicun] reading.original 存在
+  ✓ [jc-youshanxicun] reading.translation 存在
+  ✓ [jc-youshanxicun] reading.paragraphs 存在
+  ✓ [jc-youshanxicun] 原文非空
+  ✓ [jc-youshanxicun] analysis.theme 存在
+  ✓ [jc-youshanxicun] analysis.outline 存在
+  ✓ [jc-youshanxicun] analysis.writing 存在
+  ✓ [jc-youshanxicun] analysis.culture 存在
+  ✓ [jc-youshanxicun] 年级有效: 七下
+  ✓ [jc-huxintingkanxue] 包含 id
+  ✓ [jc-huxintingkanxue] 包含 title
+  ✓ [jc-huxintingkanxue] 包含 author
+  ✓ [jc-huxintingkanxue] 包含 dynasty
+  ✓ [jc-huxintingkanxue] 包含 grade
+  ✓ [jc-huxintingkanxue] 包含 reading
+  ✓ [jc-huxintingkanxue] reading.original 存在
+  ✓ [jc-huxintingkanxue] reading.translation 存在
+  ✓ [jc-huxintingkanxue] reading.paragraphs 存在
+  ✓ [jc-huxintingkanxue] 原文非空
+  ✓ [jc-huxintingkanxue] analysis.theme 存在
+  ✓ [jc-huxintingkanxue] analysis.outline 存在
+  ✓ [jc-huxintingkanxue] analysis.writing 存在
+  ✓ [jc-huxintingkanxue] analysis.culture 存在
+  ✓ [jc-huxintingkanxue] 年级有效: 九上
+  ✓ [jc-manjianghong-xiaozhujinghua] 包含 id
+  ✓ [jc-manjianghong-xiaozhujinghua] 包含 title
+  ✓ [jc-manjianghong-xiaozhujinghua] 包含 author
+  ✓ [jc-manjianghong-xiaozhujinghua] 包含 dynasty
+  ✓ [jc-manjianghong-xiaozhujinghua] 包含 grade
+  ✓ [jc-manjianghong-xiaozhujinghua] 包含 reading
+  ✓ [jc-manjianghong-xiaozhujinghua] reading.original 存在
+  ✓ [jc-manjianghong-xiaozhujinghua] reading.translation 存在
+  ✓ [jc-manjianghong-xiaozhujinghua] reading.paragraphs 存在
+  ✓ [jc-manjianghong-xiaozhujinghua] 原文非空
+  ✓ [jc-manjianghong-xiaozhujinghua] analysis.theme 存在
+  ✓ [jc-manjianghong-xiaozhujinghua] analysis.outline 存在
+  ✓ [jc-manjianghong-xiaozhujinghua] analysis.writing 存在
+  ✓ [jc-manjianghong-xiaozhujinghua] analysis.culture 存在
+  ✓ [jc-manjianghong-xiaozhujinghua] 年级有效: 九下
+  ✓ [jc-tongguan] 包含 id
+  ✓ [jc-tongguan] 包含 title
+  ✓ [jc-tongguan] 包含 author
+  ✓ [jc-tongguan] 包含 dynasty
+  ✓ [jc-tongguan] 包含 grade
+  ✓ [jc-tongguan] 包含 reading
+  ✓ [jc-tongguan] reading.original 存在
+  ✓ [jc-tongguan] reading.translation 存在
+  ✓ [jc-tongguan] reading.paragraphs 存在
+  ✓ [jc-tongguan] 原文非空
+  ✓ [jc-tongguan] analysis.theme 存在
+  ✓ [jc-tongguan] analysis.outline 存在
+  ✓ [jc-tongguan] analysis.writing 存在
+  ✓ [jc-tongguan] analysis.culture 存在
+  ✓ [jc-tongguan] 年级有效: 七上
+  ✓ [ai-lian-shuo] 包含 id
+  ✓ [ai-lian-shuo] 包含 title
+  ✓ [ai-lian-shuo] 包含 author
+  ✓ [ai-lian-shuo] 包含 dynasty
+  ✓ [ai-lian-shuo] 包含 grade
+  ✓ [ai-lian-shuo] 包含 reading
+  ✓ [ai-lian-shuo] reading.original 存在
+  ✓ [ai-lian-shuo] reading.translation 存在
+  ✓ [ai-lian-shuo] reading.paragraphs 存在
+  ✓ [ai-lian-shuo] 原文非空
+  ✓ [ai-lian-shuo] analysis.theme 存在
+  ✓ [ai-lian-shuo] analysis.outline 存在
+  ✓ [ai-lian-shuo] analysis.writing 存在
+  ✓ [ai-lian-shuo] analysis.culture 存在
+  ✓ [ai-lian-shuo] 年级有效: 七下
+  ✓ [jc-lang] 包含 id
+  ✓ [jc-lang] 包含 title
+  ✓ [jc-lang] 包含 author
+  ✓ [jc-lang] 包含 dynasty
+  ✓ [jc-lang] 包含 grade
+  ✓ [jc-lang] 包含 reading
+  ✓ [jc-lang] reading.original 存在
+  ✓ [jc-lang] reading.translation 存在
+  ✓ [jc-lang] reading.paragraphs 存在
+  ✓ [jc-lang] 原文非空
+  ✓ [jc-lang] analysis.theme 存在
+  ✓ [jc-lang] analysis.outline 存在
+  ✓ [jc-lang] analysis.writing 存在
+  ✓ [jc-lang] analysis.culture 存在
+  ✓ [jc-lang] 年级有效: 七上
+  ✓ [jc-syyhsyal] 包含 id
+  ✓ [jc-syyhsyal] 包含 title
+  ✓ [jc-syyhsyal] 包含 author
+  ✓ [jc-syyhsyal] 包含 dynasty
+  ✓ [jc-syyhsyal] 包含 grade
+  ✓ [jc-syyhsyal] 包含 reading
+  ✓ [jc-syyhsyal] reading.original 存在
+  ✓ [jc-syyhsyal] reading.translation 存在
+  ✓ [jc-syyhsyal] reading.paragraphs 存在
+  ✓ [jc-syyhsyal] 原文非空
+  ✓ [jc-syyhsyal] analysis.theme 存在
+  ✓ [jc-syyhsyal] analysis.outline 存在
+  ✓ [jc-syyhsyal] analysis.writing 存在
+  ✓ [jc-syyhsyal] analysis.culture 存在
+  ✓ [jc-syyhsyal] 年级有效: 八上
+  ✓ [jc-dengfeilaifeng] 包含 id
+  ✓ [jc-dengfeilaifeng] 包含 title
+  ✓ [jc-dengfeilaifeng] 包含 author
+  ✓ [jc-dengfeilaifeng] 包含 dynasty
+  ✓ [jc-dengfeilaifeng] 包含 grade
+  ✓ [jc-dengfeilaifeng] 包含 reading
+  ✓ [jc-dengfeilaifeng] reading.original 存在
+  ✓ [jc-dengfeilaifeng] reading.translation 存在
+  ✓ [jc-dengfeilaifeng] reading.paragraphs 存在
+  ✓ [jc-dengfeilaifeng] 原文非空
+  ✓ [jc-dengfeilaifeng] analysis.theme 存在
+  ✓ [jc-dengfeilaifeng] analysis.outline 存在
+  ✓ [jc-dengfeilaifeng] analysis.writing 存在
+  ✓ [jc-dengfeilaifeng] analysis.culture 存在
+  ✓ [jc-dengfeilaifeng] 年级有效: 七下
+  ✓ [jc-baixuegaosongwupanguanguijing] 包含 id
+  ✓ [jc-baixuegaosongwupanguanguijing] 包含 title
+  ✓ [jc-baixuegaosongwupanguanguijing] 包含 author
+  ✓ [jc-baixuegaosongwupanguanguijing] 包含 dynasty
+  ✓ [jc-baixuegaosongwupanguanguijing] 包含 grade
+  ✓ [jc-baixuegaosongwupanguanguijing] 包含 reading
+  ✓ [jc-baixuegaosongwupanguanguijing] reading.original 存在
+  ✓ [jc-baixuegaosongwupanguanguijing] reading.translation 存在
+  ✓ [jc-baixuegaosongwupanguanguijing] reading.paragraphs 存在
+  ✓ [jc-baixuegaosongwupanguanguijing] 原文非空
+  ✓ [jc-baixuegaosongwupanguanguijing] analysis.theme 存在
+  ✓ [jc-baixuegaosongwupanguanguijing] analysis.outline 存在
+  ✓ [jc-baixuegaosongwupanguanguijing] analysis.writing 存在
+  ✓ [jc-baixuegaosongwupanguanguijing] analysis.culture 存在
+  ✓ [jc-baixuegaosongwupanguanguijing] 年级有效: 九上
+  ✓ [jc-xiangjianhuan] 包含 id
+  ✓ [jc-xiangjianhuan] 包含 title
+  ✓ [jc-xiangjianhuan] 包含 author
+  ✓ [jc-xiangjianhuan] 包含 dynasty
+  ✓ [jc-xiangjianhuan] 包含 grade
+  ✓ [jc-xiangjianhuan] 包含 reading
+  ✓ [jc-xiangjianhuan] reading.original 存在
+  ✓ [jc-xiangjianhuan] reading.translation 存在
+  ✓ [jc-xiangjianhuan] reading.paragraphs 存在
+  ✓ [jc-xiangjianhuan] 原文非空
+  ✓ [jc-xiangjianhuan] analysis.theme 存在
+  ✓ [jc-xiangjianhuan] analysis.outline 存在
+  ✓ [jc-xiangjianhuan] analysis.writing 存在
+  ✓ [jc-xiangjianhuan] analysis.culture 存在
+  ✓ [jc-xiangjianhuan] 年级有效: 九下
+  ✓ [xiangjianhuan-jinlingchengshangxilou] 包含 id
+  ✓ [xiangjianhuan-jinlingchengshangxilou] 包含 title
+  ✓ [xiangjianhuan-jinlingchengshangxilou] 包含 author
+  ✓ [xiangjianhuan-jinlingchengshangxilou] 包含 dynasty
+  ✓ [xiangjianhuan-jinlingchengshangxilou] 包含 grade
+  ✓ [xiangjianhuan-jinlingchengshangxilou] 包含 reading
+  ✓ [xiangjianhuan-jinlingchengshangxilou] reading.original 存在
+  ✓ [xiangjianhuan-jinlingchengshangxilou] reading.translation 存在
+  ✓ [xiangjianhuan-jinlingchengshangxilou] reading.paragraphs 存在
+  ✓ [xiangjianhuan-jinlingchengshangxilou] 原文非空
+  ✓ [xiangjianhuan-jinlingchengshangxilou] analysis.theme 存在
+  ✓ [xiangjianhuan-jinlingchengshangxilou] analysis.outline 存在
+  ✓ [xiangjianhuan-jinlingchengshangxilou] analysis.writing 存在
+  ✓ [xiangjianhuan-jinlingchengshangxilou] analysis.culture 存在
+  ✓ [xiangjianhuan-jinlingchengshangxilou] 年级有效: 八上
+  ✓ [loushiming] 包含 id
+  ✓ [loushiming] 包含 title
+  ✓ [loushiming] 包含 author
+  ✓ [loushiming] 包含 dynasty
+  ✓ [loushiming] 包含 grade
+  ✓ [loushiming] 包含 reading
+  ✓ [loushiming] reading.original 存在
+  ✓ [loushiming] reading.translation 存在
+  ✓ [loushiming] reading.paragraphs 存在
+  ✓ [loushiming] 原文非空
+  ✓ [loushiming] analysis.theme 存在
+  ✓ [loushiming] analysis.outline 存在
+  ✓ [loushiming] analysis.writing 存在
+  ✓ [loushiming] analysis.culture 存在
+  ✓ [loushiming] 年级有效: 七下
+  ✓ [da_xie_zhong_shu_shu] 包含 id
+  ✓ [da_xie_zhong_shu_shu] 包含 title
+  ✓ [da_xie_zhong_shu_shu] 包含 author
+  ✓ [da_xie_zhong_shu_shu] 包含 dynasty
+  ✓ [da_xie_zhong_shu_shu] 包含 grade
+  ✓ [da_xie_zhong_shu_shu] 包含 reading
+  ✓ [da_xie_zhong_shu_shu] reading.original 存在
+  ✓ [da_xie_zhong_shu_shu] reading.translation 存在
+  ✓ [da_xie_zhong_shu_shu] reading.paragraphs 存在
+  ✓ [da_xie_zhong_shu_shu] 原文非空
+  ✓ [da_xie_zhong_shu_shu] analysis.theme 存在
+  ✓ [da_xie_zhong_shu_shu] analysis.outline 存在
+  ✓ [da_xie_zhong_shu_shu] analysis.writing 存在
+  ✓ [da_xie_zhong_shu_shu] analysis.culture 存在
+  ✓ [da_xie_zhong_shu_shu] 年级有效: 八上
+  ✓ [shi_hao_li] 包含 id
+  ✓ [shi_hao_li] 包含 title
+  ✓ [shi_hao_li] 包含 author
+  ✓ [shi_hao_li] 包含 dynasty
+  ✓ [shi_hao_li] 包含 grade
+  ✓ [shi_hao_li] 包含 reading
+  ✓ [shi_hao_li] reading.original 存在
+  ✓ [shi_hao_li] reading.translation 存在
+  ✓ [shi_hao_li] reading.paragraphs 存在
+  ✓ [shi_hao_li] 原文非空
+  ✓ [shi_hao_li] analysis.theme 存在
+  ✓ [shi_hao_li] analysis.outline 存在
+  ✓ [shi_hao_li] analysis.writing 存在
+  ✓ [shi_hao_li] analysis.culture 存在
+  ✓ [shi_hao_li] 年级有效: 八下
+  ✓ [jc-pozhenzi] 包含 id
+  ✓ [jc-pozhenzi] 包含 title
+  ✓ [jc-pozhenzi] 包含 author
+  ✓ [jc-pozhenzi] 包含 dynasty
+  ✓ [jc-pozhenzi] 包含 grade
+  ✓ [jc-pozhenzi] 包含 reading
+  ✓ [jc-pozhenzi] reading.original 存在
+  ✓ [jc-pozhenzi] reading.translation 存在
+  ✓ [jc-pozhenzi] reading.paragraphs 存在
+  ✓ [jc-pozhenzi] 原文非空
+  ✓ [jc-pozhenzi] analysis.theme 存在
+  ✓ [jc-pozhenzi] analysis.outline 存在
+  ✓ [jc-pozhenzi] analysis.writing 存在
+  ✓ [jc-pozhenzi] analysis.culture 存在
+  ✓ [jc-pozhenzi] 年级有效: 九下
+  ✓ [jc-qiuciqiyi] 包含 id
+  ✓ [jc-qiuciqiyi] 包含 title
+  ✓ [jc-qiuciqiyi] 包含 author
+  ✓ [jc-qiuciqiyi] 包含 dynasty
+  ✓ [jc-qiuciqiyi] 包含 grade
+  ✓ [jc-qiuciqiyi] 包含 reading
+  ✓ [jc-qiuciqiyi] reading.original 存在
+  ✓ [jc-qiuciqiyi] reading.translation 存在
+  ✓ [jc-qiuciqiyi] reading.paragraphs 存在
+  ✓ [jc-qiuciqiyi] 原文非空
+  ✓ [jc-qiuciqiyi] analysis.theme 存在
+  ✓ [jc-qiuciqiyi] analysis.outline 存在
+  ✓ [jc-qiuciqiyi] analysis.writing 存在
+  ✓ [jc-qiuciqiyi] analysis.culture 存在
+  ✓ [jc-qiuciqiyi] 年级有效: 七上
+  ✓ [jc-chuanjingdeyiren] 包含 id
+  ✓ [jc-chuanjingdeyiren] 包含 title
+  ✓ [jc-chuanjingdeyiren] 包含 author
+  ✓ [jc-chuanjingdeyiren] 包含 dynasty
+  ✓ [jc-chuanjingdeyiren] 包含 grade
+  ✓ [jc-chuanjingdeyiren] 包含 reading
+  ✓ [jc-chuanjingdeyiren] reading.original 存在
+  ✓ [jc-chuanjingdeyiren] reading.translation 存在
+  ✓ [jc-chuanjingdeyiren] reading.paragraphs 存在
+  ✓ [jc-chuanjingdeyiren] 原文非空
+  ✓ [jc-chuanjingdeyiren] analysis.theme 存在
+  ✓ [jc-chuanjingdeyiren] analysis.outline 存在
+  ✓ [jc-chuanjingdeyiren] analysis.writing 存在
+  ✓ [jc-chuanjingdeyiren] analysis.culture 存在
+  ✓ [jc-chuanjingdeyiren] 年级有效: 七上
+  ✓ [jc-zhuliguan] 包含 id
+  ✓ [jc-zhuliguan] 包含 title
+  ✓ [jc-zhuliguan] 包含 author
+  ✓ [jc-zhuliguan] 包含 dynasty
+  ✓ [jc-zhuliguan] 包含 grade
+  ✓ [jc-zhuliguan] 包含 reading
+  ✓ [jc-zhuliguan] reading.original 存在
+  ✓ [jc-zhuliguan] reading.translation 存在
+  ✓ [jc-zhuliguan] reading.paragraphs 存在
+  ✓ [jc-zhuliguan] 原文非空
+  ✓ [jc-zhuliguan] analysis.theme 存在
+  ✓ [jc-zhuliguan] analysis.outline 存在
+  ✓ [jc-zhuliguan] analysis.writing 存在
+  ✓ [jc-zhuliguan] analysis.culture 存在
+  ✓ [jc-zhuliguan] 年级有效: 七下
+  ✓ [jc-yueke] 包含 id
+  ✓ [jc-yueke] 包含 title
+  ✓ [jc-yueke] 包含 author
+  ✓ [jc-yueke] 包含 dynasty
+  ✓ [jc-yueke] 包含 grade
+  ✓ [jc-yueke] 包含 reading
+  ✓ [jc-yueke] reading.original 存在
+  ✓ [jc-yueke] reading.translation 存在
+  ✓ [jc-yueke] reading.paragraphs 存在
+  ✓ [jc-yueke] 原文非空
+  ✓ [jc-yueke] analysis.theme 存在
+  ✓ [jc-yueke] analysis.outline 存在
+  ✓ [jc-yueke] analysis.writing 存在
+  ✓ [jc-yueke] analysis.culture 存在
+  ✓ [jc-yueke] 年级有效: 七下
+  ✓ [jc-maowuweiqiufengsuopoge] 包含 id
+  ✓ [jc-maowuweiqiufengsuopoge] 包含 title
+  ✓ [jc-maowuweiqiufengsuopoge] 包含 author
+  ✓ [jc-maowuweiqiufengsuopoge] 包含 dynasty
+  ✓ [jc-maowuweiqiufengsuopoge] 包含 grade
+  ✓ [jc-maowuweiqiufengsuopoge] 包含 reading
+  ✓ [jc-maowuweiqiufengsuopoge] reading.original 存在
+  ✓ [jc-maowuweiqiufengsuopoge] reading.translation 存在
+  ✓ [jc-maowuweiqiufengsuopoge] reading.paragraphs 存在
+  ✓ [jc-maowuweiqiufengsuopoge] 原文非空
+  ✓ [jc-maowuweiqiufengsuopoge] analysis.theme 存在
+  ✓ [jc-maowuweiqiufengsuopoge] analysis.outline 存在
+  ✓ [jc-maowuweiqiufengsuopoge] analysis.writing 存在
+  ✓ [jc-maowuweiqiufengsuopoge] analysis.culture 存在
+  ✓ [jc-maowuweiqiufengsuopoge] 年级有效: 八下
+  ✓ [jc-jianjia] 包含 id
+  ✓ [jc-jianjia] 包含 title
+  ✓ [jc-jianjia] 包含 author
+  ✓ [jc-jianjia] 包含 dynasty
+  ✓ [jc-jianjia] 包含 grade
+  ✓ [jc-jianjia] 包含 reading
+  ✓ [jc-jianjia] reading.original 存在
+  ✓ [jc-jianjia] reading.translation 存在
+  ✓ [jc-jianjia] reading.paragraphs 存在
+  ✓ [jc-jianjia] 原文非空
+  ✓ [jc-jianjia] analysis.theme 存在
+  ✓ [jc-jianjia] analysis.outline 存在
+  ✓ [jc-jianjia] analysis.writing 存在
+  ✓ [jc-jianjia] analysis.culture 存在
+  ✓ [jc-jianjia] 年级有效: 八下
+  ✓ [jc-suiyoujiayao] 包含 id
+  ✓ [jc-suiyoujiayao] 包含 title
+  ✓ [jc-suiyoujiayao] 包含 author
+  ✓ [jc-suiyoujiayao] 包含 dynasty
+  ✓ [jc-suiyoujiayao] 包含 grade
+  ✓ [jc-suiyoujiayao] 包含 reading
+  ✓ [jc-suiyoujiayao] reading.original 存在
+  ✓ [jc-suiyoujiayao] reading.translation 存在
+  ✓ [jc-suiyoujiayao] reading.paragraphs 存在
+  ✓ [jc-suiyoujiayao] 原文非空
+  ✓ [jc-suiyoujiayao] analysis.theme 存在
+  ✓ [jc-suiyoujiayao] analysis.outline 存在
+  ✓ [jc-suiyoujiayao] analysis.writing 存在
+  ✓ [jc-suiyoujiayao] analysis.culture 存在
+  ✓ [jc-suiyoujiayao] 年级有效: 八下
+  ✓ [jc-xingjunjirisichanganguyuan] 包含 id
+  ✓ [jc-xingjunjirisichanganguyuan] 包含 title
+  ✓ [jc-xingjunjirisichanganguyuan] 包含 author
+  ✓ [jc-xingjunjirisichanganguyuan] 包含 dynasty
+  ✓ [jc-xingjunjirisichanganguyuan] 包含 grade
+  ✓ [jc-xingjunjirisichanganguyuan] 包含 reading
+  ✓ [jc-xingjunjirisichanganguyuan] reading.original 存在
+  ✓ [jc-xingjunjirisichanganguyuan] reading.translation 存在
+  ✓ [jc-xingjunjirisichanganguyuan] reading.paragraphs 存在
+  ✓ [jc-xingjunjirisichanganguyuan] 原文非空
+  ✓ [jc-xingjunjirisichanganguyuan] analysis.theme 存在
+  ✓ [jc-xingjunjirisichanganguyuan] analysis.outline 存在
+  ✓ [jc-xingjunjirisichanganguyuan] analysis.writing 存在
+  ✓ [jc-xingjunjirisichanganguyuan] analysis.culture 存在
+  ✓ [jc-xingjunjirisichanganguyuan] 年级有效: 七上
+  ✓ [xinglunan-qiyi] 包含 id
+  ✓ [xinglunan-qiyi] 包含 title
+  ✓ [xinglunan-qiyi] 包含 author
+  ✓ [xinglunan-qiyi] 包含 dynasty
+  ✓ [xinglunan-qiyi] 包含 grade
+  ✓ [xinglunan-qiyi] 包含 reading
+  ✓ [xinglunan-qiyi] reading.original 存在
+  ✓ [xinglunan-qiyi] reading.translation 存在
+  ✓ [xinglunan-qiyi] reading.paragraphs 存在
+  ✓ [xinglunan-qiyi] 原文非空
+  ✓ [xinglunan-qiyi] analysis.theme 存在
+  ✓ [xinglunan-qiyi] analysis.outline 存在
+  ✓ [xinglunan-qiyi] analysis.writing 存在
+  ✓ [xinglunan-qiyi] analysis.culture 存在
+  ✓ [xinglunan-qiyi] 年级有效: 九上
+  ✓ [jc-jichengtiansiyeyou] 包含 id
+  ✓ [jc-jichengtiansiyeyou] 包含 title
+  ✓ [jc-jichengtiansiyeyou] 包含 author
+  ✓ [jc-jichengtiansiyeyou] 包含 dynasty
+  ✓ [jc-jichengtiansiyeyou] 包含 grade
+  ✓ [jc-jichengtiansiyeyou] 包含 reading
+  ✓ [jc-jichengtiansiyeyou] reading.original 存在
+  ✓ [jc-jichengtiansiyeyou] reading.translation 存在
+  ✓ [jc-jichengtiansiyeyou] reading.paragraphs 存在
+  ✓ [jc-jichengtiansiyeyou] 原文非空
+  ✓ [jc-jichengtiansiyeyou] analysis.theme 存在
+  ✓ [jc-jichengtiansiyeyou] analysis.outline 存在
+  ✓ [jc-jichengtiansiyeyou] analysis.writing 存在
+  ✓ [jc-jichengtiansiyeyou] analysis.culture 存在
+  ✓ [jc-jichengtiansiyeyou] 年级有效: 八上
+  ✓ [shiciwushou-yinjiu] 包含 id
+  ✓ [shiciwushou-yinjiu] 包含 title
+  ✓ [shiciwushou-yinjiu] 包含 author
+  ✓ [shiciwushou-yinjiu] 包含 dynasty
+  ✓ [shiciwushou-yinjiu] 包含 grade
+  ✓ [shiciwushou-yinjiu] 包含 reading
+  ✓ [shiciwushou-yinjiu] reading.original 存在
+  ✓ [shiciwushou-yinjiu] reading.translation 存在
+  ✓ [shiciwushou-yinjiu] reading.paragraphs 存在
+  ✓ [shiciwushou-yinjiu] 原文非空
+  ✓ [shiciwushou-yinjiu] analysis.theme 存在
+  ✓ [shiciwushou-yinjiu] analysis.outline 存在
+  ✓ [shiciwushou-yinjiu] analysis.writing 存在
+  ✓ [shiciwushou-yinjiu] analysis.culture 存在
+  ✓ [shiciwushou-yinjiu] 年级有效: 八上
+  ✓ [jc-jiezishu] 包含 id
+  ✓ [jc-jiezishu] 包含 title
+  ✓ [jc-jiezishu] 包含 author
+  ✓ [jc-jiezishu] 包含 dynasty
+  ✓ [jc-jiezishu] 包含 grade
+  ✓ [jc-jiezishu] 包含 reading
+  ✓ [jc-jiezishu] reading.original 存在
+  ✓ [jc-jiezishu] reading.translation 存在
+  ✓ [jc-jiezishu] reading.paragraphs 存在
+  ✓ [jc-jiezishu] 原文非空
+  ✓ [jc-jiezishu] analysis.theme 存在
+  ✓ [jc-jiezishu] analysis.outline 存在
+  ✓ [jc-jiezishu] analysis.writing 存在
+  ✓ [jc-jiezishu] analysis.culture 存在
+  ✓ [jc-jiezishu] 年级有效: 七上
+  ✓ [jc-jiasheng] 包含 id
+  ✓ [jc-jiasheng] 包含 title
+  ✓ [jc-jiasheng] 包含 author
+  ✓ [jc-jiasheng] 包含 dynasty
+  ✓ [jc-jiasheng] 包含 grade
+  ✓ [jc-jiasheng] 包含 reading
+  ✓ [jc-jiasheng] reading.original 存在
+  ✓ [jc-jiasheng] reading.translation 存在
+  ✓ [jc-jiasheng] reading.paragraphs 存在
+  ✓ [jc-jiasheng] 原文非空
+  ✓ [jc-jiasheng] analysis.theme 存在
+  ✓ [jc-jiasheng] analysis.outline 存在
+  ✓ [jc-jiasheng] analysis.writing 存在
+  ✓ [jc-jiasheng] analysis.culture 存在
+  ✓ [jc-jiasheng] 年级有效: 七下
+  ✓ [jc-zengcongdi] 包含 id
+  ✓ [jc-zengcongdi] 包含 title
+  ✓ [jc-zengcongdi] 包含 author
+  ✓ [jc-zengcongdi] 包含 dynasty
+  ✓ [jc-zengcongdi] 包含 grade
+  ✓ [jc-zengcongdi] 包含 reading
+  ✓ [jc-zengcongdi] reading.original 存在
+  ✓ [jc-zengcongdi] reading.translation 存在
+  ✓ [jc-zengcongdi] reading.paragraphs 存在
+  ✓ [jc-zengcongdi] 原文非空
+  ✓ [jc-zengcongdi] analysis.theme 存在
+  ✓ [jc-zengcongdi] analysis.outline 存在
+  ✓ [jc-zengcongdi] analysis.writing 存在
+  ✓ [jc-zengcongdi] analysis.culture 存在
+  ✓ [jc-zengcongdi] 年级有效: 八上
+  ✓ [article-chibi-106] 包含 id
+  ✓ [article-chibi-106] 包含 title
+  ✓ [article-chibi-106] 包含 author
+  ✓ [article-chibi-106] 包含 dynasty
+  ✓ [article-chibi-106] 包含 grade
+  ✓ [article-chibi-106] 包含 reading
+  ✓ [article-chibi-106] reading.original 存在
+  ✓ [article-chibi-106] reading.translation 存在
+  ✓ [article-chibi-106] reading.paragraphs 存在
+  ✓ [article-chibi-106] 原文非空
+  ✓ [article-chibi-106] analysis.theme 存在
+  ✓ [article-chibi-106] analysis.outline 存在
+  ✓ [article-chibi-106] analysis.writing 存在
+  ✓ [article-chibi-106] analysis.culture 存在
+  ✓ [article-chibi-106] 年级有效: 八上
+  ✓ [jc-guosongyuanchenchuiqigongdian] 包含 id
+  ✓ [jc-guosongyuanchenchuiqigongdian] 包含 title
+  ✓ [jc-guosongyuanchenchuiqigongdian] 包含 author
+  ✓ [jc-guosongyuanchenchuiqigongdian] 包含 dynasty
+  ✓ [jc-guosongyuanchenchuiqigongdian] 包含 grade
+  ✓ [jc-guosongyuanchenchuiqigongdian] 包含 reading
+  ✓ [jc-guosongyuanchenchuiqigongdian] reading.original 存在
+  ✓ [jc-guosongyuanchenchuiqigongdian] reading.translation 存在
+  ✓ [jc-guosongyuanchenchuiqigongdian] reading.paragraphs 存在
+  ✓ [jc-guosongyuanchenchuiqigongdian] 原文非空
+  ✓ [jc-guosongyuanchenchuiqigongdian] analysis.theme 存在
+  ✓ [jc-guosongyuanchenchuiqigongdian] analysis.outline 存在
+  ✓ [jc-guosongyuanchenchuiqigongdian] analysis.writing 存在
+  ✓ [jc-guosongyuanchenchuiqigongdian] analysis.culture 存在
+  ✓ [jc-guosongyuanchenchuiqigongdian] 年级有效: 七下
+  ✓ [guolingdingyang-wentianxiang] 包含 id
+  ✓ [guolingdingyang-wentianxiang] 包含 title
+  ✓ [guolingdingyang-wentianxiang] 包含 author
+  ✓ [guolingdingyang-wentianxiang] 包含 dynasty
+  ✓ [guolingdingyang-wentianxiang] 包含 grade
+  ✓ [guolingdingyang-wentianxiang] 包含 reading
+  ✓ [guolingdingyang-wentianxiang] reading.original 存在
+  ✓ [guolingdingyang-wentianxiang] reading.translation 存在
+  ✓ [guolingdingyang-wentianxiang] reading.paragraphs 存在
+  ✓ [guolingdingyang-wentianxiang] 原文非空
+  ✓ [guolingdingyang-wentianxiang] analysis.theme 存在
+  ✓ [guolingdingyang-wentianxiang] analysis.outline 存在
+  ✓ [guolingdingyang-wentianxiang] analysis.writing 存在
+  ✓ [guolingdingyang-wentianxiang] analysis.culture 存在
+  ✓ [guolingdingyang-wentianxiang] 年级有效: 九上
+  ✓ [jc-songdongyangmashengxu] 包含 id
+  ✓ [jc-songdongyangmashengxu] 包含 title
+  ✓ [jc-songdongyangmashengxu] 包含 author
+  ✓ [jc-songdongyangmashengxu] 包含 dynasty
+  ✓ [jc-songdongyangmashengxu] 包含 grade
+  ✓ [jc-songdongyangmashengxu] 包含 reading
+  ✓ [jc-songdongyangmashengxu] reading.original 存在
+  ✓ [jc-songdongyangmashengxu] reading.translation 存在
+  ✓ [jc-songdongyangmashengxu] reading.paragraphs 存在
+  ✓ [jc-songdongyangmashengxu] 原文非空
+  ✓ [jc-songdongyangmashengxu] analysis.theme 存在
+  ✓ [jc-songdongyangmashengxu] analysis.outline 存在
+  ✓ [jc-songdongyangmashengxu] analysis.writing 存在
+  ✓ [jc-songdongyangmashengxu] analysis.culture 存在
+  ✓ [jc-songdongyangmashengxu] 年级有效: 九下
+  ✓ [jc-syr] 包含 id
+  ✓ [jc-syr] 包含 title
+  ✓ [jc-syr] 包含 author
+  ✓ [jc-syr] 包含 dynasty
+  ✓ [jc-syr] 包含 grade
+  ✓ [jc-syr] 包含 reading
+  ✓ [jc-syr] reading.original 存在
+  ✓ [jc-syr] reading.translation 存在
+  ✓ [jc-syr] reading.paragraphs 存在
+  ✓ [jc-syr] 原文非空
+  ✓ [jc-syr] analysis.theme 存在
+  ✓ [jc-syr] analysis.outline 存在
+  ✓ [jc-syr] analysis.writing 存在
+  ✓ [jc-syr] analysis.culture 存在
+  ✓ [jc-syr] 年级有效: 八下
+  ✓ [songdushaofuzhirenshuzhou-150] 包含 id
+  ✓ [songdushaofuzhirenshuzhou-150] 包含 title
+  ✓ [songdushaofuzhirenshuzhou-150] 包含 author
+  ✓ [songdushaofuzhirenshuzhou-150] 包含 dynasty
+  ✓ [songdushaofuzhirenshuzhou-150] 包含 grade
+  ✓ [songdushaofuzhirenshuzhou-150] 包含 reading
+  ✓ [songdushaofuzhirenshuzhou-150] reading.original 存在
+  ✓ [songdushaofuzhirenshuzhou-150] reading.translation 存在
+  ✓ [songdushaofuzhirenshuzhou-150] reading.paragraphs 存在
+  ✓ [songdushaofuzhirenshuzhou-150] 原文非空
+  ✓ [songdushaofuzhirenshuzhou-150] analysis.theme 存在
+  ✓ [songdushaofuzhirenshuzhou-150] analysis.outline 存在
+  ✓ [songdushaofuzhirenshuzhou-150] analysis.writing 存在
+  ✓ [songdushaofuzhirenshuzhou-150] analysis.culture 存在
+  ✓ [songdushaofuzhirenshuzhou-150] 年级有效: 八下
+  ✓ [feng-ru-jing-shi] 包含 id
+  ✓ [feng-ru-jing-shi] 包含 title
+  ✓ [feng-ru-jing-shi] 包含 author
+  ✓ [feng-ru-jing-shi] 包含 dynasty
+  ✓ [feng-ru-jing-shi] 包含 grade
+  ✓ [feng-ru-jing-shi] 包含 reading
+  ✓ [feng-ru-jing-shi] reading.original 存在
+  ✓ [feng-ru-jing-shi] reading.translation 存在
+  ✓ [feng-ru-jing-shi] reading.paragraphs 存在
+  ✓ [feng-ru-jing-shi] 原文非空
+  ✓ [feng-ru-jing-shi] analysis.theme 存在
+  ✓ [feng-ru-jing-shi] analysis.outline 存在
+  ✓ [feng-ru-jing-shi] analysis.writing 存在
+  ✓ [feng-ru-jing-shi] analysis.culture 存在
+  ✓ [feng-ru-jing-shi] 年级有效: 七下
+  ✓ [jc-zoujifengqiwangnajian] 包含 id
+  ✓ [jc-zoujifengqiwangnajian] 包含 title
+  ✓ [jc-zoujifengqiwangnajian] 包含 author
+  ✓ [jc-zoujifengqiwangnajian] 包含 dynasty
+  ✓ [jc-zoujifengqiwangnajian] 包含 grade
+  ✓ [jc-zoujifengqiwangnajian] 包含 reading
+  ✓ [jc-zoujifengqiwangnajian] reading.original 存在
+  ✓ [jc-zoujifengqiwangnajian] reading.translation 存在
+  ✓ [jc-zoujifengqiwangnajian] reading.paragraphs 存在
+  ✓ [jc-zoujifengqiwangnajian] 原文非空
+  ✓ [jc-zoujifengqiwangnajian] analysis.theme 存在
+  ✓ [jc-zoujifengqiwangnajian] analysis.outline 存在
+  ✓ [jc-zoujifengqiwangnajian] analysis.writing 存在
+  ✓ [jc-zoujifengqiwangnajian] analysis.culture 存在
+  ✓ [jc-zoujifengqiwangnajian] 年级有效: 九上
+  ✓ [jc-chouletianyangzhouchufengxishangjianzeng] 包含 id
+  ✓ [jc-chouletianyangzhouchufengxishangjianzeng] 包含 title
+  ✓ [jc-chouletianyangzhouchufengxishangjianzeng] 包含 author
+  ✓ [jc-chouletianyangzhouchufengxishangjianzeng] 包含 dynasty
+  ✓ [jc-chouletianyangzhouchufengxishangjianzeng] 包含 grade
+  ✓ [jc-chouletianyangzhouchufengxishangjianzeng] 包含 reading
+  ✓ [jc-chouletianyangzhouchufengxishangjianzeng] reading.original 存在
+  ✓ [jc-chouletianyangzhouchufengxishangjianzeng] reading.translation 存在
+  ✓ [jc-chouletianyangzhouchufengxishangjianzeng] reading.paragraphs 存在
+  ✓ [jc-chouletianyangzhouchufengxishangjianzeng] 原文非空
+  ✓ [jc-chouletianyangzhouchufengxishangjianzeng] analysis.theme 存在
+  ✓ [jc-chouletianyangzhouchufengxishangjianzeng] analysis.outline 存在
+  ✓ [jc-chouletianyangzhouchufengxishangjianzeng] analysis.writing 存在
+  ✓ [jc-chouletianyangzhouchufengxishangjianzeng] analysis.culture 存在
+  ✓ [jc-chouletianyangzhouchufengxishangjianzeng] 年级有效: 九上
+  ✓ [jc-zuiwengtingji] 包含 id
+  ✓ [jc-zuiwengtingji] 包含 title
+  ✓ [jc-zuiwengtingji] 包含 author
+  ✓ [jc-zuiwengtingji] 包含 dynasty
+  ✓ [jc-zuiwengtingji] 包含 grade
+  ✓ [jc-zuiwengtingji] 包含 reading
+  ✓ [jc-zuiwengtingji] reading.original 存在
+  ✓ [jc-zuiwengtingji] reading.translation 存在
+  ✓ [jc-zuiwengtingji] reading.paragraphs 存在
+  ✓ [jc-zuiwengtingji] 原文非空
+  ✓ [jc-zuiwengtingji] analysis.theme 存在
+  ✓ [jc-zuiwengtingji] analysis.outline 存在
+  ✓ [jc-zuiwengtingji] analysis.writing 存在
+  ✓ [jc-zuiwengtingji] analysis.culture 存在
+  ✓ [jc-zuiwengtingji] 年级有效: 九上
+  ✓ [jc-caisangzi] 包含 id
+  ✓ [jc-caisangzi] 包含 title
+  ✓ [jc-caisangzi] 包含 author
+  ✓ [jc-caisangzi] 包含 dynasty
+  ✓ [jc-caisangzi] 包含 grade
+  ✓ [jc-caisangzi] 包含 reading
+  ✓ [jc-caisangzi] reading.original 存在
+  ✓ [jc-caisangzi] reading.translation 存在
+  ✓ [jc-caisangzi] reading.paragraphs 存在
+  ✓ [jc-caisangzi] 原文非空
+  ✓ [jc-caisangzi] analysis.theme 存在
+  ✓ [jc-caisangzi] analysis.outline 存在
+  ✓ [jc-caisangzi] analysis.writing 存在
+  ✓ [jc-caisangzi] analysis.culture 存在
+  ✓ [jc-caisangzi] 年级有效: 八上
+  ✓ [jc-qiantanghuchunxing] 包含 id
+  ✓ [jc-qiantanghuchunxing] 包含 title
+  ✓ [jc-qiantanghuchunxing] 包含 author
+  ✓ [jc-qiantanghuchunxing] 包含 dynasty
+  ✓ [jc-qiantanghuchunxing] 包含 grade
+  ✓ [jc-qiantanghuchunxing] 包含 reading
+  ✓ [jc-qiantanghuchunxing] reading.original 存在
+  ✓ [jc-qiantanghuchunxing] reading.translation 存在
+  ✓ [jc-qiantanghuchunxing] reading.paragraphs 存在
+  ✓ [jc-qiantanghuchunxing] 原文非空
+  ✓ [jc-qiantanghuchunxing] analysis.theme 存在
+  ✓ [jc-qiantanghuchunxing] analysis.outline 存在
+  ✓ [jc-qiantanghuchunxing] analysis.writing 存在
+  ✓ [jc-qiantanghuchunxing] analysis.culture 存在
+  ✓ [jc-qiantanghuchunxing] 年级有效: 八上
+  ✓ [jc-changshaguojiayizhai] 包含 id
+  ✓ [jc-changshaguojiayizhai] 包含 title
+  ✓ [jc-changshaguojiayizhai] 包含 author
+  ✓ [jc-changshaguojiayizhai] 包含 dynasty
+  ✓ [jc-changshaguojiayizhai] 包含 grade
+  ✓ [jc-changshaguojiayizhai] 包含 reading
+  ✓ [jc-changshaguojiayizhai] reading.original 存在
+  ✓ [jc-changshaguojiayizhai] reading.translation 存在
+  ✓ [jc-changshaguojiayizhai] reading.paragraphs 存在
+  ✓ [jc-changshaguojiayizhai] 原文非空
+  ✓ [jc-changshaguojiayizhai] analysis.theme 存在
+  ✓ [jc-changshaguojiayizhai] analysis.outline 存在
+  ✓ [jc-changshaguojiayizhai] analysis.writing 存在
+  ✓ [jc-changshaguojiayizhai] analysis.culture 存在
+  ✓ [jc-changshaguojiayizhai] 年级有效: 九上
+  ✓ [jc-wenwangchanglingzuoqian] 包含 id
+  ✓ [jc-wenwangchanglingzuoqian] 包含 title
+  ✓ [jc-wenwangchanglingzuoqian] 包含 author
+  ✓ [jc-wenwangchanglingzuoqian] 包含 dynasty
+  ✓ [jc-wenwangchanglingzuoqian] 包含 grade
+  ✓ [jc-wenwangchanglingzuoqian] 包含 reading
+  ✓ [jc-wenwangchanglingzuoqian] reading.original 存在
+  ✓ [jc-wenwangchanglingzuoqian] reading.translation 存在
+  ✓ [jc-wenwangchanglingzuoqian] reading.paragraphs 存在
+  ✓ [jc-wenwangchanglingzuoqian] 原文非空
+  ✓ [jc-wenwangchanglingzuoqian] analysis.theme 存在
+  ✓ [jc-wenwangchanglingzuoqian] analysis.outline 存在
+  ✓ [jc-wenwangchanglingzuoqian] analysis.writing 存在
+  ✓ [jc-wenwangchanglingzuoqian] analysis.culture 存在
+  ✓ [jc-wenwangchanglingzuoqian] 年级有效: 七上
+  ✓ [jc-chentaiqiuyuyouqixing] 包含 id
+  ✓ [jc-chentaiqiuyuyouqixing] 包含 title
+  ✓ [jc-chentaiqiuyuyouqixing] 包含 author
+  ✓ [jc-chentaiqiuyuyouqixing] 包含 dynasty
+  ✓ [jc-chentaiqiuyuyouqixing] 包含 grade
+  ✓ [jc-chentaiqiuyuyouqixing] 包含 reading
+  ✓ [jc-chentaiqiuyuyouqixing] reading.original 存在
+  ✓ [jc-chentaiqiuyuyouqixing] reading.translation 存在
+  ✓ [jc-chentaiqiuyuyouqixing] reading.paragraphs 存在
+  ✓ [jc-chentaiqiuyuyouqixing] 原文非空
+  ✓ [jc-chentaiqiuyuyouqixing] analysis.theme 存在
+  ✓ [jc-chentaiqiuyuyouqixing] analysis.outline 存在
+  ✓ [jc-chentaiqiuyuyouqixing] analysis.writing 存在
+  ✓ [jc-chentaiqiuyuyouqixing] analysis.culture 存在
+  ✓ [jc-chentaiqiuyuyouqixing] 年级有效: 七上
+  ✓ [jc-chensheshejia] 包含 id
+  ✓ [jc-chensheshejia] 包含 title
+  ✓ [jc-chensheshejia] 包含 author
+  ✓ [jc-chensheshejia] 包含 dynasty
+  ✓ [jc-chensheshejia] 包含 grade
+  ✓ [jc-chensheshejia] 包含 reading
+  ✓ [jc-chensheshejia] reading.original 存在
+  ✓ [jc-chensheshejia] reading.translation 存在
+  ✓ [jc-chensheshejia] reading.paragraphs 存在
+  ✓ [jc-chensheshejia] 原文非空
+  ✓ [jc-chensheshejia] analysis.theme 存在
+  ✓ [jc-chensheshejia] analysis.outline 存在
+  ✓ [jc-chensheshejia] analysis.writing 存在
+  ✓ [jc-chensheshejia] analysis.culture 存在
+  ✓ [jc-chensheshejia] 年级有效: 九上
+  ✓ [jc-yanmentaishouxing] 包含 id
+  ✓ [jc-yanmentaishouxing] 包含 title
+  ✓ [jc-yanmentaishouxing] 包含 author
+  ✓ [jc-yanmentaishouxing] 包含 dynasty
+  ✓ [jc-yanmentaishouxing] 包含 grade
+  ✓ [jc-yanmentaishouxing] 包含 reading
+  ✓ [jc-yanmentaishouxing] reading.original 存在
+  ✓ [jc-yanmentaishouxing] reading.translation 存在
+  ✓ [jc-yanmentaishouxing] reading.paragraphs 存在
+  ✓ [jc-yanmentaishouxing] 原文非空
+  ✓ [jc-yanmentaishouxing] analysis.theme 存在
+  ✓ [jc-yanmentaishouxing] analysis.outline 存在
+  ✓ [jc-yanmentaishouxing] analysis.writing 存在
+  ✓ [jc-yanmentaishouxing] analysis.culture 存在
+  ✓ [jc-yanmentaishouxing] 年级有效: 八上
+  ✓ [jc-tpss] 包含 id
+  ✓ [jc-tpss] 包含 title
+  ✓ [jc-tpss] 包含 author
+  ✓ [jc-tpss] 包含 dynasty
+  ✓ [jc-tpss] 包含 grade
+  ✓ [jc-tpss] 包含 reading
+  ✓ [jc-tpss] reading.original 存在
+  ✓ [jc-tpss] reading.translation 存在
+  ✓ [jc-tpss] reading.paragraphs 存在
+  ✓ [jc-tpss] 原文非空
+  ✓ [jc-tpss] analysis.theme 存在
+  ✓ [jc-tpss] analysis.outline 存在
+  ✓ [jc-tpss] analysis.writing 存在
+  ✓ [jc-tpss] analysis.culture 存在
+  ✓ [jc-tpss] 年级有效: 八下
+  ✓ [jc-mashuo] 包含 id
+  ✓ [jc-mashuo] 包含 title
+  ✓ [jc-mashuo] 包含 author
+  ✓ [jc-mashuo] 包含 dynasty
+  ✓ [jc-mashuo] 包含 grade
+  ✓ [jc-mashuo] 包含 reading
+  ✓ [jc-mashuo] reading.original 存在
+  ✓ [jc-mashuo] reading.translation 存在
+  ✓ [jc-mashuo] reading.paragraphs 存在
+  ✓ [jc-mashuo] 原文非空
+  ✓ [jc-mashuo] analysis.theme 存在
+  ✓ [jc-mashuo] analysis.outline 存在
+  ✓ [jc-mashuo] analysis.writing 存在
+  ✓ [jc-mashuo] analysis.culture 存在
+  ✓ [jc-mashuo] 年级有效: 八下
+  ✓ [jc-ywsyx] 包含 id
+  ✓ [jc-ywsyx] 包含 title
+  ✓ [jc-ywsyx] 包含 author
+  ✓ [jc-ywsyx] 包含 dynasty
+  ✓ [jc-ywsyx] 包含 grade
+  ✓ [jc-ywsyx] 包含 reading
+  ✓ [jc-ywsyx] reading.original 存在
+  ✓ [jc-ywsyx] reading.translation 存在
+  ✓ [jc-ywsyx] reading.paragraphs 存在
+  ✓ [jc-ywsyx] 原文非空
+  ✓ [jc-ywsyx] analysis.theme 存在
+  ✓ [jc-ywsyx] analysis.outline 存在
+  ✓ [jc-ywsyx] analysis.writing 存在
+  ✓ [jc-ywsyx] analysis.culture 存在
+  ✓ [jc-ywsyx] 年级有效: 九下
+  ✓ [jc-huanghelou] 包含 id
+  ✓ [jc-huanghelou] 包含 title
+  ✓ [jc-huanghelou] 包含 author
+  ✓ [jc-huanghelou] 包含 dynasty
+  ✓ [jc-huanghelou] 包含 grade
+  ✓ [jc-huanghelou] 包含 reading
+  ✓ [jc-huanghelou] reading.original 存在
+  ✓ [jc-huanghelou] reading.translation 存在
+  ✓ [jc-huanghelou] reading.paragraphs 存在
+  ✓ [jc-huanghelou] 原文非空
+  ✓ [jc-huanghelou] analysis.theme 存在
+  ✓ [jc-huanghelou] analysis.outline 存在
+  ✓ [jc-huanghelou] analysis.writing 存在
+  ✓ [jc-huanghelou] analysis.culture 存在
+  ✓ [jc-huanghelou] 年级有效: 八上
+  ✓ [jc-guisuishou] 包含 id
+  ✓ [jc-guisuishou] 包含 title
+  ✓ [jc-guisuishou] 包含 author
+  ✓ [jc-guisuishou] 包含 dynasty
+  ✓ [jc-guisuishou] 包含 grade
+  ✓ [jc-guisuishou] 包含 reading
+  ✓ [jc-guisuishou] reading.original 存在
+  ✓ [jc-guisuishou] reading.translation 存在
+  ✓ [jc-guisuishou] reading.paragraphs 存在
+  ✓ [jc-guisuishou] 原文非空
+  ✓ [jc-guisuishou] analysis.theme 存在
+  ✓ [jc-guisuishou] analysis.outline 存在
+  ✓ [jc-guisuishou] analysis.writing 存在
+  ✓ [jc-guisuishou] analysis.culture 存在
+  ✓ [jc-guisuishou] 年级有效: 八上
+  ✓ 段落总数 555
+  ✓ 无空段落原文
+  ⚠ 无注释段落(样本): 5 — jc-zuoqianzhilanguanshizhizunxiang:欲为圣明除弊事，肯将衰朽惜残年, jc-zuoqianzhilanguanshizhizunxiang:云横秦岭家何在？雪拥蓝关马不前, jc-zuoqianzhilanguanshizhizunxiang:知汝远来应有意，好收吾骨瘴江边, jc-guanju:参差荇菜，左右采之。窈窕淑女，, jc-guanju:参差荇菜，左右芼之。窈窕淑女，
+
+=== 2. 字词完整性 ===
+  ✓ 词条总数 2144
+  ✓ 无空字词
+  ✓ 义项总数 2495
+  ✓ 无空义项
+  ⚠ 有拼音词条: 0/2144 — (0%)
+  ⚠ 有例句义项: 706/2495 — (28%)
+  义项分类分布:
+    课文注释: 1502
+    重点实词: 380
+    实词: 251
+    文言虚词: 120
+    一词多义: 90
+    虚词: 54
+    词类活用: 43
+    通假字: 27
+    古今异义: 25
+    炼字: 2
+    重点虚词: 1
+  ✓ 无孤立词条引用
+
+=== 3. 题目完整性 ===
+  ✓ 题目总数 2022
+  ✓ 无空题干
+  ✓ 无空答案
+  ✓ 选择题 108 / 主观题 1914
+  ✓ 截断检测: 0 个可疑
+  题型分布:
+    short: 1248
+    blank: 169
+    translate: 151
+    choice: 146
+    explain: 119
+    discuss: 66
+    understand: 60
+    gloss: 30
+    open: 17
+    punctuate: 15
+    punct: 1
+  ⚠ 无关联题目: 0
+  ✓ 无孤立题目引用
+
+=== 4. 综合题集 ===
+  ✓ 题集数量 16
+  ✓ 题集 collection:practice:礼记二则 有标题
+  ✓ 题集 《礼记》二则 有题目 (5)
+  ✓ 题集 collection:practice:古代诗歌四首 有标题
+  ✓ 题集 古代诗歌四首 有题目 (1)
+  ✓ 题集 collection:practice:世说新语二则 有标题
+  ✓ 题集 《世说新语》二则 有题目 (6)
+  ✓ 题集 collection:practice:孟子三章 有标题
+  ✓ 题集 《孟子》三章 有题目 (1)
+  ✓ 题集 collection:practice:庄子二则 有标题
+  ✓ 题集 《庄子》二则 有题目 (6)
+  ✓ 题集 collection:practice:诗词五首 有标题
+  ✓ 题集 诗词五首 有题目 (4)
+  ✓ 题集 collection:practice:古代诗歌五首 有标题
+  ✓ 题集 古代诗歌五首 有题目 (2)
+  ✓ 题集 collection:practice:唐诗三首 有标题
+  ⚠ 题集 唐诗三首 已空(题目并入单篇)
+  ✓ 题集 collection:practice:诗经二首 有标题
+  ⚠ 题集 《诗经》二首 已空(题目并入单篇)
+  ✓ 题集 collection:practice:唐诗五首 有标题
+  ✓ 题集 唐诗五首 有题目 (1)
+  ✓ 题集 collection:practice:短文两篇 有标题
+  ⚠ 题集 短文两篇 已空(题目并入单篇)
+  ✓ 题集 collection:practice:短文二篇 有标题
+  ✓ 题集 短文二篇 有题目 (6)
+  ✓ 题集 collection:practice:词四首 有标题
+  ✓ 题集 词四首 有题目 (2)
+  ✓ 题集 collection:practice:诗词三首 有标题
+  ✓ 题集 诗词三首 有题目 (3)
+  ✓ 题集 collection:practice:诗词曲五首 有标题
+  ✓ 题集 诗词曲五首 有题目 (1)
+  ✓ 题集 collection:extra:游石门潭记 有标题
+  ✓ 题集 游石门潭记（课外） 有题目 (2)
+  ✓ 无孤立题集引用
+
+=== 5. 文章-题目交叉引用 ===
+  ⚠ 无题目文章: 0/126
+
+=== 6. 数据一致性 ===
+  ✓ 文章 ID 唯一
+  年级分布:
+    七上: 19 篇
+    七下: 19 篇
+    九上: 23 篇
+    九下: 17 篇
+    八上: 27 篇
+    八下: 21 篇
+
+=== 7. 练习题数据 ===
+  ✓ 练习组总数 141
+  ✓ 练习总题数 740
+
+=== 8. 数据质量增强检查 ===
+  ✓ 背诵句完整性 350/350
+  ✓ 无英文残留
+  ✓ 无水印残留
+  ⚠ 段落编号覆盖: 全带号 39 篇 / 无号 82 篇 / 部分 5 篇 — 仅观察; 序号不在前端渲染
+  ✓ 文章 questionIds 无重复
+  ✓ 题集 questionIds 无重复
+  ✓ 原文结尾无截断
+
+=== 总结 ===
+  错误: 0
+  警告: 9
+  ✅ 数据校验通过!

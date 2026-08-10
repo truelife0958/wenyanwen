@@ -1,0 +1,3 @@
+{"file": ".trellis/tasks/08-10-moxie-app-rework/prd.md", "reason": "验收标准基准: 页覆盖/篇目数/题型/配对率"}
+{"file": ".trellis/tasks/08-10-moxie-app-rework/design.md", "reason": "数据契约: moxie.json schema/题型字段/配对规则"}
+{"file": ".trellis/spec/frontend/quality-guidelines.md", "reason": "质量门: npm run check 全绿 + vision 验收"}

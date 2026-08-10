@@ -1,0 +1,5 @@
+{"file": ".trellis/tasks/08-10-moxie-app-rework/design.md", "reason": "抽取管道/数据 schema/前端改造技术设计, 子代理实现依据"}
+{"file": ".trellis/tasks/08-10-moxie-app-rework/implement.md", "reason": "执行顺序/审查门/验证命令"}
+{"file": ".trellis/spec/frontend/component-guidelines.md", "reason": "默写模块 React 组件规范"}
+{"file": ".trellis/spec/frontend/type-safety.md", "reason": "数据 schema 与 TS 类型安全"}
+{"file": ".trellis/spec/frontend/state-management.md", "reason": "进度/错题 localStorage 状态管理约定"}

@@ -1,0 +1,31 @@
+{
+  "name": "wuhan-wenyanwen-app",
+  "private": true,
+  "version": "2.0.0",
+  "description": "武汉中考 · 初中语文文言文学习练习 App (React 重构版)",
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "data:build": "node scripts/build-runtime-data.mjs",
+    "typecheck": "tsc --noEmit",
+    "build": "npm run data:build && vite build",
+    "preview": "vite preview",
+    "validate": "node scripts/validate-data.mjs",
+    "check": "npm run data:build && npm run validate && npm run typecheck && vite build && node scripts/ssr-check.mjs",
+    "test:flow": "node scripts/full-flow-test.mjs",
+    "vision": "node scripts/vision/vision.mjs"
+  },
+  "dependencies": {
+    "react": "^19.2.8",
+    "react-dom": "^19.2.8",
+    "react-router-dom": "^7.18.2"
+  },
+  "devDependencies": {
+    "@types/react": "^19.2.18",
+    "@types/react-dom": "^19.2.4",
+    "@vitejs/plugin-react": "^6.0.5",
+    "playwright-core": "^1.62.1",
+    "typescript": "^5.5.4",
+    "vite": "^8.2.1"
+  }
+}

@@ -1,0 +1,139 @@
+=== A1. 原文标点异常 ===
+  ✓ [A1] 异常 0 警告 0
+
+=== A2. 译文覆盖(整体 translation vs original) ===
+  ✓ [A2] 警告 0
+
+=== A3. 译文残留(译文与原文字符重叠) ===
+  ✓ [A3] 无残留
+
+=== A4. 背诵句定位 ===
+  ✓ [A4] 全部定位
+
+=== A5. 义项质量 ===
+  ⚠ [A5义项截断] word:jc-ly:不亦说乎: "不是很愉快吗？不亦……乎，常用于表示委婉的反问。说，同“悦”..."
+  ⚠ [A5义项截断] word:jc-ly:者: "代词，……的人。..."
+  ⚠ [A5义项截断] word:jc-ly:乐: "以……为快乐。..."
+  ⚠ [A5义项截断] word:jc-ly:如: "像……一样。..."
+  ⚠ [A5义项过短] word:jc-sanxia:绝: "高"
+  ⚠ [A5义项过短] word:jc-sanxia:疾: "快"
+  ⚠ [A5义项截断] word:jc-yuzhuyuansishu:者: "代词，……的人。..."
+  ⚠ [A5义项截断] word:jc-maiyouweng:忿然: "气愤的样子。然，表示“……的样子”。..."
+  ⚠ [A5义项截断] word:jc-dadaozhixingye:亲: "名词用作动词，以……为亲。..."
+  ⚠ [A5义项截断] word:jc-dadaozhixingye:子: "名词用作动词，以……为子。..."
+  ⚠ [A5义项截断] word:jc-dadaozhixingye:者: "代词，……的人..."
+  ⚠ [A5义项截断] word:jc-xiaoshitanji:乐: "形容词的意动用法，为……高兴..."
+  ⚠ [A5义项截断] word:jc-yueyanglouji:先: "名词用作状语,在……之前。..."
+  ⚠ [A5义项截断] word:jc-yueyanglouji:后: "名词用作状语,在……之后。..."
+  ⚠ [A5义项过短] word:jc-yueyanglouji:观: "看"
+  ⚠ [A5义项过短] word:jc-yueyanglouji:越: "到"
+  ⚠ [A5义项截断] word:jc-yugongyishan:曾: "用在“不”前，加强否定语气，可译为“连……都……”。..."
+  ⚠ [A5义项截断] word:jc-yugongyishan:如-何: "把……怎么样。..."
+  ⚠ [A5义项截断] word:jc-yugongyishan:何: "与“如”连用，“如……何”，译为“把……怎么样”..."
+  ⚠ [A5义项过短] word:jc-mulanshi:著: "穿"
+  ⚠ [A5义项过长] word:jc-hezhouji:盖大苏泛赤壁云: 133字
+  ⚠ [A5义项截断] word:jc-hezhouji:若-然: "好像……的样子。..."
+  ⚠ [A5义项过短] word:jc-cibeigushanxia:悬: "挂"
+  ⚠ [A5义项过短] word:jc-huxintingkanxue:一: "全"
+  ⚠ [A5义项过短] word:jc-huxintingkanxue:是: "这"
+  ⚠ [A5义项截断] word:jc-syyhsyal:劳: "形容词的使动用法，使……劳累。..."
+  ⚠ [A5义项截断] word:jc-syyhsyal:饿: "形容词的使动用法，使……经受饥饿之苦。..."
+  ⚠ [A5义项截断] word:jc-syyhsyal:动: "动词的使动用法，使……受到震撼。..."
+  ⚠ [A5义项截断] word:jc-syyhsyal:忍: "动词的使动用法，使……坚忍起来。..."
+  ⚠ [A5义项过短] word:jc-jichengtiansiyeyou:户: "门"
+  ⚠ [A5义项截断] word:jc-jichengtiansiyeyou:者: "代词,……的人..."
+  ⚠ [A5义项过短] word:jc-songdongyangmashengxu:至: "到"
+  ⚠ [A5义项截断] word:jc-songdongyangmashengxu:食: "供养,给……吃。..."
+  ⚠ [A5义项过短] word:jc-songdongyangmashengxu:穷: "极"
+  ⚠ [A5义项过短] word:jc-songdongyangmashengxu:持: "拿"
+  ⚠ [A5义项截断] word:jc-zoujifengqiwangnajian:孰与: "与……相比怎么样，表示比较。..."
+  ⚠ [A5义项截断] word:jc-zoujifengqiwangnajian:美: "形容词的意动用法，认为……美。..."
+  ⚠ [A5义项截断] word:jc-zoujifengqiwangnajian:闻: "这里是“使……听到”的意思。..."
+  ⚠ [A5义项截断] word:jc-zoujifengqiwangnajian:闻: "使动用法，使……听到。..."
+  ⚠ [A5义项截断] word:jc-zuiwengtingji:乐: "形容词的意动用法，以……为快乐。..."
+  ⚠ [A5义项截断] word:jc-chensheshejia:忿恚: "恼怒。这里是“使……恼怒”的意思。..."
+  ⚠ [A5义项截断] word:jc-chensheshejia:死: "动词的为动用法,为……而死..."
+  ⚠ [A5义项截断] word:jc-chensheshejia:怪: "形容词的意动用法,对……感到奇怪..."
+  ⚠ [A5义项截断] word:jc-chensheshejia:忿恚:2: "形容词的使动用法,使……恼怒..."
+  ⚠ [A5义项过短] word:jc-mashuo:食:2: "吃"
+  ⚠ [A5义项截断] word:jc-ywsyx:尔: "相当于“然”,表示“……的样子”。..."
+  ⚠ [A5义项过短] glossary:shici:道:0: "说"
+  ⚠ [A5义项过短] glossary:shici:更:0: "还"
+  ⚠ [A5义项过短] glossary:shici:善:0: "好"
+  ⚠ [A5义项过短] glossary:shici:胜:0: "尽"
+  ⚠ [A5义项截断] glossary:shici:食:0: "供养,给……吃..."
+  ⚠ [A5义项过短] glossary:shici:食:0: "吃"
+  ⚠ [A5义项过短] glossary:shici:属:0: "类"
+  ⚠ [A5义项过短] glossary:shici:至:0: "到"
+  ⚠ [A5义项过短] glossary:shici:作:0: "写"
+  ⚠ [A5义项过短] glossary:shici:作:0: "造"
+  ⚠ [A5义项截断] glossary:shici:坐:0: "犯罪，因……获罪..."
+  ⚠ [A5义项过短] glossary:shici:假:0: "借"
+  ⚠ [A5义项过短] glossary:shici:莫:0: "不"
+  ⚠ [A5义项过短] glossary:shici:越:0: "到"
+  ⚠ [A5义项截断] glossary:xuci:之:0: "往,到……去..."
+  ✓ [A5] 义项 2495 条, 警告 61
+
+=== A6. category 枚举 ===
+  ✓ [A6] 共 11 类, 非法 0
+
+=== A7. example 定位(抽样 50) ===
+  ⚠ [A7例句未定位] word:jc-yuzhuyuansishu:者: "鸢飞戾天者/经纶世务者..."
+  ✓ [A7] 抽样 50 条, 未定位 1
+
+=== A8. 题干泄漏 ===
+  ✓ [A8] 无泄漏
+
+=== A9. 选择题选项合法性 ===
+  ✗ [A9答案格式异常] practice:115: answer="③"
+  ✓ [A9] 选择题 108, 异常 1
+
+=== A10. type 一致性 ===
+  ⚠ [A10无选项却是choice] practice:591
+  ⚠ [A10无选项却是choice] handwritten:756
+  ⚠ [A10无选项却是choice] handwritten:766
+  ⚠ [A10无选项却是choice] zhenti:823
+  ⚠ [A10无选项却是choice] zhenti:824
+  ⚠ [A10无选项却是choice] zhenti:825
+  ⚠ [A10无选项却是choice] zhenti:826
+  ⚠ [A10无选项却是choice] zhenti:829
+  ⚠ [A10无选项却是choice] zhenti:830
+  ⚠ [A10无选项却是choice] zhenti:831
+  ⚠ [A10无选项却是choice] zhenti:835
+  ⚠ [A10无选项却是choice] zhenti:836
+  ⚠ [A10无选项却是choice] zhenti:837
+  ⚠ [A10无选项却是choice] zhenti:840
+  ⚠ [A10无选项却是choice] zhenti:842
+  ⚠ [A10无选项却是choice] zhenti:843
+  ⚠ [A10无选项却是choice] zhenti:844
+  ⚠ [A10无选项却是choice] zhenti:845
+  ⚠ [A10无选项却是choice] zhenti:848
+  ⚠ [A10无选项却是choice] zhenti:853
+  ⚠ [A10无选项却是choice] zhenti:854
+  ⚠ [A10无选项却是choice] zhenti:856
+  ⚠ [A10无选项却是choice] zhenti:858
+  ⚠ [A10无选项却是choice] zhenti:859
+  ⚠ [A10无选项却是choice] zhenti:860
+  ⚠ [A10无选项却是choice] zhenti:861
+  ⚠ [A10无选项却是choice] zhenti:864
+  ⚠ [A10无选项却是choice] zhenti:871
+  ⚠ [A10无选项却是choice] zhenti:880
+  ⚠ [A10无选项却是choice] zhenti:881
+  ⚠ [A10无选项却是choice] zhenti:882
+  ⚠ [A10无选项却是choice] zhenti:886
+  ⚠ [A10无选项却是choice] zhenti:887
+  ⚠ [A10无选项却是choice] zhenti:888
+  ⚠ [A10无选项却是choice] zhenti:892
+  ⚠ [A10无选项却是choice] zhenti:903
+  ⚠ [A10无选项却是choice] zhenti:906
+  ⚠ [A10无选项却是choice] zhenti:909
+  ⚠ [A10无选项却是choice] zhenti:923
+  ✓ [A10] 警告 39
+
+=== A11. 真题年份 ===
+  ✓ [A11] 真题 181, 警告 0
+
+=== A12. 空白残留 ===
+  ✓ [A12] 警告 0
+
+========== 审核结果: 1 ERROR / 101 WARN ==========

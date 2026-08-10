@@ -1,0 +1,311 @@
+[
+  {
+    "id": "collection:practice:礼记二则",
+    "title": "《礼记》二则",
+    "grade": "八下",
+    "source": "practice",
+    "questionIds": [
+      "practice:4",
+      "practice:5",
+      "practice:6",
+      "practice:7",
+      "practice:8"
+    ]
+  },
+  {
+    "id": "collection:practice:古代诗歌四首",
+    "title": "古代诗歌四首",
+    "grade": "七上",
+    "source": "practice",
+    "questionIds": [
+      "practice:15"
+    ]
+  },
+  {
+    "id": "collection:practice:世说新语二则",
+    "title": "《世说新语》二则",
+    "grade": "七上",
+    "source": "practice",
+    "questionIds": [
+      "practice:70",
+      "practice:71",
+      "practice:72",
+      "practice:73",
+      "practice:74",
+      "practice:75"
+    ]
+  },
+  {
+    "id": "collection:practice:孟子三章",
+    "title": "《孟子》三章",
+    "grade": "八上",
+    "source": "practice",
+    "questionIds": [
+      "practice:85"
+    ]
+  },
+  {
+    "id": "collection:practice:庄子二则",
+    "title": "《庄子》二则",
+    "grade": "八下",
+    "source": "practice",
+    "questionIds": [
+      "practice:87",
+      "practice:88",
+      "practice:89",
+      "practice:90",
+      "practice:91",
+      "practice:92"
+    ]
+  },
+  {
+    "id": "collection:practice:诗词五首",
+    "title": "诗词五首",
+    "grade": "八上",
+    "source": "practice",
+    "questionIds": [
+      "practice:105",
+      "practice:108",
+      "practice:110",
+      "practice:111"
+    ]
+  },
+  {
+    "id": "collection:practice:古代诗歌五首",
+    "title": "古代诗歌五首",
+    "grade": "七下",
+    "source": "practice",
+    "questionIds": [
+      "practice:129",
+      "practice:130"
+    ]
+  },
+  {
+    "id": "collection:practice:唐诗三首",
+    "title": "唐诗三首",
+    "grade": "八下",
+    "source": "practice",
+    "questionIds": [
+      "jc-wangyue-1",
+      "jc-wangyue-2",
+      "jc-wangyue-3",
+      "jc-wangyue-4",
+      "jc-wangyue-5",
+      "jc-wangyue-6",
+      "practice:438",
+      "practice:439",
+      "practice:440",
+      "practice:441",
+      "practice:442",
+      "practice:443",
+      "practice:444",
+      "practice:445",
+      "practice:446",
+      "practice:447",
+      "practice:448",
+      "practice:449",
+      "practice:450",
+      "zhenti:950",
+      "zhenti:951",
+      "zhenti:952",
+      "exam_point:1352",
+      "exam_point:1353",
+      "exam_point:1354",
+      "exam_point:1355",
+      "exam_point:1356",
+      "exam_point:1357",
+      "exam_point:1358",
+      "exam_point:1359",
+      "exam_point:1360",
+      "exam_point:1361",
+      "exam_point:1362",
+      "jc-chunwang-1",
+      "jc-chunwang-2",
+      "jc-chunwang-3",
+      "jc-chunwang-4",
+      "jc-chunwang-5",
+      "jc-chunwang-6",
+      "jc-chunwang-7",
+      "jc-chunwang-8",
+      "practice:106",
+      "practice:112",
+      "practice:634",
+      "practice:635",
+      "practice:636",
+      "practice:637",
+      "practice:638",
+      "practice:639",
+      "practice:640",
+      "practice:641",
+      "zhenti:947",
+      "zhenti:948",
+      "zhenti:949",
+      "exam_point:1336",
+      "exam_point:1337",
+      "exam_point:1338",
+      "practice:140",
+      "practice:145",
+      "practice:519",
+      "practice:520",
+      "practice:521",
+      "practice:522",
+      "zhenti:1046",
+      "zhenti:1047",
+      "zhenti:1048",
+      "exam_point:1475",
+      "exam_point:1476",
+      "exam_point:1477"
+    ]
+  },
+  {
+    "id": "collection:practice:诗经二首",
+    "title": "《诗经》二首",
+    "grade": "八下",
+    "source": "practice",
+    "questionIds": [
+      "practice:152",
+      "practice:154",
+      "practice:156",
+      "practice:319",
+      "practice:320",
+      "practice:321",
+      "related:1164",
+      "exam_point:1165",
+      "exam_point:1166",
+      "exam_point:1167",
+      "practice:153",
+      "practice:155",
+      "practice:662",
+      "practice:663",
+      "practice:664",
+      "zhenti:1025",
+      "zhenti:1026",
+      "zhenti:1027",
+      "exam_point:1495",
+      "exam_point:1496",
+      "exam_point:1497"
+    ]
+  },
+  {
+    "id": "collection:practice:唐诗五首",
+    "title": "唐诗五首",
+    "grade": "八上",
+    "source": "practice",
+    "questionIds": [
+      "practice:161"
+    ]
+  },
+  {
+    "id": "collection:practice:短文两篇",
+    "title": "短文两篇",
+    "grade": "七下",
+    "source": "practice",
+    "questionIds": [
+      "loushiming-1",
+      "loushiming-2",
+      "loushiming-3",
+      "loushiming-4",
+      "loushiming-5",
+      "loushiming-6",
+      "practice:164",
+      "practice:165",
+      "practice:505",
+      "practice:506",
+      "practice:507",
+      "practice:508",
+      "practice:509",
+      "practice:510",
+      "practice:511",
+      "practice:512",
+      "practice:513",
+      "practice:514",
+      "practice:515",
+      "zhenti:875",
+      "zhenti:876",
+      "zhenti:878",
+      "zhenti:879",
+      "zhenti:880",
+      "exam_point:1469",
+      "exam_point:1470",
+      "exam_point:1471",
+      "ai-lian-shuo-1",
+      "ai-lian-shuo-2",
+      "ai-lian-shuo-3",
+      "ai-lian-shuo-4",
+      "ai-lian-shuo-5",
+      "ai-lian-shuo-6",
+      "practice:3",
+      "practice:166",
+      "practice:485",
+      "practice:486",
+      "practice:487",
+      "practice:488",
+      "practice:489",
+      "practice:490",
+      "practice:491",
+      "practice:492",
+      "practice:493",
+      "zhenti:877",
+      "zhenti:881",
+      "zhenti:882",
+      "exam_point:1444",
+      "exam_point:1445",
+      "exam_point:1446",
+      "exam_point:1447"
+    ]
+  },
+  {
+    "id": "collection:practice:短文二篇",
+    "title": "短文二篇",
+    "grade": "八上",
+    "source": "practice",
+    "questionIds": [
+      "practice:227",
+      "practice:228",
+      "practice:229",
+      "practice:230",
+      "practice:231",
+      "practice:232"
+    ]
+  },
+  {
+    "id": "collection:practice:词四首",
+    "title": "词四首",
+    "grade": "九下",
+    "source": "practice",
+    "questionIds": [
+      "practice:237",
+      "practice:238"
+    ]
+  },
+  {
+    "id": "collection:practice:诗词三首",
+    "title": "诗词三首",
+    "grade": "九上",
+    "source": "practice",
+    "questionIds": [
+      "practice:242",
+      "practice:244",
+      "practice:245"
+    ]
+  },
+  {
+    "id": "collection:practice:诗词曲五首",
+    "title": "诗词曲五首",
+    "grade": "九下",
+    "source": "practice",
+    "questionIds": [
+      "practice:256"
+    ]
+  },
+  {
+    "id": "collection:extra:游石门潭记",
+    "title": "游石门潭记（课外）",
+    "grade": "九年级",
+    "source": "extra",
+    "questionIds": [
+      "handwritten:774",
+      "handwritten:775"
+    ]
+  }
+]

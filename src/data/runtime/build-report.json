@@ -1,0 +1,20 @@
+{
+  "schemaVersion": 1,
+  "source": {
+    "articles": 126,
+    "wordMeanings": 3085,
+    "questions": 1923
+  },
+  "runtime": {
+    "articles": 126,
+    "words": 2192,
+    "wordMeanings": 2644,
+    "questions": 2026,
+    "collections": 16
+  },
+  "transformed": {
+    "deduplicatedWordMeanings": 441,
+    "deduplicatedQuestions": -103,
+    "invalidQuestions": 0
+  }
+}
