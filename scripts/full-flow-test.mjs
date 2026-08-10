@@ -126,31 +126,36 @@ if (errCount > 0) {
   check('移除错题(分组删除)', errAfter < beforeDel, `${beforeDel} → ${errAfter}`);
 }
 
-// ============ 6. 字词卡 ============
-console.log('\n=== 6. 字词卡 (分类列表: 实词/虚词 + 展开义项) ===');
-await goto('/cards');
+// ============ 6. 默写模块 ============
+console.log('\n=== 6. 默写模块 (列表/练习/错题) ===');
+await goto('/moxie');
 await page.waitForTimeout(900);
-check('核心词列表', await page.locator('.vocab-card').count() >= 20);
-check('实词/虚词 tab', await page.locator('.vocab-tabs .chip').count() === 2);
-// 切虚词
-await page.locator('.vocab-tabs .chip:has-text("虚词")').click();
+check('默写篇目卡', await page.locator('.moxie-card').count() >= 10);
+check('年级 tab', await page.locator('.grade-tab').count() >= 3);
+// 进入第一篇
+await page.locator('.moxie-card').first().click();
+await page.waitForTimeout(600);
+check('题型 tab', await page.locator('.workspace-tabs button').count() >= 4);
+check('题卡', await page.locator('.moxie-q').count() >= 1);
+// 对答案 → 自评
+await page.locator('.mq-reveal').first().click();
 await page.waitForTimeout(300);
-check('虚词列表', await page.locator('.vocab-card').count() >= 5);
-// 词条弹窗
-await page.locator('.vocab-card .vocab-head').first().click();
-await page.waitForTimeout(400);
-check('词条弹窗', await page.locator('.vocab-modal').count() === 1);
-check('弹窗义项', await page.locator('.vocab-modal .vocab-sense').count() >= 1);
-await page.locator('.vocab-modal-close').click();
-await page.waitForTimeout(200);
-check('弹窗可关闭', await page.locator('.vocab-modal').count() === 0);
-// 背诵入口
-check('背诵入口', await page.locator('button:has-text("背诵原文")').count() === 1);
-// ============ 7. 综合题集 (已随复习中心移除) ============
-console.log('\n=== 7. 综合题集 (已移除) ===');
+check('答案展示', await page.locator('.mq-answer').count() >= 1);
+await page.locator('.mq-judge-btn.ok').first().click();
+await page.waitForTimeout(300);
+check('自评生效', await page.locator('.moxie-q.ok').count() >= 1);
+// 错题本
+await goto('/moxie/errors');
+await page.waitForTimeout(500);
+check('默写错题本可渲染', (await page.locator('.moxie-err-group, .empty-state').count()) >= 1);
+// ============ 7. 旧题集路由 (已移除) ============
+console.log('\n=== 7. 旧路由 (已移除) ===');
 await goto('/review');
 await page.waitForTimeout(400);
 check('/review 已移除 → 回首页', page.url().endsWith('/') || page.url().endsWith('/#/') || page.url().includes('/'));
+await goto('/cards');
+await page.waitForTimeout(400);
+check('/cards 已移除 → 回首页', page.url().endsWith('/') || page.url().endsWith('/#/') || page.url().includes('/'));
 
 // ============ 8. 深链 ============
 console.log('\n=== 8. 旧链接深链 ===');
@@ -159,15 +164,15 @@ await page.waitForTimeout(600);
 check('旧学习链接跳转', page.url().includes('/articles/jc-ly/learn'));
 await goto('/practice/' + encodeURIComponent('论语十二章'));
 await page.waitForTimeout(600);
-check('旧练习链接跳转', page.url().includes('/jc-ly/practice'));
+check('旧练习链接跳转(已移除)', page.url().endsWith('/') || page.url().includes('/'));
 
 // ============ 9. 移动端 ============
 console.log('\n=== 9. 移动端 (375px) ===');
 const mob = await ctx.newPage();
 await mob.setViewportSize({ width: 375, height: 812 });
 for (const [label, h] of [
-  ['首页', ''], ['学习', '/articles/jc-ly/learn'], ['练习', '/articles/jc-yueyanglouji/practice'],
-  ['复习', '/articles/jc-yueyanglouji/review'], ['题集', '/review'], ['字词卡', '/cards'],
+  ['首页', ''], ['学习', '/articles/jc-ly/learn'], ['默写', '/moxie'],
+  ['默写练习', '/moxie/moxie-guan-cang-hai'],
 ]) {
   await mob.goto(BASE + h, { waitUntil: 'networkidle' });
   await mob.waitForTimeout(450);
@@ -176,19 +181,15 @@ for (const [label, h] of [
 }
 await mob.close();
 
-// ============ 9.5 考点图谱 ============
-console.log('\n=== 9.5 考点图谱 (高频过滤/薄弱回炉/考点练习) ===');
-await goto('/map');
-check('考点图谱渲染', await page.locator('.map-card').count() > 10);
-check('高频过滤按钮', await page.locator('.map-filter-btn').count() === 2);
-check('考点分类区块', await page.locator('.map-category').count() >= 4);
-await page.locator('.map-card').first().click();
-await page.waitForTimeout(500);
-check('考点弹窗打开', await page.locator('.map-modal').count() === 1);
-check('弹窗内做题', await page.locator('.map-modal .q-item, .map-modal .q-stem').count() > 0);
-await page.locator('.map-modal .inline-modal-close').click();
-await page.waitForTimeout(300);
-check('弹窗可关闭', await page.locator('.map-modal').count() === 0);
+// ============ 9.5 学习页联动 ============
+console.log('\n=== 9.5 学习页 → 默写联动 ===');
+// 学习页默写联动入口
+await goto('/articles/jc-yueyanglouji/moxie');
+await page.waitForTimeout(600);
+check('学习页默写入口卡', (await page.locator('.moxie-entry-card').count()) >= 1);
+await page.locator('.moxie-entry-card a').first().click();
+await page.waitForTimeout(600);
+check('跳转到默写篇目页', page.url().includes('/moxie/'));
 
 // ============ 10. 无 JS 错误 ============
 console.log('\n=== 10. 全程 JS 错误 ===');

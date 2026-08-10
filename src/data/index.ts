@@ -1,7 +1,9 @@
 /** 规范化数据访问层。页面只读取 runtime/*.json，不直接消费 OCR/raw 字段。
  *  加载策略: 轻量 article-meta.json + collections.json 静态导入(首屏);
- *  articles/words/questions 全量数据按需 loadCore() 动态加载 (练习/字词/学习页进入时)。 */
+ *  articles/words/questions 全量数据按需 loadCore() 动态加载 (学习页进入时)。 */
 import { useEffect, useState } from 'react';
+import { moxieArticles, moxieCount } from './moxie';
+export { moxieArticles, moxieCount };
 import metaRaw from './runtime/article-meta.json';
 import collectionRaw from './runtime/collections.json';
 import { normGrade } from '../shared/lib/utils';

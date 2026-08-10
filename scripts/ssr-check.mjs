@@ -59,61 +59,58 @@ try {
     )
   );
   console.log('\n=== 篇目工作区 ===');
-  check('3 个学习标签', (article.includes('鉴赏') && article.includes('练习')) || article.includes('page-loader'));
+  check('3 个学习标签', (article.includes('鉴赏') && article.includes('默写')) || article.includes('page-loader'));
   check('学习正文', article.includes('para-list') || article.includes('article-body') || article.includes('page-loader'));
   check('鉴赏标签', article.includes('主旨') || article.includes('鉴赏') || article.includes('page-loader'));
   console.log('\n=== 规范化题库 ===');
   const runtimeData = await vite.ssrLoadModule('/src/data/index.ts');
   check('轻量 meta 可加载', runtimeData.articleMeta.length === 126 && runtimeData.counts.totalQuestions > 0);
-  check('综合题集独立', runtimeData.collections.length === 16);
+  check('默写数据可加载', runtimeData.moxieArticles.length >= 120);
 
-  const { default: ErrorBookPage } = await vite.ssrLoadModule('/src/features/errorbook/ErrorBookPage.tsx');
+  const { default: MoxieErrors } = await vite.ssrLoadModule('/src/features/moxie/MoxieErrors.tsx');
   const { ErrorBookProvider } = await vite.ssrLoadModule('/src/features/errorbook/store.tsx');
   const errorsPage = renderToString(
     React.createElement(
       MemoryRouter,
-      { initialEntries: ['/errors'] },
+      { initialEntries: ['/moxie/errors'] },
       React.createElement(
         ErrorBookProvider,
         null,
         React.createElement(Routes, null,
-          React.createElement(Route, { path: '/errors', element: React.createElement(ErrorBookPage) })
+          React.createElement(Route, { path: '/moxie/errors', element: React.createElement(MoxieErrors) })
         )
       )
     )
   );
-  check('错题本页面', errorsPage.includes('错题本'));
-  console.log('\n=== 考点图谱 ===');
-  const { default: ExamMap } = await vite.ssrLoadModule('/src/features/map/ExamMap.tsx');
-  const mapPage = renderToString(
+  check('默写错题本页面', errorsPage.includes('错题本'));
+  console.log('\n=== 默写模块 ===');
+  const { default: MoxieHome } = await vite.ssrLoadModule('/src/features/moxie/MoxieHome.tsx');
+  const moxiePage = renderToString(
     React.createElement(
       MemoryRouter,
-      { initialEntries: ['/map'] },
+      { initialEntries: ['/moxie'] },
       React.createElement(
         ErrorBookProvider,
         null,
         React.createElement(Routes, null,
-          React.createElement(Route, { path: '/map', element: React.createElement(ExamMap) })
+          React.createElement(Route, { path: '/moxie', element: React.createElement(MoxieHome) })
         )
       )
     )
   );
-  check('考点图谱渲染', (mapPage.includes('考点图谱') && mapPage.includes('map-card')) || mapPage.includes('page-loader'));
+  check('默写列表渲染', (moxiePage.includes('默写') && moxiePage.includes('篇')) || moxiePage.includes('page-loader'));
 
   console.log('\n=== 深链 SSR (StaticRouter, 模拟真实服务器路径) ===');
   // E9: 用 StaticRouter 逐个渲染所有真实路由 (含有效/无效 id 与旧版路径), 验证深链直访不崩
   const deepPaths = [
     '/',
-    '/errors',
-    '/map',
-    '/cards',
-    '/recite',
+    '/moxie',
+    '/moxie/errors',
     '/articles/jc-yueyanglouji',
     '/articles/jc-yueyanglouji/learn',
-    '/articles/jc-yueyanglouji/practice',
+    '/articles/jc-yueyanglouji/moxie',
     '/articles/not-exist-id/learn',
     '/learning/岳阳楼记',
-    '/practice/岳阳楼记',
     '/unknown-route',
   ];
   const renderStatic = (path) =>

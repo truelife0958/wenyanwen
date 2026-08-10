@@ -380,3 +380,33 @@ if (errors === 0) {
 } else {
   console.log(`  ❌ 发现 ${errors} 个错误, 需要修复`);
 }
+// ==================== 6. 默写数据层 ====================
+console.log('\n=== 6. 默写数据完整性 ===');
+const moxie = loadJSON('src/data/runtime/moxie.json');
+if (moxie) {
+  check(`默写篇目总数 ${moxie.length}`, moxie.length >= 120, '应为 126 篇');
+  let items = 0, noAns = 0, noBlanks = 0, badGrade = 0;
+  const TYPE_STD = ['原文默写', '理解性默写', '词义默写', '译文默写'];
+  const typeCount = {};
+  for (const art of moxie) {
+    if (!art.title || !Array.isArray(art.sections) || !art.sections.length) {
+      errors++; console.log(`  ✗ 篇目结构异常: ${art.title || art.id}`);
+      continue;
+    }
+    if (!['七上','七下','八上','八下','九上','九下','附录'].includes(art.grade)) badGrade++;
+    const types = art.sections.map((s) => s.type);
+    for (const t of types) typeCount[t] = (typeCount[t] || 0) + 1;
+    for (const s of art.sections) {
+      for (const it of s.items || []) {
+        items++;
+        if (!it.answers || !it.answers.length) noAns++;
+        if ((it.blanks || 0) > 0 && (it.answers || []).length !== it.blanks) noBlanks++;
+      }
+    }
+  }
+  check(`题目总数 ${items}`, items >= 1200, '应约 1400+ 题');
+  check(`无答案题数 ${noAns}`, noAns === 0, '答案应全配对');
+  check(`填空数=答案数不符 ${noBlanks}`, noBlanks === 0, '多空题答案应逐空对齐');
+  check(`年级非法 ${badGrade}`, badGrade === 0);
+  for (const t of TYPE_STD) check(`题型「${t}」覆盖 ${typeCount[t] || 0} 篇`, (typeCount[t] || 0) >= 100, '四题型应基本全覆盖');
+}
