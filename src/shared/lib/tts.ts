@@ -52,8 +52,8 @@ function normalizePron(text: string): string {
   return out;
 }
 
-/** 朗读文本：通假字/多音字预处理后送 TTS；边界回调可用于高亮 */
-export function speak(text: string, onEnd?: () => void, onBoundary?: (charIdx: number) => void) {
+/** 朗读文本：通假字/多音字预处理后送 TTS；边界回调可用于高亮；rate 语速 (默认 0.92 便于文言文) */
+export function speak(text: string, onEnd?: () => void, onBoundary?: (charIdx: number) => void, rate = 0.92) {
   if (!ttsSupports()) return;
   stopSpeak();
   // 预处理发音（替换通假字为发声音字）
@@ -62,7 +62,7 @@ export function speak(text: string, onEnd?: () => void, onBoundary?: (charIdx: n
   const v = getBestVoice();
   if (v) u.voice = v;
   u.lang = v?.lang || 'zh-CN';
-  u.rate = 0.92;  // 慢一些便于文言文朗读
+  u.rate = rate;  // 语速可调 (默认 0.92 便于文言文)
   u.pitch = 1.0;
   if (onEnd) u.onend = onEnd;
   if (onBoundary) u.onboundary = (ev) => onBoundary(ev.charIndex || 0);

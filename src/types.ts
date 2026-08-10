@@ -255,3 +255,31 @@ export interface ZhentiItem {
   analysis?: string;   // 解析
   subQuestions?: { q: string; a: string; analysis?: string }[]; // 复合题的小题
 }
+
+/** ===== 默写模块 (moxie) ===== */
+/** 默写题 item: 一道题, 可能含多个填空 */
+export interface MoxieItem {
+  qid: string;
+  q: string;              // 题干, 填空处 ___
+  blanks: number;         // 填空数
+  answers: string[];      // 各空答案 (与 blanks 对齐)
+  word?: string;          // 词义默写: 加点字
+  extra?: string[];       // 附加内容 (如鉴赏要点)
+}
+
+/** 默写题型分组 */
+export interface MoxieSection {
+  type: string;           // 原文默写/理解性默写/词义默写/译文默写/...
+  items: MoxieItem[];
+}
+
+/** 默写篇目 */
+export interface MoxieArticle {
+  id: string;             // moxie-<slug>
+  title: string;
+  grade: string;          // 七上...
+  book_page: number;      // 主书页码
+  source: 'moxie-book' | 'legacy-converted';
+  articleId: string | null;  // 学习模块对齐 (学练联动)
+  sections: MoxieSection[];
+}

@@ -1,12 +1,11 @@
-/** 底部 Tab 导航: 学习 / 字词 / 图谱 (移动优先, 宽屏居中) */
+/** 底部 Tab 导航: 学习 / 默写 (移动优先, 宽屏居中) */
 import { useLocation } from 'react-router-dom';
 import { NavLink } from 'react-router-dom';
 import Icon from '../../shared/ui/Icon';
 
 const TABS = [
   { to: '/', label: '学习', icon: 'book' },
-  { to: '/cards', label: '字词', icon: 'cards' },
-  { to: '/map', label: '图谱', icon: 'map' },
+  { to: '/moxie', label: '默写', icon: 'pencil' },
 ] as const;
 
 export default function TabBar() {

@@ -3,10 +3,10 @@ import ReactDOM from 'react-dom/client';
 import { BrowserRouter } from 'react-router-dom';
 import App from './App';
 import './shared/styles/global.css';
-import { injectTheme } from './shared/styles/tokens';
+import { initTheme } from './shared/styles/tokens';
 
-// 注入设计令牌 CSS 变量 (单一事实源 src/shared/styles/tokens.ts)
-injectTheme();
+// 注入设计令牌 CSS 变量 (单一事实源 src/shared/styles/tokens.ts), 支持夜间主题
+initTheme();
 
 // 启动清理: 移除已废弃的 SM-2 字词进度数据 (E10, 翻卡功能已移除)
 try {

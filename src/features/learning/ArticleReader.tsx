@@ -7,8 +7,21 @@ import { buildPronMap } from '../../shared/lib/pron-dict';
 import Modal from '../../shared/ui/Modal';
 import { speak, stopSpeak, ttsSupports } from '../../shared/lib/tts';
 import GlossPop from './GlossPop';
+import { applyTheme, THEME_DARK } from '../../shared/styles/tokens';
 import './article.css';
 import { examTagFor, examPoints } from '../../data/exam-tags';
+
+const TTS_RATE_KEY = 'wyw_tts_rate';
+const FONT_SCALE_KEY = 'wyw_font_scale';
+const TTS_RATES = [0.7, 0.92, 1.2] as const;
+const FONT_SCALES = [0.9, 1, 1.15] as const;
+
+function loadSetting(key: string, def: number): number {
+  try {
+    const v = Number(localStorage.getItem(key));
+    return Number.isFinite(v) ? v : def;
+  } catch { return def; }
+}
 
 interface ReaderRow {
   orig: string;
@@ -157,6 +170,10 @@ export default function ArticleReader({
 }) {
   const [gloss, setGloss] = useState<{ text?: string; word?: CanonicalWord; x: number; y: number } | null>(null);
   const [reading, setReading] = useState(false);
+  // 朗读语速 / 字号 / 主题 (持久化, 阅读体验打磨)
+  const [ttsRate, setTtsRate] = useState<number>(() => loadSetting(TTS_RATE_KEY, 0.92));
+  const [fontScale, setFontScale] = useState<number>(() => loadSetting(FONT_SCALE_KEY, 1));
+  const [dark, setDark] = useState<boolean>(() => { try { return localStorage.getItem('wyw_theme') === THEME_DARK; } catch { return false; } });
   const [activeRow, setActiveRow] = useState(-1);
   const [expandedRows, setExpandedRows] = useState<Set<number>>(() => new Set());
   // 背诵引导弹窗: 点击原文五角星 (背诵默写句) 弹出
@@ -310,9 +327,8 @@ export default function ArticleReader({
         if (rows[index].start >= 0 && rows[index].start <= position) { hit = index; break; }
       }
       setActiveRow(hit);
-    });
+    }, ttsRate);
   };
-
   useEffect(() => () => stopSpeak(), [article.id]);
   // 卸载时清理 hover 计时器 (R4/M1)
   useEffect(() => () => {
@@ -353,14 +369,52 @@ export default function ArticleReader({
       {/* 朗读控制条 */}
       {compact && ttsSupports() && (
         <div className={`read-bar${reading ? ' on' : ''}`}>
-          <button className="read-btn" onClick={toggleRead} aria-label={reading ? '停止朗读' : '朗读原文'}>
+          <button className="read-btn" onClick={toggleRead} aria-label={reading ? '停止朗读' : '朗读全文'}>
             {reading ? '■ 停止' : '▶ 朗读全文'}
           </button>
           <span className="read-hint">{reading ? '正在朗读 · 高亮跟随' : '听朗读,边听边看'}</span>
+          <span className="read-tools" aria-label="朗读与阅读设置">
+            <button
+              type="button"
+              className="rt-btn"
+              onClick={() => {
+                const next = TTS_RATES[(TTS_RATES.indexOf(ttsRate as (typeof TTS_RATES)[number]) + 1) % TTS_RATES.length];
+                setTtsRate(next);
+                try { localStorage.setItem(TTS_RATE_KEY, String(next)); } catch { /* ignore */ }
+                if (reading) { stopSpeak(); toggleRead(); } // 重新朗读应用新语速
+              }}
+              title="朗读语速"
+              aria-label="朗读语速"
+            >
+              语速 {ttsRate}x
+            </button>
+            <button
+              type="button"
+              className="rt-btn"
+              onClick={() => {
+                const next = FONT_SCALES[(FONT_SCALES.indexOf(fontScale as (typeof FONT_SCALES)[number]) + 1) % FONT_SCALES.length];
+                setFontScale(next);
+                try { localStorage.setItem(FONT_SCALE_KEY, String(next)); } catch { /* ignore */ }
+              }}
+              title="正文字号"
+              aria-label="正文字号"
+            >
+              字号 {Math.round(fontScale * 100)}%
+            </button>
+            <button
+              type="button"
+              className="rt-btn"
+              onClick={() => { applyTheme(dark ? 'light' : THEME_DARK); setDark(!dark); }}
+              title={dark ? '切换到白天' : '切换到夜间'}
+              aria-label={dark ? '切换到白天' : '切换到夜间'}
+            >
+              {dark ? '☀' : '🌙'}
+            </button>
+          </span>
         </div>
       )}
 
-      <div className="article-body">
+      <div className="article-body" style={{ '--reader-scale': String(fontScale) } as React.CSSProperties}>
         <main className="article-main">
           {rows.length ? (
             <div className="para-list">
@@ -475,7 +529,7 @@ export default function ArticleReader({
             <p className="rg-sentence">{guideStar.sentence}</p>
             {guideStar.translation && <p className="rg-trans">{guideStar.translation}</p>}
             <div className="rg-actions">
-              <Link className="btn btn-primary" to={`/cards?recite=1`}>去背诵训练 →</Link>
+              <Link className="btn btn-primary" to={`/moxie/${encodeURIComponent(article.title)}`}>去默写训练 →</Link>
               <button type="button" className="btn btn-ghost" onClick={() => setGuideStar(null)}>知道了</button>
             </div>
           </div>

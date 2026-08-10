@@ -4,17 +4,18 @@ import ArticleReader from './ArticleReader';
 import ArticleAppreciation from './ArticleAppreciation';
 import { examTagFor } from '../../data/exam-tags';
 import PageHeader from '../../shared/ui/PageHeader';
-import { ArticlePractice } from '../practice/PracticePage';
 import { useCore } from '../../data';
 import EmptyState from '../../shared/ui/EmptyState';
-import { articleHref, findArticleMeta, findPracticeArticle } from '../../data/article-links';
+import { articleHref, findArticleMeta } from '../../data/article-links';
+import { findMoxieByArticleTitle, articleProgress } from '../../data/moxie';
 import './article-page.css';
 
 const TABS = [
   { key: 'learn', label: '学习' },
   { key: 'appreciate', label: '鉴赏' },
-  { key: 'practice', label: '练习' },
+  { key: 'moxie', label: '默写' },
 ] as const;
+
 
 export default function ArticlePage() {
   const { id, tab = 'learn' } = useParams();
@@ -42,7 +43,8 @@ export default function ArticlePage() {
   }
   if (!TABS.some((item) => item.key === tab)) return <Navigate replace to={articleHref(article)} />;
 
-  const practice = findPracticeArticle(article);
+  const moxie = findMoxieByArticleTitle(article.title);
+  const moxieProg = moxie ? articleProgress(moxie) : null;
   const meta = [article.dynasty, article.author, article.grade].filter(Boolean).join(' · ');
 
   return (
@@ -65,11 +67,20 @@ export default function ArticlePage() {
       <main className="workspace-content">
         {tab === 'learn' && <ArticleReader key={article.id || article.title} article={article} compact />}
         {tab === 'appreciate' && <ArticleAppreciation key={article.id || article.title} article={article} />}
-        {tab === 'practice' && (
-          practice ? (
-            <ArticlePractice key={article.id || article.title} article={practice} errorHref="/errors" />
+        {tab === 'moxie' && (
+          moxie ? (
+            <div className="moxie-entry-card view-enter">
+              <div className="mec-main">
+                <h3>《{moxie.title}》默写练习</h3>
+                <p>{moxie.sections.map((s) => s.type).join(' · ')}，共 {moxieProg?.total ?? 0} 题</p>
+                {moxieProg && moxieProg.done > 0 && (
+                  <p className="mec-prog">已答 {moxieProg.done}/{moxieProg.total} · 全对 {moxieProg.passed}</p>
+                )}
+              </div>
+              <Link className="btn btn-primary" to={`/moxie/${encodeURIComponent(moxie.id)}`}>开始默写练习 →</Link>
+            </div>
           ) : (
-            <EmptyState title="本篇暂无练习" hint="可以先完成课文学习。" />
+            <EmptyState title="本篇暂无默写题" hint="可以继续学习课文，或从默写列表挑选其他篇目。" />
           )
         )}
       </main>

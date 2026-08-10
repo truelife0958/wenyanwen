@@ -437,3 +437,13 @@
   border: 1px solid #e0cfa4;
   box-shadow: 0 1px 4px rgba(0,0,0,0.05);
 }
+
+/* 默写入口卡 (学习页 → 默写联动) */
+.moxie-entry-card {
+  background: var(--card-bg); border: 1px solid var(--paper-border); border-radius: 14px;
+  padding: 20px; display: flex; align-items: center; justify-content: space-between; gap: 16px;
+  flex-wrap: wrap;
+}
+.mec-main h3 { margin: 0 0 6px; font-size: var(--f-size-md); color: var(--ink); }
+.mec-main p { margin: 0; font-size: var(--f-size-sm); color: var(--ink-light); }
+.mec-main .mec-prog { margin-top: 4px; color: var(--accent-brown); }

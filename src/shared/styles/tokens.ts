@@ -71,7 +71,7 @@ const tokens = {
 } as const;
 
 export type TokenName = keyof typeof tokens;
-export type ThemeTokens = typeof tokens;
+export type ThemeTokens = { [K in TokenName]: string | number };
 
 /** 令牌 → CSS 变量字符串 (:root { --xxx: val; ... }) */
 export function toCssVars(theme: ThemeTokens = tokens): string {
@@ -93,3 +93,42 @@ export function injectTheme(theme: ThemeTokens = tokens, id = 'wyw-tokens'): voi
 
 /** 便捷访问: tokens['primary'] / tokens.durBase 等 */
 export const theme = tokens as Record<TokenName, string | number>;
+
+/** 夜间主题 (墨夜纸): 覆盖核心色彩令牌 */
+export const darkTheme: ThemeTokens = {
+  ...tokens,
+  'bg': '#1c1a17',
+  'bg-soft': '#26221d',
+  'card-bg': '#242019',
+  'primary': '#d96a5f',
+  'primary-dark': '#e07a6f',
+  'primary-soft': '#3a2623',
+  'ink': '#e8e0d2',
+  'ink-2': '#c4baa8',
+  'ink-light': '#9a8f7c',
+  'muted': '#7d7463',
+  'accent': '#c9a45c',
+  'accent-soft': '#3a3122',
+  'accent-brown': '#d0ab63',
+  'success': '#5cae82',
+  'error': '#d17474',
+  'border': '#3a342b',
+  'border-soft': '#322d25',
+  'paper-border': '#3a342b',
+};
+
+export const THEME_KEY = 'wyw_theme';
+export const THEME_DARK = 'dark';
+
+/** 切换主题并持久化 (初始化在 main.tsx 调用 initTheme) */
+export function applyTheme(themeName: string): void {
+  const isDark = themeName === THEME_DARK;
+  try { localStorage.setItem(THEME_KEY, themeName); } catch { /* ignore */ }
+  injectTheme(isDark ? darkTheme : tokens);
+}
+
+export function initTheme(): void {
+  let name = 'light';
+  try { name = localStorage.getItem(THEME_KEY) || 'light'; } catch { /* ignore */ }
+  applyTheme(name);
+}

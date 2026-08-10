@@ -4,7 +4,7 @@
  * The source files stay readable and reproducible; the app only imports runtime/*.json.
  */
 import { readFile, writeFile, mkdir } from 'node:fs/promises';
-import { readFileSync, writeFileSync } from 'node:fs';
+import { readFileSync, writeFileSync, existsSync } from 'node:fs';
 import { expandKeyTerm } from './lib/word-expand.mjs';
 import { dirname, resolve } from 'node:path';
 import { fileURLToPath } from 'node:url';
@@ -743,6 +743,42 @@ await output('articles.json', articles);
 await output('words.json', words);
 await output('questions.json', questions);
 await output('collections.json', [...collections.values()]);
+// 默写题库: moxie 书 + legacy 转换合并 (book 优先, 同篇合并)
+const moxieBookPath = resolve(RAW, 'moxie.json');
+const moxieLegacyPath = resolve(RAW, 'moxie-legacy.json');
+let moxie = [];
+if (existsSync(moxieBookPath)) {
+  const book = JSON.parse(await readFile(moxieBookPath, 'utf8'));
+  moxie = [...book];
+  // legacy 合并: 同篇合并 sections, book 已有的题不重复
+  if (existsSync(moxieLegacyPath)) {
+    const legacy = JSON.parse(await readFile(moxieLegacyPath, 'utf8'));
+    for (const l of legacy) {
+      const target = moxie.find((m) => titleKey(m.title) === titleKey(l.title));
+      if (!target) {
+        moxie.push(l);
+        continue;
+      }
+      for (const ls of l.sections || []) {
+        const ts = target.sections.find((s) => s.type === ls.type);
+        if (!ts) target.sections.push({ ...ls });
+        else {
+          // 按题干归一化去重
+          const existing = new Set((ts.items || []).map((it) => norm(it.q)));
+          for (const it of ls.items || []) {
+            if (!existing.has(norm(it.q))) { ts.items.push(it); existing.add(norm(it.q)); }
+          }
+        }
+      }
+    }
+  }
+  moxie = moxie.map((m, idx) => ({
+    ...m,
+    id: m.id || `moxie-${slug(m.title)}-${idx}`,
+    grade: grade(m.grade),
+  }));
+}
+await output('moxie.json', moxie);
 // 轻量元数据: 首页/导航只依赖此文件, 避免首屏加载全量 articles/words/questions
 await output('article-meta.json', {
   articles: articles.map((a) => {

@@ -1034,3 +1034,19 @@
 .appr-para { gap: 6px; }
 .appr-para .appr-trans { margin-top: 8px; }
 .appr-para .appr-ana { margin-top: 10px; }
+
+/* 阅读工具条 (语速/字号/主题) */
+.read-tools { display: flex; gap: 6px; margin-left: auto; }
+.rt-btn {
+  border: 1px solid var(--border); background: var(--card-bg); color: var(--ink-2);
+  border-radius: 999px; padding: 3px 10px; font-size: 0.72rem; cursor: pointer;
+  white-space: nowrap;
+}
+.rt-btn:hover { border-color: var(--primary); color: var(--primary); }
+.read-bar.on .rt-btn { color: var(--ink-light); }
+
+/* 正文字号缩放 (--reader-scale 由组件设置) */
+.article-body .para-orig,
+.article-body .orig-sent { font-size: calc(var(--f-size-md) * var(--reader-scale, 1)); }
+.article-body .para-trans,
+.article-body .trans-line { font-size: calc(var(--f-size-sm) * var(--reader-scale, 1)); }

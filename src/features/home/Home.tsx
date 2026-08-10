@@ -1,47 +1,35 @@
 import { useDeferredValue, useMemo, useRef, useState } from 'react';
-import { Link, useNavigate } from 'react-router-dom';
+import { Link } from 'react-router-dom';
 import Icon from '../../shared/ui/Icon';
 import './home.css';
-import { GRADE_ORDER, groupByGrade, articleMeta, counts } from '../../data';
+import { GRADE_ORDER, groupByGrade, articleMeta } from '../../data';
 import type { ArticleMeta } from '../../data';
 import { articleHref } from '../../data/article-links';
 import EmptyState from '../../shared/ui/EmptyState';
 import SectionHeader from '../../shared/ui/SectionHeader';
-import { examLevel, examPoints, examOrder } from '../../data/exam-tags';
+import { examLevel, examPoints } from '../../data/exam-tags';
 import { loadLS, loadStreak } from '../../shared/lib/utils';
-import { weakPointsFromErrors } from '../../data/exam-map';
-import type { WeakPoint } from '../../data/exam-map';
+import { loadMoxieProgress, moxieArticles } from '../../data/moxie';
+import { useErrorBook } from '../errorbook/store';
 
-const RECITE_HIST_KEY = 'wyw_recite_hist_v2';
-const ERRORBOOK_KEY = 'wyw_errorbook_v2';
 const LAST_ARTICLE_KEY = 'wyw_last_article';
 
-/** 学习概览 */
+/** 学习概览: 默写进度 + 默写错题 */
 function useOverview() {
+  const { items } = useErrorBook();
   return useMemo(() => {
-    const reciteHist = loadLS<Record<string, { lastPassTs: number; passCount: number }>>(RECITE_HIST_KEY, {});
-    const reciteCount = Object.values(reciteHist).filter((entry) => entry && entry.passCount > 0).length;
-    const rawErrors = loadLS<unknown>(ERRORBOOK_KEY, []);
-    // 兼容两种存储格式: 数组 (store.tsx 现行) 与 { items: [] } (旧版)
-    const errorItems: Array<{ qid?: string }> = Array.isArray(rawErrors)
-      ? (rawErrors as Array<{ qid?: string }>)
-      : Array.isArray((rawErrors as { items?: unknown })?.items)
-        ? ((rawErrors as { items: Array<{ qid?: string }> }).items)
-        : [];
-    const weakPoints = weakPointsFromErrors(errorItems as Array<{ qid?: string }>);
-    return {
-      reciteCount,
-      reciteTotal: counts.recite,
-      errorCount: errorItems.length,
-      weakPoints,
-    };
-  }, []);
+    const prog = loadMoxieProgress();
+    const doneCount = Object.values(prog).length;
+    const passedCount = Object.values(prog).filter((e) => e.pass).length;
+    const moxieErrors = items.filter((e) => String(e.qid || '').startsWith('moxie:'));
+    return { doneCount, passedCount, errorCount: moxieErrors.length };
+  }, [items]);
 }
+
 export default function Home() {
   const [search, setSearch] = useState('');
   // 搜索防抖: 高频输入不阻塞主线程 (E5)
   const deferredSearch = useDeferredValue(search);
-  const navigate = useNavigate();
   const overview = useOverview();
   const gridRef = useRef<HTMLDivElement>(null);
 
@@ -58,8 +46,12 @@ export default function Home() {
     }
   }, []);
 
-  const recitePct = overview.reciteTotal ? Math.round((overview.reciteCount / overview.reciteTotal) * 100) : 0;
-  const coreWordCount = counts.globalWords;
+  const moxieTotal = useMemo(
+    () => moxieArticlesTotal(),
+    [],
+  );
+  const moxiePct = moxieTotal ? Math.round((overview.doneCount / moxieTotal) * 100) : 0;
+
   /** 搜索过滤 + 分类过滤 */
   const filtered = useMemo(() => {
     const query = deferredSearch.trim().toLowerCase();
@@ -98,27 +90,27 @@ export default function Home() {
           <h2 className="today-title">今日学习</h2>
           <p className="today-sub">{new Date().getHours() < 12 ? '早上好' : new Date().getHours() < 18 ? '下午好' : '晚上好'} · {loadStreak().count > 0 ? `🔥 已连续学习 ${loadStreak().count} 天` : '坚持就是胜利'}</p>
         </div>
-        <div className="today-ring" aria-label="学习进度">
+        <div className="today-ring" aria-label="默写进度">
           <svg viewBox="0 0 64 64" className="ring-svg">
             <circle cx="32" cy="32" r="26" fill="none" stroke="#d9cdb8" strokeWidth="7" />
             <circle cx="32" cy="32" r="26" fill="none" stroke="var(--primary)" strokeWidth="7"
               strokeLinecap="round" strokeDasharray={`${2 * Math.PI * 26}`}
-              strokeDashoffset={`${2 * Math.PI * 26 * (1 - recitePct / 100)}`}
+              strokeDashoffset={`${2 * Math.PI * 26 * (1 - moxiePct / 100)}`}
               transform="rotate(-90 32 32)" style={{ transition: 'stroke-dashoffset 0.6s ease' }} />
           </svg>
-          <span className="ring-text">{recitePct}%</span>
+          <span className="ring-text">{moxiePct}%</span>
         </div>
       </section>
 
-      {/* 今日推荐 (主入口): 错题驱动优先, 无错题时继续学习 (借鉴 ai-smartexam 驾驶舱主攻逻辑) */}
+      {/* 今日推荐 (主入口): 默写错题驱动优先, 无错题时继续学习 */}
       <section className="today-recommend" aria-label="今日推荐">
-        {overview.weakPoints.length > 0 ? (
-          <Link to={`/map?p=${encodeURIComponent(overview.weakPoints[0].name)}`} className="rec-card rec-error">
+        {overview.errorCount > 0 ? (
+          <Link to="/moxie/errors" className="rec-card rec-error">
             <span className="rec-icon" aria-hidden="true"><Icon name="pencil" size={20} /></span>
             <span className="rec-main">
-              <span className="rec-label">错题回炉 · 薄弱考点</span>
-              <span className="rec-title">{overview.weakPoints[0].name}</span>
-              <span className="rec-sub">错 {overview.weakPoints[0].count} 题 · 同类重练巩固</span>
+              <span className="rec-label">默写错题回炉</span>
+              <span className="rec-title">错题本 · {overview.errorCount} 题待复习</span>
+              <span className="rec-sub">答错的默写题都在这里，重练巩固</span>
             </span>
             <span className="rec-go" aria-hidden="true">→</span>
           </Link>
@@ -128,7 +120,7 @@ export default function Home() {
           <span className="rec-main">
             <span className="rec-label">{lastArticle ? '继续上次学习' : '今日推荐'}</span>
             <span className="rec-title">{lastArticle ? lastArticle.target.title : articleMeta[0]?.title}</span>
-            <span className="rec-sub">{lastArticle ? '已学 ' + Math.min(60, Math.floor(recitePct)) + '% · 点击继续' : '开始今天的学习'}</span>
+            <span className="rec-sub">{lastArticle ? '点击继续学习' : '开始今天的学习'}</span>
           </span>
           <span className="rec-go" aria-hidden="true">→</span>
         </Link>
@@ -137,9 +129,9 @@ export default function Home() {
 
       {/* 今日任务 */}
       <section className="today-tasks" aria-label="今日任务">
-        <div className="task-item done"><Icon name="check" size={13} /> 背课文 {overview.reciteCount}/{overview.reciteTotal}</div>
-        <div className="task-item done"><Icon name="check" size={13} /> 学字词 · 核心 {coreWordCount} 词</div>
-        <div className="task-item"><span className="task-dot" /> 练 {overview.errorCount > 0 ? '错题 ' + overview.errorCount : '新题'}</div>
+        <div className="task-item done"><Icon name="check" size={13} /> 默写 {overview.doneCount}/{moxieTotal} 题</div>
+        <div className="task-item"><span className="task-dot" /> 错题 {overview.errorCount > 0 ? overview.errorCount : '待复习'}</div>
+        <Link className="task-item task-link" to="/moxie"><span className="task-dot" /> 开始默写 →</Link>
       </section>
 
       {/* 搜索栏 */}
@@ -163,12 +155,12 @@ export default function Home() {
         </div>
       </div>
 
-      {/* 快捷功能 (错题本 — TabBar 未覆盖的入口) */}
+      {/* 快捷功能 (错题本) */}
       <section className="home-entry-grid" aria-label="快捷功能">
-        <Link to="/errors" className="entry-card entry-errors">
+        <Link to="/moxie/errors" className="entry-card entry-errors">
           <span className="entry-icon" aria-hidden="true"><Icon name="pencil" size={26} /></span>
           <span className="entry-body">
-            <span className="entry-label">错题本</span>
+            <span className="entry-label">默写错题本</span>
             <span className="entry-desc">回顾错题 · 查漏补缺</span>
           </span>
           <span className="entry-meta">
@@ -225,4 +217,17 @@ export default function Home() {
       </div>
     </div>
   );
+}
+
+/** 默写总题数 (含全部篇目) */
+function moxieArticlesTotal(): number {
+  try {
+    return moxieArticles.reduce((t, a) => t + a.sections.reduce((x, s) => x + (s.items?.length || 0), 0), 0);
+  } catch {
+    return 0;
+  }
+}
+function examOrder(title: string): number {
+  const lvl = examLevel(title);
+  return lvl === 'must' ? 0 : lvl === 'core' ? 1 : 2;
 }
