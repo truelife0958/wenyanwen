@@ -730,15 +730,15 @@
     },
     {
       "id": "jc-wangdongtinghushangzhangchengxiang",
-      "title": "望洞庭湖上张丞相",
+      "title": "望洞庭湖赠张丞相",
       "grade": "八下",
       "author": "孟浩然",
       "dynasty": "唐",
       "origin": "《孟浩然集》",
       "source": "jiaocai_p151..jiaocai_p151",
       "reciteCount": 2,
-      "questionCount": 19,
-      "zhentiCount": 3,
+      "questionCount": 11,
+      "zhentiCount": 0,
       "wordCount": 5
     },
     {
@@ -1644,6 +1644,6 @@
     "senses": 2644,
     "totalQuestions": 2026,
     "zhenti": 363,
-    "collections": 16
+    "collections": 18
   }
 }

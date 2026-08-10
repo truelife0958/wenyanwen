@@ -15,13 +15,16 @@ const entries = [];
 for (const f of files) {
   try {
     const d = JSON.parse(readFileSync(resolve(RAW, f), 'utf8'));
-    entries.push({
-      file: f,
-      title: String(d.title || '').replace(/\[[^\]]*\]/g, '').trim(),
-      grade: d.grade || '',
-      book_page: Number(d.book_page) || 0,
-      sections: (d.sections || []).map((s) => s.type),
-    });
+    const arts = Array.isArray(d.articles) && d.articles.length ? d.articles : [{ ...d }];
+    for (const a of arts) {
+      entries.push({
+        file: f,
+        title: String(a.title || '').replace(/\[[^\]]*\]/g, '').trim(),
+        grade: a.grade || '',
+        book_page: Number(a.book_page) || 0,
+        sections: (a.sections || []).map((s) => s.type),
+      });
+    }
   } catch { /* 跳过损坏 */ }
 }
 writeFileSync(resolve(ROOT, 'ocr/moxie/toc.json'), JSON.stringify({ entries, count: entries.length }, null, 2));

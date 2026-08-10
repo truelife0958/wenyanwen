@@ -19,21 +19,27 @@ if (!['main', 'ans'].includes(role)) { console.error('用法: node scripts/moxie
 const CONCURRENCY = Number(process.env.MOXIE_CONCURRENCY || 3);
 
 const PROMPTS = {
-  main: `你是古籍数据录入员。这是一本初中语文《必背文言文+古诗默写》练习册的扫描页，内容是某一篇课文的默写练习。
+  main: `你是古籍数据录入员。这是一本初中语文《必背文言文+古诗默写》练习册的扫描页，内容是一篇或多篇课文的默写练习。
 请将这一页上的【全部】题目逐字抽取为 JSON，不得遗漏任何一题、任何一空。
+注意: 一页可能包含多篇课文(如两首短诗), 每篇一个 articles 元素。
 JSON 结构:
 {
-  "title": "课文标题(页面上标注的)",
-  "grade": "年级学期(如 七年级上册)",
-  "book_page": "页面上可见的页码数字",
-  "sections": [
-    { "type": "原文默写", "items": [ { "q": "题目文本, 填空处用 ___ 表示" } ] },
-    { "type": "理解性默写", "items": [ { "q": "题干文本" } ] },
-    { "type": "词义默写", "items": [ { "q": "词义题文本, 加点字用【】括起" } ] },
-    { "type": "译文默写", "items": [ { "q": "翻译题文本" } ] }
+  "articles": [
+    {
+      "title": "课文标题(页面上标注的)",
+      "grade": "年级学期(如 七年级上册)",
+      "book_page": "页面上可见的页码数字",
+      "sections": [
+        { "type": "原文默写", "items": [ { "q": "题目文本, 填空处用 ___ 表示" } ] },
+        { "type": "理解性默写", "items": [ { "q": "题干文本" } ] },
+        { "type": "词义默写", "items": [ { "q": "词义题文本, 加点字用【】括起" } ] },
+        { "type": "译文默写", "items": [ { "q": "翻译题文本" } ] }
+      ]
+    }
   ]
 }
 规则:
+- 页面有几篇课文就输出几个 articles 元素, 按出现顺序
 - 四种题型按页面上实际出现的顺序与分组放入 sections (可能有其他题型如 文学常识/易错识记, 也要保留为对应 type)
 - 填空处统一用 ___ 表示, 一空一个 ___
 - 加点/加粗/划线字用【】括起
@@ -91,7 +97,7 @@ async function extractOne(file) {
     try {
       const text = await analyzeImage(dataUrl, PROMPTS[role], DEFAULT_PROVIDER);
       const parsed = parseJson(text);
-      if (role === 'main' && !parsed.sections) throw new Error('缺少 sections');
+      if (role === 'main' && !parsed.articles) throw new Error('缺少 articles');
       if (role === 'ans' && !parsed.articles) throw new Error('缺少 articles');
       writeFileSync(out, JSON.stringify(parsed, null, 2));
       return { file, ok: true, skipped: false };
