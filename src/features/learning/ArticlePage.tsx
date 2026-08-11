@@ -3,6 +3,7 @@ import { useEffect } from 'react';
 import ArticleReader from './ArticleReader';
 import ArticleAppreciation from './ArticleAppreciation';
 import ArticleExam from './ArticleExam';
+import ArticleNotes from './ArticleNotes';
 import { examTagFor } from '../../data/exam-tags';
 import PageHeader from '../../shared/ui/PageHeader';
 import { useCore } from '../../data';
@@ -15,6 +16,7 @@ const TABS = [
   { key: 'learn', label: '学习' },
   { key: 'appreciate', label: '鉴赏' },
   { key: 'exam', label: '考点' },
+  { key: 'notes', label: '注释' },
   { key: 'moxie', label: '默写' },
 ] as const;
 
@@ -70,6 +72,7 @@ export default function ArticlePage() {
         {tab === 'learn' && <ArticleReader key={article.id || article.title} article={article} compact />}
         {tab === 'appreciate' && <ArticleAppreciation key={article.id || article.title} article={article} />}
         {tab === 'exam' && <ArticleExam key={article.id || article.title} article={article} />}
+        {tab === 'notes' && <ArticleNotes key={article.id || article.title} article={article} />}
         {tab === 'moxie' && (
           moxie ? (
             <div className="moxie-entry-card view-enter">

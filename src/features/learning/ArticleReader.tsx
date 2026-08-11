@@ -127,41 +127,6 @@ function AnnotText({
   return <>{nodes}</>;
 }
 
-function NoteList({ article, words, noteNums }: { article: CanonicalArticle; words: CanonicalWord[]; noteNums?: Map<string, number> }) {
-  const [open, setOpen] = useState(false);
-  const noteWords = useMemo(() => words.filter((w) => w.meanings.some((m) => m.category === NOTE_CATEGORY)), [words]);
-  if (!noteWords.length) return null;
-  return (
-    <section className="note-list">
-      <button type="button" className="note-list-head" onClick={() => setOpen((v) => !v)} aria-expanded={open}>
-        <span>本篇注释({noteWords.length} 词)</span>
-        <span className="note-list-caret" aria-hidden="true">{open ? '▾' : '▸'}</span>
-      </button>
-      {open && (
-        <div className="note-list-body">
-          {noteWords.map((word) => (
-            <div className="note-row" key={word.id}>
-              <strong className="note-word">
-                {noteNums?.get(word.id) != null && <sup className="annot-no">{circled(noteNums?.get(word.id) || 1)}</sup>}
-                {word.word}
-              </strong>
-              <span className="note-meaning">
-                {word.meanings.map((meaning, index) => (
-                  <span key={`${meaning.category}:${index}`} className="note-meaning-item">
-                    <i className="note-kind">{meaning.category}</i>
-                    {meaning.text}
-                    {meaning.example ? <em className="note-example">〔{meaning.example}〕</em> : null}
-                  </span>
-                ))}
-              </span>
-            </div>
-          ))}
-        </div>
-      )}
-    </section>
-  );
-}
-
 export default function ArticleReader({
   article,
   compact = false,
@@ -508,8 +473,7 @@ export default function ArticleReader({
             )
           )}
 
-          {/* 本篇注释清单 */}
-          <NoteList article={article} words={words} noteNums={noteNums} />
+
       </div>
 
       {/* 背诵学习引导: 点击原文五角星弹出 */}

@@ -929,9 +929,15 @@
 }
 
 .appr-whole .analysis-tab { max-width: none; }
-.exam-tab .reader-exam-card { margin-top: var(--sp-sm); }
-.exam-page-card { max-width: none; }
-.ep-empty { font-size: 0.85rem; color: var(--muted); padding: 4px 8px; }
+.exam-tab .appr-title, .notes-tab .appr-title {
+  display: flex;
+  align-items: center;
+  gap: var(--sp-sm);
+}
+.exam-tab .exam-card-badge { line-height: 1.4; }
+.exam-tab .appr-para .appr-orig { font-size: 0.95rem; }
+.exam-tab .appr-ana, .notes-tab .appr-ana { white-space: pre-line; }
+.notes-tab .appr-orig .annot-no { color: var(--accent); margin-right: 4px; font-size: 0.8rem; }
 
 /* 原文注释序号角标 */
 .annot-no {

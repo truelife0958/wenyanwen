@@ -1439,3 +1439,16 @@ toPracticeQuestion 的 fromZhenti 逻辑误写 `origins.includes('exam-gen')`（
 - ArticleReader: 移除正文顶部卡片 + examTag/examList/examOpen 状态 + import
 - 样式: exam-tab 卡片 max-width none; ep-empty
 - 验证: tabs 顺序正确, 考点展开正常, 学习页无残留卡片; check 0 错误 + test:flow 44/44
+
+## 2026-08-11 · 考点样式对齐鉴赏 + 注释独立标签 (08-11-exam-notes-tabs)
+
+用户: 1) 考点样式参照鉴赏, 不要折叠; 2) 本篇注释从原文下方移出, 单独做标签。
+
+### 实施
+- ArticleExam: 折叠逻辑全删, 参照鉴赏样式 (appr-title + appr-paras + appr-para 卡片), 全部展开; badge 放标题行
+- 新组件 ArticleNotes.tsx: 本篇注释独立标签页 (鉴赏样式卡片流, 注释词+释义+例句)
+  - 序号按原文首次出现顺序 (与学习页角标一致, 复用 noteNums 扫描逻辑)
+- ArticlePage: TABS 加 { key: notes, label: 注释 } → 学习|鉴赏|考点|注释|默写
+- ArticleReader: 删除 NoteList 函数 + 底部渲染 (原文下方不再有注释清单)
+- test:flow 适配 (note-list → 注释标签检查); 44/44
+- 视觉复审: 对比度/间距实测正常 (视觉模型误报, 不盲改)

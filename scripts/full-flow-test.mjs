@@ -61,7 +61,7 @@ await page.keyboard.press('Escape');
 await page.locator('.para-toggle').first().click();
 await page.waitForTimeout(200);
 check('译文展开', await page.locator('.para-trans').count() > 0);
-check('笔记清单', await page.locator('.note-list').count() === 1);
+check('注释标签', await page.locator('.workspace-tabs a:has-text("注释")').count() === 1);
 check('朗读按钮', await page.locator('.read-btn').count() >= 1);
 
 // ============ 3. 默写流 (学习页 → 默写入口 → 对答案 → 自评错题) ============

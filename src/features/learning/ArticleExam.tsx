@@ -1,8 +1,8 @@
 /**
- * 核心考点 — 独立标签页 (学习/鉴赏/考点/默写 四 tab 之一)。
- * 中考必考/核心重点篇目显示: 考点列表, 每项可展开详情 (learning exam_points)。
+ * 核心考点 — 独立标签页 (学习/鉴赏/考点/注释/默写 五 tab 之一)。
+ * 中考必考/核心重点篇目显示: 考点列表, 每条一张卡片 (参照鉴赏 appr-para 样式), 全展开。
  */
-import { useMemo, useState } from 'react';
+import { useMemo } from 'react';
 import type { CanonicalArticle } from '../../types';
 import { examTagFor, examPoints } from '../../data/exam-tags';
 import EmptyState from '../../shared/ui/EmptyState';
@@ -20,7 +20,6 @@ export default function ArticleExam({ article }: { article: CanonicalArticle }) 
     if (rich?.length) return rich;
     return examPoints(article.title).map((p) => ({ point: p, detail: '' }));
   }, [article]);
-  const [examOpen, setExamOpen] = useState<Set<number>>(() => new Set());
 
   if (!examTag) {
     return (
@@ -33,33 +32,20 @@ export default function ArticleExam({ article }: { article: CanonicalArticle }) 
 
   return (
     <div className="exam-tab view-enter">
-      <section className="reader-exam-card exam-page-card">
-        <div className="exam-card-head">
-          <span className={`exam-card-badge ${examTag}`}>{examTag === 'must' ? '中考必考' : '中考核心'}</span>
-          <span className="exam-card-title">核心考点 · 应知应会</span>
+      <div className="appr-whole">
+        <h3 className="appr-title">
+          核心考点 · 应知应会
+          {examTag && <span className={`exam-card-badge ${examTag}`}>{examTag === 'must' ? '中考必考' : '中考核心'}</span>}
+        </h3>
+        <div className="appr-paras">
+          {examList.map((pt, idx) => (
+            <div className="appr-para" key={idx}>
+              <div className="appr-orig">{pt.point}</div>
+              {pt.detail && <div className="appr-ana">{pt.detail}</div>}
+            </div>
+          ))}
         </div>
-        {examList.length ? (
-          <ul className="exam-points">
-            {examList.map((pt, idx) => (
-              <li key={idx} className={examOpen.has(idx) ? 'open' : ''}>
-                <button
-                  type="button"
-                  className={`ep-head${pt.detail ? ' has-detail' : ''}`}
-                  onClick={() => pt.detail && setExamOpen((prev) => { const n = new Set(prev); n.has(idx) ? n.delete(idx) : n.add(idx); return n; })}
-                  aria-expanded={pt.detail ? examOpen.has(idx) : undefined}
-                >
-                  <span className="ep-bullet">{pt.detail ? (examOpen.has(idx) ? '▾' : '▸') : '▸'}</span>
-                  <span className="ep-name">{pt.point}</span>
-                  {pt.detail && <span className="ep-toggle">{examOpen.has(idx) ? '收起' : '展开'}</span>}
-                </button>
-                {pt.detail && <p className="ep-detail">{pt.detail}</p>}
-              </li>
-            ))}
-          </ul>
-        ) : (
-          <p className="ep-empty">本篇考点数据整理中,敬请期待。</p>
-        )}
-      </section>
+      </div>
     </div>
   );
 }
