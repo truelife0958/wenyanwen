@@ -33,7 +33,7 @@
   outline: none;
   color: var(--ink);
 }
-.home-search-box input::placeholder { color: var(--muted); }
+.home-search-box input::placeholder { color: var(--ink-light); opacity: 1; }
 .hsb-clear {
   background: none;
   border: none;
@@ -82,18 +82,18 @@
   color: var(--card-bg);
   box-shadow: 0 3px 10px var(--red-25);
 }
-.gt-name { line-height: 1; }
+.gt-name { line-height: 1.5; }
 .gt-count {
   padding: 1px 7px;
   border-radius: var(--r-pill);
   font-size: 0.72rem;
   font-weight: 700;
-  color: var(--ink);
   background: var(--accent-soft);
   color: var(--bronze);
-  line-height: 1.4;
+  line-height: 1.5;
+  align-self: center;
 }
-.grade-tab.active .gt-count { background: var(--white-25); color: var(--card-bg); }
+.grade-tab.active .gt-count { background: var(--accent-soft); color: var(--accent-brown); }
 
 /* 篇目卡片网格 */
 .article-grid-section { margin-bottom: var(--sp-lg); }
@@ -175,7 +175,7 @@
   color: var(--card-bg);
 }
 .article-card.exam-core .ac-badge {
-  background: var(--accent);
+  background: var(--bronze-deep);
   color: var(--card-bg);
 }
 .ac-title {
@@ -195,93 +195,12 @@
   overflow: hidden;
   text-overflow: ellipsis;
 }
-/* ===== 快捷功能 (错题本单卡) ===== */
-.home-entry-grid {
-  display: grid;
-  grid-template-columns: 1fr;
-  gap: var(--sp-md);
-  margin: var(--sp-md) 0 16px;
-}
-.entry-card {
-  position: relative;
-  display: flex;
-  align-items: center;
-  gap: 14px;
-  padding: 18px 20px;
-  border-radius: var(--radius-lg);
-  background: var(--card-bg);
-  border: 1px solid var(--border-soft);
-  box-shadow: var(--shadow);
-  font-family: inherit;
-  text-align: left;
-  cursor: pointer;
-  transition: transform var(--dur-base) var(--ease-out), box-shadow var(--dur-base) var(--ease-out), border-color var(--dur-base) var(--ease-out);
-  overflow: hidden;
-}
-.entry-card:hover {
-  transform: translateY(-3px);
-  box-shadow: var(--shadow-lg);
-  border-color: var(--accent);
-}
-.entry-card::after {
-  content: '';
-  position: absolute;
-  right: -24px;
-  top: -24px;
-  width: 90px;
-  height: 90px;
-  border-radius: 50%;
-  background: radial-gradient(circle, var(--accent-soft) 0%, transparent 70%);
-  opacity: 0.6;
-  transition: opacity var(--dur-base) var(--ease-out), transform var(--dur-base) var(--ease-out);
-}
-.entry-card:hover::after { opacity: 1; transform: scale(1.15); }
-.entry-icon {
-  flex-shrink: 0;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  width: 48px;
-  height: 48px;
-  border-radius: var(--r-md);
-  background: linear-gradient(135deg, var(--accent), var(--accent));
-  color: var(--card-bg);
-  box-shadow: 0 3px 8px var(--gold-30);
-  transition: transform var(--dur-base) var(--ease-spring);
-}
-.entry-card:hover .entry-icon { transform: scale(1.08) rotate(-3deg); }
-  .entry-card.entry-errors .entry-icon { background: linear-gradient(135deg, var(--moss), var(--moss-dark)); box-shadow: 0 3px 8px var(--moss-28); }
-.entry-body { flex: 1; min-width: 0; display: flex; flex-direction: column; gap: 2px; }
-.entry-label { font-size: 1.08rem; font-weight: 700; color: var(--ink); letter-spacing: 0.5px; }
-.entry-desc { font-size: 0.78rem; color: var(--ink-light); }
-.entry-meta { flex-shrink: 0; display: flex; flex-direction: column; align-items: flex-end; justify-content: center; gap: 2px; min-width: 68px; text-align: right; }
-.entry-count { display: flex; align-items: baseline; gap: 3px; }
-.entry-meta b, .entry-meta em { line-height: 1.15; }
-.entry-meta b {
-  font-size: 1.4rem;
-  font-weight: 800;
-  color: var(--accent-brown);
-  line-height: 1.05;
-  font-variant-numeric: tabular-nums;
-}
-.entry-meta em { font-style: normal; font-size: 0.7rem; color: var(--muted); }
-.entry-progress { width: 100%; height: 4px; border-radius: var(--r-pill); background: var(--border-soft); overflow: hidden; margin-top: var(--sp-xs); }
-.entry-progress i {
-  display: block;
-  height: 100%;
-  border-radius: var(--r-pill);
-  background: linear-gradient(90deg, var(--accent), var(--primary));
-  transition: width 0.5s var(--ease-out);
-}
 .grid-section-title {
   font-size: 1rem;
   font-weight: 700;
   color: var(--ink-2);
   margin: 6px 0 10px;
   letter-spacing: 0.5px;
-}
-@media (max-width: 700px) {
-  .home-entry-grid { grid-template-columns: repeat(2, 1fr); }
 }
 /* ===== 今日学习头部 ===== */
 .today-head {
@@ -292,8 +211,10 @@
 }
 .today-title { font-size: 1.35rem; font-weight: 700; color: var(--ink); letter-spacing: 1px; margin: 0; }
 .today-sub { font-size: 0.85rem; color: var(--ink-light); margin: 3px 0 0; }
+.today-ring-wrap { display: flex; flex-direction: column; align-items: center; gap: 2px; }
 .today-ring { position: relative; width: 62px; height: 62px; }
 .ring-svg { width: 62px; height: 62px; }
+.ring-caption { font-size: 0.62rem; color: var(--ink-light); letter-spacing: 1px; }
 .ring-text {
   position: absolute;
   inset: 0;
@@ -305,7 +226,6 @@
   line-height: 1;
   color: var(--primary);
 }
-
 /* ===== 今日推荐卡 ===== */
 .today-recommend { margin: var(--sp-xs) 0 12px; }
 .rec-card {
@@ -339,12 +259,12 @@
   justify-content: center;
   box-shadow: 0 3px 8px var(--red-primary-25);
 }
-.rec-main { flex: 1; min-width: 0; display: flex; flex-direction: column; gap: 2px; }
-.rec-label { font-size: 0.75rem; font-weight: 700; color: var(--accent-brown); letter-spacing: 1px; }
-.rec-title { font-size: 1.1rem; font-weight: 700; color: var(--ink); }
+.rec-main { flex: 1; min-width: 0; display: flex; flex-direction: column; justify-content: center; gap: 2px; }
+.rec-label { font-size: 0.75rem; font-weight: 700; color: var(--accent-brown); letter-spacing: 1px; line-height: 1.4; }
+.rec-title { font-size: 1.1rem; font-weight: 700; color: var(--ink); line-height: 1.4; }
 .rec-sub {
-  overflow: hidden; text-overflow: ellipsis; white-space: nowrap; font-size: 0.8rem; color: var(--ink-light); }
-.rec-go { font-size: 1.3rem; color: var(--primary); }
+  overflow: hidden; text-overflow: ellipsis; white-space: nowrap; font-size: 0.8rem; color: var(--ink-light); line-height: 1.4; }
+.rec-go { font-size: 1.3rem; color: var(--primary); line-height: 1; }
 
 /* ===== 今日任务 ===== */
 .today-tasks {
@@ -363,8 +283,9 @@
   border: 1px solid var(--border-soft);
   border-radius: var(--r-pill);
   padding: 6px 14px;
+  line-height: 1;
 }
-.task-item.done { color: var(--success); border-color: var(--success-border); background: var(--success-soft); }
+.task-item.done { color: var(--accent-brown); border-color: var(--accent); background: var(--accent-soft); }
 .task-dot { width: 8px; height: 8px; border-radius: 50%; background: var(--accent); display: inline-block; }
 
 /* ===== 我的页面 ===== */
@@ -419,10 +340,10 @@
 .article-grid-section { margin-bottom: var(--sp-md); }
 .ags-title { padding: 2px 2px var(--sp-sm); margin-bottom: var(--sp-sm); font-size: 0.78rem; }
 .article-grid { grid-template-columns: repeat(auto-fill, minmax(140px, 1fr)); gap: 10px; }
-.article-card { padding: 10px var(--sp-md); gap: 3px; }
+.article-card { padding: 12px var(--sp-md) 10px; gap: 6px; }
 
 /* 顶部"今日"区紧凑化 (2026-08) */
-.today-head { padding: 2px 2px var(--sp-sm); }
+.today-head { padding: 2px 2px var(--sp-sm) 0; }
 .today-title { font-size: 1.12rem; }
 .today-sub { font-size: 0.76rem; margin-top: 2px; }
 .today-ring { width: 46px; height: 46px; }
@@ -474,9 +395,6 @@
 .rec-label { font-size: 0.66rem; }
 .rec-title { font-size: 0.9rem; }
 .rec-go { font-size: 1rem; }
-.home-entry-grid { gap: var(--sp-sm); margin: var(--sp-sm) 0 10px; }
-.entry-card { padding: 10px 14px; gap: var(--sp-md); }
-.entry-icon { width: 38px; height: 38px; }
 .article-grid-section { margin-bottom: var(--sp-sm); }
 .article-grid { gap: 5px; }
 .article-card { padding: 7px 9px; }
@@ -509,12 +427,6 @@
 }
 
 /* ===== 视觉体检修复 (2026-08) ===== */
-/* 快捷功能卡压缩 */
-.home-entry-grid { gap: 6px; margin: 6px 0 8px; }
-.entry-card { padding: var(--sp-sm) var(--sp-md); gap: 10px; }
-.entry-icon { width: 32px; height: 32px; border-radius: var(--r-sm); }
-.entry-card .entry-title { font-size: 0.92rem; }
-.entry-card .entry-sub { font-size: 0.74rem; }
 /* 篇目卡片 meta 允许两行, 不截断信息 */
 .ac-meta {
   white-space: normal;

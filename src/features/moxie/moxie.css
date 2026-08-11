@@ -15,12 +15,14 @@
 .moxie-title { font-size: var(--f-size-lg); color: var(--ink); margin: 0 0 4px; }
 .moxie-sub { font-size: var(--f-size-sm); color: var(--ink-light); margin: 0; }
 
-.moxie-ring { flex-shrink: 0; width: 64px; height: 64px; position: relative; }
+.moxie-ring-wrap { flex-shrink: 0; display: flex; flex-direction: column; align-items: center; gap: 1px; }
+.moxie-ring { width: 64px; height: 64px; position: relative; }
 .moxie-ring .ring-svg { width: 64px; height: 64px; }
 .moxie-ring .ring-text {
   position: absolute; inset: 0; display: flex; align-items: center; justify-content: center;
-  font-size: 0.8rem; font-weight: 600; color: var(--primary);
+  font-size: 0.8rem; font-weight: 800; color: var(--primary-dark);
 }
+.moxie-ring-wrap .ring-caption { font-size: 0.6rem; color: var(--ink-light); letter-spacing: 1px; }
 
 /* 统计条 */
 .moxie-stats {
@@ -31,15 +33,15 @@
   background: var(--card-bg); border: 1px solid var(--border-soft); border-radius: var(--r-sm);
   padding: 10px var(--sp-sm); text-align: center;
 }
-.moxie-stat b { display: block; font-size: 1.2rem; color: var(--ink); }
-.moxie-stat em { font-style: normal; font-size: 0.72rem; color: var(--ink-light); }
+.moxie-stat b { display: block; font-size: 1.2rem; color: var(--ink); line-height: 1.3; margin-bottom: 2px; }
+.moxie-stat em { font-style: normal; font-size: 0.78rem; color: var(--ink-2); line-height: 1.3; }
 .moxie-stat.ok b { color: var(--success); }
 
 /* 篇目卡进度条 */
 .moxie-card { position: relative; }
 .moxie-card-bar {
-  display: block; height: 4px; width: 100%; background: var(--border-soft);
-  border-radius: 2px; margin-top: var(--sp-sm); overflow: hidden;
+  display: block; height: 5px; width: 100%; background: var(--gold-15);
+  border-radius: 3px; margin-top: var(--sp-sm); overflow: hidden;
 }
 .moxie-card-bar i { display: block; height: 100%; border-radius: 2px; transition: width 0.4s ease; }
 .moxie-card .ac-badge.moxie-done { position: absolute; top: 8px; right: 8px; background: var(--success); color: var(--card-bg); }

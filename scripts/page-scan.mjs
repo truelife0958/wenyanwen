@@ -24,7 +24,7 @@ async function scanPage(page, label, path) {
   page.on('pageerror', (e) => pageErrors.push(e.message));
   page.on('console', (m) => { if (m.type() === 'error') pageErrors.push(m.text()); });
   await page.goto(BASE.replace(/\/$/, '') + path, { waitUntil: 'networkidle' });
-  await page.waitForTimeout(450);
+  await page.waitForTimeout(700);
   const state = await page.evaluate(() => ({
     scrollW: document.documentElement.scrollWidth,
     innerW: window.innerWidth,
@@ -46,16 +46,16 @@ const mobile = await browser.newPage({ viewport: { width: 375, height: 812 } });
 console.log('=== 桌面端核心页面 ===');
 const coreRoutes = [
   ['首页', '/'],
-  ['字词卡', '/cards'],
-  ['考点图谱', '/map'],
-  ['错题本', '/errors'],
+  ['默写列表', '/moxie'],
+  ['默写错题本', '/moxie/errors'],
+  ['旧学习深链', '/learning/' + encodeURIComponent('岳阳楼记')],
 ];
 for (const [label, path] of coreRoutes) await scanPage(desktop, label, path);
 
-console.log('=== 篇目工作区 (3 篇 × 3 tab) ===');
-const sampleArticles = ['jc-yueyanglouji', 'jc-ly', 'article-chibi-106'];
+console.log('=== 篇目工作区 (2 篇 × 5 tab) ===');
+const sampleArticles = ['jc-yueyanglouji', 'jc-ly'];
 for (const id of sampleArticles) {
-  for (const tab of ['learn', 'appreciate', 'practice']) {
+  for (const tab of ['learn', 'appreciate', 'exam', 'notes', 'moxie']) {
     await scanPage(desktop, `${id}/${tab}`, `/articles/${id}/${tab}`);
   }
 }
@@ -65,10 +65,11 @@ console.log('=== 移动端关键页 (375px) ===');
 for (const [label, path] of [
   ['移动-首页', '/'],
   ['移动-学习', '/articles/jc-yueyanglouji/learn'],
-  ['移动-练习', '/articles/jc-yueyanglouji/practice'],
-  ['移动-图谱', '/map'],
-  ['移动-错题本', '/errors'],
-  ['移动-字词卡', '/cards'],
+  ['移动-鉴赏', '/articles/jc-yueyanglouji/appreciate'],
+  ['移动-考点', '/articles/jc-yueyanglouji/exam'],
+  ['移动-注释', '/articles/jc-yueyanglouji/notes'],
+  ['移动-默写列表', '/moxie'],
+  ['移动-默写错题本', '/moxie/errors'],
 ]) {
   await scanPage(mobile, label, path);
 }

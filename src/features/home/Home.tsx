@@ -2,24 +2,27 @@ import { useDeferredValue, useMemo, useRef, useState } from 'react';
 import { Link } from 'react-router-dom';
 import Icon from '../../shared/ui/Icon';
 import './home.css';
-import { GRADE_ORDER, groupByGrade, articleMeta } from '../../data';
+import { GRADE_ORDER, groupByGrade, articleMeta, counts } from '../../data';
 import type { ArticleMeta } from '../../data';
 import { articleHref } from '../../data/article-links';
 import EmptyState from '../../shared/ui/EmptyState';
 import SectionHeader from '../../shared/ui/SectionHeader';
 import { examLevel, examPoints } from '../../data/exam-tags';
 import { loadLS, loadStreak } from '../../shared/lib/utils';
-import { loadMoxieProgress, moxieArticles } from '../../data/moxie';
 import { useErrorBook } from '../errorbook/store';
 
 const LAST_ARTICLE_KEY = 'wyw_last_article';
 
-/** 学习概览: 默写进度 + 默写错题 */
+/** 学习概览: 默写进度 + 默写错题 (进度直接读 localStorage, 不加载 moxie.json 全量数据) */
 function useOverview() {
   const { items } = useErrorBook();
   return useMemo(() => {
-    const prog = loadMoxieProgress();
-    const doneCount = Object.values(prog).length;
+    let prog: Record<string, { pass: boolean }> = {};
+    try {
+      const raw = localStorage.getItem('wyw_moxie_progress_v1');
+      if (raw) prog = JSON.parse(raw);
+    } catch { /* ignore */ }
+    const doneCount = Object.keys(prog).length;
     const passedCount = Object.values(prog).filter((e) => e.pass).length;
     const moxieErrors = items.filter((e) => String(e.qid || '').startsWith('moxie'));
     return { doneCount, passedCount, errorCount: moxieErrors.length };
@@ -46,10 +49,7 @@ export default function Home() {
     }
   }, []);
 
-  const moxieTotal = useMemo(
-    () => moxieArticlesTotal(),
-    [],
-  );
+  const moxieTotal = counts.moxieQuestions;
   const moxiePct = moxieTotal ? Math.round((overview.doneCount / moxieTotal) * 100) : 0;
 
   /** 搜索过滤 + 分类过滤 */
@@ -90,15 +90,18 @@ export default function Home() {
           <h2 className="today-title">今日学习</h2>
           <p className="today-sub">{new Date().getHours() < 12 ? '早上好' : new Date().getHours() < 18 ? '下午好' : '晚上好'} · {loadStreak().count > 0 ? `🔥 已连续学习 ${loadStreak().count} 天` : '坚持就是胜利'}</p>
         </div>
-        <div className="today-ring" aria-label="默写进度">
-          <svg viewBox="0 0 64 64" className="ring-svg">
-            <circle cx="32" cy="32" r="26" fill="none" stroke="#d9cdb8" strokeWidth="7" />
-            <circle cx="32" cy="32" r="26" fill="none" stroke="var(--primary)" strokeWidth="7"
-              strokeLinecap="round" strokeDasharray={`${2 * Math.PI * 26}`}
-              strokeDashoffset={`${2 * Math.PI * 26 * (1 - moxiePct / 100)}`}
-              transform="rotate(-90 32 32)" style={{ transition: 'stroke-dashoffset 0.6s ease' }} />
-          </svg>
-          <span className="ring-text">{moxiePct}%</span>
+        <div className="today-ring-wrap" aria-label="默写进度">
+          <div className="today-ring">
+            <svg viewBox="0 0 64 64" className="ring-svg">
+              <circle cx="32" cy="32" r="26" fill="none" stroke="#d9cdb8" strokeWidth="7" />
+              <circle cx="32" cy="32" r="26" fill="none" stroke="var(--primary)" strokeWidth="7"
+                strokeLinecap="round" strokeDasharray={`${2 * Math.PI * 26}`}
+                strokeDashoffset={`${2 * Math.PI * 26 * (1 - moxiePct / 100)}`}
+                transform="rotate(-90 32 32)" style={{ transition: 'stroke-dashoffset 0.6s ease' }} />
+            </svg>
+            <span className="ring-text">{moxiePct}%</span>
+          </div>
+          <span className="ring-caption">默写进度</span>
         </div>
       </section>
 
@@ -130,11 +133,8 @@ export default function Home() {
       {/* 今日任务 */}
       <section className="today-tasks" aria-label="今日任务">
         <div className="task-item done"><Icon name="check" size={13} /> 默写 {overview.doneCount}/{moxieTotal} 题</div>
-        <div className="task-item"><span className="task-dot" /> 错题 {overview.errorCount > 0 ? overview.errorCount : '待复习'}</div>
         <Link className="task-item task-link" to="/moxie"><span className="task-dot" /> 开始默写 →</Link>
       </section>
-
-      {/* 搜索栏 */}
       <div className="home-topbar">
         <div className="home-search-box">
           <span className="hsb-icon" aria-hidden="true"><Icon name="search" size={17} /></span>
@@ -155,20 +155,7 @@ export default function Home() {
         </div>
       </div>
 
-      {/* 快捷功能 (错题本) */}
-      <section className="home-entry-grid" aria-label="快捷功能">
-        <Link to="/moxie/errors" className="entry-card entry-errors">
-          <span className="entry-icon" aria-hidden="true"><Icon name="pencil" size={26} /></span>
-          <span className="entry-body">
-            <span className="entry-label">默写错题本</span>
-            <span className="entry-desc">回顾错题 · 查漏补缺</span>
-          </span>
-          <span className="entry-meta">
-            <span className="entry-count"><b>{overview.errorCount}</b><em>条错题</em></span>
-            <span className="entry-progress"><i style={{ width: `${Math.min(overview.errorCount * 6, 100)}%` }} /></span>
-          </span>
-        </Link>
-      </section>
+      {/* 篇目区 (始终显示) */}
 
       {/* 篇目区 (始终显示) */}
       <div ref={gridRef}>
@@ -219,14 +206,6 @@ export default function Home() {
   );
 }
 
-/** 默写总题数 (含全部篇目) */
-function moxieArticlesTotal(): number {
-  try {
-    return moxieArticles.reduce((t, a) => t + a.sections.reduce((x, s) => x + (s.items?.length || 0), 0), 0);
-  } catch {
-    return 0;
-  }
-}
 function examOrder(title: string): number {
   const lvl = examLevel(title);
   return lvl === 'must' ? 0 : lvl === 'core' ? 1 : 2;

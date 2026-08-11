@@ -25,6 +25,7 @@ const tokens = {
   'accent-soft': '#faf0dc',
   'accent-brown': '#a5803a',
   'bronze': '#8a6d3b',
+  'bronze-deep': '#8a6420',
   'success': '#3a8a5f',
   'success-dark': '#2e6b4f',
   'success-soft': '#edf7f1',

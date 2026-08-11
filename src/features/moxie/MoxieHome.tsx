@@ -36,15 +36,18 @@ export default function MoxieHome() {
           <h2 className="moxie-title">默写练习</h2>
           <p className="moxie-sub">原文 · 理解 · 词义 · 译文，四种默写步步通关</p>
         </div>
-        <div className="moxie-ring" aria-label="默写总进度">
-          <svg viewBox="0 0 64 64" className="ring-svg">
-            <circle cx="32" cy="32" r="26" fill="none" stroke="#d9cdb8" strokeWidth="7" />
-            <circle cx="32" cy="32" r="26" fill="none" stroke="var(--primary)" strokeWidth="7"
-              strokeLinecap="round" strokeDasharray={`${2 * Math.PI * 26}`}
-              strokeDashoffset={`${2 * Math.PI * 26 * (1 - (totalItems ? doneCount / totalItems : 0))}`}
-              transform="rotate(-90 32 32)" style={{ transition: 'stroke-dashoffset 0.6s ease' }} />
-          </svg>
-          <span className="ring-text">{totalItems ? Math.round((doneCount / totalItems) * 100) : 0}%</span>
+        <div className="moxie-ring-wrap" aria-label="默写总进度">
+          <div className="moxie-ring">
+            <svg viewBox="0 0 64 64" className="ring-svg">
+              <circle cx="32" cy="32" r="26" fill="none" stroke="#d9cdb8" strokeWidth="7" />
+              <circle cx="32" cy="32" r="26" fill="none" stroke="var(--primary)" strokeWidth="7"
+                strokeLinecap="round" strokeDasharray={`${2 * Math.PI * 26}`}
+                strokeDashoffset={`${2 * Math.PI * 26 * (1 - (totalItems ? doneCount / totalItems : 0))}`}
+                transform="rotate(-90 32 32)" style={{ transition: 'stroke-dashoffset 0.6s ease' }} />
+            </svg>
+            <span className="ring-text">{totalItems ? Math.round((doneCount / totalItems) * 100) : 0}%</span>
+          </div>
+          <span className="ring-caption">总进度</span>
         </div>
       </section>
 

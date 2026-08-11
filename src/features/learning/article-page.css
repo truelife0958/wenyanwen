@@ -24,16 +24,6 @@
 }
 
 .workspace-head p { color: var(--ink-light); font-size: 0.86rem; }
-.workspace-progress {
-  flex-shrink: 0;
-  color: var(--accent-brown);
-  background: var(--accent-soft);
-  border: 1px solid var(--accent-soft);
-  border-radius: var(--r-pill);
-  padding: var(--sp-xs) var(--sp-md);
-  font-size: 0.76rem;
-  font-weight: 600;
-}
 
 .workspace-tabs {
   display: flex;
@@ -411,12 +401,6 @@
 
 /* ===== gemini 视觉审查修复 (2026-08) ===== */
 /* 3) 三步学习按钮: 中性描边, 对比度达标 */
-.workspace-progress {
-  color: var(--ink-2);
-  background: var(--card-bg);
-  border: 1px solid var(--border);
-  box-shadow: 0 1px 3px var(--black-4);
-}
 /* 4) 查看译文链接加深 */
 .para-toggle { color: var(--bronze); font-weight: 600; }
 /* 5) 段落卡片间距统一 */
@@ -425,12 +409,6 @@
 .para-block { margin-bottom: 0; }
 
 /* gemini 细粒度: 三步学习按钮增强 (实底金) + 标题对齐 */
-.workspace-progress {
-  background: var(--accent-soft);
-  color: var(--bronze);
-  border: 1px solid var(--accent-light);
-  box-shadow: 0 1px 4px var(--black-5);
-}
 
 /* 默写入口卡 (学习页 → 默写联动) */
 .moxie-entry-card {

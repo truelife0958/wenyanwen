@@ -830,6 +830,8 @@ await output('article-meta.json', {
     totalQuestions: questions.length,
     zhenti: questions.filter((q) => q.fromZhenti).length,
     collections: collections.size,
+    moxieArticles: moxie.length,
+    moxieQuestions: moxie.reduce((t, a) => t + a.sections.reduce((x, s) => x + (s.items?.length || 0), 0), 0),
   },
 });
 const runtimeMeaningRecords = words.reduce((total, word) => total + word.meanings.length, 0);

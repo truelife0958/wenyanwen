@@ -1479,3 +1479,26 @@ toPracticeQuestion 的 fromZhenti 逻辑误写 `origins.includes('exam-gen')`（
 - 注释页: 词义默写考查词 → "考点"徽章 (moxieArticles 交集); 释义引号高亮
 - 验证: 论语考点 6 卡全"重点"+ 对比行 10 + 圆点 9; 卖炭翁"难点"触发; 注释 8+ 考点徽章; 44/44
 - 视觉模型误报 (grid gap 不齐) 实测排除: 3 列 gap 完全一致
+
+## 2026-08-11 · 全项目优化精简整合+浏览器全功能测试 (08-11-full-app-optimization)
+
+用户: 分析整个项目优化整合精简的地方, 浏览器测试每个功能按钮, 布局简洁易操作。
+
+### 分析结论(Phase 1)
+- 基线: full-flow 44/44 绿; page-scan 85 通过但含过时路由(假通过); browser-test.mjs 严重过时崩溃(测四入口卡/三标签/练习tab 旧 UI)
+- 死代码: ArticleReader compact=false 分支(无调用点)、TagChip.tsx 未引用、home-entry-grid 与今日推荐/任务三块功能重叠
+- 文档过时: README/PROJECT_STRUCTURE 描述已删除页面(练习/字词卡/考点图谱/Collections)
+- 视觉问题: 核心标签对比度、年级tab数字、朗读控件、卡片对齐、底部导航图标
+- 性能: moxie.json(848K)被首页静态加载(经 index.ts 转发)
+
+### 实施
+- **测试修复**: browser-test.mjs 重写 67 项(五标签/搜索/默写/错题/旧路由/移动端); page-scan 路由清单更新 85 项; ssr-check 修复(entry-grid→today-recommend, moxieArticles 改从 moxie.ts 加载); 修复 baseURL 双斜杠 bug(404 假失败)
+- **功能精简**: 首页删快捷入口卡(今日推荐+任务已覆盖, 任务行 3→2 项); ArticleReader 删 compact 分支; 删 TagChip; 删"三步学习"装饰按钮(五标签时代过时概念)
+- **布局修复**: 核心重点标签→深古铜底白字(var(--bronze-deep) 新令牌); 年级tab选中数字金底棕字; 底部导航激活态红底白字+阴影; 任务行绿色改金色系; 搜索占位符加深; 进度环加"默写进度"caption; 朗读控件/注释高亮加深; 星标 vertical-align; 标题竖线移除(page-title)与统一(section-header 固定 14px); 卡片间距/统计间距
+- **性能**: moxie 统计进 article-meta counts; App/Home 不再引 moxie.ts → 首屏剥离 555KB chunk(gzip 163KB); 验证首页 0 moxie 资源, 进默写页按需加载
+- **spec**: quality-guidelines 更新(44/67/85 项数、测试维护约定、首屏 moxie 禁令)
+- 视觉迭代: vision 复检 3 轮, 客观验证排除模型误报(computed style 证明对比度达标)
+
+### 验证
+- browser-test 67/67 ✓ full-flow 44/44 ✓ page-scan 85/85 ✓ typecheck ✓ npm run check ✓
+- 网络验证: 首页不加载 moxie chunk, /moxie 按需加载 ✓

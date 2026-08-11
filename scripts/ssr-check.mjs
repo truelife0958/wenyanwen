@@ -40,7 +40,7 @@ try {
   const home = render('/');
   check('含顶栏', home.includes('文言文学习'));
   check('搜索框', home.includes('home-search-box'));
-  check('功能入口', home.includes('home-entry-grid'));
+  check('今日推荐卡', home.includes('today-recommend') && home.includes('rec-card'));
   check('6 个年级 tab', (home.match(/class="grade-tab"|grade-tab active/g) || []).length === 6);
   check('篇目卡片网格', home.includes('article-grid') && home.includes('article-card'));
   check('进度概览', home.includes('today-tasks'));
@@ -65,7 +65,7 @@ try {
   console.log('\n=== 规范化题库 ===');
   const runtimeData = await vite.ssrLoadModule('/src/data/index.ts');
   check('轻量 meta 可加载', runtimeData.articleMeta.length === 126 && runtimeData.counts.totalQuestions > 0);
-  check('默写数据可加载', runtimeData.moxieArticles.length >= 120);
+  check('默写数据可加载', (await vite.ssrLoadModule('/src/data/moxie.ts')).moxieArticles.length >= 120);
 
   const { default: MoxieErrors } = await vite.ssrLoadModule('/src/features/moxie/MoxieErrors.tsx');
   const { ErrorBookProvider } = await vite.ssrLoadModule('/src/features/errorbook/store.tsx');
@@ -127,7 +127,7 @@ try {
       const html = renderStatic(p);
       if (p === '/unknown-route') {
         // 兜底路由应导航回首页
-        check(`深链 ${p} → 兜底首页`, html.includes('文言文学习') || html.includes('home-entry'));
+        check(`深链 ${p} → 兜底首页`, html.includes('文言文学习') || html.includes('today-recommend'));
       } else {
         check(`深链 ${p} 可渲染`, html.length > 200);
       }

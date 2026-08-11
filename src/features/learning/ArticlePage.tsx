@@ -59,7 +59,6 @@ export default function ArticlePage() {
         title={article.title}
         badge={examTagFor(article.title) && <span className={`ac-badge ac-badge-${examTagFor(article.title)}`}>{examTagFor(article.title) === 'must' ? '中考必考' : '核心考点'}</span>}
         meta={meta}
-        right={<span className="workspace-progress">三步学习</span>}
       />
       <nav className="workspace-tabs" aria-label="篇目学习功能">
         {TABS.map((item) => (
@@ -69,7 +68,7 @@ export default function ArticlePage() {
         ))}
       </nav>
       <main className="workspace-content">
-        {tab === 'learn' && <ArticleReader key={article.id || article.title} article={article} compact />}
+        {tab === 'learn' && <ArticleReader key={article.id || article.title} article={article} />}
         {tab === 'appreciate' && <ArticleAppreciation key={article.id || article.title} article={article} />}
         {tab === 'exam' && <ArticleExam key={article.id || article.title} article={article} />}
         {tab === 'notes' && <ArticleNotes key={article.id || article.title} article={article} />}

@@ -6,7 +6,6 @@ import TabBar from './features/home/TabBar';
 import ErrorBoundary from './shared/ui/ErrorBoundary';
 import { ErrorBookProvider } from './features/errorbook/store';
 import { counts, loadCore } from './data';
-import { moxieCount } from './data/moxie';
 import { articleHref, findLearningArticle } from './data/article-links';
 import { useParams } from 'react-router-dom';
 
@@ -59,7 +58,7 @@ export default function App() {
         <PreloadCore />
         <header className="app-header">
           <h1>文言文学习</h1>
-          <span className="app-header-info">{counts.learning} 篇课文 · {moxieCount} 篇默写</span>
+          <span className="app-header-info">{counts.learning} 篇课文 · {counts.moxieArticles} 篇默写</span>
         </header>
 
         <main className="app-main">

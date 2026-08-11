@@ -42,7 +42,7 @@ await page.waitForTimeout(400);
 console.log('=== 1. 首屏 ===');
 check('标题', (await page.title()).includes('文言文'));
 check('顶部导航已移除', await page.locator('.app-nav').count() === 0);
-check('入口卡 1 张', await page.locator('.entry-card').count() === 1);
+check('快捷入口已移除', await page.locator('.home-entry-grid').count() === 0);
 check('统计动态', /\d+ 篇课文 · \d+ 篇默写/.test(await page.locator('.app-header-info').textContent()));
 check('首页卡片', await page.locator('.article-card').count() >= 15);
 

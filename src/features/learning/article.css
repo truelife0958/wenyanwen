@@ -3,16 +3,6 @@
  * ========================================================================== */
 .article { position: relative; animation: fadeIn var(--dur-base) var(--ease-out); }
 
-.article-head { margin-bottom: 14px; }
-.article-head-row { display: flex; justify-content: space-between; align-items: flex-start; gap: var(--sp-md); }
-.article-title {
-  font-size: 1.5rem;
-  color: var(--primary-dark);
-  border-left: 4px solid var(--accent);
-  padding-left: var(--sp-md);
-  margin-bottom: 6px;
-}
-.article-meta { color: var(--muted); font-size: 0.85rem; padding-left: var(--sp-lg); }
 
 /* ===== 朗读按钮 ===== */
 .read-btn {
@@ -47,7 +37,7 @@
   border-radius: var(--r-sm);
 }
 .read-bar .read-btn { font-size: 0.9rem; padding: 6px 18px; }
-.read-hint { font-size: 0.82rem; color: var(--ink-light); }
+.read-hint { font-size: 0.82rem; color: var(--ink-2); }
 .read-bar.on { background: var(--accent-soft); border-color: var(--accent-light); }
 .read-bar.on .read-hint { color: var(--bronze); }
 
@@ -79,7 +69,7 @@
   display: flex;
   flex-wrap: wrap;
   align-items: center;
-  gap: var(--sp-xs) var(--sp-sm);
+  gap: 4px 12px;
 }
 /* 赏析展开区: 与译文同风格但区分色 */
 .para-analysis {
@@ -194,7 +184,7 @@
 .annot-gloss.note {
   border-bottom: 1.5px dotted var(--accent-brown);
   color: var(--bronze);
-  background: var(--bg);
+  background: var(--gold-18);
   font-weight: 400;
 }
 .annot-gloss.note:hover { background: var(--accent-soft); }
@@ -1039,6 +1029,7 @@
   padding: 0 2px;
   font-size: inherit;
   line-height: 1;
+  vertical-align: -0.15em;
   cursor: pointer;
   transition: transform var(--dur-fast) var(--ease-spring), filter var(--dur-fast) var(--ease-out);
 }
@@ -1105,7 +1096,7 @@
 /* 阅读工具条 (语速/字号/主题) */
 .read-tools { display: flex; gap: 6px; margin-left: auto; }
 .rt-btn {
-  border: 1px solid var(--border); background: var(--card-bg); color: var(--ink-2);
+  border: 1px solid var(--border); background: var(--card-bg); color: var(--ink);
   border-radius: var(--r-pill); padding: 3px 10px; font-size: 0.72rem; cursor: pointer;
   white-space: nowrap;
 }

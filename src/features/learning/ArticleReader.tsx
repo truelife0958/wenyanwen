@@ -129,10 +129,8 @@ function AnnotText({
 
 export default function ArticleReader({
   article,
-  compact = false,
 }: {
   article: CanonicalArticle;
-  compact?: boolean;
 }) {
   const [gloss, setGloss] = useState<{ text?: string; word?: CanonicalWord; x: number; y: number } | null>(null);
   const [reading, setReading] = useState(false);
@@ -318,24 +316,8 @@ export default function ArticleReader({
 
   return (
     <div className="article" ref={containerRef}>
-      {!compact && (
-        <div className="article-head">
-          <div className="article-head-row">
-            <div>
-              <h2 className="article-title">{article.title}</h2>
-              <p className="article-meta">{[article.dynasty, article.author, article.origin, article.grade].filter(Boolean).join(' · ')}</p>
-            </div>
-            {ttsSupports() && (
-              <button className={`read-btn${reading ? ' on' : ''}`} onClick={toggleRead} aria-label={reading ? '停止朗读' : '朗读原文'}>
-                {reading ? '■ 停止' : '▶ 朗读'}
-              </button>
-            )}
-          </div>
-        </div>
-      )}
-
       {/* 朗读控制条 */}
-      {compact && ttsSupports() && (
+      {ttsSupports() && (
         <div className={`read-bar${reading ? ' on' : ''}`}>
           <button className="read-btn" onClick={toggleRead} aria-label={reading ? '停止朗读' : '朗读全文'}>
             {reading ? '■ 停止' : '▶ 朗读全文'}

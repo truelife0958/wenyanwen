@@ -2,8 +2,6 @@
  *  加载策略: 轻量 article-meta.json + collections.json 静态导入(首屏);
  *  articles/words/questions 全量数据按需 loadCore() 动态加载 (学习页进入时)。 */
 import { useEffect, useState } from 'react';
-import { moxieArticles, moxieCount } from './moxie';
-export { moxieArticles, moxieCount };
 import metaRaw from './runtime/article-meta.json';
 import collectionRaw from './runtime/collections.json';
 import { normGrade } from '../shared/lib/utils';
@@ -37,6 +35,7 @@ export const articleMeta = metaRaw.articles as ArticleMeta[];
 export const counts = metaRaw.counts as {
   learning: number; recite: number; cards: number; globalWords: number;
   senses: number; totalQuestions: number; zhenti: number; collections: number;
+  moxieArticles: number; moxieQuestions: number;
 };
 export const collections = collectionRaw as CanonicalCollection[];
 

@@ -4,7 +4,8 @@
  */
 import { useMemo } from 'react';
 import type { CanonicalArticle } from '../../types';
-import { getCore, moxieArticles } from '../../data';
+import { getCore } from '../../data';
+import { moxieArticles } from '../../data/moxie';
 import HighlightText from '../../shared/ui/HighlightText';
 import EmptyState from '../../shared/ui/EmptyState';
 import './article.css';

@@ -8,7 +8,9 @@
 
 ```bash
 npm run check        # data:build + validate + typecheck + vite build + ssr-check
-npm run test:flow    # playwright 端到端 (42 项: 首页/学习/默写/错题/移动端/深链)
+npm run test:flow    # playwright 端到端 (44 项: 首页/学习/默写/错题/移动端/深链)
+node scripts/browser-test.mjs  # 篇目中心快速回归 (67 项: 五标签/搜索/默写/旧路由/移动端)
+node scripts/page-scan.mjs     # 全路由扫描 (85 项: JS错误/横向溢出/渲染; 路由清单须与 App.tsx 同步)
 node scripts/moxie/validate.mjs   # 默写抽取完整性 (页覆盖/篇目/配对率) → ocr/moxie/report.md
 node scripts/vision/vision.mjs <url> --mobile --mode describe   # UI 视觉验收
 npm run validate   # 含段 8 raw 唯一性 / 段 9 真题重复 / 段 10 runtime 一致性 / 段 11 样式硬编码 gate
@@ -27,6 +29,7 @@ npm run validate   # 含段 8 raw 唯一性 / 段 9 真题重复 / 段 10 runtim
 ## 前端约定
 
 - TabBar 固定 2 tab（学习/默写）；新功能入口不新增 tab。
+- **首屏性能**：`article-meta.json` counts 含 `moxieArticles/moxieQuestions`（build 生成）；首页/App 只从 counts 读默写统计，**禁止** import `data/moxie.ts`（会静态拉入 555KB moxie.json chunk）。需用默写数据的页面直接引 `data/moxie.ts`（路由懒加载生效）。
 - 主题切换走 `tokens.ts` 的 `applyTheme/initTheme`（localStorage `wyw_theme`），不要散落 CSS 覆盖。
 - `localStorage` 读取要处理 `null`（`Number(null)=0` 陷阱，见 ArticleReader loadSetting）。
 - 阅读工具条（语速/字号/主题）状态持久化 key：`wyw_tts_rate` / `wyw_font_scale`。
