@@ -4,7 +4,8 @@
  */
 import { useMemo } from 'react';
 import type { CanonicalArticle } from '../../types';
-import { getCore } from '../../data';
+import { getCore, moxieArticles } from '../../data';
+import HighlightText from '../../shared/ui/HighlightText';
 import EmptyState from '../../shared/ui/EmptyState';
 import './article.css';
 
@@ -16,6 +17,21 @@ export default function ArticleNotes({ article }: { article: CanonicalArticle })
     () => words.filter((w) => w.meanings.some((m) => m.category === NOTE_CATEGORY)),
     [words],
   );
+
+  // 考点词: 词义默写中考查过的词 → 标"考点"徽章
+  const examWords = useMemo(() => {
+    const set = new Set<string>();
+    for (const art of moxieArticles) {
+      if (art.title.replace(/[《》\s]/g, '') !== article.title.replace(/[《》\s]/g, '')) continue;
+      for (const sec of art.sections || []) {
+        if (sec.type !== '词义默写') continue;
+        for (const it of sec.items || []) {
+          for (const w of String(it.q).match(/【([^】]+)】/g) || []) set.add(w.replace(/[【】]/g, ''));
+        }
+      }
+    }
+    return set;
+  }, [article.title]);
 
   // 序号: 按原文首次出现顺序 (与学习页角标一致)
   const noteNums = useMemo(() => {
@@ -54,6 +70,7 @@ export default function ArticleNotes({ article }: { article: CanonicalArticle })
               <div className="appr-orig note-word">
                 <sup className="annot-no">{noteNums.get(word.id) ?? index + 1}</sup>
                 {word.word}
+                {examWords.has(word.word) && <span className="ep-level">考点</span>}
               </div>
               <div className="appr-ana note-meaning">
                 {word.meanings
@@ -61,7 +78,7 @@ export default function ArticleNotes({ article }: { article: CanonicalArticle })
                   .map((meaning, mi) => (
                     <span key={`${meaning.category}:${mi}`} className="note-meaning-item">
                       <i className="note-kind">{meaning.category}</i>
-                      {meaning.text}
+                      <HighlightText text={meaning.text} />
                       {meaning.example ? <em className="note-example">〔{meaning.example}〕</em> : null}
                     </span>
                   ))}

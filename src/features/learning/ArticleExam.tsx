@@ -6,6 +6,7 @@ import { useMemo } from 'react';
 import type { CanonicalArticle } from '../../types';
 import { examTagFor, examPoints } from '../../data/exam-tags';
 import EmptyState from '../../shared/ui/EmptyState';
+import HighlightText from '../../shared/ui/HighlightText';
 import './article.css';
 
 interface ExamPoint {
@@ -38,12 +39,22 @@ export default function ArticleExam({ article }: { article: CanonicalArticle }) 
           {examTag && <span className={`exam-card-badge ${examTag}`}>{examTag === 'must' ? '中考必考' : '中考核心'}</span>}
         </h3>
         <div className="appr-paras">
-          {examList.map((pt, idx) => (
-            <div className="appr-para" key={idx}>
-              <div className="appr-orig">{pt.point}</div>
-              {pt.detail && <div className="appr-ana">{pt.detail}</div>}
-            </div>
-          ))}
+          {examList.map((pt, idx) => {
+            const isHard = /易|勿|注意|切忌|区别|比较|相反|陷阱|辨析/.test(pt.detail || '');
+            return (
+              <div className="appr-para" key={idx}>
+                <div className="appr-orig ep-point-row">
+                  <span>{pt.point}</span>
+                  <span className={`ep-level${isHard ? ' hard' : ''}`}>{isHard ? '难点' : '重点'}</span>
+                </div>
+                {pt.detail && (
+                  <div className="appr-ana">
+                    <HighlightText text={pt.detail} numbered={pt.point.includes('默写')} />
+                  </div>
+                )}
+              </div>
+            );
+          })}
         </div>
       </div>
     </div>

@@ -4,6 +4,7 @@
  */
 import { useMemo } from 'react';
 import { splitNumbered } from '../../shared/lib/utils';
+import HighlightText from '../../shared/ui/HighlightText';
 import type { CanonicalArticle } from '../../types';
 
 interface Props {
@@ -44,7 +45,10 @@ export default function ArticleAnalysis({ article }: Props) {
           </h3>
           <div className="appr-ana analysis-card-body">
             {splitNumbered(analysis.writing).map((seg, i) => (
-              <p className="analysis-writing-item" key={i}>{seg}</p>
+              <p className="analysis-writing-item" key={i}>
+                <i className="writing-no">{"①②③④⑤⑥⑦⑧"[i] || i + 1}</i>
+                <HighlightText text={seg} />
+              </p>
             ))}
           </div>
         </section>
@@ -71,25 +75,25 @@ export default function ArticleAnalysis({ article }: Props) {
             {culture.authorIntro && (
               <div className="ac-culture-row">
                 <span className="ac-culture-label">作者</span>
-                <p>{culture.authorIntro}</p>
+                <p><HighlightText text={culture.authorIntro} /></p>
               </div>
             )}
             {culture.background && (
               <div className="ac-culture-row">
                 <span className="ac-culture-label">背景</span>
-                <p>{culture.background}</p>
+                <p><HighlightText text={culture.background} /></p>
               </div>
             )}
             {culture.theme && (
               <div className="ac-culture-row">
                 <span className="ac-culture-label">主题</span>
-                <p>{culture.theme}</p>
+                <p><HighlightText text={culture.theme} /></p>
               </div>
             )}
             {culture.text && (
               <div className="ac-culture-row">
                 <span className="ac-culture-label">常识</span>
-                <p>{culture.text}</p>
+                <p><HighlightText text={culture.text} /></p>
               </div>
             )}
           </div>
