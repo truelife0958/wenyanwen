@@ -564,9 +564,10 @@ console.log('\n=== 12. 原文默写题质量 ===');
       if (!items.length) continue;
       for (const it of items) {
         total++;
+        const qn = (String(it.q).match(/_+/g) || []).length;
         for (const a of it.answers || []) {
-          // 顿号、为答案内容中的合法并列列举, 不视为多分句
-          if (/[\s，,；;]/.test(String(a)) && String(a).length > 2) {
+          // 每空一个答案时, 答案内容含逗号是诗句原文标点, 合法; 仅当空数不匹配时视为双空残留
+          if ((it.answers || []).length !== qn && /[\s，,；;]/.test(String(a)) && String(a).length > 2) {
             multiAns.push(`${art.title}: ${String(a).slice(0, 20)}`);
           }
         }
@@ -577,4 +578,40 @@ console.log('\n=== 12. 原文默写题质量 ===');
     check('无多分句答案 (去2空)', multiAns.length === 0, multiAns.slice(0, 5).join(' | '));
     check('无全挖题 (每题含保留文字)', noFull.length === 0, noFull.slice(0, 8).join('、'));
   }
+}
+
+// ==================== 13. 默写数据质量 (去重/多小题/标点/空数) ====================
+console.log('\n=== 13. 默写数据质量 ===');
+{
+  const moxie = loadJSON('src/data/raw/moxie.json');
+  const legacy = loadJSON('src/data/raw/moxie-legacy.json');
+  const normQ = (s) => String(s || '').replace(/[\s，,。；;！？!?：:()（）""''【】·・]/g, '');
+  const qBlanks = (q) => (String(q || '').match(/_+/g) || []).length;
+
+  let dupQ = 0, multiQ = 0, pipeA = 0, halfP = 0, blankMismatch = 0, emptyAns = 0;
+  for (const data of [moxie, legacy]) {
+    for (const art of data) {
+      for (const s of art.sections || []) {
+        const seen = new Set();
+        for (const it of s.items || []) {
+          const k = normQ(it.q) + '|' + normQ((it.answers || []).join(''));
+          if (seen.has(k)) dupQ++;
+          seen.add(k);
+          if ((String(it.q).match(/\d+[\.．、]/g) || []).length > 1) multiQ++;
+          for (const a of it.answers || []) if (String(a).includes('|')) pipeA++;
+          const all = it.q + (it.answers || []).join('');
+          if (/[,;:!?()"']/.test(all)) halfP++;
+          const qn = qBlanks(it.q);
+          if (qn && qn !== (it.answers || []).length && qn > (it.answers || []).length) blankMismatch++;
+          if (qn && !(it.answers || []).length) emptyAns++;
+        }
+      }
+    }
+  }
+  check('无完全重复题 (归一化 q+答案)', dupQ === 0, `${dupQ} 组重复`);
+  check('无多小题 q (序号>1)', multiQ === 0, `${multiQ} 题`);
+  check('| 等价答案组 ≤ 10', pipeA <= 10, `${pipeA} 个 (卖油翁/蒹葭等等价变体, 前端任一匹配)`);
+  check('q/answers 无半角标点', halfP === 0, `${halfP} 处`);
+  check('无 q 空数>答案数 (缺答案)', blankMismatch === 0, `${blankMismatch} 题`);
+  check('无 q 有空但答案全空', emptyAns === 0, `${emptyAns} 题`);
 }
