@@ -90,15 +90,24 @@ const wrongAfterPractice = await page.evaluate(() => {
   return Array.isArray(arr) ? arr.length : 0;
 });
 check('错题自动入本', wrongAfterPractice > 0, `错题数 ${wrongAfterPractice}`);
-// ============ 4. 鉴赏流 ============
-console.log('\n=== 4. 鉴赏流 (逐段赏析/整篇鉴赏) ===');
+// ============ 4. 鉴赏流 (整篇鉴赏 + 阅读区查看赏析) ============
+console.log('\n=== 4. 鉴赏流 (整篇鉴赏/阅读区赏析) ===');
+await goto('/articles/jc-yueyanglouji/learn');
+await page.waitForTimeout(700);
+const anaBtns = await page.locator('.ana-toggle').count();
+check('阅读区查看赏析按钮', anaBtns > 0, `${anaBtns} 个`);
+if (anaBtns > 0) {
+  await page.locator('.ana-toggle').first().click();
+  await page.waitForTimeout(300);
+  check('赏析展开', await page.locator('.para-analysis').count() > 0);
+}
 await goto('/articles/jc-yueyanglouji/appreciate');
 await page.waitForTimeout(700);
 await page.locator('.workspace-tabs a:has-text("鉴赏")').click();
 await page.waitForTimeout(600);
-check('鉴赏逐段', await page.locator('.appr-para').count() > 0);
-check('整篇鉴赏', await page.locator('.appr-whole .analysis-card, .appr-whole').count() > 0);
-check('段落赏析', await page.locator('.appr-ana').count() > 0);
+check('整篇鉴赏卡片', await page.locator('.appr-whole .appr-para').count() > 0);
+check('整篇鉴赏', await page.locator('.appr-whole').count() > 0);
+check('赏析内容', await page.locator('.appr-ana').count() > 0);
 
 // ============ 5. 默写错题本 ============
 console.log('\n=== 5. 默写错题本 (分组/重练) ===');

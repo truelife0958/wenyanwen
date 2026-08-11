@@ -1402,3 +1402,15 @@ toPracticeQuestion 的 fromZhenti 逻辑误写 `origins.includes('exam-gen')`（
 ### 前端
 - .moxie-word 加 margin/背景; q 内 \n → <br/> 换行
 - validate 段 14 新断言; check 0 错误 + test:flow 42/42
+
+## 2026-08-11 · 赏析整合 (08-11-appreciation-merge)
+
+用户: 逐段赏析内容放到原文"查看译文"下方, 做成"查看赏析"折叠; 整篇鉴赏用逐段赏析的样式; 移除逐段赏析标签。
+
+### 实施
+- ArticleReader: para-extra 加"查看赏析"按钮(ana-toggle, 与查看译文同排), 展开显示段级 analysis (para-analysis 样式)
+- ArticleAppreciation: 移除"逐段赏析" section (内容已并入阅读区), 只剩整篇鉴赏
+- ArticleAnalysis: 卡片容器交给 .appr-para (analysis-card 只留内部布局), 标题/内容用 appr-orig/appr-ana 风格 → 整篇鉴赏=逐段赏析样式
+- CSS: para-extra flex + gap; ac-culture-label 颜色 (accent 橙黄 → accent-brown 深褐, 对比度修复)
+- test:flow 步骤 4 重写 (44/44): 阅读区赏析按钮/展开 + 整篇鉴赏卡片
+- 视觉复审: learn-ana OK; appr-whole culture label 对比度 → 修复

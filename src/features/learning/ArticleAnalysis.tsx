@@ -27,33 +27,33 @@ export default function ArticleAnalysis({ article }: Props) {
       </section>
 
       {analysis.theme && (
-        <section className="analysis-card">
-          <h3 className="analysis-card-title">
+        <section className="appr-para analysis-card">
+          <h3 className="appr-orig analysis-card-title">
             <span className="act-icon">🎯</span> 主旨
           </h3>
-          <div className="analysis-card-body">
+          <div className="appr-ana analysis-card-body">
             <p>{analysis.theme}</p>
           </div>
         </section>
       )}
 
       {analysis.outline && (
-        <section className="analysis-card">
-          <h3 className="analysis-card-title">
+        <section className="appr-para analysis-card">
+          <h3 className="appr-orig analysis-card-title">
             <span className="act-icon">📐</span> 结构
           </h3>
-          <div className="analysis-card-body">
+          <div className="appr-ana analysis-card-body">
             <p className="analysis-outline">{analysis.outline}</p>
           </div>
         </section>
       )}
 
       {analysis.writing && (
-        <section className="analysis-card">
-          <h3 className="analysis-card-title">
+        <section className="appr-para analysis-card">
+          <h3 className="appr-orig analysis-card-title">
             <span className="act-icon">✏️</span> 写法
           </h3>
-          <div className="analysis-card-body">
+          <div className="appr-ana analysis-card-body">
             {splitNumbered(analysis.writing).map((seg, i) => (
               <p className="analysis-writing-item" key={i}>{seg}</p>
             ))}
@@ -62,11 +62,11 @@ export default function ArticleAnalysis({ article }: Props) {
       )}
 
       {hasCulture && (
-        <section className="analysis-card analysis-card-culture">
-          <h3 className="analysis-card-title">
+        <section className="appr-para analysis-card analysis-card-culture">
+          <h3 className="appr-orig analysis-card-title">
             <span className="act-icon">📚</span> 文化背景
           </h3>
-          <div className="analysis-card-body">
+          <div className="appr-ana analysis-card-body">
             {culture.authorIntro && (
               <div className="ac-culture-row">
                 <span className="ac-culture-label">作者</span>

@@ -74,7 +74,18 @@
   padding-right: 30px; /* 右侧留出背诵星标位置 */
 }
 /* .para-num 已停用: 段落序号【N】不在前端渲染 (数据保留供分析引用) */
-.para-extra { margin-top: var(--sp-xs); }
+.para-extra {
+  margin-top: var(--sp-xs);
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: var(--sp-xs) var(--sp-sm);
+}
+/* 赏析展开区: 与译文同风格但区分色 */
+.para-analysis {
+  width: 100%;
+  margin-top: var(--sp-xs);
+}
 
 /* 展开译文按钮 */
 .para-toggle {

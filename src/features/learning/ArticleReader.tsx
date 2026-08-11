@@ -178,6 +178,7 @@ export default function ArticleReader({
   const [dark, setDark] = useState<boolean>(() => { try { return localStorage.getItem('wyw_theme') === THEME_DARK; } catch { return false; } });
   const [activeRow, setActiveRow] = useState(-1);
   const [expandedRows, setExpandedRows] = useState<Set<number>>(() => new Set());
+  const [expandedAna, setExpandedAna] = useState<Set<number>>(() => new Set());
   // 背诵引导弹窗: 点击原文五角星 (背诵默写句) 弹出
   const [guideStar, setGuideStar] = useState<{ sentence: string; translation?: string; kind?: string } | null>(null);
   const containerRef = useRef<HTMLDivElement>(null);
@@ -341,6 +342,8 @@ export default function ArticleReader({
     if (activeRow >= 0) rowRef.current?.scrollIntoView({ block: 'center', behavior: 'smooth' });
   }, [activeRow]);
 
+  const toggleAna = (i: number) => setExpandedAna((prev) => { const n = new Set(prev); n.has(i) ? n.delete(i) : n.add(i); return n; });
+
   const toggleRow = (index: number) => {
     setExpandedRows((prev) => {
       const next = new Set(prev);
@@ -457,8 +460,21 @@ export default function ArticleReader({
                         <span>{expandedRows.has(index) ? '收起译文' : '查看译文'}</span>
                       </button>
                     )}
+                    {row.analysis && (
+                      <button
+                        type="button"
+                        className={`para-toggle ana-toggle${expandedAna.has(index) ? ' on' : ''}`}
+                        onClick={() => toggleAna(index)}
+                      >
+                        <span className="pt-icon" aria-hidden="true">{expandedAna.has(index) ? '▾' : '▸'}</span>
+                        <span>{expandedAna.has(index) ? '收起赏析' : '查看赏析'}</span>
+                      </button>
+                    )}
                     {expandedRows.has(index) && row.trans && (
                       <div className="para-trans">{row.trans}</div>
+                    )}
+                    {expandedAna.has(index) && row.analysis && (
+                      <div className="para-analysis">{row.analysis}</div>
                     )}
                   </div>
                 </div>
