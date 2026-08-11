@@ -341,7 +341,8 @@
 .rec-main { flex: 1; min-width: 0; display: flex; flex-direction: column; gap: 2px; }
 .rec-label { font-size: 0.75rem; font-weight: 700; color: var(--accent-brown); letter-spacing: 1px; }
 .rec-title { font-size: 1.1rem; font-weight: 700; color: var(--ink); }
-.rec-sub { font-size: 0.8rem; color: var(--ink-light); }
+.rec-sub {
+  overflow: hidden; text-overflow: ellipsis; white-space: nowrap; font-size: 0.8rem; color: var(--ink-light); }
 .rec-go { font-size: 1.3rem; color: var(--primary); }
 
 /* ===== 今日任务 ===== */

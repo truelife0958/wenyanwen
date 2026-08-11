@@ -154,7 +154,7 @@
 }
 
 /* ===== 注音 ===== */
-.pron-char { position: relative; color: var(--primary-dark); font-weight: 600; }
+.pron-char { position: relative; color: var(--bronze); font-weight: 600; }
 .pron-char em {
   font-style: normal;
   font-size: 0.72em;

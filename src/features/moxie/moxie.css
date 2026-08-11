@@ -52,6 +52,28 @@
 }
 .moxie-to-learn:hover { background: var(--primary-soft); }
 
+.workspace-tabs button {
+  min-height: 44px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: var(--sp-xs);
+  color: var(--ink-light);
+  font-size: 0.9rem;
+  font-weight: 600;
+  padding: 0 20px;
+  border: none;
+  border-bottom: 2px solid transparent;
+  background: none;
+  cursor: pointer;
+  transition: color 0.15s, border-color 0.15s;
+  white-space: nowrap;
+}
+.workspace-tabs button:hover { color: var(--primary); }
+.workspace-tabs button.active {
+  color: var(--primary);
+  border-bottom-color: var(--primary);
+}
 .workspace-tabs .ws-count {
   font-style: normal; font-size: 0.72rem; color: var(--ink-light); margin-left: var(--sp-xs);
 }
@@ -66,16 +88,17 @@
 .moxie-q.ok { border-color: var(--success); }
 .moxie-q.bad { border-color: var(--error); }
 
-.mq-head { display: flex; align-items: center; gap: var(--sp-sm); margin-bottom: var(--sp-sm); }
+.mq-head { display: flex; align-items: baseline; gap: var(--sp-sm); margin-bottom: var(--sp-sm); }
 .mq-type {
-  font-size: 0.72rem; color: var(--primary); background: var(--primary-soft);
-  padding: 2px var(--sp-sm); border-radius: var(--r-pill);
+  font-size: 0.72rem; font-weight: 700; color: var(--primary-dark); background: var(--primary-soft);
+  padding: 3px var(--sp-sm); border-radius: var(--r-pill);
 }
 .mq-blanks { font-size: 0.72rem; color: var(--ink-light); }
 
 .mq-q {
   font-size: var(--f-size-md); line-height: var(--f-line-body); color: var(--ink);
   margin-bottom: var(--sp-md);
+  text-wrap: pretty;
 }
 .moxie-blank {
   display: inline-block; min-width: 3.2em; border-bottom: 2px solid var(--primary);

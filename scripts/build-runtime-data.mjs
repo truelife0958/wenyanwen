@@ -767,6 +767,8 @@ if (existsSync(moxieBookPath)) {
         const ts = target.sections.find((s) => s.type === ls.type);
         if (!ts) target.sections.push({ ...ls });
         else {
+          // 原文默写题型: book 已重写覆盖全篇 (每句挖一半), legacy 的零散题丢弃, 避免"2空"连续空
+          if (ls.type === '原文默写' && (ts.items || []).length > 0) continue;
           // 按题干归一化去重
           const existing = new Set((ts.items || []).map((it) => norm(it.q)));
           for (const it of ls.items || []) {

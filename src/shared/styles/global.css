@@ -686,7 +686,7 @@ h2 {
 .app-header h1 { font-size: 1.08rem; letter-spacing: 3px; margin-bottom: 2px; }
 .app-header .subtitle { font-size: 0.78rem; }
 .app-header-info { font-size: 0.7rem; }
-.app-main { padding-top: var(--sp-md); padding-bottom: 74px; }
+.app-main { padding-top: var(--sp-md); padding-bottom: 96px; }
 .app-footer { padding: var(--sp-sm); font-size: 0.72rem; }
 .tab-bar { padding: 5px 10px calc(5px + env(safe-area-inset-bottom)); }
 .tab-item { min-width: 78px; padding: var(--sp-xs) var(--sp-md); font-size: 0.68rem; gap: 2px; }
