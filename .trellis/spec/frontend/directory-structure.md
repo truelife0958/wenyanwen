@@ -19,9 +19,9 @@ src/
     moxie/                   # 默写模块 (v3.0 新增)
       MoxieHome.tsx          # 统计 + 年级 tab + 篇目网格(进度条)
       MoxieArticle.tsx       # 题型 tab + 题卡(对答案/自评/错题入库)
-      MoxieErrors.tsx        # 默写错题本 (仅 moxie: 前缀 qid)
+      MoxieErrors.tsx        # 默写错题本 (qid 前缀 moxie 过滤)
       moxie.css
-    errorbook/store.tsx      # 错题 store (通用, moxie qid 前缀过滤)
+    errorbook/store.tsx      # 错题 store (通用, qid 前缀 moxie 过滤)
   data/
     index.ts                 # re-export moxieArticles/moxieCount + articleMeta
     moxie.ts                 # 默写数据层: 查询/进度(localStorage wyw_moxie_progress_v1)

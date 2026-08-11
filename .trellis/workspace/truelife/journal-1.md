@@ -1294,3 +1294,38 @@ toPracticeQuestion 的 fromZhenti 逻辑误写 `origins.includes('exam-gen')`（
 - sw.js absolute() 改用 registration.scope 支持子路径部署
 - validate 两个值为 0 的误报警告降级为 ✓(9→7 警告)
 - 验证: typecheck ✓, check 全链路 ✓, test:flow 46/46 ✓, page-scan 77/77 ✓
+
+## 2026-08-11 · 全面审查 + 数据修复 + 样式统一任务 (08-11-audit-unify-data 树)
+
+**父任务**: 08-11-audit-unify-data(全面审查:统一样式 + 数据全盘校验去重),3 子任务全完成。
+
+### 子任务 1: audit-report(五层审查报告)
+- 报告: archive/2026-08/08-11-audit-report/research/audit-report.md
+- 发现 P0×2 / P1×4 / P2×5 / P3×3:
+  - P0-1: moxie qid 361 个重复(格式缺题型序号, 1 qid 指 4 题) → 默写进度串题
+  - P0-2: moxie 顶层 id 10 条重复(默写效果检测×6 + 约客/渡荆门送别×2)
+  - P1: title 考频后缀×5、bak 残留×3、望洞庭湖错字(5 题丢失)、exam-tags 失配
+  - P2: 213 hex/30 rgba/11 font/97 圆角硬编码、27 组跨文件撞名、global.css 过载、195 疑似未用类名
+- 误报修正: zhenti_web"同题不同答案"实为不同篇目同模板题干(含篇目维度后 0 重复)
+
+### 子任务 2: data-audit-fix(全部修复)
+- qid 唯一化: build 强制重写 `moxie-{title}:{sec}:{i}`, raw 1651+1081 qid 同步; 前端 startsWith('moxie:')→('moxie')
+- id 唯一化: 默写效果检测-{page}×6; 约客/渡荆门送别 legacy 合并修复(剥离考频后缀后自动合并)
+- 望洞庭湖赠张丞相: 16 处错字修正(practice 5 题挂回篇目)
+- 年级长名规范化 378 条(七年级上册→七上;九年级→附录)
+- bak 清理 + .gitignore *.bak*
+- validate 新增段 8(raw 唯一)/9(真题重复)/10(runtime 一致性)/11(样式 gate)
+- test:flow 深链修复(模拟 404.html 兜底流程, 基线验证为既有问题)
+- **注意**: 8007528 提交遗漏 raw/runtime/scripts 修改(原因未明, 疑 stash 干扰), 已补提交 9955c16
+
+### 子任务 3: style-unify(视觉 token 化)
+- tokens.ts 扩展 34 令牌(语义色 + 量化 rgba + 字体 + 圆角)
+- 213 hex + 30 rgba + 65 圆角 + 453 间距行 → var(--*), 5 文件 hex/rgba 清零
+- 替换 bug 修复: 间距粘连(3px0)×31、浅金误映射 accent、深棕误映射 accent-brown、双重 var fallback
+- 像素对比验证: 同版本 0% 差异, 旧新 1.5-6%(设计收敛 + 抗锯齿), 无布局回归
+- validate 段 11 升级 error gate; TabBar import 合并; footer 文案清理
+- 裁剪记录: P2-8 撞名拆分 / P2-9 global 迁移 / P2-10 未用清理 / P2-11 去重(风险>收益, 留待专项)
+
+### 最终验证
+- npm run check: 0 错误; npm run test:flow: 42/42
+- spec 更新: quality-guidelines qid 约定(新格式+历史变更)、错题本前缀、validate 段说明

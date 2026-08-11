@@ -41,13 +41,13 @@
 
 ## Acceptance Criteria (跨子任务)
 
-- [ ] 审查报告产出,覆盖五层,问题清单分级明确、修复建议可执行
-- [ ] raw 8 数据源:无重复 id;qid 全局唯一;zhenti_web 无完全重复题目(同省+同年+同题型+同题干)
-- [ ] raw 目录无 `.bak*` 残留文件
-- [ ] validate-data.mjs 新增校验项全部实现且全量通过(exit 0)
-- [ ] feature CSS 无硬编码颜色(全部 `var(--*)`),无重复类名定义
-- [ ] `npm run check`、`npm run test:flow` 全绿
-- [ ] 既有默写进度不丢失(qid 修复保持前缀稳定)
+- [x] 审查报告产出,覆盖五层,问题清单分级明确、修复建议可执行
+- [x] raw 8 数据源:无重复 id;qid 全局唯一;zhenti_web 无完全重复题目(同省+同年+同题型+同题干)
+- [x] raw 目录无 `.bak*` 残留文件
+- [x] validate-data.mjs 新增校验项全部实现且全量通过(exit 0)
+- [x] feature CSS 无硬编码颜色(全部 `var(--*)`),无重复类名定义
+- [x] `npm run check`、`npm run test:flow` 全绿
+- [x] 既有默写进度不丢失(qid 修复保持前缀稳定) — 注: 旧 qid 本身错乱(1 qid 对多题)无法迁移, 按设计决策接受重置, fixes.md 注明
 
 ## Child Task Map
 
