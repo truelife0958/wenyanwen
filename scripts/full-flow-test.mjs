@@ -18,7 +18,20 @@ function check(label, cond, detail = '') {
   if (cond) { console.log(`  ✓ ${label}`); passed++; }
   else { console.log(`  ✗ ${label}${detail ? ' — ' + detail : ''}`); failed++; }
 }
-const goto = async (h = '') => { const url = h.startsWith('http') ? h : BASE.replace(/\/$/, '') + h; await page.goto(url, { waitUntil: 'networkidle' }); await page.waitForTimeout(700); };
+// 深链访问: 静态托管下直访深链会 404 → 404.html 记录路径并回首页, App 启动时 DeepLinkRestore 恢复导航。
+// preview 环境无 404.html 兜底, 这里模拟该流程 (同时真实覆盖 DeepLinkRestore 逻辑)。
+const goto = async (h = '') => {
+  if (h && !h.startsWith('http') && h !== '/') {
+    await page.goto(BASE.replace(/\/$/, ''), { waitUntil: 'networkidle' });
+    await page.evaluate((p) => { try { localStorage.setItem('wyw_deep_link', p); } catch { /* ignore */ } }, h);
+    await page.reload({ waitUntil: 'networkidle' });
+    await page.waitForTimeout(900);
+    return;
+  }
+  const url = h.startsWith('http') ? h : BASE.replace(/\/$/, '') + h;
+  await page.goto(url, { waitUntil: 'networkidle' });
+  await page.waitForTimeout(700);
+};
 
 await goto();
 await page.evaluate(() => localStorage.clear());

@@ -6,12 +6,12 @@ import EmptyState from '../../shared/ui/EmptyState';
 import PageHeader from '../../shared/ui/PageHeader';
 import './moxie.css';
 
-/** 默写错题本: 仅收录 moxie: 前缀错题, 按篇目分组, 支持重练 */
+/** 默写错题本: 仅收录 moxie 前缀错题 (qid 形如 moxie-篇目:题型:题号), 按篇目分组, 支持重练 */
 export default function MoxieErrors() {
   const { items, removeEntry, removeTitle, clear } = useErrorBook();
 
   const moxieErrors = useMemo(
-    () => items.filter((e) => String(e.qid || '').startsWith('moxie:')),
+    () => items.filter((e) => String(e.qid || '').startsWith('moxie')),
     [items],
   );
 

@@ -21,7 +21,7 @@ function useOverview() {
     const prog = loadMoxieProgress();
     const doneCount = Object.values(prog).length;
     const passedCount = Object.values(prog).filter((e) => e.pass).length;
-    const moxieErrors = items.filter((e) => String(e.qid || '').startsWith('moxie:'));
+    const moxieErrors = items.filter((e) => String(e.qid || '').startsWith('moxie'));
     return { doneCount, passedCount, errorCount: moxieErrors.length };
   }, [items]);
 }

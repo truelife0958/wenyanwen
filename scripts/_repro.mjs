@@ -1,0 +1,13 @@
+import { chromium } from 'playwright-core';
+const EXE = '/home/truel/.cache/ms-playwright/chromium-1234/chrome-linux64/chrome';
+const browser = await chromium.launch({ executablePath: EXE, headless: true });
+const page = await browser.newPage();
+page.on('pageerror', (e) => console.log('PAGEERROR:', e.message));
+page.on('console', (m) => { if (m.type() === 'error') console.log('CONSOLE:', m.text().slice(0, 200)); });
+await page.goto('http://localhost:8765/articles/jc-yueyanglouji/appreciate', { waitUntil: 'networkidle' });
+await page.waitForTimeout(1500);
+console.log('URL:', page.url());
+console.log('workspace-tabs count:', await page.locator('.workspace-tabs').count());
+console.log('tabs html:', (await page.locator('.workspace-tabs').innerHTML().catch(() => 'N/A')).slice(0, 300));
+console.log('appr-para:', await page.locator('.appr-para').count());
+await browser.close();

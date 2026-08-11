@@ -1,0 +1,30 @@
+{
+  "id": "audit-unify-data",
+  "name": "audit-unify-data",
+  "title": "全面审查:统一样式 + 数据全盘校验去重",
+  "description": "",
+  "status": "planning",
+  "dev_type": null,
+  "scope": null,
+  "package": null,
+  "priority": "P2",
+  "creator": "truelife",
+  "assignee": "truelife",
+  "createdAt": "2026-08-11",
+  "completedAt": null,
+  "branch": null,
+  "base_branch": "main",
+  "worktree_path": null,
+  "commit": null,
+  "pr_url": null,
+  "subtasks": [],
+  "children": [
+    "08-11-audit-report",
+    "08-11-data-audit-fix",
+    "08-11-style-unify"
+  ],
+  "parent": null,
+  "relatedFiles": [],
+  "notes": "",
+  "meta": {}
+}
