@@ -585,14 +585,60 @@
 }
 .exam-card-badge {
   font-size: 0.72rem; font-weight: 700; letter-spacing: 0.04em;
-  padding: 3px var(--sp-sm); border-radius: var(--r-pill); color: var(--card-bg);
+  padding: 3px var(--sp-sm); border-radius: var(--r-pill); color: var(--card-bg); line-height: 1.4;
 }
 .exam-card-badge.must { background: var(--must-orange); }
 .exam-card-badge.core { background: var(--accent); }
 .exam-card-title { font-size: 0.85rem; color: var(--ink, var(--ink)); font-weight: 600; }
-.exam-points { list-style: none; margin: 0; padding: 0; display: grid; gap: var(--sp-xs); }
-.exam-points li { font-size: 0.85rem; line-height: 1.6; color: var(--ink, var(--ink)); }
-.ep-bullet { color: var(--accent); margin-right: var(--sp-xs); font-weight: 700; }
+.exam-points { list-style: none; margin: 0; padding: 0; display: grid; gap: 8px; }
+.exam-points li {
+  font-size: 0.85rem;
+  line-height: 1.7;
+  color: var(--ink, var(--ink));
+  border-radius: var(--r-xs);
+  transition: background var(--dur-fast) var(--ease-out);
+}
+.exam-points li.open { background: var(--card-bg); }
+.ep-head {
+  display: flex;
+  align-items: baseline;
+  gap: 6px;
+  width: 100%;
+  padding: 6px 8px;
+  border: 0;
+  background: none;
+  font: inherit;
+  font-weight: 600;
+  color: inherit;
+  text-align: left;
+  cursor: pointer;
+  border-radius: var(--r-xs);
+}
+.ep-head:hover { background: var(--gold-8); }
+.ep-bullet { color: var(--accent); font-weight: 700; flex-shrink: 0; }
+.ep-name { flex: 1; }
+.ep-toggle {
+  font-size: 0.72rem;
+  font-weight: 400;
+  color: var(--bronze);
+  flex-shrink: 0;
+}
+.ep-detail {
+  margin: 0;
+  padding: 2px 8px 8px 26px;
+  font-size: 0.82rem;
+  line-height: 1.8;
+  color: var(--ink-2);
+  white-space: pre-line;
+  display: -webkit-box;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+.exam-points li.open .ep-detail {
+  -webkit-line-clamp: unset;
+  overflow: visible;
+}
 
 /* 段落 hover 微动: 提示可交互 (译文按钮) */
 .para-block { border-radius: var(--r-xs); padding: var(--sp-xs) 6px; margin: 0 -6px; transition: background var(--dur-fast) var(--ease-out); }

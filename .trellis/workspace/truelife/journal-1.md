@@ -1414,3 +1414,17 @@ toPracticeQuestion 的 fromZhenti 逻辑误写 `origins.includes('exam-gen')`（
 - CSS: para-extra flex + gap; ac-culture-label 颜色 (accent 橙黄 → accent-brown 深褐, 对比度修复)
 - test:flow 步骤 4 重写 (44/44): 阅读区赏析按钮/展开 + 整篇鉴赏卡片
 - 视觉复审: learn-ana OK; appr-whole culture label 对比度 → 修复
+
+## 2026-08-11 · 核心考点卡片 (08-11-exam-card)
+
+用户: 核心考点卡片重新放个合适的位置, 内容丰富一下。
+
+### 实施
+- 位置: 从阅读页底部(注释清单前)移到正文顶部(para-list 前), 学习导览置顶
+- 数据: exam-tags.ts 简版(4 短语) → learning.json exam_points (point+detail 结构, 126/127 篇覆盖)
+  - build-runtime-data: articles 输出 examPoints (camel) 字段
+  - types.ts: 新增 runtime examPoints 接口
+- UI: 考点列表每条 = 标题(▸/▾ 展开按钮) + detail (默认 clamp 3 行, 点击展开全部; pre-line 保留换行)
+  - fallback: 无 detail 时退回 exam-tags 简版
+- 视觉复审: badge 垂直对齐 + 间距 8px
+- 验证: check 0 错误 + test:flow 44/44

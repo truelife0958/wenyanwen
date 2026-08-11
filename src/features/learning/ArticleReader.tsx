@@ -186,6 +186,12 @@ export default function ArticleReader({
   const original = article.reading.original;
   const words = useMemo(() => getCore()?.articleWordsOf(article.id) || [], [article.id]);
   const examTag = useMemo(() => examTagFor(article.title), [article.title]);
+  const examList = useMemo(() => {
+    const rich = (article as { examPoints?: Array<{ point: string; detail: string }> }).examPoints;
+    if (rich?.length) return rich;
+    return examPoints(article.title).map((p) => ({ point: p, detail: '' }));
+  }, [article]);
+  const [examOpen, setExamOpen] = useState<Set<number>>(() => new Set());
   const reciteStars = useMemo(
     () => (article as { recitation?: { stars?: Array<{ sentence?: string; translation?: string; kind?: string }> } }).recitation?.stars?.filter((x) => x?.sentence) || [],
     [article],
@@ -421,6 +427,34 @@ export default function ArticleReader({
 
       <div className="article-body" style={{ '--reader-scale': String(fontScale) } as React.CSSProperties}>
         <main className="article-main">
+          {/* 中考核心考点 (must/core 篇目显示, 学习导览置顶) */}
+          {examTag && (
+            <section className="reader-exam-card">
+              <div className="exam-card-head">
+                <span className={`exam-card-badge ${examTag}`}>{examTag === 'must' ? '中考必考' : '中考核心'}</span>
+                <span className="exam-card-title">核心考点 · 应知应会</span>
+              </div>
+              <ul className="exam-points">
+                {examList.map((pt, idx) => (
+                  <li key={idx} className={examOpen.has(idx) ? 'open' : ''}>
+                    <button
+                      type="button"
+                      className={`ep-head${pt.detail ? ' has-detail' : ''}`}
+                      onClick={() => pt.detail && setExamOpen((prev) => { const n = new Set(prev); n.has(idx) ? n.delete(idx) : n.add(idx); return n; })}
+                      aria-expanded={pt.detail ? examOpen.has(idx) : undefined}
+                    >
+                      <span className="ep-bullet">{pt.detail ? (examOpen.has(idx) ? '▾' : '▸') : '▸'}</span>
+                      <span className="ep-name">{pt.point}</span>
+                      {pt.detail && <span className="ep-toggle">{examOpen.has(idx) ? '收起' : '展开'}</span>}
+                    </button>
+                    {pt.detail && (
+                      <p className="ep-detail">{pt.detail}</p>
+                    )}
+                  </li>
+                ))}
+              </ul>
+            </section>
+          )}
           {rows.length ? (
             <div className="para-list">
               {rows.map((row, index) => (
@@ -508,21 +542,6 @@ export default function ArticleReader({
             ) : (
               <GlossPop text={gloss.text || ''} x={gloss.x} y={gloss.y} />
             )
-          )}
-
-          {/* 中考核心考点 (must/core 篇目才显示) */}
-          {examTag && (
-            <section className="reader-exam-card">
-              <div className="exam-card-head">
-                <span className={`exam-card-badge ${examTag}`}>{examTag === 'must' ? '中考必考' : '中考核心'}</span>
-                <span className="exam-card-title">核心考点 · 应知应会</span>
-              </div>
-              <ul className="exam-points">
-                {examPoints(article.title).map((pt, idx) => (
-                  <li key={idx}><span className="ep-bullet">▸</span>{pt}</li>
-                ))}
-              </ul>
-            </section>
           )}
 
           {/* 本篇注释清单 */}

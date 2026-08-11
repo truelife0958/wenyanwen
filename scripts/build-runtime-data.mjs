@@ -551,6 +551,9 @@ const articles = sourceArticles.map((source, index) => {
       },
     },
     recitation: { stars: sentenceStars(source) },
+    examPoints: (source.exam_points || [])
+      .filter((p) => p && typeof p === 'object' && p.point && p.detail)
+      .map((p) => ({ point: String(p.point).trim(), detail: String(p.detail).trim() })),
     wordIds: [],
     questionIds: [],
   };

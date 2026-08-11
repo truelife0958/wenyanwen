@@ -136,7 +136,9 @@ export interface LearningArticle {
   translation?: string;
   notes?: Note[];
   paragraph_analysis?: string | string[];
-  exam_points?: string[] | unknown;
+  exam_points?: Array<{ point: string; detail: string }> | unknown;
+  /** runtime 篇目: 核心考点 (learning 结构) */
+  examPoints?: Array<{ point: string; detail: string }>;
   literary_culture?: string;
   key_terms?: unknown[];
   key_sentences?: unknown[];
