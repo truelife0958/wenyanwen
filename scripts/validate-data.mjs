@@ -535,3 +535,46 @@ if (errors > 0) {
   process.exit(1);
 }
 console.log(`\n✅ 全部通过 (${warns} 个警告)`);
+
+// ==================== 12. 原文默写题质量 ====================
+console.log('\n=== 12. 原文默写题质量 ===');
+{
+  const moxie = loadJSON('src/data/raw/moxie.json');
+  if (moxie) {
+    const multiAns = [];
+    const noFull = [];
+    let total = 0;
+    const hasFullSentence = (q) => {
+      const toks = String(q || '').match(/_+|([^_，,。；;！？!?\s]+)|([，,。；;！？!?])/g) || [];
+      let cur = [];
+      for (const t of toks) {
+        cur.push(t);
+        if ('。；;！？!?'.includes(t)) {
+          if (!cur.some((x) => /_+/.test(x))) return true;
+          cur = [];
+        }
+      }
+      return false;
+    };
+    for (const art of moxie) {
+      const items = [];
+      for (const s of art.sections || []) {
+        if (s.type === '原文默写') items.push(...(s.items || []));
+      }
+      if (!items.length) continue;
+      for (const it of items) {
+        total++;
+        for (const a of it.answers || []) {
+          // 顿号、为答案内容中的合法并列列举, 不视为多分句
+          if (/[\s，,；;]/.test(String(a)) && String(a).length > 2) {
+            multiAns.push(`${art.title}: ${String(a).slice(0, 20)}`);
+          }
+        }
+      }
+      if (items.some((it) => !hasFullSentence(it.q) && !/\S/.test(String(it.q).replace(/[_，,。；;！？!?\s]/g, '')))) noFull.push(art.title);
+    }
+    check(`原文默写题总数 ${total}`, total >= 100);
+    check('无多分句答案 (去2空)', multiAns.length === 0, multiAns.slice(0, 5).join(' | '));
+    check('无全挖题 (每题含保留文字)', noFull.length === 0, noFull.slice(0, 8).join('、'));
+  }
+}

@@ -172,3 +172,60 @@
   color: var(--muted); cursor: pointer; font-size: 0.9rem; padding: var(--sp-xs);
 }
 .meg-remove:hover { color: var(--error); }
+
+/* ===== 原文默写: 可填写横线 (2026-08-11) ===== */
+.moxie-blank-wrap {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  vertical-align: baseline;
+  margin: 0 2px;
+}
+.moxie-blank-input {
+  border: none;
+  border-bottom: 2px dashed var(--accent-brown);
+  background: transparent;
+  font-family: inherit;
+  font-size: 1rem;
+  color: var(--primary-dark);
+  text-align: center;
+  padding: 0 4px 1px;
+  min-width: 4.5em;
+  max-width: 9em;
+  outline: none;
+  transition: border-color 0.15s ease, background 0.15s ease;
+}
+.moxie-blank-input::placeholder { color: var(--muted); font-size: 0.72rem; }
+.moxie-blank-input:focus { border-bottom-color: var(--primary); background: var(--primary-soft); }
+.moxie-blank-input:disabled { opacity: 1; }
+.moxie-blank-wrap.ok .moxie-blank-input { border-bottom-color: var(--success); color: var(--success-dark); background: var(--success-soft); }
+.moxie-blank-wrap.bad .moxie-blank-input { border-bottom-color: var(--error); color: var(--error); background: var(--error-soft); text-decoration: line-through; }
+.moxie-blank-ans {
+  font-size: 0.8rem;
+  color: var(--success-dark);
+  background: var(--success-soft);
+  padding: 0 6px;
+  border-radius: var(--r-xs);
+  white-space: nowrap;
+}
+.mq-check-result { font-size: 0.75rem; font-weight: 700; margin-left: auto; }
+.mq-check-result.ok { color: var(--success-dark); }
+.mq-check-result.bad { color: var(--error); }
+.mq-actions { display: flex; align-items: center; gap: var(--sp-sm); }
+.mq-hint { font-size: 0.72rem; color: var(--muted); }
+.mq-retry {
+  margin-top: var(--sp-sm);
+  border: 1px solid var(--border);
+  background: var(--card-bg);
+  color: var(--ink-light);
+  border-radius: var(--r-sm);
+  padding: 6px 14px;
+  font-size: 0.8rem;
+  cursor: pointer;
+  transition: all 0.15s ease;
+}
+.mq-retry:hover { border-color: var(--primary); color: var(--primary); }
+.mq-answer-row.ok .mq-answer-text { color: var(--success-dark); }
+.mq-answer-row.bad .mq-answer-text { color: var(--error); }
+.mq-wrong { color: var(--error); }
+.moxie-blank-static { letter-spacing: 2px; }

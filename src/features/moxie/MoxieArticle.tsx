@@ -8,12 +8,12 @@ import PageHeader from '../../shared/ui/PageHeader';
 import EmptyState from '../../shared/ui/EmptyState';
 import './moxie.css';
 
-/** 渲染题干中的填空: ___ → 高亮占位 */
-function renderBlanks(q: string) {
-  const parts = String(q || '').split(/(_{3,})/g);
-  return parts.map((part, i) =>
-    /_{3,}/.test(part) ? <span className="moxie-blank" key={i} aria-label="填空">＿＿＿</span> : <span key={i}>{part}</span>
-  );
+/** 答案归一化: 忽略标点/空格/全半角, 用于自动判分 */
+function normAnswer(v: string): string {
+  return String(v || '')
+    .replace(/[，,。；;！!？?：:、·…—~～"'“”‘’（）()\s]/g, '')
+    .replace(/[Ａ-Ｚａ-ｚ０-９]/g, (c) => String.fromCharCode(c.charCodeAt(0) - 0xfee0))
+    .toLowerCase();
 }
 
 /** 词义默写: 【字】高亮 */
@@ -24,11 +24,115 @@ function renderWord(q: string) {
   );
 }
 
+/** 原文默写: ___ → 可输入横线 (输入后自动判分展示) */
+function renderBlankInputs(
+  q: string,
+  values: string[],
+  results: (boolean | null)[],
+  answers: string[],
+  onChange: (i: number, v: string) => void,
+) {
+  const parts = String(q || '').split(/(_{3,})/g);
+  let bi = -1;
+  return parts.map((part, i) => {
+    if (!/_{3,}/.test(part)) return <span key={i}>{part}</span>;
+    bi += 1;
+    const idx = bi;
+    const res = results[idx];
+    return (
+      <span key={i} className={`moxie-blank-wrap${res === true ? ' ok' : res === false ? ' bad' : ''}`}>
+        <input
+          className="moxie-blank-input"
+          value={values[idx] || ''}
+          onChange={(e) => onChange(idx, e.target.value)}
+          placeholder="填写"
+          aria-label={`第 ${idx + 1} 空`}
+          disabled={res !== null}
+          size={Math.max(4, Math.min(10, (answers[idx] || '').length + 1))}
+        />
+        {res === false && <span className="moxie-blank-ans">{answers[idx]}</span>}
+      </span>
+    );
+  });
+}
+
 interface AnswerState {
   revealed: boolean;
   selfJudge: 'pass' | 'fail' | null;
 }
 
+/** 原文默写题卡: 输入 + 自动判分 */
+function FillQuestionCard({
+  qid, q, answers, onJudged,
+}: {
+  qid: string; q: string; answers: string[]; onJudged: (qid: string, pass: boolean) => void;
+}) {
+  const [values, setValues] = useState<string[]>(() => answers.map(() => ''));
+  const [results, setResults] = useState<(boolean | null)[]>(() => answers.map(() => null));
+  const [checked, setChecked] = useState(false);
+
+  const change = (i: number, v: string) => {
+    setValues((prev) => prev.map((x, j) => (j === i ? v : x)));
+  };
+  const check = () => {
+    const res = answers.map((a, i) => normAnswer(values[i] || '') === normAnswer(a));
+    setResults(res);
+    setChecked(true);
+    onJudged(qid, res.every(Boolean));
+  };
+
+  const allFilled = values.every((v) => (v || '').trim() !== '');
+  const passCount = results.filter((r) => r === true).length;
+
+  return (
+    <div className={`moxie-q${checked ? (passCount === answers.length ? ' ok' : ' bad') : ''}`}>
+      <div className="mq-head">
+        <span className="mq-type">原文默写</span>
+        <span className="mq-blanks">{answers.length} 空</span>
+        {checked && (
+          <span className={`mq-check-result${passCount === answers.length ? ' ok' : ' bad'}`}>
+            {passCount === answers.length ? '✓ 全部答对' : `答对 ${passCount}/${answers.length}`}
+          </span>
+        )}
+      </div>
+      <div className="mq-q">
+        {renderBlankInputs(q, values, results, answers, change)}
+      </div>
+      {!checked ? (
+        <div className="mq-actions">
+          <button type="button" className="mq-reveal" onClick={check} disabled={!allFilled}>
+            对答案
+          </button>
+          {!allFilled && <span className="mq-hint">请填写所有空后再判分</span>}
+        </div>
+      ) : (
+        <div className="mq-answer">
+          <div className="mq-answer-list">
+            {answers.map((a, i) => (
+              <div className={`mq-answer-row${results[i] === true ? ' ok' : results[i] === false ? ' bad' : ''}`} key={i}>
+                <span className="mq-answer-no">第{i + 1}空</span>
+                {results[i] === true ? (
+                  <span className="mq-answer-text ok">✓ {values[i]}</span>
+                ) : (
+                  <span className="mq-answer-text">
+                    <s className="mq-wrong">{values[i] || '（未填写）'}</s> → {a}
+                  </span>
+                )}
+              </div>
+            ))}
+          </div>
+          {passCount < answers.length && (
+            <button type="button" className="mq-retry" onClick={() => { setValues(answers.map(() => '')); setResults(answers.map(() => null)); setChecked(false); }}>
+              重新作答
+            </button>
+          )}
+        </div>
+      )}
+    </div>
+  );
+}
+
+/** 其他题型 (理解性/词义/译文等): 显示答案 + 自评 */
 function QuestionCard({
   qid, q, blanks, answers, extra, word, type,
   onJudged,
@@ -51,7 +155,7 @@ function QuestionCard({
         {blanks > 1 && <span className="mq-blanks">{blanks} 空</span>}
       </div>
       <div className="mq-q">
-        {word ? renderWord(q) : renderBlanks(q)}
+        {word ? renderWord(q) : <span className="moxie-blank-static">{String(q).replace(/_+/g, '＿＿＿')}</span>}
       </div>
 
       {!state.revealed ? (
@@ -160,17 +264,27 @@ export default function MoxieArticle() {
         {section ? (
           <div className="moxie-section">
             {section.items.map((item) => (
-              <QuestionCard
-                key={item.qid}
-                qid={item.qid}
-                q={item.q}
-                blanks={item.blanks}
-                answers={item.answers}
-                extra={item.extra}
-                word={item.word}
-                type={section.type}
-                onJudged={handleJudged}
-              />
+              section.type === '原文默写' ? (
+                <FillQuestionCard
+                  key={item.qid}
+                  qid={item.qid}
+                  q={item.q}
+                  answers={item.answers}
+                  onJudged={handleJudged}
+                />
+              ) : (
+                <QuestionCard
+                  key={item.qid}
+                  qid={item.qid}
+                  q={item.q}
+                  blanks={item.blanks}
+                  answers={item.answers}
+                  extra={item.extra}
+                  word={item.word}
+                  type={section.type}
+                  onJudged={handleJudged}
+                />
+              )
             ))}
           </div>
         ) : (

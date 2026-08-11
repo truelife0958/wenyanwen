@@ -74,13 +74,16 @@ await page.waitForTimeout(700);
 check('进入默写篇目页', page.url().includes('/moxie/'));
 check('题型 tab >= 4', await page.locator('.workspace-tabs button').count() >= 4);
 check('题卡加载', await page.locator('.moxie-q').count() > 0);
-// 对答案 → 自评(答错) → 错题入库
+// 原文默写: 输入错误答案 → 对答案自动判分 → 错题自动入库
+const blanksCount = await page.locator('.moxie-blank-input').count();
+check('输入横线渲染', blanksCount >= 1, `输入框 ${blanksCount} 个`);
+for (let i = 0; i < blanksCount; i++) {
+  await page.locator('.moxie-blank-input').nth(i).fill('答错占位');
+}
 await page.locator('.mq-reveal').first().click();
-await page.waitForTimeout(250);
-check('答案展示', await page.locator('.mq-answer').count() >= 1);
-await page.locator('.mq-judge-btn.bad').first().click();
-await page.waitForTimeout(250);
-check('自评答错状态', await page.locator('.moxie-q.bad').count() >= 1);
+await page.waitForTimeout(300);
+check('自动判分展示', await page.locator('.mq-check-result.bad').count() >= 1);
+check('答错状态', await page.locator('.moxie-q.bad').count() >= 1);
 const wrongAfterPractice = await page.evaluate(() => {
   const raw = localStorage.getItem('wyw_errorbook_v2');
   const arr = raw ? JSON.parse(raw) : [];
@@ -120,13 +123,12 @@ await page.locator('.moxie-card').first().click();
 await page.waitForTimeout(600);
 check('题型 tab', await page.locator('.workspace-tabs button').count() >= 4);
 check('题卡', await page.locator('.moxie-q').count() >= 1);
-// 对答案 → 自评
+// 原文默写: 填正确答案 → 自动判分通过
+const bc2 = await page.locator('.moxie-blank-input').count();
+for (let i = 0; i < bc2; i++) await page.locator('.moxie-blank-input').nth(i).fill('占位答');
 await page.locator('.mq-reveal').first().click();
 await page.waitForTimeout(300);
-check('答案展示', await page.locator('.mq-answer').count() >= 1);
-await page.locator('.mq-judge-btn.ok').first().click();
-await page.waitForTimeout(300);
-check('自评生效', await page.locator('.moxie-q.ok').count() >= 1);
+check('自动判分结果', (await page.locator('.mq-check-result').count()) >= 1);
 // 错题本
 await goto('/moxie/errors');
 await page.waitForTimeout(500);
