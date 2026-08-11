@@ -615,3 +615,32 @@ console.log('\n=== 13. 默写数据质量 ===');
   check('无 q 空数>答案数 (缺答案)', blankMismatch === 0, `${blankMismatch} 题`);
   check('无 q 有空但答案全空', emptyAns === 0, `${emptyAns} 题`);
 }
+
+// ==================== 14. 词义默写格式 ====================
+console.log('\n=== 14. 词义默写格式 ===');
+{
+  const moxie = loadJSON('src/data/raw/moxie.json');
+  const legacy = loadJSON('src/data/raw/moxie-legacy.json');
+  let noBracket = 0, wordAnsMismatch = 0;
+  const samples = [];
+  for (const data of [moxie, legacy]) {
+    for (const art of data) {
+      for (const s of art.sections || []) {
+        if (s.type !== '词义默写') continue;
+        for (const it of s.items || []) {
+          const words = String(it.q).match(/【([^】]+)】/g) || [];
+          const hasTagLine = String(it.q).includes('\n') && /[：:]\s*_{3,}/.test(String(it.q).split('\n')[1] || '');
+          if (!words.length && !hasTagLine) {
+            noBracket++;
+            if (samples.length < 5) samples.push(`${art.title}: ${String(it.q).slice(0, 30)}`);
+          }
+          if (words.length > (it.answers || []).length) {
+            wordAnsMismatch++;
+          }
+        }
+      }
+    }
+  }
+  check('词义题 q 全部含【】考点', noBracket === 0, samples.join(' | '));
+  check('考点数 ≤ 答案数 (等价答案允许)', wordAnsMismatch === 0, `${wordAnsMismatch} 题`);
+}

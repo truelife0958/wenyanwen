@@ -92,13 +92,16 @@ function renderBlankInputs(
       const wparts = String(part).split(/(【[^】]+】)/g);
       return (
         <span key={i}>
-          {wparts.map((wp, wi) =>
-            /^【.+】$/.test(wp) ? <b className="moxie-word" key={wi}>{wp.replace(/【|】/g, '')}</b> : <span key={wi}>{wp}</span>
-          )}
+          {wparts.map((wp, wi) => {
+            if (/^【.+】$/.test(wp)) return <b className="moxie-word" key={wi}>{wp.replace(/【|】/g, '')}</b>;
+            return String(wp).split('\n').map((seg, si) => (
+              <span key={si}>{seg}{si < String(wp).split('\n').length - 1 && <br />}</span>
+            ));
+          })}
         </span>
       );
     }
-    return <span key={i}>{part}</span>;
+    return <span key={i}>{String(part).split('\n').map((seg, si) => <span key={si}>{seg}{si < String(part).split('\n').length - 1 && <br />}</span>)}</span>;
   });
 }
 

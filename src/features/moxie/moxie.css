@@ -107,6 +107,7 @@
 .moxie-word {
   color: var(--primary-dark); border-bottom: 2px solid var(--accent); padding-bottom: 1px;
   font-weight: 600;
+  margin: 0 2px;
 }
 
 .mq-reveal {
