@@ -777,17 +777,24 @@ if (existsSync(moxieBookPath)) {
     }
   }
   const VALID_GRADES = new Set(['七上', '七下', '八上', '八下', '九上', '九下']);
+  const seenIds = new Set();
   moxie = moxie.map((m, idx) => {
     const g = grade(m.grade);
-    const artId = m.id || `moxie-${slug(m.title)}-${idx}`;
+    let artId = m.id || `moxie-${slug(m.title)}-${idx}`;
+    // id 唯一兜底: 同名篇目(如 legacy 合并遗漏)追加序号, 避免路由/key 冲突
+    if (seenIds.has(artId)) {
+      console.warn(`⚠ moxie 篇目 id 重复, 追加序号: ${artId} → ${artId}-${idx}`);
+      artId = `${artId}-${idx}`;
+    }
+    seenIds.add(artId);
     return {
       ...m,
       id: artId,
       grade: VALID_GRADES.has(g) ? g : '附录',
-      // 统一重写 qid: 篇目+题型序号+题序号, 保证全局唯一 (legacy 合并的 items 可能缺 qid)
+      // 强制重写 qid: 篇目+题型序号+题序号 (raw 旧 qid 缺题型序号, 导致同一 qid 指向多道题)
       sections: (m.sections || []).map((sec, si) => ({
         ...sec,
-        items: (sec.items || []).map((it, ii) => ({ ...it, qid: it.qid || `${artId}:${si}:${ii}` })),
+        items: (sec.items || []).map((it, ii) => ({ ...it, qid: `${artId}:${si}:${ii}` })),
       })),
     };
   });

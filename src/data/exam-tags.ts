@@ -64,7 +64,7 @@ export const EXAM_TAGS: Record<string, { level: 'must' | 'core' | 'normal'; poin
   '山坡羊·潼关怀古': { level: 'core', points: ['背诵默写', '怀古伤今', '"兴百姓苦"主旨', '散曲特色'] },
   '南乡子·登京口北固亭有怀': { level: 'core', points: ['背诵默写', '怀古讽今', '孙权典故', '辛弃疾词风'] },
   '登幽州台歌': { level: 'core', points: ['背诵默写', '时空感慨', '怀才不遇', '陈子昂古体'] },
-  '望洞庭湖上张丞相': { level: 'core', points: ['背诵默写', '气蒸云梦泽', '干谒诗', '孟浩然抱负'] },
+  '望洞庭湖赠张丞相': { level: 'core', points: ['背诵默写', '气蒸云梦泽', '干谒诗', '孟浩然抱负'] },
   '渡荆门送别': { level: 'core', points: ['背诵默写', '游子思乡', '李白出蜀', '景物想象'] },
 };
 
