@@ -86,6 +86,7 @@ const tokens = {
   'f-family': '"Noto Serif SC", "Songti SC", "STSong", "SimSun", serif',
   'f-serif-latin': "'Georgia', 'Noto Serif SC', serif",
   'f-kaiti': "'STKaiti', 'KaiTi', '楷体', serif",
+  'f-emoji': "'Apple Color Emoji', 'Segoe UI Emoji', 'Noto Color Emoji', 'Twemoji Mozilla', sans-serif",
   'f-size-xs': '0.72rem',
   'f-size-sm': '0.85rem',
   'f-size-base': '0.95rem',

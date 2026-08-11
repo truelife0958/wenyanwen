@@ -347,7 +347,7 @@
   color: var(--primary-dark);
   margin: 0 0 var(--sp-xs);
 }
-.act-icon { font-size: 1rem; }
+.act-icon { font-size: 1rem; font-family: var(--f-emoji); }
 .analysis-card-body {
   margin: 0;
 }

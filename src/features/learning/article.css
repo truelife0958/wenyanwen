@@ -1160,7 +1160,7 @@
 .appr-para:has(.analysis-outline) { grid-column: 1 / -1; }
 .appr-para:has(.analysis-outline) .analysis-outline { white-space: pre-line; }
 /* 图标对齐 */
-.act-icon { line-height: 1; }
+.act-icon { line-height: 1; font-family: var(--f-emoji); }
 /* padding 折中 */
 .appr-para { padding: 10px 12px; }
 
