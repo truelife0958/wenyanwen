@@ -1329,3 +1329,28 @@ toPracticeQuestion 的 fromZhenti 逻辑误写 `origins.includes('exam-gen')`（
 ### 最终验证
 - npm run check: 0 错误; npm run test:flow: 42/42
 - spec 更新: quality-guidelines qid 约定(新格式+历史变更)、错题本前缀、validate 段说明
+
+## 2026-08-11 · 默写体验改造 + 全页面视觉美化 (08-11-moxie-input-visual-polish 树)
+
+用户反馈"太丑" + 要求原文默写"至少保留一句、不要2空、横线可写答案"。
+
+### 子任务 1: visual-audit-fix
+- 13 页 × 桌面/移动截图 + gemini 视觉模型逐张审查 (research/reviews/*.md)
+- 修复: workspace-tabs button 蓝色默认边框 (MoxieArticle 用 button 无样式)、注音红色→bronze、底部导航遮挡 (padding-bottom 74→96px)、移动端卡片等高 (grid-auto-rows)、错题卡文字换行、mq-type 加粗
+- 复审: mob-home 通过; 默写页发现 legacy 合并导致"2空" → build 合并改为原文默写题型以 book 为准
+
+### 子任务 2: moxie-input-fill
+- **数据重写** (scripts/moxie/rewrite-original-moxie.py v5):
+  - 全挖句 → 保留前分句挖后分句 (答案取 learning 原文, 78 题)
+  - 部分挖句原样 (132 题); 首句完整保留 38 篇
+  - 半角标点全角归一化 3806 字段 (qid 排除)
+  - 人工修正: 子衿/水调歌头/别云间 (原始答案错乱)
+  - 教训: 重写脚本必须幂等+失败回退+校验门; 答案修正分支 (v3) 引入新错误 → 回退
+- **交互**: 原文默写 ___ → 可输入横线, 填完点"对答案"自动判分 (normAnswer 容错标点/全半角), 答错自动进错题本 + 显示答案 + 重新作答
+- validate 段 12: 无多分句答案/无全挖题断言
+- test:flow 步骤 3/6 适配输入流程
+- 验证: check 0 错误 + test:flow 42/42 + 浏览器实测 (观沧海 6 空, 答对 1/6 → 错题本 +1)
+
+### 遗留
+- 部分挖题的原答案错误 (如次北固山下题3"乡书何处达"答案错位) 未修 (不臆造, 记录)
+- 原文默写剩余数据质量: 桃花源记/卖油翁等引号句原样保留
