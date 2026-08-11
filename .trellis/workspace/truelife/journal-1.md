@@ -1377,3 +1377,15 @@ toPracticeQuestion 的 fromZhenti 逻辑误写 `origins.includes('exam-gen')`（
 ### 遗留
 - 骊山 1:1 等 q 与答案结构错乱题 → 前端"答案待补"兜底 (5 题内)
 - 等价答案组 6 个 (卖油翁/蒹葭等) 前端任一匹配
+
+## 2026-08-11 · 极致打磨 9.9 (08-11-polish-99)
+
+用户: 精益求精, 极致打磨, 细节完美, 评分 9.9。
+
+### 打磨内容 (polish-list.md 全清单)
+- 可访问性: 全局 :focus-visible 焦点环; 输入框 Enter 跳空(最后一空自动判分); 判分滚动到结果; 重答聚焦第一空
+- 交互: placeholder 冗余移除; 按钮/提示间距对比度
+- 视觉 (gemini 双视口复审 6 页): /moxie 子路由 tab 不高亮【真bug】; 年级数字对比度; 查看译文颜色; 背诵星标位置; 朗读条 wrap; 死代码清理; app-main 桌面宽度
+- 性能: 记录 dist 3.5M / chunk 375KB gzip (数据主导, 已分割+预加载)
+- 视觉模型误报 3 项 (tab 对比度 7:1 实际正常等) — 用 computed style 实测排除, 不盲改
+- 验证: check 0 错误 + test:flow 42/42 + 键盘交互 playwright 实测全通过

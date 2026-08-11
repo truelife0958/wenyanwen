@@ -38,7 +38,8 @@
 .read-bar {
   display: flex;
   align-items: center;
-  gap: var(--sp-md);
+  flex-wrap: wrap;
+  gap: var(--sp-sm) var(--sp-md);
   padding: 10px var(--sp-lg);
   margin-bottom: var(--sp-lg);
   background: var(--bg-soft);
@@ -81,7 +82,8 @@
   align-items: center;
   gap: var(--sp-xs);
   font-size: 0.8rem;
-  color: var(--bronze);
+  color: var(--accent-brown);
+  font-weight: 600;
   background: none;
   border: none;
   cursor: pointer;
@@ -957,8 +959,7 @@
 .para-recite-marks {
   position: absolute;
   right: 8px;
-  top: 50%;
-  transform: translateY(-50%);
+  top: 6px;
   display: inline-flex;
   gap: 2px;
   font-size: 0.95rem;

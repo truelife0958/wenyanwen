@@ -1,4 +1,4 @@
-import { useMemo, useState } from 'react';
+import { useEffect, useMemo, useRef, useState } from 'react';
 import { Link, useParams } from 'react-router-dom';
 import { findMoxieArticle, flattenItems, saveMoxieResult, articleProgress, loadMoxieProgress } from '../../data/moxie';
 import { findMoxieByArticleTitle } from '../../data/moxie';
@@ -55,6 +55,8 @@ function renderBlankInputs(
   answers: string[],
   onChange: (i: number, v: string) => void,
   word?: boolean,
+  inputRefs?: React.RefObject<(HTMLInputElement | null)[]>,
+  onEnter?: (idx: number) => void,
 ) {
   const parts = String(q || '').split(/(_{3,})/g);
   let bi = -1;
@@ -70,9 +72,16 @@ function renderBlankInputs(
             className="moxie-blank-input"
             value={values[idx] || ''}
             onChange={(e) => onChange(idx, e.target.value)}
-            placeholder="填写"
-            aria-label={`第 ${idx + 1} 空`}
+            onKeyDown={(e) => {
+              if (e.key === 'Enter' && !e.nativeEvent.isComposing && onEnter) {
+                e.preventDefault();
+                onEnter(idx);
+              }
+            }}
+            ref={(el) => { if (inputRefs) inputRefs.current[idx] = el; }}
+              aria-label={`第 ${idx + 1} 空`}
             disabled={res !== null}
+            autoComplete="off"
             size={Math.max(4, Math.min(14, (answers[idx] || '').length + 1))}
           />
           {res === false && <span className="moxie-blank-ans">{ans}</span>}
@@ -110,6 +119,8 @@ function FillQuestionCard({
   const [values, setValues] = useState<string[]>(() => answers.map(() => ''));
   const [results, setResults] = useState<(boolean | null)[]>(() => answers.map(() => null));
   const [checked, setChecked] = useState(false);
+  const cardRef = useRef<HTMLDivElement>(null);
+  const inputRefs = useRef<(HTMLInputElement | null)[]>([]);
 
   const change = (i: number, v: string) => {
     setValues((prev) => prev.map((x, j) => (j === i ? v : x)));
@@ -127,8 +138,32 @@ function FillQuestionCard({
   const allFilled = values.every((v) => (v || '').trim() !== '');
   const passCount = results.filter((r) => r === true).length;
 
+  // Enter: 跳下一空; 最后一空且已填完 → 触发判分
+  const handleEnter = (idx: number) => {
+    if (idx < nBlanks - 1) {
+      inputRefs.current[idx + 1]?.focus();
+    } else if (allFilled) {
+      check();
+    }
+  };
+
+  // 判分后滚动到结果
+  useEffect(() => {
+    if (checked) {
+      cardRef.current?.querySelector('.mq-answer')?.scrollIntoView({ behavior: 'smooth', block: 'nearest' });
+    }
+  }, [checked]);
+
+  // 重新作答 → 聚焦第一空
+  const retry = () => {
+    setValues(answers.map(() => ''));
+    setResults(answers.map(() => null));
+    setChecked(false);
+    requestAnimationFrame(() => inputRefs.current[0]?.focus());
+  };
+
   return (
-    <div className={`moxie-q${checked ? (passCount === nBlanks ? ' ok' : ' bad') : ''}`}>
+    <div ref={cardRef} className={`moxie-q${checked ? (passCount === nBlanks ? ' ok' : ' bad') : ''}`}>
       <div className="mq-head">
         <span className="mq-type">{type}</span>
         <span className="mq-blanks">{nBlanks} 空</span>
@@ -139,7 +174,7 @@ function FillQuestionCard({
         )}
       </div>
       <div className="mq-q">
-        {noBlank ? <span>{q}</span> : renderBlankInputs(q, values, results, answers, change, Boolean(word))}
+        {noBlank ? <span>{q}</span> : renderBlankInputs(q, values, results, answers, change, Boolean(word), inputRefs, handleEnter)}
       </div>
       {noBlank ? null : !checked ? (
         <div className="mq-actions">
@@ -170,7 +205,7 @@ function FillQuestionCard({
             })}
           </div>
           {passCount < nBlanks && (
-            <button type="button" className="mq-retry" onClick={() => { setValues(answers.map(() => '')); setResults(answers.map(() => null)); setChecked(false); }}>
+            <button type="button" className="mq-retry" onClick={retry}>
               重新作答
             </button>
           )}

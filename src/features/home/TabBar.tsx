@@ -15,8 +15,11 @@ export default function TabBar() {
         <NavLink
           key={tab.label}
           to={tab.to}
-          end
-          className={({ isActive }) => 'tab-item' + (isActive || (tab.to === '/' && pathname.startsWith('/articles')) ? ' active' : '')}
+          end={tab.to === '/'}
+          className={({ isActive }) =>
+            'tab-item' +
+            (isActive || (tab.to === '/' && pathname.startsWith('/articles')) || (tab.to === '/moxie' && pathname.startsWith('/moxie')) ? ' active' : '')
+          }
         >
           <Icon name={tab.icon} size={20} />
           <span>{tab.label}</span>

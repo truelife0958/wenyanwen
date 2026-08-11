@@ -211,8 +211,8 @@
 .mq-check-result { font-size: 0.75rem; font-weight: 700; margin-left: auto; }
 .mq-check-result.ok { color: var(--success-dark); }
 .mq-check-result.bad { color: var(--error); }
-.mq-actions { display: flex; align-items: center; gap: var(--sp-sm); }
-.mq-hint { font-size: 0.72rem; color: var(--muted); }
+.mq-actions { display: flex; align-items: center; gap: var(--sp-md); }
+.mq-hint { font-size: 0.74rem; color: var(--ink-light); }
 .mq-retry {
   margin-top: var(--sp-sm);
   border: 1px solid var(--border);
