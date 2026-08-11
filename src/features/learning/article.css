@@ -929,6 +929,9 @@
 }
 
 .appr-whole .analysis-tab { max-width: none; }
+.exam-tab .reader-exam-card { margin-top: var(--sp-sm); }
+.exam-page-card { max-width: none; }
+.ep-empty { font-size: 0.85rem; color: var(--muted); padding: 4px 8px; }
 
 /* 原文注释序号角标 */
 .annot-no {

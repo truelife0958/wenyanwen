@@ -1428,3 +1428,14 @@ toPracticeQuestion 的 fromZhenti 逻辑误写 `origins.includes('exam-gen')`（
   - fallback: 无 detail 时退回 exam-tags 简版
 - 视觉复审: badge 垂直对齐 + 间距 8px
 - 验证: check 0 错误 + test:flow 44/44
+
+## 2026-08-11 · 核心考点独立标签 (08-11-exam-tab)
+
+用户: 核心考点单独做一个标签, 放到鉴赏右边。
+
+### 实施
+- ArticlePage TABS 加 { key: exam, label: 考点 } (学习/鉴赏/考点/默写)
+- 新组件 ArticleExam.tsx: 考点标签页 (badge + 考点列表可展开; 非考点篇目 EmptyState)
+- ArticleReader: 移除正文顶部卡片 + examTag/examList/examOpen 状态 + import
+- 样式: exam-tab 卡片 max-width none; ep-empty
+- 验证: tabs 顺序正确, 考点展开正常, 学习页无残留卡片; check 0 错误 + test:flow 44/44

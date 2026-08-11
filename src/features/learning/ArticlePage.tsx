@@ -2,6 +2,7 @@ import { Link, Navigate, NavLink, useParams } from 'react-router-dom';
 import { useEffect } from 'react';
 import ArticleReader from './ArticleReader';
 import ArticleAppreciation from './ArticleAppreciation';
+import ArticleExam from './ArticleExam';
 import { examTagFor } from '../../data/exam-tags';
 import PageHeader from '../../shared/ui/PageHeader';
 import { useCore } from '../../data';
@@ -13,6 +14,7 @@ import './article-page.css';
 const TABS = [
   { key: 'learn', label: '学习' },
   { key: 'appreciate', label: '鉴赏' },
+  { key: 'exam', label: '考点' },
   { key: 'moxie', label: '默写' },
 ] as const;
 
@@ -67,6 +69,7 @@ export default function ArticlePage() {
       <main className="workspace-content">
         {tab === 'learn' && <ArticleReader key={article.id || article.title} article={article} compact />}
         {tab === 'appreciate' && <ArticleAppreciation key={article.id || article.title} article={article} />}
+        {tab === 'exam' && <ArticleExam key={article.id || article.title} article={article} />}
         {tab === 'moxie' && (
           moxie ? (
             <div className="moxie-entry-card view-enter">
