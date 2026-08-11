@@ -410,3 +410,128 @@ if (moxie) {
   check(`年级非法 ${badGrade}`, badGrade === 0);
   for (const t of TYPE_STD) check(`题型「${t}」覆盖 ${typeCount[t] || 0} 篇`, (typeCount[t] || 0) >= 100, '四题型应基本全覆盖');
 }
+
+// ==================== 8. raw 数据源唯一性 ====================
+console.log('\n=== 8. raw 数据源唯一性 ===');
+{
+  const rawSources = [
+    { name: 'learning', path: 'src/data/raw/learning.json', idKey: 'id' },
+    { name: 'practice', path: 'src/data/raw/practice.json', idKey: 'id' },
+    { name: 'zhenti', path: 'src/data/raw/zhenti.json', idKey: 'id' },
+    { name: 'zhenti_web', path: 'src/data/raw/zhenti_web.json', idKey: 'id' },
+    { name: 'moxie', path: 'src/data/raw/moxie.json', idKey: 'id' },
+    { name: 'moxie-legacy', path: 'src/data/raw/moxie-legacy.json', idKey: 'id' },
+  ];
+  for (const { name, path, idKey } of rawSources) {
+    const data = loadJSON(path);
+    if (!data) continue;
+    const ids = data.map((x) => x[idKey]);
+    const dup = ids.filter((id, i) => ids.indexOf(id) !== i);
+    check(`[${name}] id 唯一`, dup.length === 0, `重复: ${[...new Set(dup)].join(', ')}`);
+    const emptyTitle = data.filter((x) => !x.title || !String(x.title).trim());
+    check(`[${name}] 标题非空`, emptyTitle.length === 0, `${emptyTitle.length} 条空标题`);
+    const gradeOk = data.every((x) => !x.grade || /^(七|八|九)(上|下)|附录|未分类$/.test(String(x.grade)));
+    check(`[${name}] 年级短名规范`, gradeOk, '存在长名/非法年级');
+  }
+  // 考频后缀残留检测 (P1-3 防线)
+  const moxieRaw = loadJSON('src/data/raw/moxie.json');
+  if (moxieRaw) {
+    const freqTitles = moxieRaw.filter((x) => /\d+年\d+考/.test(x.title));
+    check('moxie title 无考频后缀', freqTitles.length === 0, freqTitles.map((x) => x.title).join(', '));
+  }
+  // qid 唯一: 按文件内部检查 (moxie 与 moxie-legacy 同篇并存属设计, 合并时才去重)
+  for (const n of ['moxie', 'moxie-legacy']) {
+    const data = loadJSON(`src/data/raw/${n}.json`);
+    if (!data) continue;
+    const qids = [];
+    for (const art of data) for (const s of art.sections || []) for (const it of s.items || []) {
+      if (it.qid) qids.push(it.qid);
+    }
+    const dupQids = qids.filter((q, i) => qids.indexOf(q) !== i);
+    check(`[${n}] qid 文件内唯一 (${qids.length} 题)`, dupQids.length === 0, `${new Set(dupQids).size} 个重复 qid`);
+  }
+}
+
+// ==================== 9. zhenti_web 完全重复检测 ====================
+console.log('\n=== 9. 真题重复检测 ===');
+{
+  const z = loadJSON('src/data/raw/zhenti_web.json');
+  if (z) {
+    const normZ = (v) => String(v || '').replace(/[^0-9A-Za-z\u4e00-\u9fff]/g, '');
+    const keyOf = (x) => [x.province, x.year, x.type, normZ(x.title), normZ(x.stem), normZ(x.answer)].join('|');
+    const seen = new Map();
+    let dupGroups = 0;
+    for (const x of z) {
+      const k = keyOf(x);
+      if (seen.has(k)) {
+        dupGroups++;
+        if (dupGroups <= 3) console.log(`  ✗ 完全重复: ${x.id} 与 ${seen.get(k)} (${x.province}/${x.year}/${x.type}/${x.title})`);
+      } else seen.set(k, x.id);
+    }
+    check('zhenti_web 无完全重复题', dupGroups === 0, `${dupGroups} 组重复`);
+    // 同题干不同答案 → 警告 (需人工核对)
+    const stemKey = (x) => [x.province, x.year, x.type, normZ(x.title), normZ(x.stem)].join('|');
+    const ansMap = new Map();
+    let diffAns = 0;
+    for (const x of z) {
+      const k = stemKey(x);
+      const prev = ansMap.get(k);
+      if (prev && normZ(prev.answer) !== normZ(x.answer)) {
+        diffAns++;
+        if (diffAns <= 3) warn(`同题不同答案: ${prev.id} vs ${x.id} (${x.title})`);
+      }
+      ansMap.set(k, x);
+    }
+    check('无同题不同答案', diffAns === 0, `${diffAns} 组待人工核对`);
+  }
+}
+
+// ==================== 10. runtime 默写产物一致性 ====================
+console.log('\n=== 10. runtime 默写产物一致性 ===');
+{
+  const moxie = loadJSON('src/data/runtime/moxie.json');
+  if (moxie) {
+    const ids = moxie.map((a) => a.id);
+    const dupIds = ids.filter((id, i) => ids.indexOf(id) !== i);
+    check('runtime moxie 篇目 id 唯一', dupIds.length === 0, `重复: ${[...new Set(dupIds)].join(', ')}`);
+    const qids = [];
+    for (const art of moxie) for (const s of art.sections || []) for (const it of s.items || []) qids.push(it.qid);
+    const dupQids = qids.filter((q, i) => qids.indexOf(q) !== i);
+    check(`runtime moxie qid 全局唯一 (${qids.length} 题)`, dupQids.length === 0, `${new Set(dupQids).size} 个重复 qid`);
+    // articleId 有效性
+    const artIds = new Set((articles || []).map((a) => a.id));
+    const badLink = moxie.filter((a) => a.articleId && !artIds.has(a.articleId));
+    check('moxie articleId 全部有效', badLink.length === 0, badLink.map((a) => `${a.title}→${a.articleId}`).join(', '));
+    // title 无考频残留 (build 产物防线)
+    const freqTitles = moxie.filter((a) => /\d+年\d+考/.test(a.title));
+    check('runtime moxie title 无考频后缀', freqTitles.length === 0, freqTitles.map((a) => a.title).join(', '));
+  }
+}
+
+// ==================== 11. 样式硬编码扫描 (由 style-unify 填充) ====================
+console.log('\n=== 11. 样式硬编码扫描 ===');
+{
+  const cssFiles = [
+    'src/shared/styles/global.css',
+    'src/features/home/home.css',
+    'src/features/learning/article.css',
+    'src/features/learning/article-page.css',
+    'src/features/moxie/moxie.css',
+  ];
+  let hexCount = 0;
+  for (const f of cssFiles) {
+    const p = join(root, f);
+    if (!existsSync(p)) continue;
+    const css = readFileSync(p, 'utf8');
+    const hexes = css.match(/#[0-9a-fA-F]{3,8}\b/g) || [];
+    hexCount += hexes.length;
+  }
+  if (hexCount === 0) console.log('  ✓ 无硬编码颜色');
+  else check(`CSS 无硬编码颜色 (${hexCount} 处)`, hexCount === 0, '全部应走 var(--*) 令牌');
+}
+
+if (errors > 0) {
+  console.error(`\n❌ 校验失败: ${errors} 个错误, ${warns} 个警告`);
+  process.exit(1);
+}
+console.log(`\n✅ 全部通过 (${warns} 个警告)`);

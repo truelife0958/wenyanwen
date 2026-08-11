@@ -1,6 +1,5 @@
 /** 底部 Tab 导航: 学习 / 默写 (移动优先, 宽屏居中) */
-import { useLocation } from 'react-router-dom';
-import { NavLink } from 'react-router-dom';
+import { NavLink, useLocation } from 'react-router-dom';
 import Icon from '../../shared/ui/Icon';
 
 const TABS = [

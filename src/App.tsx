@@ -83,7 +83,7 @@ export default function App() {
 
         <TabBar />
         <footer className="app-footer">
-          <p>武汉中考文言文 · 学习 + 默写练习 · 数据 v3.0</p>
+          <p>武汉中考文言文 · 学习 + 默写练习</p>
         </footer>
       </div>
     </ErrorBookProvider>
