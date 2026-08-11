@@ -1117,3 +1117,75 @@
 .article-body .orig-sent { font-size: calc(var(--f-size-md) * var(--reader-scale, 1)); }
 .article-body .para-trans,
 .article-body .trans-line { font-size: calc(var(--f-size-sm) * var(--reader-scale, 1)); }
+
+/* ===== 鉴赏/考点/注释 紧凑多列布局 (2026-08) ===== */
+.appreciation-tab { gap: 12px; }
+.appr-title { margin: 0 0 8px; font-size: 0.98rem; }
+.appr-paras {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
+  gap: 10px;
+  align-items: start;
+}
+.appr-para { padding: 10px 12px; box-shadow: none; }
+.appr-orig { font-size: 0.95rem; line-height: 1.8; }
+.appr-trans { font-size: 0.86rem; line-height: 1.8; margin-top: 4px; }
+.appr-ana {
+  font-size: 0.86rem;
+  line-height: 1.75;
+  margin-top: 6px;
+  padding: 8px 10px;
+}
+.appr-ana::before { content: none; }
+.appr-whole { margin-top: 2px; }
+/* 注释页卡片内紧凑 */
+.notes-tab .note-meaning { gap: 2px; }
+.notes-tab .note-meaning-item { display: block; line-height: 1.65; }
+/* 考点页徽章行 */
+.exam-tab .appr-title { margin-bottom: 10px; }
+
+/* 鉴赏页 analysis 容器同样多列 */
+.analysis-tab {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
+  gap: 10px;
+  align-items: start;
+}
+/* 移动端回到单列 */
+@media (max-width: 700px) {
+  .appr-paras, .analysis-tab { grid-template-columns: 1fr; }
+}
+
+/* 文化背景卡内容长: 跨整行 */
+.appr-para.analysis-card-culture { grid-column: 1 / -1; }
+/* 再微压 */
+.appr-para { padding: 8px 10px; }
+.appr-ana { line-height: 1.7; padding: 6px 8px; }
+.appr-title { margin-bottom: 6px; }
+.ac-culture-row { margin-bottom: 4px; }
+.analysis-card-body p { line-height: 1.7; }
+
+/* 结构卡(长文 outline): 跨全列 */
+.appr-para:has(.analysis-outline) { grid-column: 1 / -1; }
+.appr-para:has(.analysis-outline) .analysis-outline { white-space: pre-line; }
+/* 图标对齐 */
+.act-icon { line-height: 1; }
+/* padding 折中 */
+.appr-para { padding: 10px 12px; }
+
+/* 结构 outline: 双列紧凑 */
+.appr-para:has(.analysis-outline) .analysis-outline {
+  column-count: 2;
+  column-gap: 24px;
+  font-size: 0.84rem;
+  line-height: 1.65;
+}
+@media (max-width: 700px) {
+  .appr-para:has(.analysis-outline) .analysis-outline { column-count: 1; }
+}
+
+/* 结构 outline 微压 */
+.appr-para:has(.analysis-outline) .analysis-outline {
+  font-size: 0.82rem;
+  line-height: 1.55;
+}

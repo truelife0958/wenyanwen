@@ -39,7 +39,7 @@
   display: flex;
   gap: 0;
   border-bottom: 2px solid var(--border-soft);
-  margin-bottom: var(--sp-lg);
+  margin-bottom: var(--sp-md);
   overflow-x: auto;
   -webkit-overflow-scrolling: touch;
   scrollbar-width: none;
@@ -62,7 +62,7 @@
   color: var(--primary);
   border-bottom-color: var(--primary);
 }
-.workspace-content { padding-top: 20px; min-height: 55vh; }
+.workspace-content { padding-top: 12px; min-height: 55vh; }
 .workspace-content .article-practice .practice-session { max-width: none; }
 
 .module-intro {
@@ -330,11 +330,12 @@
 
 /* ===== 鉴赏标签页 ===== */
 .analysis-tab {
-  max-width: 780px;
+  max-width: none;
   margin: 0 auto;
-  display: flex;
-  flex-direction: column;
-  gap: var(--sp-lg);
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
+  gap: 10px;
+  align-items: start;
 }
 .analysis-tab-intro {
   margin-bottom: var(--sp-xs);

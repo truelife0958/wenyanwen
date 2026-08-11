@@ -1452,3 +1452,18 @@ toPracticeQuestion 的 fromZhenti 逻辑误写 `origins.includes('exam-gen')`（
 - ArticleReader: 删除 NoteList 函数 + 底部渲染 (原文下方不再有注释清单)
 - test:flow 适配 (note-list → 注释标签检查); 44/44
 - 视觉复审: 对比度/间距实测正常 (视觉模型误报, 不盲改)
+
+## 2026-08-11 · 鉴赏/考点/注释 紧凑布局 (08-11-tabs-compact)
+
+用户: 鉴赏, 考点, 注释三页样式调整, 布局紧凑, 不要出现滚动条。
+
+### 实施 (数据驱动: 先测 scrollHeight 再改)
+- appr-paras/analysis-tab: flex 单列 → grid 多列 (minmax 320px, auto-fill) + gap 10px
+- 结构卡 (长 outline): :has(.analysis-outline) 跨全列 + 双列 columns + 小字号
+- 文化背景卡: 跨全列
+- ArticleAnalysis: outline section 移到 writing 后 (grid 流: 主旨+写法 行1 / 结构行2 / 文化行3)
+- 卡片 padding 10px 12px; appr-ana 6px 8px; 行高 1.7-1.75
+- PageHeader padding 压缩 (6px 0 10px); workspace-tabs margin-bottom sp-md
+- 移动端 (≤700px) 回单列
+- 实测 (1280×900): appr 1787→1097 (-39%), exam 1595→1029 (-35%), notes 8780→2614 (-70%)
+- 44/44 全绿

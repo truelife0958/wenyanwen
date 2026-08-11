@@ -37,17 +37,6 @@ export default function ArticleAnalysis({ article }: Props) {
         </section>
       )}
 
-      {analysis.outline && (
-        <section className="appr-para analysis-card">
-          <h3 className="appr-orig analysis-card-title">
-            <span className="act-icon">📐</span> 结构
-          </h3>
-          <div className="appr-ana analysis-card-body">
-            <p className="analysis-outline">{analysis.outline}</p>
-          </div>
-        </section>
-      )}
-
       {analysis.writing && (
         <section className="appr-para analysis-card">
           <h3 className="appr-orig analysis-card-title">
@@ -60,6 +49,18 @@ export default function ArticleAnalysis({ article }: Props) {
           </div>
         </section>
       )}
+
+      {analysis.outline && (
+        <section className="appr-para analysis-card">
+          <h3 className="appr-orig analysis-card-title">
+            <span className="act-icon">📐</span> 结构
+          </h3>
+          <div className="appr-ana analysis-card-body">
+            <p className="analysis-outline">{analysis.outline}</p>
+          </div>
+        </section>
+      )}
+
 
       {hasCulture && (
         <section className="appr-para analysis-card analysis-card-culture">
