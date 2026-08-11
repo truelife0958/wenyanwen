@@ -49,7 +49,12 @@ export default function ArticlePage() {
 
   const moxie = findMoxieByArticleTitle(article.title);
   const moxieProg = moxie ? articleProgress(moxie) : null;
-  const meta = [article.dynasty, article.author, article.grade].filter(Boolean).join(' · ');
+  const metaParts = [article.dynasty, article.author, article.grade].filter(Boolean);
+  const meta = metaParts.length
+    ? metaParts.map((part, i) => (
+        <span key={`${part}-${i}`}>{i > 0 && <span className="meta-sep" aria-hidden="true">·</span>}{part}</span>
+      ))
+    : null;
 
   return (
     <div className="article-workspace view-enter">

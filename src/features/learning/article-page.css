@@ -50,7 +50,10 @@
 .workspace-tabs a:hover { color: var(--primary); }
 .workspace-tabs a.active {
   color: var(--primary);
+  font-weight: 700;
+  background: var(--primary-soft);
   border-bottom-color: var(--primary);
+  border-radius: var(--r-xs) var(--r-xs) 0 0;
 }
 .workspace-content { padding-top: 12px; min-height: 55vh; }
 .workspace-content .article-practice .practice-session { max-width: none; }

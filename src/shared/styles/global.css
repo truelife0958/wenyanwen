@@ -49,6 +49,7 @@ button { font-family: inherit; cursor: pointer; }
 .app-header .subtitle { font-size: 0.85rem; opacity: 0.9; }
 .app-header-info {
   display: block;
+  color: var(--ink-2);
   font-size: 0.75rem;
   opacity: 0.8;
 }
@@ -590,11 +591,22 @@ h2 {
 /* ===== 通用页面头部 PageHeader ===== */
  .page-header { display: flex; align-items: flex-end; gap: 14px; padding: 6px 0 10px; flex-wrap: wrap; }
 .page-header-back { width: 100%; }
-.page-header-back a { color: var(--ink-light); font-size: 0.88rem; padding: 5px 0; }
-.page-header-back a:hover { color: var(--primary); }
+.page-header-back a {
+  display: inline-flex;
+  align-items: center;
+  gap: 4px;
+  color: var(--ink-2);
+  font-size: 0.88rem;
+  font-weight: 600;
+  padding: 4px 8px;
+  border-radius: var(--r-xs);
+  transition: color var(--dur-fast) var(--ease-out), background var(--dur-fast) var(--ease-out);
+}
+.page-header-back a:hover { color: var(--primary); background: var(--primary-soft); }
 .page-header-main { flex: 1; min-width: 0; }
 .page-header-main .page-title { margin: 0; }
-.page-header-meta { color: var(--ink-light); font-size: 0.86rem; margin: var(--sp-xs) 0 0; }
+.page-header-meta { color: var(--ink-2); font-size: 0.88rem; margin: var(--sp-xs) 0 0; display: flex; flex-wrap: wrap; align-items: center; gap: 2px; }
+.page-header-meta .meta-sep { margin: 0 4px; color: var(--border); }
 .page-header-right { flex-shrink: 0; }
 
 /* 中考必考/核心重点 徽章 (PageHeader 标题内) */
@@ -608,7 +620,9 @@ h2 {
   border-radius: var(--r-pill);
   white-space: nowrap;
 }
-/* .ac-badge-must/.ac-badge-core 死代码已清理 (Home 用 .exam-must .ac-badge) */
+/* 篇目页标题徽章: 语义配色与首页卡片徽章统一 (must=印章红, core=古铜棕) */
+.ac-badge-must { background: var(--primary); color: var(--card-bg); }
+.ac-badge-core { background: var(--bronze-deep); color: var(--card-bg); }
 
 /* 作答输入框 (VLM: 黑实线突兀 → 纸色描边) */
 .q-input {
@@ -668,7 +682,7 @@ h2 {
 .app-header { padding: var(--sp-sm) var(--sp-lg) 6px; }
 .app-header h1 { font-size: 1.08rem; letter-spacing: 3px; margin-bottom: 2px; }
 .app-header .subtitle { font-size: 0.78rem; }
-.app-header-info { font-size: 0.7rem; }
+.app-header-info { font-size: 0.76rem; color: var(--ink-2); }
 .app-main { padding-top: var(--sp-md); padding-bottom: 96px; }
 .app-footer { padding: var(--sp-sm); font-size: 0.72rem; }
 .tab-bar { padding: 5px 10px calc(5px + env(safe-area-inset-bottom)); }

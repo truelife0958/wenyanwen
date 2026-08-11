@@ -80,7 +80,7 @@
   background: var(--primary);
   border-color: var(--primary);
   color: var(--card-bg);
-  box-shadow: 0 3px 10px var(--red-25);
+  box-shadow: 0 2px 6px var(--red-10);
 }
 .gt-name { line-height: 1.5; }
 .gt-count {
