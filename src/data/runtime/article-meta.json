@@ -21,7 +21,7 @@
       "dynasty": "春秋战国",
       "origin": "《论语》",
       "source": "jiaocai_p023..jiaocai_p027",
-      "reciteCount": 10,
+      "reciteCount": 12,
       "questionCount": 18,
       "zhentiCount": 4,
       "wordCount": 57
@@ -164,7 +164,7 @@
       "dynasty": "南宋",
       "origin": "《剑南诗稿》",
       "source": "jiaocai_p044",
-      "reciteCount": 1,
+      "reciteCount": 2,
       "questionCount": 18,
       "zhentiCount": 2,
       "wordCount": 8
@@ -1305,7 +1305,7 @@
       "dynasty": "东晋",
       "origin": "饮酒",
       "source": "jiaocai_p119..jiaocai_p120",
-      "reciteCount": 5,
+      "reciteCount": 6,
       "questionCount": 16,
       "zhentiCount": 1,
       "wordCount": 9
@@ -1638,7 +1638,7 @@
   ],
   "counts": {
     "learning": 126,
-    "recite": 350,
+    "recite": 354,
     "cards": 2361,
     "globalWords": 134,
     "senses": 2931,
