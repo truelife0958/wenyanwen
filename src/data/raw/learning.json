@@ -406,7 +406,79 @@
     "literary_culture": {
       "author_intro": "孔子，名丘，字仲尼，春秋时期思想家、教育家，儒家学派创始人。",
       "background": "由孔子弟子及再传弟子记录编纂，集中体现孔子及儒家学派的政治主张、伦理思想与教育原则。"
-    }
+    },
+    "key_terms": [
+      {
+        "category": "通假字",
+        "items": [
+          {
+            "word": "说",
+            "meaning": "同“悦”，愉快",
+            "example": "不亦说乎"
+          },
+          {
+            "word": "有",
+            "meaning": "同“又”，用于整数和零数之间",
+            "example": "吾十有五而志于学"
+          }
+        ]
+      },
+      {
+        "category": "重点实词",
+        "items": [
+          {
+            "word": "愠",
+            "meaning": "生气，恼怒",
+            "example": "人不知而不愠"
+          },
+          {
+            "word": "三省",
+            "meaning": "多次进行自我检查。三，泛指多次（一说实指，指从三个方面反省）",
+            "example": "吾日三省吾身"
+          },
+          {
+            "word": "信",
+            "meaning": "守信用，真诚",
+            "example": "与朋友交而不信乎"
+          },
+          {
+            "word": "罔",
+            "meaning": "迷惑，感到迷茫而无所适从",
+            "example": "学而不思则罔"
+          },
+          {
+            "word": "殆",
+            "meaning": "危险，有害",
+            "example": "思而不学则殆"
+          },
+          {
+            "word": "逾",
+            "meaning": "越过，超过",
+            "example": "不逾矩"
+          },
+          {
+            "word": "堪",
+            "meaning": "能忍受",
+            "example": "人不堪其忧"
+          },
+          {
+            "word": "好",
+            "meaning": "喜爱，爱好",
+            "example": "知之者不如好之者"
+          },
+          {
+            "word": "笃",
+            "meaning": "忠实，专一",
+            "example": "博学而笃志"
+          },
+          {
+            "word": "切",
+            "meaning": "恳切",
+            "example": "切问而近思"
+          }
+        ]
+      }
+    ]
   },
   {
     "id": "jc-sanxia",
@@ -1574,7 +1646,49 @@
     "literary_culture": {
       "author_intro": "王维，字摩诘，盛唐时期的著名诗人、画家，精通释典，有“诗佛”之称。",
       "background": "唐玄宗开元二十五年，河西节度副使崔希逸在青海湖大破吐蕃。朝廷派王维以监察御史身份前往边塞慰问将士，此诗即为此次出使途中所作。"
-    }
+    },
+    "key_terms": [
+      {
+        "category": "重点实词",
+        "items": [
+          {
+            "word": "问边",
+            "meaning": "慰问边关守军",
+            "example": "单车欲问边"
+          },
+          {
+            "word": "属国",
+            "meaning": "典属国的简称，代指使者",
+            "example": "属国过居延"
+          },
+          {
+            "word": "征蓬",
+            "meaning": "飘飞的蓬草，比喻远行之人",
+            "example": "征蓬出汉塞"
+          },
+          {
+            "word": "孤烟",
+            "meaning": "指边塞上烽火台升起的笔直的烟。原释义“报平安”是一种推断，虽常见但非本义，修正为更客观的描述。",
+            "example": "大漠孤烟直"
+          },
+          {
+            "word": "长河",
+            "meaning": "指黄河",
+            "example": "长河落日圆"
+          },
+          {
+            "word": "候骑",
+            "meaning": "负责侦察、巡逻的骑兵",
+            "example": "萧关逢候骑"
+          },
+          {
+            "word": "都护",
+            "meaning": "官名，指边疆的最高长官",
+            "example": "都护在燕然"
+          }
+        ]
+      }
+    ]
   },
   {
     "id": "jc-guanju",
@@ -2084,7 +2198,89 @@
     "literary_culture": {
       "author_intro": "诸葛亮，字孔明，三国蜀汉政治家、军事家。",
       "background": "蜀汉建兴五年，诸葛亮准备北伐，临行前上书后主刘禅，劝谏其励精图治。"
-    }
+    },
+    "key_terms": [
+      {
+        "category": "重点实词",
+        "items": [
+          {
+            "word": "崩殂",
+            "meaning": "指帝王之死",
+            "example": "先帝创业未半而中道崩殂"
+          },
+          {
+            "word": "秋",
+            "meaning": "时候，这里指关键时刻。",
+            "example": "此诚危急存亡之秋也"
+          },
+          {
+            "word": "光",
+            "meaning": "发扬光大",
+            "example": "以光先帝遗德"
+          },
+          {
+            "word": "恢弘",
+            "meaning": "发扬，扩展",
+            "example": "恢弘志士之气"
+          },
+          {
+            "word": "菲薄",
+            "meaning": "（因过分谦虚而）看轻自己。菲，微薄。",
+            "example": "不宜妄自菲薄"
+          },
+          {
+            "word": "臧否",
+            "meaning": "评论人物好坏。臧，善；否，恶",
+            "example": "陟罚臧否"
+          },
+          {
+            "word": "陟",
+            "meaning": "提升，提拔",
+            "example": "陟罚臧否"
+          },
+          {
+            "word": "遗",
+            "meaning": "读wèi，送给、给予（如“以遗陛下”）；读yí，遗留、留下（如“先帝遗德”）",
+            "example": "以遗陛下"
+          },
+          {
+            "word": "痛恨",
+            "meaning": "古义：痛心、遗憾；今义：深切憎恨",
+            "example": "未尝不叹息痛恨于桓、灵也"
+          },
+          {
+            "word": "卑鄙",
+            "meaning": "古义：身份低微，见识短浅；今义：品行恶劣",
+            "example": "先帝不以臣卑鄙"
+          },
+          {
+            "word": "猥",
+            "meaning": "屈尊，这里是谦辞，表示降低身份。",
+            "example": "猥自枉屈"
+          },
+          {
+            "word": "驽钝",
+            "meaning": "比喻才能平庸。驽，劣马；钝，刀刃不锋利",
+            "example": "庶竭驽钝"
+          },
+          {
+            "word": "攘除",
+            "meaning": "排除，铲除",
+            "example": "攘除奸凶"
+          },
+          {
+            "word": "咨诹",
+            "meaning": "询问",
+            "example": "咨诹善道"
+          },
+          {
+            "word": "雅言",
+            "meaning": "正确、合理的言论",
+            "example": "察纳雅言"
+          }
+        ]
+      }
+    ]
   },
   {
     "id": "jc-bieyunjian",
@@ -3659,7 +3855,39 @@
     "literary_culture": {
       "author_intro": "曹操，字孟德，东汉末年杰出的政治家、军事家、文学家，建安文学代表人物。",
       "background": "建安十二年，曹操北征乌桓大获全胜，复勇东巡，途经碣石山时建安挥毫所作。"
-    }
+    },
+    "key_terms": [
+      {
+        "category": "重点实词",
+        "items": [
+          {
+            "word": "临",
+            "meaning": "到达，登上",
+            "example": "东临碣石"
+          },
+          {
+            "word": "澹澹",
+            "meaning": "水波荡漾的样子",
+            "example": "水何澹澹"
+          },
+          {
+            "word": "竦峙",
+            "meaning": "耸立。竦、峙，都是耸立的意思",
+            "example": "山岛竦峙"
+          },
+          {
+            "word": "萧瑟",
+            "meaning": "形容秋风吹动草木时发出的声音，也指冷落、凄凉的景象。",
+            "example": "秋风萧瑟"
+          },
+          {
+            "word": "星汉",
+            "meaning": "银河",
+            "example": "星汉灿烂"
+          }
+        ]
+      }
+    ]
   },
   {
     "id": "jc-zhouyafu",
@@ -5617,11 +5845,6 @@
             "sense": "指安身",
             "example": "衣食所安",
             "origin": "曹刿论战"
-          },
-          {
-            "sense": "安定，平静",
-            "example": "安居而天下熄",
-            "origin": "富贵不能淫"
           }
         ]
       },
@@ -12543,7 +12766,49 @@
     "literary_culture": {
       "author_intro": "杜甫，字子美，自号少陵野老，唐代伟大的现实主义诗人，被尊为“诗圣”。",
       "background": "写于安史之乱时期。安禄山攻陷长安，杜甫身陷贼营，目睹国破家亡之景而作。"
-    }
+    },
+    "key_terms": [
+      {
+        "category": "重点实词",
+        "items": [
+          {
+            "word": "国",
+            "meaning": "国都，指长安",
+            "example": "国破山河在"
+          },
+          {
+            "word": "深",
+            "meaning": "茂盛",
+            "example": "城春草木深"
+          },
+          {
+            "word": "感时",
+            "meaning": "感伤国事",
+            "example": "感时花溅泪"
+          },
+          {
+            "word": "烽火",
+            "meaning": "战火",
+            "example": "烽火连三月"
+          },
+          {
+            "word": "抵",
+            "meaning": "值，相当",
+            "example": "家书抵万金"
+          },
+          {
+            "word": "浑",
+            "meaning": "简直",
+            "example": "浑欲不胜簪"
+          },
+          {
+            "word": "胜",
+            "meaning": "能承受，禁得起",
+            "example": "浑欲不胜簪"
+          }
+        ]
+      }
+    ]
   },
   {
     "id": "jc-wanchun",
@@ -13481,7 +13746,64 @@
     "literary_culture": {
       "author_intro": "杜甫，字子美，号少陵野老，唐代伟大的现实主义诗人，被尊为“诗圣”。",
       "background": "本诗是杜甫青年时期游历齐赵，登临泰山时所作，充满了积极进取的蓬勃朝气。"
-    }
+    },
+    "key_terms": [
+      {
+        "category": "通假字",
+        "items": [
+          {
+            "word": "曾",
+            "meaning": "同“层”，层层",
+            "example": "荡胸生曾云"
+          }
+        ]
+      },
+      {
+        "category": "重点实词",
+        "items": [
+          {
+            "word": "岱宗",
+            "meaning": "指泰山",
+            "example": "岱宗夫如何"
+          },
+          {
+            "word": "未了",
+            "meaning": "不尽，没完",
+            "example": "齐鲁青未了"
+          },
+          {
+            "word": "钟",
+            "meaning": "聚集",
+            "example": "造化钟神秀"
+          },
+          {
+            "word": "割",
+            "meaning": "分",
+            "example": "阴阳割昏晓"
+          },
+          {
+            "word": "决",
+            "meaning": "（眼眶）睁大。此处是睁大眼力远望，眼眶似要裂开。",
+            "example": "决眦入归鸟"
+          },
+          {
+            "word": "眦",
+            "meaning": "眼角。",
+            "example": "决眦入归鸟"
+          },
+          {
+            "word": "会当",
+            "meaning": "终当，终要",
+            "example": "会当凌绝顶"
+          },
+          {
+            "word": "凌",
+            "meaning": "登上",
+            "example": "会当凌绝顶"
+          }
+        ]
+      }
+    ]
   },
   {
     "id": "jc-wangdongtinghushangzhangchengxiang",
@@ -15029,7 +15351,159 @@
     "literary_culture": {
       "author_intro": "陶渊明，字元亮，号五柳先生，东晋著名诗人、辞赋家。",
       "background": "东晋末年社会动荡、战乱频仍，作者对现实不满，虚构了理想社会。"
-    }
+    },
+    "key_terms": [
+      {
+        "category": "通假字",
+        "items": [
+          {
+            "word": "要",
+            "meaning": "同“邀”，邀请",
+            "example": "便要还家"
+          }
+        ]
+      },
+      {
+        "category": "古今异义",
+        "items": [
+          {
+            "word": "鲜美",
+            "meaning": "古义：新鲜美好；今义：食物味道好",
+            "example": "芳草鲜美"
+          },
+          {
+            "word": "妻子",
+            "meaning": "古义：妻子和儿女；今义：男子的配偶",
+            "example": "率妻子邑人来此绝境"
+          },
+          {
+            "word": "绝境",
+            "meaning": "古义：与世隔绝的地方；今义：走投无路的境地",
+            "example": "率妻子邑人来此绝境"
+          },
+          {
+            "word": "无论",
+            "meaning": "古义：不要说，更不必说；今义：不管、不论",
+            "example": "无论魏晋"
+          },
+          {
+            "word": "间隔",
+            "meaning": "古义：隔绝，不通音信；今义：事物在空间或时间上的距离",
+            "example": "遂与外人间隔"
+          },
+          {
+            "word": "交通",
+            "meaning": "古义：交错相通；今义：各种运输和邮电事业的总称",
+            "example": "阡陌交通"
+          },
+          {
+            "word": "不足",
+            "meaning": "古义：不值得；今义：不够",
+            "example": "不足为外人道也"
+          }
+        ]
+      },
+      {
+        "category": "词类活用",
+        "items": [
+          {
+            "word": "异",
+            "meaning": "形容词的意动用法，对……感到惊异",
+            "example": "渔人甚异之"
+          },
+          {
+            "word": "尽",
+            "meaning": "释义修正为：动词，完结，到了尽头。原词条的例句“欲穷其林”及语法分析，均为“穷”字的用法。",
+            "example": "欲穷其林"
+          },
+          {
+            "word": "前",
+            "meaning": "名词用作状语，向前",
+            "example": "复前行"
+          }
+        ]
+      },
+      {
+        "category": "重点实词",
+        "items": [
+          {
+            "word": "缘",
+            "meaning": "沿着，顺着",
+            "example": "缘溪行"
+          },
+          {
+            "word": "穷",
+            "meaning": "尽，走到尽头",
+            "example": "欲穷其林"
+          },
+          {
+            "word": "豁然",
+            "meaning": "开阔的样子",
+            "example": "豁然开朗"
+          },
+          {
+            "word": "俨然",
+            "meaning": "整齐的样子",
+            "example": "屋舍俨然"
+          },
+          {
+            "word": "阡陌",
+            "meaning": "田间小路。阡，南北向的路；陌，东西向的路。",
+            "example": "阡陌交通"
+          },
+          {
+            "word": "黄发垂髫",
+            "meaning": "指老人和小孩。黄发，旧说是长寿的特征；垂髫，小孩垂下来的头发",
+            "example": "黄发垂髫，并怡然自乐"
+          },
+          {
+            "word": "语",
+            "meaning": "告诉，对……说",
+            "example": "此中人语云"
+          },
+          {
+            "word": "延",
+            "meaning": "邀请",
+            "example": "余人各复延至其家"
+          },
+          {
+            "word": "扶",
+            "meaning": "沿着，顺着",
+            "example": "便扶向路"
+          },
+          {
+            "word": "向",
+            "meaning": "先前的",
+            "example": "便扶向路"
+          },
+          {
+            "word": "志",
+            "meaning": "做记号",
+            "example": "处处志之"
+          },
+          {
+            "word": "诣",
+            "meaning": "到，去（拜见）。特指到尊长或官府那里去。",
+            "example": "诣太守"
+          },
+          {
+            "word": "规",
+            "meaning": "计划",
+            "example": "欣然规往"
+          },
+          {
+            "word": "寻",
+            "meaning": "随即，不久",
+            "example": "寻病终"
+          },
+          {
+            "word": "问津",
+            "meaning": "问路，这里指探访、访求",
+            "example": "后遂无问津者"
+          }
+        ]
+      }
+    ]
   },
   {
     "id": "liangfuxing-caozhi",
@@ -16661,7 +17135,44 @@
     "literary_culture": {
       "author_intro": "范仲淹，字希文，北宋政治家、文学家，谥号“文正”。",
       "background": "写于词人统帅军队抵御西夏侵扰、坚守西北边疆时期。"
-    }
+    },
+    "key_terms": [
+      {
+        "category": "重点实词",
+        "items": [
+          {
+            "word": "塞下",
+            "meaning": "边界要塞之地，指西北边疆",
+            "example": "塞下秋来风景异"
+          },
+          {
+            "word": "衡阳雁去",
+            "meaning": "即“雁去衡阳”，大雁向衡阳飞去，指大雁南飞",
+            "example": "衡阳雁去无留意"
+          },
+          {
+            "word": "边声",
+            "meaning": "边塞特有的声音，如风声、号角声、马嘶声等。",
+            "example": "四面边声连角起"
+          },
+          {
+            "word": "千嶂",
+            "meaning": "层峦叠嶂。嶂，直立似屏障的山峰",
+            "example": "千嶂里"
+          },
+          {
+            "word": "燕然未勒",
+            "meaning": "指战事未平、功名未立。燕然，山名，用东汉窦宪刻石记功的典故",
+            "example": "燕然未勒归无计"
+          },
+          {
+            "word": "征夫",
+            "meaning": "出征的士兵",
+            "example": "将军白发征夫泪"
+          }
+        ]
+      }
+    ]
   },
   {
     "id": "jc-dujingmensongbie",
@@ -18980,7 +19491,84 @@
       "author_intro": "刘禹锡，字梦得，唐代文学家、哲学家，世称“诗豪”。",
       "background": "作者因参加永贞革新失败被贬，后写下此文借陋室表达不阿世俗的情怀。"
     },
-    "origin": "《刘禹锡集》"
+    "origin": "《刘禹锡集》",
+    "key_terms": [
+      {
+        "category": "词类活用",
+        "items": [
+          {
+            "word": "名",
+            "meaning": "名词用作动词，出名，有名",
+            "example": "有仙则名"
+          },
+          {
+            "word": "灵",
+            "meaning": "形容词用作动词，显出灵异，变得灵异。原释义“成为灵异的水”将对象“水”加入释义，不够准确。",
+            "example": "有龙则灵"
+          },
+          {
+            "word": "乱",
+            "meaning": "形容词的使动用法，使……扰乱",
+            "example": "无丝竹之乱耳"
+          },
+          {
+            "word": "劳",
+            "meaning": "形容词的使动用法，使……劳累",
+            "example": "无案牍之劳形"
+          }
+        ]
+      },
+      {
+        "category": "重点实词",
+        "items": [
+          {
+            "word": "斯",
+            "meaning": "这",
+            "example": "斯是陋室"
+          },
+          {
+            "word": "惟",
+            "meaning": "只",
+            "example": "惟吾德馨"
+          },
+          {
+            "word": "馨",
+            "meaning": "芳香，香气远播。这里指品德高尚，声名远扬。原释义“这里指德行美好”不够精确，“馨”是德行的外在表现，而非德行本身。",
+            "example": "惟吾德馨"
+          },
+          {
+            "word": "鸿儒",
+            "meaning": "大儒，指博学的人",
+            "example": "谈笑有鸿儒"
+          },
+          {
+            "word": "白丁",
+            "meaning": "平民，指没有功名的人",
+            "example": "往来无白丁"
+          },
+          {
+            "word": "调",
+            "meaning": "调弄，弹奏",
+            "example": "可以调素琴"
+          },
+          {
+            "word": "丝竹",
+            "meaning": "指弦乐器和管乐器，这里指奏乐的声音",
+            "example": "无丝竹之乱耳"
+          },
+          {
+            "word": "案牍",
+            "meaning": "公文，文书",
+            "example": "无案牍之劳形"
+          },
+          {
+            "word": "形",
+            "meaning": "形体，身体",
+            "example": "无案牍之劳形"
+          }
+        ]
+      }
+    ]
   },
   {
     "id": "da_xie_zhong_shu_shu",
@@ -19455,7 +20043,54 @@
       "author_intro": "辛弃疾，字幼安，号稼轩，南宋豪放派词人，有《稼轩长短句》。",
       "background": "宋孝宗淳熙十五年，词人闲居江西铅山。此时南宋偏安江左，主和派当权，词人抗金报国的壮志难酬。",
       "theme": "表达了作者渴望收复失地、杀敌报国的雄心壮志，以及英雄迟暮、壮志难酬的无限悲愤。"
-    }
+    },
+    "key_terms": [
+      {
+        "category": "重点实词",
+        "items": [
+          {
+            "word": "麾下",
+            "meaning": "部下。麾，军旗",
+            "example": "八百里分麾下炙"
+          },
+          {
+            "word": "炙",
+            "meaning": "烤肉",
+            "example": "八百里分麾下炙"
+          },
+          {
+            "word": "翻",
+            "meaning": "演奏",
+            "example": "五十弦翻塞外声"
+          },
+          {
+            "word": "沙场",
+            "meaning": "战场",
+            "example": "沙场秋点兵"
+          },
+          {
+            "word": "的卢",
+            "meaning": "骏马名",
+            "example": "马作的卢飞快"
+          },
+          {
+            "word": "了却",
+            "meaning": "了结，完成",
+            "example": "了却君王天下事"
+          },
+          {
+            "word": "赢得",
+            "meaning": "博得，取得",
+            "example": "赢得生前身后名"
+          },
+          {
+            "word": "可怜",
+            "meaning": "可惜",
+            "example": "可怜白发生"
+          }
+        ]
+      }
+    ]
   },
   {
     "id": "jc-qiuciqiyi",
@@ -20541,7 +21176,54 @@
     "literary_culture": {
       "author_intro": "李白，字太白，号青莲居士，唐代伟大的浪漫主义诗人，被后人誉为“诗仙”。",
       "background": "天宝三年，李白被诏京师，因受权臣谄毁，被赐金放还，离开长安时写下此诗。"
-    }
+    },
+    "key_terms": [
+      {
+        "category": "通假字",
+        "items": [
+          {
+            "word": "羞",
+            "meaning": "同“馐”，美味的食物",
+            "example": "玉盘珍羞直万钱"
+          },
+          {
+            "word": "直",
+            "meaning": "同“值”，价值",
+            "example": "玉盘珍羞直万钱"
+          }
+        ]
+      },
+      {
+        "category": "重点实词",
+        "items": [
+          {
+            "word": "樽",
+            "meaning": "盛酒的器具",
+            "example": "金樽清酒斗十千"
+          },
+          {
+            "word": "箸",
+            "meaning": "筷子",
+            "example": "停杯投箸不能食"
+          },
+          {
+            "word": "茫然",
+            "meaning": "内心空虚而不知所措的样子",
+            "example": "拔剑四顾心茫然"
+          },
+          {
+            "word": "安",
+            "meaning": "哪里",
+            "example": "多歧路，今安在"
+          },
+          {
+            "word": "济",
+            "meaning": "渡",
+            "example": "直挂云帆济沧海"
+          }
+        ]
+      }
+    ]
   },
   {
     "id": "jc-jichengtiansiyeyou",
@@ -22969,7 +23651,44 @@
       "author_intro": "王勃，字子安，初唐诗人，与杨炯、卢照邻、骆宾王并称“初唐四杰”。",
       "background": "此诗是王勃在长安做官时，为送别一位姓杜的少府前往蜀州赴任所作。",
       "theme": "本诗通过送别友人赴任，表达了对友人的依依惜别之情与劝慰之意，展现了旷达豪迈的胸襟。"
-    }
+    },
+    "key_terms": [
+      {
+        "category": "重点实词",
+        "items": [
+          {
+            "word": "城阙",
+            "meaning": "城墙和宫殿的门楼，借指京城。在例句中特指长安。",
+            "example": "城阙辅三秦"
+          },
+          {
+            "word": "辅",
+            "meaning": "辅佐，护卫",
+            "example": "城阙辅三秦"
+          },
+          {
+            "word": "宦游",
+            "meaning": "外出做官",
+            "example": "同是宦游人"
+          },
+          {
+            "word": "比邻",
+            "meaning": "近邻",
+            "example": "天涯若比邻"
+          },
+          {
+            "word": "歧路",
+            "meaning": "岔路",
+            "example": "无为在歧路"
+          },
+          {
+            "word": "沾巾",
+            "meaning": "泪沾手巾，形容落泪之多",
+            "example": "儿女共沾巾"
+          }
+        ]
+      }
+    ]
   },
   {
     "id": "feng-ru-jing-shi",
@@ -23953,7 +24672,84 @@
     "literary_culture": {
       "author_intro": "欧阳修，字永叔，号醉翁，北宋政治家、文学家，“唐宋八大家”之一。",
       "background": "本文写于欧阳修贬官滁州期间，作者借山水宴游表达与民同乐的情怀。"
-    }
+    },
+    "key_terms": [
+      {
+        "category": "词类活用",
+        "items": [
+          {
+            "word": "翼",
+            "meaning": "名词用作状语，像鸟张开翅膀一样",
+            "example": "有亭翼然临于泉上者"
+          },
+          {
+            "word": "名",
+            "meaning": "名词用作动词，命名",
+            "example": "名之者谁"
+          }
+        ]
+      },
+      {
+        "category": "重点实词",
+        "items": [
+          {
+            "word": "蔚然",
+            "meaning": "茂盛的样子",
+            "example": "望之蔚然而深秀者"
+          },
+          {
+            "word": "临",
+            "meaning": "居高面下",
+            "example": "有亭翼然临于泉上者"
+          },
+          {
+            "word": "辄",
+            "meaning": "就",
+            "example": "饮少辄醉"
+          },
+          {
+            "word": "意",
+            "meaning": "情趣",
+            "example": "醉翁之意不在酒"
+          },
+          {
+            "word": "酣",
+            "meaning": "尽兴地喝酒",
+            "example": "宴酣之乐"
+          },
+          {
+            "word": "弈",
+            "meaning": "下棋",
+            "example": "射者中，弈者胜"
+          },
+          {
+            "word": "颓然",
+            "meaning": "原指精神不振，这里形容醉态",
+            "example": "颓然乎其间者"
+          },
+          {
+            "word": "阴翳",
+            "meaning": "形容枝叶茂密成荫。翳，遮盖",
+            "example": "树林阴翳"
+          },
+          {
+            "word": "伛偻",
+            "meaning": "弯腰曲背，这里指老人",
+            "example": "伛偻提携"
+          },
+          {
+            "word": "提携",
+            "meaning": "牵扶，这里指被牵扶的人，即小孩",
+            "example": "伛偻提携"
+          },
+          {
+            "word": "洌",
+            "meaning": "清澈",
+            "example": "泉香而酒洌"
+          }
+        ]
+      }
+    ]
   },
   {
     "id": "jc-caisangzi",

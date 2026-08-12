@@ -245,6 +245,15 @@
         "legacyIds": [
           "note:jc-ly:10"
         ]
+      },
+      {
+        "text": "多次进行自我检查。三，泛指多次（一说实指，指从三个方面反省）",
+        "category": "重点实词",
+        "source": "key_term",
+        "example": "吾日三省吾身",
+        "legacyIds": [
+          "kt:jc-ly:1:1"
+        ]
       }
     ]
   },
@@ -292,6 +301,15 @@
         "source": "note",
         "legacyIds": [
           "note:jc-ly:13"
+        ]
+      },
+      {
+        "text": "守信用，真诚",
+        "category": "重点实词",
+        "source": "key_term",
+        "example": "与朋友交而不信乎",
+        "legacyIds": [
+          "kt:jc-ly:1:2"
         ]
       }
     ]
@@ -431,12 +449,14 @@
     "word": "逾",
     "meanings": [
       {
-        "text": "越过。",
-        "category": "课文注释",
+        "text": "越过，超过",
+        "category": "重点实词",
         "source": "note",
         "legacyIds": [
-          "note:jc-ly:22"
-        ]
+          "note:jc-ly:22",
+          "kt:jc-ly:1:5"
+        ],
+        "example": "不逾矩"
       }
     ]
   },
@@ -517,6 +537,15 @@
         "legacyIds": [
           "note:jc-ly:27"
         ]
+      },
+      {
+        "text": "迷惑，感到迷茫而无所适从",
+        "category": "重点实词",
+        "source": "key_term",
+        "example": "学而不思则罔",
+        "legacyIds": [
+          "kt:jc-ly:1:3"
+        ]
       }
     ]
   },
@@ -532,6 +561,15 @@
         "source": "note",
         "legacyIds": [
           "note:jc-ly:28"
+        ]
+      },
+      {
+        "text": "危险，有害",
+        "category": "重点实词",
+        "source": "key_term",
+        "example": "思而不学则殆",
+        "legacyIds": [
+          "kt:jc-ly:1:4"
         ]
       }
     ]
@@ -576,11 +614,13 @@
     "meanings": [
       {
         "text": "能忍受。",
-        "category": "课文注释",
+        "category": "重点实词",
         "source": "note",
         "legacyIds": [
-          "note:jc-ly:31"
-        ]
+          "note:jc-ly:31",
+          "kt:jc-ly:1:6"
+        ],
+        "example": "人不堪其忧"
       }
     ]
   },
@@ -624,11 +664,13 @@
     "meanings": [
       {
         "text": "喜爱，爱好。",
-        "category": "课文注释",
+        "category": "重点实词",
         "source": "note",
         "legacyIds": [
-          "note:jc-ly:34"
-        ]
+          "note:jc-ly:34",
+          "kt:jc-ly:1:7"
+        ],
+        "example": "知之者不如好之者"
       }
     ]
   },
@@ -901,6 +943,15 @@
         "legacyIds": [
           "note:jc-ly:51"
         ]
+      },
+      {
+        "text": "忠实，专一",
+        "category": "重点实词",
+        "source": "key_term",
+        "example": "博学而笃志",
+        "legacyIds": [
+          "kt:jc-ly:1:8"
+        ]
       }
     ]
   },
@@ -912,11 +963,13 @@
     "meanings": [
       {
         "text": "恳切。",
-        "category": "课文注释",
+        "category": "重点实词",
         "source": "note",
         "legacyIds": [
-          "note:jc-ly:52"
-        ]
+          "note:jc-ly:52",
+          "kt:jc-ly:1:9"
+        ],
+        "example": "切问而近思"
       }
     ]
   },
@@ -932,6 +985,57 @@
         "source": "note",
         "legacyIds": [
           "note:jc-ly:53"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "word:jc-ly:说",
+    "scope": "article",
+    "articleId": "jc-ly",
+    "word": "说",
+    "meanings": [
+      {
+        "text": "同“悦”，愉快",
+        "category": "通假字",
+        "source": "key_term",
+        "example": "不亦说乎",
+        "legacyIds": [
+          "kt:jc-ly:0:0"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "word:jc-ly:有",
+    "scope": "article",
+    "articleId": "jc-ly",
+    "word": "有",
+    "meanings": [
+      {
+        "text": "同“又”，用于整数和零数之间",
+        "category": "通假字",
+        "source": "key_term",
+        "example": "吾十有五而志于学",
+        "legacyIds": [
+          "kt:jc-ly:0:1"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "word:jc-ly:愠",
+    "scope": "article",
+    "articleId": "jc-ly",
+    "word": "愠",
+    "meanings": [
+      {
+        "text": "生气，恼怒",
+        "category": "重点实词",
+        "source": "key_term",
+        "example": "人不知而不愠",
+        "legacyIds": [
+          "kt:jc-ly:1:0"
         ]
       }
     ]
@@ -2740,11 +2844,13 @@
     "meanings": [
       {
         "text": "慰问边关守军。",
-        "category": "课文注释",
+        "category": "重点实词",
         "source": "note",
         "legacyIds": [
-          "note:jc-shizhisaishang:1"
-        ]
+          "note:jc-shizhisaishang:1",
+          "kt:jc-shizhisaishang:0:0"
+        ],
+        "example": "单车欲问边"
       }
     ]
   },
@@ -2760,6 +2866,15 @@
         "source": "note",
         "legacyIds": [
           "note:jc-shizhisaishang:2"
+        ]
+      },
+      {
+        "text": "典属国的简称，代指使者",
+        "category": "重点实词",
+        "source": "key_term",
+        "example": "属国过居延",
+        "legacyIds": [
+          "kt:jc-shizhisaishang:0:1"
         ]
       }
     ]
@@ -2793,6 +2908,15 @@
         "legacyIds": [
           "note:jc-shizhisaishang:4"
         ]
+      },
+      {
+        "text": "飘飞的蓬草，比喻远行之人",
+        "category": "重点实词",
+        "source": "key_term",
+        "example": "征蓬出汉塞",
+        "legacyIds": [
+          "kt:jc-shizhisaishang:0:2"
+        ]
       }
     ]
   },
@@ -2809,6 +2933,15 @@
         "legacyIds": [
           "note:jc-shizhisaishang:5"
         ]
+      },
+      {
+        "text": "指边塞上烽火台升起的笔直的烟。原释义“报平安”是一种推断，虽常见但非本义，修正为更客观的描述。",
+        "category": "重点实词",
+        "source": "key_term",
+        "example": "大漠孤烟直",
+        "legacyIds": [
+          "kt:jc-shizhisaishang:0:3"
+        ]
       }
     ]
   },
@@ -2820,11 +2953,13 @@
     "meanings": [
       {
         "text": "指黄河。",
-        "category": "课文注释",
+        "category": "重点实词",
         "source": "note",
         "legacyIds": [
-          "note:jc-shizhisaishang:6"
-        ]
+          "note:jc-shizhisaishang:6",
+          "kt:jc-shizhisaishang:0:4"
+        ],
+        "example": "长河落日圆"
       }
     ]
   },
@@ -2852,11 +2987,13 @@
     "meanings": [
       {
         "text": "负责侦察、巡逻的骑兵。",
-        "category": "课文注释",
+        "category": "重点实词",
         "source": "note",
         "legacyIds": [
-          "note:jc-shizhisaishang:8"
-        ]
+          "note:jc-shizhisaishang:8",
+          "kt:jc-shizhisaishang:0:5"
+        ],
+        "example": "萧关逢候骑"
       }
     ]
   },
@@ -2872,6 +3009,15 @@
         "source": "note",
         "legacyIds": [
           "note:jc-shizhisaishang:9"
+        ]
+      },
+      {
+        "text": "官名，指边疆的最高长官",
+        "category": "重点实词",
+        "source": "key_term",
+        "example": "都护在燕然",
+        "legacyIds": [
+          "kt:jc-shizhisaishang:0:6"
         ]
       }
     ]
@@ -3092,11 +3238,13 @@
     "meanings": [
       {
         "text": "指帝王之死。",
-        "category": "课文注释",
+        "category": "重点实词",
         "source": "note",
         "legacyIds": [
-          "note:jc-chushibiao:1"
-        ]
+          "note:jc-chushibiao:1",
+          "kt:jc-chushibiao:0:0"
+        ],
+        "example": "先帝创业未半而中道崩殂"
       }
     ]
   },
@@ -3123,12 +3271,14 @@
     "word": "秋",
     "meanings": [
       {
-        "text": "时候。",
-        "category": "课文注释",
+        "text": "时候，这里指关键时刻。",
+        "category": "重点实词",
         "source": "note",
         "legacyIds": [
-          "note:jc-chushibiao:3"
-        ]
+          "note:jc-chushibiao:3",
+          "kt:jc-chushibiao:0:1"
+        ],
+        "example": "此诚危急存亡之秋也"
       }
     ]
   },
@@ -3220,11 +3370,13 @@
     "meanings": [
       {
         "text": "发扬光大。",
-        "category": "课文注释",
+        "category": "重点实词",
         "source": "note",
         "legacyIds": [
-          "note:jc-chushibiao:9"
-        ]
+          "note:jc-chushibiao:9",
+          "kt:jc-chushibiao:0:2"
+        ],
+        "example": "以光先帝遗德"
       }
     ]
   },
@@ -3236,11 +3388,13 @@
     "meanings": [
       {
         "text": "发扬，扩展。",
-        "category": "课文注释",
+        "category": "重点实词",
         "source": "note",
         "legacyIds": [
-          "note:jc-chushibiao:10"
-        ]
+          "note:jc-chushibiao:10",
+          "kt:jc-chushibiao:0:3"
+        ],
+        "example": "恢弘志士之气"
       }
     ]
   },
@@ -3289,6 +3443,15 @@
         "legacyIds": [
           "note:jc-chushibiao:13"
         ]
+      },
+      {
+        "text": "提升，提拔",
+        "category": "重点实词",
+        "source": "key_term",
+        "example": "陟罚臧否",
+        "legacyIds": [
+          "kt:jc-chushibiao:0:6"
+        ]
       }
     ]
   },
@@ -3304,6 +3467,15 @@
         "source": "note",
         "legacyIds": [
           "note:jc-chushibiao:14"
+        ]
+      },
+      {
+        "text": "评论人物好坏。臧，善；否，恶",
+        "category": "重点实词",
+        "source": "key_term",
+        "example": "陟罚臧否",
+        "legacyIds": [
+          "kt:jc-chushibiao:0:5"
         ]
       }
     ]
@@ -3651,12 +3823,14 @@
     "word": "痛恨",
     "meanings": [
       {
-        "text": "痛心、遗憾。",
-        "category": "课文注释",
+        "text": "古义：痛心、遗憾；今义：深切憎恨",
+        "category": "重点实词",
         "source": "note",
         "legacyIds": [
-          "note:jc-chushibiao:36"
-        ]
+          "note:jc-chushibiao:36",
+          "kt:jc-chushibiao:0:8"
+        ],
+        "example": "未尝不叹息痛恨于桓、灵也"
       }
     ]
   },
@@ -3753,6 +3927,15 @@
         "legacyIds": [
           "note:jc-chushibiao:42"
         ]
+      },
+      {
+        "text": "古义：身份低微，见识短浅；今义：品行恶劣",
+        "category": "重点实词",
+        "source": "key_term",
+        "example": "先帝不以臣卑鄙",
+        "legacyIds": [
+          "kt:jc-chushibiao:0:9"
+        ]
       }
     ]
   },
@@ -3768,6 +3951,15 @@
         "source": "note",
         "legacyIds": [
           "note:jc-chushibiao:43"
+        ]
+      },
+      {
+        "text": "屈尊，这里是谦辞，表示降低身份。",
+        "category": "重点实词",
+        "source": "key_term",
+        "example": "猥自枉屈",
+        "legacyIds": [
+          "kt:jc-chushibiao:0:10"
         ]
       }
     ]
@@ -4009,6 +4201,15 @@
         "legacyIds": [
           "note:jc-chushibiao:58"
         ]
+      },
+      {
+        "text": "比喻才能平庸。驽，劣马；钝，刀刃不锋利",
+        "category": "重点实词",
+        "source": "key_term",
+        "example": "庶竭驽钝",
+        "legacyIds": [
+          "kt:jc-chushibiao:0:11"
+        ]
       }
     ]
   },
@@ -4020,11 +4221,13 @@
     "meanings": [
       {
         "text": "排除，铲除。",
-        "category": "课文注释",
+        "category": "重点实词",
         "source": "note",
         "legacyIds": [
-          "note:jc-chushibiao:59"
-        ]
+          "note:jc-chushibiao:59",
+          "kt:jc-chushibiao:0:12"
+        ],
+        "example": "攘除奸凶"
       }
     ]
   },
@@ -4228,11 +4431,13 @@
     "meanings": [
       {
         "text": "指正确合理的言论。",
-        "category": "课文注释",
+        "category": "重点实词",
         "source": "note",
         "legacyIds": [
-          "note:jc-chushibiao:72"
-        ]
+          "note:jc-chushibiao:72",
+          "kt:jc-chushibiao:0:14"
+        ],
+        "example": "察纳雅言"
       }
     ]
   },
@@ -4264,6 +4469,57 @@
         "source": "note",
         "legacyIds": [
           "note:jc-chushibiao:74"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "word:jc-chushibiao:菲薄",
+    "scope": "article",
+    "articleId": "jc-chushibiao",
+    "word": "菲薄",
+    "meanings": [
+      {
+        "text": "（因过分谦虚而）看轻自己。菲，微薄。",
+        "category": "重点实词",
+        "source": "key_term",
+        "example": "不宜妄自菲薄",
+        "legacyIds": [
+          "kt:jc-chushibiao:0:4"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "word:jc-chushibiao:遗",
+    "scope": "article",
+    "articleId": "jc-chushibiao",
+    "word": "遗",
+    "meanings": [
+      {
+        "text": "读wèi，送给、给予（如“以遗陛下”）；读yí，遗留、留下（如“先帝遗德”）",
+        "category": "重点实词",
+        "source": "key_term",
+        "example": "以遗陛下",
+        "legacyIds": [
+          "kt:jc-chushibiao:0:7"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "word:jc-chushibiao:咨诹",
+    "scope": "article",
+    "articleId": "jc-chushibiao",
+    "word": "咨诹",
+    "meanings": [
+      {
+        "text": "询问",
+        "category": "重点实词",
+        "source": "key_term",
+        "example": "咨诹善道",
+        "legacyIds": [
+          "kt:jc-chushibiao:0:13"
         ]
       }
     ]
@@ -6029,11 +6285,13 @@
     "meanings": [
       {
         "text": "到达,登上。",
-        "category": "课文注释",
+        "category": "重点实词",
         "source": "note",
         "legacyIds": [
-          "note:guancanghai-013:0"
-        ]
+          "note:guancanghai-013:0",
+          "kt:guancanghai-013:0:0"
+        ],
+        "example": "东临碣石"
       }
     ]
   },
@@ -6061,11 +6319,13 @@
     "meanings": [
       {
         "text": "水波荡漾的样子。",
-        "category": "课文注释",
+        "category": "重点实词",
         "source": "note",
         "legacyIds": [
-          "note:guancanghai-013:2"
-        ]
+          "note:guancanghai-013:2",
+          "kt:guancanghai-013:0:1"
+        ],
+        "example": "水何澹澹"
       }
     ]
   },
@@ -6077,11 +6337,13 @@
     "meanings": [
       {
         "text": "耸立。竦、峙,都是耸立的意思。",
-        "category": "课文注释",
+        "category": "重点实词",
         "source": "note",
         "legacyIds": [
-          "note:guancanghai-013:3"
-        ]
+          "note:guancanghai-013:3",
+          "kt:guancanghai-013:0:2"
+        ],
+        "example": "山岛竦峙"
       }
     ]
   },
@@ -6093,11 +6355,13 @@
     "meanings": [
       {
         "text": "银河。",
-        "category": "课文注释",
+        "category": "重点实词",
         "source": "note",
         "legacyIds": [
-          "note:guancanghai-013:4"
-        ]
+          "note:guancanghai-013:4",
+          "kt:guancanghai-013:0:4"
+        ],
+        "example": "星汉灿烂"
       }
     ]
   },
@@ -6113,6 +6377,23 @@
         "source": "note",
         "legacyIds": [
           "note:guancanghai-013:5"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "word:guancanghai-013:萧瑟",
+    "scope": "article",
+    "articleId": "guancanghai-013",
+    "word": "萧瑟",
+    "meanings": [
+      {
+        "text": "形容秋风吹动草木时发出的声音，也指冷落、凄凉的景象。",
+        "category": "重点实词",
+        "source": "key_term",
+        "example": "秋风萧瑟",
+        "legacyIds": [
+          "kt:guancanghai-013:0:3"
         ]
       }
     ]
@@ -15177,6 +15458,15 @@
         "legacyIds": [
           "note:jc-chunwang:2"
         ]
+      },
+      {
+        "text": "茂盛",
+        "category": "重点实词",
+        "source": "key_term",
+        "example": "城春草木深",
+        "legacyIds": [
+          "kt:jc-chunwang:0:1"
+        ]
       }
     ]
   },
@@ -15188,11 +15478,13 @@
     "meanings": [
       {
         "text": "感伤国事。",
-        "category": "课文注释",
+        "category": "重点实词",
         "source": "note",
         "legacyIds": [
-          "note:jc-chunwang:3"
-        ]
+          "note:jc-chunwang:3",
+          "kt:jc-chunwang:0:2"
+        ],
+        "example": "感时花溅泪"
       }
     ]
   },
@@ -15220,11 +15512,13 @@
     "meanings": [
       {
         "text": "战火。",
-        "category": "课文注释",
+        "category": "重点实词",
         "source": "note",
         "legacyIds": [
-          "note:jc-chunwang:5"
-        ]
+          "note:jc-chunwang:5",
+          "kt:jc-chunwang:0:3"
+        ],
+        "example": "烽火连三月"
       }
     ]
   },
@@ -15236,11 +15530,13 @@
     "meanings": [
       {
         "text": "值，相当。",
-        "category": "课文注释",
+        "category": "重点实词",
         "source": "note",
         "legacyIds": [
-          "note:jc-chunwang:6"
-        ]
+          "note:jc-chunwang:6",
+          "kt:jc-chunwang:0:4"
+        ],
+        "example": "家书抵万金"
       }
     ]
   },
@@ -15252,11 +15548,13 @@
     "meanings": [
       {
         "text": "简直。",
-        "category": "课文注释",
+        "category": "重点实词",
         "source": "note",
         "legacyIds": [
-          "note:jc-chunwang:7"
-        ]
+          "note:jc-chunwang:7",
+          "kt:jc-chunwang:0:5"
+        ],
+        "example": "浑欲不胜簪"
       }
     ]
   },
@@ -15268,11 +15566,13 @@
     "meanings": [
       {
         "text": "能承受，禁得起。",
-        "category": "课文注释",
+        "category": "重点实词",
         "source": "note",
         "legacyIds": [
-          "note:jc-chunwang:8"
-        ]
+          "note:jc-chunwang:8",
+          "kt:jc-chunwang:0:6"
+        ],
+        "example": "浑欲不胜簪"
       }
     ]
   },
@@ -15288,6 +15588,23 @@
         "source": "note",
         "legacyIds": [
           "note:jc-chunwang:9"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "word:jc-chunwang:国",
+    "scope": "article",
+    "articleId": "jc-chunwang",
+    "word": "国",
+    "meanings": [
+      {
+        "text": "国都，指长安",
+        "category": "重点实词",
+        "source": "key_term",
+        "example": "国破山河在",
+        "legacyIds": [
+          "kt:jc-chunwang:0:0"
         ]
       }
     ]
@@ -16515,11 +16832,13 @@
     "meanings": [
       {
         "text": "指泰山。",
-        "category": "课文注释",
+        "category": "重点实词",
         "source": "note",
         "legacyIds": [
-          "note:jc-wangyue:0"
-        ]
+          "note:jc-wangyue:0",
+          "kt:jc-wangyue:1:0"
+        ],
+        "example": "岱宗夫如何"
       }
     ]
   },
@@ -16562,12 +16881,14 @@
     "word": "未了",
     "meanings": [
       {
-        "text": "不尽。",
-        "category": "课文注释",
+        "text": "不尽，没完",
+        "category": "重点实词",
         "source": "note",
         "legacyIds": [
-          "note:jc-wangyue:3"
-        ]
+          "note:jc-wangyue:3",
+          "kt:jc-wangyue:1:1"
+        ],
+        "example": "齐鲁青未了"
       }
     ]
   },
@@ -16579,11 +16900,13 @@
     "meanings": [
       {
         "text": "聚集。",
-        "category": "课文注释",
+        "category": "重点实词",
         "source": "note",
         "legacyIds": [
-          "note:jc-wangyue:4"
-        ]
+          "note:jc-wangyue:4",
+          "kt:jc-wangyue:1:2"
+        ],
+        "example": "造化钟神秀"
       }
     ]
   },
@@ -16595,11 +16918,13 @@
     "meanings": [
       {
         "text": "分。",
-        "category": "课文注释",
+        "category": "重点实词",
         "source": "note",
         "legacyIds": [
-          "note:jc-wangyue:5"
-        ]
+          "note:jc-wangyue:5",
+          "kt:jc-wangyue:1:3"
+        ],
+        "example": "阴阳割昏晓"
       }
     ]
   },
@@ -16610,12 +16935,14 @@
     "word": "曾",
     "meanings": [
       {
-        "text": "同“层”。",
-        "category": "课文注释",
+        "text": "同“层”，层层",
+        "category": "通假字",
         "source": "note",
         "legacyIds": [
-          "note:jc-wangyue:6"
-        ]
+          "note:jc-wangyue:6",
+          "kt:jc-wangyue:0:0"
+        ],
+        "example": "荡胸生曾云"
       }
     ]
   },
@@ -16626,12 +16953,14 @@
     "word": "决",
     "meanings": [
       {
-        "text": "裂开。",
-        "category": "课文注释",
+        "text": "（眼眶）睁大。此处是睁大眼力远望，眼眶似要裂开。",
+        "category": "重点实词",
         "source": "note",
         "legacyIds": [
-          "note:jc-wangyue:7"
-        ]
+          "note:jc-wangyue:7",
+          "kt:jc-wangyue:1:4"
+        ],
+        "example": "决眦入归鸟"
       }
     ]
   },
@@ -16648,6 +16977,15 @@
         "legacyIds": [
           "note:jc-wangyue:8"
         ]
+      },
+      {
+        "text": "眼角。",
+        "category": "重点实词",
+        "source": "key_term",
+        "example": "决眦入归鸟",
+        "legacyIds": [
+          "kt:jc-wangyue:1:5"
+        ]
       }
     ]
   },
@@ -16659,11 +16997,13 @@
     "meanings": [
       {
         "text": "终当，终要。",
-        "category": "课文注释",
+        "category": "重点实词",
         "source": "note",
         "legacyIds": [
-          "note:jc-wangyue:9"
-        ]
+          "note:jc-wangyue:9",
+          "kt:jc-wangyue:1:6"
+        ],
+        "example": "会当凌绝顶"
       }
     ]
   },
@@ -16675,11 +17015,13 @@
     "meanings": [
       {
         "text": "登上。",
-        "category": "课文注释",
+        "category": "重点实词",
         "source": "note",
         "legacyIds": [
-          "note:jc-wangyue:10"
-        ]
+          "note:jc-wangyue:10",
+          "kt:jc-wangyue:1:7"
+        ],
+        "example": "会当凌绝顶"
       }
     ]
   },
@@ -19024,11 +19366,13 @@
     "meanings": [
       {
         "text": "沿着,顺着。",
-        "category": "课文注释",
+        "category": "重点实词",
         "source": "note",
         "legacyIds": [
-          "note:jc-thyj:2"
-        ]
+          "note:jc-thyj:2",
+          "kt:jc-thyj:3:0"
+        ],
+        "example": "缘溪行"
       }
     ]
   },
@@ -19055,12 +19399,14 @@
     "word": "鲜美",
     "meanings": [
       {
-        "text": "新鲜美好。",
-        "category": "课文注释",
+        "text": "古义：新鲜美好；今义：食物味道好",
+        "category": "古今异义",
         "source": "note",
         "legacyIds": [
-          "note:jc-thyj:4"
-        ]
+          "note:jc-thyj:4",
+          "kt:jc-thyj:1:0"
+        ],
+        "example": "芳草鲜美"
       }
     ]
   },
@@ -19109,6 +19455,15 @@
         "legacyIds": [
           "note:jc-thyj:7"
         ]
+      },
+      {
+        "text": "形容词的意动用法，对……感到惊异",
+        "category": "词类活用",
+        "source": "key_term",
+        "example": "渔人甚异之",
+        "legacyIds": [
+          "kt:jc-thyj:2:0"
+        ]
       }
     ]
   },
@@ -19124,6 +19479,15 @@
         "source": "note",
         "legacyIds": [
           "note:jc-thyj:8"
+        ]
+      },
+      {
+        "text": "尽，走到尽头",
+        "category": "重点实词",
+        "source": "key_term",
+        "example": "欲穷其林",
+        "legacyIds": [
+          "kt:jc-thyj:3:1"
         ]
       }
     ]
@@ -19184,11 +19548,13 @@
     "meanings": [
       {
         "text": "整齐的样子。",
-        "category": "课文注释",
+        "category": "重点实词",
         "source": "note",
         "legacyIds": [
-          "note:jc-thyj:12"
-        ]
+          "note:jc-thyj:12",
+          "kt:jc-thyj:3:3"
+        ],
+        "example": "屋舍俨然"
       }
     ]
   },
@@ -19215,12 +19581,14 @@
     "word": "阡陌",
     "meanings": [
       {
-        "text": "田间小路。",
-        "category": "课文注释",
+        "text": "田间小路。阡，南北向的路；陌，东西向的路。",
+        "category": "重点实词",
         "source": "note",
         "legacyIds": [
-          "note:jc-thyj:14"
-        ]
+          "note:jc-thyj:14",
+          "kt:jc-thyj:3:4"
+        ],
+        "example": "阡陌交通"
       }
     ]
   },
@@ -19231,12 +19599,14 @@
     "word": "交通",
     "meanings": [
       {
-        "text": "交错相通。",
-        "category": "课文注释",
+        "text": "古义：交错相通；今义：各种运输和邮电事业的总称",
+        "category": "古今异义",
         "source": "note",
         "legacyIds": [
-          "note:jc-thyj:15"
-        ]
+          "note:jc-thyj:15",
+          "kt:jc-thyj:1:5"
+        ],
+        "example": "阡陌交通"
       }
     ]
   },
@@ -19359,12 +19729,14 @@
     "word": "要",
     "meanings": [
       {
-        "text": "邀请。",
-        "category": "课文注释",
+        "text": "同“邀”，邀请",
+        "category": "通假字",
         "source": "note",
         "legacyIds": [
-          "note:jc-thyj:23"
-        ]
+          "note:jc-thyj:23",
+          "kt:jc-thyj:0:0"
+        ],
+        "example": "便要还家"
       }
     ]
   },
@@ -19397,6 +19769,15 @@
         "legacyIds": [
           "note:jc-thyj:25"
         ]
+      },
+      {
+        "text": "古义：妻子和儿女；今义：男子的配偶",
+        "category": "古今异义",
+        "source": "key_term",
+        "example": "率妻子邑人来此绝境",
+        "legacyIds": [
+          "kt:jc-thyj:1:1"
+        ]
       }
     ]
   },
@@ -19412,6 +19793,15 @@
         "source": "note",
         "legacyIds": [
           "note:jc-thyj:26"
+        ]
+      },
+      {
+        "text": "古义：与世隔绝的地方；今义：走投无路的境地",
+        "category": "古今异义",
+        "source": "key_term",
+        "example": "率妻子邑人来此绝境",
+        "legacyIds": [
+          "kt:jc-thyj:1:2"
         ]
       }
     ]
@@ -19439,12 +19829,14 @@
     "word": "间隔",
     "meanings": [
       {
-        "text": "隔绝。",
-        "category": "课文注释",
+        "text": "古义：隔绝，不通音信；今义：事物在空间或时间上的距离",
+        "category": "古今异义",
         "source": "note",
         "legacyIds": [
-          "note:jc-thyj:28"
-        ]
+          "note:jc-thyj:28",
+          "kt:jc-thyj:1:4"
+        ],
+        "example": "遂与外人间隔"
       }
     ]
   },
@@ -19455,12 +19847,14 @@
     "word": "无论",
     "meanings": [
       {
-        "text": "不要说,更不必说。",
-        "category": "课文注释",
+        "text": "古义：不要说，更不必说；今义：不管、不论",
+        "category": "古今异义",
         "source": "note",
         "legacyIds": [
-          "note:jc-thyj:29"
-        ]
+          "note:jc-thyj:29",
+          "kt:jc-thyj:1:3"
+        ],
+        "example": "无论魏晋"
       }
     ]
   },
@@ -19504,11 +19898,13 @@
     "meanings": [
       {
         "text": "邀请。",
-        "category": "课文注释",
+        "category": "重点实词",
         "source": "note",
         "legacyIds": [
-          "note:jc-thyj:32"
-        ]
+          "note:jc-thyj:32",
+          "kt:jc-thyj:3:7"
+        ],
+        "example": "余人各复延至其家"
       }
     ]
   },
@@ -19557,6 +19953,15 @@
         "legacyIds": [
           "note:jc-thyj:35"
         ]
+      },
+      {
+        "text": "古义：不值得；今义：不够",
+        "category": "古今异义",
+        "source": "key_term",
+        "example": "不足为外人道也",
+        "legacyIds": [
+          "kt:jc-thyj:1:6"
+        ]
       }
     ]
   },
@@ -19568,11 +19973,13 @@
     "meanings": [
       {
         "text": "沿着、顺着。",
-        "category": "课文注释",
+        "category": "重点实词",
         "source": "note",
         "legacyIds": [
-          "note:jc-thyj:36"
-        ]
+          "note:jc-thyj:36",
+          "kt:jc-thyj:3:8"
+        ],
+        "example": "便扶向路"
       }
     ]
   },
@@ -19584,11 +19991,13 @@
     "meanings": [
       {
         "text": "先前的。",
-        "category": "课文注释",
+        "category": "重点实词",
         "source": "note",
         "legacyIds": [
-          "note:jc-thyj:37"
-        ]
+          "note:jc-thyj:37",
+          "kt:jc-thyj:3:9"
+        ],
+        "example": "便扶向路"
       }
     ]
   },
@@ -19600,11 +20009,13 @@
     "meanings": [
       {
         "text": "做记号。",
-        "category": "课文注释",
+        "category": "重点实词",
         "source": "note",
         "legacyIds": [
-          "note:jc-thyj:38"
-        ]
+          "note:jc-thyj:38",
+          "kt:jc-thyj:3:10"
+        ],
+        "example": "处处志之"
       }
     ]
   },
@@ -19652,6 +20063,15 @@
         "source": "note",
         "legacyIds": [
           "note:jc-thyj:41"
+        ]
+      },
+      {
+        "text": "到，去（拜见）。特指到尊长或官府那里去。",
+        "category": "重点实词",
+        "source": "key_term",
+        "example": "诣太守",
+        "legacyIds": [
+          "kt:jc-thyj:3:11"
         ]
       }
     ]
@@ -19712,11 +20132,13 @@
     "meanings": [
       {
         "text": "打算,计划。",
-        "category": "课文注释",
+        "category": "重点实词",
         "source": "note",
         "legacyIds": [
-          "note:jc-thyj:45"
-        ]
+          "note:jc-thyj:45",
+          "kt:jc-thyj:3:12"
+        ],
+        "example": "欣然规往"
       }
     ]
   },
@@ -19744,11 +20166,13 @@
     "meanings": [
       {
         "text": "随即,不久。",
-        "category": "课文注释",
+        "category": "重点实词",
         "source": "note",
         "legacyIds": [
-          "note:jc-thyj:47"
-        ]
+          "note:jc-thyj:47",
+          "kt:jc-thyj:3:13"
+        ],
+        "example": "寻病终"
       }
     ]
   },
@@ -19764,6 +20188,100 @@
         "source": "note",
         "legacyIds": [
           "note:jc-thyj:48"
+        ]
+      },
+      {
+        "text": "问路，这里指探访、访求",
+        "category": "重点实词",
+        "source": "key_term",
+        "example": "后遂无问津者",
+        "legacyIds": [
+          "kt:jc-thyj:3:14"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "word:jc-thyj:尽",
+    "scope": "article",
+    "articleId": "jc-thyj",
+    "word": "尽",
+    "meanings": [
+      {
+        "text": "释义修正为：动词，完结，到了尽头。原词条的例句“欲穷其林”及语法分析，均为“穷”字的用法。",
+        "category": "词类活用",
+        "source": "key_term",
+        "example": "欲穷其林",
+        "legacyIds": [
+          "kt:jc-thyj:2:1"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "word:jc-thyj:前",
+    "scope": "article",
+    "articleId": "jc-thyj",
+    "word": "前",
+    "meanings": [
+      {
+        "text": "名词用作状语，向前",
+        "category": "词类活用",
+        "source": "key_term",
+        "example": "复前行",
+        "legacyIds": [
+          "kt:jc-thyj:2:2"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "word:jc-thyj:豁然",
+    "scope": "article",
+    "articleId": "jc-thyj",
+    "word": "豁然",
+    "meanings": [
+      {
+        "text": "开阔的样子",
+        "category": "重点实词",
+        "source": "key_term",
+        "example": "豁然开朗",
+        "legacyIds": [
+          "kt:jc-thyj:3:2"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "word:jc-thyj:黄发垂髫",
+    "scope": "article",
+    "articleId": "jc-thyj",
+    "word": "黄发垂髫",
+    "meanings": [
+      {
+        "text": "指老人和小孩。黄发，旧说是长寿的特征；垂髫，小孩垂下来的头发",
+        "category": "重点实词",
+        "source": "key_term",
+        "example": "黄发垂髫，并怡然自乐",
+        "legacyIds": [
+          "kt:jc-thyj:3:5"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "word:jc-thyj:语",
+    "scope": "article",
+    "articleId": "jc-thyj",
+    "word": "语",
+    "meanings": [
+      {
+        "text": "告诉，对……说",
+        "category": "重点实词",
+        "source": "key_term",
+        "example": "此中人语云",
+        "legacyIds": [
+          "kt:jc-thyj:3:6"
         ]
       }
     ]
@@ -21495,6 +22013,15 @@
         "legacyIds": [
           "note:jc-yujiaaoqiusi:0"
         ]
+      },
+      {
+        "text": "边界要塞之地，指西北边疆",
+        "category": "重点实词",
+        "source": "key_term",
+        "example": "塞下秋来风景异",
+        "legacyIds": [
+          "kt:jc-yujiaaoqiusi:0:0"
+        ]
       }
     ]
   },
@@ -21510,6 +22037,15 @@
         "source": "note",
         "legacyIds": [
           "note:jc-yujiaaoqiusi:1"
+        ]
+      },
+      {
+        "text": "即“雁去衡阳”，大雁向衡阳飞去，指大雁南飞",
+        "category": "重点实词",
+        "source": "key_term",
+        "example": "衡阳雁去无留意",
+        "legacyIds": [
+          "kt:jc-yujiaaoqiusi:0:1"
         ]
       }
     ]
@@ -21527,6 +22063,15 @@
         "legacyIds": [
           "note:jc-yujiaaoqiusi:2"
         ]
+      },
+      {
+        "text": "边塞特有的声音，如风声、号角声、马嘶声等。",
+        "category": "重点实词",
+        "source": "key_term",
+        "example": "四面边声连角起",
+        "legacyIds": [
+          "kt:jc-yujiaaoqiusi:0:2"
+        ]
       }
     ]
   },
@@ -21538,11 +22083,13 @@
     "meanings": [
       {
         "text": "层峦叠嶂。嶂，直立似屏障的山峰。",
-        "category": "课文注释",
+        "category": "重点实词",
         "source": "note",
         "legacyIds": [
-          "note:jc-yujiaaoqiusi:3"
-        ]
+          "note:jc-yujiaaoqiusi:3",
+          "kt:jc-yujiaaoqiusi:0:3"
+        ],
+        "example": "千嶂里"
       }
     ]
   },
@@ -21554,10 +22101,29 @@
     "meanings": [
       {
         "text": "出征的士兵。",
-        "category": "课文注释",
+        "category": "重点实词",
         "source": "note",
         "legacyIds": [
-          "note:jc-yujiaaoqiusi:4"
+          "note:jc-yujiaaoqiusi:4",
+          "kt:jc-yujiaaoqiusi:0:5"
+        ],
+        "example": "将军白发征夫泪"
+      }
+    ]
+  },
+  {
+    "id": "word:jc-yujiaaoqiusi:燕然未勒",
+    "scope": "article",
+    "articleId": "jc-yujiaaoqiusi",
+    "word": "燕然未勒",
+    "meanings": [
+      {
+        "text": "指战事未平、功名未立。燕然，山名，用东汉窦宪刻石记功的典故",
+        "category": "重点实词",
+        "source": "key_term",
+        "example": "燕然未勒归无计",
+        "legacyIds": [
+          "kt:jc-yujiaaoqiusi:0:4"
         ]
       }
     ]
@@ -24749,12 +25315,14 @@
     "word": "名",
     "meanings": [
       {
-        "text": "出名，有名。",
-        "category": "课文注释",
+        "text": "名词用作动词，出名，有名",
+        "category": "词类活用",
         "source": "note",
         "legacyIds": [
-          "note:loushiming:0"
-        ]
+          "note:loushiming:0",
+          "kt:loushiming:0:0"
+        ],
+        "example": "有仙则名"
       }
     ]
   },
@@ -24771,6 +25339,15 @@
         "legacyIds": [
           "note:loushiming:1"
         ]
+      },
+      {
+        "text": "形容词用作动词，显出灵异，变得灵异。原释义“成为灵异的水”将对象“水”加入释义，不够准确。",
+        "category": "词类活用",
+        "source": "key_term",
+        "example": "有龙则灵",
+        "legacyIds": [
+          "kt:loushiming:0:1"
+        ]
       }
     ]
   },
@@ -24782,11 +25359,13 @@
     "meanings": [
       {
         "text": "这。",
-        "category": "课文注释",
+        "category": "重点实词",
         "source": "note",
         "legacyIds": [
-          "note:loushiming:2"
-        ]
+          "note:loushiming:2",
+          "kt:loushiming:1:0"
+        ],
+        "example": "斯是陋室"
       }
     ]
   },
@@ -24803,6 +25382,15 @@
         "legacyIds": [
           "note:loushiming:3"
         ]
+      },
+      {
+        "text": "只",
+        "category": "重点实词",
+        "source": "key_term",
+        "example": "惟吾德馨",
+        "legacyIds": [
+          "kt:loushiming:1:1"
+        ]
       }
     ]
   },
@@ -24818,6 +25406,15 @@
         "source": "note",
         "legacyIds": [
           "note:loushiming:4"
+        ]
+      },
+      {
+        "text": "芳香，香气远播。这里指品德高尚，声名远扬。原释义“这里指德行美好”不够精确，“馨”是德行的外在表现，而非德行本身。",
+        "category": "重点实词",
+        "source": "key_term",
+        "example": "惟吾德馨",
+        "legacyIds": [
+          "kt:loushiming:1:2"
         ]
       }
     ]
@@ -24846,11 +25443,13 @@
     "meanings": [
       {
         "text": "大儒，指博学的人。鸿，大。",
-        "category": "课文注释",
+        "category": "重点实词",
         "source": "note",
         "legacyIds": [
-          "note:loushiming:6"
-        ]
+          "note:loushiming:6",
+          "kt:loushiming:1:3"
+        ],
+        "example": "谈笑有鸿儒"
       }
     ]
   },
@@ -24862,11 +25461,13 @@
     "meanings": [
       {
         "text": "平民，指没有功名的人。",
-        "category": "课文注释",
+        "category": "重点实词",
         "source": "note",
         "legacyIds": [
-          "note:loushiming:7"
-        ]
+          "note:loushiming:7",
+          "kt:loushiming:1:4"
+        ],
+        "example": "往来无白丁"
       }
     ]
   },
@@ -24878,11 +25479,13 @@
     "meanings": [
       {
         "text": "调弄，弹奏。",
-        "category": "课文注释",
+        "category": "重点实词",
         "source": "note",
         "legacyIds": [
-          "note:loushiming:8"
-        ]
+          "note:loushiming:8",
+          "kt:loushiming:1:5"
+        ],
+        "example": "可以调素琴"
       }
     ]
   },
@@ -24963,6 +25566,15 @@
         "legacyIds": [
           "note:loushiming:13"
         ]
+      },
+      {
+        "text": "公文，文书",
+        "category": "重点实词",
+        "source": "key_term",
+        "example": "无案牍之劳形",
+        "legacyIds": [
+          "kt:loushiming:1:7"
+        ]
       }
     ]
   },
@@ -24978,6 +25590,15 @@
         "source": "note",
         "legacyIds": [
           "note:loushiming:14"
+        ]
+      },
+      {
+        "text": "形体，身体",
+        "category": "重点实词",
+        "source": "key_term",
+        "example": "无案牍之劳形",
+        "legacyIds": [
+          "kt:loushiming:1:8"
         ]
       }
     ]
@@ -25026,6 +25647,57 @@
         "source": "note",
         "legacyIds": [
           "note:loushiming:17"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "word:loushiming:乱",
+    "scope": "article",
+    "articleId": "loushiming",
+    "word": "乱",
+    "meanings": [
+      {
+        "text": "形容词的使动用法，使……扰乱",
+        "category": "词类活用",
+        "source": "key_term",
+        "example": "无丝竹之乱耳",
+        "legacyIds": [
+          "kt:loushiming:0:2"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "word:loushiming:劳",
+    "scope": "article",
+    "articleId": "loushiming",
+    "word": "劳",
+    "meanings": [
+      {
+        "text": "形容词的使动用法，使……劳累",
+        "category": "词类活用",
+        "source": "key_term",
+        "example": "无案牍之劳形",
+        "legacyIds": [
+          "kt:loushiming:0:3"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "word:loushiming:丝竹",
+    "scope": "article",
+    "articleId": "loushiming",
+    "word": "丝竹",
+    "meanings": [
+      {
+        "text": "指弦乐器和管乐器，这里指奏乐的声音",
+        "category": "重点实词",
+        "source": "key_term",
+        "example": "无丝竹之乱耳",
+        "legacyIds": [
+          "kt:loushiming:1:6"
         ]
       }
     ]
@@ -25566,11 +26238,13 @@
     "meanings": [
       {
         "text": "演奏。",
-        "category": "课文注释",
+        "category": "重点实词",
         "source": "note",
         "legacyIds": [
-          "note:jc-pozhenzi:2"
-        ]
+          "note:jc-pozhenzi:2",
+          "kt:jc-pozhenzi:0:2"
+        ],
+        "example": "五十弦翻塞外声"
       }
     ]
   },
@@ -25598,11 +26272,13 @@
     "meanings": [
       {
         "text": "战场。",
-        "category": "课文注释",
+        "category": "重点实词",
         "source": "note",
         "legacyIds": [
-          "note:jc-pozhenzi:4"
-        ]
+          "note:jc-pozhenzi:4",
+          "kt:jc-pozhenzi:0:3"
+        ],
+        "example": "沙场秋点兵"
       }
     ]
   },
@@ -25614,11 +26290,13 @@
     "meanings": [
       {
         "text": "骏马名。三国时刘备的坐骑，跑得极快。",
-        "category": "课文注释",
+        "category": "重点实词",
         "source": "note",
         "legacyIds": [
-          "note:jc-pozhenzi:5"
-        ]
+          "note:jc-pozhenzi:5",
+          "kt:jc-pozhenzi:0:4"
+        ],
+        "example": "马作的卢飞快"
       }
     ]
   },
@@ -25646,11 +26324,13 @@
     "meanings": [
       {
         "text": "了结，完成。",
-        "category": "课文注释",
+        "category": "重点实词",
         "source": "note",
         "legacyIds": [
-          "note:jc-pozhenzi:7"
-        ]
+          "note:jc-pozhenzi:7",
+          "kt:jc-pozhenzi:0:5"
+        ],
+        "example": "了却君王天下事"
       }
     ]
   },
@@ -25666,6 +26346,74 @@
         "source": "note",
         "legacyIds": [
           "note:jc-pozhenzi:8"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "word:jc-pozhenzi:麾下",
+    "scope": "article",
+    "articleId": "jc-pozhenzi",
+    "word": "麾下",
+    "meanings": [
+      {
+        "text": "部下。麾，军旗",
+        "category": "重点实词",
+        "source": "key_term",
+        "example": "八百里分麾下炙",
+        "legacyIds": [
+          "kt:jc-pozhenzi:0:0"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "word:jc-pozhenzi:炙",
+    "scope": "article",
+    "articleId": "jc-pozhenzi",
+    "word": "炙",
+    "meanings": [
+      {
+        "text": "烤肉",
+        "category": "重点实词",
+        "source": "key_term",
+        "example": "八百里分麾下炙",
+        "legacyIds": [
+          "kt:jc-pozhenzi:0:1"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "word:jc-pozhenzi:赢得",
+    "scope": "article",
+    "articleId": "jc-pozhenzi",
+    "word": "赢得",
+    "meanings": [
+      {
+        "text": "博得，取得",
+        "category": "重点实词",
+        "source": "key_term",
+        "example": "赢得生前身后名",
+        "legacyIds": [
+          "kt:jc-pozhenzi:0:6"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "word:jc-pozhenzi:可怜",
+    "scope": "article",
+    "articleId": "jc-pozhenzi",
+    "word": "可怜",
+    "meanings": [
+      {
+        "text": "可惜",
+        "category": "重点实词",
+        "source": "key_term",
+        "example": "可怜白发生",
+        "legacyIds": [
+          "kt:jc-pozhenzi:0:7"
         ]
       }
     ]
@@ -26809,11 +27557,13 @@
     "meanings": [
       {
         "text": "同“馐”，美味的食物。",
-        "category": "课文注释",
+        "category": "通假字",
         "source": "note",
         "legacyIds": [
-          "note:xinglunan-qiyi:3"
-        ]
+          "note:xinglunan-qiyi:3",
+          "kt:xinglunan-qiyi:0:0"
+        ],
+        "example": "玉盘珍羞直万钱"
       }
     ]
   },
@@ -26825,11 +27575,13 @@
     "meanings": [
       {
         "text": "同“值”，价值。",
-        "category": "课文注释",
+        "category": "通假字",
         "source": "note",
         "legacyIds": [
-          "note:xinglunan-qiyi:4"
-        ]
+          "note:xinglunan-qiyi:4",
+          "kt:xinglunan-qiyi:0:1"
+        ],
+        "example": "玉盘珍羞直万钱"
       }
     ]
   },
@@ -26921,10 +27673,80 @@
     "meanings": [
       {
         "text": "渡。",
-        "category": "课文注释",
+        "category": "重点实词",
         "source": "note",
         "legacyIds": [
-          "note:xinglunan-qiyi:10"
+          "note:xinglunan-qiyi:10",
+          "kt:xinglunan-qiyi:1:4"
+        ],
+        "example": "直挂云帆济沧海"
+      }
+    ]
+  },
+  {
+    "id": "word:xinglunan-qiyi:樽",
+    "scope": "article",
+    "articleId": "xinglunan-qiyi",
+    "word": "樽",
+    "meanings": [
+      {
+        "text": "盛酒的器具",
+        "category": "重点实词",
+        "source": "key_term",
+        "example": "金樽清酒斗十千",
+        "legacyIds": [
+          "kt:xinglunan-qiyi:1:0"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "word:xinglunan-qiyi:箸",
+    "scope": "article",
+    "articleId": "xinglunan-qiyi",
+    "word": "箸",
+    "meanings": [
+      {
+        "text": "筷子",
+        "category": "重点实词",
+        "source": "key_term",
+        "example": "停杯投箸不能食",
+        "legacyIds": [
+          "kt:xinglunan-qiyi:1:1"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "word:xinglunan-qiyi:茫然",
+    "scope": "article",
+    "articleId": "xinglunan-qiyi",
+    "word": "茫然",
+    "meanings": [
+      {
+        "text": "内心空虚而不知所措的样子",
+        "category": "重点实词",
+        "source": "key_term",
+        "example": "拔剑四顾心茫然",
+        "legacyIds": [
+          "kt:xinglunan-qiyi:1:2"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "word:xinglunan-qiyi:安",
+    "scope": "article",
+    "articleId": "xinglunan-qiyi",
+    "word": "安",
+    "meanings": [
+      {
+        "text": "哪里",
+        "category": "重点实词",
+        "source": "key_term",
+        "example": "多歧路，今安在",
+        "legacyIds": [
+          "kt:xinglunan-qiyi:1:3"
         ]
       }
     ]
@@ -30901,12 +31723,14 @@
     "word": "城阙",
     "meanings": [
       {
-        "text": "指长安。",
-        "category": "课文注释",
+        "text": "城墙和宫殿的门楼，借指京城。在例句中特指长安。",
+        "category": "重点实词",
         "source": "note",
         "legacyIds": [
-          "note:songdushaofuzhirenshuzhou-150:0"
-        ]
+          "note:songdushaofuzhirenshuzhou-150:0",
+          "kt:songdushaofuzhirenshuzhou-150:0:0"
+        ],
+        "example": "城阙辅三秦"
       }
     ]
   },
@@ -30966,11 +31790,13 @@
     "meanings": [
       {
         "text": "岔路。",
-        "category": "课文注释",
+        "category": "重点实词",
         "source": "note",
         "legacyIds": [
-          "note:songdushaofuzhirenshuzhou-150:4"
-        ]
+          "note:songdushaofuzhirenshuzhou-150:4",
+          "kt:songdushaofuzhirenshuzhou-150:0:4"
+        ],
+        "example": "无为在歧路"
       }
     ]
   },
@@ -30998,10 +31824,63 @@
     "meanings": [
       {
         "text": "泪沾手巾,形容落泪之多。",
-        "category": "课文注释",
+        "category": "重点实词",
         "source": "note",
         "legacyIds": [
-          "note:songdushaofuzhirenshuzhou-150:6"
+          "note:songdushaofuzhirenshuzhou-150:6",
+          "kt:songdushaofuzhirenshuzhou-150:0:5"
+        ],
+        "example": "儿女共沾巾"
+      }
+    ]
+  },
+  {
+    "id": "word:songdushaofuzhirenshuzhou-150:辅",
+    "scope": "article",
+    "articleId": "songdushaofuzhirenshuzhou-150",
+    "word": "辅",
+    "meanings": [
+      {
+        "text": "辅佐，护卫",
+        "category": "重点实词",
+        "source": "key_term",
+        "example": "城阙辅三秦",
+        "legacyIds": [
+          "kt:songdushaofuzhirenshuzhou-150:0:1"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "word:songdushaofuzhirenshuzhou-150:宦游",
+    "scope": "article",
+    "articleId": "songdushaofuzhirenshuzhou-150",
+    "word": "宦游",
+    "meanings": [
+      {
+        "text": "外出做官",
+        "category": "重点实词",
+        "source": "key_term",
+        "example": "同是宦游人",
+        "legacyIds": [
+          "kt:songdushaofuzhirenshuzhou-150:0:2"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "word:songdushaofuzhirenshuzhou-150:比邻",
+    "scope": "article",
+    "articleId": "songdushaofuzhirenshuzhou-150",
+    "word": "比邻",
+    "meanings": [
+      {
+        "text": "近邻",
+        "category": "重点实词",
+        "source": "key_term",
+        "example": "天涯若比邻",
+        "legacyIds": [
+          "kt:songdushaofuzhirenshuzhou-150:0:3"
         ]
       }
     ]
@@ -32138,11 +33017,13 @@
     "meanings": [
       {
         "text": "茂盛的样子。",
-        "category": "课文注释",
+        "category": "重点实词",
         "source": "note",
         "legacyIds": [
-          "note:jc-zuiwengtingji:2"
-        ]
+          "note:jc-zuiwengtingji:2",
+          "kt:jc-zuiwengtingji:1:0"
+        ],
+        "example": "望之蔚然而深秀者"
       }
     ]
   },
@@ -32169,12 +33050,14 @@
     "word": "翼",
     "meanings": [
       {
-        "text": "名词用作状语，像鸟张开翅膀。",
-        "category": "课文注释",
+        "text": "名词用作状语，像鸟张开翅膀一样",
+        "category": "词类活用",
         "source": "note",
         "legacyIds": [
-          "note:jc-zuiwengtingji:4"
-        ]
+          "note:jc-zuiwengtingji:4",
+          "kt:jc-zuiwengtingji:0:0"
+        ],
+        "example": "有亭翼然临于泉上者"
       }
     ]
   },
@@ -32186,11 +33069,13 @@
     "meanings": [
       {
         "text": "居高面下。",
-        "category": "课文注释",
+        "category": "重点实词",
         "source": "note",
         "legacyIds": [
-          "note:jc-zuiwengtingji:5"
-        ]
+          "note:jc-zuiwengtingji:5",
+          "kt:jc-zuiwengtingji:1:1"
+        ],
+        "example": "有亭翼然临于泉上者"
       },
       {
         "text": "到。",
@@ -32231,6 +33116,15 @@
         "legacyIds": [
           "note:jc-zuiwengtingji:7"
         ]
+      },
+      {
+        "text": "名词用作动词，命名",
+        "category": "词类活用",
+        "source": "key_term",
+        "example": "名之者谁",
+        "legacyIds": [
+          "kt:jc-zuiwengtingji:0:1"
+        ]
       }
     ]
   },
@@ -32266,11 +33160,13 @@
     "meanings": [
       {
         "text": "就。",
-        "category": "课文注释",
+        "category": "重点实词",
         "source": "note",
         "legacyIds": [
-          "note:jc-zuiwengtingji:9"
-        ]
+          "note:jc-zuiwengtingji:9",
+          "kt:jc-zuiwengtingji:1:2"
+        ],
+        "example": "饮少辄醉"
       }
     ]
   },
@@ -32298,11 +33194,13 @@
     "meanings": [
       {
         "text": "意趣，情趣。",
-        "category": "课文注释",
+        "category": "重点实词",
         "source": "note",
         "legacyIds": [
-          "note:jc-zuiwengtingji:11"
-        ]
+          "note:jc-zuiwengtingji:11",
+          "kt:jc-zuiwengtingji:1:3"
+        ],
+        "example": "醉翁之意不在酒"
       }
     ]
   },
@@ -32506,11 +33404,13 @@
     "meanings": [
       {
         "text": "弯腰曲背，这里指老人。",
-        "category": "课文注释",
+        "category": "重点实词",
         "source": "note",
         "legacyIds": [
-          "note:jc-zuiwengtingji:24"
-        ]
+          "note:jc-zuiwengtingji:24",
+          "kt:jc-zuiwengtingji:1:8"
+        ],
+        "example": "伛偻提携"
       }
     ]
   },
@@ -32527,6 +33427,15 @@
         "legacyIds": [
           "note:jc-zuiwengtingji:25"
         ]
+      },
+      {
+        "text": "牵扶，这里指被牵扶的人，即小孩",
+        "category": "重点实词",
+        "source": "key_term",
+        "example": "伛偻提携",
+        "legacyIds": [
+          "kt:jc-zuiwengtingji:1:9"
+        ]
       }
     ]
   },
@@ -32542,6 +33451,15 @@
         "source": "note",
         "legacyIds": [
           "note:jc-zuiwengtingji:27"
+        ]
+      },
+      {
+        "text": "清澈",
+        "category": "重点实词",
+        "source": "key_term",
+        "example": "泉香而酒洌",
+        "legacyIds": [
+          "kt:jc-zuiwengtingji:1:10"
         ]
       }
     ]
@@ -32586,11 +33504,13 @@
     "meanings": [
       {
         "text": "尽兴地喝酒。",
-        "category": "课文注释",
+        "category": "重点实词",
         "source": "note",
         "legacyIds": [
-          "note:jc-zuiwengtingji:30"
-        ]
+          "note:jc-zuiwengtingji:30",
+          "kt:jc-zuiwengtingji:1:4"
+        ],
+        "example": "宴酣之乐"
       }
     ]
   },
@@ -32650,11 +33570,13 @@
     "meanings": [
       {
         "text": "下棋。",
-        "category": "课文注释",
+        "category": "重点实词",
         "source": "note",
         "legacyIds": [
-          "note:jc-zuiwengtingji:34"
-        ]
+          "note:jc-zuiwengtingji:34",
+          "kt:jc-zuiwengtingji:1:5"
+        ],
+        "example": "射者中，弈者胜"
       }
     ]
   },
@@ -32719,6 +33641,15 @@
         "legacyIds": [
           "note:jc-zuiwengtingji:38"
         ]
+      },
+      {
+        "text": "原指精神不振，这里形容醉态",
+        "category": "重点实词",
+        "source": "key_term",
+        "example": "颓然乎其间者",
+        "legacyIds": [
+          "kt:jc-zuiwengtingji:1:6"
+        ]
       }
     ]
   },
@@ -32746,11 +33677,13 @@
     "meanings": [
       {
         "text": "形容枝叶茂密成荫。翳，遮盖。",
-        "category": "课文注释",
+        "category": "重点实词",
         "source": "note",
         "legacyIds": [
-          "note:jc-zuiwengtingji:40"
-        ]
+          "note:jc-zuiwengtingji:40",
+          "kt:jc-zuiwengtingji:1:7"
+        ],
+        "example": "树林阴翳"
       }
     ]
   },
@@ -37397,8 +38330,7 @@
         "category": "实词",
         "source": "glossary",
         "legacyIds": [
-          "shici:0:1",
-          "shici:0:4"
+          "shici:0:1"
         ],
         "example": "安居而天下熄",
         "origin": "富贵不能淫"

@@ -321,7 +321,10 @@
       "word:jc-ly:子夏",
       "word:jc-ly:笃",
       "word:jc-ly:切",
-      "word:jc-ly:仁"
+      "word:jc-ly:仁",
+      "word:jc-ly:说",
+      "word:jc-ly:有",
+      "word:jc-ly:愠"
     ],
     "questionIds": [
       "jc-ly-1",
@@ -1457,7 +1460,10 @@
       "word:jc-chushibiao:道",
       "word:jc-chushibiao:雅言",
       "word:jc-chushibiao:先帝遗诏",
-      "word:jc-chushibiao:涕零"
+      "word:jc-chushibiao:涕零",
+      "word:jc-chushibiao:菲薄",
+      "word:jc-chushibiao:遗",
+      "word:jc-chushibiao:咨诹"
     ],
     "questionIds": [
       "jc-chushibiao-1",
@@ -2812,7 +2818,8 @@
       "word:guancanghai-013:澹澹",
       "word:guancanghai-013:竦峙",
       "word:guancanghai-013:星汉",
-      "word:guancanghai-013:幸甚至哉"
+      "word:guancanghai-013:幸甚至哉",
+      "word:guancanghai-013:萧瑟"
     ],
     "questionIds": [
       "guancanghai-013-1",
@@ -6385,7 +6392,8 @@
       "word:jc-chunwang:抵",
       "word:jc-chunwang:浑",
       "word:jc-chunwang:胜",
-      "word:jc-chunwang:簪"
+      "word:jc-chunwang:簪",
+      "word:jc-chunwang:国"
     ],
     "questionIds": [
       "jc-chunwang-1",
@@ -7812,7 +7820,12 @@
       "word:jc-thyj:规",
       "word:jc-thyj:未果",
       "word:jc-thyj:寻",
-      "word:jc-thyj:问津"
+      "word:jc-thyj:问津",
+      "word:jc-thyj:尽",
+      "word:jc-thyj:前",
+      "word:jc-thyj:豁然",
+      "word:jc-thyj:黄发垂髫",
+      "word:jc-thyj:语"
     ],
     "questionIds": [
       "jc-thyj-1",
@@ -9146,7 +9159,8 @@
       "word:jc-yujiaaoqiusi:衡阳雁去",
       "word:jc-yujiaaoqiusi:边声",
       "word:jc-yujiaaoqiusi:千嶂",
-      "word:jc-yujiaaoqiusi:征夫"
+      "word:jc-yujiaaoqiusi:征夫",
+      "word:jc-yujiaaoqiusi:燕然未勒"
     ],
     "questionIds": [
       "jc-yujiaaoqiusi-1",
@@ -10848,7 +10862,10 @@
       "word:loushiming:形",
       "word:loushiming:南阳诸葛庐",
       "word:loushiming:西蜀子云亭",
-      "word:loushiming:何陋之有"
+      "word:loushiming:何陋之有",
+      "word:loushiming:乱",
+      "word:loushiming:劳",
+      "word:loushiming:丝竹"
     ],
     "questionIds": [
       "loushiming-1",
@@ -11198,7 +11215,11 @@
       "word:jc-pozhenzi:的卢",
       "word:jc-pozhenzi:霹雳",
       "word:jc-pozhenzi:了却",
-      "word:jc-pozhenzi:天下事"
+      "word:jc-pozhenzi:天下事",
+      "word:jc-pozhenzi:麾下",
+      "word:jc-pozhenzi:炙",
+      "word:jc-pozhenzi:赢得",
+      "word:jc-pozhenzi:可怜"
     ],
     "questionIds": [
       "jc-pozhenzi-1",
@@ -12102,7 +12123,11 @@
       "word:xinglunan-qiyi:今安在",
       "word:xinglunan-qiyi:长风破浪会有时",
       "word:xinglunan-qiyi:云帆",
-      "word:xinglunan-qiyi:济"
+      "word:xinglunan-qiyi:济",
+      "word:xinglunan-qiyi:樽",
+      "word:xinglunan-qiyi:箸",
+      "word:xinglunan-qiyi:茫然",
+      "word:xinglunan-qiyi:安"
     ],
     "questionIds": [
       "xinglunan-qiyi-1",
@@ -13545,7 +13570,10 @@
       "word:songdushaofuzhirenshuzhou-150:宦游人",
       "word:songdushaofuzhirenshuzhou-150:歧路",
       "word:songdushaofuzhirenshuzhou-150:儿女",
-      "word:songdushaofuzhirenshuzhou-150:沾巾"
+      "word:songdushaofuzhirenshuzhou-150:沾巾",
+      "word:songdushaofuzhirenshuzhou-150:辅",
+      "word:songdushaofuzhirenshuzhou-150:宦游",
+      "word:songdushaofuzhirenshuzhou-150:比邻"
     ],
     "questionIds": [
       "songdushaofuzhirenshuzhou-150-1",
