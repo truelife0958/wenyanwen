@@ -934,7 +934,11 @@
     ],
     "wordIds": [
       "word:jc-ljxydxg:午桥",
-      "word:jc-ljxydxg:渔唱起三更"
+      "word:jc-ljxydxg:渔唱起三更",
+      "word:jc-ljxydxg:豪英",
+      "word:jc-ljxydxg:疏影",
+      "word:jc-ljxydxg:堪",
+      "word:jc-ljxydxg:渔唱"
     ],
     "questionIds": [
       "practice:698",
@@ -1027,7 +1031,8 @@
       "word:jc-boyaguqin:少选",
       "word:jc-boyaguqin:汤汤",
       "word:jc-boyaguqin:足",
-      "word:jc-boyaguqin:以为世无足复为鼓琴者"
+      "word:jc-boyaguqin:以为世无足复为鼓琴者",
+      "word:jc-boyaguqin:绝"
     ],
     "questionIds": [
       "practice:700",
@@ -1256,7 +1261,9 @@
       "word:jc-guanju:流",
       "word:jc-guanju:寤寐",
       "word:jc-guanju:思服",
-      "word:jc-guanju:悠"
+      "word:jc-guanju:悠",
+      "word:jc-guanju:友",
+      "word:jc-guanju:芼"
     ],
     "questionIds": [
       "practice:152",
@@ -1576,7 +1583,9 @@
     "wordIds": [
       "word:jc-bieyunjian:南冠",
       "word:jc-bieyunjian:泉路",
-      "word:jc-bieyunjian:羁旅"
+      "word:jc-bieyunjian:羁旅",
+      "word:jc-bieyunjian:毅魄",
+      "word:jc-bieyunjian:灵旗"
     ],
     "questionIds": [
       "practice:702",
@@ -1665,7 +1674,10 @@
       "word:jc-beimingyouyu:极",
       "word:jc-beimingyouyu:其",
       "word:jc-beimingyouyu:之",
-      "word:jc-beimingyouyu:为"
+      "word:jc-beimingyouyu:为",
+      "word:jc-beimingyouyu:冥",
+      "word:jc-beimingyouyu:去以六月息",
+      "word:jc-beimingyouyu:苍苍"
     ],
     "questionIds": [
       "practice:86",
@@ -1881,7 +1893,9 @@
       "word:jc-shiwucongjunzheng:旅葵",
       "word:jc-shiwucongjunzheng:舂谷",
       "word:jc-shiwucongjunzheng:持",
-      "word:jc-shiwucongjunzheng:羹"
+      "word:jc-shiwucongjunzheng:羹",
+      "word:jc-shiwucongjunzheng:舂",
+      "word:jc-shiwucongjunzheng:贻"
     ],
     "questionIds": [
       "practice:251",
@@ -2437,7 +2451,10 @@
     ],
     "wordIds": [
       "word:jc-nananjun:梅花南北路",
-      "word:jc-nananjun:采薇"
+      "word:jc-nananjun:采薇",
+      "word:jc-nananjun:征衣",
+      "word:jc-nananjun:出岭",
+      "word:jc-nananjun:城郭"
     ],
     "questionIds": [
       "practice:384",
@@ -2621,7 +2638,8 @@
       "word:jc-bsz:缥缈",
       "word:jc-bsz:孤鸿",
       "word:jc-bsz:省",
-      "word:jc-bsz:拣尽寒枝"
+      "word:jc-bsz:拣尽寒枝",
+      "word:jc-bsz:拣"
     ],
     "questionIds": [
       "practice:148",
@@ -3412,7 +3430,16 @@
       "word:jc-tangjuburushiming:挺",
       "word:jc-tangjuburushiming:色挠",
       "word:jc-tangjuburushiming:长跪而谢之",
-      "word:jc-tangjuburushiming:谕"
+      "word:jc-tangjuburushiming:谕",
+      "word:jc-tangjuburushiming:说",
+      "word:jc-tangjuburushiming:错",
+      "word:jc-tangjuburushiming:虽",
+      "word:jc-tangjuburushiming:休",
+      "word:jc-tangjuburushiming:谢",
+      "word:jc-tangjuburushiming:弗",
+      "word:jc-tangjuburushiming:因",
+      "word:jc-tangjuburushiming:尝",
+      "word:jc-tangjuburushiming:祲"
     ],
     "questionIds": [
       "practice:76",
@@ -3602,7 +3629,8 @@
     "wordIds": [
       "word:jc-yeshangshouxiangchengwendi:回乐烽",
       "word:jc-yeshangshouxiangchengwendi:受降城",
-      "word:jc-yeshangshouxiangchengwendi:征人"
+      "word:jc-yeshangshouxiangchengwendi:征人",
+      "word:jc-yeshangshouxiangchengwendi:芦管"
     ],
     "questionIds": [
       "practice:402",
@@ -4008,7 +4036,10 @@
     "wordIds": [
       "word:jc-taichangyin:吕叔潜",
       "word:jc-taichangyin:姮娥",
-      "word:jc-taichangyin:斫去桂婆娑人道是清光更多"
+      "word:jc-taichangyin:斫去桂婆娑人道是清光更多",
+      "word:jc-taichangyin:金波",
+      "word:jc-taichangyin:斫",
+      "word:jc-taichangyin:婆娑"
     ],
     "questionIds": [
       "practice:705",
@@ -4203,7 +4234,9 @@
       "word:jc-zijin:嗣",
       "word:jc-zijin:佩",
       "word:jc-zijin:挑兮达兮",
-      "word:jc-zijin:城阙"
+      "word:jc-zijin:城阙",
+      "word:jc-zijin:衿",
+      "word:jc-zijin:挑达"
     ],
     "questionIds": [
       "practice:674",
@@ -5015,7 +5048,8 @@
       "word:jc-shanpoyanglishan:阿房一炬",
       "word:jc-shanpoyanglishan:萦纡",
       "word:jc-shanpoyanglishan:遗恨",
-      "word:jc-shanpoyanglishan:列国"
+      "word:jc-shanpoyanglishan:列国",
+      "word:jc-shanpoyanglishan:阿房"
     ],
     "questionIds": [
       "practice:351",
@@ -5550,7 +5584,8 @@
       "word:jc-zhuangzi-huizi-haoliang:固",
       "word:jc-zhuangzi-huizi-haoliang:全",
       "word:jc-zhuangzi-huizi-haoliang:循",
-      "word:jc-zhuangzi-huizi-haoliang:本"
+      "word:jc-zhuangzi-huizi-haoliang:本",
+      "word:jc-zhuangzi-huizi-haoliang:从容"
     ],
     "questionIds": [
       "practice:423",
@@ -5650,7 +5685,8 @@
       "word:jc-tingzhongyouqishu:遗",
       "word:jc-tingzhongyouqishu:盈",
       "word:jc-tingzhongyouqishu:致",
-      "word:jc-tingzhongyouqishu:经时"
+      "word:jc-tingzhongyouqishu:经时",
+      "word:jc-tingzhongyouqishu:荣"
     ],
     "questionIds": [
       "practice:656",
@@ -5879,7 +5915,10 @@
       "word:jc-ddzd:寡",
       "word:jc-ddzd:至",
       "word:jc-ddzd:亲戚",
-      "word:jc-ddzd:畔"
+      "word:jc-ddzd:畔",
+      "word:jc-ddzd:域",
+      "word:jc-ddzd:顺",
+      "word:jc-ddzd:道"
     ],
     "questionIds": [
       "practice:642",
@@ -6217,7 +6256,10 @@
       "word:jc-wuti:丝",
       "word:jc-wuti:泪",
       "word:jc-wuti:晓镜",
-      "word:jc-wuti:云鬟改"
+      "word:jc-wuti:云鬟改",
+      "word:jc-wuti:云鬟",
+      "word:jc-wuti:蓬山",
+      "word:jc-wuti:青鸟"
     ],
     "questionIds": [
       "practice:261",
@@ -6306,7 +6348,9 @@
     "wordIds": [
       "word:jc-chunyelochengwendi:玉笛",
       "word:jc-chunyelochengwendi:洛城",
-      "word:jc-chunyelochengwendi:折柳"
+      "word:jc-chunyelochengwendi:折柳",
+      "word:jc-chunyelochengwendi:暗",
+      "word:jc-chunyelochengwendi:故园"
     ],
     "questionIds": [
       "practice:353",
@@ -6518,7 +6562,8 @@
     "wordIds": [
       "word:jc-wanchun:榆荚",
       "word:jc-wanchun:才思",
-      "word:jc-wanchun:解"
+      "word:jc-wanchun:解",
+      "word:jc-wanchun:芳菲"
     ],
     "questionIds": [
       "practice:428",
@@ -6832,7 +6877,8 @@
       "word:jc-yueyeyishedi:戍鼓",
       "word:jc-yueyeyishedi:断人行",
       "word:jc-yueyeyishedi:露从今夜白",
-      "word:jc-yueyeyishedi:况乃"
+      "word:jc-yueyeyishedi:况乃",
+      "word:jc-yueyeyishedi:断"
     ],
     "questionIds": [
       "practice:433",
@@ -8353,7 +8399,8 @@
       "word:jc-jiangnanfengliguinian:岐王",
       "word:jc-jiangnanfengliguinian:寻常",
       "word:jc-jiangnanfengliguinian:崔九",
-      "word:jc-jiangnanfengliguinian:逢"
+      "word:jc-jiangnanfengliguinian:逢",
+      "word:jc-jiangnanfengliguinian:几度"
     ],
     "questionIds": [
       "practice:463",
@@ -8704,7 +8751,16 @@
       "word:jc-huoban:讫",
       "word:jc-huoban:殊",
       "word:jc-huoban:群从",
-      "word:jc-huoban:宝藏"
+      "word:jc-huoban:宝藏",
+      "word:jc-huoban:令",
+      "word:jc-huoban:持",
+      "word:jc-huoban:字平如砥",
+      "word:jc-huoban:兼",
+      "word:jc-huoban:奇",
+      "word:jc-huoban:素",
+      "word:jc-huoban:旋",
+      "word:jc-huoban:拂",
+      "word:jc-huoban:殊不"
     ],
     "questionIds": [
       "practice:631",
@@ -8785,7 +8841,8 @@
       "word:jc-huanxisha-mmqh:无赖",
       "word:jc-huanxisha-mmqh:闲",
       "word:jc-huanxisha-mmqh:漠漠",
-      "word:jc-huanxisha-mmqh:穷秋"
+      "word:jc-huanxisha-mmqh:穷秋",
+      "word:jc-huanxisha-mmqh:宝帘"
     ],
     "questionIds": [
       "practice:696",
@@ -8861,7 +8918,8 @@
     "wordIds": [
       "word:jc-huanxisha-sxysnpx:若为",
       "word:jc-huanxisha-sxysnpx:戍垒",
-      "word:jc-huanxisha-sxysnpx:关城"
+      "word:jc-huanxisha-sxysnpx:关城",
+      "word:jc-huanxisha-sxysnpx:那畔"
     ],
     "questionIds": [
       "practice:711",
@@ -8950,7 +9008,8 @@
       "word:jc-huanxisha-yiquxincijiuyibei:夕阳",
       "word:jc-huanxisha-yiquxincijiuyibei:无可奈何",
       "word:jc-huanxisha-yiquxincijiuyibei:徘徊",
-      "word:jc-huanxisha-yiquxincijiuyibei:独"
+      "word:jc-huanxisha-yiquxincijiuyibei:独",
+      "word:jc-huanxisha-yiquxincijiuyibei:亭台"
     ],
     "questionIds": [
       "practice:467",
@@ -10752,7 +10811,8 @@
       "word:xiangjianhuan-jinlingchengshangxilou:金陵",
       "word:xiangjianhuan-jinlingchengshangxilou:簪缨",
       "word:xiangjianhuan-jinlingchengshangxilou:倩",
-      "word:xiangjianhuan-jinlingchengshangxilou:扬州"
+      "word:xiangjianhuan-jinlingchengshangxilou:扬州",
+      "word:xiangjianhuan-jinlingchengshangxilou:倚"
     ],
     "questionIds": [
       "practice:494",
@@ -11166,7 +11226,11 @@
       "word:shi_hao_li:去",
       "word:shi_hao_li:完裙",
       "word:shi_hao_li:老妪",
-      "word:shi_hao_li:幽咽"
+      "word:shi_hao_li:幽咽",
+      "word:shi_hao_li:偷生",
+      "word:shi_hao_li:长已矣",
+      "word:shi_hao_li:应",
+      "word:shi_hao_li:犹得"
     ],
     "questionIds": [
       "practice:140",
@@ -11429,7 +11493,11 @@
       "word:jc-chuanjingdeyiren:及",
       "word:jc-chuanjingdeyiren:道",
       "word:jc-chuanjingdeyiren:使",
-      "word:jc-chuanjingdeyiren:对"
+      "word:jc-chuanjingdeyiren:对",
+      "word:jc-chuanjingdeyiren:溉汲",
+      "word:jc-chuanjingdeyiren:闻",
+      "word:jc-chuanjingdeyiren:令",
+      "word:jc-chuanjingdeyiren:得"
     ],
     "questionIds": [
       "practice:114",
@@ -11522,7 +11590,8 @@
     "wordIds": [
       "word:jc-zhuliguan:幽篁",
       "word:jc-zhuliguan:深林",
-      "word:jc-zhuliguan:相照"
+      "word:jc-zhuliguan:相照",
+      "word:jc-zhuliguan:长啸"
     ],
     "questionIds": [
       "practice:525",
@@ -11863,7 +11932,8 @@
       "word:jc-jianjia:未已",
       "word:jc-jianjia:涘",
       "word:jc-jianjia:右",
-      "word:jc-jianjia:沚"
+      "word:jc-jianjia:沚",
+      "word:jc-jianjia:坻"
     ],
     "questionIds": [
       "practice:153",
@@ -11952,7 +12022,12 @@
       "word:jc-suiyoujiayao:故",
       "word:jc-suiyoujiayao:虽",
       "word:jc-suiyoujiayao:之",
-      "word:jc-suiyoujiayao:其"
+      "word:jc-suiyoujiayao:其",
+      "word:jc-suiyoujiayao:学:2",
+      "word:jc-suiyoujiayao:嘉肴",
+      "word:jc-suiyoujiayao:自反",
+      "word:jc-suiyoujiayao:自强",
+      "word:jc-suiyoujiayao:教学相长"
     ],
     "questionIds": [
       "practice:1",
@@ -12950,7 +13025,8 @@
       "word:jc-guosongyuanchenchuiqigongdian:错喜欢",
       "word:jc-guosongyuanchenchuiqigongdian:政",
       "word:jc-guosongyuanchenchuiqigongdian:围子",
-      "word:jc-guosongyuanchenchuiqigongdian:放出"
+      "word:jc-guosongyuanchenchuiqigongdian:放出",
+      "word:jc-guosongyuanchenchuiqigongdian:赚得:2"
     ],
     "questionIds": [
       "practice:560",
@@ -14361,7 +14437,10 @@
     ],
     "wordIds": [
       "word:jc-caisangzi:棹",
-      "word:jc-caisangzi:琉璃"
+      "word:jc-caisangzi:琉璃",
+      "word:jc-caisangzi:逶迤",
+      "word:jc-caisangzi:隐隐",
+      "word:jc-caisangzi:涟漪"
     ],
     "questionIds": [
       "practice:660",
@@ -14577,7 +14656,8 @@
       "word:jc-changshaguojiayizhai:栖迟",
       "word:jc-changshaguojiayizhai:楚客",
       "word:jc-changshaguojiayizhai:汉文",
-      "word:jc-changshaguojiayizhai:吊"
+      "word:jc-changshaguojiayizhai:吊",
+      "word:jc-changshaguojiayizhai:谪宦"
     ],
     "questionIds": [
       "practice:727",
@@ -14693,7 +14773,8 @@
       "word:jc-wenwangchanglingzuoqian:子规",
       "word:jc-wenwangchanglingzuoqian:龙标",
       "word:jc-wenwangchanglingzuoqian:五溪",
-      "word:jc-wenwangchanglingzuoqian:夜郎"
+      "word:jc-wenwangchanglingzuoqian:夜郎",
+      "word:jc-wenwangchanglingzuoqian:左迁"
     ],
     "questionIds": [
       "practice:18",
@@ -15370,7 +15451,10 @@
       "word:jc-tpss:禅房",
       "word:jc-tpss:人心",
       "word:jc-tpss:万籁",
-      "word:jc-tpss:钟磬"
+      "word:jc-tpss:钟磬",
+      "word:jc-tpss:初日",
+      "word:jc-tpss:悦",
+      "word:jc-tpss:空"
     ],
     "questionIds": [
       "practice:150",
@@ -15712,7 +15796,12 @@
       "word:jc-ywsyx:乡",
       "word:jc-ywsyx:已",
       "word:jc-ywsyx:谓",
-      "word:jc-ywsyx:本心"
+      "word:jc-ywsyx:本心",
+      "word:jc-ywsyx:可以",
+      "word:jc-ywsyx:是",
+      "word:jc-ywsyx:不屑",
+      "word:jc-ywsyx:加",
+      "word:jc-ywsyx:穷乏"
     ],
     "questionIds": [
       "practice:312",

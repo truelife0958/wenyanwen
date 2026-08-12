@@ -2,18 +2,18 @@
   "schemaVersion": 1,
   "source": {
     "articles": 126,
-    "wordMeanings": 3411,
+    "wordMeanings": 3719,
     "questions": 1923
   },
   "runtime": {
     "articles": 126,
-    "words": 2272,
-    "wordMeanings": 2798,
+    "words": 2361,
+    "wordMeanings": 2931,
     "questions": 2026,
     "collections": 17
   },
   "transformed": {
-    "deduplicatedWordMeanings": 613,
+    "deduplicatedWordMeanings": 788,
     "deduplicatedQuestions": -103,
     "invalidQuestions": 0
   }
