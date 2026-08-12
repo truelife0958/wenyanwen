@@ -4,6 +4,8 @@ import { findMoxieArticle, flattenItems, saveMoxieResult, articleProgress, loadM
 import { findMoxieByArticleTitle } from '../../data/moxie';
 import { findLearningArticle, articleHref } from '../../data/article-links';
 import { useErrorBook } from '../errorbook/store';
+import { useGame } from '../game/store';
+import { xpForAnswer } from '../game/xp';
 import PageHeader from '../../shared/ui/PageHeader';
 import EmptyState from '../../shared/ui/EmptyState';
 import './moxie.css';
@@ -114,7 +116,7 @@ interface AnswerState {
 function FillQuestionCard({
   qid, q, answers, type, word, onJudged,
 }: {
-  qid: string; q: string; answers: string[]; type: string; word?: string; onJudged: (qid: string, pass: boolean) => void;
+  qid: string; q: string; answers: string[]; type: string; word?: string; onJudged: (qid: string, pass: boolean, allPass: boolean) => void;
 }) {
   const qBlanks = (String(q || '').match(/_+/g) || []).length;
   const nBlanks = Math.max(qBlanks || blanksCount(answers), 1);
@@ -122,8 +124,10 @@ function FillQuestionCard({
   const [values, setValues] = useState<string[]>(() => answers.map(() => ''));
   const [results, setResults] = useState<(boolean | null)[]>(() => answers.map(() => null));
   const [checked, setChecked] = useState(false);
+  const [xpGain, setXpGain] = useState<number | null>(null);
   const cardRef = useRef<HTMLDivElement>(null);
   const inputRefs = useRef<(HTMLInputElement | null)[]>([]);
+  const { state: gstate } = useGame();
 
   const change = (i: number, v: string) => {
     setValues((prev) => prev.map((x, j) => (j === i ? v : x)));
@@ -135,7 +139,12 @@ function FillQuestionCard({
     });
     setResults(res);
     setChecked(true);
-    onJudged(qid, res.length > 0 && res.every(Boolean));
+    const pass = res.length > 0 && res.some(Boolean);
+    const allPass = res.length > 0 && res.every(Boolean);
+    onJudged(qid, pass, allPass);
+    // 行内得分飘字: 依据当前连击计算 (与 store 规则一致)
+    const combo = pass ? gstate.combo + 1 : 0;
+    setXpGain(xpForAnswer(pass, allPass, combo));
   };
 
   const allFilled = values.every((v) => (v || '').trim() !== '');
@@ -166,7 +175,10 @@ function FillQuestionCard({
   };
 
   return (
-    <div ref={cardRef} className={`moxie-q${checked ? (passCount === nBlanks ? ' ok' : ' bad') : ''}`}>
+    <div ref={cardRef} className={`moxie-q gx-card-fx${checked ? (passCount === nBlanks ? ' ok' : ' bad') : ''}`}>
+      {checked && xpGain !== null && (
+        <span className="gx-fly-inline" key={xpGain}>+{xpGain} XP</span>
+      )}
       <div className="mq-head">
         <span className="mq-type">{type}</span>
         <span className="mq-blanks">{nBlanks} 空</span>
@@ -222,6 +234,7 @@ export default function MoxieArticle() {
   const { id } = useParams();
   const article = findMoxieArticle(id);
   const { addWrong } = useErrorBook();
+  const game = useGame();
   const [activeTab, setActiveTab] = useState('');
   const [tick, setTick] = useState(0);
 
@@ -245,8 +258,10 @@ export default function MoxieArticle() {
   const showTab = activeTab || tabs[0] || '';
   const section = article.sections.find((s) => s.type === showTab);
 
-  const handleJudged = (qid: string, pass: boolean) => {
+  const handleJudged = (qid: string, pass: boolean, allPass: boolean) => {
     saveMoxieResult(qid, pass);
+    // 游戏化: XP/连击/关卡进度 (不影响判分逻辑)
+    if (article) game.addResult(article.articleId || article.id || article.title, qid, pass, allPass);
     if (!pass) {
       const flat = flattenItems(article).find((x) => x.item.qid === qid);
       if (flat) {

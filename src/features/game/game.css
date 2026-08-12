@@ -1,0 +1,386 @@
+/* ===== 游戏化 · 古风奇幻视觉层 (独立命名空间 --gx, 不覆盖现有组件) ===== */
+
+/* ── 主题变量 ── */
+:root {
+  --gx-bg-deep: #0b1026;        /* 深空蓝 */
+  --gx-bg-mid: #141b3d;
+  --gx-gold: #f5c542;
+  --gx-gold-bright: #ffe08a;
+  --gx-gold-dim: #9a7b2e;
+  --gx-ink: #e8e2d0;            /* 米色文字 */
+  --gx-ink-dim: #a89f8a;
+  --gx-jade: #3dd6b0;           /* 玉色 */
+  --gx-star: #f8e08e;
+  --gx-fire: #ff7a3c;
+  --gx-ring: rgba(245, 197, 66, 0.18);
+  --gx-mtn: #1a2347;
+  --gx-mtn-light: #232e5c;
+}
+
+/* ── 通用古风星空背景 (供地图/成就页复用) ── */
+.gx-sky {
+  position: relative;
+  color: var(--gx-ink);
+  background:
+    radial-gradient(1200px 600px at 80% -10%, rgba(61, 120, 214, 0.28), transparent 60%),
+    radial-gradient(900px 500px at 10% 10%, rgba(122, 79, 176, 0.22), transparent 55%),
+    linear-gradient(165deg, #0c1230 0%, #121a3f 45%, #0b1026 100%);
+  min-height: 100%;
+}
+.gx-sky::before {
+  content: '';
+  position: absolute; inset: 0;
+  background-image:
+    radial-gradient(1.5px 1.5px at 18% 22%, var(--gx-star), transparent 60%),
+    radial-gradient(1px 1px at 62% 12%, var(--gx-star), transparent 60%),
+    radial-gradient(1.5px 1.5px at 84% 30%, var(--gx-star), transparent 60%),
+    radial-gradient(1px 1px at 38% 45%, var(--gx-star), transparent 60%),
+    radial-gradient(1.5px 1.5px at 72% 55%, var(--gx-star), transparent 60%),
+    radial-gradient(1px 1px at 8% 68%, var(--gx-star), transparent 60%),
+    radial-gradient(1.5px 1.5px at 92% 75%, var(--gx-star), transparent 60%),
+    radial-gradient(1px 1px at 28% 82%, var(--gx-star), transparent 60%),
+    radial-gradient(1.5px 1.5px at 55% 8%, var(--gx-star), transparent 60%);
+  opacity: 0.8;
+  pointer-events: none;
+  animation: gx-twinkle 6s ease-in-out infinite alternate;
+}
+.gx-sky::after {
+  content: '';
+  position: absolute; left: 0; right: 0; bottom: 0; height: 180px;
+  background:
+    linear-gradient(115deg, transparent 20%, var(--gx-mtn) 22%, var(--gx-mtn) 35%, transparent 37%),
+    linear-gradient(200deg, transparent 45%, var(--gx-mtn-light) 47%, var(--gx-mtn-light) 60%, transparent 62%),
+    linear-gradient(140deg, transparent 65%, var(--gx-mtn) 67%, var(--gx-mtn) 78%, transparent 80%);
+  background-size: 60% 100%, 80% 100%, 70% 100%;
+  background-repeat: no-repeat;
+  background-position: 0 100%, 30% 100%, 60% 100%;
+  opacity: 0.55;
+  pointer-events: none;
+}
+@keyframes gx-twinkle {
+  0% { opacity: 0.5; }
+  100% { opacity: 1; }
+}
+
+/* ── 英雄区 (首页顶部) ── */
+.gx-hero {
+  position: relative;
+  border-radius: 18px;
+  padding: 18px 18px 16px;
+  margin-bottom: 18px;
+  color: var(--gx-ink);
+  background: linear-gradient(160deg, #1a2250 0%, #0e1434 70%, #0b1026 100%);
+  border: 1px solid rgba(245, 197, 66, 0.35);
+  box-shadow: 0 8px 30px rgba(0, 0, 0, 0.35), inset 0 0 40px rgba(61, 120, 214, 0.08);
+  overflow: hidden;
+}
+.gx-hero::before {
+  content: '';
+  position: absolute; inset: 0;
+  background: radial-gradient(400px 200px at 90% 0%, rgba(245, 197, 66, 0.12), transparent 60%);
+  pointer-events: none;
+}
+.gx-hero-top {
+  display: flex; align-items: center; gap: 14px;
+  position: relative;
+}
+.gx-level-badge {
+  flex: none;
+  width: 56px; height: 56px;
+  border-radius: 50%;
+  display: grid; place-items: center;
+  font-size: 1.5rem; font-weight: 800;
+  color: var(--gx-bg-deep);
+  background: radial-gradient(circle at 35% 30%, #fff3c4, var(--gx-gold) 60%, var(--gx-gold-dim));
+  border: 2px solid #fff0b8;
+  box-shadow: 0 0 18px rgba(245, 197, 66, 0.55);
+  position: relative;
+}
+.gx-level-badge::after {
+  content: '';
+  position: absolute; inset: -4px;
+  border-radius: 50%;
+  border: 1px dashed rgba(245, 197, 66, 0.5);
+  animation: gx-spin 12s linear infinite;
+}
+@keyframes gx-spin { to { transform: rotate(360deg); } }
+.gx-level-badge .lv { position: absolute; bottom: -5px; font-size: 0.62rem; font-weight: 700; color: var(--gx-gold); background: rgba(11, 16, 38, 0.9); padding: 0 5px; border-radius: 6px; }
+.gx-hero-mid { flex: 1; min-width: 0; }
+.gx-title {
+  font-size: 1.15rem; font-weight: 800; letter-spacing: 2px;
+  color: var(--gx-gold-bright); text-shadow: 0 0 12px rgba(245, 197, 66, 0.4);
+}
+.gx-sub { font-size: 0.78rem; color: var(--gx-ink-dim); margin-top: 1px; }
+.gx-xp-bar {
+  height: 10px; border-radius: 6px; margin-top: 9px;
+  background: rgba(255, 255, 255, 0.1);
+  overflow: hidden; position: relative;
+}
+.gx-xp-fill {
+  height: 100%; border-radius: 6px;
+  background: linear-gradient(90deg, var(--gx-gold-dim), var(--gx-gold), var(--gx-gold-bright));
+  box-shadow: 0 0 12px rgba(245, 197, 66, 0.6);
+  transition: width 0.8s cubic-bezier(0.22, 1, 0.36, 1);
+}
+.gx-xp-label { font-size: 0.7rem; color: var(--gx-ink-dim); margin-top: 5px; display: flex; justify-content: space-between; }
+
+/* 英雄区数据行 */
+.gx-stats {
+  display: grid; grid-template-columns: repeat(4, 1fr); gap: 8px;
+  margin-top: 14px; position: relative;
+}
+.gx-stat {
+  background: rgba(255, 255, 255, 0.06);
+  border: 1px solid rgba(245, 197, 66, 0.18);
+  border-radius: 12px;
+  padding: 8px 4px; text-align: center;
+}
+.gx-stat b { display: block; font-size: 1.05rem; color: var(--gx-gold-bright); }
+.gx-stat span { font-size: 0.66rem; color: var(--gx-ink-dim); }
+
+/* 继续闯关横幅 */
+.gx-cta {
+  display: flex; align-items: center; justify-content: space-between;
+  margin-top: 12px; padding: 10px 14px;
+  border-radius: 12px;
+  background: linear-gradient(90deg, rgba(245, 197, 66, 0.16), rgba(245, 197, 66, 0.05));
+  border: 1px solid rgba(245, 197, 66, 0.35);
+  color: var(--gx-gold-bright);
+  font-weight: 700; font-size: 0.92rem;
+  text-decoration: none;
+  transition: transform 0.15s ease, box-shadow 0.15s ease;
+}
+.gx-cta:active { transform: scale(0.97); }
+.gx-cta .arrow { transition: transform 0.2s ease; }
+.gx-cta:hover .arrow { transform: translateX(4px); }
+
+/* ── 闯关地图 ── */
+.gx-map {
+  position: relative;
+  padding: 6px 4px 30px;
+}
+.gx-world {
+  position: relative;
+  margin-bottom: 30px;
+}
+.gx-world-title {
+  font-size: 1.1rem; font-weight: 800; letter-spacing: 3px;
+  color: var(--gx-gold-bright);
+  text-shadow: 0 0 14px rgba(245, 197, 66, 0.4);
+  display: flex; align-items: center; gap: 10px;
+  margin-bottom: 4px;
+}
+.gx-world-sub { font-size: 0.74rem; color: var(--gx-ink-dim); margin-bottom: 14px; }
+.gx-world-progress { font-size: 0.72rem; color: var(--gx-jade); margin-left: auto; }
+.gx-path {
+  position: relative;
+  display: flex; flex-direction: column; gap: 18px;
+  padding: 8px 6px;
+}
+/* 蜿蜒路径: 用纵向错位模拟 */
+.gx-level-row {
+  display: flex; align-items: center; gap: 12px;
+  position: relative;
+}
+.gx-level-row:nth-child(even) { padding-left: 26px; }
+.gx-level-row:nth-child(odd) { padding-right: 6px; }
+.gx-level-row:not(:last-child)::before {
+  content: '';
+  position: absolute; left: 30px; top: 44px; bottom: -16px;
+  width: 3px;
+  background: linear-gradient(180deg, rgba(245, 197, 66, 0.5), rgba(245, 197, 66, 0.12));
+  border-radius: 2px;
+}
+.gx-level-row:nth-child(even)::before { left: 56px; }
+
+.gx-node {
+  flex: none;
+  width: 48px; height: 48px;
+  border-radius: 50%;
+  display: grid; place-items: center;
+  font-size: 1.05rem; font-weight: 800;
+  position: relative;
+  transition: transform 0.15s ease;
+}
+.gx-node:active { transform: scale(0.92); }
+/* 已通关: 金色发光 */
+.gx-node.done {
+  background: radial-gradient(circle at 35% 30%, #fff3c4, var(--gx-gold) 55%, var(--gx-gold-dim));
+  color: #4a3200;
+  border: 2px solid #fff0b8;
+  box-shadow: 0 0 16px rgba(245, 197, 66, 0.6);
+}
+/* 可玩: 跳动光圈 */
+.gx-node.playable {
+  background: radial-gradient(circle at 35% 30%, #e6f7ff, var(--gx-jade) 60%, #1f8f72);
+  color: #06281f;
+  border: 2px solid #b8ffe9;
+  box-shadow: 0 0 16px rgba(61, 214, 176, 0.6);
+  animation: gx-pulse 1.6s ease-in-out infinite;
+}
+@keyframes gx-pulse {
+  0%, 100% { box-shadow: 0 0 12px rgba(61, 214, 176, 0.45); }
+  50% { box-shadow: 0 0 24px rgba(61, 214, 176, 0.85); }
+}
+/* 未解锁: 暗色锁 */
+.gx-node.locked {
+  background: rgba(255, 255, 255, 0.07);
+  color: var(--gx-ink-dim);
+  border: 2px dashed rgba(255, 255, 255, 0.2);
+}
+.gx-node .stars {
+  position: absolute; bottom: -9px; left: 50%; transform: translateX(-50%);
+  font-size: 0.62rem; letter-spacing: -1px;
+  color: var(--gx-gold-bright);
+  text-shadow: 0 0 6px rgba(245, 197, 66, 0.6);
+  white-space: nowrap;
+}
+.gx-node .lock { font-size: 0.85rem; }
+.gx-level-info { flex: 1; min-width: 0; }
+.gx-level-name {
+  font-size: 0.92rem; font-weight: 700; color: var(--gx-ink);
+  white-space: nowrap; overflow: hidden; text-overflow: ellipsis;
+}
+.gx-level-meta { font-size: 0.7rem; color: var(--gx-ink-dim); margin-top: 2px; }
+.gx-level-tag {
+  flex: none;
+  font-size: 0.66rem; color: var(--gx-ink-dim);
+  border: 1px solid rgba(255, 255, 255, 0.18);
+  border-radius: 8px; padding: 3px 8px;
+}
+.gx-level-tag.done { color: var(--gx-gold-bright); border-color: rgba(245, 197, 66, 0.5); }
+
+/* ── 特效层 ── */
+.gx-fx-layer {
+  position: fixed; inset: 0;
+  pointer-events: none;
+  z-index: 999;
+  overflow: hidden;
+}
+.gx-xp-fly {
+  position: absolute;
+  font-weight: 800; font-size: 1.15rem;
+  color: var(--gx-gold-bright);
+  text-shadow: 0 0 10px rgba(245, 197, 66, 0.8);
+  animation: gx-fly 1s ease-out forwards;
+}
+@keyframes gx-fly {
+  0% { opacity: 0; transform: translateY(6px) scale(0.7); }
+  20% { opacity: 1; transform: translateY(-4px) scale(1.15); }
+  100% { opacity: 0; transform: translateY(-60px) scale(1); }
+}
+.gx-combo-banner {
+  position: fixed; top: 24%; left: 50%; transform: translateX(-50%);
+  font-size: 2rem; font-weight: 900; letter-spacing: 4px;
+  color: var(--gx-fire);
+  text-shadow: 0 0 20px rgba(255, 122, 60, 0.8), 0 2px 0 #5a1f00;
+  z-index: 1000; pointer-events: none;
+  animation: gx-combo-pop 0.9s ease-out forwards;
+}
+@keyframes gx-combo-pop {
+  0% { opacity: 0; transform: translateX(-50%) scale(0.3) rotate(-6deg); }
+  30% { opacity: 1; transform: translateX(-50%) scale(1.2) rotate(2deg); }
+  70% { opacity: 1; transform: translateX(-50%) scale(1); }
+  100% { opacity: 0; transform: translateX(-50%) scale(1.4); }
+}
+.gx-levelup {
+  position: fixed; top: 20%; left: 50%; transform: translateX(-50%);
+  text-align: center; z-index: 1000; pointer-events: none;
+  animation: gx-levelup-pop 2s ease-out forwards;
+}
+.gx-levelup .big {
+  font-size: 2.6rem; font-weight: 900; letter-spacing: 6px;
+  color: var(--gx-gold-bright);
+  text-shadow: 0 0 30px rgba(245, 197, 66, 0.9), 0 0 60px rgba(245, 197, 66, 0.5);
+}
+.gx-levelup .sub {
+  font-size: 1rem; color: var(--gx-ink); margin-top: 6px; letter-spacing: 3px;
+}
+@keyframes gx-levelup-pop {
+  0% { opacity: 0; transform: translateX(-50%) scale(0.4); }
+  25% { opacity: 1; transform: translateX(-50%) scale(1.15); }
+  40% { transform: translateX(-50%) scale(1); }
+  80% { opacity: 1; }
+  100% { opacity: 0; transform: translateX(-50%) scale(1.05); }
+}
+.gx-ach-banner {
+  position: fixed; top: 30%; left: 50%; transform: translateX(-50%);
+  z-index: 1001; pointer-events: none;
+  background: linear-gradient(160deg, rgba(26, 34, 80, 0.95), rgba(11, 16, 38, 0.95));
+  border: 2px solid var(--gx-gold);
+  border-radius: 16px;
+  padding: 14px 26px;
+  text-align: center;
+  box-shadow: 0 0 40px rgba(245, 197, 66, 0.5);
+  animation: gx-ach-pop 2.4s ease-out forwards;
+}
+.gx-ach-banner .ic { font-size: 2.4rem; }
+.gx-ach-banner .nm { font-size: 1.15rem; font-weight: 800; color: var(--gx-gold-bright); margin-top: 4px; letter-spacing: 2px; }
+.gx-ach-banner .de { font-size: 0.8rem; color: var(--gx-ink); margin-top: 2px; }
+@keyframes gx-ach-pop {
+  0% { opacity: 0; transform: translateX(-50%) scale(0.5) rotate(-4deg); }
+  20% { opacity: 1; transform: translateX(-50%) scale(1.05) rotate(1deg); }
+  30% { transform: translateX(-50%) scale(1); }
+  82% { opacity: 1; }
+  100% { opacity: 0; transform: translateX(-50%) scale(1.02); }
+}
+.gx-starburst {
+  position: fixed; inset: 0; z-index: 998; pointer-events: none;
+  background: radial-gradient(circle at 50% 50%, rgba(255, 224, 138, 0.25), transparent 65%);
+  animation: gx-burst 0.8s ease-out forwards;
+}
+@keyframes gx-burst {
+  0% { opacity: 0; transform: scale(0.4); }
+  30% { opacity: 1; transform: scale(1.1); }
+  100% { opacity: 0; transform: scale(1.4); }
+}
+
+/* ── 成就墙 ── */
+.gx-ach-grid {
+  display: grid; grid-template-columns: repeat(2, 1fr); gap: 12px;
+  padding: 4px 2px 26px;
+}
+.gx-ach-card {
+  border-radius: 14px;
+  padding: 12px 10px;
+  text-align: center;
+  background: rgba(255, 255, 255, 0.05);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  transition: transform 0.15s ease;
+}
+.gx-ach-card:active { transform: scale(0.96); }
+.gx-ach-card .ic { font-size: 1.9rem; }
+.gx-ach-card .nm { font-size: 0.88rem; font-weight: 700; color: var(--gx-ink); margin-top: 6px; }
+.gx-ach-card .de { font-size: 0.7rem; color: var(--gx-ink-dim); margin-top: 3px; }
+.gx-ach-card.unlocked {
+  background: linear-gradient(165deg, rgba(245, 197, 66, 0.16), rgba(245, 197, 66, 0.05));
+  border-color: rgba(245, 197, 66, 0.5);
+  box-shadow: 0 0 16px rgba(245, 197, 66, 0.25);
+}
+.gx-ach-card.unlocked .nm { color: var(--gx-gold-bright); }
+.gx-ach-card.locked .ic { filter: grayscale(1); opacity: 0.45; }
+.gx-ach-head {
+  display: flex; align-items: center; justify-content: space-between;
+  padding: 14px 6px 12px;
+}
+.gx-ach-head h2 { font-size: 1.15rem; font-weight: 800; letter-spacing: 3px; color: var(--gx-gold-bright); }
+.gx-ach-head span { font-size: 0.74rem; color: var(--gx-ink-dim); }
+
+/* ── 判分区得分动画 (挂载在判分卡片上) ── */
+.gx-card-fx { position: relative; }
+.gx-card-fx .gx-fly-inline {
+  position: absolute; top: 6px; right: 10px;
+  font-weight: 800; font-size: 1.05rem;
+  color: var(--gx-gold-bright);
+  text-shadow: 0 0 8px rgba(245, 197, 66, 0.7);
+  animation: gx-fly 1s ease-out forwards;
+  pointer-events: none; z-index: 5;
+}
+
+/* 窄屏适配 */
+@media (max-width: 480px) {
+  .gx-level-row:nth-child(even) { padding-left: 14px; }
+  .gx-level-row:not(:last-child)::before { left: 26px; }
+  .gx-level-row:nth-child(even)::before { left: 40px; }
+  .gx-node { width: 44px; height: 44px; font-size: 0.95rem; }
+}

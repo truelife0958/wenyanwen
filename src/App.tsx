@@ -5,6 +5,8 @@ import Home from './features/home/Home';
 import TabBar from './features/home/TabBar';
 import ErrorBoundary from './shared/ui/ErrorBoundary';
 import { ErrorBookProvider } from './features/errorbook/store';
+import { GameProvider } from './features/game/store';
+import GameFx from './features/game/GameFx';
 import { counts, loadCore } from './data';
 import { articleHref, findLearningArticle } from './data/article-links';
 import { useParams } from 'react-router-dom';
@@ -13,6 +15,8 @@ const ArticlePage = lazy(() => import('./features/learning/ArticlePage'));
 const MoxieHome = lazy(() => import('./features/moxie/MoxieHome'));
 const MoxieArticle = lazy(() => import('./features/moxie/MoxieArticle'));
 const MoxieErrors = lazy(() => import('./features/moxie/MoxieErrors'));
+const LevelMap = lazy(() => import('./features/game/LevelMap'));
+const Achievements = lazy(() => import('./features/game/Achievements'));
 
 /** 旧版路由 #/learning/:title → 新篇目工作区 */
 function LegacyArticleRedirect() {
@@ -53,6 +57,7 @@ function DeepLinkRestore() {
 export default function App() {
   return (
     <ErrorBookProvider>
+      <GameProvider>
       <div className="app-shell">
         <DeepLinkRestore />
         <PreloadCore />
@@ -71,6 +76,8 @@ export default function App() {
                 <Route path="/moxie" element={<MoxieHome />} />
                 <Route path="/moxie/:id" element={<MoxieArticle />} />
                 <Route path="/moxie/errors" element={<MoxieErrors />} />
+                <Route path="/map" element={<LevelMap />} />
+                <Route path="/achievements" element={<Achievements />} />
                 <Route path="/errors" element={<Navigate replace to="/moxie/errors" />} />
                 <Route path="/learning/:title" element={<LegacyArticleRedirect />} />
 
@@ -81,10 +88,12 @@ export default function App() {
         </main>
 
         <TabBar />
+        <GameFx />
         <footer className="app-footer">
           <p>武汉中考文言文 · 学习 + 默写练习</p>
         </footer>
       </div>
+      </GameProvider>
     </ErrorBookProvider>
   );
 }

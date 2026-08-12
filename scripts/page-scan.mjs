@@ -48,6 +48,8 @@ const coreRoutes = [
   ['首页', '/'],
   ['默写列表', '/moxie'],
   ['默写错题本', '/moxie/errors'],
+  ['闯关地图', '/map'],
+  ['成就墙', '/achievements'],
   ['旧学习深链', '/learning/' + encodeURIComponent('岳阳楼记')],
 ];
 for (const [label, path] of coreRoutes) await scanPage(desktop, label, path);
@@ -70,6 +72,8 @@ for (const [label, path] of [
   ['移动-注释', '/articles/jc-yueyanglouji/notes'],
   ['移动-默写列表', '/moxie'],
   ['移动-默写错题本', '/moxie/errors'],
+  ['移动-闯关地图', '/map'],
+  ['移动-成就墙', '/achievements'],
 ]) {
   await scanPage(mobile, label, path);
 }

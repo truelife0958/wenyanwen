@@ -31,6 +31,8 @@ const PATHS: Record<string, string> = {
   refresh: 'M20 11a8 8 0 1 0-1.5 5.5 M20 5v6h-6',
   // 图谱/地图
   map: 'M4 6l5-3 6 3 5-3v15l-5 3-6-3-5 3V6z M9 3v15 M15 6v15',
+  // 奖杯(成就)
+  trophy: 'M7 4h10v5a5 5 0 0 1-10 0V4z M7 5H4a1 1 0 0 0-1 1v1a3 3 0 0 0 3 3 M17 5h3a1 1 0 0 1 1 1v1a3 3 0 0 1-3 3 M12 14v4 M8 21h8 M9 21a3 3 0 0 1 3-3 3 3 0 0 1 3 3',
 };
 
 export default function Icon({

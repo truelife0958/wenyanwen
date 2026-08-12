@@ -10,6 +10,8 @@ import SectionHeader from '../../shared/ui/SectionHeader';
 import { examLevel, examPoints } from '../../data/exam-tags';
 import { loadLS, loadStreak } from '../../shared/lib/utils';
 import { useErrorBook } from '../errorbook/store';
+import HeroStats from '../game/HeroStats';
+import '../game/game.css';
 
 const LAST_ARTICLE_KEY = 'wyw_last_article';
 
@@ -84,6 +86,7 @@ export default function Home() {
 
   return (
     <div className="home view-enter">
+      <HeroStats />
       {/* 今日学习头部 */}
       <section className="today-head" aria-label="今日学习">
         <div className="today-greet">

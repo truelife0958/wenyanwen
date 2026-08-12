@@ -158,7 +158,9 @@ check('/review 回首页', page.url().endsWith('/') || page.url().includes('/art
 await goto('/cards');
 check('/cards 回首页', !page.url().includes('/cards'));
 await goto('/map');
-check('/map 回首页', !page.url().includes('/map'));
+check('闯关地图可渲染', await page.locator('.gx-world').count() >= 1);
+await goto('/achievements');
+check('成就墙可渲染', await page.locator('.gx-ach-card').count() >= 10);
 await goto('/errors');
 check('/errors 跳错题本', page.url().includes('/moxie/errors'));
 
