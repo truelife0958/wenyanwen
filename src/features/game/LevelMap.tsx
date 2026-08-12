@@ -17,6 +17,11 @@ export default function LevelMap() {
     groups.get(a.grade)!.push(a);
   }
   const grades = GRADE_ORDER.filter((g) => groups.has(g));
+  const totalLevels = grades.reduce((t, g) => t + (groups.get(g)?.length || 0), 0);
+
+  // 统一关卡 key: 与 MoxieArticle.addResult 的 key 一致 (articleId 优先)
+  const levelKey = (a: { articleId: string | null; id: string; title: string }) =>
+    a.articleId || a.id || a.title;
 
   // 全局关卡编号
   let globalIdx = 0;
@@ -25,7 +30,7 @@ export default function LevelMap() {
     <div className="gx-sky gx-map view-enter">
       <div className="gx-ach-head">
         <h2>🗺️ 闯关地图</h2>
-        <span>{Object.values(state.levels).filter((r) => r.total > 0).length}/{moxieArticles.length} 篇已通关</span>
+        <span>{Object.values(state.levels).filter((r) => r.total > 0).length}/{totalLevels} 篇已通关</span>
       </div>
       <Link to="/achievements" className="gx-cta" style={{ marginBottom: 18 }}>
         🏅 我的成就
@@ -45,11 +50,12 @@ export default function LevelMap() {
             <div className="gx-path">
               {arts.map((article) => {
                 globalIdx += 1;
-                const rec = state.levels[article.id];
+                const key = levelKey(article);
+                const rec = state.levels[key];
                 const total = article.sections.reduce((t, s) => t + (s.items?.length || 0), 0);
                 const stars = rec ? starsFor(rec.passed, Math.max(rec.total, 1)) : 0;
                 const passed = !!rec && rec.total > 0;
-                const unlocked = isUnlocked(article.id, arts.map((a) => a.id));
+                const unlocked = isUnlocked(key, arts.map(levelKey));
                 const cls = passed ? 'done' : unlocked ? 'playable' : 'locked';
                 return (
                   <div className="gx-level-row" key={article.id}>

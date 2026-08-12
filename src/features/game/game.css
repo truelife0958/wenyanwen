@@ -358,7 +358,7 @@
   box-shadow: 0 0 16px rgba(245, 197, 66, 0.25);
 }
 .gx-ach-card.unlocked .nm { color: var(--gx-gold-bright); }
-.gx-ach-card.locked .ic { filter: grayscale(1); opacity: 0.45; }
+.gx-ach-card.locked .ic { opacity: 0.4; }
 .gx-ach-head {
   display: flex; align-items: center; justify-content: space-between;
   padding: 14px 6px 12px;
