@@ -94,14 +94,14 @@
     ],
     "questionIds": [
       "practice:249",
-      "practice:685",
-      "practice:686",
-      "practice:687",
-      "zhenti:1103",
-      "zhenti:1104",
-      "exam_point:1138",
-      "exam_point:1139",
-      "exam_point:1140"
+      "practice:681",
+      "practice:682",
+      "practice:683",
+      "zhenti:1095",
+      "zhenti:1096",
+      "exam_point:1126",
+      "exam_point:1127",
+      "exam_point:1128"
     ]
   },
   {
@@ -348,13 +348,13 @@
       "practice:10",
       "practice:11",
       "practice:12",
-      "handwritten:743",
-      "handwritten:744",
-      "zhenti:940",
-      "zhenti:941",
-      "zhenti:942",
-      "zhenti:943",
-      "exam_point:1141"
+      "handwritten:739",
+      "handwritten:740",
+      "zhenti:933",
+      "zhenti:934",
+      "zhenti:935",
+      "zhenti:936",
+      "exam_point:1129"
     ]
   },
   {
@@ -589,24 +589,24 @@
       "practice:66",
       "practice:67",
       "practice:68",
-      "zhenti:778",
-      "zhenti:779",
+      "zhenti:773",
+      "zhenti:774",
+      "zhenti:835",
+      "zhenti:836",
+      "zhenti:837",
+      "zhenti:838",
+      "zhenti:839",
+      "zhenti:840",
+      "zhenti:841",
       "zhenti:842",
       "zhenti:843",
       "zhenti:844",
       "zhenti:845",
-      "zhenti:846",
-      "zhenti:847",
-      "zhenti:848",
-      "zhenti:849",
-      "zhenti:850",
-      "zhenti:851",
-      "zhenti:852",
-      "related:1142",
-      "exam_point:1143",
-      "exam_point:1144",
-      "exam_point:1145",
-      "exam_point:1146"
+      "related:1130",
+      "exam_point:1131",
+      "exam_point:1132",
+      "exam_point:1133",
+      "exam_point:1134"
     ]
   },
   {
@@ -780,18 +780,18 @@
       "practice:33",
       "practice:34",
       "practice:35",
-      "handwritten:759",
-      "handwritten:760",
-      "handwritten:761",
-      "handwritten:762",
-      "handwritten:763",
-      "zhenti:922",
-      "zhenti:923",
-      "zhenti:924",
-      "related:1147",
-      "related:1148",
-      "exam_point:1149",
-      "exam_point:1150"
+      "handwritten:754",
+      "handwritten:755",
+      "handwritten:756",
+      "handwritten:757",
+      "handwritten:758",
+      "zhenti:915",
+      "zhenti:916",
+      "zhenti:917",
+      "related:1135",
+      "related:1136",
+      "exam_point:1137",
+      "exam_point:1138"
     ]
   },
   {
@@ -872,12 +872,12 @@
       "word:jc-chounuer-shuboshandaozhongbi:尽"
     ],
     "questionIds": [
-      "practice:688",
-      "practice:689",
-      "zhenti:1101",
-      "zhenti:1102",
-      "exam_point:1151",
-      "exam_point:1152"
+      "practice:684",
+      "practice:685",
+      "zhenti:1093",
+      "zhenti:1094",
+      "exam_point:1139",
+      "exam_point:1140"
     ]
   },
   {
@@ -951,12 +951,12 @@
       "word:jc-ljxydxg:渔唱"
     ],
     "questionIds": [
-      "practice:698",
-      "practice:699",
-      "zhenti:1106",
-      "zhenti:1107",
-      "exam_point:1153",
-      "exam_point:1154"
+      "practice:694",
+      "practice:695",
+      "zhenti:1098",
+      "zhenti:1099",
+      "exam_point:1141",
+      "exam_point:1142"
     ]
   },
   {
@@ -1045,14 +1045,14 @@
       "word:jc-boyaguqin:绝"
     ],
     "questionIds": [
-      "practice:700",
-      "practice:701",
-      "zhenti:1108",
-      "zhenti:1109",
-      "exam_point:1155",
-      "exam_point:1156",
-      "exam_point:1157",
-      "exam_point:1158"
+      "practice:696",
+      "practice:697",
+      "zhenti:1100",
+      "zhenti:1101",
+      "exam_point:1143",
+      "exam_point:1144",
+      "exam_point:1145",
+      "exam_point:1146"
     ]
   },
   {
@@ -1165,12 +1165,12 @@
       "practice:316",
       "practice:317",
       "practice:318",
-      "zhenti:938",
-      "related:1159",
-      "exam_point:1160",
-      "exam_point:1161",
-      "exam_point:1162",
-      "exam_point:1163"
+      "zhenti:931",
+      "related:1147",
+      "exam_point:1148",
+      "exam_point:1149",
+      "exam_point:1150",
+      "exam_point:1151"
     ]
   },
   {
@@ -1282,10 +1282,10 @@
       "practice:319",
       "practice:320",
       "practice:321",
-      "related:1164",
-      "exam_point:1165",
-      "exam_point:1166",
-      "exam_point:1167"
+      "related:1152",
+      "exam_point:1153",
+      "exam_point:1154",
+      "exam_point:1155"
     ]
   },
   {
@@ -1497,17 +1497,17 @@
       "practice:125",
       "practice:126",
       "practice:127",
-      "zhenti:780",
-      "zhenti:817",
-      "zhenti:869",
-      "zhenti:870",
-      "zhenti:871",
-      "zhenti:872",
-      "zhenti:873",
-      "zhenti:874",
-      "related:1168",
-      "exam_point:1169",
-      "exam_point:1170"
+      "zhenti:775",
+      "zhenti:810",
+      "zhenti:862",
+      "zhenti:863",
+      "zhenti:864",
+      "zhenti:865",
+      "zhenti:866",
+      "zhenti:867",
+      "related:1156",
+      "exam_point:1157",
+      "exam_point:1158"
     ]
   },
   {
@@ -1598,14 +1598,15 @@
       "word:jc-bieyunjian:灵旗"
     ],
     "questionIds": [
-      "practice:702",
-      "practice:703",
-      "practice:704",
-      "zhenti:1110",
-      "zhenti:1111",
-      "exam_point:1171",
-      "exam_point:1172",
-      "exam_point:1173"
+      "practice:698",
+      "practice:699",
+      "practice:700",
+      "zhenti:1102",
+      "zhenti:1103",
+      "related:1159",
+      "exam_point:1160",
+      "exam_point:1161",
+      "exam_point:1162"
     ]
   },
   {
@@ -1695,10 +1696,10 @@
       "practice:323",
       "practice:324",
       "practice:325",
-      "related:1174",
-      "exam_point:1175",
-      "exam_point:1176",
-      "exam_point:1177"
+      "related:1163",
+      "exam_point:1164",
+      "exam_point:1165",
+      "exam_point:1166"
     ]
   },
   {
@@ -1794,11 +1795,11 @@
       "practice:378",
       "practice:379",
       "practice:380",
-      "zhenti:962",
-      "zhenti:963",
-      "exam_point:1178",
-      "exam_point:1179",
-      "exam_point:1180"
+      "zhenti:954",
+      "zhenti:955",
+      "exam_point:1167",
+      "exam_point:1168",
+      "exam_point:1169"
     ]
   },
   {
@@ -1915,14 +1916,14 @@
     "questionIds": [
       "practice:251",
       "practice:257",
-      "practice:690",
-      "practice:691",
-      "zhenti:1081",
-      "zhenti:1082",
-      "zhenti:1083",
-      "exam_point:1181",
-      "exam_point:1182",
-      "exam_point:1183"
+      "practice:686",
+      "practice:687",
+      "zhenti:1073",
+      "zhenti:1074",
+      "zhenti:1075",
+      "exam_point:1170",
+      "exam_point:1171",
+      "exam_point:1172"
     ]
   },
   {
@@ -2056,23 +2057,16 @@
       "practice:39",
       "practice:40",
       "practice:41",
-      "zhenti:944",
-      "zhenti:945",
-      "zhenti:946",
-      "related:1184",
-      "related:1185",
-      "related:1186",
-      "related:1187",
-      "related:1188",
-      "related:1189",
-      "related:1190",
-      "related:1191",
-      "related:1192",
-      "related:1193",
-      "exam_point:1194",
-      "exam_point:1195",
-      "exam_point:1196",
-      "exam_point:1197"
+      "zhenti:937",
+      "zhenti:938",
+      "zhenti:939",
+      "related:1173",
+      "related:1174",
+      "related:1175",
+      "exam_point:1176",
+      "exam_point:1177",
+      "exam_point:1178",
+      "exam_point:1179"
     ]
   },
   {
@@ -2260,15 +2254,15 @@
       "practice:333",
       "practice:334",
       "practice:335",
-      "related:1198",
-      "exam_point:1199",
-      "exam_point:1200",
-      "exam_point:1201",
-      "exam_point:1202",
-      "exam_point:1203",
-      "exam_point:1204",
-      "exam_point:1205",
-      "exam_point:1206"
+      "related:1180",
+      "exam_point:1181",
+      "exam_point:1182",
+      "exam_point:1183",
+      "exam_point:1184",
+      "exam_point:1185",
+      "exam_point:1186",
+      "exam_point:1187",
+      "exam_point:1188"
     ]
   },
   {
@@ -2390,8 +2384,8 @@
       "zhenti:381",
       "practice:382",
       "practice:383",
-      "exam_point:1207",
-      "exam_point:1208"
+      "exam_point:1189",
+      "exam_point:1190"
     ]
   },
   {
@@ -2475,11 +2469,11 @@
       "practice:384",
       "practice:385",
       "practice:386",
-      "zhenti:1049",
-      "zhenti:1050",
-      "zhenti:1051",
-      "exam_point:1209",
-      "exam_point:1210"
+      "zhenti:1041",
+      "zhenti:1042",
+      "zhenti:1043",
+      "exam_point:1191",
+      "exam_point:1192"
     ]
   },
   {
@@ -2578,12 +2572,12 @@
       "jc-busuanzi-yongmei-6",
       "jc-busuanzi-yongmei-7",
       "practice:149",
-      "practice:681",
-      "practice:682",
-      "zhenti:967",
-      "zhenti:968",
-      "exam_point:1211",
-      "exam_point:1212"
+      "practice:677",
+      "practice:678",
+      "zhenti:959",
+      "zhenti:960",
+      "exam_point:1193",
+      "exam_point:1194"
     ]
   },
   {
@@ -2658,13 +2652,13 @@
     ],
     "questionIds": [
       "practice:148",
-      "practice:683",
-      "practice:684",
-      "zhenti:1116",
-      "zhenti:1117",
-      "exam_point:1213",
-      "exam_point:1214",
-      "exam_point:1215"
+      "practice:679",
+      "practice:680",
+      "zhenti:1107",
+      "zhenti:1108",
+      "exam_point:1195",
+      "exam_point:1196",
+      "exam_point:1197"
     ]
   },
   {
@@ -2767,13 +2761,13 @@
       "practice:393",
       "practice:394",
       "practice:395",
-      "zhenti:964",
-      "zhenti:965",
-      "zhenti:966",
-      "exam_point:1216",
-      "exam_point:1217",
-      "exam_point:1218",
-      "exam_point:1219"
+      "zhenti:956",
+      "zhenti:957",
+      "zhenti:958",
+      "exam_point:1198",
+      "exam_point:1199",
+      "exam_point:1200",
+      "exam_point:1201"
     ]
   },
   {
@@ -2868,10 +2862,10 @@
       "practice:396",
       "practice:397",
       "practice:398",
-      "zhenti:936",
-      "exam_point:1220",
-      "exam_point:1221",
-      "exam_point:1222"
+      "zhenti:929",
+      "exam_point:1202",
+      "exam_point:1203",
+      "exam_point:1204"
     ]
   },
   {
@@ -3005,16 +2999,15 @@
       "practice:137",
       "practice:138",
       "practice:139",
-      "zhenti:781",
-      "zhenti:913",
-      "zhenti:914",
-      "zhenti:915",
-      "related:1223",
-      "related:1224",
-      "exam_point:1225",
-      "exam_point:1226",
-      "exam_point:1227",
-      "exam_point:1228"
+      "zhenti:776",
+      "zhenti:906",
+      "zhenti:907",
+      "zhenti:908",
+      "related:1205",
+      "exam_point:1206",
+      "exam_point:1207",
+      "exam_point:1208",
+      "exam_point:1209"
     ]
   },
   {
@@ -3145,15 +3138,15 @@
       "jc-yongxue-6",
       "jc-yongxue-7",
       "practice:69",
-      "practice:592",
-      "practice:593",
-      "zhenti:969",
-      "zhenti:970",
-      "zhenti:971",
-      "exam_point:1229",
-      "exam_point:1230",
-      "exam_point:1231",
-      "exam_point:1232"
+      "practice:590",
+      "practice:591",
+      "zhenti:961",
+      "zhenti:962",
+      "zhenti:963",
+      "exam_point:1210",
+      "exam_point:1211",
+      "exam_point:1212",
+      "exam_point:1213"
     ]
   },
   {
@@ -3239,12 +3232,12 @@
       "word:jc-xycdl:当年事"
     ],
     "questionIds": [
-      "practice:692",
-      "practice:693",
-      "zhenti:1084",
-      "zhenti:1085",
-      "exam_point:1233",
-      "exam_point:1234"
+      "practice:688",
+      "practice:689",
+      "zhenti:1076",
+      "zhenti:1077",
+      "exam_point:1214",
+      "exam_point:1215"
     ]
   },
   {
@@ -3336,12 +3329,12 @@
       "practice:399",
       "practice:400",
       "practice:401",
-      "zhenti:1054",
-      "zhenti:1055",
-      "zhenti:1056",
-      "exam_point:1235",
-      "exam_point:1236",
-      "exam_point:1237"
+      "zhenti:1046",
+      "zhenti:1047",
+      "zhenti:1048",
+      "exam_point:1216",
+      "exam_point:1217",
+      "exam_point:1218"
     ]
   },
   {
@@ -3465,15 +3458,15 @@
       "practice:81",
       "practice:82",
       "practice:83",
-      "zhenti:931",
-      "zhenti:932",
-      "zhenti:933",
-      "related:1238",
-      "related:1239",
-      "related:1240",
-      "exam_point:1241",
-      "exam_point:1242",
-      "exam_point:1243"
+      "zhenti:924",
+      "zhenti:925",
+      "zhenti:926",
+      "related:1219",
+      "related:1220",
+      "related:1221",
+      "exam_point:1222",
+      "exam_point:1223",
+      "exam_point:1224"
     ]
   },
   {
@@ -3572,9 +3565,9 @@
       "practice:336",
       "practice:337",
       "practice:338",
-      "exam_point:1244",
-      "exam_point:1245",
-      "exam_point:1246"
+      "exam_point:1225",
+      "exam_point:1226",
+      "exam_point:1227"
     ]
   },
   {
@@ -3657,10 +3650,9 @@
       "practice:408",
       "practice:409",
       "practice:410",
-      "zhenti:1247",
-      "exam_point:1248",
-      "exam_point:1249",
-      "exam_point:1250"
+      "exam_point:1228",
+      "exam_point:1229",
+      "exam_point:1230"
     ]
   },
   {
@@ -3749,12 +3741,12 @@
       "practice:413",
       "practice:414",
       "practice:415",
-      "zhenti:1004",
-      "zhenti:1005",
-      "zhenti:1006",
-      "exam_point:1251",
-      "exam_point:1252",
-      "exam_point:1253"
+      "zhenti:996",
+      "zhenti:997",
+      "zhenti:998",
+      "exam_point:1231",
+      "exam_point:1232",
+      "exam_point:1233"
     ]
   },
   {
@@ -3879,10 +3871,10 @@
       "practice:339",
       "practice:340",
       "practice:341",
-      "related:1254",
-      "exam_point:1255",
-      "exam_point:1256",
-      "exam_point:1257"
+      "related:1234",
+      "exam_point:1235",
+      "exam_point:1236",
+      "exam_point:1237"
     ]
   },
   {
@@ -3976,11 +3968,11 @@
       "practice:416",
       "practice:417",
       "practice:418",
-      "zhenti:972",
-      "zhenti:973",
-      "exam_point:1258",
-      "exam_point:1259",
-      "exam_point:1260"
+      "zhenti:964",
+      "zhenti:965",
+      "exam_point:1238",
+      "exam_point:1239",
+      "exam_point:1240"
     ]
   },
   {
@@ -4057,12 +4049,12 @@
       "word:jc-taichangyin:婆娑"
     ],
     "questionIds": [
-      "practice:705",
-      "practice:706",
-      "zhenti:1112",
-      "exam_point:1261",
-      "exam_point:1262",
-      "exam_point:1263"
+      "practice:701",
+      "practice:702",
+      "zhenti:1104",
+      "exam_point:1241",
+      "exam_point:1242",
+      "exam_point:1243"
     ]
   },
   {
@@ -4158,13 +4150,13 @@
       "word:jc-rumengling:争渡"
     ],
     "questionIds": [
-      "practice:654",
-      "practice:655",
-      "zhenti:1120",
-      "zhenti:1121",
-      "exam_point:1264",
-      "exam_point:1265",
-      "exam_point:1266"
+      "practice:650",
+      "practice:651",
+      "zhenti:1109",
+      "zhenti:1110",
+      "exam_point:1244",
+      "exam_point:1245",
+      "exam_point:1246"
     ]
   },
   {
@@ -4254,14 +4246,14 @@
       "word:jc-zijin:挑达"
     ],
     "questionIds": [
-      "practice:674",
-      "practice:675",
-      "zhenti:1089",
-      "zhenti:1090",
-      "exam_point:1267",
-      "exam_point:1268",
-      "exam_point:1269",
-      "exam_point:1270"
+      "practice:670",
+      "practice:671",
+      "zhenti:1081",
+      "zhenti:1082",
+      "exam_point:1247",
+      "exam_point:1248",
+      "exam_point:1249",
+      "exam_point:1250"
     ]
   },
   {
@@ -4370,22 +4362,22 @@
       "practice:22",
       "practice:23",
       "practice:24",
-      "handwritten:749",
-      "handwritten:750",
-      "handwritten:751",
-      "handwritten:752",
-      "zhenti:809",
-      "zhenti:810",
-      "zhenti:811",
-      "zhenti:916",
-      "zhenti:917",
-      "zhenti:918",
-      "related:1271",
-      "related:1272",
-      "related:1273",
-      "exam_point:1274",
-      "exam_point:1275",
-      "exam_point:1276"
+      "handwritten:745",
+      "handwritten:746",
+      "handwritten:747",
+      "handwritten:748",
+      "zhenti:804",
+      "zhenti:805",
+      "zhenti:806",
+      "zhenti:909",
+      "zhenti:910",
+      "zhenti:911",
+      "related:1251",
+      "related:1252",
+      "related:1253",
+      "exam_point:1254",
+      "exam_point:1255",
+      "exam_point:1256"
     ]
   },
   {
@@ -4501,14 +4493,14 @@
       "word:jc-dingfengbo:萧瑟"
     ],
     "questionIds": [
-      "practice:707",
-      "practice:708",
-      "zhenti:1037",
-      "zhenti:1038",
-      "zhenti:1039",
-      "exam_point:1277",
-      "exam_point:1278",
-      "exam_point:1279"
+      "practice:703",
+      "practice:704",
+      "zhenti:1029",
+      "zhenti:1030",
+      "zhenti:1031",
+      "exam_point:1257",
+      "exam_point:1258",
+      "exam_point:1259"
     ]
   },
   {
@@ -4633,10 +4625,10 @@
       "practice:342",
       "practice:343",
       "practice:344",
-      "related:1280",
-      "related:1281",
-      "exam_point:1282",
-      "exam_point:1283"
+      "related:1260",
+      "related:1261",
+      "exam_point:1262",
+      "exam_point:1263"
     ]
   },
   {
@@ -4864,15 +4856,15 @@
       "practice:345",
       "practice:346",
       "practice:347",
-      "zhenti:836",
-      "zhenti:837",
-      "zhenti:838",
-      "zhenti:839",
-      "zhenti:840",
-      "zhenti:841",
-      "exam_point:1284",
-      "exam_point:1285",
-      "exam_point:1286"
+      "zhenti:829",
+      "zhenti:830",
+      "zhenti:831",
+      "zhenti:832",
+      "zhenti:833",
+      "zhenti:834",
+      "exam_point:1264",
+      "exam_point:1265",
+      "exam_point:1266"
     ]
   },
   {
@@ -4985,10 +4977,10 @@
       "practice:348",
       "practice:349",
       "practice:350",
-      "related:1287",
-      "exam_point:1288",
-      "exam_point:1289",
-      "exam_point:1290"
+      "related:1267",
+      "exam_point:1268",
+      "exam_point:1269",
+      "exam_point:1270"
     ]
   },
   {
@@ -5069,9 +5061,8 @@
     "questionIds": [
       "practice:351",
       "practice:352",
-      "related:1291",
-      "exam_point:1292",
-      "exam_point:1293"
+      "exam_point:1271",
+      "exam_point:1272"
     ]
   },
   {
@@ -5322,27 +5313,27 @@
       "practice:25",
       "practice:26",
       "practice:27",
+      "handwritten:733",
+      "handwritten:734",
+      "handwritten:735",
+      "handwritten:736",
       "handwritten:737",
       "handwritten:738",
-      "handwritten:739",
-      "handwritten:740",
-      "handwritten:741",
-      "handwritten:742",
-      "handwritten:776",
-      "handwritten:777",
-      "zhenti:782",
-      "zhenti:800",
-      "zhenti:801",
-      "zhenti:802",
-      "zhenti:803",
-      "zhenti:818",
-      "zhenti:819",
-      "zhenti:820",
-      "zhenti:821",
-      "zhenti:822",
-      "exam_point:1294",
-      "exam_point:1295",
-      "exam_point:1296"
+      "handwritten:771",
+      "handwritten:772",
+      "zhenti:777",
+      "zhenti:795",
+      "zhenti:796",
+      "zhenti:797",
+      "zhenti:798",
+      "zhenti:811",
+      "zhenti:812",
+      "zhenti:813",
+      "zhenti:814",
+      "zhenti:815",
+      "exam_point:1273",
+      "exam_point:1274",
+      "exam_point:1275"
     ]
   },
   {
@@ -5424,11 +5415,11 @@
       "practice:151",
       "practice:419",
       "practice:420",
-      "zhenti:1129",
-      "zhenti:1130",
-      "exam_point:1297",
-      "exam_point:1298",
-      "exam_point:1299"
+      "zhenti:1117",
+      "zhenti:1118",
+      "exam_point:1276",
+      "exam_point:1277",
+      "exam_point:1278"
     ]
   },
   {
@@ -5512,11 +5503,11 @@
       "jc-jihaizashi5-7",
       "practice:421",
       "practice:422",
-      "zhenti:974",
-      "zhenti:975",
-      "zhenti:976",
-      "exam_point:1300",
-      "exam_point:1301"
+      "zhenti:966",
+      "zhenti:967",
+      "zhenti:968",
+      "exam_point:1279",
+      "exam_point:1280"
     ]
   },
   {
@@ -5608,12 +5599,12 @@
       "practice:425",
       "practice:426",
       "practice:427",
-      "zhenti:1098",
-      "zhenti:1099",
-      "zhenti:1100",
-      "exam_point:1302",
-      "exam_point:1303",
-      "exam_point:1304"
+      "zhenti:1090",
+      "zhenti:1091",
+      "zhenti:1092",
+      "exam_point:1281",
+      "exam_point:1282",
+      "exam_point:1283"
     ]
   },
   {
@@ -5704,11 +5695,10 @@
       "word:jc-tingzhongyouqishu:荣"
     ],
     "questionIds": [
-      "practice:656",
-      "practice:657",
-      "zhenti:1122",
-      "exam_point:1305",
-      "exam_point:1306"
+      "practice:652",
+      "practice:653",
+      "exam_point:1284",
+      "exam_point:1285"
     ]
   },
   {
@@ -5805,16 +5795,16 @@
       "word:jc-shiwei:躬"
     ],
     "questionIds": [
-      "practice:676",
-      "practice:677",
-      "zhenti:1091",
-      "zhenti:1092",
-      "exam_point:1307",
-      "exam_point:1308",
-      "exam_point:1309",
-      "exam_point:1310",
-      "exam_point:1311",
-      "exam_point:1312"
+      "practice:672",
+      "practice:673",
+      "zhenti:1083",
+      "zhenti:1084",
+      "exam_point:1286",
+      "exam_point:1287",
+      "exam_point:1288",
+      "exam_point:1289",
+      "exam_point:1290",
+      "exam_point:1291"
     ]
   },
   {
@@ -5936,16 +5926,16 @@
       "word:jc-ddzd:道"
     ],
     "questionIds": [
+      "practice:638",
+      "practice:639",
+      "practice:640",
+      "practice:641",
       "practice:642",
-      "practice:643",
-      "practice:644",
-      "practice:645",
-      "practice:646",
-      "zhenti:1031",
-      "zhenti:1032",
-      "zhenti:1033",
-      "exam_point:1313",
-      "exam_point:1314"
+      "zhenti:1023",
+      "zhenti:1024",
+      "zhenti:1025",
+      "exam_point:1292",
+      "exam_point:1293"
     ]
   },
   {
@@ -6174,21 +6164,21 @@
       "practice:186",
       "practice:187",
       "practice:188",
+      "handwritten:763",
+      "handwritten:764",
+      "handwritten:765",
+      "handwritten:766",
+      "handwritten:767",
       "handwritten:768",
-      "handwritten:769",
-      "handwritten:770",
-      "handwritten:771",
-      "handwritten:772",
-      "handwritten:773",
-      "zhenti:783",
-      "zhenti:784",
-      "zhenti:812",
-      "zhenti:919",
-      "zhenti:920",
-      "zhenti:921",
-      "exam_point:1315",
-      "exam_point:1316",
-      "exam_point:1317"
+      "zhenti:778",
+      "zhenti:779",
+      "zhenti:807",
+      "zhenti:912",
+      "zhenti:913",
+      "zhenti:914",
+      "exam_point:1294",
+      "exam_point:1295",
+      "exam_point:1296"
     ]
   },
   {
@@ -6278,13 +6268,13 @@
     ],
     "questionIds": [
       "practice:261",
-      "practice:694",
-      "practice:695",
-      "zhenti:1043",
-      "zhenti:1044",
-      "zhenti:1045",
-      "exam_point:1318",
-      "exam_point:1319"
+      "practice:690",
+      "practice:691",
+      "zhenti:1035",
+      "zhenti:1036",
+      "zhenti:1037",
+      "exam_point:1297",
+      "exam_point:1298"
     ]
   },
   {
@@ -6374,23 +6364,19 @@
       "practice:356",
       "practice:357",
       "practice:358",
-      "zhenti:939",
-      "related:1320",
-      "related:1321",
-      "related:1322",
-      "related:1323",
-      "related:1324",
-      "related:1325",
-      "related:1326",
-      "related:1327",
-      "related:1328",
-      "related:1329",
-      "related:1330",
-      "exam_point:1331",
-      "exam_point:1332",
-      "exam_point:1333",
-      "exam_point:1334",
-      "exam_point:1335"
+      "zhenti:932",
+      "related:1299",
+      "related:1300",
+      "related:1301",
+      "related:1302",
+      "related:1303",
+      "related:1304",
+      "related:1305",
+      "exam_point:1306",
+      "exam_point:1307",
+      "exam_point:1308",
+      "exam_point:1309",
+      "exam_point:1310"
     ]
   },
   {
@@ -6481,20 +6467,20 @@
       "jc-chunwang-8",
       "practice:106",
       "practice:112",
+      "practice:630",
+      "practice:631",
+      "practice:632",
+      "practice:633",
       "practice:634",
       "practice:635",
       "practice:636",
       "practice:637",
-      "practice:638",
-      "practice:639",
-      "practice:640",
-      "practice:641",
-      "zhenti:947",
-      "zhenti:948",
-      "zhenti:949",
-      "exam_point:1336",
-      "exam_point:1337",
-      "exam_point:1338"
+      "zhenti:940",
+      "zhenti:941",
+      "zhenti:942",
+      "exam_point:1311",
+      "exam_point:1312",
+      "exam_point:1313"
     ]
   },
   {
@@ -6586,13 +6572,13 @@
       "practice:430",
       "practice:431",
       "practice:432",
-      "zhenti:1074",
-      "zhenti:1075",
-      "zhenti:1076",
-      "exam_point:1339",
-      "exam_point:1340",
-      "exam_point:1341",
-      "exam_point:1342"
+      "zhenti:1066",
+      "zhenti:1067",
+      "zhenti:1068",
+      "exam_point:1314",
+      "exam_point:1315",
+      "exam_point:1316",
+      "exam_point:1317"
     ]
   },
   {
@@ -6791,19 +6777,18 @@
       "practice:102",
       "practice:103",
       "practice:104",
-      "zhenti:785",
+      "zhenti:780",
+      "zhenti:876",
+      "zhenti:877",
+      "zhenti:878",
+      "zhenti:879",
+      "zhenti:880",
+      "zhenti:881",
+      "zhenti:882",
       "zhenti:883",
       "zhenti:884",
-      "zhenti:885",
-      "zhenti:886",
-      "zhenti:887",
-      "zhenti:888",
-      "zhenti:889",
-      "zhenti:890",
-      "zhenti:891",
-      "related:1343",
-      "related:1344",
-      "exam_point:1345"
+      "related:1318",
+      "exam_point:1319"
     ]
   },
   {
@@ -6901,14 +6886,14 @@
       "practice:435",
       "practice:436",
       "practice:437",
-      "zhenti:1052",
-      "zhenti:1053",
-      "exam_point:1346",
-      "exam_point:1347",
-      "exam_point:1348",
-      "exam_point:1349",
-      "exam_point:1350",
-      "exam_point:1351"
+      "zhenti:1044",
+      "zhenti:1045",
+      "exam_point:1320",
+      "exam_point:1321",
+      "exam_point:1322",
+      "exam_point:1323",
+      "exam_point:1324",
+      "exam_point:1325"
     ]
   },
   {
@@ -7046,22 +7031,22 @@
       "practice:446",
       "practice:447",
       "practice:448",
-      "practice:449",
-      "practice:450",
-      "zhenti:950",
-      "zhenti:951",
-      "zhenti:952",
-      "exam_point:1352",
-      "exam_point:1353",
-      "exam_point:1354",
-      "exam_point:1355",
-      "exam_point:1356",
-      "exam_point:1357",
-      "exam_point:1358",
-      "exam_point:1359",
-      "exam_point:1360",
-      "exam_point:1361",
-      "exam_point:1362"
+      "zhenti:943",
+      "zhenti:944",
+      "zhenti:945",
+      "related:1326",
+      "related:1327",
+      "exam_point:1328",
+      "exam_point:1329",
+      "exam_point:1330",
+      "exam_point:1331",
+      "exam_point:1332",
+      "exam_point:1333",
+      "exam_point:1334",
+      "exam_point:1335",
+      "exam_point:1336",
+      "exam_point:1337",
+      "exam_point:1338"
     ]
   },
   {
@@ -7167,15 +7152,15 @@
       "jc-wangdongtinghushangzhangchengxiang-5",
       "jc-wangdongtinghushangzhangchengxiang-6",
       "jc-wangdongtinghushangzhangchengxiang-7",
+      "practice:449",
+      "practice:450",
       "practice:451",
       "practice:452",
       "practice:453",
-      "practice:454",
-      "practice:455",
-      "exam_point:1363",
-      "exam_point:1364",
-      "exam_point:1365",
-      "exam_point:1366"
+      "exam_point:1339",
+      "exam_point:1340",
+      "exam_point:1341",
+      "exam_point:1342"
     ]
   },
   {
@@ -7300,18 +7285,17 @@
       "word:jc-chao-tian-zi-yong-la-ba:乱"
     ],
     "questionIds": [
-      "practice:709",
-      "practice:710",
-      "zhenti:1113",
-      "zhenti:1114",
-      "exam_point:1367",
-      "exam_point:1368",
-      "exam_point:1369",
-      "exam_point:1370",
-      "exam_point:1371",
-      "exam_point:1372",
-      "exam_point:1373",
-      "exam_point:1374"
+      "practice:705",
+      "practice:706",
+      "zhenti:1105",
+      "exam_point:1343",
+      "exam_point:1344",
+      "exam_point:1345",
+      "exam_point:1346",
+      "exam_point:1347",
+      "exam_point:1348",
+      "exam_point:1349",
+      "exam_point:1350"
     ]
   },
   {
@@ -7487,13 +7471,13 @@
       "practice:192",
       "practice:193",
       "practice:194",
-      "zhenti:786",
-      "zhenti:787",
-      "zhenti:934",
-      "zhenti:935",
-      "exam_point:1375",
-      "exam_point:1376",
-      "exam_point:1377"
+      "zhenti:781",
+      "zhenti:782",
+      "zhenti:927",
+      "zhenti:928",
+      "exam_point:1351",
+      "exam_point:1352",
+      "exam_point:1353"
     ]
   },
   {
@@ -7604,17 +7588,17 @@
       "word:jc-qirenyoutian:其"
     ],
     "questionIds": [
+      "practice:592",
+      "practice:593",
       "practice:594",
       "practice:595",
-      "practice:596",
-      "practice:597",
-      "zhenti:1063",
-      "zhenti:1064",
-      "zhenti:1065",
-      "related:1378",
-      "exam_point:1379",
-      "exam_point:1380",
-      "exam_point:1381"
+      "zhenti:1055",
+      "zhenti:1056",
+      "zhenti:1057",
+      "related:1354",
+      "exam_point:1355",
+      "exam_point:1356",
+      "exam_point:1357"
     ]
   },
   {
@@ -7751,14 +7735,14 @@
       "jc-hezhouji-6",
       "practice:42",
       "practice:43",
-      "zhenti:788",
-      "zhenti:910",
-      "zhenti:911",
-      "zhenti:912",
-      "related:1382",
-      "exam_point:1383",
-      "exam_point:1384",
-      "exam_point:1385"
+      "zhenti:783",
+      "zhenti:903",
+      "zhenti:904",
+      "zhenti:905",
+      "related:1358",
+      "exam_point:1359",
+      "exam_point:1360",
+      "exam_point:1361"
     ]
   },
   {
@@ -7944,23 +7928,23 @@
       "practice:213",
       "practice:214",
       "practice:215",
-      "handwritten:745",
-      "handwritten:746",
-      "handwritten:747",
-      "handwritten:748",
-      "zhenti:789",
-      "zhenti:807",
-      "zhenti:808",
-      "zhenti:903",
-      "zhenti:904",
-      "zhenti:905",
-      "zhenti:906",
-      "related:1386",
-      "related:1387",
-      "related:1388",
-      "related:1389",
-      "exam_point:1390",
-      "exam_point:1391"
+      "handwritten:741",
+      "handwritten:742",
+      "handwritten:743",
+      "handwritten:744",
+      "zhenti:784",
+      "zhenti:802",
+      "zhenti:803",
+      "zhenti:896",
+      "zhenti:897",
+      "zhenti:898",
+      "zhenti:899",
+      "related:1362",
+      "related:1363",
+      "related:1364",
+      "related:1365",
+      "exam_point:1366",
+      "exam_point:1367"
     ]
   },
   {
@@ -8048,17 +8032,17 @@
       "word:liangfuxing-caozhi:宇"
     ],
     "questionIds": [
+      "practice:454",
+      "practice:455",
       "practice:456",
       "practice:457",
       "practice:458",
       "practice:459",
       "practice:460",
-      "practice:461",
-      "practice:462",
-      "zhenti:1123",
-      "exam_point:1392",
-      "exam_point:1393",
-      "exam_point:1394"
+      "zhenti:1111",
+      "exam_point:1368",
+      "exam_point:1369",
+      "exam_point:1370"
     ]
   },
   {
@@ -8165,14 +8149,14 @@
     "questionIds": [
       "practice:14",
       "practice:16",
-      "practice:590",
-      "practice:591",
-      "zhenti:1034",
-      "zhenti:1035",
-      "zhenti:1036",
-      "exam_point:1395",
-      "exam_point:1396",
-      "exam_point:1397"
+      "practice:588",
+      "practice:589",
+      "zhenti:1026",
+      "zhenti:1027",
+      "zhenti:1028",
+      "exam_point:1371",
+      "exam_point:1372",
+      "exam_point:1373"
     ]
   },
   {
@@ -8342,9 +8326,9 @@
       "practice:359",
       "practice:360",
       "practice:361",
-      "exam_point:1398",
-      "exam_point:1399",
-      "exam_point:1400"
+      "exam_point:1374",
+      "exam_point:1375",
+      "exam_point:1376"
     ]
   },
   {
@@ -8418,16 +8402,16 @@
       "word:jc-jiangnanfengliguinian:几度"
     ],
     "questionIds": [
+      "practice:461",
+      "practice:462",
       "practice:463",
       "practice:464",
-      "practice:465",
-      "practice:466",
-      "zhenti:1069",
-      "zhenti:1070",
-      "zhenti:1071",
-      "exam_point:1401",
-      "exam_point:1402",
-      "exam_point:1403"
+      "zhenti:1061",
+      "zhenti:1062",
+      "zhenti:1063",
+      "exam_point:1377",
+      "exam_point:1378",
+      "exam_point:1379"
     ]
   },
   {
@@ -8553,9 +8537,9 @@
       "practice:362",
       "practice:363",
       "practice:364",
-      "exam_point:1404",
-      "exam_point:1405",
-      "exam_point:1406"
+      "exam_point:1380",
+      "exam_point:1381",
+      "exam_point:1382"
     ]
   },
   {
@@ -8643,14 +8627,14 @@
       "jc-boqinhuai-6",
       "jc-boqinhuai-7",
       "jc-boqinhuai-8",
+      "practice:607",
+      "practice:608",
       "practice:609",
-      "practice:610",
-      "practice:611",
-      "zhenti:977",
-      "zhenti:978",
-      "zhenti:979",
-      "exam_point:1407",
-      "exam_point:1408"
+      "zhenti:969",
+      "zhenti:970",
+      "zhenti:971",
+      "exam_point:1383",
+      "exam_point:1384"
     ]
   },
   {
@@ -8778,17 +8762,17 @@
       "word:jc-huoban:殊不"
     ],
     "questionIds": [
-      "practice:631",
-      "practice:632",
-      "practice:633",
-      "zhenti:1060",
-      "zhenti:1061",
-      "zhenti:1062",
-      "exam_point:1409",
-      "exam_point:1410",
-      "exam_point:1411",
-      "exam_point:1412",
-      "exam_point:1413"
+      "practice:627",
+      "practice:628",
+      "practice:629",
+      "zhenti:1052",
+      "zhenti:1053",
+      "zhenti:1054",
+      "exam_point:1385",
+      "exam_point:1386",
+      "exam_point:1387",
+      "exam_point:1388",
+      "exam_point:1389"
     ]
   },
   {
@@ -8860,10 +8844,10 @@
       "word:jc-huanxisha-mmqh:宝帘"
     ],
     "questionIds": [
-      "practice:696",
-      "practice:697",
-      "zhenti:1105",
-      "exam_point:1414"
+      "practice:692",
+      "practice:693",
+      "zhenti:1097",
+      "exam_point:1390"
     ]
   },
   {
@@ -8937,12 +8921,12 @@
       "word:jc-huanxisha-sxysnpx:那畔"
     ],
     "questionIds": [
-      "practice:711",
-      "practice:712",
-      "zhenti:1115",
-      "exam_point:1415",
-      "exam_point:1416",
-      "exam_point:1417"
+      "practice:707",
+      "practice:708",
+      "zhenti:1106",
+      "exam_point:1391",
+      "exam_point:1392",
+      "exam_point:1393"
     ]
   },
   {
@@ -9027,6 +9011,8 @@
       "word:jc-huanxisha-yiquxincijiuyibei:亭台"
     ],
     "questionIds": [
+      "practice:465",
+      "practice:466",
       "practice:467",
       "practice:468",
       "practice:469",
@@ -9037,13 +9023,11 @@
       "practice:474",
       "practice:475",
       "practice:476",
-      "practice:477",
-      "practice:478",
-      "zhenti:1096",
-      "zhenti:1097",
-      "exam_point:1418",
-      "exam_point:1419",
-      "exam_point:1420"
+      "zhenti:1088",
+      "zhenti:1089",
+      "exam_point:1394",
+      "exam_point:1395",
+      "exam_point:1396"
     ]
   },
   {
@@ -9161,13 +9145,12 @@
       "word:jc-yujiaao-tianjieyuntaolianxiaowu:举"
     ],
     "questionIds": [
-      "zhenti:1093",
-      "zhenti:1094",
-      "zhenti:1095",
-      "related:1421",
-      "exam_point:1422",
-      "exam_point:1423",
-      "exam_point:1424"
+      "zhenti:1085",
+      "zhenti:1086",
+      "zhenti:1087",
+      "exam_point:1397",
+      "exam_point:1398",
+      "exam_point:1399"
     ]
   },
   {
@@ -9275,13 +9258,13 @@
       "practice:233",
       "practice:234",
       "practice:240",
-      "practice:713",
-      "practice:714",
-      "zhenti:980",
-      "zhenti:981",
-      "zhenti:982",
-      "exam_point:1425",
-      "exam_point:1426"
+      "practice:709",
+      "practice:710",
+      "zhenti:972",
+      "zhenti:973",
+      "zhenti:974",
+      "exam_point:1400",
+      "exam_point:1401"
     ]
   },
   {
@@ -9387,16 +9370,16 @@
       "jc-dujingmensongbie-6",
       "jc-dujingmensongbie-7",
       "practice:159",
+      "practice:477",
+      "practice:478",
       "practice:479",
-      "practice:480",
-      "practice:481",
-      "zhenti:983",
-      "zhenti:984",
-      "zhenti:985",
-      "exam_point:1427",
-      "exam_point:1428",
-      "exam_point:1429",
-      "exam_point:1430"
+      "zhenti:975",
+      "zhenti:976",
+      "zhenti:977",
+      "exam_point:1402",
+      "exam_point:1403",
+      "exam_point:1404",
+      "exam_point:1405"
     ]
   },
   {
@@ -9514,6 +9497,8 @@
       "jc-youshanxicun-7",
       "practice:132",
       "practice:133",
+      "practice:616",
+      "practice:617",
       "practice:618",
       "practice:619",
       "practice:620",
@@ -9523,16 +9508,13 @@
       "practice:624",
       "practice:625",
       "practice:626",
-      "practice:627",
-      "practice:628",
-      "practice:629",
-      "practice:630",
-      "zhenti:986",
-      "zhenti:987",
-      "zhenti:988",
-      "exam_point:1431",
-      "exam_point:1432",
-      "exam_point:1433"
+      "zhenti:978",
+      "zhenti:979",
+      "zhenti:980",
+      "related:1406",
+      "exam_point:1407",
+      "exam_point:1408",
+      "exam_point:1409"
     ]
   },
   {
@@ -9701,18 +9683,18 @@
       "practice:219",
       "practice:220",
       "practice:221",
-      "handwritten:764",
-      "handwritten:765",
-      "handwritten:766",
-      "handwritten:767",
-      "zhenti:792",
-      "zhenti:832",
-      "zhenti:833",
-      "zhenti:834",
-      "zhenti:835",
-      "exam_point:1434",
-      "exam_point:1435",
-      "exam_point:1436"
+      "handwritten:759",
+      "handwritten:760",
+      "handwritten:761",
+      "handwritten:762",
+      "zhenti:787",
+      "zhenti:825",
+      "zhenti:826",
+      "zhenti:827",
+      "zhenti:828",
+      "exam_point:1410",
+      "exam_point:1411",
+      "exam_point:1412"
     ]
   },
   {
@@ -9850,14 +9832,14 @@
       "word:jc-manjianghong-xiaozhujinghua:青衫湿"
     ],
     "questionIds": [
+      "practice:480",
+      "practice:481",
       "practice:482",
-      "practice:483",
-      "practice:484",
-      "zhenti:1040",
-      "zhenti:1041",
-      "zhenti:1042",
-      "exam_point:1437",
-      "exam_point:1438"
+      "zhenti:1032",
+      "zhenti:1033",
+      "zhenti:1034",
+      "exam_point:1413",
+      "exam_point:1414"
     ]
   },
   {
@@ -9942,6 +9924,8 @@
       "word:jc-tongguan:山入潼关"
     ],
     "questionIds": [
+      "practice:596",
+      "practice:597",
       "practice:598",
       "practice:599",
       "practice:600",
@@ -9951,14 +9935,12 @@
       "practice:604",
       "practice:605",
       "practice:606",
-      "practice:607",
-      "practice:608",
-      "zhenti:1131",
-      "exam_point:1439",
-      "exam_point:1440",
-      "exam_point:1441",
-      "exam_point:1442",
-      "exam_point:1443"
+      "zhenti:1119",
+      "exam_point:1415",
+      "exam_point:1416",
+      "exam_point:1417",
+      "exam_point:1418",
+      "exam_point:1419"
     ]
   },
   {
@@ -10098,6 +10080,8 @@
       "ai-lian-shuo-6",
       "practice:3",
       "practice:166",
+      "practice:483",
+      "practice:484",
       "practice:485",
       "practice:486",
       "practice:487",
@@ -10105,15 +10089,15 @@
       "practice:489",
       "practice:490",
       "practice:491",
-      "practice:492",
-      "practice:493",
-      "zhenti:877",
-      "zhenti:881",
-      "zhenti:882",
-      "exam_point:1444",
-      "exam_point:1445",
-      "exam_point:1446",
-      "exam_point:1447"
+      "zhenti:870",
+      "zhenti:874",
+      "zhenti:875",
+      "related:1420",
+      "related:1421",
+      "exam_point:1422",
+      "exam_point:1423",
+      "exam_point:1424",
+      "exam_point:1425"
     ]
   },
   {
@@ -10247,15 +10231,15 @@
       "practice:222",
       "practice:223",
       "practice:224",
-      "zhenti:989",
-      "zhenti:990",
-      "zhenti:991",
-      "related:1448",
-      "related:1449",
-      "related:1450",
-      "exam_point:1451",
-      "exam_point:1452",
-      "exam_point:1453"
+      "zhenti:981",
+      "zhenti:982",
+      "zhenti:983",
+      "related:1426",
+      "related:1427",
+      "related:1428",
+      "exam_point:1429",
+      "exam_point:1430",
+      "exam_point:1431"
     ]
   },
   {
@@ -10405,17 +10389,15 @@
       "practice:365",
       "practice:366",
       "practice:367",
-      "zhenti:793",
-      "zhenti:813",
-      "zhenti:814",
-      "zhenti:907",
-      "zhenti:908",
-      "zhenti:909",
-      "related:1454",
-      "related:1455",
-      "exam_point:1456",
-      "exam_point:1457",
-      "exam_point:1458"
+      "zhenti:788",
+      "zhenti:900",
+      "zhenti:901",
+      "zhenti:902",
+      "related:1432",
+      "related:1433",
+      "exam_point:1434",
+      "exam_point:1435",
+      "exam_point:1436"
     ]
   },
   {
@@ -10493,17 +10475,17 @@
       "jc-dengfeilaifeng-6",
       "jc-dengfeilaifeng-7",
       "practice:128",
+      "practice:610",
+      "practice:611",
       "practice:612",
       "practice:613",
       "practice:614",
       "practice:615",
-      "practice:616",
-      "practice:617",
-      "zhenti:992",
-      "zhenti:993",
-      "exam_point:1459",
-      "exam_point:1460",
-      "exam_point:1461"
+      "zhenti:984",
+      "zhenti:985",
+      "exam_point:1437",
+      "exam_point:1438",
+      "exam_point:1439"
     ]
   },
   {
@@ -10656,14 +10638,14 @@
       "jc-baixuegaosongwupanguanguijing-7",
       "jc-baixuegaosongwupanguanguijing-8",
       "practice:252",
-      "practice:721",
-      "practice:722",
-      "zhenti:994",
-      "zhenti:995",
-      "zhenti:996",
-      "exam_point:1462",
-      "exam_point:1463",
-      "exam_point:1464"
+      "practice:717",
+      "practice:718",
+      "zhenti:986",
+      "zhenti:987",
+      "zhenti:988",
+      "exam_point:1440",
+      "exam_point:1441",
+      "exam_point:1442"
     ]
   },
   {
@@ -10753,13 +10735,13 @@
       "jc-xiangjianhuan-5",
       "jc-xiangjianhuan-6",
       "jc-xiangjianhuan-7",
-      "practice:735",
-      "practice:736",
-      "zhenti:1010",
-      "zhenti:1011",
-      "zhenti:1012",
-      "exam_point:1465",
-      "exam_point:1466"
+      "practice:731",
+      "practice:732",
+      "zhenti:1002",
+      "zhenti:1003",
+      "zhenti:1004",
+      "exam_point:1443",
+      "exam_point:1444"
     ]
   },
   {
@@ -10830,6 +10812,8 @@
       "word:xiangjianhuan-jinlingchengshangxilou:倚"
     ],
     "questionIds": [
+      "practice:492",
+      "practice:493",
       "practice:494",
       "practice:495",
       "practice:496",
@@ -10839,12 +10823,10 @@
       "practice:500",
       "practice:501",
       "practice:502",
-      "practice:503",
-      "practice:504",
-      "zhenti:1124",
-      "zhenti:1125",
-      "exam_point:1467",
-      "exam_point:1468"
+      "zhenti:1112",
+      "zhenti:1113",
+      "exam_point:1445",
+      "exam_point:1446"
     ]
   },
   {
@@ -10991,6 +10973,8 @@
       "loushiming-6",
       "practice:164",
       "practice:165",
+      "practice:503",
+      "practice:504",
       "practice:505",
       "practice:506",
       "practice:507",
@@ -11000,16 +10984,17 @@
       "practice:511",
       "practice:512",
       "practice:513",
-      "practice:514",
-      "practice:515",
-      "zhenti:875",
-      "zhenti:876",
-      "zhenti:878",
-      "zhenti:879",
-      "zhenti:880",
-      "exam_point:1469",
-      "exam_point:1470",
-      "exam_point:1471"
+      "zhenti:868",
+      "zhenti:869",
+      "zhenti:871",
+      "zhenti:872",
+      "zhenti:873",
+      "related:1447",
+      "related:1448",
+      "related:1449",
+      "exam_point:1450",
+      "exam_point:1451",
+      "exam_point:1452"
     ]
   },
   {
@@ -11138,15 +11123,15 @@
       "da_xie_zhong_shu_shu-5",
       "da_xie_zhong_shu_shu-6",
       "practice:225",
+      "practice:514",
+      "practice:515",
       "practice:516",
-      "practice:517",
-      "practice:518",
-      "zhenti:925",
-      "zhenti:926",
-      "zhenti:927",
-      "exam_point:1472",
-      "exam_point:1473",
-      "exam_point:1474"
+      "zhenti:918",
+      "zhenti:919",
+      "zhenti:920",
+      "exam_point:1453",
+      "exam_point:1454",
+      "exam_point:1455"
     ]
   },
   {
@@ -11250,16 +11235,16 @@
     "questionIds": [
       "practice:140",
       "practice:145",
+      "practice:517",
+      "practice:518",
       "practice:519",
       "practice:520",
-      "practice:521",
-      "practice:522",
-      "zhenti:1046",
-      "zhenti:1047",
-      "zhenti:1048",
-      "exam_point:1475",
-      "exam_point:1476",
-      "exam_point:1477"
+      "zhenti:1038",
+      "zhenti:1039",
+      "zhenti:1040",
+      "exam_point:1456",
+      "exam_point:1457",
+      "exam_point:1458"
     ]
   },
   {
@@ -11352,14 +11337,14 @@
       "jc-pozhenzi-7",
       "practice:236",
       "practice:241",
-      "practice:733",
-      "practice:734",
-      "zhenti:1013",
-      "zhenti:1014",
-      "zhenti:1015",
-      "exam_point:1478",
-      "exam_point:1479",
-      "exam_point:1480"
+      "practice:729",
+      "practice:730",
+      "zhenti:1005",
+      "zhenti:1006",
+      "zhenti:1007",
+      "exam_point:1459",
+      "exam_point:1460",
+      "exam_point:1461"
     ]
   },
   {
@@ -11423,13 +11408,13 @@
       "word:jc-qiuciqiyi:碧霄"
     ],
     "questionIds": [
-      "practice:523",
-      "practice:524",
-      "zhenti:1132",
-      "zhenti:1133",
-      "exam_point:1481",
-      "exam_point:1482",
-      "exam_point:1483"
+      "practice:521",
+      "practice:522",
+      "zhenti:1120",
+      "zhenti:1121",
+      "exam_point:1462",
+      "exam_point:1463",
+      "exam_point:1464"
     ]
   },
   {
@@ -11523,15 +11508,15 @@
       "practice:119",
       "practice:120",
       "practice:121",
-      "practice:715",
-      "practice:716",
-      "practice:717",
-      "practice:718",
-      "zhenti:1066",
-      "zhenti:1067",
-      "zhenti:1068",
-      "related:1484",
-      "exam_point:1485"
+      "practice:711",
+      "practice:712",
+      "practice:713",
+      "practice:714",
+      "zhenti:1058",
+      "zhenti:1059",
+      "zhenti:1060",
+      "related:1465",
+      "exam_point:1466"
     ]
   },
   {
@@ -11609,13 +11594,15 @@
       "word:jc-zhuliguan:长啸"
     ],
     "questionIds": [
-      "practice:525",
-      "practice:526",
-      "zhenti:1072",
-      "zhenti:1073",
-      "exam_point:1486",
-      "exam_point:1487",
-      "exam_point:1488"
+      "practice:523",
+      "practice:524",
+      "zhenti:1064",
+      "zhenti:1065",
+      "related:1467",
+      "related:1468",
+      "exam_point:1469",
+      "exam_point:1470",
+      "exam_point:1471"
     ]
   },
   {
@@ -11690,19 +11677,19 @@
       "word:jc-yueke:灯花"
     ],
     "questionIds": [
+      "practice:525",
+      "practice:526",
       "practice:527",
       "practice:528",
       "practice:529",
       "practice:530",
       "practice:531",
       "practice:532",
-      "practice:533",
-      "practice:534",
-      "zhenti:1077",
-      "zhenti:1078",
-      "exam_point:1489",
-      "exam_point:1490",
-      "exam_point:1491"
+      "zhenti:1069",
+      "zhenti:1070",
+      "exam_point:1472",
+      "exam_point:1473",
+      "exam_point:1474"
     ]
   },
   {
@@ -11841,18 +11828,18 @@
       "practice:141",
       "practice:143",
       "practice:146",
+      "practice:661",
+      "practice:662",
+      "practice:663",
+      "practice:664",
       "practice:665",
       "practice:666",
       "practice:667",
-      "practice:668",
-      "practice:669",
-      "practice:670",
-      "practice:671",
-      "zhenti:997",
-      "zhenti:998",
-      "exam_point:1492",
-      "exam_point:1493",
-      "exam_point:1494"
+      "zhenti:989",
+      "zhenti:990",
+      "exam_point:1475",
+      "exam_point:1476",
+      "exam_point:1477"
     ]
   },
   {
@@ -11953,15 +11940,15 @@
     "questionIds": [
       "practice:153",
       "practice:155",
-      "practice:662",
-      "practice:663",
-      "practice:664",
-      "zhenti:1025",
-      "zhenti:1026",
-      "zhenti:1027",
-      "exam_point:1495",
-      "exam_point:1496",
-      "exam_point:1497"
+      "practice:658",
+      "practice:659",
+      "practice:660",
+      "zhenti:1017",
+      "zhenti:1018",
+      "zhenti:1019",
+      "exam_point:1478",
+      "exam_point:1479",
+      "exam_point:1480"
     ]
   },
   {
@@ -12046,15 +12033,15 @@
     ],
     "questionIds": [
       "practice:1",
-      "practice:678",
-      "practice:679",
-      "practice:680",
-      "zhenti:1028",
-      "zhenti:1029",
-      "zhenti:1030",
-      "exam_point:1498",
-      "exam_point:1499",
-      "exam_point:1500"
+      "practice:674",
+      "practice:675",
+      "practice:676",
+      "zhenti:1020",
+      "zhenti:1021",
+      "zhenti:1022",
+      "exam_point:1481",
+      "exam_point:1482",
+      "exam_point:1483"
     ]
   },
   {
@@ -12128,17 +12115,17 @@
       "word:jc-xingjunjirisichanganguyuan:傍"
     ],
     "questionIds": [
+      "practice:533",
+      "practice:534",
       "practice:535",
       "practice:536",
       "practice:537",
       "practice:538",
       "practice:539",
-      "practice:540",
-      "practice:541",
-      "zhenti:1134",
-      "exam_point:1501",
-      "exam_point:1502",
-      "exam_point:1503"
+      "zhenti:1122",
+      "exam_point:1484",
+      "exam_point:1485",
+      "exam_point:1486"
     ]
   },
   {
@@ -12269,17 +12256,17 @@
       "xinglunan-qiyi-5",
       "xinglunan-qiyi-6",
       "xinglunan-qiyi-7",
+      "practice:540",
+      "practice:541",
       "practice:542",
       "practice:543",
-      "practice:544",
-      "practice:545",
-      "zhenti:953",
-      "zhenti:954",
-      "zhenti:955",
-      "exam_point:1504",
-      "exam_point:1505",
-      "exam_point:1506",
-      "exam_point:1507"
+      "zhenti:946",
+      "zhenti:947",
+      "zhenti:948",
+      "exam_point:1487",
+      "exam_point:1488",
+      "exam_point:1489",
+      "exam_point:1490"
     ]
   },
   {
@@ -12424,18 +12411,18 @@
       "jc-jichengtiansiyeyou-6",
       "jc-jichengtiansiyeyou-7",
       "practice:226",
+      "practice:544",
+      "practice:545",
       "practice:546",
-      "practice:547",
-      "practice:548",
-      "zhenti:853",
-      "zhenti:854",
-      "zhenti:855",
-      "zhenti:856",
-      "zhenti:857",
-      "exam_point:1508",
-      "exam_point:1509",
-      "exam_point:1510",
-      "exam_point:1511"
+      "zhenti:846",
+      "zhenti:847",
+      "zhenti:848",
+      "zhenti:849",
+      "zhenti:850",
+      "exam_point:1491",
+      "exam_point:1492",
+      "exam_point:1493",
+      "exam_point:1494"
     ]
   },
   {
@@ -12562,15 +12549,15 @@
       "shiciwushou-yinjiu-5",
       "shiciwushou-yinjiu-6",
       "shiciwushou-yinjiu-7",
+      "practice:547",
+      "practice:548",
       "practice:549",
       "practice:550",
       "practice:551",
-      "practice:552",
-      "practice:553",
-      "zhenti:937",
-      "exam_point:1512",
-      "exam_point:1513",
-      "exam_point:1514"
+      "zhenti:930",
+      "exam_point:1495",
+      "exam_point:1496",
+      "exam_point:1497"
     ]
   },
   {
@@ -12701,8 +12688,9 @@
       "zhenti:175",
       "practice:176",
       "practice:177",
-      "exam_point:1515",
-      "exam_point:1516"
+      "zhenti:1498",
+      "exam_point:1499",
+      "exam_point:1500"
     ]
   },
   {
@@ -12781,13 +12769,13 @@
       "word:jc-jiasheng:苍生"
     ],
     "questionIds": [
-      "practice:554",
-      "practice:555",
-      "zhenti:1079",
-      "zhenti:1080",
-      "exam_point:1517",
-      "exam_point:1518",
-      "exam_point:1519"
+      "practice:552",
+      "practice:553",
+      "zhenti:1071",
+      "zhenti:1072",
+      "exam_point:1501",
+      "exam_point:1502",
+      "exam_point:1503"
     ]
   },
   {
@@ -12862,11 +12850,11 @@
       "word:jc-zengcongdi:本性"
     ],
     "questionIds": [
-      "practice:658",
-      "practice:659",
-      "zhenti:1126",
-      "exam_point:1520",
-      "exam_point:1521"
+      "practice:654",
+      "practice:655",
+      "zhenti:1114",
+      "exam_point:1504",
+      "exam_point:1505"
     ]
   },
   {
@@ -12960,16 +12948,17 @@
       "chibi-106-6",
       "chibi-106-7",
       "practice:109",
+      "practice:554",
+      "practice:555",
       "practice:556",
       "practice:557",
-      "practice:558",
-      "practice:559",
-      "zhenti:790",
-      "zhenti:791",
-      "exam_point:1522",
-      "exam_point:1523",
-      "exam_point:1524",
-      "exam_point:1525"
+      "zhenti:785",
+      "zhenti:786",
+      "related:1506",
+      "exam_point:1507",
+      "exam_point:1508",
+      "exam_point:1509",
+      "exam_point:1510"
     ]
   },
   {
@@ -13049,14 +13038,14 @@
       "word:jc-guosongyuanchenchuiqigongdian:赚得:2"
     ],
     "questionIds": [
+      "practice:558",
+      "practice:559",
       "practice:560",
       "practice:561",
-      "practice:562",
-      "practice:563",
-      "zhenti:1135",
-      "exam_point:1526",
-      "exam_point:1527",
-      "exam_point:1528"
+      "zhenti:1123",
+      "exam_point:1511",
+      "exam_point:1512",
+      "exam_point:1513"
     ]
   },
   {
@@ -13180,15 +13169,15 @@
       "guolingdingyang-wentianxiang-7",
       "practice:254",
       "practice:259",
+      "practice:562",
+      "practice:563",
       "practice:564",
-      "practice:565",
-      "practice:566",
-      "zhenti:956",
-      "zhenti:957",
-      "zhenti:958",
-      "exam_point:1529",
-      "exam_point:1530",
-      "exam_point:1531"
+      "zhenti:949",
+      "zhenti:950",
+      "zhenti:951",
+      "exam_point:1514",
+      "exam_point:1515",
+      "exam_point:1516"
     ]
   },
   {
@@ -13529,18 +13518,18 @@
       "practice:272",
       "practice:273",
       "practice:274",
-      "zhenti:794",
-      "zhenti:795",
-      "zhenti:815",
-      "zhenti:816",
-      "zhenti:863",
-      "zhenti:864",
-      "zhenti:865",
-      "zhenti:866",
-      "zhenti:867",
-      "zhenti:868",
-      "exam_point:1532",
-      "exam_point:1533"
+      "zhenti:789",
+      "zhenti:790",
+      "zhenti:808",
+      "zhenti:809",
+      "zhenti:856",
+      "zhenti:857",
+      "zhenti:858",
+      "zhenti:859",
+      "zhenti:860",
+      "zhenti:861",
+      "exam_point:1517",
+      "exam_point:1518"
     ]
   },
   {
@@ -13621,13 +13610,13 @@
       "jc-syr-6",
       "jc-syr-7",
       "practice:147",
-      "practice:672",
-      "practice:673",
-      "zhenti:999",
-      "zhenti:1000",
-      "zhenti:1001",
-      "exam_point:1534",
-      "exam_point:1535"
+      "practice:668",
+      "practice:669",
+      "zhenti:991",
+      "zhenti:992",
+      "zhenti:993",
+      "exam_point:1519",
+      "exam_point:1520"
     ]
   },
   {
@@ -13728,6 +13717,8 @@
       "songdushaofuzhirenshuzhou-150-5",
       "songdushaofuzhirenshuzhou-150-6",
       "songdushaofuzhirenshuzhou-150-7",
+      "practice:565",
+      "practice:566",
       "practice:567",
       "practice:568",
       "practice:569",
@@ -13736,13 +13727,11 @@
       "practice:572",
       "practice:573",
       "practice:574",
-      "practice:575",
-      "practice:576",
-      "zhenti:1016",
-      "zhenti:1017",
-      "exam_point:1536",
-      "exam_point:1537",
-      "exam_point:1538"
+      "zhenti:1008",
+      "zhenti:1009",
+      "exam_point:1521",
+      "exam_point:1522",
+      "exam_point:1523"
     ]
   },
   {
@@ -13815,14 +13804,18 @@
       "word:feng-ru-jing-shi:传语"
     ],
     "questionIds": [
+      "practice:575",
+      "practice:576",
       "practice:577",
       "practice:578",
-      "practice:579",
-      "practice:580",
-      "zhenti:1136",
-      "zhenti:1137",
-      "exam_point:1539",
-      "exam_point:1540"
+      "zhenti:1124",
+      "zhenti:1125",
+      "related:1524",
+      "related:1525",
+      "related:1526",
+      "related:1527",
+      "exam_point:1528",
+      "exam_point:1529"
     ]
   },
   {
@@ -14024,17 +14017,17 @@
       "practice:282",
       "practice:283",
       "practice:284",
-      "zhenti:796",
-      "zhenti:892",
-      "zhenti:893",
-      "zhenti:894",
-      "zhenti:895",
-      "zhenti:896",
-      "zhenti:897",
-      "zhenti:898",
-      "exam_point:1541",
-      "exam_point:1542",
-      "exam_point:1543"
+      "zhenti:791",
+      "zhenti:885",
+      "zhenti:886",
+      "zhenti:887",
+      "zhenti:888",
+      "zhenti:889",
+      "zhenti:890",
+      "zhenti:891",
+      "exam_point:1530",
+      "exam_point:1531",
+      "exam_point:1532"
     ]
   },
   {
@@ -14149,15 +14142,15 @@
       "practice:246",
       "practice:247",
       "practice:248",
-      "practice:723",
-      "practice:724",
-      "practice:725",
-      "practice:726",
-      "zhenti:1002",
-      "zhenti:1003",
-      "exam_point:1544",
-      "exam_point:1545",
-      "exam_point:1546"
+      "practice:719",
+      "practice:720",
+      "practice:721",
+      "practice:722",
+      "zhenti:994",
+      "zhenti:995",
+      "exam_point:1533",
+      "exam_point:1534",
+      "exam_point:1535"
     ]
   },
   {
@@ -14358,25 +14351,25 @@
       "practice:291",
       "practice:292",
       "practice:293",
-      "zhenti:797",
-      "zhenti:804",
-      "zhenti:805",
-      "zhenti:806",
+      "zhenti:792",
+      "zhenti:799",
+      "zhenti:800",
+      "zhenti:801",
+      "zhenti:816",
+      "zhenti:817",
+      "zhenti:818",
+      "zhenti:819",
+      "zhenti:820",
+      "zhenti:821",
+      "zhenti:822",
       "zhenti:823",
       "zhenti:824",
-      "zhenti:825",
-      "zhenti:826",
-      "zhenti:827",
-      "zhenti:828",
-      "zhenti:829",
-      "zhenti:830",
-      "zhenti:831",
-      "related:1547",
-      "related:1548",
-      "related:1549",
-      "related:1550",
-      "exam_point:1551",
-      "exam_point:1552"
+      "related:1536",
+      "related:1537",
+      "related:1538",
+      "related:1539",
+      "exam_point:1540",
+      "exam_point:1541"
     ]
   },
   {
@@ -14463,13 +14456,13 @@
       "word:jc-caisangzi:涟漪"
     ],
     "questionIds": [
-      "practice:660",
-      "practice:661",
-      "zhenti:1127",
-      "zhenti:1128",
-      "exam_point:1553",
-      "exam_point:1554",
-      "exam_point:1555"
+      "practice:656",
+      "practice:657",
+      "zhenti:1115",
+      "zhenti:1116",
+      "exam_point:1542",
+      "exam_point:1543",
+      "exam_point:1544"
     ]
   },
   {
@@ -14583,11 +14576,11 @@
       "practice:368",
       "practice:369",
       "practice:370",
-      "related:1556",
-      "related:1557",
-      "exam_point:1558",
-      "exam_point:1559",
-      "exam_point:1560"
+      "related:1545",
+      "related:1546",
+      "exam_point:1547",
+      "exam_point:1548",
+      "exam_point:1549"
     ]
   },
   {
@@ -14680,18 +14673,18 @@
       "word:jc-changshaguojiayizhai:谪宦"
     ],
     "questionIds": [
+      "practice:723",
+      "practice:724",
+      "practice:725",
+      "practice:726",
       "practice:727",
       "practice:728",
-      "practice:729",
-      "practice:730",
-      "practice:731",
-      "practice:732",
-      "zhenti:1086",
-      "zhenti:1087",
-      "zhenti:1088",
-      "exam_point:1561",
-      "exam_point:1562",
-      "exam_point:1563"
+      "zhenti:1078",
+      "zhenti:1079",
+      "zhenti:1080",
+      "exam_point:1550",
+      "exam_point:1551",
+      "exam_point:1552"
     ]
   },
   {
@@ -14801,13 +14794,13 @@
       "practice:371",
       "practice:372",
       "practice:373",
-      "related:1564",
-      "related:1565",
-      "exam_point:1566",
-      "exam_point:1567",
-      "exam_point:1568",
-      "exam_point:1569",
-      "exam_point:1570"
+      "related:1553",
+      "related:1554",
+      "exam_point:1555",
+      "exam_point:1556",
+      "exam_point:1557",
+      "exam_point:1558",
+      "exam_point:1559"
     ]
   },
   {
@@ -14933,17 +14926,17 @@
       "jc-chentaiqiuyuyouqixing-5",
       "jc-chentaiqiuyuyouqixing-6",
       "jc-chentaiqiuyuyouqixing-7",
+      "practice:579",
+      "practice:580",
       "practice:581",
-      "practice:582",
-      "practice:583",
-      "zhenti:1018",
-      "zhenti:1019",
-      "zhenti:1020",
-      "exam_point:1571",
-      "exam_point:1572",
-      "exam_point:1573",
-      "exam_point:1574",
-      "exam_point:1575"
+      "zhenti:1010",
+      "zhenti:1011",
+      "zhenti:1012",
+      "exam_point:1560",
+      "exam_point:1561",
+      "exam_point:1562",
+      "exam_point:1563",
+      "exam_point:1564"
     ]
   },
   {
@@ -15256,14 +15249,14 @@
       "practice:298",
       "practice:299",
       "practice:300",
-      "zhenti:798",
-      "zhenti:928",
-      "zhenti:929",
-      "zhenti:930",
-      "related:1576",
-      "exam_point:1577",
-      "exam_point:1578",
-      "exam_point:1579"
+      "zhenti:793",
+      "zhenti:921",
+      "zhenti:922",
+      "zhenti:923",
+      "related:1565",
+      "exam_point:1566",
+      "exam_point:1567",
+      "exam_point:1568"
     ]
   },
   {
@@ -15370,20 +15363,20 @@
     "questionIds": [
       "practice:107",
       "practice:113",
+      "practice:643",
+      "practice:644",
+      "practice:645",
+      "practice:646",
       "practice:647",
       "practice:648",
       "practice:649",
-      "practice:650",
-      "practice:651",
-      "practice:652",
-      "practice:653",
-      "zhenti:1021",
-      "zhenti:1022",
-      "zhenti:1023",
-      "zhenti:1024",
-      "exam_point:1580",
-      "exam_point:1581",
-      "exam_point:1582"
+      "zhenti:1013",
+      "zhenti:1014",
+      "zhenti:1015",
+      "zhenti:1016",
+      "exam_point:1569",
+      "exam_point:1570",
+      "exam_point:1571"
     ]
   },
   {
@@ -15478,13 +15471,11 @@
     ],
     "questionIds": [
       "practice:150",
-      "practice:719",
-      "practice:720",
-      "zhenti:1118",
-      "zhenti:1119",
-      "exam_point:1583",
-      "exam_point:1584",
-      "exam_point:1585"
+      "practice:715",
+      "practice:716",
+      "exam_point:1572",
+      "exam_point:1573",
+      "exam_point:1574"
     ]
   },
   {
@@ -15671,19 +15662,18 @@
       "practice:309",
       "practice:310",
       "practice:311",
+      "handwritten:749",
+      "handwritten:750",
+      "handwritten:751",
+      "handwritten:752",
       "handwritten:753",
-      "handwritten:754",
-      "handwritten:755",
-      "handwritten:756",
-      "handwritten:757",
-      "handwritten:758",
-      "zhenti:899",
-      "zhenti:900",
-      "zhenti:901",
-      "zhenti:902",
-      "related:1586",
-      "exam_point:1587",
-      "exam_point:1588"
+      "zhenti:892",
+      "zhenti:893",
+      "zhenti:894",
+      "zhenti:895",
+      "related:1575",
+      "exam_point:1576",
+      "exam_point:1577"
     ]
   },
   {
@@ -15828,17 +15818,17 @@
       "practice:313",
       "practice:314",
       "practice:315",
-      "zhenti:799",
-      "zhenti:858",
-      "zhenti:859",
-      "zhenti:860",
-      "zhenti:861",
-      "zhenti:862",
-      "related:1589",
-      "related:1590",
-      "exam_point:1591",
-      "exam_point:1592",
-      "exam_point:1593"
+      "zhenti:794",
+      "zhenti:851",
+      "zhenti:852",
+      "zhenti:853",
+      "zhenti:854",
+      "zhenti:855",
+      "related:1578",
+      "related:1579",
+      "exam_point:1580",
+      "exam_point:1581",
+      "exam_point:1582"
     ]
   },
   {
@@ -15960,15 +15950,14 @@
       "jc-huanghelou-7",
       "jc-huanghelou-8",
       "practice:157",
+      "practice:582",
+      "practice:583",
       "practice:584",
-      "practice:585",
-      "practice:586",
-      "zhenti:959",
-      "zhenti:960",
-      "zhenti:961",
-      "exam_point:1594",
-      "exam_point:1595",
-      "exam_point:1596"
+      "zhenti:952",
+      "zhenti:953",
+      "exam_point:1583",
+      "exam_point:1584",
+      "exam_point:1585"
     ]
   },
   {
@@ -16066,16 +16055,16 @@
       "word:jc-guisuishou:永年"
     ],
     "questionIds": [
+      "practice:585",
+      "practice:586",
       "practice:587",
-      "practice:588",
-      "practice:589",
-      "zhenti:1057",
-      "zhenti:1058",
-      "zhenti:1059",
-      "exam_point:1597",
-      "exam_point:1598",
-      "exam_point:1599",
-      "exam_point:1600"
+      "zhenti:1049",
+      "zhenti:1050",
+      "zhenti:1051",
+      "exam_point:1586",
+      "exam_point:1587",
+      "exam_point:1588",
+      "exam_point:1589"
     ]
   }
 ]
