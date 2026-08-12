@@ -797,10 +797,27 @@ if (existsSync(moxieBookPath)) {
       id: artId,
       grade: VALID_GRADES.has(g) ? g : '附录',
       // 强制重写 qid: 篇目+题型序号+题序号 (raw 旧 qid 缺题型序号, 导致同一 qid 指向多道题)
-      sections: (m.sections || []).map((sec, si) => ({
-        ...sec,
-        items: (sec.items || []).map((it, ii) => ({ ...it, qid: `${artId}:${si}:${ii}` })),
-      })),
+      sections: (() => {
+        // 题型固定排序: 原文默写 → 理解性默写 → 词义默写 → 译文默写 → 其他(按原相对顺序)
+        const TYPE_ORDER = ['原文默写', '理解性默写', '词义默写', '译文默写'];
+        const sects = [...(m.sections || [])].sort((a, b) => {
+          const ia = TYPE_ORDER.indexOf(a.type);
+          const ib = TYPE_ORDER.indexOf(b.type);
+          return (ia === -1 ? TYPE_ORDER.length : ia) - (ib === -1 ? TYPE_ORDER.length : ib);
+        });
+        return sects.map((sec, si) => ({
+          ...sec,
+          // 题号重编号: 仅对有数字前缀的题(如"4.  秋风…")按题型内顺序重排,
+          // 解决 legacy 合并追加的题与 book 题号冲突(如两个"4"); 无编号题(原文默写整段/鉴赏)保持原样
+          items: (sec.items || []).map((it, ii) => {
+            const q = String(it.q || '');
+            const m2 = /^\s*(\d+)[.、]\s*/.exec(q);
+            if (!m2) return { ...it, qid: `${artId}:${si}:${ii}` };
+            const body = q.slice(m2[0].length).trimStart();
+            return { ...it, qid: `${artId}:${si}:${ii}`, q: `${ii + 1}.${body}` };
+          }),
+        }));
+      })(),
     };
   });
 }
