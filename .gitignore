@@ -5,3 +5,4 @@ vision-shots/
 *.png
 *.log
 *.bak*
+.vercel
