@@ -438,7 +438,7 @@
       "origin": "《漱玉词》",
       "source": "jiaocai_p130..jiaocai_p130",
       "reciteCount": 2,
-      "questionCount": 6,
+      "questionCount": 7,
       "zhentiCount": 1,
       "wordCount": 3
     },
@@ -698,7 +698,7 @@
       "origin": "左传",
       "source": "jiaocai_p200..jiaocai_p203",
       "reciteCount": 7,
-      "questionCount": 30,
+      "questionCount": 29,
       "zhentiCount": 9,
       "wordCount": 51
     },
@@ -737,7 +737,7 @@
       "origin": "《孟浩然集》",
       "source": "jiaocai_p151..jiaocai_p151",
       "reciteCount": 2,
-      "questionCount": 16,
+      "questionCount": 17,
       "zhentiCount": 0,
       "wordCount": 8
     },
@@ -763,7 +763,7 @@
       "origin": "《乐府诗集》",
       "source": "jiaocai_p049..jiaocai_p052",
       "reciteCount": 4,
-      "questionCount": 12,
+      "questionCount": 11,
       "zhentiCount": 3,
       "wordCount": 50
     },
@@ -789,7 +789,7 @@
       "origin": "《茅檐集》",
       "source": "jiaocai_p140..jiaocai_p144",
       "reciteCount": 0,
-      "questionCount": 15,
+      "questionCount": 14,
       "zhentiCount": 3,
       "wordCount": 52
     },
@@ -932,7 +932,7 @@
       "origin": "《珠玉词》",
       "source": "jiaocai_p127..jiaocai_p127",
       "reciteCount": 1,
-      "questionCount": 16,
+      "questionCount": 15,
       "zhentiCount": 1,
       "wordCount": 5
     },
@@ -1423,7 +1423,7 @@
       "origin": "《王子安集》",
       "source": "jiaocai_p150",
       "reciteCount": 2,
-      "questionCount": 22,
+      "questionCount": 21,
       "zhentiCount": 2,
       "wordCount": 10
     },
@@ -1592,7 +1592,7 @@
       "origin": "《韩昌黎文集》",
       "source": "jiaocai_p161..jiaocai_p163",
       "reciteCount": 8,
-      "questionCount": 29,
+      "questionCount": 28,
       "zhentiCount": 3,
       "wordCount": 33
     },
@@ -1642,7 +1642,7 @@
     "cards": 2326,
     "globalWords": 134,
     "senses": 2896,
-    "totalQuestions": 1961,
+    "totalQuestions": 1957,
     "zhenti": 302,
     "collections": 17,
     "moxieArticles": 151,

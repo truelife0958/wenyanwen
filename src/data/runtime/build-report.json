@@ -3,18 +3,18 @@
   "source": {
     "articles": 126,
     "wordMeanings": 3684,
-    "questions": 1849
+    "questions": 1843
   },
   "runtime": {
     "articles": 126,
     "words": 2326,
     "wordMeanings": 2896,
-    "questions": 1961,
+    "questions": 1957,
     "collections": 17
   },
   "transformed": {
     "deduplicatedWordMeanings": 788,
-    "deduplicatedQuestions": -112,
+    "deduplicatedQuestions": -114,
     "invalidQuestions": 0
   }
 }

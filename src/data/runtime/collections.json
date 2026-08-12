@@ -27,12 +27,12 @@
     "grade": "七上",
     "source": "practice",
     "questionIds": [
+      "practice:69",
       "practice:70",
       "practice:71",
       "practice:72",
       "practice:73",
-      "practice:74",
-      "practice:75"
+      "practice:74"
     ]
   },
   {
@@ -41,7 +41,7 @@
     "grade": "八上",
     "source": "practice",
     "questionIds": [
-      "practice:85"
+      "practice:84"
     ]
   },
   {
@@ -50,12 +50,12 @@
     "grade": "八下",
     "source": "practice",
     "questionIds": [
+      "practice:86",
       "practice:87",
       "practice:88",
       "practice:89",
       "practice:90",
-      "practice:91",
-      "practice:92"
+      "practice:91"
     ]
   },
   {
@@ -64,10 +64,10 @@
     "grade": "八上",
     "source": "practice",
     "questionIds": [
-      "practice:105",
+      "practice:103",
+      "practice:106",
       "practice:108",
-      "practice:110",
-      "practice:111"
+      "practice:109"
     ]
   },
   {
@@ -76,8 +76,8 @@
     "grade": "七下",
     "source": "practice",
     "questionIds": [
-      "practice:129",
-      "practice:130"
+      "practice:127",
+      "practice:128"
     ]
   },
   {
@@ -92,6 +92,10 @@
       "jc-wangyue-4",
       "jc-wangyue-5",
       "jc-wangyue-6",
+      "practice:434",
+      "practice:435",
+      "practice:436",
+      "practice:437",
       "practice:438",
       "practice:439",
       "practice:440",
@@ -99,25 +103,21 @@
       "practice:442",
       "practice:443",
       "practice:444",
-      "practice:445",
-      "practice:446",
-      "practice:447",
-      "practice:448",
-      "zhenti:927",
-      "zhenti:928",
-      "related:1272",
-      "related:1273",
+      "zhenti:921",
+      "zhenti:922",
+      "related:1267",
+      "related:1268",
+      "exam_point:1269",
+      "exam_point:1270",
+      "exam_point:1271",
+      "exam_point:1272",
+      "exam_point:1273",
       "exam_point:1274",
       "exam_point:1275",
       "exam_point:1276",
       "exam_point:1277",
       "exam_point:1278",
       "exam_point:1279",
-      "exam_point:1280",
-      "exam_point:1281",
-      "exam_point:1282",
-      "exam_point:1283",
-      "exam_point:1284",
       "jc-chunwang-1",
       "jc-chunwang-2",
       "jc-chunwang-3",
@@ -126,34 +126,34 @@
       "jc-chunwang-6",
       "jc-chunwang-7",
       "jc-chunwang-8",
-      "practice:106",
-      "practice:112",
+      "practice:104",
+      "practice:110",
+      "practice:624",
+      "practice:625",
+      "practice:626",
+      "practice:627",
+      "practice:628",
+      "practice:629",
       "practice:630",
       "practice:631",
-      "practice:632",
-      "practice:633",
-      "practice:634",
-      "practice:635",
-      "practice:636",
-      "practice:637",
-      "zhenti:924",
-      "zhenti:925",
-      "zhenti:926",
-      "exam_point:1257",
-      "exam_point:1258",
-      "exam_point:1259",
-      "practice:140",
-      "practice:145",
-      "practice:517",
-      "practice:518",
-      "practice:519",
-      "practice:520",
-      "zhenti:1004",
-      "zhenti:1005",
-      "zhenti:1006",
-      "exam_point:1402",
-      "exam_point:1403",
-      "exam_point:1404"
+      "zhenti:918",
+      "zhenti:919",
+      "zhenti:920",
+      "exam_point:1252",
+      "exam_point:1253",
+      "exam_point:1254",
+      "practice:138",
+      "practice:143",
+      "practice:512",
+      "practice:513",
+      "practice:514",
+      "practice:515",
+      "zhenti:998",
+      "zhenti:999",
+      "zhenti:1000",
+      "exam_point:1398",
+      "exam_point:1399",
+      "exam_point:1400"
     ]
   },
   {
@@ -162,26 +162,26 @@
     "grade": "八下",
     "source": "practice",
     "questionIds": [
+      "practice:150",
       "practice:152",
       "practice:154",
-      "practice:156",
-      "practice:319",
-      "practice:320",
-      "practice:321",
-      "related:1098",
-      "exam_point:1099",
-      "exam_point:1100",
-      "exam_point:1101",
+      "practice:315",
+      "practice:316",
+      "practice:317",
+      "related:1092",
+      "exam_point:1093",
+      "exam_point:1094",
+      "exam_point:1095",
+      "practice:151",
       "practice:153",
-      "practice:155",
-      "practice:658",
-      "practice:659",
-      "practice:660",
-      "zhenti:988",
-      "zhenti:989",
-      "exam_point:1424",
-      "exam_point:1425",
-      "exam_point:1426"
+      "practice:652",
+      "practice:653",
+      "practice:654",
+      "zhenti:982",
+      "zhenti:983",
+      "exam_point:1420",
+      "exam_point:1421",
+      "exam_point:1422"
     ]
   },
   {
@@ -190,7 +190,7 @@
     "grade": "八上",
     "source": "practice",
     "questionIds": [
-      "practice:161"
+      "practice:159"
     ]
   },
   {
@@ -205,30 +205,30 @@
       "loushiming-4",
       "loushiming-5",
       "loushiming-6",
-      "practice:164",
-      "practice:165",
+      "practice:162",
+      "practice:163",
+      "practice:498",
+      "practice:499",
+      "practice:500",
+      "practice:501",
+      "practice:502",
       "practice:503",
       "practice:504",
       "practice:505",
       "practice:506",
       "practice:507",
       "practice:508",
-      "practice:509",
-      "practice:510",
-      "practice:511",
-      "practice:512",
-      "practice:513",
-      "zhenti:861",
-      "zhenti:862",
-      "zhenti:864",
-      "zhenti:865",
-      "zhenti:866",
-      "related:1393",
-      "related:1394",
-      "related:1395",
-      "exam_point:1396",
-      "exam_point:1397",
-      "exam_point:1398",
+      "zhenti:855",
+      "zhenti:856",
+      "zhenti:858",
+      "zhenti:859",
+      "zhenti:860",
+      "related:1389",
+      "related:1390",
+      "related:1391",
+      "exam_point:1392",
+      "exam_point:1393",
+      "exam_point:1394",
       "ai-lian-shuo-1",
       "ai-lian-shuo-2",
       "ai-lian-shuo-3",
@@ -236,24 +236,24 @@
       "ai-lian-shuo-5",
       "ai-lian-shuo-6",
       "practice:3",
-      "practice:166",
+      "practice:164",
+      "practice:478",
+      "practice:479",
+      "practice:480",
+      "practice:481",
+      "practice:482",
       "practice:483",
       "practice:484",
       "practice:485",
       "practice:486",
-      "practice:487",
-      "practice:488",
-      "practice:489",
-      "practice:490",
-      "practice:491",
-      "zhenti:863",
-      "zhenti:867",
-      "related:1366",
-      "related:1367",
-      "exam_point:1368",
-      "exam_point:1369",
-      "exam_point:1370",
-      "exam_point:1371"
+      "zhenti:857",
+      "zhenti:861",
+      "related:1362",
+      "related:1363",
+      "exam_point:1364",
+      "exam_point:1365",
+      "exam_point:1366",
+      "exam_point:1367"
     ]
   },
   {
@@ -262,12 +262,12 @@
     "grade": "八上",
     "source": "practice",
     "questionIds": [
+      "practice:224",
+      "practice:225",
+      "practice:226",
       "practice:227",
       "practice:228",
-      "practice:229",
-      "practice:230",
-      "practice:231",
-      "practice:232"
+      "practice:229"
     ]
   },
   {
@@ -276,8 +276,8 @@
     "grade": "九下",
     "source": "practice",
     "questionIds": [
-      "practice:237",
-      "practice:238"
+      "practice:234",
+      "practice:235"
     ]
   },
   {
@@ -286,9 +286,9 @@
     "grade": "九上",
     "source": "practice",
     "questionIds": [
-      "practice:242",
-      "practice:244",
-      "practice:245"
+      "practice:239",
+      "practice:241",
+      "practice:242"
     ]
   },
   {
@@ -297,7 +297,7 @@
     "grade": "九下",
     "source": "practice",
     "questionIds": [
-      "practice:256"
+      "practice:253"
     ]
   },
   {
@@ -306,8 +306,8 @@
     "grade": "九年级",
     "source": "extra",
     "questionIds": [
-      "handwritten:769",
-      "handwritten:770"
+      "handwritten:763",
+      "handwritten:764"
     ]
   },
   {
@@ -316,7 +316,7 @@
     "grade": "未分类",
     "source": "zhenti",
     "questionIds": [
-      "zhenti:973"
+      "zhenti:967"
     ]
   }
 ]
