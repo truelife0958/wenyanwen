@@ -167,7 +167,7 @@
       "reciteCount": 1,
       "questionCount": 18,
       "zhentiCount": 2,
-      "wordCount": 7
+      "wordCount": 8
     },
     {
       "id": "jc-shiwucongjunzheng",
@@ -297,7 +297,7 @@
       "reciteCount": 0,
       "questionCount": 23,
       "zhentiCount": 4,
-      "wordCount": 36
+      "wordCount": 42
     },
     {
       "id": "jc-yongxue",
@@ -466,7 +466,7 @@
       "reciteCount": 0,
       "questionCount": 28,
       "zhentiCount": 6,
-      "wordCount": 27
+      "wordCount": 31
     },
     {
       "id": "jc-dingfengbo",
@@ -492,7 +492,7 @@
       "reciteCount": 2,
       "questionCount": 14,
       "zhentiCount": 2,
-      "wordCount": 27
+      "wordCount": 32
     },
     {
       "id": "jc-xiaoshitanji",
@@ -739,7 +739,7 @@
       "reciteCount": 2,
       "questionCount": 16,
       "zhentiCount": 0,
-      "wordCount": 5
+      "wordCount": 11
     },
     {
       "id": "jc-chao-tian-zi-yong-la-ba",
@@ -791,7 +791,7 @@
       "reciteCount": 0,
       "questionCount": 16,
       "zhentiCount": 4,
-      "wordCount": 48
+      "wordCount": 53
     },
     {
       "id": "jc-thyj",
@@ -1051,7 +1051,7 @@
       "reciteCount": 0,
       "questionCount": 18,
       "zhentiCount": 3,
-      "wordCount": 35
+      "wordCount": 38
     },
     {
       "id": "jc-syyhsyal",
@@ -1064,7 +1064,7 @@
       "reciteCount": 3,
       "questionCount": 22,
       "zhentiCount": 6,
-      "wordCount": 25
+      "wordCount": 33
     },
     {
       "id": "jc-dengfeilaifeng",
@@ -1103,7 +1103,7 @@
       "reciteCount": 4,
       "questionCount": 14,
       "zhentiCount": 3,
-      "wordCount": 2
+      "wordCount": 4
     },
     {
       "id": "xiangjianhuan-jinlingchengshangxilou",
@@ -1140,7 +1140,7 @@
       "reciteCount": 4,
       "questionCount": 16,
       "zhentiCount": 3,
-      "wordCount": 17
+      "wordCount": 19
     },
     {
       "id": "shi_hao_li",
@@ -1308,7 +1308,7 @@
       "reciteCount": 5,
       "questionCount": 16,
       "zhentiCount": 1,
-      "wordCount": 7
+      "wordCount": 9
     },
     {
       "id": "jc-jiezishu",
@@ -1360,7 +1360,7 @@
       "reciteCount": 2,
       "questionCount": 18,
       "zhentiCount": 2,
-      "wordCount": 7
+      "wordCount": 8
     },
     {
       "id": "jc-guosongyuanchenchuiqigongdian",
@@ -1412,7 +1412,7 @@
       "reciteCount": 0,
       "questionCount": 15,
       "zhentiCount": 3,
-      "wordCount": 3
+      "wordCount": 7
     },
     {
       "id": "songdushaofuzhirenshuzhou-150",
@@ -1542,7 +1542,7 @@
       "reciteCount": 0,
       "questionCount": 18,
       "zhentiCount": 3,
-      "wordCount": 14
+      "wordCount": 17
     },
     {
       "id": "jc-chensheshejia",
@@ -1639,9 +1639,9 @@
   "counts": {
     "learning": 126,
     "recite": 350,
-    "cards": 2220,
+    "cards": 2272,
     "globalWords": 134,
-    "senses": 2707,
+    "senses": 2798,
     "totalQuestions": 2026,
     "zhenti": 363,
     "collections": 17,

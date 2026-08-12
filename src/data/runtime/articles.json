@@ -1750,7 +1750,8 @@
       "word:jc-shiyiyuesirifengyudazuoer:戍",
       "word:jc-shiyiyuesirifengyudazuoer:轮台",
       "word:jc-shiyiyuesirifengyudazuoer:夜阑",
-      "word:jc-shiyiyuesirifengyudazuoer:铁马"
+      "word:jc-shiyiyuesirifengyudazuoer:铁马",
+      "word:jc-shiyiyuesirifengyudazuoer:夜阑:2"
     ],
     "questionIds": [
       "jc-shiyiyuesirifengyudazuoer-1",
@@ -2949,7 +2950,13 @@
       "word:jc-zhouyafu:称谢",
       "word:jc-zhouyafu:既",
       "word:jc-zhouyafu:曩",
-      "word:jc-zhouyafu:固"
+      "word:jc-zhouyafu:固",
+      "word:jc-zhouyafu:被:2",
+      "word:jc-zhouyafu:锐",
+      "word:jc-zhouyafu:备",
+      "word:jc-zhouyafu:彀:2",
+      "word:jc-zhouyafu:揖",
+      "word:jc-zhouyafu:曩:2"
     ],
     "questionIds": [
       "jc-zhouyafu-1",
@@ -4296,7 +4303,11 @@
       "word:jc-sunquanquanxue:才略",
       "word:jc-sunquanquanxue:非复",
       "word:jc-sunquanquanxue:更",
-      "word:jc-sunquanquanxue:别"
+      "word:jc-sunquanquanxue:别",
+      "word:jc-sunquanquanxue:大",
+      "word:jc-sunquanquanxue:就",
+      "word:jc-sunquanquanxue:论议",
+      "word:jc-sunquanquanxue:见事"
     ],
     "questionIds": [
       "jc-sunquanquanxue-1",
@@ -4556,7 +4567,12 @@
       "word:jc-fugueibunengyin:淫",
       "word:jc-fugueibunengyin:移",
       "word:jc-fugueibunengyin:屈",
-      "word:jc-fugueibunengyin:谓"
+      "word:jc-fugueibunengyin:谓",
+      "word:jc-fugueibunengyin:女",
+      "word:jc-fugueibunengyin:熄",
+      "word:jc-fugueibunengyin:冠",
+      "word:jc-fugueibunengyin:正",
+      "word:jc-fugueibunengyin:得志"
     ],
     "questionIds": [
       "jc-fugueibunengyin-1",
@@ -7074,7 +7090,13 @@
       "word:jc-wangdongtinghushangzhangchengxiang:云梦泽",
       "word:jc-wangdongtinghushangzhangchengxiang:济",
       "word:jc-wangdongtinghushangzhangchengxiang:端居",
-      "word:jc-wangdongtinghushangzhangchengxiang:徒有羡鱼情"
+      "word:jc-wangdongtinghushangzhangchengxiang:徒有羡鱼情",
+      "word:jc-wangdongtinghushangzhangchengxiang:涵虚",
+      "word:jc-wangdongtinghushangzhangchengxiang:混",
+      "word:jc-wangdongtinghushangzhangchengxiang:太清",
+      "word:jc-wangdongtinghushangzhangchengxiang:楫",
+      "word:jc-wangdongtinghushangzhangchengxiang:耻",
+      "word:jc-wangdongtinghushangzhangchengxiang:徒"
     ],
     "questionIds": [
       "jc-wangdongtinghushangzhangchengxiang-1",
@@ -7652,7 +7674,12 @@
       "word:jc-hezhouji:简",
       "word:jc-hezhouji:修狭",
       "word:jc-hezhouji:灵怪",
-      "word:jc-hezhouji:矣哉"
+      "word:jc-hezhouji:矣哉",
+      "word:jc-hezhouji:有",
+      "word:jc-hezhouji:居",
+      "word:jc-hezhouji:奇",
+      "word:jc-hezhouji:轩敞",
+      "word:jc-hezhouji:泛"
     ],
     "questionIds": [
       "jc-hezhouji-1",
@@ -10131,7 +10158,10 @@
       "word:jc-lang:黠",
       "word:jc-lang:顷刻",
       "word:jc-lang:变诈",
-      "word:jc-lang:几何"
+      "word:jc-lang:几何",
+      "word:jc-lang:敌",
+      "word:jc-lang:耽耽",
+      "word:jc-lang:暝"
     ],
     "questionIds": [
       "jc-lang-1",
@@ -10279,7 +10309,15 @@
       "word:jc-syyhsyal:法家拂士",
       "word:jc-syyhsyal:出",
       "word:jc-syyhsyal:敌国",
-      "word:jc-syyhsyal:而"
+      "word:jc-syyhsyal:而",
+      "word:jc-syyhsyal:曾",
+      "word:jc-syyhsyal:苦",
+      "word:jc-syyhsyal:过",
+      "word:jc-syyhsyal:生",
+      "word:jc-syyhsyal:死",
+      "word:jc-syyhsyal:恒",
+      "word:jc-syyhsyal:法家",
+      "word:jc-syyhsyal:拂士"
     ],
     "questionIds": [
       "jc-syyhsyal-1",
@@ -10629,7 +10667,9 @@
     ],
     "wordIds": [
       "word:jc-xiangjianhuan:锁",
-      "word:jc-xiangjianhuan:独上"
+      "word:jc-xiangjianhuan:独上",
+      "word:jc-xiangjianhuan:离愁",
+      "word:jc-xiangjianhuan:别是一般"
     ],
     "questionIds": [
       "jc-xiangjianhuan-1",
@@ -11011,7 +11051,9 @@
       "word:da_xie_zhong_shu_shu:欲界",
       "word:da_xie_zhong_shu_shu:仙都",
       "word:da_xie_zhong_shu_shu:康乐",
-      "word:da_xie_zhong_shu_shu:与"
+      "word:da_xie_zhong_shu_shu:与",
+      "word:da_xie_zhong_shu_shu:五色交晖",
+      "word:da_xie_zhong_shu_shu:与:2"
     ],
     "questionIds": [
       "da_xie_zhong_shu_shu-1",
@@ -12413,7 +12455,9 @@
       "word:shiciwushou-yinjiu:悠然",
       "word:shiciwushou-yinjiu:山气",
       "word:shiciwushou-yinjiu:日夕",
-      "word:shiciwushou-yinjiu:忘言"
+      "word:shiciwushou-yinjiu:忘言",
+      "word:shiciwushou-yinjiu:相与",
+      "word:shiciwushou-yinjiu:辨"
     ],
     "questionIds": [
       "shiciwushou-yinjiu-1",
@@ -12809,7 +12853,8 @@
       "word:article-chibi-106:认前朝",
       "word:article-chibi-106:周郎",
       "word:article-chibi-106:铜雀",
-      "word:article-chibi-106:二乔"
+      "word:article-chibi-106:二乔",
+      "word:article-chibi-106:折戟"
     ],
     "questionIds": [
       "chibi-106-1",
@@ -13465,7 +13510,11 @@
     "wordIds": [
       "word:jc-syr:横绕",
       "word:jc-syr:蓬",
-      "word:jc-syr:班马"
+      "word:jc-syr:班马",
+      "word:jc-syr:郭",
+      "word:jc-syr:征",
+      "word:jc-syr:兹",
+      "word:jc-syr:萧萧"
     ],
     "questionIds": [
       "jc-syr-1",
@@ -14770,7 +14819,10 @@
       "word:jc-chentaiqiuyuyouqixing:委",
       "word:jc-chentaiqiuyuyouqixing:家君",
       "word:jc-chentaiqiuyuyouqixing:引",
-      "word:jc-chentaiqiuyuyouqixing:顾"
+      "word:jc-chentaiqiuyuyouqixing:顾",
+      "word:jc-chentaiqiuyuyouqixing:去",
+      "word:jc-chentaiqiuyuyouqixing:期",
+      "word:jc-chentaiqiuyuyouqixing:舍"
     ],
     "questionIds": [
       "jc-chentaiqiuyuyouqixing-1",
