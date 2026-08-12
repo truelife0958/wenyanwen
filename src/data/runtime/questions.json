@@ -11286,23 +11286,6 @@
       "zhenti",
       "zhenti"
     ],
-    "type": "understand",
-    "stem": "文章表达了作者怎样的思想感情？",
-    "answer": "表达了作者\"不以物喜，不以己悲\"的旷达胸襟和\"先天下之忧而忧，后天下之乐而乐\"的政治抱负；同时也含蓄地表达了劝勉滕子京之意。",
-    "explanation": "结合\"迁客骚人\"与\"古仁人\"的对比，把握\"不以物喜，不以己悲\"\"先忧后乐\"两处主旨句。",
-    "province": "湖北咸宁",
-    "source": "web",
-    "fromZhenti": true
-  },
-  {
-    "id": "zhenti:798",
-    "scope": "article",
-    "articleId": "jc-yueyanglouji",
-    "origin": "zhenti",
-    "origins": [
-      "zhenti",
-      "zhenti"
-    ],
     "type": "punct",
     "stem": "用\"/\"给下列句子断句(断两处)。 前人之述备矣然则北通巫峡南极潇湘",
     "answer": "前人之述备矣 / 然则北通巫峡 / 南极潇湘",
@@ -11312,7 +11295,7 @@
     "fromZhenti": true
   },
   {
-    "id": "zhenti:799",
+    "id": "zhenti:798",
     "scope": "article",
     "articleId": "jc-zuiwengtingji",
     "origin": "zhenti",
@@ -11330,7 +11313,7 @@
     "fromZhenti": true
   },
   {
-    "id": "zhenti:800",
+    "id": "zhenti:799",
     "scope": "article",
     "articleId": "jc-zuiwengtingji",
     "origin": "zhenti",
@@ -11348,7 +11331,7 @@
     "fromZhenti": true
   },
   {
-    "id": "zhenti:801",
+    "id": "zhenti:800",
     "scope": "article",
     "articleId": "jc-zuiwengtingji",
     "origin": "zhenti",
@@ -11366,7 +11349,7 @@
     "fromZhenti": true
   },
   {
-    "id": "zhenti:802",
+    "id": "zhenti:801",
     "scope": "article",
     "articleId": "jc-thyj",
     "origin": "zhenti",
@@ -11390,7 +11373,7 @@
     "fromZhenti": true
   },
   {
-    "id": "zhenti:803",
+    "id": "zhenti:802",
     "scope": "article",
     "articleId": "jc-thyj",
     "origin": "zhenti",
@@ -11414,7 +11397,7 @@
     "fromZhenti": true
   },
   {
-    "id": "zhenti:804",
+    "id": "zhenti:803",
     "scope": "article",
     "articleId": "jc-sunquanquanxue",
     "origin": "zhenti",
@@ -11438,7 +11421,7 @@
     "fromZhenti": true
   },
   {
-    "id": "zhenti:805",
+    "id": "zhenti:804",
     "scope": "article",
     "articleId": "jc-sunquanquanxue",
     "origin": "zhenti",
@@ -11456,25 +11439,7 @@
     "fromZhenti": true
   },
   {
-    "id": "zhenti:806",
-    "scope": "article",
-    "articleId": "jc-sunquanquanxue",
-    "origin": "zhenti",
-    "origins": [
-      "zhenti",
-      "zhenti"
-    ],
-    "type": "understand",
-    "stem": "如果从文中选择一人加入你的微信读书群，你会选择谁？请结合两个语段概括说明理由(至少两条)。",
-    "answer": "示例一(孙权):喜欢读书并涉猎广泛；善于激励他人读书；能针对性推荐阅读书目和方法。 示例二(吕蒙):虚心听取他人读书建议，积极付诸行动；读书专心致志、持之以恒；学识渊博，学以致用。",
-    "explanation": "开放题，言之成理即可。需结合人物具体言行概括，不能空泛。",
-    "province": "山东威海",
-    "year": "2021",
-    "source": "web",
-    "fromZhenti": true
-  },
-  {
-    "id": "zhenti:807",
+    "id": "zhenti:805",
     "scope": "article",
     "articleId": "jc-yugongyishan",
     "origin": "zhenti",
@@ -11498,7 +11463,7 @@
     "fromZhenti": true
   },
   {
-    "id": "zhenti:808",
+    "id": "zhenti:806",
     "scope": "article",
     "articleId": "jc-songdongyangmashengxu",
     "origin": "zhenti",
@@ -11515,7 +11480,7 @@
     "fromZhenti": true
   },
   {
-    "id": "zhenti:809",
+    "id": "zhenti:807",
     "scope": "article",
     "articleId": "jc-songdongyangmashengxu",
     "origin": "zhenti",
@@ -11532,7 +11497,7 @@
     "fromZhenti": true
   },
   {
-    "id": "zhenti:810",
+    "id": "zhenti:808",
     "scope": "article",
     "articleId": "jc-chushibiao",
     "origin": "zhenti",
@@ -11549,7 +11514,7 @@
     "fromZhenti": true
   },
   {
-    "id": "zhenti:811",
+    "id": "zhenti:809",
     "scope": "article",
     "articleId": "jc-yueyanglouji",
     "origin": "zhenti",
@@ -11574,7 +11539,7 @@
     "fromZhenti": true
   },
   {
-    "id": "zhenti:812",
+    "id": "zhenti:810",
     "scope": "article",
     "articleId": "jc-yueyanglouji",
     "origin": "zhenti",
@@ -11598,7 +11563,7 @@
     "fromZhenti": true
   },
   {
-    "id": "zhenti:813",
+    "id": "zhenti:811",
     "scope": "article",
     "articleId": "jc-yueyanglouji",
     "origin": "zhenti",
@@ -11622,7 +11587,7 @@
     "fromZhenti": true
   },
   {
-    "id": "zhenti:814",
+    "id": "zhenti:812",
     "scope": "article",
     "articleId": "jc-yueyanglouji",
     "origin": "zhenti",
@@ -11640,7 +11605,7 @@
     "fromZhenti": true
   },
   {
-    "id": "zhenti:815",
+    "id": "zhenti:813",
     "scope": "article",
     "articleId": "jc-yueyanglouji",
     "origin": "zhenti",
@@ -11658,7 +11623,7 @@
     "fromZhenti": true
   },
   {
-    "id": "zhenti:816",
+    "id": "zhenti:814",
     "scope": "article",
     "articleId": "jc-zuiwengtingji",
     "origin": "zhenti",
@@ -11682,7 +11647,7 @@
     "fromZhenti": true
   },
   {
-    "id": "zhenti:817",
+    "id": "zhenti:815",
     "scope": "article",
     "articleId": "jc-zuiwengtingji",
     "origin": "zhenti",
@@ -11700,7 +11665,7 @@
     "fromZhenti": true
   },
   {
-    "id": "zhenti:818",
+    "id": "zhenti:816",
     "scope": "article",
     "articleId": "jc-zuiwengtingji",
     "origin": "zhenti",
@@ -11724,7 +11689,7 @@
     "fromZhenti": true
   },
   {
-    "id": "zhenti:819",
+    "id": "zhenti:817",
     "scope": "article",
     "articleId": "jc-zuiwengtingji",
     "origin": "zhenti",
@@ -11748,7 +11713,7 @@
     "fromZhenti": true
   },
   {
-    "id": "zhenti:820",
+    "id": "zhenti:818",
     "scope": "article",
     "articleId": "jc-zuiwengtingji",
     "origin": "zhenti",
@@ -11772,7 +11737,7 @@
     "fromZhenti": true
   },
   {
-    "id": "zhenti:821",
+    "id": "zhenti:819",
     "scope": "article",
     "articleId": "jc-zuiwengtingji",
     "origin": "zhenti",
@@ -11796,7 +11761,7 @@
     "fromZhenti": true
   },
   {
-    "id": "zhenti:822",
+    "id": "zhenti:820",
     "scope": "article",
     "articleId": "jc-zuiwengtingji",
     "origin": "zhenti",
@@ -11814,7 +11779,7 @@
     "fromZhenti": true
   },
   {
-    "id": "zhenti:823",
+    "id": "zhenti:821",
     "scope": "article",
     "articleId": "jc-zuiwengtingji",
     "origin": "zhenti",
@@ -11832,7 +11797,7 @@
     "fromZhenti": true
   },
   {
-    "id": "zhenti:824",
+    "id": "zhenti:822",
     "scope": "article",
     "articleId": "jc-zuiwengtingji",
     "origin": "zhenti",
@@ -11856,7 +11821,7 @@
     "fromZhenti": true
   },
   {
-    "id": "zhenti:825",
+    "id": "zhenti:823",
     "scope": "article",
     "articleId": "jc-huxintingkanxue",
     "origin": "zhenti",
@@ -11874,7 +11839,7 @@
     "fromZhenti": true
   },
   {
-    "id": "zhenti:826",
+    "id": "zhenti:824",
     "scope": "article",
     "articleId": "jc-huxintingkanxue",
     "origin": "zhenti",
@@ -11892,7 +11857,7 @@
     "fromZhenti": true
   },
   {
-    "id": "zhenti:827",
+    "id": "zhenti:825",
     "scope": "article",
     "articleId": "jc-huxintingkanxue",
     "origin": "zhenti",
@@ -11910,7 +11875,7 @@
     "fromZhenti": true
   },
   {
-    "id": "zhenti:828",
+    "id": "zhenti:826",
     "scope": "article",
     "articleId": "jc-huxintingkanxue",
     "origin": "zhenti",
@@ -11928,7 +11893,7 @@
     "fromZhenti": true
   },
   {
-    "id": "zhenti:829",
+    "id": "zhenti:827",
     "scope": "article",
     "articleId": "jc-xiaoshitanji",
     "origin": "zhenti",
@@ -11952,7 +11917,7 @@
     "fromZhenti": true
   },
   {
-    "id": "zhenti:830",
+    "id": "zhenti:828",
     "scope": "article",
     "articleId": "jc-xiaoshitanji",
     "origin": "zhenti",
@@ -11976,7 +11941,7 @@
     "fromZhenti": true
   },
   {
-    "id": "zhenti:831",
+    "id": "zhenti:829",
     "scope": "article",
     "articleId": "jc-xiaoshitanji",
     "origin": "zhenti",
@@ -11994,7 +11959,7 @@
     "fromZhenti": true
   },
   {
-    "id": "zhenti:832",
+    "id": "zhenti:830",
     "scope": "article",
     "articleId": "jc-xiaoshitanji",
     "origin": "zhenti",
@@ -12018,7 +11983,7 @@
     "fromZhenti": true
   },
   {
-    "id": "zhenti:833",
+    "id": "zhenti:831",
     "scope": "article",
     "articleId": "jc-xiaoshitanji",
     "origin": "zhenti",
@@ -12036,31 +12001,7 @@
     "fromZhenti": true
   },
   {
-    "id": "zhenti:834",
-    "scope": "article",
-    "articleId": "jc-xiaoshitanji",
-    "origin": "zhenti",
-    "origins": [
-      "zhenti",
-      "zhenti"
-    ],
-    "type": "choice",
-    "stem": "下列对课文理解表述有误的一项是（ ） A.本文按照空间顺序，采用移步换景的写法，介绍游览小石潭的全过程。 B.本文与《岳阳楼记》《醉翁亭记》都属游记，都借山水之景表达了作者悲伤厌世之情。 C.一切景语皆情语，第④段凄神寒骨源于作者内心的悲伤、凄凉。 D.本文是作者被贬永州后，流连自然胜境以排解苦闷而作。",
-    "answer": "B",
-    "options": [
-      "本文按照空间顺序，采用移步换景的写法，介绍游览小石潭的全过程。",
-      "本文与《岳阳楼记》《醉翁亭记》都属游记，都借山水之景表达了作者悲伤厌世之情。",
-      "一切景语皆情语，第④段凄神寒骨源于作者内心的悲伤、凄凉。",
-      "本文是作者被贬永州后，流连自然胜境以排解苦闷而作。"
-    ],
-    "explanation": "三篇游记情感基调不同，不可一概而论。",
-    "province": "贵州铜仁",
-    "year": "2019",
-    "source": "web",
-    "fromZhenti": true
-  },
-  {
-    "id": "zhenti:835",
+    "id": "zhenti:832",
     "scope": "article",
     "articleId": "jc-sanxia",
     "origin": "zhenti",
@@ -12084,7 +12025,7 @@
     "fromZhenti": true
   },
   {
-    "id": "zhenti:836",
+    "id": "zhenti:833",
     "scope": "article",
     "articleId": "jc-sanxia",
     "origin": "zhenti",
@@ -12102,7 +12043,7 @@
     "fromZhenti": true
   },
   {
-    "id": "zhenti:837",
+    "id": "zhenti:834",
     "scope": "article",
     "articleId": "jc-sanxia",
     "origin": "zhenti",
@@ -12126,7 +12067,7 @@
     "fromZhenti": true
   },
   {
-    "id": "zhenti:838",
+    "id": "zhenti:835",
     "scope": "article",
     "articleId": "jc-sanxia",
     "origin": "zhenti",
@@ -12144,7 +12085,7 @@
     "fromZhenti": true
   },
   {
-    "id": "zhenti:839",
+    "id": "zhenti:836",
     "scope": "article",
     "articleId": "jc-sanxia",
     "origin": "zhenti",
@@ -12162,7 +12103,7 @@
     "fromZhenti": true
   },
   {
-    "id": "zhenti:840",
+    "id": "zhenti:837",
     "scope": "article",
     "articleId": "jc-sanxia",
     "origin": "zhenti",
@@ -12186,7 +12127,7 @@
     "fromZhenti": true
   },
   {
-    "id": "zhenti:841",
+    "id": "zhenti:838",
     "scope": "article",
     "articleId": "jc-sanxia",
     "origin": "zhenti",
@@ -12204,25 +12145,7 @@
     "fromZhenti": true
   },
   {
-    "id": "zhenti:842",
-    "scope": "article",
-    "articleId": "jc-sanxia",
-    "origin": "zhenti",
-    "origins": [
-      "zhenti",
-      "zhenti"
-    ],
-    "type": "understand",
-    "stem": "甲、乙两文都写到了水，但特点不同，【甲】三峡水的特点是：________；【乙】小石潭水的特点是：________。",
-    "answer": "水势大、水流急；清澈",
-    "explanation": "夏水襄陵/朝发暮到 对比 空游无所依/日光下澈。",
-    "province": "湖南湘西",
-    "year": "2019",
-    "source": "web",
-    "fromZhenti": true
-  },
-  {
-    "id": "zhenti:843",
+    "id": "zhenti:839",
     "scope": "article",
     "articleId": "jc-sanxia",
     "origin": "zhenti",
@@ -12240,7 +12163,7 @@
     "fromZhenti": true
   },
   {
-    "id": "zhenti:844",
+    "id": "zhenti:840",
     "scope": "article",
     "articleId": "jc-sanxia",
     "origin": "zhenti",
@@ -12258,7 +12181,7 @@
     "fromZhenti": true
   },
   {
-    "id": "zhenti:845",
+    "id": "zhenti:841",
     "scope": "article",
     "articleId": "jc-sanxia",
     "origin": "zhenti",
@@ -12276,7 +12199,7 @@
     "fromZhenti": true
   },
   {
-    "id": "zhenti:846",
+    "id": "zhenti:842",
     "scope": "article",
     "articleId": "jc-jichengtiansiyeyou",
     "origin": "zhenti",
@@ -12294,7 +12217,7 @@
     "fromZhenti": true
   },
   {
-    "id": "zhenti:847",
+    "id": "zhenti:843",
     "scope": "article",
     "articleId": "jc-jichengtiansiyeyou",
     "origin": "zhenti",
@@ -12318,7 +12241,7 @@
     "fromZhenti": true
   },
   {
-    "id": "zhenti:848",
+    "id": "zhenti:844",
     "scope": "article",
     "articleId": "jc-jichengtiansiyeyou",
     "origin": "zhenti",
@@ -12335,7 +12258,7 @@
     "fromZhenti": true
   },
   {
-    "id": "zhenti:849",
+    "id": "zhenti:845",
     "scope": "article",
     "articleId": "jc-jichengtiansiyeyou",
     "origin": "zhenti",
@@ -12352,24 +12275,7 @@
     "fromZhenti": true
   },
   {
-    "id": "zhenti:850",
-    "scope": "article",
-    "articleId": "jc-jichengtiansiyeyou",
-    "origin": "zhenti",
-    "origins": [
-      "zhenti",
-      "zhenti"
-    ],
-    "type": "understand",
-    "stem": "如何理解文中的\"闲人\"？表达了作者怎样的思想感情？",
-    "answer": "\"闲人\"指不汲汲于名利、有闲情雅致赏月的人，也含被贬后清闲的自嘲。表达了作者贬谪中的自我排遣、旷达胸襟，以及对美好月色的喜爱和对知音的欣慰。",
-    "explanation": "闲人是全文点睛，褒贬兼具。",
-    "province": "多地",
-    "source": "web",
-    "fromZhenti": true
-  },
-  {
-    "id": "zhenti:851",
+    "id": "zhenti:846",
     "scope": "article",
     "articleId": "jc-ywsyx",
     "origin": "zhenti",
@@ -12387,7 +12293,7 @@
     "fromZhenti": true
   },
   {
-    "id": "zhenti:852",
+    "id": "zhenti:847",
     "scope": "article",
     "articleId": "jc-ywsyx",
     "origin": "zhenti",
@@ -12405,7 +12311,7 @@
     "fromZhenti": true
   },
   {
-    "id": "zhenti:853",
+    "id": "zhenti:848",
     "scope": "article",
     "articleId": "jc-ywsyx",
     "origin": "zhenti",
@@ -12423,7 +12329,7 @@
     "fromZhenti": true
   },
   {
-    "id": "zhenti:854",
+    "id": "zhenti:849",
     "scope": "article",
     "articleId": "jc-ywsyx",
     "origin": "zhenti",
@@ -12440,7 +12346,7 @@
     "fromZhenti": true
   },
   {
-    "id": "zhenti:855",
+    "id": "zhenti:850",
     "scope": "article",
     "articleId": "jc-ywsyx",
     "origin": "zhenti",
@@ -12457,7 +12363,7 @@
     "fromZhenti": true
   },
   {
-    "id": "zhenti:856",
+    "id": "zhenti:851",
     "scope": "article",
     "articleId": "jc-songdongyangmashengxu",
     "origin": "zhenti",
@@ -12481,7 +12387,7 @@
     "fromZhenti": true
   },
   {
-    "id": "zhenti:857",
+    "id": "zhenti:852",
     "scope": "article",
     "articleId": "jc-songdongyangmashengxu",
     "origin": "zhenti",
@@ -12505,7 +12411,7 @@
     "fromZhenti": true
   },
   {
-    "id": "zhenti:858",
+    "id": "zhenti:853",
     "scope": "article",
     "articleId": "jc-songdongyangmashengxu",
     "origin": "zhenti",
@@ -12529,7 +12435,7 @@
     "fromZhenti": true
   },
   {
-    "id": "zhenti:859",
+    "id": "zhenti:854",
     "scope": "article",
     "articleId": "jc-songdongyangmashengxu",
     "origin": "zhenti",
@@ -12547,7 +12453,7 @@
     "fromZhenti": true
   },
   {
-    "id": "zhenti:860",
+    "id": "zhenti:855",
     "scope": "article",
     "articleId": "jc-songdongyangmashengxu",
     "origin": "zhenti",
@@ -12565,25 +12471,7 @@
     "fromZhenti": true
   },
   {
-    "id": "zhenti:861",
-    "scope": "article",
-    "articleId": "jc-songdongyangmashengxu",
-    "origin": "zhenti",
-    "origins": [
-      "zhenti",
-      "zhenti"
-    ],
-    "type": "open",
-    "stem": "结合甲（送东阳马生序）乙（任末勤学）两文，谈谈自己获得了哪些启示。",
-    "answer": "示例：只要有崇高追求和丰富的精神生活，即使物质生活很苦，也会其乐无穷；学习要勤奋专心、不怕吃苦，才能有所成就；好学之人虽死犹生。",
-    "explanation": "开放题，结合文本精神内核。",
-    "province": "湖南邵阳",
-    "year": "2020",
-    "source": "web",
-    "fromZhenti": true
-  },
-  {
-    "id": "zhenti:862",
+    "id": "zhenti:856",
     "scope": "article",
     "articleId": "jc-chushibiao",
     "origin": "zhenti",
@@ -12607,7 +12495,7 @@
     "fromZhenti": true
   },
   {
-    "id": "zhenti:863",
+    "id": "zhenti:857",
     "scope": "article",
     "articleId": "jc-chushibiao",
     "origin": "zhenti",
@@ -12631,7 +12519,7 @@
     "fromZhenti": true
   },
   {
-    "id": "zhenti:864",
+    "id": "zhenti:858",
     "scope": "article",
     "articleId": "jc-chushibiao",
     "origin": "zhenti",
@@ -12655,7 +12543,7 @@
     "fromZhenti": true
   },
   {
-    "id": "zhenti:865",
+    "id": "zhenti:859",
     "scope": "article",
     "articleId": "jc-chushibiao",
     "origin": "zhenti",
@@ -12673,25 +12561,7 @@
     "fromZhenti": true
   },
   {
-    "id": "zhenti:866",
-    "scope": "article",
-    "articleId": "jc-chushibiao",
-    "origin": "zhenti",
-    "origins": [
-      "zhenti",
-      "zhenti"
-    ],
-    "type": "understand",
-    "stem": "本文抒发了作者怎样的情感？这种情感又是如何抒发的？",
-    "answer": "抒发了对先帝的感恩戴德和对后主刘禅的忠心耿耿，以及兴复汉室的决心。通过回顾三顾草庐、临崩寄大事等往事，反复陈情，融叙事、议论、抒情于一体。",
-    "explanation": "报先帝、忠陛下是情感主线。",
-    "province": "湖南",
-    "year": "2023",
-    "source": "web",
-    "fromZhenti": true
-  },
-  {
-    "id": "zhenti:867",
+    "id": "zhenti:860",
     "scope": "article",
     "articleId": "jc-chushibiao",
     "origin": "zhenti",
@@ -12709,7 +12579,7 @@
     "fromZhenti": true
   },
   {
-    "id": "zhenti:868",
+    "id": "zhenti:861",
     "scope": "article",
     "articleId": "loushiming",
     "origin": "zhenti",
@@ -12733,7 +12603,7 @@
     "fromZhenti": true
   },
   {
-    "id": "zhenti:869",
+    "id": "zhenti:862",
     "scope": "article",
     "articleId": "loushiming",
     "origin": "zhenti",
@@ -12751,7 +12621,7 @@
     "fromZhenti": true
   },
   {
-    "id": "zhenti:870",
+    "id": "zhenti:863",
     "scope": "article",
     "articleId": "ai-lian-shuo",
     "origin": "zhenti",
@@ -12769,7 +12639,7 @@
     "fromZhenti": true
   },
   {
-    "id": "zhenti:871",
+    "id": "zhenti:864",
     "scope": "article",
     "articleId": "loushiming",
     "origin": "zhenti",
@@ -12787,7 +12657,7 @@
     "fromZhenti": true
   },
   {
-    "id": "zhenti:872",
+    "id": "zhenti:865",
     "scope": "article",
     "articleId": "loushiming",
     "origin": "zhenti",
@@ -12805,7 +12675,7 @@
     "fromZhenti": true
   },
   {
-    "id": "zhenti:873",
+    "id": "zhenti:866",
     "scope": "article",
     "articleId": "loushiming",
     "origin": "zhenti",
@@ -12823,7 +12693,7 @@
     "fromZhenti": true
   },
   {
-    "id": "zhenti:874",
+    "id": "zhenti:867",
     "scope": "article",
     "articleId": "ai-lian-shuo",
     "origin": "zhenti",
@@ -12840,24 +12710,7 @@
     "fromZhenti": true
   },
   {
-    "id": "zhenti:875",
-    "scope": "article",
-    "articleId": "ai-lian-shuo",
-    "origin": "zhenti",
-    "origins": [
-      "zhenti",
-      "zhenti"
-    ],
-    "type": "understand",
-    "stem": "作者把莲比作君子，写出了莲的哪些品质？表达了怎样的人生态度？",
-    "answer": "出淤泥而不染（洁身自好）、濯清涟而不妖（质朴）、中通外直（正直）、不蔓不枝（不攀附）、香远益清（美德远播）、亭亭净植（端庄）。表达了不慕名利、洁身自好的生活态度，以及对追名逐利世风的批判。",
-    "explanation": "托物言志核心题。",
-    "province": "多地",
-    "source": "web",
-    "fromZhenti": true
-  },
-  {
-    "id": "zhenti:876",
+    "id": "zhenti:868",
     "scope": "article",
     "articleId": "jc-caoguilunzhan",
     "origin": "zhenti",
@@ -12875,7 +12728,7 @@
     "fromZhenti": true
   },
   {
-    "id": "zhenti:877",
+    "id": "zhenti:869",
     "scope": "article",
     "articleId": "jc-caoguilunzhan",
     "origin": "zhenti",
@@ -12893,25 +12746,7 @@
     "fromZhenti": true
   },
   {
-    "id": "zhenti:878",
-    "scope": "article",
-    "articleId": "jc-caoguilunzhan",
-    "origin": "zhenti",
-    "origins": [
-      "zhenti",
-      "zhenti"
-    ],
-    "type": "understand",
-    "stem": "长勺之战最终鲁国大胜，请结合选段简要分析取胜的原因。",
-    "answer": "①鲁庄公任人唯贤，能听取曹刿意见；②曹刿具有远见卓识：战前强调取信于民，战时善于把握战机（彼竭我盈），战后谨慎追击（视辙乱、望旗靡）。",
-    "explanation": "政治准备+军事指挥。",
-    "province": "安徽",
-    "year": "2018",
-    "source": "web",
-    "fromZhenti": true
-  },
-  {
-    "id": "zhenti:879",
+    "id": "zhenti:870",
     "scope": "article",
     "articleId": "jc-caoguilunzhan",
     "origin": "zhenti",
@@ -12935,7 +12770,7 @@
     "fromZhenti": true
   },
   {
-    "id": "zhenti:880",
+    "id": "zhenti:871",
     "scope": "article",
     "articleId": "jc-caoguilunzhan",
     "origin": "zhenti",
@@ -12953,7 +12788,7 @@
     "fromZhenti": true
   },
   {
-    "id": "zhenti:881",
+    "id": "zhenti:872",
     "scope": "article",
     "articleId": "jc-caoguilunzhan",
     "origin": "zhenti",
@@ -12971,7 +12806,7 @@
     "fromZhenti": true
   },
   {
-    "id": "zhenti:882",
+    "id": "zhenti:873",
     "scope": "article",
     "articleId": "jc-caoguilunzhan",
     "origin": "zhenti",
@@ -12995,7 +12830,7 @@
     "fromZhenti": true
   },
   {
-    "id": "zhenti:883",
+    "id": "zhenti:874",
     "scope": "article",
     "articleId": "jc-caoguilunzhan",
     "origin": "zhenti",
@@ -13012,7 +12847,7 @@
     "fromZhenti": true
   },
   {
-    "id": "zhenti:884",
+    "id": "zhenti:875",
     "scope": "article",
     "articleId": "jc-caoguilunzhan",
     "origin": "zhenti",
@@ -13029,7 +12864,7 @@
     "fromZhenti": true
   },
   {
-    "id": "zhenti:885",
+    "id": "zhenti:876",
     "scope": "article",
     "articleId": "jc-zoujifengqiwangnajian",
     "origin": "zhenti",
@@ -13053,25 +12888,7 @@
     "fromZhenti": true
   },
   {
-    "id": "zhenti:886",
-    "scope": "article",
-    "articleId": "jc-zoujifengqiwangnajian",
-    "origin": "zhenti",
-    "origins": [
-      "zhenti",
-      "zhenti"
-    ],
-    "type": "understand",
-    "stem": "邹忌讽谏齐威王时用了什么方法？这样进谏有什么好处？",
-    "answer": "设喻（类比）讽谏：以自身受妻妾客蒙蔽类比齐王受宫妇、朝臣、四境蒙蔽。好处：委婉得体，使齐王易于接受，避免直接批评的抵触。",
-    "explanation": "讽谏艺术是核心考点。",
-    "province": "广西河池",
-    "year": "2019",
-    "source": "web",
-    "fromZhenti": true
-  },
-  {
-    "id": "zhenti:887",
+    "id": "zhenti:877",
     "scope": "article",
     "articleId": "jc-zoujifengqiwangnajian",
     "origin": "zhenti",
@@ -13089,25 +12906,7 @@
     "fromZhenti": true
   },
   {
-    "id": "zhenti:888",
-    "scope": "article",
-    "articleId": "jc-zoujifengqiwangnajian",
-    "origin": "zhenti",
-    "origins": [
-      "zhenti",
-      "zhenti"
-    ],
-    "type": "understand",
-    "stem": "概括选文（下令纳谏至战胜于朝廷）的主要内容。",
-    "answer": "齐威王接受邹忌建议下令纳谏，进谏由门庭若市到无可进者，最终燕赵韩魏皆朝于齐，战胜于朝廷。",
-    "explanation": "纳谏→政通→外交胜利。",
-    "province": "辽宁辽阳",
-    "year": "2019",
-    "source": "web",
-    "fromZhenti": true
-  },
-  {
-    "id": "zhenti:889",
+    "id": "zhenti:878",
     "scope": "article",
     "articleId": "jc-zoujifengqiwangnajian",
     "origin": "zhenti",
@@ -13125,7 +12924,7 @@
     "fromZhenti": true
   },
   {
-    "id": "zhenti:890",
+    "id": "zhenti:879",
     "scope": "article",
     "articleId": "jc-zoujifengqiwangnajian",
     "origin": "zhenti",
@@ -13142,7 +12941,7 @@
     "fromZhenti": true
   },
   {
-    "id": "zhenti:891",
+    "id": "zhenti:880",
     "scope": "article",
     "articleId": "jc-zoujifengqiwangnajian",
     "origin": "zhenti",
@@ -13159,7 +12958,7 @@
     "fromZhenti": true
   },
   {
-    "id": "zhenti:892",
+    "id": "zhenti:881",
     "scope": "article",
     "articleId": "jc-mashuo",
     "origin": "zhenti",
@@ -13176,7 +12975,7 @@
     "fromZhenti": true
   },
   {
-    "id": "zhenti:893",
+    "id": "zhenti:882",
     "scope": "article",
     "articleId": "jc-mashuo",
     "origin": "zhenti",
@@ -13193,7 +12992,7 @@
     "fromZhenti": true
   },
   {
-    "id": "zhenti:894",
+    "id": "zhenti:883",
     "scope": "article",
     "articleId": "jc-mashuo",
     "origin": "zhenti",
@@ -13210,24 +13009,7 @@
     "fromZhenti": true
   },
   {
-    "id": "zhenti:895",
-    "scope": "article",
-    "articleId": "jc-mashuo",
-    "origin": "zhenti",
-    "origins": [
-      "zhenti",
-      "zhenti"
-    ],
-    "type": "understand",
-    "stem": "本文通过千里马的遭遇，表达了作者怎样的思想感情？",
-    "answer": "以千里马喻人才，以伯乐喻能识别人才的人；揭露封建统治者不识人才、埋没人才的现象，抒发作者怀才不遇的愤懑之情，并呼吁重视人才。",
-    "explanation": "托物寓意。",
-    "province": "多地",
-    "source": "web",
-    "fromZhenti": true
-  },
-  {
-    "id": "zhenti:896",
+    "id": "zhenti:884",
     "scope": "article",
     "articleId": "jc-thyj",
     "origin": "zhenti",
@@ -13244,7 +13026,7 @@
     "fromZhenti": true
   },
   {
-    "id": "zhenti:897",
+    "id": "zhenti:885",
     "scope": "article",
     "articleId": "jc-thyj",
     "origin": "zhenti",
@@ -13261,24 +13043,7 @@
     "fromZhenti": true
   },
   {
-    "id": "zhenti:898",
-    "scope": "article",
-    "articleId": "jc-thyj",
-    "origin": "zhenti",
-    "origins": [
-      "zhenti",
-      "zhenti"
-    ],
-    "type": "understand",
-    "stem": "桃花源是怎样的社会？作者描绘这一理想社会的用意是什么？",
-    "answer": "没有剥削压迫、人人劳动、生活富足安宁、民风淳朴的理想社会。寄托作者对黑暗现实的不满和对理想社会的追求，反映人民的愿望。",
-    "explanation": "理想对比现实。",
-    "province": "多地",
-    "source": "web",
-    "fromZhenti": true
-  },
-  {
-    "id": "zhenti:899",
+    "id": "zhenti:886",
     "scope": "article",
     "articleId": "jc-thyj",
     "origin": "zhenti",
@@ -13301,7 +13066,7 @@
     "fromZhenti": true
   },
   {
-    "id": "zhenti:900",
+    "id": "zhenti:887",
     "scope": "article",
     "articleId": "jc-syyhsyal",
     "origin": "zhenti",
@@ -13318,7 +13083,7 @@
     "fromZhenti": true
   },
   {
-    "id": "zhenti:901",
+    "id": "zhenti:888",
     "scope": "article",
     "articleId": "jc-syyhsyal",
     "origin": "zhenti",
@@ -13335,24 +13100,7 @@
     "fromZhenti": true
   },
   {
-    "id": "zhenti:902",
-    "scope": "article",
-    "articleId": "jc-syyhsyal",
-    "origin": "zhenti",
-    "origins": [
-      "zhenti",
-      "zhenti"
-    ],
-    "type": "understand",
-    "stem": "文章采用了怎样的论证思路？中心论点是什么？",
-    "answer": "先列举六位历史人物事例，再从正面论述人成才的主观因素（苦心志等），再从正反两面论述国家生死存亡，最后归纳论点。中心论点：生于忧患，死于安乐。",
-    "explanation": "举例+道理论证。",
-    "province": "多地",
-    "source": "web",
-    "fromZhenti": true
-  },
-  {
-    "id": "zhenti:903",
+    "id": "zhenti:889",
     "scope": "article",
     "articleId": "jc-hezhouji",
     "origin": "zhenti",
@@ -13369,7 +13117,7 @@
     "fromZhenti": true
   },
   {
-    "id": "zhenti:904",
+    "id": "zhenti:890",
     "scope": "article",
     "articleId": "jc-hezhouji",
     "origin": "zhenti",
@@ -13386,24 +13134,7 @@
     "fromZhenti": true
   },
   {
-    "id": "zhenti:905",
-    "scope": "article",
-    "articleId": "jc-hezhouji",
-    "origin": "zhenti",
-    "origins": [
-      "zhenti",
-      "zhenti"
-    ],
-    "type": "understand",
-    "stem": "文中哪些地方体现了核舟\"奇巧\"？表达了作者怎样的态度？",
-    "answer": "体积小（长约八分有奇）却人物、器物、文字俱全；人物神情动作栩栩如生（如苏黄共阅、佛印矫首昂视）；细微处如念珠可历历数。表达对民间艺人高超技艺的赞叹与赞美。",
-    "explanation": "说明文中的描写与情感。",
-    "province": "多地",
-    "source": "web",
-    "fromZhenti": true
-  },
-  {
-    "id": "zhenti:906",
+    "id": "zhenti:891",
     "scope": "article",
     "articleId": "jc-zhouyafu",
     "origin": "zhenti",
@@ -13420,7 +13151,7 @@
     "fromZhenti": true
   },
   {
-    "id": "zhenti:907",
+    "id": "zhenti:892",
     "scope": "article",
     "articleId": "jc-zhouyafu",
     "origin": "zhenti",
@@ -13437,7 +13168,7 @@
     "fromZhenti": true
   },
   {
-    "id": "zhenti:908",
+    "id": "zhenti:893",
     "scope": "article",
     "articleId": "jc-zhouyafu",
     "origin": "zhenti",
@@ -13454,7 +13185,7 @@
     "fromZhenti": true
   },
   {
-    "id": "zhenti:909",
+    "id": "zhenti:894",
     "scope": "article",
     "articleId": "jc-sunquanquanxue",
     "origin": "zhenti",
@@ -13471,7 +13202,7 @@
     "fromZhenti": true
   },
   {
-    "id": "zhenti:910",
+    "id": "zhenti:895",
     "scope": "article",
     "articleId": "jc-sunquanquanxue",
     "origin": "zhenti",
@@ -13488,7 +13219,7 @@
     "fromZhenti": true
   },
   {
-    "id": "zhenti:911",
+    "id": "zhenti:896",
     "scope": "article",
     "articleId": "jc-sunquanquanxue",
     "origin": "zhenti",
@@ -13505,7 +13236,7 @@
     "fromZhenti": true
   },
   {
-    "id": "zhenti:912",
+    "id": "zhenti:897",
     "scope": "article",
     "articleId": "jc-yugongyishan",
     "origin": "zhenti",
@@ -13522,7 +13253,7 @@
     "fromZhenti": true
   },
   {
-    "id": "zhenti:913",
+    "id": "zhenti:898",
     "scope": "article",
     "articleId": "jc-yugongyishan",
     "origin": "zhenti",
@@ -13539,7 +13270,7 @@
     "fromZhenti": true
   },
   {
-    "id": "zhenti:914",
+    "id": "zhenti:899",
     "scope": "article",
     "articleId": "jc-yugongyishan",
     "origin": "zhenti",
@@ -13556,7 +13287,7 @@
     "fromZhenti": true
   },
   {
-    "id": "zhenti:915",
+    "id": "zhenti:900",
     "scope": "article",
     "articleId": "jc-yuzhuyuansishu",
     "origin": "zhenti",
@@ -13573,7 +13304,7 @@
     "fromZhenti": true
   },
   {
-    "id": "zhenti:916",
+    "id": "zhenti:901",
     "scope": "article",
     "articleId": "jc-yuzhuyuansishu",
     "origin": "zhenti",
@@ -13590,7 +13321,7 @@
     "fromZhenti": true
   },
   {
-    "id": "zhenti:917",
+    "id": "zhenti:902",
     "scope": "article",
     "articleId": "jc-yuzhuyuansishu",
     "origin": "zhenti",
@@ -13607,7 +13338,7 @@
     "fromZhenti": true
   },
   {
-    "id": "zhenti:918",
+    "id": "zhenti:903",
     "scope": "article",
     "articleId": "da_xie_zhong_shu_shu",
     "origin": "zhenti",
@@ -13624,7 +13355,7 @@
     "fromZhenti": true
   },
   {
-    "id": "zhenti:919",
+    "id": "zhenti:904",
     "scope": "article",
     "articleId": "da_xie_zhong_shu_shu",
     "origin": "zhenti",
@@ -13641,7 +13372,7 @@
     "fromZhenti": true
   },
   {
-    "id": "zhenti:920",
+    "id": "zhenti:905",
     "scope": "article",
     "articleId": "da_xie_zhong_shu_shu",
     "origin": "zhenti",
@@ -13658,7 +13389,7 @@
     "fromZhenti": true
   },
   {
-    "id": "zhenti:921",
+    "id": "zhenti:906",
     "scope": "article",
     "articleId": "jc-chensheshejia",
     "origin": "zhenti",
@@ -13675,7 +13406,7 @@
     "fromZhenti": true
   },
   {
-    "id": "zhenti:922",
+    "id": "zhenti:907",
     "scope": "article",
     "articleId": "jc-chensheshejia",
     "origin": "zhenti",
@@ -13692,7 +13423,7 @@
     "fromZhenti": true
   },
   {
-    "id": "zhenti:923",
+    "id": "zhenti:908",
     "scope": "article",
     "articleId": "jc-chensheshejia",
     "origin": "zhenti",
@@ -13709,7 +13440,7 @@
     "fromZhenti": true
   },
   {
-    "id": "zhenti:924",
+    "id": "zhenti:909",
     "scope": "article",
     "articleId": "jc-tangjuburushiming",
     "origin": "zhenti",
@@ -13726,7 +13457,7 @@
     "fromZhenti": true
   },
   {
-    "id": "zhenti:925",
+    "id": "zhenti:910",
     "scope": "article",
     "articleId": "jc-tangjuburushiming",
     "origin": "zhenti",
@@ -13743,7 +13474,7 @@
     "fromZhenti": true
   },
   {
-    "id": "zhenti:926",
+    "id": "zhenti:911",
     "scope": "article",
     "articleId": "jc-tangjuburushiming",
     "origin": "zhenti",
@@ -13760,7 +13491,7 @@
     "fromZhenti": true
   },
   {
-    "id": "zhenti:927",
+    "id": "zhenti:912",
     "scope": "article",
     "articleId": "jc-mulanshi",
     "origin": "zhenti",
@@ -13777,24 +13508,7 @@
     "fromZhenti": true
   },
   {
-    "id": "zhenti:928",
-    "scope": "article",
-    "articleId": "jc-mulanshi",
-    "origin": "zhenti",
-    "origins": [
-      "zhenti",
-      "zhenti"
-    ],
-    "type": "understand",
-    "stem": "木兰形象有哪些特点？诗中哪些情节体现了详略得当？",
-    "answer": "木兰：孝顺勇敢、爱国爱家、不慕名利、亲切可爱。详写：出征缘由、准备、思亲、归家；略写：征战过程。突出人物性格与主题。",
-    "explanation": "人物+剪裁。",
-    "province": "多地",
-    "source": "web",
-    "fromZhenti": true
-  },
-  {
-    "id": "zhenti:929",
+    "id": "zhenti:913",
     "scope": "article",
     "articleId": "guancanghai-013",
     "origin": "zhenti",
@@ -13811,7 +13525,7 @@
     "fromZhenti": true
   },
   {
-    "id": "zhenti:930",
+    "id": "zhenti:914",
     "scope": "article",
     "articleId": "shiciwushou-yinjiu",
     "origin": "zhenti",
@@ -13828,7 +13542,7 @@
     "fromZhenti": true
   },
   {
-    "id": "zhenti:931",
+    "id": "zhenti:915",
     "scope": "article",
     "articleId": "jc-shizhisaishang",
     "origin": "zhenti",
@@ -13845,7 +13559,7 @@
     "fromZhenti": true
   },
   {
-    "id": "zhenti:932",
+    "id": "zhenti:916",
     "scope": "article",
     "articleId": "jc-chunyelochengwendi",
     "origin": "zhenti",
@@ -13862,7 +13576,7 @@
     "fromZhenti": true
   },
   {
-    "id": "zhenti:933",
+    "id": "zhenti:917",
     "scope": "article",
     "articleId": "jc-ly",
     "origin": "zhenti",
@@ -13886,7 +13600,7 @@
     "fromZhenti": true
   },
   {
-    "id": "zhenti:934",
+    "id": "zhenti:918",
     "scope": "article",
     "articleId": "jc-ly",
     "origin": "zhenti",
@@ -13904,7 +13618,7 @@
     "fromZhenti": true
   },
   {
-    "id": "zhenti:935",
+    "id": "zhenti:919",
     "scope": "article",
     "articleId": "jc-ly",
     "origin": "zhenti",
@@ -13922,7 +13636,7 @@
     "fromZhenti": true
   },
   {
-    "id": "zhenti:936",
+    "id": "zhenti:920",
     "scope": "article",
     "articleId": "jc-ly",
     "origin": "zhenti",
@@ -13940,7 +13654,7 @@
     "fromZhenti": true
   },
   {
-    "id": "zhenti:937",
+    "id": "zhenti:921",
     "scope": "article",
     "articleId": "jc-maiyouweng",
     "origin": "zhenti",
@@ -13964,7 +13678,7 @@
     "fromZhenti": true
   },
   {
-    "id": "zhenti:938",
+    "id": "zhenti:922",
     "scope": "article",
     "articleId": "jc-maiyouweng",
     "origin": "zhenti",
@@ -13988,7 +13702,7 @@
     "fromZhenti": true
   },
   {
-    "id": "zhenti:939",
+    "id": "zhenti:923",
     "scope": "article",
     "articleId": "jc-maiyouweng",
     "origin": "zhenti",
@@ -14006,7 +13720,7 @@
     "fromZhenti": true
   },
   {
-    "id": "zhenti:940",
+    "id": "zhenti:924",
     "scope": "article",
     "articleId": "jc-chunwang",
     "origin": "zhenti",
@@ -14030,7 +13744,7 @@
     "fromZhenti": true
   },
   {
-    "id": "zhenti:941",
+    "id": "zhenti:925",
     "scope": "article",
     "articleId": "jc-chunwang",
     "origin": "zhenti",
@@ -14047,7 +13761,7 @@
     "fromZhenti": true
   },
   {
-    "id": "zhenti:942",
+    "id": "zhenti:926",
     "scope": "article",
     "articleId": "jc-chunwang",
     "origin": "zhenti",
@@ -14065,7 +13779,7 @@
     "fromZhenti": true
   },
   {
-    "id": "zhenti:943",
+    "id": "zhenti:927",
     "scope": "article",
     "articleId": "jc-wangyue",
     "origin": "zhenti",
@@ -14082,24 +13796,7 @@
     "fromZhenti": true
   },
   {
-    "id": "zhenti:944",
-    "scope": "article",
-    "articleId": "jc-wangyue",
-    "origin": "zhenti",
-    "origins": [
-      "zhenti",
-      "zhenti"
-    ],
-    "type": "short",
-    "stem": "全诗表达了诗人怎样的思想感情？",
-    "answer": "表达了诗人对大自然（祖国山河）的热爱之情；表达了诗人不怕困难，敢于攀登顶峰，俯视一切的雄心和气概；体现了诗人乐观自信、积极向上的精神。",
-    "province": "四川广安",
-    "year": "2022",
-    "source": "web",
-    "fromZhenti": true
-  },
-  {
-    "id": "zhenti:945",
+    "id": "zhenti:928",
     "scope": "article",
     "articleId": "jc-wangyue",
     "origin": "zhenti",
@@ -14116,7 +13813,7 @@
     "fromZhenti": true
   },
   {
-    "id": "zhenti:946",
+    "id": "zhenti:929",
     "scope": "article",
     "articleId": "xinglunan-qiyi",
     "origin": "zhenti",
@@ -14140,7 +13837,7 @@
     "fromZhenti": true
   },
   {
-    "id": "zhenti:947",
+    "id": "zhenti:930",
     "scope": "article",
     "articleId": "xinglunan-qiyi",
     "origin": "zhenti",
@@ -14157,7 +13854,7 @@
     "fromZhenti": true
   },
   {
-    "id": "zhenti:948",
+    "id": "zhenti:931",
     "scope": "article",
     "articleId": "xinglunan-qiyi",
     "origin": "zhenti",
@@ -14174,7 +13871,7 @@
     "fromZhenti": true
   },
   {
-    "id": "zhenti:949",
+    "id": "zhenti:932",
     "scope": "article",
     "articleId": "guolingdingyang-wentianxiang",
     "origin": "zhenti",
@@ -14198,7 +13895,7 @@
     "fromZhenti": true
   },
   {
-    "id": "zhenti:950",
+    "id": "zhenti:933",
     "scope": "article",
     "articleId": "guolingdingyang-wentianxiang",
     "origin": "zhenti",
@@ -14216,7 +13913,7 @@
     "fromZhenti": true
   },
   {
-    "id": "zhenti:951",
+    "id": "zhenti:934",
     "scope": "article",
     "articleId": "guolingdingyang-wentianxiang",
     "origin": "zhenti",
@@ -14233,7 +13930,7 @@
     "fromZhenti": true
   },
   {
-    "id": "zhenti:952",
+    "id": "zhenti:935",
     "scope": "article",
     "articleId": "jc-huanghelou",
     "origin": "zhenti",
@@ -14257,7 +13954,7 @@
     "fromZhenti": true
   },
   {
-    "id": "zhenti:953",
+    "id": "zhenti:936",
     "scope": "article",
     "articleId": "jc-huanghelou",
     "origin": "zhenti",
@@ -14274,7 +13971,7 @@
     "fromZhenti": true
   },
   {
-    "id": "zhenti:954",
+    "id": "zhenti:937",
     "scope": "article",
     "articleId": "jc-shiyiyuesirifengyudazuoer",
     "origin": "zhenti",
@@ -14290,23 +13987,7 @@
     "fromZhenti": true
   },
   {
-    "id": "zhenti:955",
-    "scope": "article",
-    "articleId": "jc-shiyiyuesirifengyudazuoer",
-    "origin": "zhenti",
-    "origins": [
-      "zhenti",
-      "zhenti"
-    ],
-    "type": "open",
-    "stem": "梁启超评价陆游：“谁怜爱国千行泪，说到胡尘意不平。”从这首诗中你看到了作者怎样的品格？结合具体诗句谈谈感受。",
-    "answer": "示例：“僵卧孤村不自哀，尚思为国戍轮台”，诗人虽年老体衰、僵卧孤村，却仍想着守卫边疆、报效祖国，表现了诗人坚定不移的报国之志和忧国忧民的拳拳之念。",
-    "province": "经典训练题",
-    "source": "web",
-    "fromZhenti": true
-  },
-  {
-    "id": "zhenti:956",
+    "id": "zhenti:938",
     "scope": "article",
     "articleId": "jc-dengyouzhoutaige",
     "origin": "zhenti",
@@ -14323,24 +14004,7 @@
     "fromZhenti": true
   },
   {
-    "id": "zhenti:957",
-    "scope": "article",
-    "articleId": "jc-dengyouzhoutaige",
-    "origin": "zhenti",
-    "origins": [
-      "zhenti",
-      "zhenti"
-    ],
-    "type": "understand",
-    "stem": "诗人为什么“怆然涕下”？从诗中找出理由。",
-    "answer": "①明君不见（不见古贤）；②壮志难酬（不见今贤）；③人生短暂（天地悠悠）；④孤独寂寞（独自孤单）。",
-    "province": "贵州黔西南",
-    "year": "2022",
-    "source": "web",
-    "fromZhenti": true
-  },
-  {
-    "id": "zhenti:958",
+    "id": "zhenti:939",
     "scope": "article",
     "articleId": "jc-dengyouzhoutaige",
     "origin": "zhenti",
@@ -14363,7 +14027,7 @@
     "fromZhenti": true
   },
   {
-    "id": "zhenti:959",
+    "id": "zhenti:940",
     "scope": "article",
     "articleId": "jc-busuanzi-yongmei",
     "origin": "zhenti",
@@ -14387,7 +14051,7 @@
     "fromZhenti": true
   },
   {
-    "id": "zhenti:960",
+    "id": "zhenti:941",
     "scope": "article",
     "articleId": "jc-busuanzi-yongmei",
     "origin": "zhenti",
@@ -14404,7 +14068,7 @@
     "fromZhenti": true
   },
   {
-    "id": "zhenti:961",
+    "id": "zhenti:942",
     "scope": "article",
     "articleId": "jc-yongxue",
     "origin": "zhenti",
@@ -14427,7 +14091,7 @@
     "fromZhenti": true
   },
   {
-    "id": "zhenti:962",
+    "id": "zhenti:943",
     "scope": "article",
     "articleId": "jc-yongxue",
     "origin": "zhenti",
@@ -14443,7 +14107,7 @@
     "fromZhenti": true
   },
   {
-    "id": "zhenti:963",
+    "id": "zhenti:944",
     "scope": "article",
     "articleId": "jc-yongxue",
     "origin": "zhenti",
@@ -14466,7 +14130,7 @@
     "fromZhenti": true
   },
   {
-    "id": "zhenti:964",
+    "id": "zhenti:945",
     "scope": "article",
     "articleId": "tianjingsha-qiusi",
     "origin": "zhenti",
@@ -14490,7 +14154,7 @@
     "fromZhenti": true
   },
   {
-    "id": "zhenti:965",
+    "id": "zhenti:946",
     "scope": "article",
     "articleId": "tianjingsha-qiusi",
     "origin": "zhenti",
@@ -14507,7 +14171,7 @@
     "fromZhenti": true
   },
   {
-    "id": "zhenti:966",
+    "id": "zhenti:947",
     "scope": "article",
     "articleId": "jc-jihaizashi5",
     "origin": "zhenti",
@@ -14525,7 +14189,7 @@
     "fromZhenti": true
   },
   {
-    "id": "zhenti:967",
+    "id": "zhenti:948",
     "scope": "article",
     "articleId": "jc-jihaizashi5",
     "origin": "zhenti",
@@ -14548,7 +14212,7 @@
     "fromZhenti": true
   },
   {
-    "id": "zhenti:968",
+    "id": "zhenti:949",
     "scope": "article",
     "articleId": "jc-jihaizashi5",
     "origin": "zhenti",
@@ -14565,7 +14229,7 @@
     "fromZhenti": true
   },
   {
-    "id": "zhenti:969",
+    "id": "zhenti:950",
     "scope": "article",
     "articleId": "jc-boqinhuai",
     "origin": "zhenti",
@@ -14581,23 +14245,7 @@
     "fromZhenti": true
   },
   {
-    "id": "zhenti:970",
-    "scope": "article",
-    "articleId": "jc-boqinhuai",
-    "origin": "zhenti",
-    "origins": [
-      "zhenti",
-      "zhenti"
-    ],
-    "type": "understand",
-    "stem": "真正“不知亡国恨”的是什么人？全诗表现了诗人怎样的感情？",
-    "answer": "真正不知亡国恨的是醉生梦死的统治者。全诗表达诗人忧国忧民的思想感情。",
-    "province": "经典训练题",
-    "source": "web",
-    "fromZhenti": true
-  },
-  {
-    "id": "zhenti:971",
+    "id": "zhenti:951",
     "scope": "article",
     "articleId": "jc-boqinhuai",
     "origin": "zhenti",
@@ -14620,7 +14268,7 @@
     "fromZhenti": true
   },
   {
-    "id": "zhenti:972",
+    "id": "zhenti:952",
     "scope": "article",
     "articleId": "jc-yujiaaoqiusi",
     "origin": "zhenti",
@@ -14644,7 +14292,7 @@
     "fromZhenti": true
   },
   {
-    "id": "zhenti:973",
+    "id": "zhenti:953",
     "scope": "article",
     "articleId": "jc-yujiaaoqiusi",
     "origin": "zhenti",
@@ -14661,7 +14309,7 @@
     "fromZhenti": true
   },
   {
-    "id": "zhenti:974",
+    "id": "zhenti:954",
     "scope": "article",
     "articleId": "jc-yujiaaoqiusi",
     "origin": "zhenti",
@@ -14685,31 +14333,7 @@
     "fromZhenti": true
   },
   {
-    "id": "zhenti:975",
-    "scope": "article",
-    "articleId": "jc-dujingmensongbie",
-    "origin": "zhenti",
-    "origins": [
-      "zhenti",
-      "zhenti"
-    ],
-    "type": "choice",
-    "stem": "下列对这首诗的理解和分析，不正确的一项是（ ）A．首联以叙事为主，交代地点和事由，写诗人乘船来到荆门外，将到楚地游览。B．颔联以移动视角来描写景物的变化，由蜀地到荆州，两岸的地势由平原过渡到山地。C．尾联采用拟人手法，不说自己思念家乡，而说家乡之水情深义重，恋恋不舍。D．这首诗明丽流畅，写出诗人对未来的憧憬和外出游历的喜悦，又表达对故乡的依依惜别之情。",
-    "answer": "B",
-    "options": [
-      "首联以叙事为主，交代地点和事由，写诗人乘船来到荆门外，将到楚地游览",
-      "颔联以移动视角来描写景物的变化，由蜀地到荆州，两岸的地势由平原过渡到山地",
-      "尾联采用拟人手法，不说自己思念家乡，而说家乡之水情深义重，恋恋不舍",
-      "这首诗明丽流畅，写出诗人对未来的憧憬和外出游历的喜悦，又表达对故乡的依依惜别之情"
-    ],
-    "explanation": "颔联写两岸地势由山地过渡到平原，江水向原野奔腾而去，并非“由平原过渡到山地”。",
-    "province": "广西百色",
-    "year": "2019",
-    "source": "web",
-    "fromZhenti": true
-  },
-  {
-    "id": "zhenti:976",
+    "id": "zhenti:955",
     "scope": "article",
     "articleId": "jc-dujingmensongbie",
     "origin": "zhenti",
@@ -14726,7 +14350,7 @@
     "fromZhenti": true
   },
   {
-    "id": "zhenti:977",
+    "id": "zhenti:956",
     "scope": "article",
     "articleId": "jc-dujingmensongbie",
     "origin": "zhenti",
@@ -14743,7 +14367,7 @@
     "fromZhenti": true
   },
   {
-    "id": "zhenti:978",
+    "id": "zhenti:957",
     "scope": "article",
     "articleId": "jc-youshanxicun",
     "origin": "zhenti",
@@ -14767,24 +14391,7 @@
     "fromZhenti": true
   },
   {
-    "id": "zhenti:979",
-    "scope": "article",
-    "articleId": "jc-youshanxicun",
-    "origin": "zhenti",
-    "origins": [
-      "zhenti",
-      "zhenti"
-    ],
-    "type": "short",
-    "stem": "苏轼《蝶恋花·密州上元》里说：“击鼓吹箫，却入农桑社。”这个古老的风俗在本诗颈联有所体现，请描绘这一联的画面。",
-    "answer": "村民们吹着箫，敲着锣鼓，结队庆祝，春社祭日已经临近；他们穿着布做的衣衫，戴着最普通的帽，简朴的古风仍然存在。",
-    "province": "四川凉山",
-    "year": "2024",
-    "source": "web",
-    "fromZhenti": true
-  },
-  {
-    "id": "zhenti:980",
+    "id": "zhenti:958",
     "scope": "article",
     "articleId": "jc-youshanxicun",
     "origin": "zhenti",
@@ -14808,7 +14415,7 @@
     "fromZhenti": true
   },
   {
-    "id": "zhenti:981",
+    "id": "zhenti:959",
     "scope": "article",
     "articleId": "jc-lang",
     "origin": "zhenti",
@@ -14825,7 +14432,7 @@
     "fromZhenti": true
   },
   {
-    "id": "zhenti:982",
+    "id": "zhenti:960",
     "scope": "article",
     "articleId": "jc-lang",
     "origin": "zhenti",
@@ -14841,23 +14448,7 @@
     "fromZhenti": true
   },
   {
-    "id": "zhenti:983",
-    "scope": "article",
-    "articleId": "jc-lang",
-    "origin": "zhenti",
-    "origins": [
-      "zhenti",
-      "zhenti"
-    ],
-    "type": "open",
-    "stem": "这个故事告诉我们什么道理？",
-    "answer": "①像狼一样的恶人，不管耍怎样的花招，总是要被识破的。②只要敢于斗争，善于斗争，就一定能取得胜利。",
-    "province": "经典训练题",
-    "source": "web",
-    "fromZhenti": true
-  },
-  {
-    "id": "zhenti:984",
+    "id": "zhenti:961",
     "scope": "article",
     "articleId": "jc-dengfeilaifeng",
     "origin": "zhenti",
@@ -14874,7 +14465,7 @@
     "fromZhenti": true
   },
   {
-    "id": "zhenti:985",
+    "id": "zhenti:962",
     "scope": "article",
     "articleId": "jc-dengfeilaifeng",
     "origin": "zhenti",
@@ -14897,7 +14488,7 @@
     "fromZhenti": true
   },
   {
-    "id": "zhenti:986",
+    "id": "zhenti:963",
     "scope": "article",
     "articleId": "jc-baixuegaosongwupanguanguijing",
     "origin": "zhenti",
@@ -14921,7 +14512,7 @@
     "fromZhenti": true
   },
   {
-    "id": "zhenti:987",
+    "id": "zhenti:964",
     "scope": "article",
     "articleId": "jc-baixuegaosongwupanguanguijing",
     "origin": "zhenti",
@@ -14938,7 +14529,7 @@
     "fromZhenti": true
   },
   {
-    "id": "zhenti:988",
+    "id": "zhenti:965",
     "scope": "article",
     "articleId": "jc-baixuegaosongwupanguanguijing",
     "origin": "zhenti",
@@ -14955,7 +14546,7 @@
     "fromZhenti": true
   },
   {
-    "id": "zhenti:989",
+    "id": "zhenti:966",
     "scope": "article",
     "articleId": "jc-maowuweiqiufengsuopoge",
     "origin": "zhenti",
@@ -14972,7 +14563,7 @@
     "fromZhenti": true
   },
   {
-    "id": "zhenti:990",
+    "id": "zhenti:967",
     "scope": "article",
     "articleId": "jc-maowuweiqiufengsuopoge",
     "origin": "zhenti",
@@ -14989,7 +14580,7 @@
     "fromZhenti": true
   },
   {
-    "id": "zhenti:991",
+    "id": "zhenti:968",
     "scope": "article",
     "articleId": "jc-syr",
     "origin": "zhenti",
@@ -15012,7 +14603,7 @@
     "fromZhenti": true
   },
   {
-    "id": "zhenti:992",
+    "id": "zhenti:969",
     "scope": "article",
     "articleId": "jc-syr",
     "origin": "zhenti",
@@ -15028,7 +14619,7 @@
     "fromZhenti": true
   },
   {
-    "id": "zhenti:993",
+    "id": "zhenti:970",
     "scope": "article",
     "articleId": "jc-syr",
     "origin": "zhenti",
@@ -15044,7 +14635,7 @@
     "fromZhenti": true
   },
   {
-    "id": "zhenti:994",
+    "id": "zhenti:971",
     "scope": "article",
     "articleId": "jc-chouletianyangzhouchufengxishangjianzeng",
     "origin": "zhenti",
@@ -15068,58 +14659,7 @@
     "fromZhenti": true
   },
   {
-    "id": "zhenti:995",
-    "scope": "article",
-    "articleId": "jc-chouletianyangzhouchufengxishangjianzeng",
-    "origin": "zhenti",
-    "origins": [
-      "zhenti",
-      "zhenti"
-    ],
-    "type": "short",
-    "stem": "优秀的诗歌作品往往通过鲜明生动的形象来表现哲理。请找出这首诗歌中用具体形象阐述道理的句子，并简要分析。",
-    "answer": "“沉舟侧畔千帆过，病树前头万木春”。沉舟和病树原本是自指，比喻贬谪后的自己，后来借指旧事物；千帆、万木原本比喻那些在他贬谪之后的新贵，后来借指新事物。此联本意是表达刘禹锡的身世感慨，但由于其客观上包含新陈代谢的自然规律，故而现在通常指旧事物被新事物取代的自然规律。",
-    "province": "北京燕山",
-    "year": "2020",
-    "source": "web",
-    "fromZhenti": true
-  },
-  {
-    "id": "zhenti:996",
-    "scope": "article",
-    "articleId": "jc-yeyujibei",
-    "origin": "zhenti",
-    "origins": [
-      "zhenti",
-      "zhenti"
-    ],
-    "type": "gloss",
-    "stem": "诗中表达作者渴望团聚及美好愿望的句子是“______”。",
-    "answer": "何当共剪西窗烛，却话巴山夜雨时。",
-    "province": "云南曲靖",
-    "year": "2011",
-    "source": "web",
-    "fromZhenti": true
-  },
-  {
-    "id": "zhenti:997",
-    "scope": "article",
-    "articleId": "jc-yeyujibei",
-    "origin": "zhenti",
-    "origins": [
-      "zhenti",
-      "zhenti"
-    ],
-    "type": "short",
-    "stem": "简析诗中“涨”字的妙处。",
-    "answer": "“涨”既写出巴山水注秋池的夜雨景象，又流露出羁旅之愁与不得归之苦，从而衬托出诗人深重绵绵的愁思。“涨”字用词准确，富于动态感。",
-    "province": "云南曲靖",
-    "year": "2011",
-    "source": "web",
-    "fromZhenti": true
-  },
-  {
-    "id": "zhenti:998",
+    "id": "zhenti:972",
     "scope": "article",
     "articleId": "jc-yeyujibei",
     "origin": "zhenti",
@@ -15137,7 +14677,7 @@
     "fromZhenti": true
   },
   {
-    "id": "zhenti:999",
+    "id": "zhenti:973",
     "scope": "collection",
     "collectionId": "collection:zhenti:望洞庭湖上张丞相",
     "origin": "zhenti",
@@ -15154,41 +14694,7 @@
     "fromZhenti": true
   },
   {
-    "id": "zhenti:1000",
-    "scope": "collection",
-    "collectionId": "collection:zhenti:望洞庭湖上张丞相",
-    "origin": "zhenti",
-    "origins": [
-      "zhenti",
-      "zhenti"
-    ],
-    "type": "understand",
-    "stem": "诗人是如何表达自己情感的？请结合诗句予以简析。",
-    "answer": "示例：诗人面对波澜壮阔的洞庭湖发出“欲济无舟楫，端居耻圣明”的感慨，借双关，委婉地表达了自己想做官而渴望有人引荐的心愿；尾联用典故，巧设喻，表达出诗人希望张九龄引荐自己出仕，为国效力的情感。",
-    "province": "湖北天门",
-    "year": "2019",
-    "source": "web",
-    "fromZhenti": true
-  },
-  {
-    "id": "zhenti:1001",
-    "scope": "collection",
-    "collectionId": "collection:zhenti:望洞庭湖上张丞相",
-    "origin": "zhenti",
-    "origins": [
-      "zhenti",
-      "zhenti"
-    ],
-    "type": "understand",
-    "stem": "诗人描绘的洞庭湖具有怎样的特点？诗人描绘这样的景象，意图是什么？",
-    "answer": "气势磅礴（雄浑壮阔）。寄寓自己的理想抱负，希望得到张丞相举荐。",
-    "province": "四川内江",
-    "year": "2019",
-    "source": "web",
-    "fromZhenti": true
-  },
-  {
-    "id": "zhenti:1002",
+    "id": "zhenti:974",
     "scope": "article",
     "articleId": "jc-xiangjianhuan",
     "origin": "zhenti",
@@ -15205,7 +14711,7 @@
     "fromZhenti": true
   },
   {
-    "id": "zhenti:1003",
+    "id": "zhenti:975",
     "scope": "article",
     "articleId": "jc-xiangjianhuan",
     "origin": "zhenti",
@@ -15222,7 +14728,7 @@
     "fromZhenti": true
   },
   {
-    "id": "zhenti:1004",
+    "id": "zhenti:976",
     "scope": "article",
     "articleId": "jc-xiangjianhuan",
     "origin": "zhenti",
@@ -15245,31 +14751,7 @@
     "fromZhenti": true
   },
   {
-    "id": "zhenti:1005",
-    "scope": "article",
-    "articleId": "jc-pozhenzi",
-    "origin": "zhenti",
-    "origins": [
-      "zhenti",
-      "zhenti"
-    ],
-    "type": "choice",
-    "stem": "下列对这首词的理解和分析，不正确的一项是（ ）A．这首词是辛弃疾写给志同道合的朋友陈同甫的，“壮词”即豪放之词。B．上片实写军旅生活，看宝剑、听号角、分麾下炙、听塞外声、沙场点兵，都是作者热爱的生活和抹不掉的记忆。C．下片一、二句写马快弦急，战斗激烈，从侧面衬托了人的意气风发、英勇无畏。D．这首词表达了作者杀敌报国、建功立业的人生理想，抒发了报国无门、壮志难酬的悲愤之情。",
-    "answer": "B",
-    "options": [
-      "这首词是辛弃疾写给志同道合的朋友陈同甫的，“壮词”即豪放之词",
-      "上片实写军旅生活，看宝剑、听号角、分麾下炙、听塞外声、沙场点兵，都是作者热爱的生活和抹不掉的记忆",
-      "下片一、二句写马快弦急，战斗激烈，从侧面衬托了人的意气风发、英勇无畏",
-      "这首词表达了作者杀敌报国、建功立业的人生理想，抒发了报国无门、壮志难酬的悲愤之情"
-    ],
-    "explanation": "上片所写军旅生活是梦境（虚写），并非“实写”。",
-    "province": "湖北咸宁",
-    "year": "2020",
-    "source": "web",
-    "fromZhenti": true
-  },
-  {
-    "id": "zhenti:1006",
+    "id": "zhenti:977",
     "scope": "article",
     "articleId": "jc-pozhenzi",
     "origin": "zhenti",
@@ -15286,7 +14768,7 @@
     "fromZhenti": true
   },
   {
-    "id": "zhenti:1007",
+    "id": "zhenti:978",
     "scope": "article",
     "articleId": "jc-pozhenzi",
     "origin": "zhenti",
@@ -15303,7 +14785,7 @@
     "fromZhenti": true
   },
   {
-    "id": "zhenti:1008",
+    "id": "zhenti:979",
     "scope": "article",
     "articleId": "songdushaofuzhirenshuzhou-150",
     "origin": "zhenti",
@@ -15326,7 +14808,7 @@
     "fromZhenti": true
   },
   {
-    "id": "zhenti:1009",
+    "id": "zhenti:980",
     "scope": "article",
     "articleId": "songdushaofuzhirenshuzhou-150",
     "origin": "zhenti",
@@ -15342,7 +14824,7 @@
     "fromZhenti": true
   },
   {
-    "id": "zhenti:1010",
+    "id": "zhenti:981",
     "scope": "article",
     "articleId": "jc-chentaiqiuyuyouqixing",
     "origin": "zhenti",
@@ -15366,7 +14848,7 @@
     "fromZhenti": true
   },
   {
-    "id": "zhenti:1011",
+    "id": "zhenti:982",
     "scope": "article",
     "articleId": "jc-chentaiqiuyuyouqixing",
     "origin": "zhenti",
@@ -15390,7 +14872,7 @@
     "fromZhenti": true
   },
   {
-    "id": "zhenti:1012",
+    "id": "zhenti:983",
     "scope": "article",
     "articleId": "jc-chentaiqiuyuyouqixing",
     "origin": "zhenti",
@@ -15407,7 +14889,7 @@
     "fromZhenti": true
   },
   {
-    "id": "zhenti:1013",
+    "id": "zhenti:984",
     "scope": "article",
     "articleId": "jc-yanmentaishouxing",
     "origin": "zhenti",
@@ -15431,7 +14913,7 @@
     "fromZhenti": true
   },
   {
-    "id": "zhenti:1014",
+    "id": "zhenti:985",
     "scope": "article",
     "articleId": "jc-yanmentaishouxing",
     "origin": "zhenti",
@@ -15448,7 +14930,7 @@
     "fromZhenti": true
   },
   {
-    "id": "zhenti:1015",
+    "id": "zhenti:986",
     "scope": "article",
     "articleId": "jc-yanmentaishouxing",
     "origin": "zhenti",
@@ -15465,7 +14947,7 @@
     "fromZhenti": true
   },
   {
-    "id": "zhenti:1016",
+    "id": "zhenti:987",
     "scope": "article",
     "articleId": "jc-yanmentaishouxing",
     "origin": "zhenti",
@@ -15482,7 +14964,7 @@
     "fromZhenti": true
   },
   {
-    "id": "zhenti:1017",
+    "id": "zhenti:988",
     "scope": "article",
     "articleId": "jc-jianjia",
     "origin": "zhenti",
@@ -15499,31 +14981,7 @@
     "fromZhenti": true
   },
   {
-    "id": "zhenti:1018",
-    "scope": "article",
-    "articleId": "jc-jianjia",
-    "origin": "zhenti",
-    "origins": [
-      "zhenti",
-      "zhenti"
-    ],
-    "type": "choice",
-    "stem": "下列对这首诗的理解和分析，不正确的一项是（ ）A．这首诗每章开头两句写景，渲染了萧瑟冷落的气氛，烘托出主人公凄婉惆怅的心情。B．这首诗三次运用“宛”字，给人以迷迷茫茫、若隐若现的感觉。C．这首诗运用重章叠句的形式反复咏唱，表达了缠绵无尽的情感，委婉动人。D．这首诗表现了主人公对意中人执着追寻的精神以及可望而不可即的绝望情绪。",
-    "answer": "D",
-    "options": [
-      "这首诗每章开头两句写景，渲染了萧瑟冷落的气氛，烘托出主人公凄婉惆怅的心情",
-      "这首诗三次运用“宛”字，给人以迷迷茫茫、若隐若现的感觉",
-      "这首诗运用重章叠句的形式反复咏唱，表达了缠绵无尽的情感，委婉动人",
-      "这首诗表现了主人公对意中人执着追寻的精神以及可望而不可即的绝望情绪"
-    ],
-    "explanation": "这首诗表现的是主人公对“伊人”可望而不可即的执着追寻和无限惆怅，并非“绝望情绪”。",
-    "province": "中考真题",
-    "year": "2016",
-    "source": "web",
-    "fromZhenti": true
-  },
-  {
-    "id": "zhenti:1019",
+    "id": "zhenti:989",
     "scope": "article",
     "articleId": "jc-jianjia",
     "origin": "zhenti",
@@ -15540,7 +14998,7 @@
     "fromZhenti": true
   },
   {
-    "id": "zhenti:1020",
+    "id": "zhenti:990",
     "scope": "article",
     "articleId": "jc-suiyoujiayao",
     "origin": "zhenti",
@@ -15558,7 +15016,7 @@
     "fromZhenti": true
   },
   {
-    "id": "zhenti:1021",
+    "id": "zhenti:991",
     "scope": "article",
     "articleId": "jc-suiyoujiayao",
     "origin": "zhenti",
@@ -15575,23 +15033,7 @@
     "fromZhenti": true
   },
   {
-    "id": "zhenti:1022",
-    "scope": "article",
-    "articleId": "jc-suiyoujiayao",
-    "origin": "zhenti",
-    "origins": [
-      "zhenti",
-      "zhenti"
-    ],
-    "type": "understand",
-    "stem": "本文的中心论点是什么？作者是怎样论述的？",
-    "answer": "中心论点是“教学相长”（教和学是互相推动、互相促进的）。作者先以“虽有嘉肴，弗食，不知其旨也”设喻类比，引出“虽有至道，弗学，不知其善也”，再从教与学两方面加以论述，最后归结到“教学相长”这个结论。",
-    "province": "经典训练题",
-    "source": "web",
-    "fromZhenti": true
-  },
-  {
-    "id": "zhenti:1023",
+    "id": "zhenti:992",
     "scope": "article",
     "articleId": "jc-ddzd",
     "origin": "zhenti",
@@ -15615,7 +15057,7 @@
     "fromZhenti": true
   },
   {
-    "id": "zhenti:1024",
+    "id": "zhenti:993",
     "scope": "article",
     "articleId": "jc-ddzd",
     "origin": "zhenti",
@@ -15633,24 +15075,7 @@
     "fromZhenti": true
   },
   {
-    "id": "zhenti:1025",
-    "scope": "article",
-    "articleId": "jc-ddzd",
-    "origin": "zhenti",
-    "origins": [
-      "zhenti",
-      "zhenti"
-    ],
-    "type": "understand",
-    "stem": "本文的中心论点是什么？",
-    "answer": "天时不如地利，地利不如人和（或：得道多助，失道寡助）。",
-    "province": "北京",
-    "year": "2017",
-    "source": "web",
-    "fromZhenti": true
-  },
-  {
-    "id": "zhenti:1026",
+    "id": "zhenti:994",
     "scope": "article",
     "articleId": "jc-cibeigushanxia",
     "origin": "zhenti",
@@ -15667,7 +15092,7 @@
     "fromZhenti": true
   },
   {
-    "id": "zhenti:1027",
+    "id": "zhenti:995",
     "scope": "article",
     "articleId": "jc-cibeigushanxia",
     "origin": "zhenti",
@@ -15684,24 +15109,7 @@
     "fromZhenti": true
   },
   {
-    "id": "zhenti:1028",
-    "scope": "article",
-    "articleId": "jc-cibeigushanxia",
-    "origin": "zhenti",
-    "origins": [
-      "zhenti",
-      "zhenti"
-    ],
-    "type": "understand",
-    "stem": "这首诗表现诗人怎样的思想感情？",
-    "answer": "乡愁乡思之情（“思乡之情”“乡愁”亦可）。",
-    "province": "湖南娄底",
-    "year": "2012",
-    "source": "web",
-    "fromZhenti": true
-  },
-  {
-    "id": "zhenti:1029",
+    "id": "zhenti:996",
     "scope": "article",
     "articleId": "jc-dingfengbo",
     "origin": "zhenti",
@@ -15718,7 +15126,7 @@
     "fromZhenti": true
   },
   {
-    "id": "zhenti:1030",
+    "id": "zhenti:997",
     "scope": "article",
     "articleId": "jc-dingfengbo",
     "origin": "zhenti",
@@ -15734,7 +15142,7 @@
     "fromZhenti": true
   },
   {
-    "id": "zhenti:1031",
+    "id": "zhenti:998",
     "scope": "article",
     "articleId": "jc-dingfengbo",
     "origin": "zhenti",
@@ -15750,7 +15158,7 @@
     "fromZhenti": true
   },
   {
-    "id": "zhenti:1032",
+    "id": "zhenti:999",
     "scope": "article",
     "articleId": "jc-manjianghong-xiaozhujinghua",
     "origin": "zhenti",
@@ -15766,23 +15174,7 @@
     "fromZhenti": true
   },
   {
-    "id": "zhenti:1033",
-    "scope": "article",
-    "articleId": "jc-manjianghong-xiaozhujinghua",
-    "origin": "zhenti",
-    "origins": [
-      "zhenti",
-      "zhenti"
-    ],
-    "type": "understand",
-    "stem": "“莽红尘何处觅知音？青衫湿！”表达了词人怎样的情感？",
-    "answer": "化用白居易《琵琶行》“江州司马青衫湿”的典故，表达了词人在茫茫人世间找不到知音的苦闷与孤独，以及投身革命初期的彷徨。",
-    "province": "经典训练题",
-    "source": "web",
-    "fromZhenti": true
-  },
-  {
-    "id": "zhenti:1034",
+    "id": "zhenti:1000",
     "scope": "article",
     "articleId": "jc-manjianghong-xiaozhujinghua",
     "origin": "zhenti",
@@ -15805,7 +15197,7 @@
     "fromZhenti": true
   },
   {
-    "id": "zhenti:1035",
+    "id": "zhenti:1001",
     "scope": "article",
     "articleId": "jc-wuti",
     "origin": "zhenti",
@@ -15821,7 +15213,7 @@
     "fromZhenti": true
   },
   {
-    "id": "zhenti:1036",
+    "id": "zhenti:1002",
     "scope": "article",
     "articleId": "jc-wuti",
     "origin": "zhenti",
@@ -15844,7 +15236,7 @@
     "fromZhenti": true
   },
   {
-    "id": "zhenti:1037",
+    "id": "zhenti:1003",
     "scope": "article",
     "articleId": "jc-wuti",
     "origin": "zhenti",
@@ -15860,7 +15252,7 @@
     "fromZhenti": true
   },
   {
-    "id": "zhenti:1038",
+    "id": "zhenti:1004",
     "scope": "article",
     "articleId": "shi_hao_li",
     "origin": "zhenti",
@@ -15876,7 +15268,7 @@
     "fromZhenti": true
   },
   {
-    "id": "zhenti:1039",
+    "id": "zhenti:1005",
     "scope": "article",
     "articleId": "shi_hao_li",
     "origin": "zhenti",
@@ -15892,7 +15284,7 @@
     "fromZhenti": true
   },
   {
-    "id": "zhenti:1040",
+    "id": "zhenti:1006",
     "scope": "article",
     "articleId": "shi_hao_li",
     "origin": "zhenti",
@@ -15908,24 +15300,7 @@
     "fromZhenti": true
   },
   {
-    "id": "zhenti:1041",
-    "scope": "article",
-    "articleId": "jc-nananjun",
-    "origin": "zhenti",
-    "origins": [
-      "zhenti",
-      "zhenti"
-    ],
-    "type": "understand",
-    "stem": "请简要说明诗人“归乡如不归”的原因。",
-    "answer": "被捕归来，壮志未成，无颜见家乡父老，不如战死沙场。",
-    "explanation": "诗人被元军押解北上，途经家乡却身系囚笼，不能自由，虽经故乡而犹如不归。",
-    "province": "经典训练题",
-    "source": "web",
-    "fromZhenti": true
-  },
-  {
-    "id": "zhenti:1042",
+    "id": "zhenti:1007",
     "scope": "article",
     "articleId": "jc-nananjun",
     "origin": "zhenti",
@@ -15941,7 +15316,7 @@
     "fromZhenti": true
   },
   {
-    "id": "zhenti:1043",
+    "id": "zhenti:1008",
     "scope": "article",
     "articleId": "jc-nananjun",
     "origin": "zhenti",
@@ -15957,7 +15332,7 @@
     "fromZhenti": true
   },
   {
-    "id": "zhenti:1044",
+    "id": "zhenti:1009",
     "scope": "article",
     "articleId": "jc-yueyeyishedi",
     "origin": "zhenti",
@@ -15973,7 +15348,7 @@
     "fromZhenti": true
   },
   {
-    "id": "zhenti:1045",
+    "id": "zhenti:1010",
     "scope": "article",
     "articleId": "jc-yueyeyishedi",
     "origin": "zhenti",
@@ -15989,7 +15364,7 @@
     "fromZhenti": true
   },
   {
-    "id": "zhenti:1046",
+    "id": "zhenti:1011",
     "scope": "article",
     "articleId": "jc-yewang",
     "origin": "zhenti",
@@ -16005,7 +15380,7 @@
     "fromZhenti": true
   },
   {
-    "id": "zhenti:1047",
+    "id": "zhenti:1012",
     "scope": "article",
     "articleId": "jc-yewang",
     "origin": "zhenti",
@@ -16021,23 +15396,7 @@
     "fromZhenti": true
   },
   {
-    "id": "zhenti:1048",
-    "scope": "article",
-    "articleId": "jc-yewang",
-    "origin": "zhenti",
-    "origins": [
-      "zhenti",
-      "zhenti"
-    ],
-    "type": "short",
-    "stem": "请从动静结合的角度赏析颔联和颈联。",
-    "answer": "颔联“树树皆秋色，山山唯落晖”写静景、远景；颈联“牧人驱犊返，猎马带禽归”写动景、近景。这四句诗宛如一幅山家秋晚图，光与色、远景与近景、静态与动态搭配得恰到好处。",
-    "province": "经典训练题",
-    "source": "web",
-    "fromZhenti": true
-  },
-  {
-    "id": "zhenti:1049",
+    "id": "zhenti:1013",
     "scope": "article",
     "articleId": "jc-guisuishou",
     "origin": "zhenti",
@@ -16053,7 +15412,7 @@
     "fromZhenti": true
   },
   {
-    "id": "zhenti:1050",
+    "id": "zhenti:1014",
     "scope": "article",
     "articleId": "jc-guisuishou",
     "origin": "zhenti",
@@ -16069,7 +15428,7 @@
     "fromZhenti": true
   },
   {
-    "id": "zhenti:1051",
+    "id": "zhenti:1015",
     "scope": "article",
     "articleId": "jc-guisuishou",
     "origin": "zhenti",
@@ -16085,7 +15444,7 @@
     "fromZhenti": true
   },
   {
-    "id": "zhenti:1052",
+    "id": "zhenti:1016",
     "scope": "article",
     "articleId": "jc-huoban",
     "origin": "zhenti",
@@ -16102,7 +15461,7 @@
     "fromZhenti": true
   },
   {
-    "id": "zhenti:1053",
+    "id": "zhenti:1017",
     "scope": "article",
     "articleId": "jc-huoban",
     "origin": "zhenti",
@@ -16118,23 +15477,7 @@
     "fromZhenti": true
   },
   {
-    "id": "zhenti:1054",
-    "scope": "article",
-    "articleId": "jc-huoban",
-    "origin": "zhenti",
-    "origins": [
-      "zhenti",
-      "zhenti"
-    ],
-    "type": "understand",
-    "stem": "活板印刷“极为神速”体现在哪些方面？请简要概括。",
-    "answer": "①排版快：一板印刷，一板已自布字，更互用之，瞬息可就；②制字快：有奇字素无备者，旋刻之，以草火烧，瞬息可成。",
-    "province": "经典训练题",
-    "source": "web",
-    "fromZhenti": true
-  },
-  {
-    "id": "zhenti:1055",
+    "id": "zhenti:1018",
     "scope": "article",
     "articleId": "jc-qirenyoutian",
     "origin": "zhenti",
@@ -16151,7 +15494,7 @@
     "fromZhenti": true
   },
   {
-    "id": "zhenti:1056",
+    "id": "zhenti:1019",
     "scope": "article",
     "articleId": "jc-qirenyoutian",
     "origin": "zhenti",
@@ -16167,23 +15510,7 @@
     "fromZhenti": true
   },
   {
-    "id": "zhenti:1057",
-    "scope": "article",
-    "articleId": "jc-qirenyoutian",
-    "origin": "zhenti",
-    "origins": [
-      "zhenti",
-      "zhenti"
-    ],
-    "type": "open",
-    "stem": "这则寓言故事揭示了一个什么道理？",
-    "answer": "常比喻不必要的或缺乏根据的忧虑和担心。告诉人们不要为毫无根据的事情担忧，要实事求是，用科学的态度看待问题。",
-    "province": "经典训练题",
-    "source": "web",
-    "fromZhenti": true
-  },
-  {
-    "id": "zhenti:1058",
+    "id": "zhenti:1020",
     "scope": "article",
     "articleId": "jc-chuanjingdeyiren",
     "origin": "zhenti",
@@ -16199,7 +15526,7 @@
     "fromZhenti": true
   },
   {
-    "id": "zhenti:1059",
+    "id": "zhenti:1021",
     "scope": "article",
     "articleId": "jc-chuanjingdeyiren",
     "origin": "zhenti",
@@ -16215,55 +15542,7 @@
     "fromZhenti": true
   },
   {
-    "id": "zhenti:1060",
-    "scope": "article",
-    "articleId": "jc-chuanjingdeyiren",
-    "origin": "zhenti",
-    "origins": [
-      "zhenti",
-      "zhenti"
-    ],
-    "type": "open",
-    "stem": "这个故事告诉了我们一个什么道理？",
-    "answer": "对于道听途说的传言，万勿轻信，必须认真地思索，进行实际的考察，否则很容易把事情搞错（以讹传讹的危害）。",
-    "province": "经典训练题",
-    "source": "web",
-    "fromZhenti": true
-  },
-  {
-    "id": "zhenti:1061",
-    "scope": "article",
-    "articleId": "jc-jiangnanfengliguinian",
-    "origin": "zhenti",
-    "origins": [
-      "zhenti",
-      "zhenti"
-    ],
-    "type": "understand",
-    "stem": "这首诗表达了诗人怎样的思想感情？",
-    "answer": "对开元盛世的无限怀念，对国运衰微的现实的无限感慨和自身身世飘零的深切感伤。",
-    "province": "经典训练题",
-    "source": "web",
-    "fromZhenti": true
-  },
-  {
-    "id": "zhenti:1062",
-    "scope": "article",
-    "articleId": "jc-jiangnanfengliguinian",
-    "origin": "zhenti",
-    "origins": [
-      "zhenti",
-      "zhenti"
-    ],
-    "type": "short",
-    "stem": "“落花时节”有什么特殊含义？",
-    "answer": "“落花时节”一语三关：既指暮春时令，又暗喻国运衰微、社会动乱，还喻指诗人与李龟年彼此飘零、潦倒凄凉的处境。",
-    "province": "经典训练题",
-    "source": "web",
-    "fromZhenti": true
-  },
-  {
-    "id": "zhenti:1063",
+    "id": "zhenti:1022",
     "scope": "article",
     "articleId": "jc-jiangnanfengliguinian",
     "origin": "zhenti",
@@ -16286,7 +15565,7 @@
     "fromZhenti": true
   },
   {
-    "id": "zhenti:1064",
+    "id": "zhenti:1023",
     "scope": "article",
     "articleId": "jc-zhuliguan",
     "origin": "zhenti",
@@ -16302,23 +15581,7 @@
     "fromZhenti": true
   },
   {
-    "id": "zhenti:1065",
-    "scope": "article",
-    "articleId": "jc-zhuliguan",
-    "origin": "zhenti",
-    "origins": [
-      "zhenti",
-      "zhenti"
-    ],
-    "type": "understand",
-    "stem": "这首诗描绘了怎样的意境？表达了诗人怎样的思想感情？",
-    "answer": "描绘了幽深、宁静、清新的月夜竹林意境。表达了诗人宁静、淡泊、超凡脱俗（追求清静安详）的生活态度。",
-    "province": "经典训练题",
-    "source": "web",
-    "fromZhenti": true
-  },
-  {
-    "id": "zhenti:1066",
+    "id": "zhenti:1024",
     "scope": "article",
     "articleId": "jc-wanchun",
     "origin": "zhenti",
@@ -16334,39 +15597,7 @@
     "fromZhenti": true
   },
   {
-    "id": "zhenti:1067",
-    "scope": "article",
-    "articleId": "jc-wanchun",
-    "origin": "zhenti",
-    "origins": [
-      "zhenti",
-      "zhenti"
-    ],
-    "type": "open",
-    "stem": "本诗的主旨有人认为是劝人珍惜光阴的，也有人认为是赞美杨花榆荚的。你同意哪种看法？请说明理由。",
-    "answer": "示例一：同意劝人珍惜光阴。作者以“百般红紫”“斗芳菲”反衬“杨花榆荚”的平淡无奇，提醒人们要抓住时机、乘时而进。示例二：同意赞美杨花榆荚。杨花榆荚虽无才思，却不甘示弱，化作雪花随风飞舞，加入留春的行列，这种勇气和精神值得钦佩。",
-    "province": "经典训练题",
-    "source": "web",
-    "fromZhenti": true
-  },
-  {
-    "id": "zhenti:1068",
-    "scope": "article",
-    "articleId": "jc-wanchun",
-    "origin": "zhenti",
-    "origins": [
-      "zhenti",
-      "zhenti"
-    ],
-    "type": "understand",
-    "stem": "这首诗表达了诗人怎样的思想感情？",
-    "answer": "表达了诗人惜春的思想感情，同时也蕴含应抓住时机、乘时而进、创造美好未来之意。",
-    "province": "经典训练题",
-    "source": "web",
-    "fromZhenti": true
-  },
-  {
-    "id": "zhenti:1069",
+    "id": "zhenti:1025",
     "scope": "article",
     "articleId": "jc-yueke",
     "origin": "zhenti",
@@ -16382,7 +15613,7 @@
     "fromZhenti": true
   },
   {
-    "id": "zhenti:1070",
+    "id": "zhenti:1026",
     "scope": "article",
     "articleId": "jc-yueke",
     "origin": "zhenti",
@@ -16405,7 +15636,7 @@
     "fromZhenti": true
   },
   {
-    "id": "zhenti:1071",
+    "id": "zhenti:1027",
     "scope": "article",
     "articleId": "jc-jiasheng",
     "origin": "zhenti",
@@ -16421,23 +15652,7 @@
     "fromZhenti": true
   },
   {
-    "id": "zhenti:1072",
-    "scope": "article",
-    "articleId": "jc-jiasheng",
-    "origin": "zhenti",
-    "origins": [
-      "zhenti",
-      "zhenti"
-    ],
-    "type": "understand",
-    "stem": "这首诗运用了怎样的写法？表达了诗人怎样的思想感情？",
-    "answer": "托古讽今（借古讽今）。借贾谊的遭遇讽刺晚唐统治者不重视人才、不关心民生，也寄寓了诗人自己怀才不遇的感慨。",
-    "province": "经典训练题",
-    "source": "web",
-    "fromZhenti": true
-  },
-  {
-    "id": "zhenti:1073",
+    "id": "zhenti:1028",
     "scope": "article",
     "articleId": "jc-shiwucongjunzheng",
     "origin": "zhenti",
@@ -16453,39 +15668,7 @@
     "fromZhenti": true
   },
   {
-    "id": "zhenti:1074",
-    "scope": "article",
-    "articleId": "jc-shiwucongjunzheng",
-    "origin": "zhenti",
-    "origins": [
-      "zhenti",
-      "zhenti"
-    ],
-    "type": "understand",
-    "stem": "本诗在艺术表现上有什么特点？",
-    "answer": "整首诗没有正面描写战争的残酷，而是从老兵回乡后所见所感落笔，将典型情绪与典型环境融为一体，运用强烈的对比，表现出民生的悲惨，从一个侧面反映出战争给人民带来的深重灾难，感情真挚，悲怆动人。",
-    "province": "经典训练题",
-    "source": "web",
-    "fromZhenti": true
-  },
-  {
-    "id": "zhenti:1075",
-    "scope": "article",
-    "articleId": "jc-shiwucongjunzheng",
-    "origin": "zhenti",
-    "origins": [
-      "zhenti",
-      "zhenti"
-    ],
-    "type": "open",
-    "stem": "全诗通过描写老兵的遭遇，揭露了什么？",
-    "answer": "揭露了封建兵役制度给劳动人民造成的深重苦难（控诉了战乱和不合理的兵役制度给人民带来的灾难）。",
-    "province": "经典训练题",
-    "source": "web",
-    "fromZhenti": true
-  },
-  {
-    "id": "zhenti:1076",
+    "id": "zhenti:1029",
     "scope": "article",
     "articleId": "jc-xycdl",
     "origin": "zhenti",
@@ -16502,23 +15685,7 @@
     "fromZhenti": true
   },
   {
-    "id": "zhenti:1077",
-    "scope": "article",
-    "articleId": "jc-xycdl",
-    "origin": "zhenti",
-    "origins": [
-      "zhenti",
-      "zhenti"
-    ],
-    "type": "understand",
-    "stem": "全诗表达了诗人怎样的思想感情？",
-    "answer": "诗人登楼远眺而生发的思乡之情，以及对唐王朝风雨飘摇的国运的忧虑（怀古伤今、忧国忧时）。",
-    "province": "经典训练题",
-    "source": "web",
-    "fromZhenti": true
-  },
-  {
-    "id": "zhenti:1078",
+    "id": "zhenti:1030",
     "scope": "article",
     "articleId": "jc-changshaguojiayizhai",
     "origin": "zhenti",
@@ -16534,7 +15701,7 @@
     "fromZhenti": true
   },
   {
-    "id": "zhenti:1079",
+    "id": "zhenti:1031",
     "scope": "article",
     "articleId": "jc-changshaguojiayizhai",
     "origin": "zhenti",
@@ -16557,23 +15724,7 @@
     "fromZhenti": true
   },
   {
-    "id": "zhenti:1080",
-    "scope": "article",
-    "articleId": "jc-changshaguojiayizhai",
-    "origin": "zhenti",
-    "origins": [
-      "zhenti",
-      "zhenti"
-    ],
-    "type": "understand",
-    "stem": "这首诗流露了诗人怎样的情感？",
-    "answer": "表达了对贾谊的同情、对汉文帝的指责、对自身际遇的慨叹和对当今统治者的不满（借古伤今，表现自己无罪被贬的悲愤和痛苦）。",
-    "province": "经典训练题",
-    "source": "web",
-    "fromZhenti": true
-  },
-  {
-    "id": "zhenti:1081",
+    "id": "zhenti:1032",
     "scope": "article",
     "articleId": "jc-zijin",
     "origin": "zhenti",
@@ -16589,7 +15740,7 @@
     "fromZhenti": true
   },
   {
-    "id": "zhenti:1082",
+    "id": "zhenti:1033",
     "scope": "article",
     "articleId": "jc-zijin",
     "origin": "zhenti",
@@ -16605,7 +15756,7 @@
     "fromZhenti": true
   },
   {
-    "id": "zhenti:1083",
+    "id": "zhenti:1034",
     "scope": "article",
     "articleId": "jc-shiwei",
     "origin": "zhenti",
@@ -16621,23 +15772,7 @@
     "fromZhenti": true
   },
   {
-    "id": "zhenti:1084",
-    "scope": "article",
-    "articleId": "jc-shiwei",
-    "origin": "zhenti",
-    "origins": [
-      "zhenti",
-      "zhenti"
-    ],
-    "type": "understand",
-    "stem": "这首诗表达了役夫怎样的思想感情？",
-    "answer": "表达了受奴役者（役夫）终年累月、昼夜不辍地在露水和泥浆中奔波劳作的悲苦处境，以及对统治者的满腔愤懑。",
-    "province": "经典训练题",
-    "source": "web",
-    "fromZhenti": true
-  },
-  {
-    "id": "zhenti:1085",
+    "id": "zhenti:1035",
     "scope": "article",
     "articleId": "jc-yujiaao-tianjieyuntaolianxiaowu",
     "origin": "zhenti",
@@ -16653,7 +15788,7 @@
     "fromZhenti": true
   },
   {
-    "id": "zhenti:1086",
+    "id": "zhenti:1036",
     "scope": "article",
     "articleId": "jc-yujiaao-tianjieyuntaolianxiaowu",
     "origin": "zhenti",
@@ -16669,7 +15804,7 @@
     "fromZhenti": true
   },
   {
-    "id": "zhenti:1087",
+    "id": "zhenti:1037",
     "scope": "article",
     "articleId": "jc-yujiaao-tianjieyuntaolianxiaowu",
     "origin": "zhenti",
@@ -16692,7 +15827,7 @@
     "fromZhenti": true
   },
   {
-    "id": "zhenti:1088",
+    "id": "zhenti:1038",
     "scope": "article",
     "articleId": "jc-huanxisha-yiquxincijiuyibei",
     "origin": "zhenti",
@@ -16708,23 +15843,7 @@
     "fromZhenti": true
   },
   {
-    "id": "zhenti:1089",
-    "scope": "article",
-    "articleId": "jc-huanxisha-yiquxincijiuyibei",
-    "origin": "zhenti",
-    "origins": [
-      "zhenti",
-      "zhenti"
-    ],
-    "type": "understand",
-    "stem": "这首词表达了词人怎样的思想感情？",
-    "answer": "表达了对时光流逝、物是人非的感慨与怅惘，以及对美好事物流连的伤春怀旧之情。",
-    "province": "经典训练题",
-    "source": "web",
-    "fromZhenti": true
-  },
-  {
-    "id": "zhenti:1090",
+    "id": "zhenti:1039",
     "scope": "article",
     "articleId": "jc-zhuangzi-huizi-haoliang",
     "origin": "zhenti",
@@ -16740,7 +15859,7 @@
     "fromZhenti": true
   },
   {
-    "id": "zhenti:1091",
+    "id": "zhenti:1040",
     "scope": "article",
     "articleId": "jc-zhuangzi-huizi-haoliang",
     "origin": "zhenti",
@@ -16756,7 +15875,7 @@
     "fromZhenti": true
   },
   {
-    "id": "zhenti:1092",
+    "id": "zhenti:1041",
     "scope": "article",
     "articleId": "jc-zhuangzi-huizi-haoliang",
     "origin": "zhenti",
@@ -16772,7 +15891,7 @@
     "fromZhenti": true
   },
   {
-    "id": "zhenti:1093",
+    "id": "zhenti:1042",
     "scope": "article",
     "articleId": "jc-chounuer-shuboshandaozhongbi",
     "origin": "zhenti",
@@ -16788,7 +15907,7 @@
     "fromZhenti": true
   },
   {
-    "id": "zhenti:1094",
+    "id": "zhenti:1043",
     "scope": "article",
     "articleId": "jc-chounuer-shuboshandaozhongbi",
     "origin": "zhenti",
@@ -16804,7 +15923,7 @@
     "fromZhenti": true
   },
   {
-    "id": "zhenti:1095",
+    "id": "zhenti:1044",
     "scope": "article",
     "articleId": "jc-zuoqianzhilanguanshizhizunxiang",
     "origin": "zhenti",
@@ -16820,7 +15939,7 @@
     "fromZhenti": true
   },
   {
-    "id": "zhenti:1096",
+    "id": "zhenti:1045",
     "scope": "article",
     "articleId": "jc-zuoqianzhilanguanshizhizunxiang",
     "origin": "zhenti",
@@ -16836,7 +15955,7 @@
     "fromZhenti": true
   },
   {
-    "id": "zhenti:1097",
+    "id": "zhenti:1046",
     "scope": "article",
     "articleId": "jc-huanxisha-mmqh",
     "origin": "zhenti",
@@ -16852,7 +15971,7 @@
     "fromZhenti": true
   },
   {
-    "id": "zhenti:1098",
+    "id": "zhenti:1047",
     "scope": "article",
     "articleId": "jc-ljxydxg",
     "origin": "zhenti",
@@ -16868,7 +15987,7 @@
     "fromZhenti": true
   },
   {
-    "id": "zhenti:1099",
+    "id": "zhenti:1048",
     "scope": "article",
     "articleId": "jc-ljxydxg",
     "origin": "zhenti",
@@ -16884,7 +16003,7 @@
     "fromZhenti": true
   },
   {
-    "id": "zhenti:1100",
+    "id": "zhenti:1049",
     "scope": "article",
     "articleId": "jc-boyaguqin",
     "origin": "zhenti",
@@ -16901,7 +16020,7 @@
     "fromZhenti": true
   },
   {
-    "id": "zhenti:1101",
+    "id": "zhenti:1050",
     "scope": "article",
     "articleId": "jc-boyaguqin",
     "origin": "zhenti",
@@ -16917,7 +16036,7 @@
     "fromZhenti": true
   },
   {
-    "id": "zhenti:1102",
+    "id": "zhenti:1051",
     "scope": "article",
     "articleId": "jc-bieyunjian",
     "origin": "zhenti",
@@ -16933,7 +16052,7 @@
     "fromZhenti": true
   },
   {
-    "id": "zhenti:1103",
+    "id": "zhenti:1052",
     "scope": "article",
     "articleId": "jc-bieyunjian",
     "origin": "zhenti",
@@ -16949,7 +16068,7 @@
     "fromZhenti": true
   },
   {
-    "id": "zhenti:1104",
+    "id": "zhenti:1053",
     "scope": "article",
     "articleId": "jc-taichangyin",
     "origin": "zhenti",
@@ -16965,7 +16084,7 @@
     "fromZhenti": true
   },
   {
-    "id": "zhenti:1105",
+    "id": "zhenti:1054",
     "scope": "article",
     "articleId": "jc-chao-tian-zi-yong-la-ba",
     "origin": "zhenti",
@@ -16981,7 +16100,7 @@
     "fromZhenti": true
   },
   {
-    "id": "zhenti:1106",
+    "id": "zhenti:1055",
     "scope": "article",
     "articleId": "jc-huanxisha-sxysnpx",
     "origin": "zhenti",
@@ -16997,7 +16116,7 @@
     "fromZhenti": true
   },
   {
-    "id": "zhenti:1107",
+    "id": "zhenti:1056",
     "scope": "article",
     "articleId": "jc-bsz",
     "origin": "zhenti",
@@ -17013,23 +16132,7 @@
     "fromZhenti": true
   },
   {
-    "id": "zhenti:1108",
-    "scope": "article",
-    "articleId": "jc-bsz",
-    "origin": "zhenti",
-    "origins": [
-      "zhenti",
-      "zhenti"
-    ],
-    "type": "understand",
-    "stem": "这首词中“孤鸿”的形象有什么象征意义？",
-    "answer": "“孤鸿”是词人自身的写照（托物言志）。孤鸿孤独寂寞、惊起却回头、拣尽寒枝不肯栖，象征着词人贬谪后的孤寂处境、孤高自许的品格和不与世俗同流合污的节操。",
-    "province": "经典训练题",
-    "source": "web",
-    "fromZhenti": true
-  },
-  {
-    "id": "zhenti:1109",
+    "id": "zhenti:1057",
     "scope": "article",
     "articleId": "jc-rumengling",
     "origin": "zhenti",
@@ -17045,23 +16148,7 @@
     "fromZhenti": true
   },
   {
-    "id": "zhenti:1110",
-    "scope": "article",
-    "articleId": "jc-rumengling",
-    "origin": "zhenti",
-    "origins": [
-      "zhenti",
-      "zhenti"
-    ],
-    "type": "understand",
-    "stem": "这首词表达了词人怎样的思想感情？",
-    "answer": "追忆了少女时代溪亭饮酒、流连忘返的欢乐情景，表达了对早年美好生活的怀念和热爱自然、热爱生活的情感。",
-    "province": "经典训练题",
-    "source": "web",
-    "fromZhenti": true
-  },
-  {
-    "id": "zhenti:1111",
+    "id": "zhenti:1058",
     "scope": "article",
     "articleId": "liangfuxing-caozhi",
     "origin": "zhenti",
@@ -17077,7 +16164,7 @@
     "fromZhenti": true
   },
   {
-    "id": "zhenti:1112",
+    "id": "zhenti:1059",
     "scope": "article",
     "articleId": "xiangjianhuan-jinlingchengshangxilou",
     "origin": "zhenti",
@@ -17093,7 +16180,7 @@
     "fromZhenti": true
   },
   {
-    "id": "zhenti:1113",
+    "id": "zhenti:1060",
     "scope": "article",
     "articleId": "xiangjianhuan-jinlingchengshangxilou",
     "origin": "zhenti",
@@ -17109,7 +16196,7 @@
     "fromZhenti": true
   },
   {
-    "id": "zhenti:1114",
+    "id": "zhenti:1061",
     "scope": "article",
     "articleId": "jc-zengcongdi",
     "origin": "zhenti",
@@ -17125,7 +16212,7 @@
     "fromZhenti": true
   },
   {
-    "id": "zhenti:1115",
+    "id": "zhenti:1062",
     "scope": "article",
     "articleId": "jc-caisangzi",
     "origin": "zhenti",
@@ -17141,23 +16228,7 @@
     "fromZhenti": true
   },
   {
-    "id": "zhenti:1116",
-    "scope": "article",
-    "articleId": "jc-caisangzi",
-    "origin": "zhenti",
-    "origins": [
-      "zhenti",
-      "zhenti"
-    ],
-    "type": "understand",
-    "stem": "这首词表达了词人怎样的思想感情？",
-    "answer": "表达了词人对西湖春景的喜爱和赞美之情，以及游玩时的轻松愉悦（流连忘返）的心情。",
-    "province": "经典训练题",
-    "source": "web",
-    "fromZhenti": true
-  },
-  {
-    "id": "zhenti:1117",
+    "id": "zhenti:1063",
     "scope": "article",
     "articleId": "jc-emeishanyuege",
     "origin": "zhenti",
@@ -17173,7 +16244,7 @@
     "fromZhenti": true
   },
   {
-    "id": "zhenti:1118",
+    "id": "zhenti:1064",
     "scope": "article",
     "articleId": "jc-emeishanyuege",
     "origin": "zhenti",
@@ -17189,7 +16260,7 @@
     "fromZhenti": true
   },
   {
-    "id": "zhenti:1119",
+    "id": "zhenti:1065",
     "scope": "article",
     "articleId": "jc-tongguan",
     "origin": "zhenti",
@@ -17205,7 +16276,7 @@
     "fromZhenti": true
   },
   {
-    "id": "zhenti:1120",
+    "id": "zhenti:1066",
     "scope": "article",
     "articleId": "jc-qiuciqiyi",
     "origin": "zhenti",
@@ -17221,7 +16292,7 @@
     "fromZhenti": true
   },
   {
-    "id": "zhenti:1121",
+    "id": "zhenti:1067",
     "scope": "article",
     "articleId": "jc-qiuciqiyi",
     "origin": "zhenti",
@@ -17237,7 +16308,7 @@
     "fromZhenti": true
   },
   {
-    "id": "zhenti:1122",
+    "id": "zhenti:1068",
     "scope": "article",
     "articleId": "jc-xingjunjirisichanganguyuan",
     "origin": "zhenti",
@@ -17253,7 +16324,7 @@
     "fromZhenti": true
   },
   {
-    "id": "zhenti:1123",
+    "id": "zhenti:1069",
     "scope": "article",
     "articleId": "jc-guosongyuanchenchuiqigongdian",
     "origin": "zhenti",
@@ -17269,7 +16340,7 @@
     "fromZhenti": true
   },
   {
-    "id": "zhenti:1124",
+    "id": "zhenti:1070",
     "scope": "article",
     "articleId": "feng-ru-jing-shi",
     "origin": "zhenti",
@@ -17285,7 +16356,7 @@
     "fromZhenti": true
   },
   {
-    "id": "zhenti:1125",
+    "id": "zhenti:1071",
     "scope": "article",
     "articleId": "feng-ru-jing-shi",
     "origin": "zhenti",
@@ -17301,7 +16372,7 @@
     "fromZhenti": true
   },
   {
-    "id": "exam_point:1126",
+    "id": "exam_point:1072",
     "scope": "article",
     "articleId": "jc-zuoqianzhilanguanshizhizunxiang",
     "origin": "exam_point",
@@ -17314,7 +16385,7 @@
     "explanation": "文学常识"
   },
   {
-    "id": "exam_point:1127",
+    "id": "exam_point:1073",
     "scope": "article",
     "articleId": "jc-zuoqianzhilanguanshizhizunxiang",
     "origin": "exam_point",
@@ -17327,7 +16398,7 @@
     "explanation": "名句赏析"
   },
   {
-    "id": "exam_point:1128",
+    "id": "exam_point:1074",
     "scope": "article",
     "articleId": "jc-zuoqianzhilanguanshizhizunxiang",
     "origin": "exam_point",
@@ -17340,7 +16411,7 @@
     "explanation": "主旨情感"
   },
   {
-    "id": "exam_point:1129",
+    "id": "exam_point:1075",
     "scope": "article",
     "articleId": "jc-ly",
     "origin": "exam_point",
@@ -17353,7 +16424,7 @@
     "explanation": "文学常识"
   },
   {
-    "id": "related:1130",
+    "id": "related:1076",
     "scope": "article",
     "articleId": "jc-sanxia",
     "origin": "related",
@@ -17366,7 +16437,7 @@
     "explanation": "云南中考真题。作者通过视觉和听觉两个角度，生动地描绘了秋季的萧瑟、凄清与悲凉。"
   },
   {
-    "id": "exam_point:1131",
+    "id": "exam_point:1077",
     "scope": "article",
     "articleId": "jc-sanxia",
     "origin": "exam_point",
@@ -17379,7 +16450,7 @@
     "explanation": "文学常识"
   },
   {
-    "id": "exam_point:1132",
+    "id": "exam_point:1078",
     "scope": "article",
     "articleId": "jc-sanxia",
     "origin": "exam_point",
@@ -17392,7 +16463,7 @@
     "explanation": "句子翻译"
   },
   {
-    "id": "exam_point:1133",
+    "id": "exam_point:1079",
     "scope": "article",
     "articleId": "jc-sanxia",
     "origin": "exam_point",
@@ -17405,7 +16476,7 @@
     "explanation": "主旨情感"
   },
   {
-    "id": "exam_point:1134",
+    "id": "exam_point:1080",
     "scope": "article",
     "articleId": "jc-sanxia",
     "origin": "exam_point",
@@ -17418,7 +16489,7 @@
     "explanation": "写作手法"
   },
   {
-    "id": "related:1135",
+    "id": "related:1081",
     "scope": "article",
     "articleId": "jc-yuzhuyuansishu",
     "origin": "related",
@@ -17431,7 +16502,7 @@
     "explanation": "教材习题一研讨。"
   },
   {
-    "id": "related:1136",
+    "id": "related:1082",
     "scope": "article",
     "articleId": "jc-yuzhuyuansishu",
     "origin": "related",
@@ -17444,7 +16515,7 @@
     "explanation": "教材习题二研讨。"
   },
   {
-    "id": "exam_point:1137",
+    "id": "exam_point:1083",
     "scope": "article",
     "articleId": "jc-yuzhuyuansishu",
     "origin": "exam_point",
@@ -17457,7 +16528,7 @@
     "explanation": "句子翻译"
   },
   {
-    "id": "exam_point:1138",
+    "id": "exam_point:1084",
     "scope": "article",
     "articleId": "jc-yuzhuyuansishu",
     "origin": "exam_point",
@@ -17470,7 +16541,7 @@
     "explanation": "文章理解"
   },
   {
-    "id": "exam_point:1139",
+    "id": "exam_point:1085",
     "scope": "article",
     "articleId": "jc-chounuer-shuboshandaozhongbi",
     "origin": "exam_point",
@@ -17483,7 +16554,7 @@
     "explanation": "名句赏析"
   },
   {
-    "id": "exam_point:1140",
+    "id": "exam_point:1086",
     "scope": "article",
     "articleId": "jc-chounuer-shuboshandaozhongbi",
     "origin": "exam_point",
@@ -17496,7 +16567,7 @@
     "explanation": "主旨情感"
   },
   {
-    "id": "exam_point:1141",
+    "id": "exam_point:1087",
     "scope": "article",
     "articleId": "jc-ljxydxg",
     "origin": "exam_point",
@@ -17509,7 +16580,7 @@
     "explanation": "名句赏析"
   },
   {
-    "id": "exam_point:1142",
+    "id": "exam_point:1088",
     "scope": "article",
     "articleId": "jc-ljxydxg",
     "origin": "exam_point",
@@ -17522,7 +16593,7 @@
     "explanation": "主旨情感"
   },
   {
-    "id": "exam_point:1143",
+    "id": "exam_point:1089",
     "scope": "article",
     "articleId": "jc-boyaguqin",
     "origin": "exam_point",
@@ -17535,7 +16606,7 @@
     "explanation": "重点字词"
   },
   {
-    "id": "exam_point:1144",
+    "id": "exam_point:1090",
     "scope": "article",
     "articleId": "jc-boyaguqin",
     "origin": "exam_point",
@@ -17548,7 +16619,7 @@
     "explanation": "写作特色"
   },
   {
-    "id": "exam_point:1145",
+    "id": "exam_point:1091",
     "scope": "article",
     "articleId": "jc-boyaguqin",
     "origin": "exam_point",
@@ -17561,7 +16632,7 @@
     "explanation": "人物形象"
   },
   {
-    "id": "exam_point:1146",
+    "id": "exam_point:1092",
     "scope": "article",
     "articleId": "jc-boyaguqin",
     "origin": "exam_point",
@@ -17574,7 +16645,7 @@
     "explanation": "主题思想"
   },
   {
-    "id": "related:1147",
+    "id": "related:1093",
     "scope": "article",
     "articleId": "jc-shizhisaishang",
     "origin": "related",
@@ -17587,7 +16658,7 @@
     "explanation": "构成对偶的词语:征蓬与归雁;出与入;汉塞与胡天。本联运用对偶的修辞手法,诗人以“征蓬”“归雁”自比,传达出漂泊无定的内心感受和被排挤出朝廷的难言之感,生动传神。"
   },
   {
-    "id": "exam_point:1148",
+    "id": "exam_point:1094",
     "scope": "article",
     "articleId": "jc-shizhisaishang",
     "origin": "exam_point",
@@ -17600,7 +16671,7 @@
     "explanation": "文学常识"
   },
   {
-    "id": "exam_point:1149",
+    "id": "exam_point:1095",
     "scope": "article",
     "articleId": "jc-shizhisaishang",
     "origin": "exam_point",
@@ -17613,7 +16684,7 @@
     "explanation": "名句赏析"
   },
   {
-    "id": "exam_point:1150",
+    "id": "exam_point:1096",
     "scope": "article",
     "articleId": "jc-shizhisaishang",
     "origin": "exam_point",
@@ -17626,7 +16697,7 @@
     "explanation": "主旨情感"
   },
   {
-    "id": "exam_point:1151",
+    "id": "exam_point:1097",
     "scope": "article",
     "articleId": "jc-shizhisaishang",
     "origin": "exam_point",
@@ -17639,7 +16710,7 @@
     "explanation": "写作特色"
   },
   {
-    "id": "related:1152",
+    "id": "related:1098",
     "scope": "article",
     "articleId": "jc-guanju",
     "origin": "related",
@@ -17652,7 +16723,7 @@
     "explanation": "考查诗歌的写作手法（兴）。开头以雎鸠鸟的和鸣起兴，引出对淑女的爱慕，渲染气氛，起到了很好的联想和铺垫作用。"
   },
   {
-    "id": "exam_point:1153",
+    "id": "exam_point:1099",
     "scope": "article",
     "articleId": "jc-guanju",
     "origin": "exam_point",
@@ -17665,7 +16736,7 @@
     "explanation": "文学常识"
   },
   {
-    "id": "exam_point:1154",
+    "id": "exam_point:1100",
     "scope": "article",
     "articleId": "jc-guanju",
     "origin": "exam_point",
@@ -17678,7 +16749,7 @@
     "explanation": "名句赏析"
   },
   {
-    "id": "exam_point:1155",
+    "id": "exam_point:1101",
     "scope": "article",
     "articleId": "jc-guanju",
     "origin": "exam_point",
@@ -17691,7 +16762,7 @@
     "explanation": "主旨情感"
   },
   {
-    "id": "related:1156",
+    "id": "related:1102",
     "scope": "article",
     "articleId": "jc-chushibiao",
     "origin": "related",
@@ -17704,7 +16775,7 @@
     "explanation": "结合文中“先帝知臣谨慎，故临崩寄臣以大事也”以及诸葛亮自述的生平经历，可以看出刘备托孤是因为诸葛亮才智过人、做事谨慎周全、且对汉室勤勉忠贞。"
   },
   {
-    "id": "exam_point:1157",
+    "id": "exam_point:1103",
     "scope": "article",
     "articleId": "jc-chushibiao",
     "origin": "exam_point",
@@ -17717,7 +16788,7 @@
     "explanation": "主旨情感"
   },
   {
-    "id": "exam_point:1158",
+    "id": "exam_point:1104",
     "scope": "article",
     "articleId": "jc-chushibiao",
     "origin": "exam_point",
@@ -17730,7 +16801,7 @@
     "explanation": "写作特色"
   },
   {
-    "id": "related:1159",
+    "id": "related:1105",
     "scope": "article",
     "articleId": "jc-bieyunjian",
     "origin": "related",
@@ -17743,7 +16814,7 @@
     "explanation": "本题考查诗歌对比阅读。需要结合《梅岭三章（其一）》中“此去泉台招旧部，旌旗十万斩阎罗”与《别云间》中“毅魄归来日，灵旗空际看”，分析“去”与“来”的不同目的，从而体会两位诗人不同的思想情感。"
   },
   {
-    "id": "exam_point:1160",
+    "id": "exam_point:1106",
     "scope": "article",
     "articleId": "jc-bieyunjian",
     "origin": "exam_point",
@@ -17756,7 +16827,7 @@
     "explanation": "文学常识"
   },
   {
-    "id": "exam_point:1161",
+    "id": "exam_point:1107",
     "scope": "article",
     "articleId": "jc-bieyunjian",
     "origin": "exam_point",
@@ -17769,7 +16840,7 @@
     "explanation": "名句赏析"
   },
   {
-    "id": "exam_point:1162",
+    "id": "exam_point:1108",
     "scope": "article",
     "articleId": "jc-bieyunjian",
     "origin": "exam_point",
@@ -17782,7 +16853,7 @@
     "explanation": "主旨情感"
   },
   {
-    "id": "related:1163",
+    "id": "related:1109",
     "scope": "article",
     "articleId": "jc-beimingyouyu",
     "origin": "related",
@@ -17795,7 +16866,7 @@
     "explanation": "本题考查对大鹏形象的分析。可以从形体特征（硕大无比）、志向（志向高远）、力量（力大无穷）以及所凭借的外部力量（善借长风）等方面，结合原文具体语句进行分析，并指出其对后世文人寄托理想抱负的影响。"
   },
   {
-    "id": "exam_point:1164",
+    "id": "exam_point:1110",
     "scope": "article",
     "articleId": "jc-beimingyouyu",
     "origin": "exam_point",
@@ -17808,7 +16879,7 @@
     "explanation": "主旨情感"
   },
   {
-    "id": "exam_point:1165",
+    "id": "exam_point:1111",
     "scope": "article",
     "articleId": "jc-beimingyouyu",
     "origin": "exam_point",
@@ -17821,7 +16892,7 @@
     "explanation": "写作特色"
   },
   {
-    "id": "exam_point:1166",
+    "id": "exam_point:1112",
     "scope": "article",
     "articleId": "jc-beimingyouyu",
     "origin": "exam_point",
@@ -17834,7 +16905,7 @@
     "explanation": "重点句子翻译"
   },
   {
-    "id": "exam_point:1167",
+    "id": "exam_point:1113",
     "scope": "article",
     "articleId": "jc-shiyiyuesirifengyudazuoer",
     "origin": "exam_point",
@@ -17847,7 +16918,7 @@
     "explanation": "写作手法"
   },
   {
-    "id": "exam_point:1168",
+    "id": "exam_point:1114",
     "scope": "article",
     "articleId": "jc-shiyiyuesirifengyudazuoer",
     "origin": "exam_point",
@@ -17860,7 +16931,7 @@
     "explanation": "名句赏析"
   },
   {
-    "id": "exam_point:1169",
+    "id": "exam_point:1115",
     "scope": "article",
     "articleId": "jc-shiyiyuesirifengyudazuoer",
     "origin": "exam_point",
@@ -17873,7 +16944,7 @@
     "explanation": "主旨情感"
   },
   {
-    "id": "exam_point:1170",
+    "id": "exam_point:1116",
     "scope": "article",
     "articleId": "jc-shiwucongjunzheng",
     "origin": "exam_point",
@@ -17886,7 +16957,7 @@
     "explanation": "文学常识"
   },
   {
-    "id": "exam_point:1171",
+    "id": "exam_point:1117",
     "scope": "article",
     "articleId": "jc-shiwucongjunzheng",
     "origin": "exam_point",
@@ -17899,7 +16970,7 @@
     "explanation": "名句赏析"
   },
   {
-    "id": "exam_point:1172",
+    "id": "exam_point:1118",
     "scope": "article",
     "articleId": "jc-shiwucongjunzheng",
     "origin": "exam_point",
@@ -17912,7 +16983,7 @@
     "explanation": "主旨情感"
   },
   {
-    "id": "related:1173",
+    "id": "related:1119",
     "scope": "article",
     "articleId": "jc-maiyouweng",
     "origin": "related",
@@ -17924,7 +16995,7 @@
     "answer": "示例一:我认为是会心的笑。卖油翁的演示让他顿悟:熟练是任何技艺达到高水平的诀窍。他赞同卖油翁的说法,以微笑加以肯定。 示例二:我认为是嘲讽的笑。他觉得卖油翁倒油的小技不能跟他高超的箭术相提并论,也不认同卖油翁的说法。 示例三:我认为是尴尬的笑。康肃公箭术高超,引以为傲,却被卖油翁以倒油小技上了一课,这让他很没面子,只能尴尬一笑。"
   },
   {
-    "id": "related:1174",
+    "id": "related:1120",
     "scope": "article",
     "articleId": "jc-maiyouweng",
     "origin": "related",
@@ -17936,7 +17007,7 @@
     "answer": "第一问:卖油翁对陈尧咨的箭术不以为意,并不十分赞赏。如“睨之”“但微颔之”这些动作描写展现了卖油翁对陈尧咨的箭术见惯不惊,持一副不过如此的态度。 第二问:陈尧咨对此怒形于色,直接反问“汝亦知射乎?吾射不亦精乎?”对老者称呼“汝”,显得傲慢无礼,同时也展现了陈尧咨的盛气凌人。"
   },
   {
-    "id": "related:1175",
+    "id": "related:1121",
     "scope": "article",
     "articleId": "jc-maiyouweng",
     "origin": "related",
@@ -17948,7 +17019,7 @@
     "answer": "第一问示例:我认为高超的箭法不能等同于往葫芦里灌油。往葫芦里灌油主要靠“手熟”和对油流量的控制技巧,影响因素较为单一;而高超的箭法不仅靠“手熟”,还受身体的力量、射箭的角度以及心理素质等多方面的影响。 第二问示例:好箭法不能认为只是手熟。“手熟”固然重要,但练就好箭法还需要其他条件,如过人的意志、超常的悟性、良好的天赋等。 第三问示例:阅读时的质疑具有重要意义。在《卖油翁》中,对好箭法相关问题的质疑,让我们能够更全面、深入地理解“熟能生巧”的道理。同时,质疑也有助于我们培养独立思考和批判性思维能力。"
   },
   {
-    "id": "exam_point:1176",
+    "id": "exam_point:1122",
     "scope": "article",
     "articleId": "jc-maiyouweng",
     "origin": "exam_point",
@@ -17961,7 +17032,7 @@
     "explanation": "文学常识"
   },
   {
-    "id": "exam_point:1177",
+    "id": "exam_point:1123",
     "scope": "article",
     "articleId": "jc-maiyouweng",
     "origin": "exam_point",
@@ -17974,7 +17045,7 @@
     "explanation": "重点句子翻译"
   },
   {
-    "id": "exam_point:1178",
+    "id": "exam_point:1124",
     "scope": "article",
     "articleId": "jc-maiyouweng",
     "origin": "exam_point",
@@ -17987,7 +17058,7 @@
     "explanation": "主旨情感"
   },
   {
-    "id": "exam_point:1179",
+    "id": "exam_point:1125",
     "scope": "article",
     "articleId": "jc-maiyouweng",
     "origin": "exam_point",
@@ -18000,7 +17071,7 @@
     "explanation": "写作手法"
   },
   {
-    "id": "related:1180",
+    "id": "related:1126",
     "scope": "article",
     "articleId": "jc-maitanweng",
     "origin": "related",
@@ -18013,7 +17084,7 @@
     "explanation": "无"
   },
   {
-    "id": "exam_point:1181",
+    "id": "exam_point:1127",
     "scope": "article",
     "articleId": "jc-maitanweng",
     "origin": "exam_point",
@@ -18026,7 +17097,7 @@
     "explanation": "文学常识"
   },
   {
-    "id": "exam_point:1182",
+    "id": "exam_point:1128",
     "scope": "article",
     "articleId": "jc-maitanweng",
     "origin": "exam_point",
@@ -18039,7 +17110,7 @@
     "explanation": "名句赏析"
   },
   {
-    "id": "exam_point:1183",
+    "id": "exam_point:1129",
     "scope": "article",
     "articleId": "jc-maitanweng",
     "origin": "exam_point",
@@ -18052,7 +17123,7 @@
     "explanation": "主旨情感"
   },
   {
-    "id": "exam_point:1184",
+    "id": "exam_point:1130",
     "scope": "article",
     "articleId": "jc-maitanweng",
     "origin": "exam_point",
@@ -18065,7 +17136,7 @@
     "explanation": "内容理解"
   },
   {
-    "id": "exam_point:1185",
+    "id": "exam_point:1131",
     "scope": "article",
     "articleId": "jc-maitanweng",
     "origin": "exam_point",
@@ -18078,7 +17149,7 @@
     "explanation": "内容理解"
   },
   {
-    "id": "exam_point:1186",
+    "id": "exam_point:1132",
     "scope": "article",
     "articleId": "jc-maitanweng",
     "origin": "exam_point",
@@ -18091,7 +17162,7 @@
     "explanation": "修辞"
   },
   {
-    "id": "exam_point:1187",
+    "id": "exam_point:1133",
     "scope": "article",
     "articleId": "jc-maitanweng",
     "origin": "exam_point",
@@ -18104,7 +17175,7 @@
     "explanation": "写作手法"
   },
   {
-    "id": "exam_point:1188",
+    "id": "exam_point:1134",
     "scope": "article",
     "articleId": "jc-maitanweng",
     "origin": "exam_point",
@@ -18117,7 +17188,7 @@
     "explanation": "写作手法"
   },
   {
-    "id": "exam_point:1189",
+    "id": "exam_point:1135",
     "scope": "article",
     "articleId": "jc-nxz",
     "origin": "exam_point",
@@ -18130,7 +17201,7 @@
     "explanation": "名句赏析"
   },
   {
-    "id": "exam_point:1190",
+    "id": "exam_point:1136",
     "scope": "article",
     "articleId": "jc-nxz",
     "origin": "exam_point",
@@ -18143,7 +17214,7 @@
     "explanation": "主旨情感"
   },
   {
-    "id": "exam_point:1191",
+    "id": "exam_point:1137",
     "scope": "article",
     "articleId": "jc-nananjun",
     "origin": "exam_point",
@@ -18156,7 +17227,7 @@
     "explanation": "名句赏析"
   },
   {
-    "id": "exam_point:1192",
+    "id": "exam_point:1138",
     "scope": "article",
     "articleId": "jc-nananjun",
     "origin": "exam_point",
@@ -18169,7 +17240,7 @@
     "explanation": "主旨情感"
   },
   {
-    "id": "exam_point:1193",
+    "id": "exam_point:1139",
     "scope": "article",
     "articleId": "jc-busuanzi-yongmei",
     "origin": "exam_point",
@@ -18182,7 +17253,7 @@
     "explanation": "名句赏析"
   },
   {
-    "id": "exam_point:1194",
+    "id": "exam_point:1140",
     "scope": "article",
     "articleId": "jc-busuanzi-yongmei",
     "origin": "exam_point",
@@ -18195,7 +17266,7 @@
     "explanation": "主旨情感"
   },
   {
-    "id": "exam_point:1195",
+    "id": "exam_point:1141",
     "scope": "article",
     "articleId": "jc-bsz",
     "origin": "exam_point",
@@ -18208,7 +17279,7 @@
     "explanation": "名句赏析"
   },
   {
-    "id": "exam_point:1196",
+    "id": "exam_point:1142",
     "scope": "article",
     "articleId": "jc-bsz",
     "origin": "exam_point",
@@ -18221,7 +17292,7 @@
     "explanation": "主旨情感"
   },
   {
-    "id": "exam_point:1197",
+    "id": "exam_point:1143",
     "scope": "article",
     "articleId": "jc-bsz",
     "origin": "exam_point",
@@ -18234,7 +17305,7 @@
     "explanation": "写作手法"
   },
   {
-    "id": "exam_point:1198",
+    "id": "exam_point:1144",
     "scope": "article",
     "articleId": "jc-dengyouzhoutaige",
     "origin": "exam_point",
@@ -18247,7 +17318,7 @@
     "explanation": "名句赏析"
   },
   {
-    "id": "exam_point:1199",
+    "id": "exam_point:1145",
     "scope": "article",
     "articleId": "jc-dengyouzhoutaige",
     "origin": "exam_point",
@@ -18260,7 +17331,7 @@
     "explanation": "写作手法"
   },
   {
-    "id": "exam_point:1200",
+    "id": "exam_point:1146",
     "scope": "article",
     "articleId": "jc-dengyouzhoutaige",
     "origin": "exam_point",
@@ -18273,7 +17344,7 @@
     "explanation": "艺术特色"
   },
   {
-    "id": "exam_point:1201",
+    "id": "exam_point:1147",
     "scope": "article",
     "articleId": "jc-dengyouzhoutaige",
     "origin": "exam_point",
@@ -18286,7 +17357,7 @@
     "explanation": "主旨情感"
   },
   {
-    "id": "exam_point:1202",
+    "id": "exam_point:1148",
     "scope": "article",
     "articleId": "guancanghai-013",
     "origin": "exam_point",
@@ -18299,7 +17370,7 @@
     "explanation": "名句赏析"
   },
   {
-    "id": "exam_point:1203",
+    "id": "exam_point:1149",
     "scope": "article",
     "articleId": "guancanghai-013",
     "origin": "exam_point",
@@ -18312,7 +17383,7 @@
     "explanation": "写作手法"
   },
   {
-    "id": "exam_point:1204",
+    "id": "exam_point:1150",
     "scope": "article",
     "articleId": "guancanghai-013",
     "origin": "exam_point",
@@ -18325,7 +17396,7 @@
     "explanation": "主旨情感"
   },
   {
-    "id": "related:1205",
+    "id": "related:1151",
     "scope": "article",
     "articleId": "jc-zhouyafu",
     "origin": "related",
@@ -18338,7 +17409,7 @@
     "explanation": "“惊”字既包含了群臣对周亚夫严明军纪、不畏天子威严的震惊，也包含了对文帝宽宏大度、不予降罪反而高度赞赏的惊讶。"
   },
   {
-    "id": "exam_point:1206",
+    "id": "exam_point:1152",
     "scope": "article",
     "articleId": "jc-zhouyafu",
     "origin": "exam_point",
@@ -18351,7 +17422,7 @@
     "explanation": "正面描写和侧面描写相结合"
   },
   {
-    "id": "exam_point:1207",
+    "id": "exam_point:1153",
     "scope": "article",
     "articleId": "jc-zhouyafu",
     "origin": "exam_point",
@@ -18364,7 +17435,7 @@
     "explanation": "运用对比"
   },
   {
-    "id": "exam_point:1208",
+    "id": "exam_point:1154",
     "scope": "article",
     "articleId": "jc-zhouyafu",
     "origin": "exam_point",
@@ -18377,7 +17448,7 @@
     "explanation": "人物形象分析"
   },
   {
-    "id": "exam_point:1209",
+    "id": "exam_point:1155",
     "scope": "article",
     "articleId": "jc-zhouyafu",
     "origin": "exam_point",
@@ -18390,7 +17461,7 @@
     "explanation": "主题思想"
   },
   {
-    "id": "exam_point:1210",
+    "id": "exam_point:1156",
     "scope": "article",
     "articleId": "jc-yongxue",
     "origin": "exam_point",
@@ -18403,7 +17474,7 @@
     "explanation": "文学常识"
   },
   {
-    "id": "exam_point:1211",
+    "id": "exam_point:1157",
     "scope": "article",
     "articleId": "jc-yongxue",
     "origin": "exam_point",
@@ -18416,7 +17487,7 @@
     "explanation": "句子翻译"
   },
   {
-    "id": "exam_point:1212",
+    "id": "exam_point:1158",
     "scope": "article",
     "articleId": "jc-yongxue",
     "origin": "exam_point",
@@ -18429,7 +17500,7 @@
     "explanation": "文意理解-主旨情感"
   },
   {
-    "id": "exam_point:1213",
+    "id": "exam_point:1159",
     "scope": "article",
     "articleId": "jc-yongxue",
     "origin": "exam_point",
@@ -18442,7 +17513,7 @@
     "explanation": "文意理解-写作手法"
   },
   {
-    "id": "exam_point:1214",
+    "id": "exam_point:1160",
     "scope": "article",
     "articleId": "jc-xycdl",
     "origin": "exam_point",
@@ -18455,7 +17526,7 @@
     "explanation": "名句赏析"
   },
   {
-    "id": "exam_point:1215",
+    "id": "exam_point:1161",
     "scope": "article",
     "articleId": "jc-xycdl",
     "origin": "exam_point",
@@ -18468,7 +17539,7 @@
     "explanation": "主旨情感"
   },
   {
-    "id": "exam_point:1216",
+    "id": "exam_point:1162",
     "scope": "article",
     "articleId": "jc-yewang",
     "origin": "exam_point",
@@ -18481,7 +17552,7 @@
     "explanation": "名句赏析"
   },
   {
-    "id": "exam_point:1217",
+    "id": "exam_point:1163",
     "scope": "article",
     "articleId": "jc-yewang",
     "origin": "exam_point",
@@ -18494,7 +17565,7 @@
     "explanation": "主旨情感"
   },
   {
-    "id": "exam_point:1218",
+    "id": "exam_point:1164",
     "scope": "article",
     "articleId": "jc-yewang",
     "origin": "exam_point",
@@ -18507,7 +17578,7 @@
     "explanation": "写作特色"
   },
   {
-    "id": "related:1219",
+    "id": "related:1165",
     "scope": "article",
     "articleId": "jc-tangjuburushiming",
     "origin": "related",
@@ -18520,7 +17591,7 @@
     "explanation": "唐雎列举专诸、聂政、要离三位刺客的壮举，是为了表明自己不惜以死相拼的决心，从而在精神上和肉体上对秦王产生强大的威慑力，迫使其放弃吞并安陵的野心。"
   },
   {
-    "id": "related:1220",
+    "id": "related:1166",
     "scope": "article",
     "articleId": "jc-tangjuburushiming",
     "origin": "related",
@@ -18533,7 +17604,7 @@
     "explanation": "考查对文章情节发展和人物心理变化的理解。"
   },
   {
-    "id": "related:1221",
+    "id": "related:1167",
     "scope": "article",
     "articleId": "jc-tangjuburushiming",
     "origin": "related",
@@ -18546,7 +17617,7 @@
     "explanation": "考查通过人物语言分析人物形象和外交辞令的艺术。"
   },
   {
-    "id": "exam_point:1222",
+    "id": "exam_point:1168",
     "scope": "article",
     "articleId": "jc-tangjuburushiming",
     "origin": "exam_point",
@@ -18559,7 +17630,7 @@
     "explanation": "主旨情感"
   },
   {
-    "id": "exam_point:1223",
+    "id": "exam_point:1169",
     "scope": "article",
     "articleId": "jc-tangjuburushiming",
     "origin": "exam_point",
@@ -18572,7 +17643,7 @@
     "explanation": "写作手法"
   },
   {
-    "id": "exam_point:1224",
+    "id": "exam_point:1170",
     "scope": "article",
     "articleId": "jc-tangjuburushiming",
     "origin": "exam_point",
@@ -18585,7 +17656,7 @@
     "explanation": "人物形象"
   },
   {
-    "id": "exam_point:1225",
+    "id": "exam_point:1171",
     "scope": "article",
     "articleId": "jc-shangshanzaoxing",
     "origin": "exam_point",
@@ -18598,7 +17669,7 @@
     "explanation": "文学常识"
   },
   {
-    "id": "exam_point:1226",
+    "id": "exam_point:1172",
     "scope": "article",
     "articleId": "jc-shangshanzaoxing",
     "origin": "exam_point",
@@ -18611,7 +17682,7 @@
     "explanation": "名句赏析"
   },
   {
-    "id": "exam_point:1227",
+    "id": "exam_point:1173",
     "scope": "article",
     "articleId": "jc-shangshanzaoxing",
     "origin": "exam_point",
@@ -18624,7 +17695,7 @@
     "explanation": "主旨情感"
   },
   {
-    "id": "exam_point:1228",
+    "id": "exam_point:1174",
     "scope": "article",
     "articleId": "jc-yeshangshouxiangchengwendi",
     "origin": "exam_point",
@@ -18637,7 +17708,7 @@
     "explanation": "名句赏析"
   },
   {
-    "id": "exam_point:1229",
+    "id": "exam_point:1175",
     "scope": "article",
     "articleId": "jc-yeshangshouxiangchengwendi",
     "origin": "exam_point",
@@ -18650,7 +17721,7 @@
     "explanation": "主旨情感"
   },
   {
-    "id": "exam_point:1230",
+    "id": "exam_point:1176",
     "scope": "article",
     "articleId": "jc-yeshangshouxiangchengwendi",
     "origin": "exam_point",
@@ -18663,7 +17734,7 @@
     "explanation": "写作特色"
   },
   {
-    "id": "exam_point:1231",
+    "id": "exam_point:1177",
     "scope": "article",
     "articleId": "jc-yeyujibei",
     "origin": "exam_point",
@@ -18676,7 +17747,7 @@
     "explanation": "写作手法"
   },
   {
-    "id": "exam_point:1232",
+    "id": "exam_point:1178",
     "scope": "article",
     "articleId": "jc-yeyujibei",
     "origin": "exam_point",
@@ -18689,7 +17760,7 @@
     "explanation": "语言特色"
   },
   {
-    "id": "exam_point:1233",
+    "id": "exam_point:1179",
     "scope": "article",
     "articleId": "jc-yeyujibei",
     "origin": "exam_point",
@@ -18702,7 +17773,7 @@
     "explanation": "主旨情感"
   },
   {
-    "id": "related:1234",
+    "id": "related:1180",
     "scope": "article",
     "articleId": "jc-dadaozhixingye",
     "origin": "related",
@@ -18715,7 +17786,7 @@
     "explanation": "出自中考链接(湖南)。"
   },
   {
-    "id": "exam_point:1235",
+    "id": "exam_point:1181",
     "scope": "article",
     "articleId": "jc-dadaozhixingye",
     "origin": "exam_point",
@@ -18728,7 +17799,7 @@
     "explanation": "文学常识"
   },
   {
-    "id": "exam_point:1236",
+    "id": "exam_point:1182",
     "scope": "article",
     "articleId": "jc-dadaozhixingye",
     "origin": "exam_point",
@@ -18741,7 +17812,7 @@
     "explanation": "写作手法"
   },
   {
-    "id": "exam_point:1237",
+    "id": "exam_point:1183",
     "scope": "article",
     "articleId": "jc-dadaozhixingye",
     "origin": "exam_point",
@@ -18754,7 +17825,7 @@
     "explanation": "主旨情感"
   },
   {
-    "id": "exam_point:1238",
+    "id": "exam_point:1184",
     "scope": "article",
     "articleId": "tianjingsha-qiusi",
     "origin": "exam_point",
@@ -18767,7 +17838,7 @@
     "explanation": "文学常识"
   },
   {
-    "id": "exam_point:1239",
+    "id": "exam_point:1185",
     "scope": "article",
     "articleId": "tianjingsha-qiusi",
     "origin": "exam_point",
@@ -18780,7 +17851,7 @@
     "explanation": "名句赏析"
   },
   {
-    "id": "exam_point:1240",
+    "id": "exam_point:1186",
     "scope": "article",
     "articleId": "tianjingsha-qiusi",
     "origin": "exam_point",
@@ -18793,7 +17864,7 @@
     "explanation": "主旨情感"
   },
   {
-    "id": "exam_point:1241",
+    "id": "exam_point:1187",
     "scope": "article",
     "articleId": "jc-taichangyin",
     "origin": "exam_point",
@@ -18806,7 +17877,7 @@
     "explanation": "文学常识"
   },
   {
-    "id": "exam_point:1242",
+    "id": "exam_point:1188",
     "scope": "article",
     "articleId": "jc-taichangyin",
     "origin": "exam_point",
@@ -18819,7 +17890,7 @@
     "explanation": "名句赏析"
   },
   {
-    "id": "exam_point:1243",
+    "id": "exam_point:1189",
     "scope": "article",
     "articleId": "jc-taichangyin",
     "origin": "exam_point",
@@ -18832,7 +17903,7 @@
     "explanation": "主旨情感"
   },
   {
-    "id": "exam_point:1244",
+    "id": "exam_point:1190",
     "scope": "article",
     "articleId": "jc-rumengling",
     "origin": "exam_point",
@@ -18845,7 +17916,7 @@
     "explanation": "文学常识"
   },
   {
-    "id": "exam_point:1245",
+    "id": "exam_point:1191",
     "scope": "article",
     "articleId": "jc-rumengling",
     "origin": "exam_point",
@@ -18858,7 +17929,7 @@
     "explanation": "名句赏析"
   },
   {
-    "id": "exam_point:1246",
+    "id": "exam_point:1192",
     "scope": "article",
     "articleId": "jc-rumengling",
     "origin": "exam_point",
@@ -18871,7 +17942,7 @@
     "explanation": "主旨情感"
   },
   {
-    "id": "exam_point:1247",
+    "id": "exam_point:1193",
     "scope": "article",
     "articleId": "jc-zijin",
     "origin": "exam_point",
@@ -18884,7 +17955,7 @@
     "explanation": "文学常识"
   },
   {
-    "id": "exam_point:1248",
+    "id": "exam_point:1194",
     "scope": "article",
     "articleId": "jc-zijin",
     "origin": "exam_point",
@@ -18897,7 +17968,7 @@
     "explanation": "修辞手法（借代）"
   },
   {
-    "id": "exam_point:1249",
+    "id": "exam_point:1195",
     "scope": "article",
     "articleId": "jc-zijin",
     "origin": "exam_point",
@@ -18910,7 +17981,7 @@
     "explanation": "修辞手法（夸张）"
   },
   {
-    "id": "exam_point:1250",
+    "id": "exam_point:1196",
     "scope": "article",
     "articleId": "jc-zijin",
     "origin": "exam_point",
@@ -18923,7 +17994,7 @@
     "explanation": "主旨情感"
   },
   {
-    "id": "related:1251",
+    "id": "related:1197",
     "scope": "article",
     "articleId": "jc-sunquanquanxue",
     "origin": "related",
@@ -18936,7 +18007,7 @@
     "explanation": "本题考查对课文内容的理解。需要结合孙权劝学的背景、劝说的步骤（指出必要性、指出方法目的、现身说法）进行分析。"
   },
   {
-    "id": "related:1252",
+    "id": "related:1198",
     "scope": "article",
     "articleId": "jc-sunquanquanxue",
     "origin": "related",
@@ -18949,7 +18020,7 @@
     "explanation": "本题考查写作手法（侧面烘托）及课文启示。第一问需指出侧面描写的作用，第二问结合自身实际谈学习的重要性。"
   },
   {
-    "id": "related:1253",
+    "id": "related:1199",
     "scope": "article",
     "articleId": "jc-sunquanquanxue",
     "origin": "related",
@@ -18962,7 +18033,7 @@
     "explanation": "注意倒装句式（状语后置），‘以军中多务’介宾短语后置，翻译时要调整语序；‘辞’译为‘推托’。"
   },
   {
-    "id": "exam_point:1254",
+    "id": "exam_point:1200",
     "scope": "article",
     "articleId": "jc-sunquanquanxue",
     "origin": "exam_point",
@@ -18975,7 +18046,7 @@
     "explanation": "文学常识"
   },
   {
-    "id": "exam_point:1255",
+    "id": "exam_point:1201",
     "scope": "article",
     "articleId": "jc-sunquanquanxue",
     "origin": "exam_point",
@@ -18988,7 +18059,7 @@
     "explanation": "特殊句式"
   },
   {
-    "id": "exam_point:1256",
+    "id": "exam_point:1202",
     "scope": "article",
     "articleId": "jc-sunquanquanxue",
     "origin": "exam_point",
@@ -19001,7 +18072,7 @@
     "explanation": "写作手法"
   },
   {
-    "id": "exam_point:1257",
+    "id": "exam_point:1203",
     "scope": "article",
     "articleId": "jc-dingfengbo",
     "origin": "exam_point",
@@ -19014,7 +18085,7 @@
     "explanation": "文学常识"
   },
   {
-    "id": "exam_point:1258",
+    "id": "exam_point:1204",
     "scope": "article",
     "articleId": "jc-dingfengbo",
     "origin": "exam_point",
@@ -19027,7 +18098,7 @@
     "explanation": "名句赏析"
   },
   {
-    "id": "exam_point:1259",
+    "id": "exam_point:1205",
     "scope": "article",
     "articleId": "jc-dingfengbo",
     "origin": "exam_point",
@@ -19040,7 +18111,7 @@
     "explanation": "主旨情感"
   },
   {
-    "id": "related:1260",
+    "id": "related:1206",
     "scope": "article",
     "articleId": "jc-fugueibunengyin",
     "origin": "related",
@@ -19053,7 +18124,7 @@
     "explanation": "孟子用“妾妇之道”作比进行反驳，指出了公孙衍、张仪的本质：他们只不过是顺从君王的意志，没有独立的人格。"
   },
   {
-    "id": "related:1261",
+    "id": "related:1207",
     "scope": "article",
     "articleId": "jc-fugueibunengyin",
     "origin": "related",
@@ -19066,7 +18137,7 @@
     "explanation": "结合“居天下之广居，立天下之正位，行天下之大道”（讲仁德、守礼法、做事合乎道义），“得志，与民由之；不得志，独行其道”（无论得志与否，都不放弃做人的原则），“富贵不能淫，贫贱不能移，威武不能屈”（富贵不迷乱，贫贱不动摇，威逼不屈服）进行概括。"
   },
   {
-    "id": "exam_point:1262",
+    "id": "exam_point:1208",
     "scope": "article",
     "articleId": "jc-fugueibunengyin",
     "origin": "exam_point",
@@ -19079,7 +18150,7 @@
     "explanation": "写作特色"
   },
   {
-    "id": "exam_point:1263",
+    "id": "exam_point:1209",
     "scope": "article",
     "articleId": "jc-fugueibunengyin",
     "origin": "exam_point",
@@ -19092,7 +18163,7 @@
     "explanation": "主旨情感"
   },
   {
-    "id": "exam_point:1264",
+    "id": "exam_point:1210",
     "scope": "article",
     "articleId": "jc-xiaoshitanji",
     "origin": "exam_point",
@@ -19105,7 +18176,7 @@
     "explanation": "文学常识"
   },
   {
-    "id": "exam_point:1265",
+    "id": "exam_point:1211",
     "scope": "article",
     "articleId": "jc-xiaoshitanji",
     "origin": "exam_point",
@@ -19118,7 +18189,7 @@
     "explanation": "句子翻译"
   },
   {
-    "id": "exam_point:1266",
+    "id": "exam_point:1212",
     "scope": "article",
     "articleId": "jc-xiaoshitanji",
     "origin": "exam_point",
@@ -19131,7 +18202,7 @@
     "explanation": "文意理解"
   },
   {
-    "id": "related:1267",
+    "id": "related:1213",
     "scope": "article",
     "articleId": "jc-shanpoyang-tongguanhaigu",
     "origin": "related",
@@ -19144,7 +18215,7 @@
     "explanation": "无"
   },
   {
-    "id": "exam_point:1268",
+    "id": "exam_point:1214",
     "scope": "article",
     "articleId": "jc-shanpoyang-tongguanhaigu",
     "origin": "exam_point",
@@ -19157,7 +18228,7 @@
     "explanation": "文学常识"
   },
   {
-    "id": "exam_point:1269",
+    "id": "exam_point:1215",
     "scope": "article",
     "articleId": "jc-shanpoyang-tongguanhaigu",
     "origin": "exam_point",
@@ -19170,7 +18241,7 @@
     "explanation": "名句赏析"
   },
   {
-    "id": "exam_point:1270",
+    "id": "exam_point:1216",
     "scope": "article",
     "articleId": "jc-shanpoyang-tongguanhaigu",
     "origin": "exam_point",
@@ -19183,7 +18254,7 @@
     "explanation": "主旨情感"
   },
   {
-    "id": "exam_point:1271",
+    "id": "exam_point:1217",
     "scope": "article",
     "articleId": "jc-shanpoyanglishan",
     "origin": "exam_point",
@@ -19196,7 +18267,7 @@
     "explanation": "名句赏析"
   },
   {
-    "id": "exam_point:1272",
+    "id": "exam_point:1218",
     "scope": "article",
     "articleId": "jc-shanpoyanglishan",
     "origin": "exam_point",
@@ -19209,7 +18280,7 @@
     "explanation": "主旨情感"
   },
   {
-    "id": "exam_point:1273",
+    "id": "exam_point:1219",
     "scope": "article",
     "articleId": "jc-yueyanglouji",
     "origin": "exam_point",
@@ -19222,7 +18293,7 @@
     "explanation": "文学常识"
   },
   {
-    "id": "exam_point:1274",
+    "id": "exam_point:1220",
     "scope": "article",
     "articleId": "jc-yueyanglouji",
     "origin": "exam_point",
@@ -19235,7 +18306,7 @@
     "explanation": "句子翻译"
   },
   {
-    "id": "exam_point:1275",
+    "id": "exam_point:1221",
     "scope": "article",
     "articleId": "jc-yueyanglouji",
     "origin": "exam_point",
@@ -19248,7 +18319,7 @@
     "explanation": "文意理解"
   },
   {
-    "id": "exam_point:1276",
+    "id": "exam_point:1222",
     "scope": "article",
     "articleId": "jc-emeishanyuege",
     "origin": "exam_point",
@@ -19261,7 +18332,7 @@
     "explanation": "名句赏析"
   },
   {
-    "id": "exam_point:1277",
+    "id": "exam_point:1223",
     "scope": "article",
     "articleId": "jc-emeishanyuege",
     "origin": "exam_point",
@@ -19274,7 +18345,7 @@
     "explanation": "主旨情感"
   },
   {
-    "id": "exam_point:1278",
+    "id": "exam_point:1224",
     "scope": "article",
     "articleId": "jc-emeishanyuege",
     "origin": "exam_point",
@@ -19287,7 +18358,7 @@
     "explanation": "写作特色"
   },
   {
-    "id": "exam_point:1279",
+    "id": "exam_point:1225",
     "scope": "article",
     "articleId": "jc-jihaizashi5",
     "origin": "exam_point",
@@ -19300,7 +18371,7 @@
     "explanation": "名句赏析"
   },
   {
-    "id": "exam_point:1280",
+    "id": "exam_point:1226",
     "scope": "article",
     "articleId": "jc-jihaizashi5",
     "origin": "exam_point",
@@ -19313,7 +18384,7 @@
     "explanation": "主旨情感"
   },
   {
-    "id": "exam_point:1281",
+    "id": "exam_point:1227",
     "scope": "article",
     "articleId": "jc-zhuangzi-huizi-haoliang",
     "origin": "exam_point",
@@ -19326,7 +18397,7 @@
     "explanation": "句子翻译"
   },
   {
-    "id": "exam_point:1282",
+    "id": "exam_point:1228",
     "scope": "article",
     "articleId": "jc-zhuangzi-huizi-haoliang",
     "origin": "exam_point",
@@ -19339,7 +18410,7 @@
     "explanation": "主旨情感"
   },
   {
-    "id": "exam_point:1283",
+    "id": "exam_point:1229",
     "scope": "article",
     "articleId": "jc-zhuangzi-huizi-haoliang",
     "origin": "exam_point",
@@ -19352,7 +18423,7 @@
     "explanation": "写作特色"
   },
   {
-    "id": "exam_point:1284",
+    "id": "exam_point:1230",
     "scope": "article",
     "articleId": "jc-tingzhongyouqishu",
     "origin": "exam_point",
@@ -19365,7 +18436,7 @@
     "explanation": "名句赏析"
   },
   {
-    "id": "exam_point:1285",
+    "id": "exam_point:1231",
     "scope": "article",
     "articleId": "jc-tingzhongyouqishu",
     "origin": "exam_point",
@@ -19378,7 +18449,7 @@
     "explanation": "主旨情感"
   },
   {
-    "id": "exam_point:1286",
+    "id": "exam_point:1232",
     "scope": "article",
     "articleId": "jc-shiwei",
     "origin": "exam_point",
@@ -19391,7 +18462,7 @@
     "explanation": "文学常识"
   },
   {
-    "id": "exam_point:1287",
+    "id": "exam_point:1233",
     "scope": "article",
     "articleId": "jc-shiwei",
     "origin": "exam_point",
@@ -19404,7 +18475,7 @@
     "explanation": "名句赏析"
   },
   {
-    "id": "exam_point:1288",
+    "id": "exam_point:1234",
     "scope": "article",
     "articleId": "jc-shiwei",
     "origin": "exam_point",
@@ -19417,7 +18488,7 @@
     "explanation": "主旨情感"
   },
   {
-    "id": "exam_point:1289",
+    "id": "exam_point:1235",
     "scope": "article",
     "articleId": "jc-shiwei",
     "origin": "exam_point",
@@ -19430,7 +18501,7 @@
     "explanation": "修辞、写作手法"
   },
   {
-    "id": "exam_point:1290",
+    "id": "exam_point:1236",
     "scope": "article",
     "articleId": "jc-shiwei",
     "origin": "exam_point",
@@ -19443,7 +18514,7 @@
     "explanation": "内容理解"
   },
   {
-    "id": "exam_point:1291",
+    "id": "exam_point:1237",
     "scope": "article",
     "articleId": "jc-shiwei",
     "origin": "exam_point",
@@ -19456,7 +18527,7 @@
     "explanation": "写作手法"
   },
   {
-    "id": "exam_point:1292",
+    "id": "exam_point:1238",
     "scope": "article",
     "articleId": "jc-ddzd",
     "origin": "exam_point",
@@ -19469,7 +18540,7 @@
     "explanation": "文学常识"
   },
   {
-    "id": "exam_point:1293",
+    "id": "exam_point:1239",
     "scope": "article",
     "articleId": "jc-ddzd",
     "origin": "exam_point",
@@ -19482,7 +18553,7 @@
     "explanation": "文意理解"
   },
   {
-    "id": "exam_point:1294",
+    "id": "exam_point:1240",
     "scope": "article",
     "articleId": "jc-yugongyishan",
     "origin": "exam_point",
@@ -19495,7 +18566,7 @@
     "explanation": "文学常识"
   },
   {
-    "id": "exam_point:1295",
+    "id": "exam_point:1241",
     "scope": "article",
     "articleId": "jc-yugongyishan",
     "origin": "exam_point",
@@ -19508,7 +18579,7 @@
     "explanation": "句子翻译"
   },
   {
-    "id": "exam_point:1296",
+    "id": "exam_point:1242",
     "scope": "article",
     "articleId": "jc-yugongyishan",
     "origin": "exam_point",
@@ -19521,7 +18592,7 @@
     "explanation": "文意理解"
   },
   {
-    "id": "exam_point:1297",
+    "id": "exam_point:1243",
     "scope": "article",
     "articleId": "jc-wuti",
     "origin": "exam_point",
@@ -19534,7 +18605,7 @@
     "explanation": "名句赏析"
   },
   {
-    "id": "exam_point:1298",
+    "id": "exam_point:1244",
     "scope": "article",
     "articleId": "jc-wuti",
     "origin": "exam_point",
@@ -19547,7 +18618,7 @@
     "explanation": "主旨情感"
   },
   {
-    "id": "related:1299",
+    "id": "related:1245",
     "scope": "article",
     "articleId": "jc-chunyelochengwendi",
     "origin": "related",
@@ -19559,7 +18630,7 @@
     "answer": "“暗”字是首句之关键。深夜难寐，笛声暗飞，似乎是为了触动羁旅者的离愁别绪。此外，“暗”字也有隐约之意，与诗的情境相呼应。“谁家”之“谁”与“暗”相照应。"
   },
   {
-    "id": "related:1300",
+    "id": "related:1246",
     "scope": "article",
     "articleId": "jc-chunyelochengwendi",
     "origin": "related",
@@ -19571,7 +18642,7 @@
     "answer": "运用了夸张的修辞手法。写出了笛声随着春风传到洛阳城的各处，表现了洛城春夜之静谧，表达了诗人的思乡之情。"
   },
   {
-    "id": "related:1301",
+    "id": "related:1247",
     "scope": "article",
     "articleId": "jc-chunyelochengwendi",
     "origin": "related",
@@ -19583,7 +18654,7 @@
     "answer": "后两句写诗人的情怀，却从他人反说。不言“我”，却更见“我”感触之深、思乡之切。"
   },
   {
-    "id": "related:1302",
+    "id": "related:1248",
     "scope": "article",
     "articleId": "jc-chunyelochengwendi",
     "origin": "related",
@@ -19595,7 +18666,7 @@
     "answer": "此处采用了拟人的修辞手法，将“草树”人格化，使无情之花草树木变得极为有情，生动活泼。从花草树木的角度写出了对春天的留恋之情。"
   },
   {
-    "id": "related:1303",
+    "id": "related:1249",
     "scope": "article",
     "articleId": "jc-chunyelochengwendi",
     "origin": "related",
@@ -19607,7 +18678,7 @@
     "answer": "炼字。“暗”字是首句之关键。深夜难寐,笛声暗飞,似乎是为了触动羁旅者的离愁别绪。此外,“暗”字也有隐约之意,与诗的情境相呼应。“谁家”之“谁”与“暗”相照应。（考点:炼字）"
   },
   {
-    "id": "related:1304",
+    "id": "related:1250",
     "scope": "article",
     "articleId": "jc-chunyelochengwendi",
     "origin": "related",
@@ -19619,7 +18690,7 @@
     "answer": "“满洛城”,即笛声随着春风传到洛阳城的各处,运用夸张手法,写出了洛城春夜之静谧,表达了诗人的思乡之情。（考点:修辞）"
   },
   {
-    "id": "related:1305",
+    "id": "related:1251",
     "scope": "article",
     "articleId": "jc-chunyelochengwendi",
     "origin": "related",
@@ -19631,7 +18702,7 @@
     "answer": "后两句写诗人的情怀,却从他人反说。不言“我”,却更见“我”感触之深、思乡之切。（考点:内容理解）"
   },
   {
-    "id": "exam_point:1306",
+    "id": "exam_point:1252",
     "scope": "article",
     "articleId": "jc-chunyelochengwendi",
     "origin": "exam_point",
@@ -19644,7 +18715,7 @@
     "explanation": "文学常识"
   },
   {
-    "id": "exam_point:1307",
+    "id": "exam_point:1253",
     "scope": "article",
     "articleId": "jc-chunyelochengwendi",
     "origin": "exam_point",
@@ -19657,7 +18728,7 @@
     "explanation": "修辞"
   },
   {
-    "id": "exam_point:1308",
+    "id": "exam_point:1254",
     "scope": "article",
     "articleId": "jc-chunyelochengwendi",
     "origin": "exam_point",
@@ -19670,7 +18741,7 @@
     "explanation": "结构层次"
   },
   {
-    "id": "exam_point:1309",
+    "id": "exam_point:1255",
     "scope": "article",
     "articleId": "jc-chunyelochengwendi",
     "origin": "exam_point",
@@ -19683,7 +18754,7 @@
     "explanation": "写作特色"
   },
   {
-    "id": "exam_point:1310",
+    "id": "exam_point:1256",
     "scope": "article",
     "articleId": "jc-chunyelochengwendi",
     "origin": "exam_point",
@@ -19696,7 +18767,7 @@
     "explanation": "主旨情感"
   },
   {
-    "id": "exam_point:1311",
+    "id": "exam_point:1257",
     "scope": "article",
     "articleId": "jc-chunwang",
     "origin": "exam_point",
@@ -19709,7 +18780,7 @@
     "explanation": "名句赏析"
   },
   {
-    "id": "exam_point:1312",
+    "id": "exam_point:1258",
     "scope": "article",
     "articleId": "jc-chunwang",
     "origin": "exam_point",
@@ -19722,7 +18793,7 @@
     "explanation": "细节描写"
   },
   {
-    "id": "exam_point:1313",
+    "id": "exam_point:1259",
     "scope": "article",
     "articleId": "jc-chunwang",
     "origin": "exam_point",
@@ -19735,7 +18806,7 @@
     "explanation": "主旨情感"
   },
   {
-    "id": "exam_point:1314",
+    "id": "exam_point:1260",
     "scope": "article",
     "articleId": "jc-wanchun",
     "origin": "exam_point",
@@ -19748,7 +18819,7 @@
     "explanation": "名句赏析"
   },
   {
-    "id": "exam_point:1315",
+    "id": "exam_point:1261",
     "scope": "article",
     "articleId": "jc-wanchun",
     "origin": "exam_point",
@@ -19761,7 +18832,7 @@
     "explanation": "主旨情感"
   },
   {
-    "id": "exam_point:1316",
+    "id": "exam_point:1262",
     "scope": "article",
     "articleId": "jc-wanchun",
     "origin": "exam_point",
@@ -19774,7 +18845,7 @@
     "explanation": "写作特色"
   },
   {
-    "id": "exam_point:1317",
+    "id": "exam_point:1263",
     "scope": "article",
     "articleId": "jc-wanchun",
     "origin": "exam_point",
@@ -19787,7 +18858,7 @@
     "explanation": "写作特色"
   },
   {
-    "id": "related:1318",
+    "id": "related:1264",
     "scope": "article",
     "articleId": "jc-caoguilunzhan",
     "origin": "related",
@@ -19800,7 +18871,7 @@
     "explanation": "本题考查情节在文中的作用。曹刿与乡人的对话，交代了曹刿请见的原因，表现了曹刿的爱国热情和对肉食者的不信任，同时也为后文情节发展作铺垫。"
   },
   {
-    "id": "exam_point:1319",
+    "id": "exam_point:1265",
     "scope": "article",
     "articleId": "jc-caoguilunzhan",
     "origin": "exam_point",
@@ -19813,7 +18884,7 @@
     "explanation": "文章理解"
   },
   {
-    "id": "exam_point:1320",
+    "id": "exam_point:1266",
     "scope": "article",
     "articleId": "jc-yueyeyishedi",
     "origin": "exam_point",
@@ -19826,7 +18897,7 @@
     "explanation": "名句赏析"
   },
   {
-    "id": "exam_point:1321",
+    "id": "exam_point:1267",
     "scope": "article",
     "articleId": "jc-yueyeyishedi",
     "origin": "exam_point",
@@ -19839,7 +18910,7 @@
     "explanation": "名句赏析"
   },
   {
-    "id": "exam_point:1322",
+    "id": "exam_point:1268",
     "scope": "article",
     "articleId": "jc-yueyeyishedi",
     "origin": "exam_point",
@@ -19852,7 +18923,7 @@
     "explanation": "名句赏析"
   },
   {
-    "id": "exam_point:1323",
+    "id": "exam_point:1269",
     "scope": "article",
     "articleId": "jc-yueyeyishedi",
     "origin": "exam_point",
@@ -19865,7 +18936,7 @@
     "explanation": "名句赏析"
   },
   {
-    "id": "exam_point:1324",
+    "id": "exam_point:1270",
     "scope": "article",
     "articleId": "jc-yueyeyishedi",
     "origin": "exam_point",
@@ -19878,7 +18949,7 @@
     "explanation": "主旨情感"
   },
   {
-    "id": "exam_point:1325",
+    "id": "exam_point:1271",
     "scope": "article",
     "articleId": "jc-yueyeyishedi",
     "origin": "exam_point",
@@ -19891,7 +18962,7 @@
     "explanation": "写作背景"
   },
   {
-    "id": "related:1326",
+    "id": "related:1272",
     "scope": "article",
     "articleId": "jc-wangyue",
     "origin": "related",
@@ -19903,7 +18974,7 @@
     "answer": "这两句写诗人细望之景，通过“曾云”（层云）和“归鸟”，勾勒出泰山“天高任鸟飞”的广阔背景，表现了诗人心情的激荡和开阔的胸襟。"
   },
   {
-    "id": "related:1327",
+    "id": "related:1273",
     "scope": "article",
     "articleId": "jc-wangyue",
     "origin": "related",
@@ -19915,7 +18986,7 @@
     "answer": "写诗人细望之景，通过“曾云”和“归鸟”，勾勒出泰山“天高任鸟飞”的广阔背景。"
   },
   {
-    "id": "exam_point:1328",
+    "id": "exam_point:1274",
     "scope": "article",
     "articleId": "jc-wangyue",
     "origin": "exam_point",
@@ -19928,7 +18999,7 @@
     "explanation": "文学常识"
   },
   {
-    "id": "exam_point:1329",
+    "id": "exam_point:1275",
     "scope": "article",
     "articleId": "jc-wangyue",
     "origin": "exam_point",
@@ -19941,7 +19012,7 @@
     "explanation": "文学常识"
   },
   {
-    "id": "exam_point:1330",
+    "id": "exam_point:1276",
     "scope": "article",
     "articleId": "jc-wangyue",
     "origin": "exam_point",
@@ -19954,7 +19025,7 @@
     "explanation": "文学常识"
   },
   {
-    "id": "exam_point:1331",
+    "id": "exam_point:1277",
     "scope": "article",
     "articleId": "jc-wangyue",
     "origin": "exam_point",
@@ -19967,7 +19038,7 @@
     "explanation": "名句赏析"
   },
   {
-    "id": "exam_point:1332",
+    "id": "exam_point:1278",
     "scope": "article",
     "articleId": "jc-wangyue",
     "origin": "exam_point",
@@ -19980,7 +19051,7 @@
     "explanation": "名句赏析"
   },
   {
-    "id": "exam_point:1333",
+    "id": "exam_point:1279",
     "scope": "article",
     "articleId": "jc-wangyue",
     "origin": "exam_point",
@@ -19993,7 +19064,7 @@
     "explanation": "名句赏析"
   },
   {
-    "id": "exam_point:1334",
+    "id": "exam_point:1280",
     "scope": "article",
     "articleId": "jc-wangyue",
     "origin": "exam_point",
@@ -20006,7 +19077,7 @@
     "explanation": "名句赏析"
   },
   {
-    "id": "exam_point:1335",
+    "id": "exam_point:1281",
     "scope": "article",
     "articleId": "jc-wangyue",
     "origin": "exam_point",
@@ -20019,7 +19090,7 @@
     "explanation": "主旨情感"
   },
   {
-    "id": "exam_point:1336",
+    "id": "exam_point:1282",
     "scope": "article",
     "articleId": "jc-wangyue",
     "origin": "exam_point",
@@ -20032,7 +19103,7 @@
     "explanation": "写作特色"
   },
   {
-    "id": "exam_point:1337",
+    "id": "exam_point:1283",
     "scope": "article",
     "articleId": "jc-wangyue",
     "origin": "exam_point",
@@ -20045,7 +19116,7 @@
     "explanation": "写作特色"
   },
   {
-    "id": "exam_point:1338",
+    "id": "exam_point:1284",
     "scope": "article",
     "articleId": "jc-wangyue",
     "origin": "exam_point",
@@ -20058,7 +19129,7 @@
     "explanation": "写作特色"
   },
   {
-    "id": "exam_point:1339",
+    "id": "exam_point:1285",
     "scope": "article",
     "articleId": "jc-wangdongtinghushangzhangchengxiang",
     "origin": "exam_point",
@@ -20071,7 +19142,7 @@
     "explanation": "名句赏析"
   },
   {
-    "id": "exam_point:1340",
+    "id": "exam_point:1286",
     "scope": "article",
     "articleId": "jc-wangdongtinghushangzhangchengxiang",
     "origin": "exam_point",
@@ -20084,7 +19155,7 @@
     "explanation": "修辞(比喻)"
   },
   {
-    "id": "exam_point:1341",
+    "id": "exam_point:1287",
     "scope": "article",
     "articleId": "jc-wangdongtinghushangzhangchengxiang",
     "origin": "exam_point",
@@ -20097,7 +19168,7 @@
     "explanation": "写作手法(借用古语)"
   },
   {
-    "id": "exam_point:1342",
+    "id": "exam_point:1288",
     "scope": "article",
     "articleId": "jc-wangdongtinghushangzhangchengxiang",
     "origin": "exam_point",
@@ -20110,7 +19181,7 @@
     "explanation": "主旨情感"
   },
   {
-    "id": "exam_point:1343",
+    "id": "exam_point:1289",
     "scope": "article",
     "articleId": "jc-chao-tian-zi-yong-la-ba",
     "origin": "exam_point",
@@ -20123,7 +19194,7 @@
     "explanation": "文学常识"
   },
   {
-    "id": "exam_point:1344",
+    "id": "exam_point:1290",
     "scope": "article",
     "articleId": "jc-chao-tian-zi-yong-la-ba",
     "origin": "exam_point",
@@ -20136,7 +19207,7 @@
     "explanation": "名句赏析"
   },
   {
-    "id": "exam_point:1345",
+    "id": "exam_point:1291",
     "scope": "article",
     "articleId": "jc-chao-tian-zi-yong-la-ba",
     "origin": "exam_point",
@@ -20149,7 +19220,7 @@
     "explanation": "主旨情感"
   },
   {
-    "id": "exam_point:1346",
+    "id": "exam_point:1292",
     "scope": "article",
     "articleId": "jc-chao-tian-zi-yong-la-ba",
     "origin": "exam_point",
@@ -20162,7 +19233,7 @@
     "explanation": "写作手法"
   },
   {
-    "id": "exam_point:1347",
+    "id": "exam_point:1293",
     "scope": "article",
     "articleId": "jc-chao-tian-zi-yong-la-ba",
     "origin": "exam_point",
@@ -20175,7 +19246,7 @@
     "explanation": "修辞"
   },
   {
-    "id": "exam_point:1348",
+    "id": "exam_point:1294",
     "scope": "article",
     "articleId": "jc-chao-tian-zi-yong-la-ba",
     "origin": "exam_point",
@@ -20188,7 +19259,7 @@
     "explanation": "修辞"
   },
   {
-    "id": "exam_point:1349",
+    "id": "exam_point:1295",
     "scope": "article",
     "articleId": "jc-chao-tian-zi-yong-la-ba",
     "origin": "exam_point",
@@ -20201,7 +19272,7 @@
     "explanation": "内容理解"
   },
   {
-    "id": "exam_point:1350",
+    "id": "exam_point:1296",
     "scope": "article",
     "articleId": "jc-chao-tian-zi-yong-la-ba",
     "origin": "exam_point",
@@ -20214,7 +19285,7 @@
     "explanation": "修辞"
   },
   {
-    "id": "exam_point:1351",
+    "id": "exam_point:1297",
     "scope": "article",
     "articleId": "jc-mulanshi",
     "origin": "exam_point",
@@ -20227,7 +19298,7 @@
     "explanation": "文学常识"
   },
   {
-    "id": "exam_point:1352",
+    "id": "exam_point:1298",
     "scope": "article",
     "articleId": "jc-mulanshi",
     "origin": "exam_point",
@@ -20240,7 +19311,7 @@
     "explanation": "名句赏析"
   },
   {
-    "id": "exam_point:1353",
+    "id": "exam_point:1299",
     "scope": "article",
     "articleId": "jc-mulanshi",
     "origin": "exam_point",
@@ -20253,7 +19324,7 @@
     "explanation": "文意理解"
   },
   {
-    "id": "related:1354",
+    "id": "related:1300",
     "scope": "article",
     "articleId": "jc-qirenyoutian",
     "origin": "related",
@@ -20265,7 +19336,7 @@
     "answer": "示例一:我同意这是人们讽刺那些不必要的担忧的看法。课文中的杞人由于缺乏起码的常识和经验而担心天崩地陷这种不可能发生的事,徒然自扰。讽刺了那些对事物认识不足而产生不必要的担忧的人。 示例二:我同意其中传达出强烈的忧患意识的看法。杞人具有强烈的忧患意识,能想到别人注意不到的祸患。这则寓言告诉我们,在生活中,我们不光要关注自身,也要关注周围的事物,如国家大事等。"
   },
   {
-    "id": "exam_point:1355",
+    "id": "exam_point:1301",
     "scope": "article",
     "articleId": "jc-qirenyoutian",
     "origin": "exam_point",
@@ -20278,7 +19349,7 @@
     "explanation": "重点字词"
   },
   {
-    "id": "exam_point:1356",
+    "id": "exam_point:1302",
     "scope": "article",
     "articleId": "jc-qirenyoutian",
     "origin": "exam_point",
@@ -20291,7 +19362,7 @@
     "explanation": "句子翻译"
   },
   {
-    "id": "exam_point:1357",
+    "id": "exam_point:1303",
     "scope": "article",
     "articleId": "jc-qirenyoutian",
     "origin": "exam_point",
@@ -20304,7 +19375,7 @@
     "explanation": "文意理解"
   },
   {
-    "id": "related:1358",
+    "id": "related:1304",
     "scope": "article",
     "articleId": "jc-hezhouji",
     "origin": "related",
@@ -20317,7 +19388,7 @@
     "explanation": "对应文章第一段中对王叔远雕刻技艺的总体评价，说明其能用微小的木材雕刻出丰富多样的器物，且能顺着原材料的势态模拟其形状，各具神情姿态。"
   },
   {
-    "id": "exam_point:1359",
+    "id": "exam_point:1305",
     "scope": "article",
     "articleId": "jc-hezhouji",
     "origin": "exam_point",
@@ -20330,7 +19401,7 @@
     "explanation": "说明顺序"
   },
   {
-    "id": "exam_point:1360",
+    "id": "exam_point:1306",
     "scope": "article",
     "articleId": "jc-hezhouji",
     "origin": "exam_point",
@@ -20343,7 +19414,7 @@
     "explanation": "细节描写与动静相宜"
   },
   {
-    "id": "exam_point:1361",
+    "id": "exam_point:1307",
     "scope": "article",
     "articleId": "jc-hezhouji",
     "origin": "exam_point",
@@ -20356,7 +19427,7 @@
     "explanation": "对比手法"
   },
   {
-    "id": "related:1362",
+    "id": "related:1308",
     "scope": "article",
     "articleId": "jc-thyj",
     "origin": "related",
@@ -20369,7 +19440,7 @@
     "explanation": "本题考查对文章内容的理解与概括。可以从自然环境（良田美池）、社会环境（没有战乱、民风淳朴）、生活状况（往来种作）和精神状态（怡然自乐）四个维度进行归纳。"
   },
   {
-    "id": "related:1363",
+    "id": "related:1309",
     "scope": "article",
     "articleId": "jc-thyj",
     "origin": "related",
@@ -20382,7 +19453,7 @@
     "explanation": "对比阅读题。桃源人是通过“避秦时乱”来到“绝境”并“不复出焉”来获得安宁；而滁人则是得益于宋朝皇帝的“功德”，通过“休养生息”政策在百年涵煦中获得安乐。"
   },
   {
-    "id": "related:1364",
+    "id": "related:1310",
     "scope": "article",
     "articleId": "jc-thyj",
     "origin": "related",
@@ -20395,7 +19466,7 @@
     "explanation": "考查对文章关键情节和人物心理的理解。渔人来自东晋末年战乱频仍的现实世界，其所言必是现实的黑暗与战乱；桃源人叹惋则是对外界百姓苦难的同情以及对自己能偏安一隅的庆幸与珍惜。"
   },
   {
-    "id": "related:1365",
+    "id": "related:1311",
     "scope": "article",
     "articleId": "jc-thyj",
     "origin": "related",
@@ -20408,7 +19479,7 @@
     "explanation": "考查代词指代内容及文章的剪裁艺术。用“如此”代指前文已详细叙述的经历，避免了重复，体现了文言文言简意丰、干净利落的特点。"
   },
   {
-    "id": "exam_point:1366",
+    "id": "exam_point:1312",
     "scope": "article",
     "articleId": "jc-thyj",
     "origin": "exam_point",
@@ -20421,7 +19492,7 @@
     "explanation": "主旨情感"
   },
   {
-    "id": "exam_point:1367",
+    "id": "exam_point:1313",
     "scope": "article",
     "articleId": "jc-thyj",
     "origin": "exam_point",
@@ -20434,7 +19505,7 @@
     "explanation": "写作特色"
   },
   {
-    "id": "exam_point:1368",
+    "id": "exam_point:1314",
     "scope": "article",
     "articleId": "liangfuxing-caozhi",
     "origin": "exam_point",
@@ -20447,7 +19518,7 @@
     "explanation": "名句赏析"
   },
   {
-    "id": "exam_point:1369",
+    "id": "exam_point:1315",
     "scope": "article",
     "articleId": "liangfuxing-caozhi",
     "origin": "exam_point",
@@ -20460,7 +19531,7 @@
     "explanation": "主旨情感"
   },
   {
-    "id": "exam_point:1370",
+    "id": "exam_point:1316",
     "scope": "article",
     "articleId": "liangfuxing-caozhi",
     "origin": "exam_point",
@@ -20473,7 +19544,7 @@
     "explanation": "写作手法"
   },
   {
-    "id": "exam_point:1371",
+    "id": "exam_point:1317",
     "scope": "article",
     "articleId": "jc-cibeigushanxia",
     "origin": "exam_point",
@@ -20486,7 +19557,7 @@
     "explanation": "文学常识"
   },
   {
-    "id": "exam_point:1372",
+    "id": "exam_point:1318",
     "scope": "article",
     "articleId": "jc-cibeigushanxia",
     "origin": "exam_point",
@@ -20499,7 +19570,7 @@
     "explanation": "名句赏析"
   },
   {
-    "id": "exam_point:1373",
+    "id": "exam_point:1319",
     "scope": "article",
     "articleId": "jc-cibeigushanxia",
     "origin": "exam_point",
@@ -20512,7 +19583,7 @@
     "explanation": "主旨情感"
   },
   {
-    "id": "exam_point:1374",
+    "id": "exam_point:1320",
     "scope": "article",
     "articleId": "jc-shuidiaogetou-mingyuejishiyou",
     "origin": "exam_point",
@@ -20525,7 +19596,7 @@
     "explanation": "文学常识"
   },
   {
-    "id": "exam_point:1375",
+    "id": "exam_point:1321",
     "scope": "article",
     "articleId": "jc-shuidiaogetou-mingyuejishiyou",
     "origin": "exam_point",
@@ -20538,7 +19609,7 @@
     "explanation": "名句赏析"
   },
   {
-    "id": "exam_point:1376",
+    "id": "exam_point:1322",
     "scope": "article",
     "articleId": "jc-shuidiaogetou-mingyuejishiyou",
     "origin": "exam_point",
@@ -20551,7 +19622,7 @@
     "explanation": "主旨情感"
   },
   {
-    "id": "exam_point:1377",
+    "id": "exam_point:1323",
     "scope": "article",
     "articleId": "jc-jiangnanfengliguinian",
     "origin": "exam_point",
@@ -20564,7 +19635,7 @@
     "explanation": "名句赏析"
   },
   {
-    "id": "exam_point:1378",
+    "id": "exam_point:1324",
     "scope": "article",
     "articleId": "jc-jiangnanfengliguinian",
     "origin": "exam_point",
@@ -20577,7 +19648,7 @@
     "explanation": "主旨情感"
   },
   {
-    "id": "exam_point:1379",
+    "id": "exam_point:1325",
     "scope": "article",
     "articleId": "jc-jiangnanfengliguinian",
     "origin": "exam_point",
@@ -20590,7 +19661,7 @@
     "explanation": "写作手法"
   },
   {
-    "id": "exam_point:1380",
+    "id": "exam_point:1326",
     "scope": "article",
     "articleId": "jc-jiangchengzi-mizhouchulie",
     "origin": "exam_point",
@@ -20603,7 +19674,7 @@
     "explanation": "文学常识"
   },
   {
-    "id": "exam_point:1381",
+    "id": "exam_point:1327",
     "scope": "article",
     "articleId": "jc-jiangchengzi-mizhouchulie",
     "origin": "exam_point",
@@ -20616,7 +19687,7 @@
     "explanation": "名句赏析"
   },
   {
-    "id": "exam_point:1382",
+    "id": "exam_point:1328",
     "scope": "article",
     "articleId": "jc-jiangchengzi-mizhouchulie",
     "origin": "exam_point",
@@ -20629,7 +19700,7 @@
     "explanation": "主旨情感"
   },
   {
-    "id": "exam_point:1383",
+    "id": "exam_point:1329",
     "scope": "article",
     "articleId": "jc-boqinhuai",
     "origin": "exam_point",
@@ -20642,7 +19713,7 @@
     "explanation": "名句赏析"
   },
   {
-    "id": "exam_point:1384",
+    "id": "exam_point:1330",
     "scope": "article",
     "articleId": "jc-boqinhuai",
     "origin": "exam_point",
@@ -20655,7 +19726,7 @@
     "explanation": "主旨情感"
   },
   {
-    "id": "exam_point:1385",
+    "id": "exam_point:1331",
     "scope": "article",
     "articleId": "jc-huoban",
     "origin": "exam_point",
@@ -20668,7 +19739,7 @@
     "explanation": "重点字词积累"
   },
   {
-    "id": "exam_point:1386",
+    "id": "exam_point:1332",
     "scope": "article",
     "articleId": "jc-huoban",
     "origin": "exam_point",
@@ -20681,7 +19752,7 @@
     "explanation": "重点句子翻译"
   },
   {
-    "id": "exam_point:1387",
+    "id": "exam_point:1333",
     "scope": "article",
     "articleId": "jc-huoban",
     "origin": "exam_point",
@@ -20694,7 +19765,7 @@
     "explanation": "活板的“活”字特征"
   },
   {
-    "id": "exam_point:1388",
+    "id": "exam_point:1334",
     "scope": "article",
     "articleId": "jc-huoban",
     "origin": "exam_point",
@@ -20707,7 +19778,7 @@
     "explanation": "说明方法与语言特色"
   },
   {
-    "id": "exam_point:1389",
+    "id": "exam_point:1335",
     "scope": "article",
     "articleId": "jc-huoban",
     "origin": "exam_point",
@@ -20720,7 +19791,7 @@
     "explanation": "主旨情感"
   },
   {
-    "id": "exam_point:1390",
+    "id": "exam_point:1336",
     "scope": "article",
     "articleId": "jc-huanxisha-mmqh",
     "origin": "exam_point",
@@ -20733,7 +19804,7 @@
     "explanation": "主旨情感"
   },
   {
-    "id": "exam_point:1391",
+    "id": "exam_point:1337",
     "scope": "article",
     "articleId": "jc-huanxisha-sxysnpx",
     "origin": "exam_point",
@@ -20746,7 +19817,7 @@
     "explanation": "文学常识"
   },
   {
-    "id": "exam_point:1392",
+    "id": "exam_point:1338",
     "scope": "article",
     "articleId": "jc-huanxisha-sxysnpx",
     "origin": "exam_point",
@@ -20759,7 +19830,7 @@
     "explanation": "白描手法"
   },
   {
-    "id": "exam_point:1393",
+    "id": "exam_point:1339",
     "scope": "article",
     "articleId": "jc-huanxisha-sxysnpx",
     "origin": "exam_point",
@@ -20772,7 +19843,7 @@
     "explanation": "主旨情感"
   },
   {
-    "id": "exam_point:1394",
+    "id": "exam_point:1340",
     "scope": "article",
     "articleId": "jc-huanxisha-yiquxincijiuyibei",
     "origin": "exam_point",
@@ -20785,7 +19856,7 @@
     "explanation": "名句赏析"
   },
   {
-    "id": "exam_point:1395",
+    "id": "exam_point:1341",
     "scope": "article",
     "articleId": "jc-huanxisha-yiquxincijiuyibei",
     "origin": "exam_point",
@@ -20798,7 +19869,7 @@
     "explanation": "主旨情感"
   },
   {
-    "id": "exam_point:1396",
+    "id": "exam_point:1342",
     "scope": "article",
     "articleId": "jc-huanxisha-yiquxincijiuyibei",
     "origin": "exam_point",
@@ -20811,7 +19882,7 @@
     "explanation": "写作特色"
   },
   {
-    "id": "exam_point:1397",
+    "id": "exam_point:1343",
     "scope": "article",
     "articleId": "jc-yujiaao-tianjieyuntaolianxiaowu",
     "origin": "exam_point",
@@ -20824,7 +19895,7 @@
     "explanation": "文学常识"
   },
   {
-    "id": "exam_point:1398",
+    "id": "exam_point:1344",
     "scope": "article",
     "articleId": "jc-yujiaao-tianjieyuntaolianxiaowu",
     "origin": "exam_point",
@@ -20837,7 +19908,7 @@
     "explanation": "名句赏析"
   },
   {
-    "id": "exam_point:1399",
+    "id": "exam_point:1345",
     "scope": "article",
     "articleId": "jc-yujiaao-tianjieyuntaolianxiaowu",
     "origin": "exam_point",
@@ -20850,7 +19921,7 @@
     "explanation": "主旨情感"
   },
   {
-    "id": "exam_point:1400",
+    "id": "exam_point:1346",
     "scope": "article",
     "articleId": "jc-yujiaaoqiusi",
     "origin": "exam_point",
@@ -20863,7 +19934,7 @@
     "explanation": "名句赏析"
   },
   {
-    "id": "exam_point:1401",
+    "id": "exam_point:1347",
     "scope": "article",
     "articleId": "jc-yujiaaoqiusi",
     "origin": "exam_point",
@@ -20876,7 +19947,7 @@
     "explanation": "主旨情感"
   },
   {
-    "id": "exam_point:1402",
+    "id": "exam_point:1348",
     "scope": "article",
     "articleId": "jc-dujingmensongbie",
     "origin": "exam_point",
@@ -20889,7 +19960,7 @@
     "explanation": "文学常识"
   },
   {
-    "id": "exam_point:1403",
+    "id": "exam_point:1349",
     "scope": "article",
     "articleId": "jc-dujingmensongbie",
     "origin": "exam_point",
@@ -20902,7 +19973,7 @@
     "explanation": "修辞"
   },
   {
-    "id": "exam_point:1404",
+    "id": "exam_point:1350",
     "scope": "article",
     "articleId": "jc-dujingmensongbie",
     "origin": "exam_point",
@@ -20915,7 +19986,7 @@
     "explanation": "主旨情感"
   },
   {
-    "id": "exam_point:1405",
+    "id": "exam_point:1351",
     "scope": "article",
     "articleId": "jc-dujingmensongbie",
     "origin": "exam_point",
@@ -20928,7 +19999,7 @@
     "explanation": "写作特色"
   },
   {
-    "id": "related:1406",
+    "id": "related:1352",
     "scope": "article",
     "articleId": "jc-youshanxicun",
     "origin": "related",
@@ -20940,7 +20011,7 @@
     "answer": "①对乡村生活的留恋：从“拄杖无时夜叩门”可看出； ②对乡村美景的喜爱：从“柳暗花明又一村”可看出； ③对淳朴热情的村民的赞美：从“农家腊酒浑”“丰年留客”“衣冠简朴”可看出； ④对古风民俗的热爱：从“箫鼓追随”可看出； ⑤虽遭遇挫折却仍心存希望的乐观豁达：从“柳暗花明”可看出。"
   },
   {
-    "id": "exam_point:1407",
+    "id": "exam_point:1353",
     "scope": "article",
     "articleId": "jc-youshanxicun",
     "origin": "exam_point",
@@ -20953,7 +20024,7 @@
     "explanation": "文学常识"
   },
   {
-    "id": "exam_point:1408",
+    "id": "exam_point:1354",
     "scope": "article",
     "articleId": "jc-youshanxicun",
     "origin": "exam_point",
@@ -20966,7 +20037,7 @@
     "explanation": "名句赏析"
   },
   {
-    "id": "exam_point:1409",
+    "id": "exam_point:1355",
     "scope": "article",
     "articleId": "jc-youshanxicun",
     "origin": "exam_point",
@@ -20979,7 +20050,7 @@
     "explanation": "主旨情感"
   },
   {
-    "id": "exam_point:1410",
+    "id": "exam_point:1356",
     "scope": "article",
     "articleId": "jc-huxintingkanxue",
     "origin": "exam_point",
@@ -20992,7 +20063,7 @@
     "explanation": "文学常识"
   },
   {
-    "id": "exam_point:1411",
+    "id": "exam_point:1357",
     "scope": "article",
     "articleId": "jc-huxintingkanxue",
     "origin": "exam_point",
@@ -21005,7 +20076,7 @@
     "explanation": "句子翻译"
   },
   {
-    "id": "exam_point:1412",
+    "id": "exam_point:1358",
     "scope": "article",
     "articleId": "jc-huxintingkanxue",
     "origin": "exam_point",
@@ -21018,7 +20089,7 @@
     "explanation": "文意理解"
   },
   {
-    "id": "exam_point:1413",
+    "id": "exam_point:1359",
     "scope": "article",
     "articleId": "jc-manjianghong-xiaozhujinghua",
     "origin": "exam_point",
@@ -21031,7 +20102,7 @@
     "explanation": "名句赏析"
   },
   {
-    "id": "exam_point:1414",
+    "id": "exam_point:1360",
     "scope": "article",
     "articleId": "jc-manjianghong-xiaozhujinghua",
     "origin": "exam_point",
@@ -21044,7 +20115,7 @@
     "explanation": "主旨情感"
   },
   {
-    "id": "exam_point:1415",
+    "id": "exam_point:1361",
     "scope": "article",
     "articleId": "jc-tongguan",
     "origin": "exam_point",
@@ -21057,7 +20128,7 @@
     "explanation": "名句赏析"
   },
   {
-    "id": "exam_point:1416",
+    "id": "exam_point:1362",
     "scope": "article",
     "articleId": "jc-tongguan",
     "origin": "exam_point",
@@ -21070,7 +20141,7 @@
     "explanation": "主旨情感"
   },
   {
-    "id": "exam_point:1417",
+    "id": "exam_point:1363",
     "scope": "article",
     "articleId": "jc-tongguan",
     "origin": "exam_point",
@@ -21083,7 +20154,7 @@
     "explanation": "写作手法"
   },
   {
-    "id": "exam_point:1418",
+    "id": "exam_point:1364",
     "scope": "article",
     "articleId": "jc-tongguan",
     "origin": "exam_point",
@@ -21096,7 +20167,7 @@
     "explanation": "修辞"
   },
   {
-    "id": "exam_point:1419",
+    "id": "exam_point:1365",
     "scope": "article",
     "articleId": "jc-tongguan",
     "origin": "exam_point",
@@ -21109,7 +20180,7 @@
     "explanation": "写作手法"
   },
   {
-    "id": "related:1420",
+    "id": "related:1366",
     "scope": "article",
     "articleId": "ai-lian-shuo",
     "origin": "related",
@@ -21121,7 +20192,7 @@
     "answer": "统领全篇，为下文将要说到的“菊之爱”“牡丹之爱”“莲之爱”做铺垫，是入题的准备。"
   },
   {
-    "id": "related:1421",
+    "id": "related:1367",
     "scope": "article",
     "articleId": "ai-lian-shuo",
     "origin": "related",
@@ -21133,7 +20204,7 @@
     "answer": "先以陶渊明爱菊和世人爱牡丹二事做烘托，后文用“予独爱莲”道出自己的心意。这种在污世保持清白的心态，与陶渊明独自避世和众人皆羡富贵（牡丹）的从众心态有着思想境界上的区别。"
   },
   {
-    "id": "exam_point:1422",
+    "id": "exam_point:1368",
     "scope": "article",
     "articleId": "ai-lian-shuo",
     "origin": "exam_point",
@@ -21146,7 +20217,7 @@
     "explanation": "文学常识"
   },
   {
-    "id": "exam_point:1423",
+    "id": "exam_point:1369",
     "scope": "article",
     "articleId": "ai-lian-shuo",
     "origin": "exam_point",
@@ -21159,7 +20230,7 @@
     "explanation": "重点字词"
   },
   {
-    "id": "exam_point:1424",
+    "id": "exam_point:1370",
     "scope": "article",
     "articleId": "ai-lian-shuo",
     "origin": "exam_point",
@@ -21172,7 +20243,7 @@
     "explanation": "句子翻译"
   },
   {
-    "id": "exam_point:1425",
+    "id": "exam_point:1371",
     "scope": "article",
     "articleId": "ai-lian-shuo",
     "origin": "exam_point",
@@ -21185,7 +20256,7 @@
     "explanation": "文意理解"
   },
   {
-    "id": "related:1426",
+    "id": "related:1372",
     "scope": "article",
     "articleId": "jc-lang",
     "origin": "related",
@@ -21198,7 +20269,7 @@
     "explanation": "考查对课文情节的梳理。"
   },
   {
-    "id": "related:1427",
+    "id": "related:1373",
     "scope": "article",
     "articleId": "jc-lang",
     "origin": "related",
@@ -21211,7 +20282,7 @@
     "explanation": "考查对文章主旨和中心句的理解。"
   },
   {
-    "id": "related:1428",
+    "id": "related:1374",
     "scope": "article",
     "articleId": "jc-lang",
     "origin": "related",
@@ -21224,7 +20295,7 @@
     "explanation": "考查与狼相关的成语积累及文化形象理解。"
   },
   {
-    "id": "exam_point:1429",
+    "id": "exam_point:1375",
     "scope": "article",
     "articleId": "jc-lang",
     "origin": "exam_point",
@@ -21237,7 +20308,7 @@
     "explanation": "文学常识"
   },
   {
-    "id": "exam_point:1430",
+    "id": "exam_point:1376",
     "scope": "article",
     "articleId": "jc-lang",
     "origin": "exam_point",
@@ -21250,7 +20321,7 @@
     "explanation": "主旨情感"
   },
   {
-    "id": "exam_point:1431",
+    "id": "exam_point:1377",
     "scope": "article",
     "articleId": "jc-lang",
     "origin": "exam_point",
@@ -21263,7 +20334,7 @@
     "explanation": "人物形象"
   },
   {
-    "id": "related:1432",
+    "id": "related:1378",
     "scope": "article",
     "articleId": "jc-syyhsyal",
     "origin": "related",
@@ -21276,7 +20347,7 @@
     "explanation": "考查对文章核心观点的理解。从个人和国家两个层面，分别阐述“生于忧患”和“死于安乐”的含义。"
   },
   {
-    "id": "related:1433",
+    "id": "related:1379",
     "scope": "article",
     "articleId": "jc-syyhsyal",
     "origin": "related",
@@ -21289,7 +20360,7 @@
     "explanation": "课后习题研讨，考查对观点的理解及拓展举例能力。"
   },
   {
-    "id": "exam_point:1434",
+    "id": "exam_point:1380",
     "scope": "article",
     "articleId": "jc-syyhsyal",
     "origin": "exam_point",
@@ -21302,7 +20373,7 @@
     "explanation": "重点字词"
   },
   {
-    "id": "exam_point:1435",
+    "id": "exam_point:1381",
     "scope": "article",
     "articleId": "jc-syyhsyal",
     "origin": "exam_point",
@@ -21315,7 +20386,7 @@
     "explanation": "主旨情感"
   },
   {
-    "id": "exam_point:1436",
+    "id": "exam_point:1382",
     "scope": "article",
     "articleId": "jc-syyhsyal",
     "origin": "exam_point",
@@ -21328,7 +20399,7 @@
     "explanation": "写作手法"
   },
   {
-    "id": "exam_point:1437",
+    "id": "exam_point:1383",
     "scope": "article",
     "articleId": "jc-dengfeilaifeng",
     "origin": "exam_point",
@@ -21341,7 +20412,7 @@
     "explanation": "文学常识"
   },
   {
-    "id": "exam_point:1438",
+    "id": "exam_point:1384",
     "scope": "article",
     "articleId": "jc-dengfeilaifeng",
     "origin": "exam_point",
@@ -21354,7 +20425,7 @@
     "explanation": "意象理解"
   },
   {
-    "id": "exam_point:1439",
+    "id": "exam_point:1385",
     "scope": "article",
     "articleId": "jc-dengfeilaifeng",
     "origin": "exam_point",
@@ -21367,7 +20438,7 @@
     "explanation": "哲理主旨"
   },
   {
-    "id": "exam_point:1440",
+    "id": "exam_point:1386",
     "scope": "article",
     "articleId": "jc-baixuegaosongwupanguanguijing",
     "origin": "exam_point",
@@ -21380,7 +20451,7 @@
     "explanation": "文学常识"
   },
   {
-    "id": "exam_point:1441",
+    "id": "exam_point:1387",
     "scope": "article",
     "articleId": "jc-baixuegaosongwupanguanguijing",
     "origin": "exam_point",
@@ -21393,7 +20464,7 @@
     "explanation": "名句赏析"
   },
   {
-    "id": "exam_point:1442",
+    "id": "exam_point:1388",
     "scope": "article",
     "articleId": "jc-baixuegaosongwupanguanguijing",
     "origin": "exam_point",
@@ -21406,7 +20477,7 @@
     "explanation": "主旨情感"
   },
   {
-    "id": "exam_point:1443",
+    "id": "exam_point:1389",
     "scope": "article",
     "articleId": "jc-xiangjianhuan",
     "origin": "exam_point",
@@ -21419,7 +20490,7 @@
     "explanation": "名句赏析"
   },
   {
-    "id": "exam_point:1444",
+    "id": "exam_point:1390",
     "scope": "article",
     "articleId": "jc-xiangjianhuan",
     "origin": "exam_point",
@@ -21432,7 +20503,7 @@
     "explanation": "主旨情感"
   },
   {
-    "id": "exam_point:1445",
+    "id": "exam_point:1391",
     "scope": "article",
     "articleId": "xiangjianhuan-jinlingchengshangxilou",
     "origin": "exam_point",
@@ -21445,7 +20516,7 @@
     "explanation": "名句赏析"
   },
   {
-    "id": "exam_point:1446",
+    "id": "exam_point:1392",
     "scope": "article",
     "articleId": "xiangjianhuan-jinlingchengshangxilou",
     "origin": "exam_point",
@@ -21458,7 +20529,7 @@
     "explanation": "主旨情感"
   },
   {
-    "id": "related:1447",
+    "id": "related:1393",
     "scope": "article",
     "articleId": "loushiming",
     "origin": "related",
@@ -21470,7 +20541,7 @@
     "answer": "文章开篇四句，简洁有力。以类比的方式开头，引出“斯是陋室，惟吾德馨”的主旨，也为后面歌颂陋室埋下了伏笔。"
   },
   {
-    "id": "related:1448",
+    "id": "related:1394",
     "scope": "article",
     "articleId": "loushiming",
     "origin": "related",
@@ -21482,7 +20553,7 @@
     "answer": "写出了“陋室”环境之清幽宁静。"
   },
   {
-    "id": "related:1449",
+    "id": "related:1395",
     "scope": "article",
     "articleId": "loushiming",
     "origin": "related",
@@ -21494,7 +20565,7 @@
     "answer": "写出了室内生活情趣之高雅。"
   },
   {
-    "id": "exam_point:1450",
+    "id": "exam_point:1396",
     "scope": "article",
     "articleId": "loushiming",
     "origin": "exam_point",
@@ -21507,7 +20578,7 @@
     "explanation": "文学常识"
   },
   {
-    "id": "exam_point:1451",
+    "id": "exam_point:1397",
     "scope": "article",
     "articleId": "loushiming",
     "origin": "exam_point",
@@ -21520,7 +20591,7 @@
     "explanation": "句子翻译"
   },
   {
-    "id": "exam_point:1452",
+    "id": "exam_point:1398",
     "scope": "article",
     "articleId": "loushiming",
     "origin": "exam_point",
@@ -21533,7 +20604,7 @@
     "explanation": "文意理解"
   },
   {
-    "id": "exam_point:1453",
+    "id": "exam_point:1399",
     "scope": "article",
     "articleId": "da_xie_zhong_shu_shu",
     "origin": "exam_point",
@@ -21546,7 +20617,7 @@
     "explanation": "文学常识"
   },
   {
-    "id": "exam_point:1454",
+    "id": "exam_point:1400",
     "scope": "article",
     "articleId": "da_xie_zhong_shu_shu",
     "origin": "exam_point",
@@ -21559,7 +20630,7 @@
     "explanation": "句子翻译"
   },
   {
-    "id": "exam_point:1455",
+    "id": "exam_point:1401",
     "scope": "article",
     "articleId": "da_xie_zhong_shu_shu",
     "origin": "exam_point",
@@ -21572,7 +20643,7 @@
     "explanation": "文意理解"
   },
   {
-    "id": "exam_point:1456",
+    "id": "exam_point:1402",
     "scope": "article",
     "articleId": "shi_hao_li",
     "origin": "exam_point",
@@ -21585,7 +20656,7 @@
     "explanation": "文学常识"
   },
   {
-    "id": "exam_point:1457",
+    "id": "exam_point:1403",
     "scope": "article",
     "articleId": "shi_hao_li",
     "origin": "exam_point",
@@ -21598,7 +20669,7 @@
     "explanation": "名句赏析"
   },
   {
-    "id": "exam_point:1458",
+    "id": "exam_point:1404",
     "scope": "article",
     "articleId": "shi_hao_li",
     "origin": "exam_point",
@@ -21611,7 +20682,7 @@
     "explanation": "主旨情感"
   },
   {
-    "id": "exam_point:1459",
+    "id": "exam_point:1405",
     "scope": "article",
     "articleId": "jc-pozhenzi",
     "origin": "exam_point",
@@ -21624,7 +20695,7 @@
     "explanation": "名句赏析"
   },
   {
-    "id": "exam_point:1460",
+    "id": "exam_point:1406",
     "scope": "article",
     "articleId": "jc-pozhenzi",
     "origin": "exam_point",
@@ -21637,7 +20708,7 @@
     "explanation": "主旨情感"
   },
   {
-    "id": "exam_point:1461",
+    "id": "exam_point:1407",
     "scope": "article",
     "articleId": "jc-pozhenzi",
     "origin": "exam_point",
@@ -21650,7 +20721,7 @@
     "explanation": "写作手法"
   },
   {
-    "id": "exam_point:1462",
+    "id": "exam_point:1408",
     "scope": "article",
     "articleId": "jc-qiuciqiyi",
     "origin": "exam_point",
@@ -21663,7 +20734,7 @@
     "explanation": "写作手法"
   },
   {
-    "id": "exam_point:1463",
+    "id": "exam_point:1409",
     "scope": "article",
     "articleId": "jc-qiuciqiyi",
     "origin": "exam_point",
@@ -21676,7 +20747,7 @@
     "explanation": "主旨情感"
   },
   {
-    "id": "exam_point:1464",
+    "id": "exam_point:1410",
     "scope": "article",
     "articleId": "jc-qiuciqiyi",
     "origin": "exam_point",
@@ -21689,7 +20760,7 @@
     "explanation": "名句赏析"
   },
   {
-    "id": "related:1465",
+    "id": "related:1411",
     "scope": "article",
     "articleId": "jc-chuanjingdeyiren",
     "origin": "related",
@@ -21701,7 +20772,7 @@
     "answer": "启示:对于传闻,要以审慎的态度进行分析、甄别,不要轻易相信传闻,也不要轻易传播未经证实的传闻。 做法:①面对各类信息,我们不要盲目相信,要有质疑精神,思考信息来源是否可靠、内容是否合理;②在人际交往中,要提高自己的语言表达能力,在与人沟通中做到表达准确、清晰,以避免不必要的误会和歧义。"
   },
   {
-    "id": "exam_point:1466",
+    "id": "exam_point:1412",
     "scope": "article",
     "articleId": "jc-chuanjingdeyiren",
     "origin": "exam_point",
@@ -21714,7 +20785,7 @@
     "explanation": "主旨情感"
   },
   {
-    "id": "related:1467",
+    "id": "related:1413",
     "scope": "article",
     "articleId": "jc-zhuliguan",
     "origin": "related",
@@ -21726,7 +20797,7 @@
     "answer": "以动衬静。以声响衬托环境的幽静。“独”字贯穿全篇,刻画了诗人高洁脱俗的隐者形象。（考点:写作手法）"
   },
   {
-    "id": "related:1468",
+    "id": "related:1414",
     "scope": "article",
     "articleId": "jc-zhuliguan",
     "origin": "related",
@@ -21738,7 +20809,7 @@
     "answer": "拟人。“明月来相照”运用了拟人的修辞手法,把明月当成知己,展现了诗人新颖而独特的想象力。（考点:修辞）"
   },
   {
-    "id": "exam_point:1469",
+    "id": "exam_point:1415",
     "scope": "article",
     "articleId": "jc-zhuliguan",
     "origin": "exam_point",
@@ -21751,7 +20822,7 @@
     "explanation": "写作手法"
   },
   {
-    "id": "exam_point:1470",
+    "id": "exam_point:1416",
     "scope": "article",
     "articleId": "jc-zhuliguan",
     "origin": "exam_point",
@@ -21764,7 +20835,7 @@
     "explanation": "修辞"
   },
   {
-    "id": "exam_point:1471",
+    "id": "exam_point:1417",
     "scope": "article",
     "articleId": "jc-zhuliguan",
     "origin": "exam_point",
@@ -21777,7 +20848,7 @@
     "explanation": "主旨情感"
   },
   {
-    "id": "exam_point:1472",
+    "id": "exam_point:1418",
     "scope": "article",
     "articleId": "jc-yueke",
     "origin": "exam_point",
@@ -21790,7 +20861,7 @@
     "explanation": "名句赏析"
   },
   {
-    "id": "exam_point:1473",
+    "id": "exam_point:1419",
     "scope": "article",
     "articleId": "jc-yueke",
     "origin": "exam_point",
@@ -21803,7 +20874,7 @@
     "explanation": "主旨情感"
   },
   {
-    "id": "exam_point:1474",
+    "id": "exam_point:1420",
     "scope": "article",
     "articleId": "jc-yueke",
     "origin": "exam_point",
@@ -21816,7 +20887,7 @@
     "explanation": "写作手法"
   },
   {
-    "id": "exam_point:1475",
+    "id": "exam_point:1421",
     "scope": "article",
     "articleId": "jc-maowuweiqiufengsuopoge",
     "origin": "exam_point",
@@ -21829,7 +20900,7 @@
     "explanation": "文学常识"
   },
   {
-    "id": "exam_point:1476",
+    "id": "exam_point:1422",
     "scope": "article",
     "articleId": "jc-maowuweiqiufengsuopoge",
     "origin": "exam_point",
@@ -21842,7 +20913,7 @@
     "explanation": "名句赏析"
   },
   {
-    "id": "exam_point:1477",
+    "id": "exam_point:1423",
     "scope": "article",
     "articleId": "jc-maowuweiqiufengsuopoge",
     "origin": "exam_point",
@@ -21855,7 +20926,7 @@
     "explanation": "主旨情感"
   },
   {
-    "id": "exam_point:1478",
+    "id": "exam_point:1424",
     "scope": "article",
     "articleId": "jc-jianjia",
     "origin": "exam_point",
@@ -21868,7 +20939,7 @@
     "explanation": "文学常识"
   },
   {
-    "id": "exam_point:1479",
+    "id": "exam_point:1425",
     "scope": "article",
     "articleId": "jc-jianjia",
     "origin": "exam_point",
@@ -21881,7 +20952,7 @@
     "explanation": "名句赏析"
   },
   {
-    "id": "exam_point:1480",
+    "id": "exam_point:1426",
     "scope": "article",
     "articleId": "jc-jianjia",
     "origin": "exam_point",
@@ -21894,7 +20965,7 @@
     "explanation": "主旨情感"
   },
   {
-    "id": "exam_point:1481",
+    "id": "exam_point:1427",
     "scope": "article",
     "articleId": "jc-suiyoujiayao",
     "origin": "exam_point",
@@ -21907,7 +20978,7 @@
     "explanation": "类比论证"
   },
   {
-    "id": "exam_point:1482",
+    "id": "exam_point:1428",
     "scope": "article",
     "articleId": "jc-suiyoujiayao",
     "origin": "exam_point",
@@ -21920,7 +20991,7 @@
     "explanation": "教学相长"
   },
   {
-    "id": "exam_point:1483",
+    "id": "exam_point:1429",
     "scope": "article",
     "articleId": "jc-suiyoujiayao",
     "origin": "exam_point",
@@ -21933,7 +21004,7 @@
     "explanation": "重点词汇与翻译"
   },
   {
-    "id": "exam_point:1484",
+    "id": "exam_point:1430",
     "scope": "article",
     "articleId": "jc-xingjunjirisichanganguyuan",
     "origin": "exam_point",
@@ -21946,7 +21017,7 @@
     "explanation": "名句赏析"
   },
   {
-    "id": "exam_point:1485",
+    "id": "exam_point:1431",
     "scope": "article",
     "articleId": "jc-xingjunjirisichanganguyuan",
     "origin": "exam_point",
@@ -21959,7 +21030,7 @@
     "explanation": "主旨情感"
   },
   {
-    "id": "exam_point:1486",
+    "id": "exam_point:1432",
     "scope": "article",
     "articleId": "jc-xingjunjirisichanganguyuan",
     "origin": "exam_point",
@@ -21972,7 +21043,7 @@
     "explanation": "写作特色"
   },
   {
-    "id": "exam_point:1487",
+    "id": "exam_point:1433",
     "scope": "article",
     "articleId": "xinglunan-qiyi",
     "origin": "exam_point",
@@ -21985,7 +21056,7 @@
     "explanation": "文学文化积累"
   },
   {
-    "id": "exam_point:1488",
+    "id": "exam_point:1434",
     "scope": "article",
     "articleId": "xinglunan-qiyi",
     "origin": "exam_point",
@@ -21998,7 +21069,7 @@
     "explanation": "名句赏析"
   },
   {
-    "id": "exam_point:1489",
+    "id": "exam_point:1435",
     "scope": "article",
     "articleId": "xinglunan-qiyi",
     "origin": "exam_point",
@@ -22011,7 +21082,7 @@
     "explanation": "写作特色"
   },
   {
-    "id": "exam_point:1490",
+    "id": "exam_point:1436",
     "scope": "article",
     "articleId": "xinglunan-qiyi",
     "origin": "exam_point",
@@ -22024,7 +21095,7 @@
     "explanation": "主旨情感"
   },
   {
-    "id": "exam_point:1491",
+    "id": "exam_point:1437",
     "scope": "article",
     "articleId": "jc-jichengtiansiyeyou",
     "origin": "exam_point",
@@ -22037,7 +21108,7 @@
     "explanation": "文学常识"
   },
   {
-    "id": "exam_point:1492",
+    "id": "exam_point:1438",
     "scope": "article",
     "articleId": "jc-jichengtiansiyeyou",
     "origin": "exam_point",
@@ -22050,7 +21121,7 @@
     "explanation": "重点字词"
   },
   {
-    "id": "exam_point:1493",
+    "id": "exam_point:1439",
     "scope": "article",
     "articleId": "jc-jichengtiansiyeyou",
     "origin": "exam_point",
@@ -22063,7 +21134,7 @@
     "explanation": "句子翻译"
   },
   {
-    "id": "exam_point:1494",
+    "id": "exam_point:1440",
     "scope": "article",
     "articleId": "jc-jichengtiansiyeyou",
     "origin": "exam_point",
@@ -22076,7 +21147,7 @@
     "explanation": "文意理解"
   },
   {
-    "id": "exam_point:1495",
+    "id": "exam_point:1441",
     "scope": "article",
     "articleId": "shiciwushou-yinjiu",
     "origin": "exam_point",
@@ -22089,7 +21160,7 @@
     "explanation": "文学常识"
   },
   {
-    "id": "exam_point:1496",
+    "id": "exam_point:1442",
     "scope": "article",
     "articleId": "shiciwushou-yinjiu",
     "origin": "exam_point",
@@ -22102,7 +21173,7 @@
     "explanation": "名句赏析"
   },
   {
-    "id": "exam_point:1497",
+    "id": "exam_point:1443",
     "scope": "article",
     "articleId": "shiciwushou-yinjiu",
     "origin": "exam_point",
@@ -22115,7 +21186,7 @@
     "explanation": "主旨情感"
   },
   {
-    "id": "zhenti:1498",
+    "id": "zhenti:1444",
     "scope": "article",
     "articleId": "jc-jiezishu",
     "origin": "zhenti",
@@ -22130,7 +21201,7 @@
     "explanation": "根据文章内容,前半部分主要论述修身做人(静以修身,俭以养德,淡泊明志,宁静致远),后半部分论述治学(学须静也,才须学也)。"
   },
   {
-    "id": "exam_point:1499",
+    "id": "exam_point:1445",
     "scope": "article",
     "articleId": "jc-jiezishu",
     "origin": "exam_point",
@@ -22143,7 +21214,7 @@
     "explanation": "文学常识"
   },
   {
-    "id": "exam_point:1500",
+    "id": "exam_point:1446",
     "scope": "article",
     "articleId": "jc-jiezishu",
     "origin": "exam_point",
@@ -22156,7 +21227,7 @@
     "explanation": "内容理解"
   },
   {
-    "id": "exam_point:1501",
+    "id": "exam_point:1447",
     "scope": "article",
     "articleId": "jc-jiasheng",
     "origin": "exam_point",
@@ -22169,7 +21240,7 @@
     "explanation": "名句赏析"
   },
   {
-    "id": "exam_point:1502",
+    "id": "exam_point:1448",
     "scope": "article",
     "articleId": "jc-jiasheng",
     "origin": "exam_point",
@@ -22182,7 +21253,7 @@
     "explanation": "写作手法"
   },
   {
-    "id": "exam_point:1503",
+    "id": "exam_point:1449",
     "scope": "article",
     "articleId": "jc-jiasheng",
     "origin": "exam_point",
@@ -22195,7 +21266,7 @@
     "explanation": "主旨情感"
   },
   {
-    "id": "exam_point:1504",
+    "id": "exam_point:1450",
     "scope": "article",
     "articleId": "jc-zengcongdi",
     "origin": "exam_point",
@@ -22208,7 +21279,7 @@
     "explanation": "名句赏析"
   },
   {
-    "id": "exam_point:1505",
+    "id": "exam_point:1451",
     "scope": "article",
     "articleId": "jc-zengcongdi",
     "origin": "exam_point",
@@ -22221,7 +21292,7 @@
     "explanation": "主旨情感"
   },
   {
-    "id": "related:1506",
+    "id": "related:1452",
     "scope": "article",
     "articleId": "article-chibi-106",
     "origin": "related",
@@ -22234,7 +21305,7 @@
     "explanation": "结合两首诗词的写作背景与抒情句进行对比分析。"
   },
   {
-    "id": "exam_point:1507",
+    "id": "exam_point:1453",
     "scope": "article",
     "articleId": "article-chibi-106",
     "origin": "exam_point",
@@ -22247,7 +21318,7 @@
     "explanation": "文学常识"
   },
   {
-    "id": "exam_point:1508",
+    "id": "exam_point:1454",
     "scope": "article",
     "articleId": "article-chibi-106",
     "origin": "exam_point",
@@ -22260,7 +21331,7 @@
     "explanation": "名句赏析"
   },
   {
-    "id": "exam_point:1509",
+    "id": "exam_point:1455",
     "scope": "article",
     "articleId": "article-chibi-106",
     "origin": "exam_point",
@@ -22273,7 +21344,7 @@
     "explanation": "主旨情感"
   },
   {
-    "id": "exam_point:1510",
+    "id": "exam_point:1456",
     "scope": "article",
     "articleId": "article-chibi-106",
     "origin": "exam_point",
@@ -22286,7 +21357,7 @@
     "explanation": "写作特色"
   },
   {
-    "id": "exam_point:1511",
+    "id": "exam_point:1457",
     "scope": "article",
     "articleId": "jc-guosongyuanchenchuiqigongdian",
     "origin": "exam_point",
@@ -22299,7 +21370,7 @@
     "explanation": "文学常识"
   },
   {
-    "id": "exam_point:1512",
+    "id": "exam_point:1458",
     "scope": "article",
     "articleId": "jc-guosongyuanchenchuiqigongdian",
     "origin": "exam_point",
@@ -22312,7 +21383,7 @@
     "explanation": "名句赏析"
   },
   {
-    "id": "exam_point:1513",
+    "id": "exam_point:1459",
     "scope": "article",
     "articleId": "jc-guosongyuanchenchuiqigongdian",
     "origin": "exam_point",
@@ -22325,7 +21396,7 @@
     "explanation": "主旨情感"
   },
   {
-    "id": "exam_point:1514",
+    "id": "exam_point:1460",
     "scope": "article",
     "articleId": "guolingdingyang-wentianxiang",
     "origin": "exam_point",
@@ -22338,7 +21409,7 @@
     "explanation": "文学常识"
   },
   {
-    "id": "exam_point:1515",
+    "id": "exam_point:1461",
     "scope": "article",
     "articleId": "guolingdingyang-wentianxiang",
     "origin": "exam_point",
@@ -22351,7 +21422,7 @@
     "explanation": "名句赏析"
   },
   {
-    "id": "exam_point:1516",
+    "id": "exam_point:1462",
     "scope": "article",
     "articleId": "guolingdingyang-wentianxiang",
     "origin": "exam_point",
@@ -22364,7 +21435,7 @@
     "explanation": "主旨情感"
   },
   {
-    "id": "exam_point:1517",
+    "id": "exam_point:1463",
     "scope": "article",
     "articleId": "jc-songdongyangmashengxu",
     "origin": "exam_point",
@@ -22377,7 +21448,7 @@
     "explanation": "文学常识"
   },
   {
-    "id": "exam_point:1518",
+    "id": "exam_point:1464",
     "scope": "article",
     "articleId": "jc-songdongyangmashengxu",
     "origin": "exam_point",
@@ -22390,7 +21461,7 @@
     "explanation": "文意理解"
   },
   {
-    "id": "exam_point:1519",
+    "id": "exam_point:1465",
     "scope": "article",
     "articleId": "jc-syr",
     "origin": "exam_point",
@@ -22403,7 +21474,7 @@
     "explanation": "名句赏析"
   },
   {
-    "id": "exam_point:1520",
+    "id": "exam_point:1466",
     "scope": "article",
     "articleId": "jc-syr",
     "origin": "exam_point",
@@ -22416,7 +21487,7 @@
     "explanation": "主旨情感"
   },
   {
-    "id": "exam_point:1521",
+    "id": "exam_point:1467",
     "scope": "article",
     "articleId": "songdushaofuzhirenshuzhou-150",
     "origin": "exam_point",
@@ -22429,7 +21500,7 @@
     "explanation": "名句赏析"
   },
   {
-    "id": "exam_point:1522",
+    "id": "exam_point:1468",
     "scope": "article",
     "articleId": "songdushaofuzhirenshuzhou-150",
     "origin": "exam_point",
@@ -22442,7 +21513,7 @@
     "explanation": "修辞"
   },
   {
-    "id": "exam_point:1523",
+    "id": "exam_point:1469",
     "scope": "article",
     "articleId": "songdushaofuzhirenshuzhou-150",
     "origin": "exam_point",
@@ -22455,7 +21526,7 @@
     "explanation": "主旨情感"
   },
   {
-    "id": "related:1524",
+    "id": "related:1470",
     "scope": "article",
     "articleId": "feng-ru-jing-shi",
     "origin": "related",
@@ -22467,7 +21538,7 @@
     "answer": "第一句写眼前的实景,说明离家之远。第二句运用夸张的修辞手法,“龙钟”“泪不干”表现了诗人对长安亲人无限眷念的深情,为下文写托人捎口信回家“报平安”做铺垫。（考点:内容理解、修辞）"
   },
   {
-    "id": "related:1525",
+    "id": "related:1471",
     "scope": "article",
     "articleId": "feng-ru-jing-shi",
     "origin": "related",
@@ -22479,7 +21550,7 @@
     "answer": "炼字。“逢”字写遇到返京使者时欲让其捎书信回家报平安又苦于没有纸笔的情形,简净之中寄寓着诗人的一片深情。（考点:炼字）"
   },
   {
-    "id": "related:1526",
+    "id": "related:1472",
     "scope": "article",
     "articleId": "feng-ru-jing-shi",
     "origin": "related",
@@ -22491,7 +21562,7 @@
     "answer": "第一句写眼前的实景，说明离家之远。第二句运用夸张的修辞手法，“龙钟”“泪不干”表现了诗人对长安亲人无限眷念的深情，为下文写托人捎口信回家“报平安”做铺垫。"
   },
   {
-    "id": "related:1527",
+    "id": "related:1473",
     "scope": "article",
     "articleId": "feng-ru-jing-shi",
     "origin": "related",
@@ -22503,7 +21574,7 @@
     "answer": "“逢”字写遇到返京使者时欲让其捎书信回家报平安又苦于没有纸笔的情形，简净之中寄寓着诗人的一片深情。"
   },
   {
-    "id": "exam_point:1528",
+    "id": "exam_point:1474",
     "scope": "article",
     "articleId": "feng-ru-jing-shi",
     "origin": "exam_point",
@@ -22516,7 +21587,7 @@
     "explanation": "名句赏析(夸张)"
   },
   {
-    "id": "exam_point:1529",
+    "id": "exam_point:1475",
     "scope": "article",
     "articleId": "feng-ru-jing-shi",
     "origin": "exam_point",
@@ -22529,7 +21600,7 @@
     "explanation": "主旨情感"
   },
   {
-    "id": "exam_point:1530",
+    "id": "exam_point:1476",
     "scope": "article",
     "articleId": "jc-zoujifengqiwangnajian",
     "origin": "exam_point",
@@ -22542,7 +21613,7 @@
     "explanation": "文学常识"
   },
   {
-    "id": "exam_point:1531",
+    "id": "exam_point:1477",
     "scope": "article",
     "articleId": "jc-zoujifengqiwangnajian",
     "origin": "exam_point",
@@ -22555,7 +21626,7 @@
     "explanation": "写作手法"
   },
   {
-    "id": "exam_point:1532",
+    "id": "exam_point:1478",
     "scope": "article",
     "articleId": "jc-zoujifengqiwangnajian",
     "origin": "exam_point",
@@ -22568,7 +21639,7 @@
     "explanation": "主旨情感"
   },
   {
-    "id": "exam_point:1533",
+    "id": "exam_point:1479",
     "scope": "article",
     "articleId": "jc-chouletianyangzhouchufengxishangjianzeng",
     "origin": "exam_point",
@@ -22581,7 +21652,7 @@
     "explanation": "文学常识"
   },
   {
-    "id": "exam_point:1534",
+    "id": "exam_point:1480",
     "scope": "article",
     "articleId": "jc-chouletianyangzhouchufengxishangjianzeng",
     "origin": "exam_point",
@@ -22594,7 +21665,7 @@
     "explanation": "名句赏析"
   },
   {
-    "id": "exam_point:1535",
+    "id": "exam_point:1481",
     "scope": "article",
     "articleId": "jc-chouletianyangzhouchufengxishangjianzeng",
     "origin": "exam_point",
@@ -22607,7 +21678,7 @@
     "explanation": "主旨情感"
   },
   {
-    "id": "related:1536",
+    "id": "related:1482",
     "scope": "article",
     "articleId": "jc-zuiwengtingji",
     "origin": "related",
@@ -22620,7 +21691,7 @@
     "explanation": "通过自问自答（设问）的方式，交代了醉翁亭的建造者和命名者，使文章由写景自然过渡到记事、抒情，同时也流露出作者对醉翁亭的喜爱与自豪。"
   },
   {
-    "id": "related:1537",
+    "id": "related:1483",
     "scope": "article",
     "articleId": "jc-zuiwengtingji",
     "origin": "related",
@@ -22633,7 +21704,7 @@
     "explanation": "考查文章的写作顺序与描写效果。作者采用空间顺序，由远及近，层层烘托，最后推出主景。"
   },
   {
-    "id": "related:1538",
+    "id": "related:1484",
     "scope": "article",
     "articleId": "jc-zuiwengtingji",
     "origin": "related",
@@ -22646,7 +21717,7 @@
     "explanation": "考查对文章核心字“乐”的理解以及作者的政治抱负与思想感情。"
   },
   {
-    "id": "related:1539",
+    "id": "related:1485",
     "scope": "article",
     "articleId": "jc-zuiwengtingji",
     "origin": "related",
@@ -22659,7 +21730,7 @@
     "explanation": "考查文言虚词“也”在不同语境下的语气和作用。"
   },
   {
-    "id": "exam_point:1540",
+    "id": "exam_point:1486",
     "scope": "article",
     "articleId": "jc-zuiwengtingji",
     "origin": "exam_point",
@@ -22672,7 +21743,7 @@
     "explanation": "主旨情感"
   },
   {
-    "id": "exam_point:1541",
+    "id": "exam_point:1487",
     "scope": "article",
     "articleId": "jc-zuiwengtingji",
     "origin": "exam_point",
@@ -22685,7 +21756,7 @@
     "explanation": "写作特色"
   },
   {
-    "id": "exam_point:1542",
+    "id": "exam_point:1488",
     "scope": "article",
     "articleId": "jc-caisangzi",
     "origin": "exam_point",
@@ -22698,7 +21769,7 @@
     "explanation": "名句赏析"
   },
   {
-    "id": "exam_point:1543",
+    "id": "exam_point:1489",
     "scope": "article",
     "articleId": "jc-caisangzi",
     "origin": "exam_point",
@@ -22711,7 +21782,7 @@
     "explanation": "主旨情感"
   },
   {
-    "id": "exam_point:1544",
+    "id": "exam_point:1490",
     "scope": "article",
     "articleId": "jc-caisangzi",
     "origin": "exam_point",
@@ -22724,7 +21795,7 @@
     "explanation": "写作特色"
   },
   {
-    "id": "related:1545",
+    "id": "related:1491",
     "scope": "article",
     "articleId": "jc-qiantanghuchunxing",
     "origin": "related",
@@ -22737,7 +21808,7 @@
     "explanation": "通过对尾联中“最爱”和“行不足”的分析，体会诗人直抒胸臆的抒情方式，表达对西湖早春美景的无限喜爱与赞美。"
   },
   {
-    "id": "related:1546",
+    "id": "related:1492",
     "scope": "article",
     "articleId": "jc-qiantanghuchunxing",
     "origin": "related",
@@ -22750,7 +21821,7 @@
     "explanation": "结合诗中具体词语如“几处”“争暖树”“新燕”“渐欲”“才能”等，分析其如何体现“初春”的景物特征。"
   },
   {
-    "id": "exam_point:1547",
+    "id": "exam_point:1493",
     "scope": "article",
     "articleId": "jc-qiantanghuchunxing",
     "origin": "exam_point",
@@ -22763,7 +21834,7 @@
     "explanation": "文学常识"
   },
   {
-    "id": "exam_point:1548",
+    "id": "exam_point:1494",
     "scope": "article",
     "articleId": "jc-qiantanghuchunxing",
     "origin": "exam_point",
@@ -22776,7 +21847,7 @@
     "explanation": "名句赏析"
   },
   {
-    "id": "exam_point:1549",
+    "id": "exam_point:1495",
     "scope": "article",
     "articleId": "jc-qiantanghuchunxing",
     "origin": "exam_point",
@@ -22789,7 +21860,7 @@
     "explanation": "主旨情感"
   },
   {
-    "id": "exam_point:1550",
+    "id": "exam_point:1496",
     "scope": "article",
     "articleId": "jc-changshaguojiayizhai",
     "origin": "exam_point",
@@ -22802,7 +21873,7 @@
     "explanation": "文学常识"
   },
   {
-    "id": "exam_point:1551",
+    "id": "exam_point:1497",
     "scope": "article",
     "articleId": "jc-changshaguojiayizhai",
     "origin": "exam_point",
@@ -22815,7 +21886,7 @@
     "explanation": "名句赏析"
   },
   {
-    "id": "exam_point:1552",
+    "id": "exam_point:1498",
     "scope": "article",
     "articleId": "jc-changshaguojiayizhai",
     "origin": "exam_point",
@@ -22828,7 +21899,7 @@
     "explanation": "主旨情感"
   },
   {
-    "id": "related:1553",
+    "id": "related:1499",
     "scope": "article",
     "articleId": "jc-wenwangchanglingzuoqian",
     "origin": "related",
@@ -22840,7 +21911,7 @@
     "answer": "诗人想象奇特,用拟人的修辞手法将明月人格化,把明月当成使者,含蓄地表达了诗人对朋友的关心和怀念之情,使诗歌更有韵味。"
   },
   {
-    "id": "related:1554",
+    "id": "related:1500",
     "scope": "article",
     "articleId": "jc-wenwangchanglingzuoqian",
     "origin": "related",
@@ -22852,7 +21923,7 @@
     "answer": "①杨花飘落和子规啼叫皆出现在暮春时节,用在这里点出诗人闻讯的时节——暮春。②二者都有一定的象征意义,杨花飘忽不定,行游无踪,暗喻征人前途命运未卜,子规常鸣“不如归去”,借用来关怀跋山涉水、远走他乡的友人王昌龄,希望他早日归来。"
   },
   {
-    "id": "exam_point:1555",
+    "id": "exam_point:1501",
     "scope": "article",
     "articleId": "jc-wenwangchanglingzuoqian",
     "origin": "exam_point",
@@ -22865,7 +21936,7 @@
     "explanation": "文学常识"
   },
   {
-    "id": "exam_point:1556",
+    "id": "exam_point:1502",
     "scope": "article",
     "articleId": "jc-wenwangchanglingzuoqian",
     "origin": "exam_point",
@@ -22878,7 +21949,7 @@
     "explanation": "名句赏析"
   },
   {
-    "id": "exam_point:1557",
+    "id": "exam_point:1503",
     "scope": "article",
     "articleId": "jc-wenwangchanglingzuoqian",
     "origin": "exam_point",
@@ -22891,7 +21962,7 @@
     "explanation": "主旨情感"
   },
   {
-    "id": "exam_point:1558",
+    "id": "exam_point:1504",
     "scope": "article",
     "articleId": "jc-wenwangchanglingzuoqian",
     "origin": "exam_point",
@@ -22904,7 +21975,7 @@
     "explanation": "写作特色"
   },
   {
-    "id": "exam_point:1559",
+    "id": "exam_point:1505",
     "scope": "article",
     "articleId": "jc-wenwangchanglingzuoqian",
     "origin": "exam_point",
@@ -22917,7 +21988,7 @@
     "explanation": "写作手法"
   },
   {
-    "id": "exam_point:1560",
+    "id": "exam_point:1506",
     "scope": "article",
     "articleId": "jc-chentaiqiuyuyouqixing",
     "origin": "exam_point",
@@ -22930,7 +22001,7 @@
     "explanation": "重点字词"
   },
   {
-    "id": "exam_point:1561",
+    "id": "exam_point:1507",
     "scope": "article",
     "articleId": "jc-chentaiqiuyuyouqixing",
     "origin": "exam_point",
@@ -22943,7 +22014,7 @@
     "explanation": "句子翻译"
   },
   {
-    "id": "exam_point:1562",
+    "id": "exam_point:1508",
     "scope": "article",
     "articleId": "jc-chentaiqiuyuyouqixing",
     "origin": "exam_point",
@@ -22956,7 +22027,7 @@
     "explanation": "写作特色"
   },
   {
-    "id": "exam_point:1563",
+    "id": "exam_point:1509",
     "scope": "article",
     "articleId": "jc-chentaiqiuyuyouqixing",
     "origin": "exam_point",
@@ -22969,7 +22040,7 @@
     "explanation": "人物形象"
   },
   {
-    "id": "exam_point:1564",
+    "id": "exam_point:1510",
     "scope": "article",
     "articleId": "jc-chentaiqiuyuyouqixing",
     "origin": "exam_point",
@@ -22982,7 +22053,7 @@
     "explanation": "主题思想"
   },
   {
-    "id": "related:1565",
+    "id": "related:1511",
     "scope": "article",
     "articleId": "jc-chensheshejia",
     "origin": "related",
@@ -22995,7 +22066,7 @@
     "explanation": "通过分析陈胜与同伴的对话和“燕雀安知鸿鹄之志哉”这一名言,展现其远大抱负与反抗精神。"
   },
   {
-    "id": "exam_point:1566",
+    "id": "exam_point:1512",
     "scope": "article",
     "articleId": "jc-chensheshejia",
     "origin": "exam_point",
@@ -23008,7 +22079,7 @@
     "explanation": "文学常识"
   },
   {
-    "id": "exam_point:1567",
+    "id": "exam_point:1513",
     "scope": "article",
     "articleId": "jc-chensheshejia",
     "origin": "exam_point",
@@ -23021,7 +22092,7 @@
     "explanation": "文化常识"
   },
   {
-    "id": "exam_point:1568",
+    "id": "exam_point:1514",
     "scope": "article",
     "articleId": "jc-chensheshejia",
     "origin": "exam_point",
@@ -23034,7 +22105,7 @@
     "explanation": "文意理解"
   },
   {
-    "id": "exam_point:1569",
+    "id": "exam_point:1515",
     "scope": "article",
     "articleId": "jc-yanmentaishouxing",
     "origin": "exam_point",
@@ -23047,7 +22118,7 @@
     "explanation": "文学常识"
   },
   {
-    "id": "exam_point:1570",
+    "id": "exam_point:1516",
     "scope": "article",
     "articleId": "jc-yanmentaishouxing",
     "origin": "exam_point",
@@ -23060,7 +22131,7 @@
     "explanation": "名句赏析"
   },
   {
-    "id": "exam_point:1571",
+    "id": "exam_point:1517",
     "scope": "article",
     "articleId": "jc-yanmentaishouxing",
     "origin": "exam_point",
@@ -23073,7 +22144,7 @@
     "explanation": "主旨情感"
   },
   {
-    "id": "exam_point:1572",
+    "id": "exam_point:1518",
     "scope": "article",
     "articleId": "jc-tpss",
     "origin": "exam_point",
@@ -23086,7 +22157,7 @@
     "explanation": "文学常识"
   },
   {
-    "id": "exam_point:1573",
+    "id": "exam_point:1519",
     "scope": "article",
     "articleId": "jc-tpss",
     "origin": "exam_point",
@@ -23099,7 +22170,7 @@
     "explanation": "名句赏析"
   },
   {
-    "id": "exam_point:1574",
+    "id": "exam_point:1520",
     "scope": "article",
     "articleId": "jc-tpss",
     "origin": "exam_point",
@@ -23112,7 +22183,7 @@
     "explanation": "主旨情感"
   },
   {
-    "id": "related:1575",
+    "id": "related:1521",
     "scope": "article",
     "articleId": "jc-mashuo",
     "origin": "related",
@@ -23125,7 +22196,7 @@
     "explanation": "根据文章内容，作者通过对“食马者”不知马、不按正确方法喂养和驱使千里马的批判，反面表达了统治者应当识别人才、重用人才并给予其合理待遇的观点。"
   },
   {
-    "id": "exam_point:1576",
+    "id": "exam_point:1522",
     "scope": "article",
     "articleId": "jc-mashuo",
     "origin": "exam_point",
@@ -23138,7 +22209,7 @@
     "explanation": "文学常识"
   },
   {
-    "id": "exam_point:1577",
+    "id": "exam_point:1523",
     "scope": "article",
     "articleId": "jc-mashuo",
     "origin": "exam_point",
@@ -23151,7 +22222,7 @@
     "explanation": "文意理解"
   },
   {
-    "id": "related:1578",
+    "id": "related:1524",
     "scope": "article",
     "articleId": "jc-ywsyx",
     "origin": "related",
@@ -23164,7 +22235,7 @@
     "explanation": "考查对文章中心论点的把握以及事实论据的积累。本文的中心论点是“舍生取义”。列举事例时,需选择历史上或现实中为了正义、信仰、国家利益等而牺牲生命或个人利益的典型人物及事迹。"
   },
   {
-    "id": "related:1579",
+    "id": "related:1525",
     "scope": "article",
     "articleId": "jc-ywsyx",
     "origin": "related",
@@ -23177,7 +22248,7 @@
     "explanation": "考查对作者观点主张及论证思路的理解。孟子在文中主张“舍生取义”,并通过鱼和熊掌的比喻进行论证。"
   },
   {
-    "id": "exam_point:1580",
+    "id": "exam_point:1526",
     "scope": "article",
     "articleId": "jc-ywsyx",
     "origin": "exam_point",
@@ -23190,7 +22261,7 @@
     "explanation": "主旨情感"
   },
   {
-    "id": "exam_point:1581",
+    "id": "exam_point:1527",
     "scope": "article",
     "articleId": "jc-ywsyx",
     "origin": "exam_point",
@@ -23203,7 +22274,7 @@
     "explanation": "论证方法"
   },
   {
-    "id": "exam_point:1582",
+    "id": "exam_point:1528",
     "scope": "article",
     "articleId": "jc-ywsyx",
     "origin": "exam_point",
@@ -23216,7 +22287,7 @@
     "explanation": "写作特色"
   },
   {
-    "id": "exam_point:1583",
+    "id": "exam_point:1529",
     "scope": "article",
     "articleId": "jc-huanghelou",
     "origin": "exam_point",
@@ -23229,7 +22300,7 @@
     "explanation": "文学常识"
   },
   {
-    "id": "exam_point:1584",
+    "id": "exam_point:1530",
     "scope": "article",
     "articleId": "jc-huanghelou",
     "origin": "exam_point",
@@ -23242,7 +22313,7 @@
     "explanation": "名句赏析"
   },
   {
-    "id": "exam_point:1585",
+    "id": "exam_point:1531",
     "scope": "article",
     "articleId": "jc-huanghelou",
     "origin": "exam_point",
@@ -23255,7 +22326,7 @@
     "explanation": "主旨情感"
   },
   {
-    "id": "exam_point:1586",
+    "id": "exam_point:1532",
     "scope": "article",
     "articleId": "jc-guisuishou",
     "origin": "exam_point",
@@ -23268,7 +22339,7 @@
     "explanation": "文学常识"
   },
   {
-    "id": "exam_point:1587",
+    "id": "exam_point:1533",
     "scope": "article",
     "articleId": "jc-guisuishou",
     "origin": "exam_point",
@@ -23281,7 +22352,7 @@
     "explanation": "名句赏析"
   },
   {
-    "id": "exam_point:1588",
+    "id": "exam_point:1534",
     "scope": "article",
     "articleId": "jc-guisuishou",
     "origin": "exam_point",
@@ -23294,7 +22365,7 @@
     "explanation": "主旨情感"
   },
   {
-    "id": "exam_point:1589",
+    "id": "exam_point:1535",
     "scope": "article",
     "articleId": "jc-guisuishou",
     "origin": "exam_point",
