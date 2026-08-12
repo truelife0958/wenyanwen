@@ -2661,40 +2661,6 @@
     ]
   },
   {
-    "id": "word:jc-ljxydxg:豪英",
-    "scope": "article",
-    "articleId": "jc-ljxydxg",
-    "word": "豪英",
-    "meanings": [
-      {
-        "text": "豪杰英才",
-        "category": "重点实词",
-        "source": "key_term",
-        "example": "坐中多是豪英",
-        "legacyIds": [
-          "kt:jc-ljxydxg:0:0"
-        ]
-      }
-    ]
-  },
-  {
-    "id": "word:jc-ljxydxg:疏影",
-    "scope": "article",
-    "articleId": "jc-ljxydxg",
-    "word": "疏影",
-    "meanings": [
-      {
-        "text": "稀疏的影子",
-        "category": "重点实词",
-        "source": "key_term",
-        "example": "杏花疏影里",
-        "legacyIds": [
-          "kt:jc-ljxydxg:0:1"
-        ]
-      }
-    ]
-  },
-  {
     "id": "word:jc-ljxydxg:堪",
     "scope": "article",
     "articleId": "jc-ljxydxg",
@@ -2706,24 +2672,7 @@
         "source": "key_term",
         "example": "此身虽在堪惊",
         "legacyIds": [
-          "kt:jc-ljxydxg:0:2"
-        ]
-      }
-    ]
-  },
-  {
-    "id": "word:jc-ljxydxg:渔唱",
-    "scope": "article",
-    "articleId": "jc-ljxydxg",
-    "word": "渔唱",
-    "meanings": [
-      {
-        "text": "渔歌",
-        "category": "重点实词",
-        "source": "key_term",
-        "example": "渔唱起三更",
-        "legacyIds": [
-          "kt:jc-ljxydxg:0:3"
+          "kt:jc-ljxydxg:0:0"
         ]
       }
     ]
@@ -3359,23 +3308,6 @@
         "example": "琴瑟友之",
         "legacyIds": [
           "kt:jc-guanju:0:5"
-        ]
-      }
-    ]
-  },
-  {
-    "id": "word:jc-guanju:芼",
-    "scope": "article",
-    "articleId": "jc-guanju",
-    "word": "芼",
-    "meanings": [
-      {
-        "text": "采摘。此处“挑选”的释义不够精确，“采摘”更贴合原意。",
-        "category": "重点实词",
-        "source": "key_term",
-        "example": "左右芼之",
-        "legacyIds": [
-          "kt:jc-guanju:0:6"
         ]
       }
     ]
@@ -4759,40 +4691,6 @@
     ]
   },
   {
-    "id": "word:jc-bieyunjian:毅魄",
-    "scope": "article",
-    "articleId": "jc-bieyunjian",
-    "word": "毅魄",
-    "meanings": [
-      {
-        "text": "坚毅的魂魄",
-        "category": "重点实词",
-        "source": "key_term",
-        "example": "毅魄归来日",
-        "legacyIds": [
-          "kt:jc-bieyunjian:0:3"
-        ]
-      }
-    ]
-  },
-  {
-    "id": "word:jc-bieyunjian:灵旗",
-    "scope": "article",
-    "articleId": "jc-bieyunjian",
-    "word": "灵旗",
-    "meanings": [
-      {
-        "text": "神灵的旗帜，也指引魂魄的旗帜。",
-        "category": "重点实词",
-        "source": "key_term",
-        "example": "灵旗空际看",
-        "legacyIds": [
-          "kt:jc-bieyunjian:0:4"
-        ]
-      }
-    ]
-  },
-  {
     "id": "word:jc-beimingyouyu:北冥",
     "scope": "article",
     "articleId": "jc-beimingyouyu",
@@ -5019,7 +4917,7 @@
         "source": "note",
         "legacyIds": [
           "note:jc-beimingyouyu:12",
-          "kt:jc-beimingyouyu:2:8"
+          "kt:jc-beimingyouyu:2:7"
         ],
         "example": "野马也，尘埃也"
       }
@@ -5107,23 +5005,6 @@
     ]
   },
   {
-    "id": "word:jc-beimingyouyu:去以六月息",
-    "scope": "article",
-    "articleId": "jc-beimingyouyu",
-    "word": "去以六月息",
-    "meanings": [
-      {
-        "text": "凭借着六月的大风离开。息，气息，这里指风",
-        "category": "重点实词",
-        "source": "key_term",
-        "example": "去以六月息者也",
-        "legacyIds": [
-          "kt:jc-beimingyouyu:2:7"
-        ]
-      }
-    ]
-  },
-  {
     "id": "word:jc-beimingyouyu:苍苍",
     "scope": "article",
     "articleId": "jc-beimingyouyu",
@@ -5135,7 +5016,7 @@
         "source": "key_term",
         "example": "天之苍苍",
         "legacyIds": [
-          "kt:jc-beimingyouyu:2:9"
+          "kt:jc-beimingyouyu:2:8"
         ]
       }
     ]
@@ -6462,7 +6343,7 @@
         "source": "key_term",
         "example": "梦中行采薇",
         "legacyIds": [
-          "kt:jc-nananjun:0:3"
+          "kt:jc-nananjun:0:2"
         ]
       }
     ]
@@ -6485,23 +6366,6 @@
     ]
   },
   {
-    "id": "word:jc-nananjun:出岭",
-    "scope": "article",
-    "articleId": "jc-nananjun",
-    "word": "出岭",
-    "meanings": [
-      {
-        "text": "走出山岭。原释义“指经过梅岭（大庾岭）”是该词在特定诗文语境下的含义，作为通用词解过于狭窄。",
-        "category": "重点实词",
-        "source": "key_term",
-        "example": "出岭同谁出",
-        "legacyIds": [
-          "kt:jc-nananjun:0:1"
-        ]
-      }
-    ]
-  },
-  {
     "id": "word:jc-nananjun:城郭",
     "scope": "article",
     "articleId": "jc-nananjun",
@@ -6513,7 +6377,7 @@
         "source": "key_term",
         "example": "城郭一时非",
         "legacyIds": [
-          "kt:jc-nananjun:0:2"
+          "kt:jc-nananjun:0:1"
         ]
       }
     ]
@@ -8878,7 +8742,7 @@
         "source": "note",
         "legacyIds": [
           "note:jc-tangjuburushiming:40",
-          "kt:jc-tangjuburushiming:3:13"
+          "kt:jc-tangjuburushiming:3:12"
         ],
         "example": "秦王色挠，长跪而谢之曰……寡人谕矣"
       }
@@ -9016,23 +8880,6 @@
         "example": "公亦尝闻天子之怒乎",
         "legacyIds": [
           "kt:jc-tangjuburushiming:3:9"
-        ]
-      }
-    ]
-  },
-  {
-    "id": "word:jc-tangjuburushiming:祲",
-    "scope": "article",
-    "articleId": "jc-tangjuburushiming",
-    "word": "祲",
-    "meanings": [
-      {
-        "text": "不祥之气",
-        "category": "重点实词",
-        "source": "key_term",
-        "example": "休祲降于天",
-        "legacyIds": [
-          "kt:jc-tangjuburushiming:3:12"
         ]
       }
     ]
@@ -9200,26 +9047,9 @@
         "source": "note",
         "legacyIds": [
           "note:jc-yeshangshouxiangchengwendi:2",
-          "kt:jc-yeshangshouxiangchengwendi:0:1"
+          "kt:jc-yeshangshouxiangchengwendi:0:0"
         ],
         "example": "一夜征人尽望乡"
-      }
-    ]
-  },
-  {
-    "id": "word:jc-yeshangshouxiangchengwendi:芦管",
-    "scope": "article",
-    "articleId": "jc-yeshangshouxiangchengwendi",
-    "word": "芦管",
-    "meanings": [
-      {
-        "text": "一种管乐器",
-        "category": "重点实词",
-        "source": "key_term",
-        "example": "不知何处吹芦管",
-        "legacyIds": [
-          "kt:jc-yeshangshouxiangchengwendi:0:0"
-        ]
       }
     ]
   },
@@ -10063,7 +9893,7 @@
         "source": "note",
         "legacyIds": [
           "note:jc-taichangyin:1",
-          "kt:jc-taichangyin:0:1"
+          "kt:jc-taichangyin:0:0"
         ],
         "example": "把酒问姮娥"
       }
@@ -10086,23 +9916,6 @@
     ]
   },
   {
-    "id": "word:jc-taichangyin:金波",
-    "scope": "article",
-    "articleId": "jc-taichangyin",
-    "word": "金波",
-    "meanings": [
-      {
-        "text": "指月光。因月色如金，故称。",
-        "category": "重点实词",
-        "source": "key_term",
-        "example": "一轮秋影转金波",
-        "legacyIds": [
-          "kt:jc-taichangyin:0:0"
-        ]
-      }
-    ]
-  },
-  {
     "id": "word:jc-taichangyin:斫",
     "scope": "article",
     "articleId": "jc-taichangyin",
@@ -10114,7 +9927,7 @@
         "source": "key_term",
         "example": "斫去桂婆娑",
         "legacyIds": [
-          "kt:jc-taichangyin:0:2"
+          "kt:jc-taichangyin:0:1"
         ]
       }
     ]
@@ -10131,7 +9944,7 @@
         "source": "key_term",
         "example": "斫去桂婆娑",
         "legacyIds": [
-          "kt:jc-taichangyin:0:3"
+          "kt:jc-taichangyin:0:2"
         ]
       }
     ]
@@ -10324,23 +10137,6 @@
         "example": "青青子衿",
         "legacyIds": [
           "kt:jc-zijin:0:0"
-        ]
-      }
-    ]
-  },
-  {
-    "id": "word:jc-zijin:挑达",
-    "scope": "article",
-    "articleId": "jc-zijin",
-    "word": "挑达",
-    "meanings": [
-      {
-        "text": "往来行走的样子。",
-        "category": "重点实词",
-        "source": "key_term",
-        "example": "挑兮达兮",
-        "legacyIds": [
-          "kt:jc-zijin:0:4"
         ]
       }
     ]
@@ -11900,7 +11696,7 @@
         ],
         "legacyIds": [
           "note:jc-xiaoshitanji:13",
-          "kt:jc-xiaoshitanji:3:6"
+          "kt:jc-xiaoshitanji:3:5"
         ],
         "example": "皆若空游无所依"
       }
@@ -11921,7 +11717,7 @@
         ],
         "legacyIds": [
           "note:jc-xiaoshitanji:14",
-          "kt:jc-xiaoshitanji:3:7"
+          "kt:jc-xiaoshitanji:3:6"
         ],
         "example": "皆若空游无所依"
       }
@@ -11942,7 +11738,7 @@
         ],
         "legacyIds": [
           "note:jc-xiaoshitanji:15",
-          "kt:jc-xiaoshitanji:3:8"
+          "kt:jc-xiaoshitanji:3:7"
         ],
         "example": "日光下澈"
       }
@@ -11982,7 +11778,7 @@
         ],
         "legacyIds": [
           "note:jc-xiaoshitanji:17",
-          "kt:jc-xiaoshitanji:3:9"
+          "kt:jc-xiaoshitanji:3:8"
         ],
         "example": "怡然不动"
       }
@@ -12003,7 +11799,7 @@
         ],
         "legacyIds": [
           "note:jc-xiaoshitanji:18",
-          "kt:jc-xiaoshitanji:3:10"
+          "kt:jc-xiaoshitanji:3:9"
         ],
         "example": "俶尔远逝"
       }
@@ -12125,7 +11921,7 @@
         ],
         "legacyIds": [
           "note:jc-xiaoshitanji:24",
-          "kt:jc-xiaoshitanji:3:15"
+          "kt:jc-xiaoshitanji:3:12"
         ],
         "example": "悄怆幽邃"
       }
@@ -12380,7 +12176,7 @@
         "example": "隶而从者",
         "legacyIds": [
           "kt:jc-xiaoshitanji:2:0",
-          "kt:jc-xiaoshitanji:3:17"
+          "kt:jc-xiaoshitanji:3:14"
         ]
       }
     ]
@@ -12446,23 +12242,6 @@
     ]
   },
   {
-    "id": "word:jc-xiaoshitanji:披拂",
-    "scope": "article",
-    "articleId": "jc-xiaoshitanji",
-    "word": "披拂",
-    "meanings": [
-      {
-        "text": "飘拂",
-        "category": "重点实词",
-        "source": "key_term",
-        "example": "参差披拂",
-        "legacyIds": [
-          "kt:jc-xiaoshitanji:3:5"
-        ]
-      }
-    ]
-  },
-  {
     "id": "word:jc-xiaoshitanji:折",
     "scope": "article",
     "articleId": "jc-xiaoshitanji",
@@ -12474,41 +12253,7 @@
         "source": "key_term",
         "example": "斗折蛇行",
         "legacyIds": [
-          "kt:jc-xiaoshitanji:3:11"
-        ]
-      }
-    ]
-  },
-  {
-    "id": "word:jc-xiaoshitanji:明灭可见",
-    "scope": "article",
-    "articleId": "jc-xiaoshitanji",
-    "word": "明灭可见",
-    "meanings": [
-      {
-        "text": "时隐时现",
-        "category": "重点实词",
-        "source": "key_term",
-        "example": "明灭可见",
-        "legacyIds": [
-          "kt:jc-xiaoshitanji:3:12"
-        ]
-      }
-    ]
-  },
-  {
-    "id": "word:jc-xiaoshitanji:差互",
-    "scope": "article",
-    "articleId": "jc-xiaoshitanji",
-    "word": "差互",
-    "meanings": [
-      {
-        "text": "交错不齐",
-        "category": "重点实词",
-        "source": "key_term",
-        "example": "其岸势犬牙差互",
-        "legacyIds": [
-          "kt:jc-xiaoshitanji:3:13"
+          "kt:jc-xiaoshitanji:3:10"
         ]
       }
     ]
@@ -12525,7 +12270,7 @@
         "source": "key_term",
         "example": "不可知其源",
         "legacyIds": [
-          "kt:jc-xiaoshitanji:3:14"
+          "kt:jc-xiaoshitanji:3:11"
         ]
       }
     ]
@@ -12542,7 +12287,7 @@
         "source": "key_term",
         "example": "乃记之而去",
         "legacyIds": [
-          "kt:jc-xiaoshitanji:3:16"
+          "kt:jc-xiaoshitanji:3:13"
         ]
       }
     ]
@@ -12793,7 +12538,7 @@
         "source": "note",
         "legacyIds": [
           "note:jc-shanpoyanglishan:3",
-          "kt:jc-shanpoyanglishan:0:2"
+          "kt:jc-shanpoyanglishan:0:1"
         ],
         "example": "水萦纡"
       }
@@ -12811,7 +12556,7 @@
         "source": "note",
         "legacyIds": [
           "note:jc-shanpoyanglishan:4",
-          "kt:jc-shanpoyanglishan:0:3"
+          "kt:jc-shanpoyanglishan:0:2"
         ],
         "example": "至今遗恨迷烟树"
       }
@@ -12829,23 +12574,6 @@
         "source": "note",
         "legacyIds": [
           "note:jc-shanpoyanglishan:5"
-        ]
-      }
-    ]
-  },
-  {
-    "id": "word:jc-shanpoyanglishan:阿房",
-    "scope": "article",
-    "articleId": "jc-shanpoyanglishan",
-    "word": "阿房",
-    "meanings": [
-      {
-        "text": "指阿房宫。阿房是宫殿名，不是词语。",
-        "category": "重点实词",
-        "source": "key_term",
-        "example": "阿房一炬",
-        "legacyIds": [
-          "kt:jc-shanpoyanglishan:0:1"
         ]
       }
     ]
@@ -18675,7 +18403,7 @@
         "source": "note",
         "legacyIds": [
           "note:jc-wangdongtinghushangzhangchengxiang:2",
-          "kt:jc-wangdongtinghushangzhangchengxiang:0:3"
+          "kt:jc-wangdongtinghushangzhangchengxiang:0:0"
         ],
         "example": "欲济无舟楫"
       }
@@ -18693,7 +18421,7 @@
         "source": "note",
         "legacyIds": [
           "note:jc-wangdongtinghushangzhangchengxiang:3",
-          "kt:jc-wangdongtinghushangzhangchengxiang:0:5"
+          "kt:jc-wangdongtinghushangzhangchengxiang:0:2"
         ],
         "example": "端居耻圣明"
       }
@@ -18716,57 +18444,6 @@
     ]
   },
   {
-    "id": "word:jc-wangdongtinghushangzhangchengxiang:涵虚",
-    "scope": "article",
-    "articleId": "jc-wangdongtinghushangzhangchengxiang",
-    "word": "涵虚",
-    "meanings": [
-      {
-        "text": "指水映天空",
-        "category": "重点实词",
-        "source": "key_term",
-        "example": "涵虚混太清",
-        "legacyIds": [
-          "kt:jc-wangdongtinghushangzhangchengxiang:0:0"
-        ]
-      }
-    ]
-  },
-  {
-    "id": "word:jc-wangdongtinghushangzhangchengxiang:混",
-    "scope": "article",
-    "articleId": "jc-wangdongtinghushangzhangchengxiang",
-    "word": "混",
-    "meanings": [
-      {
-        "text": "浑然一体",
-        "category": "重点实词",
-        "source": "key_term",
-        "example": "涵虚混太清",
-        "legacyIds": [
-          "kt:jc-wangdongtinghushangzhangchengxiang:0:1"
-        ]
-      }
-    ]
-  },
-  {
-    "id": "word:jc-wangdongtinghushangzhangchengxiang:太清",
-    "scope": "article",
-    "articleId": "jc-wangdongtinghushangzhangchengxiang",
-    "word": "太清",
-    "meanings": [
-      {
-        "text": "天空",
-        "category": "重点实词",
-        "source": "key_term",
-        "example": "涵虚混太清",
-        "legacyIds": [
-          "kt:jc-wangdongtinghushangzhangchengxiang:0:2"
-        ]
-      }
-    ]
-  },
-  {
     "id": "word:jc-wangdongtinghushangzhangchengxiang:楫",
     "scope": "article",
     "articleId": "jc-wangdongtinghushangzhangchengxiang",
@@ -18778,7 +18455,7 @@
         "source": "key_term",
         "example": "欲济无舟楫",
         "legacyIds": [
-          "kt:jc-wangdongtinghushangzhangchengxiang:0:4"
+          "kt:jc-wangdongtinghushangzhangchengxiang:0:1"
         ]
       }
     ]
@@ -18795,7 +18472,7 @@
         "source": "key_term",
         "example": "端居耻圣明",
         "legacyIds": [
-          "kt:jc-wangdongtinghushangzhangchengxiang:0:6"
+          "kt:jc-wangdongtinghushangzhangchengxiang:0:3"
         ]
       }
     ]
@@ -18812,7 +18489,7 @@
         "source": "key_term",
         "example": "徒有羡鱼情",
         "legacyIds": [
-          "kt:jc-wangdongtinghushangzhangchengxiang:0:7"
+          "kt:jc-wangdongtinghushangzhangchengxiang:0:4"
         ]
       }
     ]
@@ -20486,7 +20163,7 @@
         "source": "note",
         "legacyIds": [
           "note:jc-hezhouji:12",
-          "kt:jc-hezhouji:3:8"
+          "kt:jc-hezhouji:3:7"
         ],
         "example": "箬篷覆之"
       }
@@ -20568,7 +20245,7 @@
         "source": "note",
         "legacyIds": [
           "note:jc-hezhouji:17",
-          "kt:jc-hezhouji:3:9"
+          "kt:jc-hezhouji:3:8"
         ],
         "example": "中峨冠而多髯者为东坡"
       }
@@ -20594,7 +20271,7 @@
         "source": "key_term",
         "example": "中峨冠而多髯者为东坡",
         "legacyIds": [
-          "kt:jc-hezhouji:3:10"
+          "kt:jc-hezhouji:3:9"
         ]
       }
     ]
@@ -21139,23 +20816,6 @@
     ]
   },
   {
-    "id": "word:jc-hezhouji:轩敞",
-    "scope": "article",
-    "articleId": "jc-hezhouji",
-    "word": "轩敞",
-    "meanings": [
-      {
-        "text": "高起而宽敞",
-        "category": "重点实词",
-        "source": "key_term",
-        "example": "中轩敞者为舱",
-        "legacyIds": [
-          "kt:jc-hezhouji:3:7"
-        ]
-      }
-    ]
-  },
-  {
     "id": "word:jc-hezhouji:泛",
     "scope": "article",
     "articleId": "jc-hezhouji",
@@ -21167,7 +20827,7 @@
         "source": "key_term",
         "example": "盖大苏泛赤壁云",
         "legacyIds": [
-          "kt:jc-hezhouji:3:11"
+          "kt:jc-hezhouji:3:10"
         ]
       }
     ]
@@ -23350,7 +23010,7 @@
         "source": "note",
         "legacyIds": [
           "note:jc-huoban:20",
-          "kt:jc-huoban:1:8"
+          "kt:jc-huoban:1:7"
         ],
         "example": "更互用之"
       }
@@ -23448,7 +23108,7 @@
         "source": "note",
         "legacyIds": [
           "note:jc-huoban:26",
-          "kt:jc-huoban:1:12"
+          "kt:jc-huoban:1:11"
         ],
         "example": "用讫再火令药镕"
       }
@@ -23537,23 +23197,6 @@
     ]
   },
   {
-    "id": "word:jc-huoban:字平如砥",
-    "scope": "article",
-    "articleId": "jc-huoban",
-    "word": "字平如砥",
-    "meanings": [
-      {
-        "text": "释义不够精确。原文指活字的字面经按压后变得平整，而非指印出的字。应释为：（活字）的字面像磨刀石一样平整。砥，磨刀石。",
-        "category": "重点实词",
-        "source": "key_term",
-        "example": "则字平如砥",
-        "legacyIds": [
-          "kt:jc-huoban:1:6"
-        ]
-      }
-    ]
-  },
-  {
     "id": "word:jc-huoban:兼",
     "scope": "article",
     "articleId": "jc-huoban",
@@ -23565,7 +23208,7 @@
         "source": "key_term",
         "example": "兼与药相粘",
         "legacyIds": [
-          "kt:jc-huoban:1:7"
+          "kt:jc-huoban:1:6"
         ]
       }
     ]
@@ -23582,7 +23225,7 @@
         "source": "key_term",
         "example": "瞬息可就……每字有二十余印",
         "legacyIds": [
-          "kt:jc-huoban:1:9"
+          "kt:jc-huoban:1:8"
         ]
       }
     ]
@@ -23599,7 +23242,7 @@
         "source": "key_term",
         "example": "有奇字素无备者",
         "legacyIds": [
-          "kt:jc-huoban:1:10"
+          "kt:jc-huoban:1:9"
         ]
       }
     ]
@@ -23616,7 +23259,7 @@
         "source": "key_term",
         "example": "旋刻之",
         "legacyIds": [
-          "kt:jc-huoban:1:11"
+          "kt:jc-huoban:1:10"
         ]
       }
     ]
@@ -23633,7 +23276,7 @@
         "source": "key_term",
         "example": "以手拂之",
         "legacyIds": [
-          "kt:jc-huoban:1:13"
+          "kt:jc-huoban:1:12"
         ]
       }
     ]
@@ -23650,7 +23293,7 @@
         "source": "key_term",
         "example": "殊不沾污",
         "legacyIds": [
-          "kt:jc-huoban:1:14"
+          "kt:jc-huoban:1:13"
         ]
       }
     ]
@@ -23740,23 +23383,6 @@
     ]
   },
   {
-    "id": "word:jc-huanxisha-mmqh:宝帘",
-    "scope": "article",
-    "articleId": "jc-huanxisha-mmqh",
-    "word": "宝帘",
-    "meanings": [
-      {
-        "text": "华美的帘子",
-        "category": "重点实词",
-        "source": "key_term",
-        "example": "宝帘闲挂小银钩",
-        "legacyIds": [
-          "kt:jc-huanxisha-mmqh:0:3"
-        ]
-      }
-    ]
-  },
-  {
     "id": "word:jc-huanxisha-sxysnpx:若为",
     "scope": "article",
     "articleId": "jc-huanxisha-sxysnpx",
@@ -23768,7 +23394,7 @@
         "source": "note",
         "legacyIds": [
           "note:jc-huanxisha-sxysnpx:0",
-          "kt:jc-huanxisha-sxysnpx:0:1"
+          "kt:jc-huanxisha-sxysnpx:0:0"
         ],
         "example": "深秋远塞若为情"
       }
@@ -23786,7 +23412,7 @@
         "source": "note",
         "legacyIds": [
           "note:jc-huanxisha-sxysnpx:1",
-          "kt:jc-huanxisha-sxysnpx:0:2"
+          "kt:jc-huanxisha-sxysnpx:0:1"
         ],
         "example": "一抹晚烟荒戍垒"
       }
@@ -23804,26 +23430,9 @@
         "source": "note",
         "legacyIds": [
           "note:jc-huanxisha-sxysnpx:2",
-          "kt:jc-huanxisha-sxysnpx:0:3"
+          "kt:jc-huanxisha-sxysnpx:0:2"
         ],
         "example": "半竿斜日旧关城"
-      }
-    ]
-  },
-  {
-    "id": "word:jc-huanxisha-sxysnpx:那畔",
-    "scope": "article",
-    "articleId": "jc-huanxisha-sxysnpx",
-    "word": "那畔",
-    "meanings": [
-      {
-        "text": "那边",
-        "category": "重点实词",
-        "source": "key_term",
-        "example": "身向云山那畔行",
-        "legacyIds": [
-          "kt:jc-huanxisha-sxysnpx:0:0"
-        ]
       }
     ]
   },
@@ -23879,7 +23488,7 @@
         "source": "key_term",
         "example": "无可奈何花落去",
         "legacyIds": [
-          "kt:jc-huanxisha-yiquxincijiuyibei:0:1"
+          "kt:jc-huanxisha-yiquxincijiuyibei:0:0"
         ]
       }
     ]
@@ -23904,7 +23513,7 @@
         "source": "key_term",
         "example": "小园香径独徘徊",
         "legacyIds": [
-          "kt:jc-huanxisha-yiquxincijiuyibei:0:2"
+          "kt:jc-huanxisha-yiquxincijiuyibei:0:1"
         ]
       }
     ]
@@ -23921,23 +23530,6 @@
         "source": "note",
         "legacyIds": [
           "note:jc-huanxisha-yiquxincijiuyibei:4"
-        ]
-      }
-    ]
-  },
-  {
-    "id": "word:jc-huanxisha-yiquxincijiuyibei:亭台",
-    "scope": "article",
-    "articleId": "jc-huanxisha-yiquxincijiuyibei",
-    "word": "亭台",
-    "meanings": [
-      {
-        "text": "楼台",
-        "category": "重点实词",
-        "source": "key_term",
-        "example": "去年天气旧亭台",
-        "legacyIds": [
-          "kt:jc-huanxisha-yiquxincijiuyibei:0:0"
         ]
       }
     ]
@@ -24486,7 +24078,7 @@
         ],
         "legacyIds": [
           "note:jc-youshanxicun:3",
-          "kt:jc-youshanxicun:0:5"
+          "kt:jc-youshanxicun:0:4"
         ]
       }
     ]
@@ -24506,23 +24098,7 @@
         ],
         "legacyIds": [
           "note:jc-youshanxicun:4",
-          "kt:jc-youshanxicun:0:6"
-        ]
-      }
-    ]
-  },
-  {
-    "id": "word:jc-youshanxicun:腊酒",
-    "scope": "article",
-    "articleId": "jc-youshanxicun",
-    "word": "腊酒",
-    "meanings": [
-      {
-        "text": "腊月所酿的酒",
-        "category": "重点实词",
-        "source": "key_term",
-        "legacyIds": [
-          "kt:jc-youshanxicun:0:0"
+          "kt:jc-youshanxicun:0:5"
         ]
       }
     ]
@@ -24538,7 +24114,7 @@
         "category": "重点实词",
         "source": "key_term",
         "legacyIds": [
-          "kt:jc-youshanxicun:0:1"
+          "kt:jc-youshanxicun:0:0"
         ]
       }
     ]
@@ -24554,7 +24130,7 @@
         "category": "重点实词",
         "source": "key_term",
         "legacyIds": [
-          "kt:jc-youshanxicun:0:2"
+          "kt:jc-youshanxicun:0:1"
         ]
       }
     ]
@@ -24570,7 +24146,7 @@
         "category": "重点实词",
         "source": "key_term",
         "legacyIds": [
-          "kt:jc-youshanxicun:0:3"
+          "kt:jc-youshanxicun:0:2"
         ]
       }
     ]
@@ -24586,7 +24162,7 @@
         "category": "重点实词",
         "source": "key_term",
         "legacyIds": [
-          "kt:jc-youshanxicun:0:4"
+          "kt:jc-youshanxicun:0:3"
         ]
       }
     ]
@@ -24726,7 +24302,7 @@
         ],
         "legacyIds": [
           "note:jc-huxintingkanxue:6",
-          "kt:jc-huxintingkanxue:2:3"
+          "kt:jc-huxintingkanxue:2:2"
         ],
         "example": "拥毳衣炉火"
       }
@@ -24853,7 +24429,7 @@
         ],
         "legacyIds": [
           "note:jc-huxintingkanxue:12",
-          "kt:jc-huxintingkanxue:2:5"
+          "kt:jc-huxintingkanxue:2:3"
         ],
         "example": "余强饮三大白而别"
       }
@@ -25030,40 +24606,6 @@
         "example": "问其姓氏,是金陵人",
         "legacyIds": [
           "kt:jc-huxintingkanxue:1:3"
-        ]
-      }
-    ]
-  },
-  {
-    "id": "word:jc-huxintingkanxue:拏:2",
-    "scope": "article",
-    "articleId": "jc-huxintingkanxue",
-    "word": "拏",
-    "meanings": [
-      {
-        "text": "撑(船)",
-        "category": "重点实词",
-        "source": "key_term",
-        "example": "余拏一小舟",
-        "legacyIds": [
-          "kt:jc-huxintingkanxue:2:2"
-        ]
-      }
-    ]
-  },
-  {
-    "id": "word:jc-huxintingkanxue:沆砀:2",
-    "scope": "article",
-    "articleId": "jc-huxintingkanxue",
-    "word": "沆砀",
-    "meanings": [
-      {
-        "text": "白汽弥漫的样子",
-        "category": "重点实词",
-        "source": "key_term",
-        "example": "雾凇沆砀",
-        "legacyIds": [
-          "kt:jc-huxintingkanxue:2:4"
         ]
       }
     ]
@@ -27688,7 +27230,7 @@
         ],
         "legacyIds": [
           "note:jc-baixuegaosongwupanguanguijing:16",
-          "kt:jc-baixuegaosongwupanguanguijing:0:12"
+          "kt:jc-baixuegaosongwupanguanguijing:0:11"
         ]
       }
     ]
@@ -27737,22 +27279,6 @@
         "source": "key_term",
         "legacyIds": [
           "kt:jc-baixuegaosongwupanguanguijing:0:9"
-        ]
-      }
-    ]
-  },
-  {
-    "id": "word:jc-baixuegaosongwupanguanguijing:掣:2",
-    "scope": "article",
-    "articleId": "jc-baixuegaosongwupanguanguijing",
-    "word": "掣",
-    "meanings": [
-      {
-        "text": "拉,扯。",
-        "category": "重点实词",
-        "source": "key_term",
-        "legacyIds": [
-          "kt:jc-baixuegaosongwupanguanguijing:0:11"
         ]
       }
     ]
@@ -29293,7 +28819,7 @@
         "source": "note",
         "legacyIds": [
           "note:jc-chuanjingdeyiren:1",
-          "kt:jc-chuanjingdeyiren:0:3"
+          "kt:jc-chuanjingdeyiren:0:2"
         ],
         "example": "国人道之"
       }
@@ -29343,7 +28869,7 @@
         "source": "note",
         "legacyIds": [
           "note:jc-chuanjingdeyiren:4",
-          "kt:jc-chuanjingdeyiren:0:2"
+          "kt:jc-chuanjingdeyiren:0:1"
         ],
         "example": "及其家穿井"
       }
@@ -29361,7 +28887,7 @@
         "source": "note",
         "legacyIds": [
           "note:jc-chuanjingdeyiren:5",
-          "kt:jc-chuanjingdeyiren:0:4"
+          "kt:jc-chuanjingdeyiren:0:3"
         ],
         "example": "国人道之"
       }
@@ -29379,7 +28905,7 @@
         "source": "note",
         "legacyIds": [
           "note:jc-chuanjingdeyiren:6",
-          "kt:jc-chuanjingdeyiren:0:8"
+          "kt:jc-chuanjingdeyiren:0:7"
         ],
         "example": "得一人之使"
       }
@@ -29397,26 +28923,9 @@
         "source": "note",
         "legacyIds": [
           "note:jc-chuanjingdeyiren:7",
-          "kt:jc-chuanjingdeyiren:0:7"
+          "kt:jc-chuanjingdeyiren:0:6"
         ],
         "example": "丁氏对曰"
-      }
-    ]
-  },
-  {
-    "id": "word:jc-chuanjingdeyiren:溉汲",
-    "scope": "article",
-    "articleId": "jc-chuanjingdeyiren",
-    "word": "溉汲",
-    "meanings": [
-      {
-        "text": "浇灌和打水",
-        "category": "重点实词",
-        "source": "key_term",
-        "example": "家无井而出溉汲",
-        "legacyIds": [
-          "kt:jc-chuanjingdeyiren:0:1"
-        ]
       }
     ]
   },
@@ -29432,7 +28941,7 @@
         "source": "key_term",
         "example": "闻之于宋君",
         "legacyIds": [
-          "kt:jc-chuanjingdeyiren:0:5"
+          "kt:jc-chuanjingdeyiren:0:4"
         ]
       }
     ]
@@ -29449,7 +28958,7 @@
         "source": "key_term",
         "example": "宋君令人问之于丁氏",
         "legacyIds": [
-          "kt:jc-chuanjingdeyiren:0:6"
+          "kt:jc-chuanjingdeyiren:0:5"
         ]
       }
     ]
@@ -29466,7 +28975,7 @@
         "source": "key_term",
         "example": "非得一人于井中也",
         "legacyIds": [
-          "kt:jc-chuanjingdeyiren:0:9"
+          "kt:jc-chuanjingdeyiren:0:8"
         ]
       }
     ]
@@ -30718,7 +30227,7 @@
         "source": "note",
         "legacyIds": [
           "note:xinglunan-qiyi:10",
-          "kt:xinglunan-qiyi:1:4"
+          "kt:xinglunan-qiyi:1:3"
         ],
         "example": "直挂云帆济沧海"
       }
@@ -30759,23 +30268,6 @@
     ]
   },
   {
-    "id": "word:xinglunan-qiyi:茫然",
-    "scope": "article",
-    "articleId": "xinglunan-qiyi",
-    "word": "茫然",
-    "meanings": [
-      {
-        "text": "内心空虚而不知所措的样子",
-        "category": "重点实词",
-        "source": "key_term",
-        "example": "拔剑四顾心茫然",
-        "legacyIds": [
-          "kt:xinglunan-qiyi:1:2"
-        ]
-      }
-    ]
-  },
-  {
     "id": "word:xinglunan-qiyi:安",
     "scope": "article",
     "articleId": "xinglunan-qiyi",
@@ -30787,7 +30279,7 @@
         "source": "key_term",
         "example": "多歧路，今安在",
         "legacyIds": [
-          "kt:xinglunan-qiyi:1:3"
+          "kt:xinglunan-qiyi:1:2"
         ]
       }
     ]
@@ -32261,7 +31753,7 @@
         "source": "note",
         "legacyIds": [
           "note:article-chibi-106:1",
-          "kt:article-chibi-106:0:1"
+          "kt:article-chibi-106:0:0"
         ],
         "example": "折戟沉沙铁未销"
       }
@@ -32279,7 +31771,7 @@
         "source": "note",
         "legacyIds": [
           "note:article-chibi-106:2",
-          "kt:article-chibi-106:0:2"
+          "kt:article-chibi-106:0:1"
         ],
         "example": "自将磨洗认前朝"
       }
@@ -32321,7 +31813,7 @@
         "source": "key_term",
         "example": "东风不与周郎便",
         "legacyIds": [
-          "kt:article-chibi-106:0:3"
+          "kt:article-chibi-106:0:2"
         ]
       }
     ]
@@ -32338,7 +31830,7 @@
         "source": "note",
         "legacyIds": [
           "note:article-chibi-106:5",
-          "kt:article-chibi-106:0:4"
+          "kt:article-chibi-106:0:3"
         ],
         "example": "铜雀春深锁二乔"
       }
@@ -32356,23 +31848,6 @@
         "source": "note",
         "legacyIds": [
           "note:article-chibi-106:6"
-        ]
-      }
-    ]
-  },
-  {
-    "id": "word:article-chibi-106:折戟",
-    "scope": "article",
-    "articleId": "article-chibi-106",
-    "word": "折戟",
-    "meanings": [
-      {
-        "text": "折断的戟",
-        "category": "重点实词",
-        "source": "key_term",
-        "example": "折戟沉沙铁未销",
-        "legacyIds": [
-          "kt:article-chibi-106:0:0"
         ]
       }
     ]
@@ -37032,23 +36507,6 @@
     ]
   },
   {
-    "id": "word:jc-caisangzi:逶迤",
-    "scope": "article",
-    "articleId": "jc-caisangzi",
-    "word": "逶迤",
-    "meanings": [
-      {
-        "text": "形容道路、山脉、河流等弯弯曲曲延续不绝的样子",
-        "category": "重点实词",
-        "source": "key_term",
-        "example": "绿水逶迤",
-        "legacyIds": [
-          "kt:jc-caisangzi:0:1"
-        ]
-      }
-    ]
-  },
-  {
     "id": "word:jc-caisangzi:隐隐",
     "scope": "article",
     "articleId": "jc-caisangzi",
@@ -37060,7 +36518,7 @@
         "source": "key_term",
         "example": "隐隐笙歌处处随",
         "legacyIds": [
-          "kt:jc-caisangzi:0:2"
+          "kt:jc-caisangzi:0:1"
         ]
       }
     ]
@@ -37077,7 +36535,7 @@
         "source": "key_term",
         "example": "微动涟漪",
         "legacyIds": [
-          "kt:jc-caisangzi:0:3"
+          "kt:jc-caisangzi:0:2"
         ]
       }
     ]
@@ -39768,23 +39226,6 @@
     ]
   },
   {
-    "id": "word:jc-chensheshejia:忿恚:2",
-    "scope": "article",
-    "articleId": "jc-chensheshejia",
-    "word": "忿恚",
-    "meanings": [
-      {
-        "text": "形容词的使动用法,使……恼怒",
-        "category": "词类活用",
-        "source": "key_term",
-        "example": "忿恚尉",
-        "legacyIds": [
-          "kt:jc-chensheshejia:2:4"
-        ]
-      }
-    ]
-  },
-  {
     "id": "word:jc-chensheshejia:道",
     "scope": "article",
     "articleId": "jc-chensheshejia",
@@ -40293,7 +39734,7 @@
         "source": "note",
         "legacyIds": [
           "note:jc-tpss:1",
-          "kt:jc-tpss:0:1"
+          "kt:jc-tpss:0:0"
         ],
         "example": "禅房花木深"
       }
@@ -40327,7 +39768,7 @@
         "source": "note",
         "legacyIds": [
           "note:jc-tpss:3",
-          "kt:jc-tpss:0:4"
+          "kt:jc-tpss:0:3"
         ],
         "example": "万籁此都寂"
       }
@@ -40353,24 +39794,7 @@
         "source": "key_term",
         "example": "但余钟磬音",
         "legacyIds": [
-          "kt:jc-tpss:0:5"
-        ]
-      }
-    ]
-  },
-  {
-    "id": "word:jc-tpss:初日",
-    "scope": "article",
-    "articleId": "jc-tpss",
-    "word": "初日",
-    "meanings": [
-      {
-        "text": "清晨的太阳",
-        "category": "重点实词",
-        "source": "key_term",
-        "example": "初日照高林",
-        "legacyIds": [
-          "kt:jc-tpss:0:0"
+          "kt:jc-tpss:0:4"
         ]
       }
     ]
@@ -40387,7 +39811,7 @@
         "source": "key_term",
         "example": "山光悦鸟性",
         "legacyIds": [
-          "kt:jc-tpss:0:2"
+          "kt:jc-tpss:0:1"
         ]
       }
     ]
@@ -40404,7 +39828,7 @@
         "source": "key_term",
         "example": "潭影空人心",
         "legacyIds": [
-          "kt:jc-tpss:0:3"
+          "kt:jc-tpss:0:2"
         ]
       }
     ]
@@ -41558,7 +40982,7 @@
         "source": "note",
         "legacyIds": [
           "note:jc-ywsyx:26",
-          "kt:jc-ywsyx:3:10"
+          "kt:jc-ywsyx:3:9"
         ],
         "example": "此之谓失其本心"
       }
@@ -41628,23 +41052,6 @@
         "example": "万钟于我何加焉",
         "legacyIds": [
           "kt:jc-ywsyx:3:7"
-        ]
-      }
-    ]
-  },
-  {
-    "id": "word:jc-ywsyx:穷乏",
-    "scope": "article",
-    "articleId": "jc-ywsyx",
-    "word": "穷乏",
-    "meanings": [
-      {
-        "text": "贫穷困乏。穷，指生活贫困；乏，指缺少物资。",
-        "category": "重点实词",
-        "source": "key_term",
-        "example": "所识穷乏者得我与",
-        "legacyIds": [
-          "kt:jc-ywsyx:3:9"
         ]
       }
     ]

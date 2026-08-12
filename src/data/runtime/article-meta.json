@@ -76,7 +76,7 @@
       "reciteCount": 1,
       "questionCount": 6,
       "zhentiCount": 2,
-      "wordCount": 6
+      "wordCount": 3
     },
     {
       "id": "jc-boyaguqin",
@@ -115,7 +115,7 @@
       "reciteCount": 2,
       "questionCount": 10,
       "zhentiCount": 1,
-      "wordCount": 14
+      "wordCount": 13
     },
     {
       "id": "jc-chushibiao",
@@ -141,7 +141,7 @@
       "reciteCount": 2,
       "questionCount": 9,
       "zhentiCount": 3,
-      "wordCount": 5
+      "wordCount": 3
     },
     {
       "id": "jc-beimingyouyu",
@@ -154,7 +154,7 @@
       "reciteCount": 0,
       "questionCount": 9,
       "zhentiCount": 1,
-      "wordCount": 20
+      "wordCount": 19
     },
     {
       "id": "jc-shiyiyuesirifengyudazuoer",
@@ -232,7 +232,7 @@
       "reciteCount": 1,
       "questionCount": 7,
       "zhentiCount": 2,
-      "wordCount": 5
+      "wordCount": 4
     },
     {
       "id": "jc-busuanzi-yongmei",
@@ -349,7 +349,7 @@
       "reciteCount": 0,
       "questionCount": 17,
       "zhentiCount": 3,
-      "wordCount": 50
+      "wordCount": 49
     },
     {
       "id": "jc-shangshanzaoxing",
@@ -375,7 +375,7 @@
       "reciteCount": 1,
       "questionCount": 12,
       "zhentiCount": 0,
-      "wordCount": 4
+      "wordCount": 3
     },
     {
       "id": "jc-yeyujibei",
@@ -427,7 +427,7 @@
       "reciteCount": 2,
       "questionCount": 6,
       "zhentiCount": 1,
-      "wordCount": 6
+      "wordCount": 5
     },
     {
       "id": "jc-rumengling",
@@ -453,7 +453,7 @@
       "reciteCount": 2,
       "questionCount": 8,
       "zhentiCount": 2,
-      "wordCount": 9
+      "wordCount": 8
     },
     {
       "id": "jc-sunquanquanxue",
@@ -505,7 +505,7 @@
       "reciteCount": 9,
       "questionCount": 18,
       "zhentiCount": 6,
-      "wordCount": 50
+      "wordCount": 47
     },
     {
       "id": "jc-shanpoyang-tongguanhaigu",
@@ -531,7 +531,7 @@
       "reciteCount": 1,
       "questionCount": 4,
       "zhentiCount": 0,
-      "wordCount": 7
+      "wordCount": 6
     },
     {
       "id": "jc-yueyanglouji",
@@ -739,7 +739,7 @@
       "reciteCount": 2,
       "questionCount": 16,
       "zhentiCount": 0,
-      "wordCount": 11
+      "wordCount": 8
     },
     {
       "id": "jc-chao-tian-zi-yong-la-ba",
@@ -791,7 +791,7 @@
       "reciteCount": 0,
       "questionCount": 15,
       "zhentiCount": 3,
-      "wordCount": 53
+      "wordCount": 52
     },
     {
       "id": "jc-thyj",
@@ -895,7 +895,7 @@
       "reciteCount": 0,
       "questionCount": 10,
       "zhentiCount": 2,
-      "wordCount": 39
+      "wordCount": 38
     },
     {
       "id": "jc-huanxisha-mmqh",
@@ -908,7 +908,7 @@
       "reciteCount": 2,
       "questionCount": 4,
       "zhentiCount": 1,
-      "wordCount": 5
+      "wordCount": 4
     },
     {
       "id": "jc-huanxisha-sxysnpx",
@@ -921,7 +921,7 @@
       "reciteCount": 1,
       "questionCount": 6,
       "zhentiCount": 1,
-      "wordCount": 4
+      "wordCount": 3
     },
     {
       "id": "jc-huanxisha-yiquxincijiuyibei",
@@ -934,7 +934,7 @@
       "reciteCount": 1,
       "questionCount": 16,
       "zhentiCount": 1,
-      "wordCount": 6
+      "wordCount": 5
     },
     {
       "id": "jc-yujiaao-tianjieyuntaolianxiaowu",
@@ -986,7 +986,7 @@
       "reciteCount": 4,
       "questionCount": 26,
       "zhentiCount": 2,
-      "wordCount": 10
+      "wordCount": 9
     },
     {
       "id": "jc-huxintingkanxue",
@@ -999,7 +999,7 @@
       "reciteCount": 5,
       "questionCount": 25,
       "zhentiCount": 5,
-      "wordCount": 25
+      "wordCount": 23
     },
     {
       "id": "jc-manjianghong-xiaozhujinghua",
@@ -1090,7 +1090,7 @@
       "reciteCount": 4,
       "questionCount": 17,
       "zhentiCount": 3,
-      "wordCount": 21
+      "wordCount": 20
     },
     {
       "id": "jc-xiangjianhuan",
@@ -1191,7 +1191,7 @@
       "reciteCount": 0,
       "questionCount": 16,
       "zhentiCount": 2,
-      "wordCount": 12
+      "wordCount": 11
     },
     {
       "id": "jc-zhuliguan",
@@ -1282,7 +1282,7 @@
       "reciteCount": 4,
       "questionCount": 18,
       "zhentiCount": 3,
-      "wordCount": 15
+      "wordCount": 14
     },
     {
       "id": "jc-jichengtiansiyeyou",
@@ -1360,7 +1360,7 @@
       "reciteCount": 2,
       "questionCount": 19,
       "zhentiCount": 2,
-      "wordCount": 8
+      "wordCount": 7
     },
     {
       "id": "jc-guosongyuanchenchuiqigongdian",
@@ -1490,7 +1490,7 @@
       "reciteCount": 4,
       "questionCount": 6,
       "zhentiCount": 1,
-      "wordCount": 5
+      "wordCount": 4
     },
     {
       "id": "jc-qiantanghuchunxing",
@@ -1555,7 +1555,7 @@
       "reciteCount": 5,
       "questionCount": 15,
       "zhentiCount": 4,
-      "wordCount": 117
+      "wordCount": 116
     },
     {
       "id": "jc-yanmentaishouxing",
@@ -1581,7 +1581,7 @@
       "reciteCount": 2,
       "questionCount": 6,
       "zhentiCount": 0,
-      "wordCount": 8
+      "wordCount": 7
     },
     {
       "id": "jc-mashuo",
@@ -1607,7 +1607,7 @@
       "reciteCount": 2,
       "questionCount": 15,
       "zhentiCount": 6,
-      "wordCount": 30
+      "wordCount": 29
     },
     {
       "id": "jc-huanghelou",
@@ -1639,9 +1639,9 @@
   "counts": {
     "learning": 126,
     "recite": 354,
-    "cards": 2361,
+    "cards": 2326,
     "globalWords": 134,
-    "senses": 2931,
+    "senses": 2896,
     "totalQuestions": 1961,
     "zhenti": 302,
     "collections": 17,

@@ -2,13 +2,13 @@
   "schemaVersion": 1,
   "source": {
     "articles": 126,
-    "wordMeanings": 3719,
+    "wordMeanings": 3684,
     "questions": 1849
   },
   "runtime": {
     "articles": 126,
-    "words": 2361,
-    "wordMeanings": 2931,
+    "words": 2326,
+    "wordMeanings": 2896,
     "questions": 1961,
     "collections": 17
   },
