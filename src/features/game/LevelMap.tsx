@@ -62,7 +62,10 @@ function LevelWorld({
           <div className="gx-world-title">{grade}</div>
           <div className="gx-world-sub">全通本世界开启下一世界</div>
         </div>
-        <span className="gx-world-progress">{done}/{count}</span>
+        <div className="gx-world-prog">
+          <span className="gx-world-progress">{done}/{count}</span>
+          <div className="gx-progress-track"><div className="gx-progress-fill" style={{ width: `${count ? (done / count) * 100 : 0}%` }} /></div>
+        </div>
       </div>
       <div className="gx-canvas" style={{ height: H }}>
         <svg className="gx-svg" viewBox={`0 0 100 ${H}`} preserveAspectRatio="none" aria-hidden="true">
@@ -98,7 +101,7 @@ function LevelWorld({
                   <span className="lock">🔒</span>
                 </span>
               )}
-              <span className={`gx-node-label${passed ? ' done' : ''}`}>{g(article.title)}</span>
+              <span className={`gx-node-label${passed ? ' done' : ''}`} title={g(article.title)}>{g(article.title)}</span>
               <span className="gx-node-count">{total} 题</span>
             </div>
           );

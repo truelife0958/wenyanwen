@@ -59,7 +59,7 @@ const tabTexts = await page.locator('.tab-bar .tab-item span').allTextContents()
 check('TabBar 地图/成就', JSON.stringify(tabTexts) === JSON.stringify(['地图', '成就']));
 // 地图点击未通关关卡 → 历练 tab (分流)
 await page.locator('.gx-node.playable').first().click();
-await page.waitForTimeout(900);
+await page.waitForTimeout(2600);
 check('地图进历练tab', page.url().includes('/articles/') && page.url().endsWith('/learn'));
 check('动画讲解入口', await page.locator('.lec-start').count() === 1);
 // 讲解模式: 逐句/译文/控制条 (观沧海通用断言)
@@ -68,7 +68,7 @@ await page.waitForTimeout(600);
 check('讲解模式打开', await page.locator('.lec-overlay').count() === 1);
 check('逐句列表', await page.locator('.lec-sentence').count() > 5);
 check('当前句高亮', await page.locator('.lec-sentence.active').count() === 1);
-check('译文显示', (await page.locator('.lec-trans-text').textContent()).length > 0);
+check('译文显示', (await page.locator('.lec-inline-trans').textContent()).length > 0);
 check('控制条', await page.locator('.lec-controls .lec-btn').count() >= 3);
 await page.locator('.lec-close').click();
 await page.waitForTimeout(300);

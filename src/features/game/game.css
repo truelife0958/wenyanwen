@@ -550,3 +550,23 @@
   .gx-level-row:nth-child(even)::before { left: 40px; }
   .gx-node { width: 44px; height: 44px; font-size: 0.95rem; }
 }
+
+/* ── 世界进度条 (2026-08-13 优化) ── */
+.gx-world-prog { display: flex; flex-direction: column; align-items: flex-end; gap: 4px; }
+.gx-progress-track {
+  width: 64px; height: 4px;
+  border-radius: 2px;
+  background: rgba(255, 255, 255, 0.12);
+  overflow: hidden;
+}
+.gx-progress-fill {
+  height: 100%;
+  border-radius: 2px;
+  background: linear-gradient(90deg, var(--gx-jade), var(--gx-gold));
+  transition: width 0.5s ease;
+}
+/* 节点标签省略 + 触控区 */
+.gx-node-label { max-width: 132px; }
+@media (max-width: 480px) {
+  .gx-node-label { max-width: 96px; }
+}
