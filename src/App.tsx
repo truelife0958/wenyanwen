@@ -1,7 +1,6 @@
 import { lazy, Suspense } from 'react';
 import { useEffect } from 'react';
 import { Navigate, Route, Routes, useNavigate } from 'react-router-dom';
-import Home from './features/home/Home';
 import TabBar from './features/home/TabBar';
 import ErrorBoundary from './shared/ui/ErrorBoundary';
 import { ErrorBookProvider } from './features/errorbook/store';
@@ -70,13 +69,13 @@ export default function App() {
           <Suspense fallback={<PageLoader />}>
             <ErrorBoundary>
               <Routes>
-                <Route path="/" element={<Home />} />
+                <Route path="/" element={<LevelMap />} />
                 <Route path="/articles/:id" element={<ArticlePage />} />
                 <Route path="/articles/:id/:tab" element={<ArticlePage />} />
                 <Route path="/moxie" element={<MoxieHome />} />
                 <Route path="/moxie/:id" element={<MoxieRedirect />} />
                 <Route path="/moxie/errors" element={<MoxieErrors />} />
-                <Route path="/map" element={<LevelMap />} />
+                <Route path="/map" element={<Navigate replace to="/" />} />
                 <Route path="/achievements" element={<Achievements />} />
                 <Route path="/errors" element={<Navigate replace to="/moxie/errors" />} />
                 <Route path="/learning/:title" element={<LegacyArticleRedirect />} />

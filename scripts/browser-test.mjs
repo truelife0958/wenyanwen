@@ -1,6 +1,6 @@
 #!/usr/bin/env node
-/** 篇目中心浏览器回归测试 (匹配当前五标签工作区 UI)。
- *  覆盖: 首页(搜索/年级tab/推荐/任务) → 篇目五标签(历练/鉴赏/考点/注释/默诵)
+/** 浏览器回归测试 (匹配当前地图首页 + 五标签工作区 UI)。
+ *  覆盖: 闯关地图首页(画布/节点/路径/TabBar) → 篇目五标签(历练/鉴赏/考点/注释/默诵)
  *  → 默诵模块 → 失误回炉 → 旧路由 → 移动端无溢出。
  *  用法: node scripts/browser-test.mjs [baseURL] */
 import { chromium } from 'playwright-core';
@@ -38,31 +38,29 @@ await goto();
 await page.evaluate(() => localStorage.clear());
 await page.reload({ waitUntil: 'networkidle' });
 
-console.log('=== 1. 篇目首页 ===');
+console.log('=== 1. 闯关地图首页 ===');
 check('标题正确', (await page.title()).includes('文言文'));
-check('顶部导航已移除', await page.locator('.app-nav').count() === 0);
 check('头部统计动态', /\d+ 篇篇章 · \d+ 篇默诵/.test(await page.locator('.app-header-info').textContent()));
-check('今日历练标题', await page.locator('.today-title').count() === 1);
-check('今日推荐卡 1 张', await page.locator('.today-recommend .rec-card').count() === 1);
-check('今日任务 2 项', await page.locator('.today-tasks .task-item').count() === 2);
-check('快捷入口已移除', await page.locator('.home-entry-grid').count() === 0);
-check('六个年级 tab', await page.locator('.grade-tabs .grade-tab').count() === 6);
-check('篇目卡片渲染', await page.locator('.article-card').count() >= 15);
-check('首页含 论语十二章', (await page.locator('.article-card .ac-title').allTextContents()).includes('论语十二章'));
-check('必考徽章存在', await page.locator('.ac-badge:has-text("中考必考")').count() >= 1);
-check('今日推荐卡圆角', await page.evaluate(() => { const el = document.querySelector('.rec-card'); return el ? parseFloat(getComputedStyle(el).borderRadius) >= 12 : false; }));
-
-await page.locator('.home-search-box input').fill('岳阳楼记');
-await page.waitForTimeout(250);
-check('篇名搜索过滤', await page.locator('.article-card').count() === 1);
-await page.locator('.home-search-box input').fill('范仲淹');
-await page.waitForTimeout(250);
-check('作者搜索有结果', await page.locator('.article-card').count() >= 1);
-await page.locator('.home-search-box input').fill('岳阳楼记');
-await page.waitForTimeout(250);
+check('地图世界渲染', await page.locator('.gx-world-card').count() >= 3);
+check('关卡节点渲染', await page.locator('.gx-node-wrap').count() >= 100);
+check('金色路径渲染', await page.locator('.gx-svg path').count() >= 6);
+check('地图头部标题', (await page.locator('.gx-ach-head h2').textContent()).includes('闯关地图'));
+check('成就入口', await page.locator('.gx-cta:has-text("成就")').count() === 1);
+check('已移除篇目列表', await page.locator('.article-card').count() === 0);
+check('已移除今日历练', await page.locator('.today-title').count() === 0);
+check('已移除搜索框', await page.locator('.home-search-box').count() === 0);
+check('已移除推荐卡', await page.locator('.rec-card').count() === 0);
+check('TabBar 两 tab', await page.locator('.tab-bar .tab-item').count() === 2);
+const tabTexts = await page.locator('.tab-bar .tab-item span').allTextContents();
+check('TabBar 地图/成就', JSON.stringify(tabTexts) === JSON.stringify(['地图', '成就']));
+// 地图点击进入关卡页默诵 tab
+await page.locator('.gx-node.playable, .gx-node.done').first().click();
+await page.waitForTimeout(900);
+check('地图进关卡页默诵', page.url().includes('/articles/') && page.url().includes('/moxie'));
+check('默诵训练内嵌', await page.locator('.moxie-trainer').count() === 1);
 
 console.log('\n=== 2. 篇目工作区(历练) ===');
-await page.locator('.article-card:has-text("岳阳楼记")').first().click();
+await goto('/articles/jc-yueyanglouji/learn');
 await page.waitForTimeout(700);
 check('进入稳定路由', page.url().includes('/articles/jc-yueyanglouji/learn'));
 check('篇目标题', (await page.locator('.page-header .page-title').textContent()).includes('岳阳楼记'));
@@ -148,6 +146,9 @@ check('年级 tab', await page.locator('.grade-tab').count() >= 3);
 check('统计区', await page.locator('.moxie-stats .moxie-stat').count() === 4);
 
 console.log('\n=== 7. 旧路由与深链 ===');
+await goto('/map');
+check('/map 重定向首页', page.url().endsWith('/'));
+check('首页地图渲染', await page.locator('.gx-world-card').count() >= 1);
 await goto('/learning/' + encodeURIComponent('岳阳楼记'));
 check('旧历练链接跳转', page.url().includes('/articles/jc-yueyanglouji/learn'));
 await goto('/moxie/' + encodeURIComponent('moxie-岳阳楼记'));
@@ -156,8 +157,6 @@ await goto('/review');
 check('/review 回首页', page.url().endsWith('/') || page.url().includes('/articles') === false && page.url().includes('/moxie') === false);
 await goto('/cards');
 check('/cards 回首页', !page.url().includes('/cards'));
-await goto('/map');
-check('闯关地图可渲染', await page.locator('.gx-world').count() >= 1);
 await goto('/achievements');
 check('成就墙可渲染', await page.locator('.gx-ach-card').count() >= 10);
 await goto('/errors');
@@ -167,7 +166,7 @@ console.log('\n=== 8. 移动端布局 ===');
 const mobile = await context.newPage();
 await mobile.setViewportSize({ width: 375, height: 812 });
 for (const [hash, label] of [
-  ['', '首页'],
+  ['', '地图首页'],
   ['/articles/jc-yueyanglouji/learn', '历练'],
   ['/articles/jc-yueyanglouji/appreciate', '鉴赏'],
   ['/articles/jc-yueyanglouji/exam', '考点'],

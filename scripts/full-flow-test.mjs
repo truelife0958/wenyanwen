@@ -39,18 +39,19 @@ await page.reload({ waitUntil: 'networkidle' });
 await page.waitForTimeout(400);
 
 // ============ 1. 首屏 ============
-console.log('=== 1. 首屏 ===');
+// ============ 1. 首屏 (闯关地图) ============
+console.log('=== 1. 首屏 (闯关地图) ===');
 check('标题', (await page.title()).includes('文言文'));
-check('顶部导航已移除', await page.locator('.app-nav').count() === 0);
-check('快捷入口已移除', await page.locator('.home-entry-grid').count() === 0);
 check('统计动态', /\d+ 篇篇章 · \d+ 篇默诵/.test(await page.locator('.app-header-info').textContent()));
-check('首页卡片', await page.locator('.article-card').count() >= 15);
+check('地图世界渲染', await page.locator('.gx-world-card').count() >= 3);
+check('关卡节点渲染', await page.locator('.gx-node-wrap').count() >= 100);
+check('金色路径渲染', await page.locator('.gx-svg path').count() >= 6);
+check('TabBar 两 tab', await page.locator('.tab-bar .tab-item').count() === 2);
+check('已移除篇目列表', await page.locator('.article-card').count() === 0);
 
 // ============ 2. 历练流 ============
 console.log('\n=== 2. 历练流 (阅读/注释/译文) ===');
-await page.locator('.home-search-box input').fill('岳阳楼记');
-await page.waitForTimeout(250);
-await page.locator('.article-card').first().click();
+await goto('/articles/jc-yueyanglouji/learn');
 await page.waitForTimeout(700);
 check('进入历练页', page.url().includes('/learn'));
 check('原文渲染', await page.locator('.para-orig').count() > 0);
@@ -168,7 +169,7 @@ console.log('\n=== 9. 移动端 (375px) ===');
 const mob = await ctx.newPage();
 await mob.setViewportSize({ width: 375, height: 812 });
 for (const [label, h] of [
-  ['首页', ''], ['历练', '/articles/jc-ly/learn'], ['默诵', '/moxie'],
+  ['地图首页', ''], ['历练', '/articles/jc-ly/learn'], ['默诵', '/moxie'],
   ['默诵练习', '/moxie/moxie-guan-cang-hai'],
 ]) {
   await mob.goto(BASE.replace(/\/$/, '') + h, { waitUntil: 'networkidle' });

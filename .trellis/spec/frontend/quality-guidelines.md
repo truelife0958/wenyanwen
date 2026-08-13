@@ -28,7 +28,8 @@ npm run validate   # 含段 8 raw 唯一性 / 段 9 真题重复 / 段 10 runtim
 
 ## 前端约定
 
-- TabBar 固定 3 tab（历练/闯关/成就）；新功能入口不新增 tab。
+- TabBar 固定 2 tab（地图/成就）；新功能入口不新增 tab。
+- **地图首页（2026-08-13）**：`/` 直接渲染画布式闯关地图（LevelMap, lazy）——关卡节点按 S 形绝对定位（x 百分比 15/60 交替 + y 像素 GAP 124），SVG 三次贝塞尔金色路径连接（vector-effect 保线宽），按年级分"世界"卡片。`/map` 重定向 `/`。首页无英雄区/今日历练/搜索/篇目列表（Home.tsx/home.css/HeroStats.tsx 已删）。篇目唯一入口=地图关卡→`/articles/:id/moxie`。改地图布局须同步 LevelMap 坐标常量（NODE/GAP/X_LEFT/X_RIGHT/TOP）。
 - **游戏化术语映射（2026-08-13）**：UI 消灭"学习/默写"二字（学习→历练、默写→默诵）。数据 json 保持原值（题型"原文默写"、标题"默写效果检测"、考点"背诵默写"等），展示层统一走 `src/shared/lib/game-terms.ts` 的 `g()`/`moxieTypeLabel()`；静态 UI 文案直接改字。新增"默写/学习"文案必须经映射或直接禁用。
 - **关卡页结构**：篇目工作区 `/articles/:id/:tab` 是唯一关卡页（历练/鉴赏/考点/注释/默诵）；默诵 tab 内嵌共享训练组件 `src/features/moxie/MoxieTrainer.tsx`（题型 tab + 判分 + XP + 失误入库），判分副作用统一走 `saveMoxieResult`/`game.addResult`/`addWrong`。`/moxie/:id` 由懒组件 `MoxieRedirect` 重定向→关卡页默诵 tab。
 - **首屏性能**：`article-meta.json` counts 含 `moxieArticles/moxieQuestions`（build 生成）；首页/App 只从 counts 读默写统计，**禁止** import `data/moxie.ts`（会静态拉入 555KB moxie.json chunk）。需用默写数据的页面直接引 `data/moxie.ts`（路由懒加载生效）。

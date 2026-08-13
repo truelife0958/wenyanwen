@@ -82,11 +82,11 @@ console.log('=== 布局一致性抽查 ===');
 await desktop.goto(BASE, { waitUntil: 'networkidle' });
 await desktop.waitForTimeout(400);
 const shared = await desktop.evaluate(() => {
-  const hasTitle = !!document.querySelector('.page-title, .section-title, .home-hero .hero-title, .today-title');
+  const hasTitle = !!document.querySelector('.page-title, .section-title, .home-hero .hero-title, .today-title, .gx-ach-head h2, .gx-world-title');
   const chipRadius = document.querySelector('.chip, .cat-chip, .pf-chips .chip') ? getComputedStyle(document.querySelector('.chip, .cat-chip, .pf-chips .chip')).borderRadius : null;
   return { hasTitle, chipRadius };
 });
-report(desktop, '共享类', shared.hasTitle, '首页应有 section-title/page-title 之一');
+report(desktop, '共享类', shared.hasTitle, '首页应有 section-title/page-title/地图标题 之一');
 console.log(`  共享类抽查: chip 圆角 = ${shared.chipRadius}`);
 
 await browser.close();

@@ -39,12 +39,11 @@ try {
   console.log('=== 首页 ===');
   const home = render('/');
   check('含顶栏', home.includes('文言文闯关'));
-  check('搜索框', home.includes('home-search-box'));
-  check('今日推荐卡', home.includes('today-recommend') && home.includes('rec-card'));
-  check('6 个年级 tab', (home.match(/class="grade-tab"|grade-tab active/g) || []).length === 6);
-  check('篇目卡片网格', home.includes('article-grid') && home.includes('article-card'));
-  check('进度概览', home.includes('today-tasks'));
-  check('首页包含篇目 论语十二章', home.includes('论语十二章'));
+  check('首页无搜索框', !home.includes('home-search-box'));
+  check('首页无篇目列表', !home.includes('article-grid'));
+  check('首页无今日历练', !home.includes('today-recommend'));
+  check('页脚文案', home.includes('历练 + 默诵'));
+  check('地图懒加载壳', home.includes('page-loader') || home.includes('app-main'));
 
   const { default: ArticlePage } = await vite.ssrLoadModule('/src/features/learning/ArticlePage.tsx');
   const article = renderToString(
