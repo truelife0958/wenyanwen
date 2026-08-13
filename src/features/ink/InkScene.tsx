@@ -44,11 +44,14 @@ class InkRenderer {
     this.renderer.setPixelRatio(Math.min(window.devicePixelRatio || 1, 2));
     this.clock = new THREE.Clock();
 
+    // GPU 粒子: 位置/颜色/大小/速度写入 attribute, 顶点动画在着色器内完成 (CPU 零每帧开销)
     const palette = [0xc9a45c, 0x4a8f84, 0xece4d2, 0x8a7440];
-    const count = isMobile ? 450 : 1500;
+    const count = isMobile ? 400 : 900;
     const geo = new THREE.BufferGeometry();
     const pos = new Float32Array(count * 3);
     const col = new Float32Array(count * 3);
+    const size = new Float32Array(count);
+    const spd = new Float32Array(count);
     const color = new THREE.Color();
     for (let i = 0; i < count; i++) {
       pos[i * 3] = (Math.random() - 0.5) * 90;
@@ -56,17 +59,49 @@ class InkRenderer {
       pos[i * 3 + 2] = (Math.random() - 0.5) * 40;
       color.setHex(palette[i % palette.length]);
       col[i * 3] = color.r; col[i * 3 + 1] = color.g; col[i * 3 + 2] = color.b;
+      size[i] = 0.6 + Math.random() * 1.4;
+      spd[i] = 0.3 + Math.random() * 0.7;
     }
     geo.setAttribute('position', new THREE.BufferAttribute(pos, 3));
-    geo.setAttribute('color', new THREE.BufferAttribute(col, 3));
+    geo.setAttribute('aColor', new THREE.BufferAttribute(col, 3));
+    geo.setAttribute('aSize', new THREE.BufferAttribute(size, 1));
+    geo.setAttribute('aSpeed', new THREE.BufferAttribute(spd, 1));
 
-    const mat = new THREE.PointsMaterial({
-      size: 1.1, transparent: true, opacity: 0.5, vertexColors: true,
-      sizeAttenuation: true, depthWrite: false, blending: THREE.AdditiveBlending,
+    const uniforms = { uTime: { value: 0 } };
+    const mat = new THREE.ShaderMaterial({
+      uniforms,
+      transparent: true,
+      depthWrite: false,
+      blending: THREE.AdditiveBlending,
+      vertexShader: `
+        attribute vec3 aColor;
+        attribute float aSize;
+        attribute float aSpeed;
+        uniform float uTime;
+        varying vec3 vColor;
+        void main() {
+          vColor = aColor;
+          vec3 p = position;
+          p.y += sin(uTime * 0.5 * aSpeed + aSize * 40.0) * 0.6;
+          p.x += cos(uTime * 0.35 * aSpeed + aSize * 30.0) * 0.35;
+          vec4 mv = modelViewMatrix * vec4(p, 1.0);
+          gl_PointSize = aSize * 3.2 * (260.0 / -mv.z);
+          gl_Position = projectionMatrix * mv;
+        }
+      `,
+      fragmentShader: `
+        varying vec3 vColor;
+        void main() {
+          float d = distance(gl_PointCoord, vec2(0.5));
+          float a = smoothstep(0.5, 0.22, d);
+          if (a < 0.02) discard;
+          gl_FragColor = vec4(vColor, a * 0.6);
+        }
+      `,
     });
     const pts = new THREE.Points(geo, mat);
     this.scene.add(pts);
-    this.points.push({ mesh: pts, geo, speed: 0.08, phase: Math.random() * Math.PI * 2 });
+    this.points.push({ mesh: pts, geo, mat, uniforms });
 
     const onResize = () => this.resize();
     const onVis = () => {
@@ -96,17 +131,12 @@ class InkRenderer {
       if (!this.running) return;
       this.raf = requestAnimationFrame(loop);
       const t = this.clock.getElapsedTime();
+      // GPU 粒子: 仅更新 uniform 时间, 顶点动画在着色器内
       const p = this.points[0];
       if (p) {
-        const attr = p.geo.attributes.position;
-        const arr = attr.array;
-        for (let i = 0; i < arr.length; i += 3) {
-          arr[i + 1] += Math.sin(t * p.speed + i) * 0.006;
-          arr[i] += Math.cos(t * p.speed * 0.7 + i * 0.5) * 0.004;
-        }
-        attr.needsUpdate = true;
-        p.mesh.rotation.z = Math.sin(t * 0.05 + p.phase) * 0.06;
-        p.mesh.rotation.y = Math.cos(t * 0.04 + p.phase) * 0.1;
+        p.uniforms.uTime.value = t;
+        p.mesh.rotation.y = Math.cos(t * 0.04) * 0.12;
+        p.mesh.rotation.z = Math.sin(t * 0.05) * 0.05;
       }
       this.camera.position.z = 60 + Math.sin(t * 0.3) * 2;
       this.camera.position.x = Math.sin(t * 0.1) * 2;
@@ -204,8 +234,17 @@ export default function InkScene() {
       requestAnimationFrame(() => { renderer!.resize(); renderer!.start(); });
     })();
 
+    // 深浅页检测: 深色页 (地图/成就 .gx-sky) 粒子全亮; 浅色页 (阅读/训练) 粒子压到几乎不可见, 避免干扰正文
+    const setOpacity = () => {
+      const dark = !!document.querySelector('.gx-sky, .lec-overlay');
+      canvas.style.opacity = dark ? '0.85' : '0.14';
+    };
+    setOpacity();
+    const opacityTimer = setInterval(setOpacity, 600);
+
     return () => {
       cancelled = true;
+      clearInterval(opacityTimer);
       if (active === renderer) active = null;
       renderer?.dispose();
       canvas.remove();

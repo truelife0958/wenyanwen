@@ -84,8 +84,8 @@ export default function LectureMode({
       segs.forEach((sent, si) => {
         const sKey = `s-${idx}-${si}`;
         steps.push({ kind: 'sentence', text: sent, paraIdx: idx, key: sKey });
-        // 重点字词卡
-        for (const wi of wordForSentence(sent)) {
+        // 重点字词卡 (每句最多 2 张, 避免流程过长)
+        for (const wi of wordForSentence(sent).slice(0, 2)) {
           steps.push({
             kind: 'word', text: String((wi as any).word || ''), paraIdx: idx,
             word: String((wi as any).word || ''),
@@ -147,11 +147,16 @@ export default function LectureMode({
     setDone(false);
     inkBurst(); // 3D 粒子特效
     const st = steps[idx];
-    if (!st || !ttsSupports()) return;
+    if (!st) return;
+    // 静音推进: 无 TTS 时按文本时长自动定时 (每字 ~200ms, 最短 1.6s), 支持自动连播
+    const silentAdvance = () => {
+      if (playingRef.current) setTimeout(() => playAt(idx + 1), Math.max(1600, (st.text?.length || 8) * 200));
+    };
+    if (!ttsSupports()) { silentAdvance(); return; }
     if (st.kind === 'sentence') speak(st.text, () => { if (playingRef.current) playAt(idx + 1); else setPlaying(false); }, undefined, rate);
     else if (st.kind === 'word') speak(st.word || '', () => { if (playingRef.current) playAt(idx + 1); else setPlaying(false); }, undefined, rate);
     else if (st.kind === 'key') speak(st.text, () => { if (playingRef.current) playAt(idx + 1); else setPlaying(false); }, undefined, rate);
-    else setPlaying(false); // analysis/practice: 停留, 不自动朗读
+    else { silentAdvance(); } // analysis/practice: 停留片刻后自动进
   };
 
   const toggle = () => {
