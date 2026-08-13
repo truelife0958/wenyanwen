@@ -1,5 +1,5 @@
 /**
- * 本篇注释 — 独立标签页 (学习/鉴赏/考点/注释/默写 五 tab 之一)。
+ * 本篇注释 — 独立标签页 (历练/鉴赏/考点/注释/默诵 五 tab 之一)。
  * 课文注释词列表, 每条一张卡片 (参照鉴赏 appr-para 样式), 全展开。
  */
 import { useMemo } from 'react';
@@ -19,7 +19,7 @@ export default function ArticleNotes({ article }: { article: CanonicalArticle })
     [words],
   );
 
-  // 考点词: 词义默写中考查过的词 → 标"考点"徽章
+  // 考点词: 词义默诵中考查过的词 → 标"考点"徽章
   const examWords = useMemo(() => {
     const set = new Set<string>();
     for (const art of moxieArticles) {
@@ -34,7 +34,7 @@ export default function ArticleNotes({ article }: { article: CanonicalArticle })
     return set;
   }, [article.title]);
 
-  // 序号: 按原文首次出现顺序 (与学习页角标一致)
+  // 序号: 按原文首次出现顺序 (与历练页角标一致)
   const noteNums = useMemo(() => {
     const map = new Map<string, number>();
     const seen = new Set<string>();
@@ -56,7 +56,7 @@ export default function ArticleNotes({ article }: { article: CanonicalArticle })
     return (
       <EmptyState
         title="本篇暂无注释"
-        hint="可以继续学习课文，或切换其他标签。"
+        hint="可以继续历练课文，或切换其他标签。"
       />
     );
   }

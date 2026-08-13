@@ -12,7 +12,7 @@ export default function HeroStats() {
   const achCount = state.achievements.length;
 
   return (
-    <section className="gx-hero" aria-label="学习等级">
+    <section className="gx-hero" aria-label="历练等级">
       <div className="gx-hero-top">
         <div className="gx-level-badge">
           {prog.level}
@@ -20,7 +20,7 @@ export default function HeroStats() {
         </div>
         <div className="gx-hero-mid">
           <div className="gx-title">· {prog.title} ·</div>
-          <div className="gx-sub">每次练习都涨经验，越练越强</div>
+          <div className="gx-sub">每次闯关都涨经验，越战越强</div>
           <div className="gx-xp-bar" role="progressbar" aria-valuenow={prog.cur} aria-valuemax={prog.need} aria-label="经验值">
             <div className="gx-xp-fill" style={{ width: `${Math.max(4, prog.pct)}%` }} />
           </div>

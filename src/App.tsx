@@ -13,7 +13,7 @@ import { useParams } from 'react-router-dom';
 
 const ArticlePage = lazy(() => import('./features/learning/ArticlePage'));
 const MoxieHome = lazy(() => import('./features/moxie/MoxieHome'));
-const MoxieArticle = lazy(() => import('./features/moxie/MoxieArticle'));
+const MoxieRedirect = lazy(() => import('./features/moxie/MoxieRedirect'));
 const MoxieErrors = lazy(() => import('./features/moxie/MoxieErrors'));
 const LevelMap = lazy(() => import('./features/game/LevelMap'));
 const Achievements = lazy(() => import('./features/game/Achievements'));
@@ -31,7 +31,7 @@ function PageLoader() {
 }
 
 /** S5: 恢复 404.html 记录的深链路径 (纯静态托管无 history fallback 时兜底) */
-/** 空闲预加载全量数据: 首屏不下载, 用户浏览首页时后台拉取, 进入学习/练习页秒开 */
+/** 空闲预加载全量数据: 首屏不下载, 用户浏览首页时后台拉取, 进入历练/练习页秒开 */
 function PreloadCore() {
   useEffect(() => {
     const idle = (window as Window & { requestIdleCallback?: (cb: () => void) => number }).requestIdleCallback;
@@ -62,8 +62,8 @@ export default function App() {
         <DeepLinkRestore />
         <PreloadCore />
         <header className="app-header">
-          <h1>文言文学习</h1>
-          <span className="app-header-info">{counts.learning} 篇课文 · {counts.moxieArticles} 篇默写</span>
+          <h1>文言文闯关</h1>
+          <span className="app-header-info">{counts.learning} 篇篇章 · {counts.moxieArticles} 篇默诵</span>
         </header>
 
         <main className="app-main">
@@ -74,7 +74,7 @@ export default function App() {
                 <Route path="/articles/:id" element={<ArticlePage />} />
                 <Route path="/articles/:id/:tab" element={<ArticlePage />} />
                 <Route path="/moxie" element={<MoxieHome />} />
-                <Route path="/moxie/:id" element={<MoxieArticle />} />
+                <Route path="/moxie/:id" element={<MoxieRedirect />} />
                 <Route path="/moxie/errors" element={<MoxieErrors />} />
                 <Route path="/map" element={<LevelMap />} />
                 <Route path="/achievements" element={<Achievements />} />
@@ -90,7 +90,7 @@ export default function App() {
         <TabBar />
         <GameFx />
         <footer className="app-footer">
-          <p>武汉中考文言文 · 学习 + 默写练习</p>
+          <p>武汉中考文言文 · 历练 + 默诵</p>
         </footer>
       </div>
       </GameProvider>

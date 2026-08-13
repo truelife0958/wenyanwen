@@ -4,6 +4,7 @@ import { moxieArticles } from '../../data/moxie';
 import { GRADE_ORDER } from '../../data';
 import { useGame } from './store';
 import { starsFor } from './xp';
+import { g } from '../../shared/lib/game-terms';
 import './game.css';
 
 export default function LevelMap() {
@@ -60,21 +61,21 @@ export default function LevelMap() {
                 return (
                   <div className="gx-level-row" key={article.id}>
                     {passed ? (
-                      <Link to={`/moxie/${encodeURIComponent(article.id)}`} className={`gx-node ${cls}`} aria-label={article.title}>
+                      <Link to={`/articles/${encodeURIComponent(article.articleId || article.id)}/moxie`} className={`gx-node ${cls}`} aria-label={g(article.title)}>
                         {globalIdx}
                         {stars > 0 && <span className="stars">{'★'.repeat(stars)}</span>}
                       </Link>
                     ) : unlocked ? (
-                      <Link to={`/moxie/${encodeURIComponent(article.id)}`} className={`gx-node ${cls}`} aria-label={article.title}>
+                      <Link to={`/articles/${encodeURIComponent(article.articleId || article.id)}/moxie`} className={`gx-node ${cls}`} aria-label={g(article.title)}>
                         {globalIdx}
                       </Link>
                     ) : (
-                      <span className={`gx-node ${cls}`} aria-label={`${article.title} 未解锁`}>
+                      <span className={`gx-node ${cls}`} aria-label={`${g(article.title)} 未解锁`}>
                         <span className="lock">🔒</span>
                       </span>
                     )}
                     <div className="gx-level-info">
-                      <div className="gx-level-name">{article.title}</div>
+                      <div className="gx-level-name">{g(article.title)}</div>
                       <div className="gx-level-meta">
                         {total} 题{rec && rec.bestCombo >= 3 ? ` · 最佳连击 ${rec.bestCombo}` : ''}
                       </div>

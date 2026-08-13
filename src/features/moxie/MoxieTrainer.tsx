@@ -1,0 +1,301 @@
+/** 默诵训练主体: 题型 tab + 判分卡片 + XP/连击/关卡进度。
+ *  由独立默诵页 (MoxieArticle) 与关卡页默诵 tab (ArticlePage) 共用,
+ *  判分副作用统一走 saveMoxieResult / game.addResult / addWrong。 */
+import { useEffect, useRef, useState } from 'react';
+import { flattenItems, saveMoxieResult, articleProgress } from '../../data/moxie';
+import type { MoxieArticle } from '../../types';
+import { useErrorBook } from '../errorbook/store';
+import { useGame } from '../game/store';
+import { xpForAnswer } from '../game/xp';
+import { moxieTypeLabel } from '../../shared/lib/game-terms';
+import EmptyState from '../../shared/ui/EmptyState';
+import './moxie.css';
+
+/** 答案归一化: 忽略标点/空格/全半角, 用于自动判分 */
+function normAnswer(v: string): string {
+  return String(v || '')
+    .replace(/[，,。；;！!？?：:、·…—~～"'“”‘’（）()\s]/g, '')
+    .replace(/[Ａ-Ｚａ-ｚ０-９]/g, (c) => String.fromCharCode(c.charCodeAt(0) - 0xfee0))
+    .toLowerCase();
+}
+
+/** 展开等价答案: 每个答案元素可用 | 分隔多分句; 空 i 的候选 = 所有元素第 i 分句 */
+function answerOptionsFor(answers: string[], i: number): string[] {
+  const opts = new Set<string>();
+  for (const a of answers || []) {
+    const parts = String(a).split('|');
+    if (i < parts.length) opts.add(normAnswer(parts[i]));
+  }
+  return [...opts];
+}
+
+/** 判分容错: 用户输入与候选互相包含且长度占比 ≥ 0.55 (词义答案主干匹配, 如 "古代对男子的尊称" ⊂ "...尊称，这里指孔子") */
+function matchAnswer(input: string, cand: string): boolean {
+  if (!input || !cand) return false;
+  if (input === cand) return true;
+  const [a, b] = input.length <= cand.length ? [input, cand] : [cand, input];
+  return a.length >= Math.max(2, Math.ceil(b.length * 0.55)) && b.includes(a);
+}
+
+/** 有效空数 = 答案分句最大长度 (至少 1) */
+function blanksCount(answers: string[]): number {
+  return (answers || []).reduce((m, a) => Math.max(m, String(a).split('|').length), 1);
+}
+
+/** 词义默诵: 【字】高亮 */
+function renderWord(q: string) {
+  const parts = String(q || '').split(/(【[^】]+】)/g);
+  return parts.map((part, i) =>
+    /^【.+】$/.test(part) ? <b className="moxie-word" key={i}>{part.replace(/【|】/g, '')}</b> : <span key={i}>{part}</span>
+  );
+}
+
+/** 原文默诵: ___ → 可输入横线 (输入后自动判分展示) */
+function renderBlankInputs(
+  q: string,
+  values: string[],
+  results: (boolean | null)[],
+  answers: string[],
+  onChange: (i: number, v: string) => void,
+  word?: boolean,
+  inputRefs?: React.RefObject<(HTMLInputElement | null)[]>,
+  onEnter?: (idx: number) => void,
+) {
+  const parts = String(q || '').split(/(_{3,})/g);
+  let bi = -1;
+  return parts.map((part, i) => {
+    if (/_{3,}/.test(part)) {
+      bi += 1;
+      const idx = bi;
+      const res = results[idx];
+      const ans = (answers[idx] || '').split('|').join(' / ');
+      return (
+        <span key={i} className={`moxie-blank-wrap${res === true ? ' ok' : res === false ? ' bad' : ''}`}>
+          <input
+            className="moxie-blank-input"
+            value={values[idx] || ''}
+            onChange={(e) => onChange(idx, e.target.value)}
+            onKeyDown={(e) => {
+              if (e.key === 'Enter' && !e.nativeEvent.isComposing && onEnter) {
+                e.preventDefault();
+                onEnter(idx);
+              }
+            }}
+            ref={(el) => { if (inputRefs) inputRefs.current[idx] = el; }}
+              aria-label={`第 ${idx + 1} 空`}
+            disabled={res !== null}
+            autoComplete="off"
+            size={Math.max(4, Math.min(14, (answers[idx] || '').length + 1))}
+          />
+          {res === false && <span className="moxie-blank-ans">{ans}</span>}
+        </span>
+      );
+    }
+    if (word) {
+      const wparts = String(part).split(/(【[^】]+】)/g);
+      return (
+        <span key={i}>
+          {wparts.map((wp, wi) => {
+            if (/^【.+】$/.test(wp)) return <b className="moxie-word" key={wi}>{wp.replace(/【|】/g, '')}</b>;
+            return String(wp).split('\n').map((seg, si) => (
+              <span key={si}>{seg}{si < String(wp).split('\n').length - 1 && <br />}</span>
+            ));
+          })}
+        </span>
+      );
+    }
+    return <span key={i}>{String(part).split('\n').map((seg, si) => <span key={si}>{seg}{si < String(part).split('\n').length - 1 && <br />}</span>)}</span>;
+  });
+}
+
+
+/** 全部题型输入卡: 输入 + 自动判分 (词义【字】高亮, 译文长答案自适应, 等价答案 | 支持) */
+function FillQuestionCard({
+  qid, q, answers, type, word, onJudged,
+}: {
+  qid: string; q: string; answers: string[]; type: string; word?: string; onJudged: (qid: string, pass: boolean, allPass: boolean) => void;
+}) {
+  const qBlanks = (String(q || '').match(/_+/g) || []).length;
+  const nBlanks = Math.max(qBlanks || blanksCount(answers), 1);
+  const noBlank = qBlanks === 0;
+  const [values, setValues] = useState<string[]>(() => answers.map(() => ''));
+  const [results, setResults] = useState<(boolean | null)[]>(() => answers.map(() => null));
+  const [checked, setChecked] = useState(false);
+  const [xpGain, setXpGain] = useState<number | null>(null);
+  const cardRef = useRef<HTMLDivElement>(null);
+  const inputRefs = useRef<(HTMLInputElement | null)[]>([]);
+  const { state: gstate } = useGame();
+
+  const change = (i: number, v: string) => {
+    setValues((prev) => prev.map((x, j) => (j === i ? v : x)));
+  };
+  const check = () => {
+    const res = answers.map((a, i) => {
+      const norm = normAnswer(values[i] || '');
+      return norm !== '' && answerOptionsFor(answers, i).some((cand) => matchAnswer(norm, cand));
+    });
+    setResults(res);
+    setChecked(true);
+    const pass = res.length > 0 && res.some(Boolean);
+    const allPass = res.length > 0 && res.every(Boolean);
+    onJudged(qid, pass, allPass);
+    // 行内得分飘字: 依据当前连击计算 (与 store 规则一致)
+    const combo = pass ? gstate.combo + 1 : 0;
+    setXpGain(xpForAnswer(pass, allPass, combo));
+  };
+
+  const allFilled = values.every((v) => (v || '').trim() !== '');
+  const passCount = results.filter((r) => r === true).length;
+
+  // Enter: 跳下一空; 最后一空且已填完 → 触发判分
+  const handleEnter = (idx: number) => {
+    if (idx < nBlanks - 1) {
+      inputRefs.current[idx + 1]?.focus();
+    } else if (allFilled) {
+      check();
+    }
+  };
+
+  // 判分后滚动到结果
+  useEffect(() => {
+    if (checked) {
+      cardRef.current?.querySelector('.mq-answer')?.scrollIntoView({ behavior: 'smooth', block: 'nearest' });
+    }
+  }, [checked]);
+
+  // 重新作答 → 聚焦第一空
+  const retry = () => {
+    setValues(answers.map(() => ''));
+    setResults(answers.map(() => null));
+    setChecked(false);
+    requestAnimationFrame(() => inputRefs.current[0]?.focus());
+  };
+
+  return (
+    <div ref={cardRef} className={`moxie-q gx-card-fx${checked ? (passCount === nBlanks ? ' ok' : ' bad') : ''}`}>
+      {checked && xpGain !== null && (
+        <span className="gx-fly-inline" key={xpGain}>+{xpGain} XP</span>
+      )}
+      <div className="mq-head">
+        <span className="mq-type">{type}</span>
+        <span className="mq-blanks">{nBlanks} 空</span>
+        {checked && (
+          <span className={`mq-check-result${passCount === nBlanks ? ' ok' : ' bad'}`}>
+            {passCount === nBlanks ? '✓ 全部答对' : `答对 ${passCount}/${nBlanks}`}
+          </span>
+        )}
+      </div>
+      <div className="mq-q">
+        {noBlank ? <span>{q}</span> : renderBlankInputs(q, values, results, answers, change, Boolean(word), inputRefs, handleEnter)}
+      </div>
+      {noBlank ? null : !checked ? (
+        <div className="mq-actions">
+          <button type="button" className="mq-reveal" onClick={check} disabled={!allFilled}>
+            对答案
+          </button>
+          {!allFilled && <span className="mq-hint">请填写所有空后再判分</span>}
+        </div>
+      ) : (
+        <div className="mq-answer">
+          {noBlank && <span className="mq-answer-text">（本题无填空）</span>}
+          <div className="mq-answer-list">
+            {Array.from({ length: nBlanks }, (_, i) => {
+              const opts = answerOptionsFor(answers, i);
+              const ans = opts.length > 1 ? opts.join(' / ') : ((answers[i] || '').split('|').join(' / ') || '（答案待补）');
+              return (
+                <div className={`mq-answer-row${results[i] === true ? ' ok' : results[i] === false ? ' bad' : ''}`} key={i}>
+                  <span className="mq-answer-no">第{i + 1}空</span>
+                  {results[i] === true ? (
+                    <span className="mq-answer-text ok">✓ {values[i]}</span>
+                  ) : (
+                    <span className="mq-answer-text">
+                      <s className="mq-wrong">{values[i] || '（未填写）'}</s> → {ans || '（答案待补）'}
+                    </span>
+                  )}
+                </div>
+              );
+            })}
+          </div>
+          {passCount < nBlanks && (
+            <button type="button" className="mq-retry" onClick={retry}>
+              重新作答
+            </button>
+          )}
+        </div>
+      )}
+    </div>
+  );
+}
+
+/** 默诵训练主体 (题型 tab + 判分卡片 + 进度)。 */
+export default function MoxieTrainer({ article }: { article: MoxieArticle }) {
+  const { addWrong } = useErrorBook();
+  const game = useGame();
+  const [activeTab, setActiveTab] = useState('');
+  const [tick, setTick] = useState(0);
+
+  const progress = articleProgress(article);
+  const tabs = article.sections.map((s) => s.type);
+  const showTab = activeTab || tabs[0] || '';
+  const section = article.sections.find((s) => s.type === showTab);
+
+  const handleJudged = (qid: string, pass: boolean, allPass: boolean) => {
+    saveMoxieResult(qid, pass);
+    // 游戏化: XP/连击/关卡进度 (不影响判分逻辑)
+    if (article) game.addResult(article.articleId || article.id || article.title, qid, pass, allPass);
+    if (!pass) {
+      const flat = flattenItems(article).find((x) => x.item.qid === qid);
+      if (flat) {
+        addWrong(
+          { id: article.articleId || '', title: article.title },
+          [{
+            qid,
+            type: flat.section.type,
+            stem: flat.item.q,
+            answer: (flat.item.answers || []).join(' / '),
+          }],
+        );
+      }
+    }
+    setTick((t) => t + 1);
+  };
+
+  return (
+    <div className="moxie-trainer view-enter" data-testid="moxie-trainer">
+      <div className="mt-top">
+        <span className="mt-progress">已答 {progress.done}/{progress.total} · 全对 {progress.passed}</span>
+      </div>
+      <nav className="workspace-tabs" aria-label="题型切换">
+        {tabs.map((t) => {
+          const items = article.sections.find((s) => s.type === t)?.items || [];
+          return (
+            <button key={t} type="button" className={showTab === t ? 'active' : ''} onClick={() => setActiveTab(t)}>
+              {moxieTypeLabel(t)}
+              <em className="ws-count">{items.length}</em>
+            </button>
+          );
+        })}
+      </nav>
+
+      <main className="workspace-content">
+        {section ? (
+          <div className="moxie-section">
+            {section.items.map((item) => (
+              <FillQuestionCard
+                key={item.qid}
+                qid={item.qid}
+                q={item.q}
+                answers={item.answers}
+                type={moxieTypeLabel(section.type)}
+                word={item.word}
+                onJudged={handleJudged}
+              />
+            ))}
+          </div>
+        ) : (
+          <EmptyState title="本题型暂无题目" hint="数据抽取中，稍后再试" compact />
+        )}
+      </main>
+    </div>
+  );
+}

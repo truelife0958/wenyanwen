@@ -4,9 +4,10 @@ import { moxieArticles, moxieCount, articleProgress, loadMoxieProgress } from '.
 import { GRADE_ORDER } from '../../data';
 import SectionHeader from '../../shared/ui/SectionHeader';
 import EmptyState from '../../shared/ui/EmptyState';
+import { g } from '../../shared/lib/game-terms';
 import './moxie.css';
 
-/** 默写模块首页: 统计 + 年级 tab + 篇目网格 */
+/** 默诵模块首页: 统计 + 年级 tab + 篇目网格 */
 export default function MoxieHome() {
   const [activeGrade, setActiveGrade] = useState('');
 
@@ -31,12 +32,12 @@ export default function MoxieHome() {
   return (
     <div className="moxie view-enter">
       {/* 统计头部 */}
-      <section className="moxie-head" aria-label="默写统计">
+      <section className="moxie-head" aria-label="默诵统计">
         <div className="moxie-head-main">
-          <h2 className="moxie-title">默写练习</h2>
-          <p className="moxie-sub">原文 · 理解 · 词义 · 译文，四种默写步步通关</p>
+          <h2 className="moxie-title">默诵</h2>
+          <p className="moxie-sub">原文 · 理解 · 词义 · 译文，四种默诵步步通关</p>
         </div>
-        <div className="moxie-ring-wrap" aria-label="默写总进度">
+        <div className="moxie-ring-wrap" aria-label="默诵总进度">
           <div className="moxie-ring">
             <svg viewBox="0 0 64 64" className="ring-svg">
               <circle cx="32" cy="32" r="26" fill="none" stroke="#d9cdb8" strokeWidth="7" />
@@ -76,7 +77,7 @@ export default function MoxieHome() {
 
       {/* 篇目网格 */}
       <div className="article-grid-section">
-        <SectionHeader title={<>默写篇目 <em style={{ fontWeight: 400, fontStyle: 'normal', color: 'var(--ink-light)', fontSize: '0.82rem' }}>· {display.length} 篇</em></>} />
+        <SectionHeader title={<>默诵篇目 <em style={{ fontWeight: 400, fontStyle: 'normal', color: 'var(--ink-light)', fontSize: '0.82rem' }}>· {display.length} 篇</em></>} />
         {display.length ? (
           <div className="article-grid stagger">
             {display.map((article) => {
@@ -85,8 +86,8 @@ export default function MoxieHome() {
               const allPass = p.done > 0 && p.done === p.passed;
               return (
                 <Link key={article.id} to={`/moxie/${encodeURIComponent(article.id)}`} className="article-card moxie-card">
-                  <span className="ac-title">{article.title}</span>
-                  <span className="ac-meta">默写 {p.total} 题 · {pct}%</span>
+                  <span className="ac-title">{g(article.title)}</span>
+                  <span className="ac-meta">默诵 {p.total} 题 · {pct}%</span>
                   <span className="moxie-card-bar" aria-hidden="true">
                     <i style={{ width: `${pct}%`, background: allPass ? 'var(--success)' : 'var(--primary)' }} />
                   </span>
@@ -96,7 +97,7 @@ export default function MoxieHome() {
             })}
           </div>
         ) : (
-          <EmptyState title="该年级暂无默写篇目" hint="数据抽取中，稍后再试" compact />
+          <EmptyState title="该年级暂无默诵篇目" hint="数据抽取中，稍后再试" compact />
         )}
       </div>
     </div>

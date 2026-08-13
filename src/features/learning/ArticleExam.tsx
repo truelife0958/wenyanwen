@@ -1,10 +1,11 @@
 /**
- * 核心考点 — 独立标签页 (学习/鉴赏/考点/注释/默写 五 tab 之一)。
+ * 核心考点 — 独立标签页 (历练/鉴赏/考点/注释/默诵 五 tab 之一)。
  * 中考必考/核心重点篇目显示: 考点列表, 每条一张卡片 (参照鉴赏 appr-para 样式), 全展开。
  */
 import { useMemo } from 'react';
 import type { CanonicalArticle } from '../../types';
 import { examTagFor, examPoints } from '../../data/exam-tags';
+import { g } from '../../shared/lib/game-terms';
 import EmptyState from '../../shared/ui/EmptyState';
 import HighlightText from '../../shared/ui/HighlightText';
 import './article.css';
@@ -26,7 +27,7 @@ export default function ArticleExam({ article }: { article: CanonicalArticle }) 
     return (
       <EmptyState
         title="本篇暂无考点标注"
-        hint="非中考必考/核心重点篇目。可以继续学习课文，或切换其他标签。"
+        hint="非中考必考/核心重点篇目。可以继续历练课文，或切换其他标签。"
       />
     );
   }
@@ -44,12 +45,12 @@ export default function ArticleExam({ article }: { article: CanonicalArticle }) 
             return (
               <div className="appr-para" key={idx}>
                 <div className="appr-orig ep-point-row">
-                  <span>{pt.point}</span>
+                  <span>{g(pt.point)}</span>
                   <span className={`ep-level${isHard ? ' hard' : ''}`}>{isHard ? '难点' : '重点'}</span>
                 </div>
                 {pt.detail && (
                   <div className="appr-ana">
-                    <HighlightText text={pt.detail} numbered={pt.point.includes('默写')} />
+                    <HighlightText text={g(pt.detail)} numbered={pt.point.includes('默写')} />
                   </div>
                 )}
               </div>

@@ -1,4 +1,4 @@
-/** 默写模块数据层: 加载 runtime/moxie.json + 进度/查询工具 */
+/** 默诵模块数据层: 加载 runtime/moxie.json + 进度/查询工具 */
 import moxieRaw from './runtime/moxie.json';
 import type { MoxieArticle, MoxieSection, MoxieItem } from '../types';
 import { articleKey } from './article-links';
@@ -16,7 +16,7 @@ export function moxieSectionStats() {
   return stats;
 }
 
-/** 按标题查找默写篇目 (归一化, 支持带书名号/序号) */
+/** 按标题查找默诵篇目 (归一化, 支持带书名号/序号) */
 export function findMoxieArticle(idOrTitle?: string): MoxieArticle | null {
   if (!idOrTitle) return null;
   const value = String(idOrTitle);
@@ -26,13 +26,13 @@ export function findMoxieArticle(idOrTitle?: string): MoxieArticle | null {
   return moxieArticles.find((a) => articleKey(a.title) === key) || null;
 }
 
-/** 按学习 articleId 查找默写篇目 (学练联动: 学习页 → 默写) */
+/** 按历练 articleId 查找默诵篇目 (闯关联动: 关卡页 → 默诵) */
 export function findMoxieByArticleId(articleId?: string | null): MoxieArticle | null {
   if (!articleId) return null;
   return moxieArticles.find((a) => a.articleId === articleId) || null;
 }
 
-/** 学习篇目标题 → 默写篇目 (标题匹配兜底) */
+/** 历练篇目标题 → 默诵篇目 (标题匹配兜底) */
 export function findMoxieByArticleTitle(title?: string): MoxieArticle | null {
   if (!title) return null;
   const key = articleKey(title);

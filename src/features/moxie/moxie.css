@@ -232,3 +232,12 @@
 .mq-answer-row.bad .mq-answer-text { color: var(--error); }
 .mq-wrong { color: var(--error); }
 .moxie-blank-static { letter-spacing: 2px; }
+
+/* 默诵训练主体 (MoxieTrainer): 顶部进度 + 题型 tab */
+.moxie-trainer { padding-top: 4px; }
+.mt-top { display: flex; align-items: center; justify-content: space-between; margin: 2px 0 10px; }
+.mt-progress {
+  font-size: 0.8rem; font-weight: 600; color: var(--primary-dark);
+  background: var(--primary-soft); border: 1px solid var(--primary);
+  padding: 4px 12px; border-radius: var(--r-pill);
+}

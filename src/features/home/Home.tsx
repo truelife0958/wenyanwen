@@ -8,6 +8,7 @@ import { articleHref } from '../../data/article-links';
 import EmptyState from '../../shared/ui/EmptyState';
 import SectionHeader from '../../shared/ui/SectionHeader';
 import { examLevel, examPoints } from '../../data/exam-tags';
+import { g } from '../../shared/lib/game-terms';
 import { loadLS, loadStreak } from '../../shared/lib/utils';
 import { useErrorBook } from '../errorbook/store';
 import HeroStats from '../game/HeroStats';
@@ -15,7 +16,7 @@ import '../game/game.css';
 
 const LAST_ARTICLE_KEY = 'wyw_last_article';
 
-/** 学习概览: 默写进度 + 默写错题 (进度直接读 localStorage, 不加载 moxie.json 全量数据) */
+/** 历练概览: 历练进度 + 失误 (进度直接读 localStorage, 不加载 moxie.json 全量数据) */
 function useOverview() {
   const { items } = useErrorBook();
   return useMemo(() => {
@@ -38,7 +39,7 @@ export default function Home() {
   const overview = useOverview();
   const gridRef = useRef<HTMLDivElement>(null);
 
-  /** 最近学习的文章 (继续学习横幅) */
+  /** 最近历练的篇章 (继续历练横幅) */
   const lastArticle = useMemo(() => {
     try {
       const raw = loadLS<{ id: string; title: string; at: number } | null>(LAST_ARTICLE_KEY, null);
@@ -87,13 +88,13 @@ export default function Home() {
   return (
     <div className="home view-enter">
       <HeroStats />
-      {/* 今日学习头部 */}
-      <section className="today-head" aria-label="今日学习">
+      {/* 今日历练头部 */}
+      <section className="today-head" aria-label="今日历练">
         <div className="today-greet">
-          <h2 className="today-title">今日学习</h2>
-          <p className="today-sub">{new Date().getHours() < 12 ? '早上好' : new Date().getHours() < 18 ? '下午好' : '晚上好'} · {loadStreak().count > 0 ? `🔥 已连续学习 ${loadStreak().count} 天` : '坚持就是胜利'}</p>
+          <h2 className="today-title">今日历练</h2>
+          <p className="today-sub">{new Date().getHours() < 12 ? '早上好' : new Date().getHours() < 18 ? '下午好' : '晚上好'} · {loadStreak().count > 0 ? `🔥 已连续历练 ${loadStreak().count} 天` : '坚持就是胜利'}</p>
         </div>
-        <div className="today-ring-wrap" aria-label="默写进度">
+        <div className="today-ring-wrap" aria-label="历练进度">
           <div className="today-ring">
             <svg viewBox="0 0 64 64" className="ring-svg">
               <circle cx="32" cy="32" r="26" fill="none" stroke="#d9cdb8" strokeWidth="7" />
@@ -104,19 +105,19 @@ export default function Home() {
             </svg>
             <span className="ring-text">{moxiePct}%</span>
           </div>
-          <span className="ring-caption">默写进度</span>
+          <span className="ring-caption">历练进度</span>
         </div>
       </section>
 
-      {/* 今日推荐 (主入口): 默写错题驱动优先, 无错题时继续学习 */}
+      {/* 今日推荐 (主入口): 失误驱动优先, 无失误时继续历练 */}
       <section className="today-recommend" aria-label="今日推荐">
         {overview.errorCount > 0 ? (
           <Link to="/moxie/errors" className="rec-card rec-error">
             <span className="rec-icon" aria-hidden="true"><Icon name="pencil" size={20} /></span>
             <span className="rec-main">
-              <span className="rec-label">默写错题回炉</span>
+              <span className="rec-label">失误回炉</span>
               <span className="rec-title">错题本 · {overview.errorCount} 题待复习</span>
-              <span className="rec-sub">答错的默写题都在这里，重练巩固</span>
+              <span className="rec-sub">答错的默诵题都在这里，重练巩固</span>
             </span>
             <span className="rec-go" aria-hidden="true">→</span>
           </Link>
@@ -124,9 +125,9 @@ export default function Home() {
         <Link to={lastArticle ? articleHref(lastArticle.target) : articleHref(articleMeta[0])} className="rec-card">
           <span className="rec-icon" aria-hidden="true"><Icon name="book" size={20} /></span>
           <span className="rec-main">
-            <span className="rec-label">{lastArticle ? '继续上次学习' : '今日推荐'}</span>
+            <span className="rec-label">{lastArticle ? '继续上次历练' : '今日推荐'}</span>
             <span className="rec-title">{lastArticle ? lastArticle.target.title : articleMeta[0]?.title}</span>
-            <span className="rec-sub">{lastArticle ? '点击继续学习' : '开始今天的学习'}</span>
+            <span className="rec-sub">{lastArticle ? '点击继续历练' : '开始今天的历练'}</span>
           </span>
           <span className="rec-go" aria-hidden="true">→</span>
         </Link>
@@ -135,8 +136,8 @@ export default function Home() {
 
       {/* 今日任务 */}
       <section className="today-tasks" aria-label="今日任务">
-        <div className="task-item done"><Icon name="check" size={13} /> 默写 {overview.doneCount}/{moxieTotal} 题</div>
-        <Link className="task-item task-link" to="/moxie"><span className="task-dot" /> 开始默写 →</Link>
+        <div className="task-item done"><Icon name="check" size={13} /> 默诵 {overview.doneCount}/{moxieTotal} 题</div>
+        <Link className="task-item task-link" to="/map"><span className="task-dot" /> 开始闯关 →</Link>
       </section>
       <div className="home-topbar">
         <div className="home-search-box">
@@ -189,7 +190,7 @@ export default function Home() {
                 {items.map((article) => {
                   const lvl = examLevel(article.title);
                   return (
-                  <Link className={`article-card${lvl !== 'normal' ? ' exam-' + lvl : ''}`} key={article.id || article.title} to={articleHref(article)} title={examPoints(article.title).join('；')}>
+                  <Link className={`article-card${lvl !== 'normal' ? ' exam-' + lvl : ''}`} key={article.id || article.title} to={articleHref(article)} title={g(examPoints(article.title).join('；'))}>
                     {(lvl === 'must' || lvl === 'core') && (
                       <span className="ac-badge">{lvl === 'must' ? '中考必考' : '核心重点'}</span>
                     )}

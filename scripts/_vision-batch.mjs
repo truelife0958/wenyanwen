@@ -5,7 +5,7 @@ const OUT = '.trellis/tasks/08-11-visual-audit-fix/research/reviews';
 import { mkdirSync, writeFileSync } from 'fs';
 mkdirSync(OUT, { recursive: true });
 const files = readdirSync(DIR).filter((f) => f.endsWith('.png') && !f.includes('desk-home'));
-const PROMPT = `你是资深 UI 审查专家。请对这张中文学习应用页面截图做详细审查:
+const PROMPT = `你是资深 UI 审查专家。请对这张文言文闯关游戏页面截图做详细审查:
 1. 总体印象
 2. 布局与层级(对齐/留白/信息层级)
 3. 色彩与质感(协调性/对比度/突兀颜色)

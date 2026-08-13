@@ -2,6 +2,8 @@ import { useCallback, useEffect, useMemo, useRef, useState } from 'react';
 import { Link } from 'react-router-dom';
 import type { CanonicalArticle, CanonicalQuestion, CanonicalWord } from '../../types';
 import { alignLines } from '../../shared/lib/utils';
+import { articleHref } from '../../data/article-links';
+import { g } from '../../shared/lib/game-terms';
 import { getCore } from '../../data';
 import { buildPronMap } from '../../shared/lib/pron-dict';
 import Modal from '../../shared/ui/Modal';
@@ -141,7 +143,7 @@ export default function ArticleReader({
   const [activeRow, setActiveRow] = useState(-1);
   const [expandedRows, setExpandedRows] = useState<Set<number>>(() => new Set());
   const [expandedAna, setExpandedAna] = useState<Set<number>>(() => new Set());
-  // 背诵引导弹窗: 点击原文五角星 (背诵默写句) 弹出
+  // 诵读引导弹窗: 点击原文五角星 (背诵默诵句) 弹出
   const [guideStar, setGuideStar] = useState<{ sentence: string; translation?: string; kind?: string } | null>(null);
   const containerRef = useRef<HTMLDivElement>(null);
   const rowRef = useRef<HTMLDivElement>(null);
@@ -372,7 +374,7 @@ export default function ArticleReader({
                 <div className={`para-block${activeRow === index ? ' reading-para' : ''}`} key={index} ref={activeRow === index ? rowRef : undefined}>
                   <div className="para-orig">
                     <AnnotText text={row.orig} words={words} active={reading} onWordClick={onWordClick} noteNums={noteNums} onWordHover={onWordHover} paraIndex={index} noteFirst={noteFirst} />
-                    {/* 背诵默写句: 以五角星标在原文句子右边 (2026-08) */}
+                    {/* 背诵默诵句: 以五角星标在原文句子右边 (2026-08) */}
                     {(() => {
                       // 归一化匹配: 句内全/半角标点差异 (如 , vs ，) 不影响命中
                       const normStar = (t: string) => t.replace(/[，,。；;！!？?、·—\-()（）\s]/g, '');
@@ -385,8 +387,8 @@ export default function ArticleReader({
                               key={i}
                               type="button"
                               className="recite-star"
-                              title="查看背诵学习引导"
-                              aria-label={`背诵学习引导：${String(s.sentence || '')}`}
+                              title="查看诵读引导"
+                              aria-label={`诵读引导：${String(s.sentence || '')}`}
                               onClick={(e) => { e.stopPropagation(); setGuideStar({ sentence: String(s.sentence || ''), translation: s.translation, kind: s.kind }); }}
                             >★</button>
                           ))}
@@ -458,25 +460,25 @@ export default function ArticleReader({
 
       </div>
 
-      {/* 背诵学习引导: 点击原文五角星弹出 */}
+      {/* 诵读引导: 点击原文五角星弹出 */}
       <Modal
         open={!!guideStar}
         onClose={() => setGuideStar(null)}
         overlayClassName="recite-guide-modal"
         boxClassName="recite-guide-box"
-        ariaLabel="背诵学习引导"
+        ariaLabel="诵读引导"
       >
         {guideStar && (
           <div className="recite-guide">
             <div className="rg-head">
-              <span className="rg-title">⭐ 背诵学习引导</span>
-              {guideStar.kind && <span className="rg-kind">{guideStar.kind}</span>}
+              <span className="rg-title">⭐ 诵读引导</span>
+              {guideStar.kind && <span className="rg-kind">{g(guideStar.kind)}</span>}
               <button type="button" className="rg-close" onClick={() => setGuideStar(null)} aria-label="关闭">✕</button>
             </div>
             <p className="rg-sentence">{guideStar.sentence}</p>
             {guideStar.translation && <p className="rg-trans">{guideStar.translation}</p>}
             <div className="rg-actions">
-              <Link className="btn btn-primary" to={`/moxie/${encodeURIComponent(article.title)}`}>去默写训练 →</Link>
+              <Link className="btn btn-primary" to={articleHref(article, 'moxie')}>去默诵挑战 →</Link>
               <button type="button" className="btn btn-ghost" onClick={() => setGuideStar(null)}>知道了</button>
             </div>
           </div>

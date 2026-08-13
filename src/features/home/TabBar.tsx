@@ -1,9 +1,9 @@
-/** 底部 Tab 导航: 学习 / 闯关 / 成就 (移动优先, 宽屏居中) */
+/** 底部 Tab 导航: 历练 / 闯关 / 成就 (移动优先, 宽屏居中) */
 import { NavLink, useLocation } from 'react-router-dom';
 import Icon from '../../shared/ui/Icon';
 
 const TABS = [
-  { to: '/', label: '学习', icon: 'book' },
+  { to: '/', label: '历练', icon: 'book' },
   { to: '/map', label: '闯关', icon: 'map' },
   { to: '/achievements', label: '成就', icon: 'trophy' },
 ] as const;

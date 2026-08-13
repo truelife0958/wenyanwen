@@ -2,11 +2,12 @@ import { useMemo } from 'react';
 import { Link } from 'react-router-dom';
 import { useErrorBook } from '../errorbook/store';
 import { findMoxieArticle } from '../../data/moxie';
+import { g, moxieTypeLabel } from '../../shared/lib/game-terms';
 import EmptyState from '../../shared/ui/EmptyState';
 import PageHeader from '../../shared/ui/PageHeader';
 import './moxie.css';
 
-/** 默写错题本: 仅收录 moxie 前缀错题 (qid 形如 moxie-篇目:题型:题号), 按篇目分组, 支持重练 */
+/** 失误回炉: 仅收录 moxie 前缀失误 (qid 形如 moxie-篇目:题型:题号), 按篇目分组, 支持重练 */
 export default function MoxieErrors() {
   const { items, removeEntry, removeTitle, clear } = useErrorBook();
 
@@ -30,8 +31,8 @@ export default function MoxieErrors() {
     <div className="moxie-errors view-enter">
       <PageHeader
         backTo="/moxie"
-        backLabel="← 返回默写列表"
-        title="默写错题本"
+        backLabel="← 返回默诵列表"
+        title="失误回炉"
         meta={`${totalAnswers} 条错题 · 按篇目分组`}
         right={
           totalAnswers > 0 ? (
@@ -41,7 +42,7 @@ export default function MoxieErrors() {
       />
 
       {totalAnswers === 0 ? (
-        <EmptyState title="暂无默写错题" hint="默写练习中答错的题会自动收录到这里" />
+        <EmptyState title="暂无失误" hint="默诵中答错的题会自动收录到这里" />
       ) : (
         <div className="moxie-err-groups">
           {Array.from(groups.entries()).map(([title, list]) => {
@@ -49,7 +50,7 @@ export default function MoxieErrors() {
             return (
               <section className="moxie-err-group" key={title}>
                 <div className="meg-head">
-                  <h3 className="meg-title">{title}</h3>
+                  <h3 className="meg-title">{g(title)}</h3>
                   <span className="meg-count">{list.length} 题</span>
                   <div className="meg-actions">
                     {moxie && <Link className="btn btn-primary btn-sm" to={`/moxie/${encodeURIComponent(moxie.id)}`}>重练</Link>}
@@ -59,7 +60,7 @@ export default function MoxieErrors() {
                 <div className="meg-list">
                   {list.map((e) => (
                     <div className="meg-item" key={e.qid}>
-                      <div className="meg-type">{e.type}</div>
+                      <div className="meg-type">{moxieTypeLabel(e.type)}</div>
                       <div className="meg-stem">{e.stem}</div>
                       <div className="meg-answer">答案：{e.answer}</div>
                       <button type="button" className="meg-remove" onClick={() => removeEntry(title, e.qid)} aria-label="移除该错题">✕</button>

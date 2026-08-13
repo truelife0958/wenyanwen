@@ -125,7 +125,7 @@ export function normGrade(g?: string): string {
   return map[g] || g;
 }
 
-/** ── 学习打卡 (连续天数) ── */
+/** ── 历练打卡 (连续天数) ── */
 const STREAK_KEY = 'wyw_streak_v1';
 export interface StreakState { date: string; count: number; }
 
@@ -133,7 +133,7 @@ export function loadStreak(): StreakState {
   return loadLS<StreakState>(STREAK_KEY, { date: '', count: 0 });
 }
 
-/** 记录一次学习: 今日已记则不变; 昨天记过则连续+1; 否则重新开始 */
+/** 记录一次历练: 今日已记则不变; 昨天记过则连续+1; 否则重新开始 */
 export function recordLearning(): StreakState {
   const today = new Date().toISOString().slice(0, 10);
   const prev = loadStreak();

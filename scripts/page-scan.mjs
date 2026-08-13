@@ -46,11 +46,11 @@ const mobile = await browser.newPage({ viewport: { width: 375, height: 812 } });
 console.log('=== 桌面端核心页面 ===');
 const coreRoutes = [
   ['首页', '/'],
-  ['默写列表', '/moxie'],
-  ['默写错题本', '/moxie/errors'],
+  ['默诵列表', '/moxie'],
+  ['失误回炉', '/moxie/errors'],
   ['闯关地图', '/map'],
   ['成就墙', '/achievements'],
-  ['旧学习深链', '/learning/' + encodeURIComponent('岳阳楼记')],
+  ['旧历练深链', '/learning/' + encodeURIComponent('岳阳楼记')],
 ];
 for (const [label, path] of coreRoutes) await scanPage(desktop, label, path);
 
@@ -66,12 +66,12 @@ for (const id of sampleArticles) {
 console.log('=== 移动端关键页 (375px) ===');
 for (const [label, path] of [
   ['移动-首页', '/'],
-  ['移动-学习', '/articles/jc-yueyanglouji/learn'],
+  ['移动-历练', '/articles/jc-yueyanglouji/learn'],
   ['移动-鉴赏', '/articles/jc-yueyanglouji/appreciate'],
   ['移动-考点', '/articles/jc-yueyanglouji/exam'],
   ['移动-注释', '/articles/jc-yueyanglouji/notes'],
-  ['移动-默写列表', '/moxie'],
-  ['移动-默写错题本', '/moxie/errors'],
+  ['移动-默诵列表', '/moxie'],
+  ['移动-失误回炉', '/moxie/errors'],
   ['移动-闯关地图', '/map'],
   ['移动-成就墙', '/achievements'],
 ]) {

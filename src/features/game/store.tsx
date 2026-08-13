@@ -75,7 +75,7 @@ export function GameProvider({ children }: { children: ReactNode }) {
     setState((s) => {
       const today = todayKey();
       if (s.todayDate === today) return s;
-      // 跨天: 若昨天有学习则 streak+1, 否则重置为 1 (今日首次)
+      // 跨天: 若昨天有历练则 streak+1, 否则重置为 1 (今日首次)
       const yesterday = new Date(Date.now() - 86400000).toISOString().slice(0, 10);
       const streak = s.streak > 0 && s.todayDate === yesterday ? s.streak + 1 : 1;
       return { ...s, todayDate: today, todayXp: 0, streak };

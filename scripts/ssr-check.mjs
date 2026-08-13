@@ -1,4 +1,4 @@
-/** SSR 渲染验证 — 渲染 App 整树（错题本同步加载, 学习页 lazy 单独验证） */
+/** SSR 渲染验证 — 渲染 App 整树（失误回炉同步加载, 历练页 lazy 单独验证） */
 // 抑制 react-router Link 在 SSR 视作 client 组件导致的 useLayoutEffect 无害警告,保持日志干净
 const _oe = console.error;
 console.error = (msg, ...rest) => {
@@ -38,7 +38,7 @@ try {
 
   console.log('=== 首页 ===');
   const home = render('/');
-  check('含顶栏', home.includes('文言文学习'));
+  check('含顶栏', home.includes('文言文闯关'));
   check('搜索框', home.includes('home-search-box'));
   check('今日推荐卡', home.includes('today-recommend') && home.includes('rec-card'));
   check('6 个年级 tab', (home.match(/class="grade-tab"|grade-tab active/g) || []).length === 6);
@@ -59,8 +59,8 @@ try {
     )
   );
   console.log('\n=== 篇目工作区 ===');
-  check('3 个学习标签', (article.includes('鉴赏') && article.includes('默写')) || article.includes('page-loader'));
-  check('学习正文', article.includes('para-list') || article.includes('article-body') || article.includes('page-loader'));
+  check('历练标签渲染', (article.includes('原文') && article.includes('译文')) || article.includes('page-loader'));
+  check('历练正文', article.includes('para-list') || article.includes('article-body') || article.includes('page-loader'));
   check('鉴赏标签', article.includes('主旨') || article.includes('鉴赏') || article.includes('page-loader'));
   console.log('\n=== 规范化题库 ===');
   const runtimeData = await vite.ssrLoadModule('/src/data/index.ts');
@@ -82,8 +82,8 @@ try {
       )
     )
   );
-  check('默写错题本页面', errorsPage.includes('错题本'));
-  console.log('\n=== 默写模块 ===');
+  check('失误回炉页面', errorsPage.includes('失误回炉'));
+  console.log('\n=== 默诵模块 ===');
   const { default: MoxieHome } = await vite.ssrLoadModule('/src/features/moxie/MoxieHome.tsx');
   const moxiePage = renderToString(
     React.createElement(
@@ -98,7 +98,7 @@ try {
       )
     )
   );
-  check('默写列表渲染', (moxiePage.includes('默写') && moxiePage.includes('篇')) || moxiePage.includes('page-loader'));
+  check('默诵列表渲染', (moxiePage.includes('默诵') && moxiePage.includes('篇')) || moxiePage.includes('page-loader'));
 
   console.log('\n=== 深链 SSR (StaticRouter, 模拟真实服务器路径) ===');
   // E9: 用 StaticRouter 逐个渲染所有真实路由 (含有效/无效 id 与旧版路径), 验证深链直访不崩
@@ -127,7 +127,7 @@ try {
       const html = renderStatic(p);
       if (p === '/unknown-route') {
         // 兜底路由应导航回首页
-        check(`深链 ${p} → 兜底首页`, html.includes('文言文学习') || html.includes('today-recommend'));
+        check(`深链 ${p} → 兜底首页`, html.includes('文言文闯关') || html.includes('today-recommend'));
       } else {
         check(`深链 ${p} 可渲染`, html.length > 200);
       }

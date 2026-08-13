@@ -9,15 +9,16 @@ import PageHeader from '../../shared/ui/PageHeader';
 import { useCore } from '../../data';
 import EmptyState from '../../shared/ui/EmptyState';
 import { articleHref, findArticleMeta } from '../../data/article-links';
-import { findMoxieByArticleTitle, articleProgress } from '../../data/moxie';
+import { findMoxieByArticleTitle } from '../../data/moxie';
+import MoxieTrainer from '../moxie/MoxieTrainer';
 import './article-page.css';
 
 const TABS = [
-  { key: 'learn', label: '学习' },
+  { key: 'learn', label: '历练' },
   { key: 'appreciate', label: '鉴赏' },
   { key: 'exam', label: '考点' },
   { key: 'notes', label: '注释' },
-  { key: 'moxie', label: '默写' },
+  { key: 'moxie', label: '默诵' },
 ] as const;
 
 
@@ -27,7 +28,7 @@ export default function ArticlePage() {
   const metaArticle = findArticleMeta(id);
   const article = metaArticle && core ? core.articleById.get(metaArticle.id) : undefined;
 
-  // 记录最近学习, 供首页"继续学习"使用
+  // 记录最近历练, 供首页"继续上次历练"使用
   useEffect(() => {
     if (article) {
       try { localStorage.setItem('wyw_last_article', JSON.stringify({ id: article.id, title: article.title, at: Date.now() })); } catch { /* ignore */ }
@@ -48,7 +49,6 @@ export default function ArticlePage() {
   if (!TABS.some((item) => item.key === tab)) return <Navigate replace to={articleHref(article)} />;
 
   const moxie = findMoxieByArticleTitle(article.title);
-  const moxieProg = moxie ? articleProgress(moxie) : null;
   const metaParts = [article.dynasty, article.author, article.grade].filter(Boolean);
   const meta = metaParts.length
     ? metaParts.map((part, i) => (
@@ -65,7 +65,7 @@ export default function ArticlePage() {
         badge={examTagFor(article.title) && <span className={`ac-badge ac-badge-${examTagFor(article.title)}`}>{examTagFor(article.title) === 'must' ? '中考必考' : '核心考点'}</span>}
         meta={meta}
       />
-      <nav className="workspace-tabs" aria-label="篇目学习功能">
+      <nav className="workspace-tabs" aria-label="篇目历练功能">
         {TABS.map((item) => (
           <NavLink key={item.key} to={articleHref(article, item.key)} className={tab === item.key ? 'active' : ''}>
             {item.label}
@@ -79,18 +79,9 @@ export default function ArticlePage() {
         {tab === 'notes' && <ArticleNotes key={article.id || article.title} article={article} />}
         {tab === 'moxie' && (
           moxie ? (
-            <div className="moxie-entry-card view-enter">
-              <div className="mec-main">
-                <h3>《{moxie.title}》默写练习</h3>
-                <p>{moxie.sections.map((s) => s.type).join(' · ')}，共 {moxieProg?.total ?? 0} 题</p>
-                {moxieProg && moxieProg.done > 0 && (
-                  <p className="mec-prog">已答 {moxieProg.done}/{moxieProg.total} · 全对 {moxieProg.passed}</p>
-                )}
-              </div>
-              <Link className="btn btn-primary" to={`/moxie/${encodeURIComponent(moxie.id)}`}>开始默写练习 →</Link>
-            </div>
+            <MoxieTrainer article={moxie} />
           ) : (
-            <EmptyState title="本篇暂无默写题" hint="可以继续学习课文，或从默写列表挑选其他篇目。" />
+            <EmptyState title="本篇暂无默诵题" hint="可以继续历练课文，或从默诵列表挑选其他篇目。" />
           )
         )}
       </main>

@@ -1,5 +1,5 @@
 #!/usr/bin/env node
-/** 满强度用户流测试: 从普通用户视角走完 学习→练习→判分→复习→错题→字词卡→题集→移动端 全链路。
+/** 满强度用户流测试: 从普通用户视角走完 历练→默诵→判分→复习→失误→字词卡→题集→移动端 全链路。
  *  用法: node scripts/full-flow-test.mjs [baseURL] */
 import { chromium } from 'playwright-core';
 
@@ -43,16 +43,16 @@ console.log('=== 1. 首屏 ===');
 check('标题', (await page.title()).includes('文言文'));
 check('顶部导航已移除', await page.locator('.app-nav').count() === 0);
 check('快捷入口已移除', await page.locator('.home-entry-grid').count() === 0);
-check('统计动态', /\d+ 篇课文 · \d+ 篇默写/.test(await page.locator('.app-header-info').textContent()));
+check('统计动态', /\d+ 篇篇章 · \d+ 篇默诵/.test(await page.locator('.app-header-info').textContent()));
 check('首页卡片', await page.locator('.article-card').count() >= 15);
 
-// ============ 2. 学习流 ============
-console.log('\n=== 2. 学习流 (阅读/注释/译文) ===');
+// ============ 2. 历练流 ============
+console.log('\n=== 2. 历练流 (阅读/注释/译文) ===');
 await page.locator('.home-search-box input').fill('岳阳楼记');
 await page.waitForTimeout(250);
 await page.locator('.article-card').first().click();
 await page.waitForTimeout(700);
-check('进入学习页', page.url().includes('/learn'));
+check('进入历练页', page.url().includes('/learn'));
 check('原文渲染', await page.locator('.para-orig').count() > 0);
 await page.locator('.annot-gloss').first().click();
 await page.waitForTimeout(200);
@@ -64,17 +64,15 @@ check('译文展开', await page.locator('.para-trans').count() > 0);
 check('注释标签', await page.locator('.workspace-tabs a:has-text("注释")').count() === 1);
 check('朗读按钮', await page.locator('.read-btn').count() >= 1);
 
-// ============ 3. 默写流 (学习页 → 默写入口 → 对答案 → 自评错题) ============
-console.log('\n=== 3. 默写流 (学习页默写入口/自评/错题入库) ===');
-await page.locator('.workspace-tabs a:has-text("默写")').click();
+// ============ 3. 默诵流 (关卡页默诵 tab 内嵌 → 对答案 → 自评失误) ============
+console.log('\n=== 3. 默诵流 (关卡页默诵tab内嵌/自评/失误入库) ===');
+await page.locator('.workspace-tabs a:has-text("默诵")').click();
 await page.waitForTimeout(700);
-check('默写入口卡', await page.locator('.moxie-entry-card').count() === 1);
-await page.locator('.moxie-entry-card a').first().click();
-await page.waitForTimeout(700);
-check('进入默写篇目页', page.url().includes('/moxie/'));
+check('默诵训练内嵌', await page.locator('.moxie-trainer').count() === 1);
+check('默诵路由', page.url().includes('/moxie'));
 check('题型 tab >= 4', await page.locator('.workspace-tabs button').count() >= 4);
 check('题卡加载', await page.locator('.moxie-q').count() > 0);
-// 原文默写: 输入错误答案 → 对答案自动判分 → 错题自动入库
+// 原文默诵: 输入错误答案 → 对答案自动判分 → 失误自动入库
 const blanksCount = await page.locator('.moxie-blank-input').count();
 check('输入横线渲染', blanksCount >= 1, `输入框 ${blanksCount} 个`);
 for (let i = 0; i < blanksCount; i++) {
@@ -89,7 +87,7 @@ const wrongAfterPractice = await page.evaluate(() => {
   const arr = raw ? JSON.parse(raw) : [];
   return Array.isArray(arr) ? arr.length : 0;
 });
-check('错题自动入本', wrongAfterPractice > 0, `错题数 ${wrongAfterPractice}`);
+check('失误自动入本', wrongAfterPractice > 0, `失误数 ${wrongAfterPractice}`);
 // ============ 4. 鉴赏流 (整篇鉴赏 + 阅读区查看赏析) ============
 console.log('\n=== 4. 鉴赏流 (整篇鉴赏/阅读区赏析) ===');
 await goto('/articles/jc-yueyanglouji/learn');
@@ -109,40 +107,41 @@ check('整篇鉴赏卡片', await page.locator('.appr-whole .appr-para').count()
 check('整篇鉴赏', await page.locator('.appr-whole').count() > 0);
 check('赏析内容', await page.locator('.appr-ana').count() > 0);
 
-// ============ 5. 默写错题本 ============
-console.log('\n=== 5. 默写错题本 (分组/重练) ===');
+// ============ 5. 失误回炉 ============
+console.log('\n=== 5. 失误回炉 (分组/重练) ===');
 await goto('/moxie/errors');
 await page.waitForTimeout(900);
-check('错题页渲染', await page.locator('.moxie-err-group').count() >= 1);
-check('错题分组显示', await page.locator('.meg-item').count() > 0);
+check('回炉页渲染', await page.locator('.moxie-err-group').count() >= 1);
+check('失误分组显示', await page.locator('.meg-item').count() > 0);
 const beforeDel = await page.evaluate(() => (JSON.parse(localStorage.getItem('wyw_errorbook_v2') || '[]')).length);
 await page.locator('.meg-remove').first().click();
 await page.waitForTimeout(300);
 const errAfter = await page.evaluate(() => (JSON.parse(localStorage.getItem('wyw_errorbook_v2') || '[]')).length);
-check('移除错题', errAfter < beforeDel, `${beforeDel} → ${errAfter}`);
+check('移除失误', errAfter < beforeDel, `${beforeDel} → ${errAfter}`);
 
-// ============ 6. 默写模块 ============
-console.log('\n=== 6. 默写模块 (列表/练习/错题) ===');
+// ============ 6. 默诵模块 ============
+console.log('\n=== 6. 默诵模块 (列表/练习/失误) ===');
 await goto('/moxie');
 await page.waitForTimeout(900);
-check('默写篇目卡', await page.locator('.moxie-card').count() >= 10);
+check('默诵篇目卡', await page.locator('.moxie-card').count() >= 10);
 check('年级 tab', await page.locator('.grade-tab').count() >= 3);
-// 进入第一篇
+// 进入第一篇 (旧 /moxie/:id 链接 → 重定向关卡页默诵 tab)
 await page.locator('.moxie-card').first().click();
-await page.waitForTimeout(600);
+await page.waitForTimeout(700);
+check('重定向到关卡页默诵', page.url().includes('/articles/') && page.url().includes('/moxie'));
 check('题型 tab', await page.locator('.workspace-tabs button').count() >= 4);
 check('题卡', await page.locator('.moxie-q').count() >= 1);
-// 原文默写: 填正确答案 → 自动判分通过
+// 原文默诵: 填正确答案 → 自动判分通过
 const bc2 = await page.locator('.moxie-blank-input').count();
 for (let i = 0; i < bc2; i++) await page.locator('.moxie-blank-input').nth(i).fill('占位答');
 await page.locator('.mq-reveal').first().click();
 await page.waitForTimeout(300);
 check('自动判分结果', (await page.locator('.mq-check-result').count()) >= 1);
-// 错题本
+// 失误回炉
 await goto('/moxie/errors');
 await page.waitForTimeout(500);
-check('默写错题本可渲染', (await page.locator('.moxie-err-group, .empty-state').count()) >= 1);
-// ============ 7. 旧题集路由 (已移除) ============
+check('失误回炉可渲染', (await page.locator('.moxie-err-group, .empty-state').count()) >= 1);
+// ============ 7. 旧路由 (已移除) ============
 console.log('\n=== 7. 旧路由 (已移除) ===');
 await goto('/review');
 await page.waitForTimeout(400);
@@ -151,39 +150,39 @@ await goto('/cards');
 await page.waitForTimeout(400);
 check('/cards 已移除 → 回首页', page.url().endsWith('/') || page.url().endsWith('/#/') || page.url().includes('/'));
 
-// ============ 8. 深链 ============
+// ============ 8. 旧链接深链 ============
 console.log('\n=== 8. 旧链接深链 ===');
 await goto('/learning/' + encodeURIComponent('论语十二章'));
 await page.waitForTimeout(600);
-check('旧学习链接跳转', page.url().includes('/articles/jc-ly/learn'));
+check('旧历练链接跳转', page.url().includes('/articles/jc-ly/learn'));
 await goto('/practice/' + encodeURIComponent('论语十二章'));
 await page.waitForTimeout(600);
 check('旧练习链接跳转(已移除)', page.url().endsWith('/') || page.url().includes('/'));
+// /moxie/:id 旧默诵直链 → 重定向关卡页默诵 tab
+await goto('/moxie/' + encodeURIComponent('moxie-岳阳楼记'));
+await page.waitForTimeout(700);
+check('/moxie/:id 重定向关卡页', page.url().includes('/articles/jc-yueyanglouji/moxie'));
 
 // ============ 9. 移动端 ============
 console.log('\n=== 9. 移动端 (375px) ===');
 const mob = await ctx.newPage();
 await mob.setViewportSize({ width: 375, height: 812 });
 for (const [label, h] of [
-  ['首页', ''], ['学习', '/articles/jc-ly/learn'], ['默写', '/moxie'],
-  ['默写练习', '/moxie/moxie-guan-cang-hai'],
+  ['首页', ''], ['历练', '/articles/jc-ly/learn'], ['默诵', '/moxie'],
+  ['默诵练习', '/moxie/moxie-guan-cang-hai'],
 ]) {
-  await mob.goto(BASE + h, { waitUntil: 'networkidle' });
+  await mob.goto(BASE.replace(/\/$/, '') + h, { waitUntil: 'networkidle' });
   await mob.waitForTimeout(450);
   const overflow = await mob.evaluate(() => document.documentElement.scrollWidth > window.innerWidth + 2);
   check(`移动端${label}无溢出`, !overflow);
 }
 await mob.close();
 
-// ============ 9.5 学习页联动 ============
-console.log('\n=== 9.5 学习页 → 默写联动 ===');
-// 学习页默写联动入口
+// ============ 9.5 关卡页默诵联动 ============
+console.log('\n=== 9.5 关卡页 → 默诵联动 ===');
 await goto('/articles/jc-yueyanglouji/moxie');
 await page.waitForTimeout(600);
-check('学习页默写入口卡', (await page.locator('.moxie-entry-card').count()) >= 1);
-await page.locator('.moxie-entry-card a').first().click();
-await page.waitForTimeout(600);
-check('跳转到默写篇目页', page.url().includes('/moxie/'));
+check('关卡页默诵训练内嵌', (await page.locator('.moxie-trainer').count()) >= 1);
 
 // ============ 10. 无 JS 错误 ============
 console.log('\n=== 10. 全程 JS 错误 ===');
