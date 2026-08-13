@@ -9,6 +9,7 @@ import { buildPronMap } from '../../shared/lib/pron-dict';
 import Modal from '../../shared/ui/Modal';
 import { speak, stopSpeak, ttsSupports } from '../../shared/lib/tts';
 import GlossPop from './GlossPop';
+import LectureMode from './LectureMode';
 import { applyTheme, THEME_DARK } from '../../shared/styles/tokens';
 import './article.css';
 
@@ -145,6 +146,7 @@ export default function ArticleReader({
   const [expandedAna, setExpandedAna] = useState<Set<number>>(() => new Set());
   // 诵读引导弹窗: 点击原文五角星 (背诵默诵句) 弹出
   const [guideStar, setGuideStar] = useState<{ sentence: string; translation?: string; kind?: string } | null>(null);
+  const [lecOpen, setLecOpen] = useState(false);
   const containerRef = useRef<HTMLDivElement>(null);
   const rowRef = useRef<HTMLDivElement>(null);
   const original = article.reading.original;
@@ -318,6 +320,11 @@ export default function ArticleReader({
 
   return (
     <div className="article" ref={containerRef}>
+      {/* 动画讲解入口 */}
+      <button type="button" className="lec-start" onClick={() => { stopSpeak(); setLecOpen(true); }} aria-label="动画讲解" title="动画讲解">
+        🎬 动画讲解
+      </button>
+      {lecOpen && <LectureMode article={article} onClose={() => setLecOpen(false)} />}
       {/* 朗读控制条 */}
       {ttsSupports() && (
         <div className={`read-bar${reading ? ' on' : ''}`}>

@@ -41,9 +41,13 @@ await page.reload({ waitUntil: 'networkidle' });
 console.log('=== 1. 闯关地图首页 ===');
 check('标题正确', (await page.title()).includes('文言文'));
 check('头部统计动态', /\d+ 篇篇章 · \d+ 篇默诵/.test(await page.locator('.app-header-info').textContent()));
-check('地图世界渲染', await page.locator('.gx-world-card').count() >= 3);
+check('地图世界渲染', await page.locator('.gx-world-col').count() >= 3);
+check('世界导航条', await page.locator('.gx-nav-btn').count() >= 6);
+check('横向滚动容器', await page.locator('.gx-map-h').count() === 1);
+check('玩家旗帜定位', await page.locator('.gx-player-token').count() === 1);
 check('关卡节点渲染', await page.locator('.gx-node-wrap').count() >= 100);
 check('金色路径渲染', await page.locator('.gx-svg path').count() >= 6);
+check('路径流动光效', await page.locator('.gx-path-flow').count() >= 6);
 check('地图头部标题', (await page.locator('.gx-ach-head h2').textContent()).includes('闯关地图'));
 check('成就入口', await page.locator('.gx-cta:has-text("成就")').count() === 1);
 check('已移除篇目列表', await page.locator('.article-card').count() === 0);
@@ -53,11 +57,22 @@ check('已移除推荐卡', await page.locator('.rec-card').count() === 0);
 check('TabBar 两 tab', await page.locator('.tab-bar .tab-item').count() === 2);
 const tabTexts = await page.locator('.tab-bar .tab-item span').allTextContents();
 check('TabBar 地图/成就', JSON.stringify(tabTexts) === JSON.stringify(['地图', '成就']));
-// 地图点击进入关卡页默诵 tab
-await page.locator('.gx-node.playable, .gx-node.done').first().click();
+// 地图点击未通关关卡 → 历练 tab (分流)
+await page.locator('.gx-node.playable').first().click();
 await page.waitForTimeout(900);
-check('地图进关卡页默诵', page.url().includes('/articles/') && page.url().includes('/moxie'));
-check('默诵训练内嵌', await page.locator('.moxie-trainer').count() === 1);
+check('地图进历练tab', page.url().includes('/articles/') && page.url().endsWith('/learn'));
+check('动画讲解入口', await page.locator('.lec-start').count() === 1);
+// 讲解模式: 逐句/译文/控制条
+await page.locator('.lec-start').click();
+await page.waitForTimeout(600);
+check('讲解模式打开', await page.locator('.lec-overlay').count() === 1);
+check('逐句列表', await page.locator('.lec-sentence').count() > 5);
+check('当前句高亮', await page.locator('.lec-sentence.active').count() === 1);
+check('译文显示', (await page.locator('.lec-trans-text').textContent()).length > 0);
+check('控制条', await page.locator('.lec-controls .lec-btn').count() >= 3);
+await page.locator('.lec-close').click();
+await page.waitForTimeout(300);
+check('关闭讲解', await page.locator('.lec-overlay').count() === 0);
 
 console.log('\n=== 2. 篇目工作区(历练) ===');
 await goto('/articles/jc-yueyanglouji/learn');
@@ -148,7 +163,7 @@ check('统计区', await page.locator('.moxie-stats .moxie-stat').count() === 4)
 console.log('\n=== 7. 旧路由与深链 ===');
 await goto('/map');
 check('/map 重定向首页', page.url().endsWith('/'));
-check('首页地图渲染', await page.locator('.gx-world-card').count() >= 1);
+check('首页地图渲染', await page.locator('.gx-world-col').count() >= 1);
 await goto('/learning/' + encodeURIComponent('岳阳楼记'));
 check('旧历练链接跳转', page.url().includes('/articles/jc-yueyanglouji/learn'));
 await goto('/moxie/' + encodeURIComponent('moxie-岳阳楼记'));

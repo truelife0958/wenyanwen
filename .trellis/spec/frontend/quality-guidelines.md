@@ -29,7 +29,8 @@ npm run validate   # 含段 8 raw 唯一性 / 段 9 真题重复 / 段 10 runtim
 ## 前端约定
 
 - TabBar 固定 2 tab（地图/成就）；新功能入口不新增 tab。
-- **地图首页（2026-08-13）**：`/` 直接渲染画布式闯关地图（LevelMap, lazy）——关卡节点按 S 形绝对定位（x 百分比 15/60 交替 + y 像素 GAP 124），SVG 三次贝塞尔金色路径连接（vector-effect 保线宽），按年级分"世界"卡片。`/map` 重定向 `/`。首页无英雄区/今日历练/搜索/篇目列表（Home.tsx/home.css/HeroStats.tsx 已删）。篇目唯一入口=地图关卡→`/articles/:id/moxie`。改地图布局须同步 LevelMap 坐标常量（NODE/GAP/X_LEFT/X_RIGHT/TOP）。
+- **地图首页（2026-08-13 横版版）**：`/` 渲染**横版卷轴世界地图**（LevelMap, lazy）——世界（年级）横向并排在 `.gx-map-h` 滚动容器（overflow-x auto，页面不溢出），世界内节点纵向小 S 形（x 百分比 24/74 交替 + y 像素 GAP 96），SVG 三次贝塞尔金色路径 + `.gx-path-flow` 流动光效（stroke-dashoffset 循环）。玩家 Token 为 CSS 旗帜（`.gx-token-flag`，勿用 emoji——headless 无彩色字体显示为 X），定位第一个未通关已解锁关并自动滚动到其世界。节点分流：**已通关→`/articles/:id/moxie`，未通关→`/articles/:id/learn`**。`/map` 重定向 `/`。改布局须同步常量（NODE/GAP/X_LEFT/X_RIGHT/TOP/世界列宽 330px）。
+- **动画讲解模式（2026-08-13）**：`src/features/learning/LectureMode.tsx`（全屏覆盖层，入口按钮 `.lec-start` 在 ArticleReader 顶部）。逐句拆自段落（start/end 切片 + `splitSentences`），段译文用 `alignLines` 对齐（段落无 translation 字段）；`speak()` TTS 朗读 + 句完自动进下句 + onEnd；无 TTS 静音降级。控制：播放/暂停/⏮⏭/进度 range/语速（复用 `wyw_tts_rate`）。CSS 类前缀 `.lec-`，颜色须走 var(--gx-*) 令牌（validate 段 11 gate article.css）。
 - **游戏化术语映射（2026-08-13）**：UI 消灭"学习/默写"二字（学习→历练、默写→默诵）。数据 json 保持原值（题型"原文默写"、标题"默写效果检测"、考点"背诵默写"等），展示层统一走 `src/shared/lib/game-terms.ts` 的 `g()`/`moxieTypeLabel()`；静态 UI 文案直接改字。新增"默写/学习"文案必须经映射或直接禁用。
 - **关卡页结构**：篇目工作区 `/articles/:id/:tab` 是唯一关卡页（历练/鉴赏/考点/注释/默诵）；默诵 tab 内嵌共享训练组件 `src/features/moxie/MoxieTrainer.tsx`（题型 tab + 判分 + XP + 失误入库），判分副作用统一走 `saveMoxieResult`/`game.addResult`/`addWrong`。`/moxie/:id` 由懒组件 `MoxieRedirect` 重定向→关卡页默诵 tab。
 - **首屏性能**：`article-meta.json` counts 含 `moxieArticles/moxieQuestions`（build 生成）；首页/App 只从 counts 读默写统计，**禁止** import `data/moxie.ts`（会静态拉入 555KB moxie.json chunk）。需用默写数据的页面直接引 `data/moxie.ts`（路由懒加载生效）。
