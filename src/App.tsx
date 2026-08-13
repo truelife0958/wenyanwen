@@ -4,6 +4,7 @@ import { Navigate, Route, Routes, useNavigate } from 'react-router-dom';
 import TabBar from './features/home/TabBar';
 import ErrorBoundary from './shared/ui/ErrorBoundary';
 import { ErrorBookProvider } from './features/errorbook/store';
+import InkScene from './features/ink/InkScene';
 import { GameProvider } from './features/game/store';
 import GameFx from './features/game/GameFx';
 import { counts, loadCore } from './data';
@@ -57,6 +58,7 @@ export default function App() {
   return (
     <ErrorBookProvider>
       <GameProvider>
+      <InkScene />
       <div className="app-shell">
         <DeepLinkRestore />
         <PreloadCore />

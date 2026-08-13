@@ -37,3 +37,5 @@ npm run validate   # 含段 8 raw 唯一性 / 段 9 真题重复 / 段 10 runtim
 - **新中式视觉系统（2026-08-13 重构）**：全站"新中式·古风雅致"——墨青深底 + 哑金(`--gx-gold #c9a45c`/`--accent-brown`) + 青瓷(`--gx-jade #4a8f84` 取代荧光绿) + 朱砂印章(`--seal-red #a8483e` 仅印章/停止态点缀)。墨色页头(`--header-bg`/`--header-ink` + 印章伪元素)。禁荧光绿/荧光金/蓝紫霓虹。强调色用金褐(`--accent-brown`)不用 `--primary`(红只作朱砂点缀)。CSS 硬编码 hex 禁止(validate 段11 gate global/article/moxie.css)；game.css 不在检查列表但也要用 `--gx-*` 令牌。
 - `localStorage` 读取要处理 `null`（`Number(null)=0` 陷阱，见 ArticleReader loadSetting）。
 - 阅读工具条（语速/字号/主题）状态持久化 key：`wyw_tts_rate` / `wyw_font_scale`。
+- **three.js 3D 水墨粒子（2026-08-13）**：`src/features/ink/InkScene.tsx` 全站背景——three 动态 import 懒加载（独立 chunk，主包不含 three）；WebGL 不可用自动降级 2D CSS 墨韵（.ink-fallback）；粒子数桌面 1500/移动 450，DPR 上限 2，页面隐藏暂停 rAF。`inkBurst()` 提供粒子扩散特效（讲解模式内容卡触发）。新增 3D 相关页面须走 InkScene 复用，不要重复创建渲染器。
+- **五段式动画讲解（2026-08-13）**：LectureMode 数据编排 = 句子流 + 内容卡（重点字词=词义默写题 word+answers 按句匹配 / 重点句=recitation.stars / 鉴赏=paragraphs[].analysis 段末 / 随堂练习=本关 moxie 真题判分）。内容卡类 .ink-*（word/key/analysis/practice）。练习判分复用 normAnswer/matchAnswer。词义题经 findMoxieArticle(title) 取（articleId 不存在于 CanonicalArticle）。

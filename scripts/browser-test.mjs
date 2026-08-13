@@ -62,7 +62,7 @@ await page.locator('.gx-node.playable').first().click();
 await page.waitForTimeout(900);
 check('地图进历练tab', page.url().includes('/articles/') && page.url().endsWith('/learn'));
 check('动画讲解入口', await page.locator('.lec-start').count() === 1);
-// 讲解模式: 逐句/译文/控制条
+// 讲解模式: 逐句/译文/控制条 (观沧海通用断言)
 await page.locator('.lec-start').click();
 await page.waitForTimeout(600);
 check('讲解模式打开', await page.locator('.lec-overlay').count() === 1);
@@ -107,6 +107,27 @@ await page.locator('.recite-star').first().click();
 await page.waitForTimeout(250);
 check('诵读引导弹窗', await page.locator('.recite-guide').count() === 1);
 await page.locator('.rg-close').click();
+
+// 讲解模式内容卡 (岳阳楼记: 有词义题/背诵句/鉴赏/练习)
+await page.locator('.lec-start').click();
+await page.waitForTimeout(700);
+check('重点字词卡', await page.locator('.ink-word-card').count() > 0);
+check('重点句卡', await page.locator('.ink-key-card').count() > 0);
+check('鉴赏卡', await page.locator('.ink-analysis-card').count() > 0);
+check('随堂练习卡', await page.locator('.ink-practice-card').count() === 1);
+await page.locator('.ink-practice-card').click();
+await page.waitForTimeout(400);
+const pInputs = await page.locator('.ink-p-input').count();
+check('练习输入框', pInputs > 0, `${pInputs} 个`);
+if (pInputs > 0) {
+  await page.locator('.ink-p-input').first().fill('错答占位');
+  await page.locator('.ink-p-check').first().click();
+  await page.waitForTimeout(400);
+  check('练习判分展示', await page.locator('.ink-p-result').count() > 0);
+}
+await page.locator('.lec-close').click();
+await page.waitForTimeout(300);
+check('关闭讲解', await page.locator('.lec-overlay').count() === 0);
 
 console.log('\n=== 3. 鉴赏/考点/注释/默诵 四标签 ===');
 await page.locator('.workspace-tabs a:has-text("鉴赏")').click();

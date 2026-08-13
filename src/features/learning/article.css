@@ -1362,3 +1362,98 @@
   .lec-title { font-size: 0.85rem; }
   .lec-sentence { font-size: 0.95rem; }
 }
+
+/* ── 五段式内容卡 (重点字词/重点句/鉴赏/随堂练习) ── */
+.ink-card {
+  margin: 10px 0;
+  padding: 14px 16px;
+  border-radius: 14px;
+  border: 1px solid rgba(201, 164, 92, 0.4);
+  background: linear-gradient(150deg, rgba(201, 164, 92, 0.1), rgba(74, 143, 132, 0.06));
+  position: relative;
+  cursor: pointer;
+  transition: all 0.25s ease;
+  animation: ink-pop 0.4s ease-out both;
+}
+.ink-card:hover { background: rgba(201, 164, 92, 0.16); }
+.ink-card.active {
+  border-color: var(--gx-gold);
+  box-shadow: 0 0 20px rgba(201, 164, 92, 0.22);
+  transform: scale(1.015);
+}
+.ink-card::before {
+  content: '';
+  position: absolute; top: 0; left: 0; bottom: 0;
+  width: 4px;
+  border-radius: 4px 0 0 4px;
+  background: linear-gradient(180deg, var(--gx-gold-bright), var(--gx-gold-dim));
+}
+.ink-card-tag {
+  display: inline-block;
+  padding: 2px 10px;
+  border-radius: 999px;
+  font-size: 0.68rem; font-weight: 700;
+  background: rgba(201, 164, 92, 0.18);
+  color: var(--gx-gold-bright);
+  border: 1px solid rgba(201, 164, 92, 0.4);
+  margin-bottom: 8px;
+  letter-spacing: 2px;
+}
+/* 重点字词 */
+.ink-word-main b {
+  font-size: 1.9rem;
+  font-family: var(--f-kaiti), serif;
+  color: var(--gx-gold-bright);
+  text-shadow: 0 0 18px rgba(201, 164, 92, 0.45);
+  line-height: 1.4;
+}
+.ink-word-mean { font-size: 0.95rem; color: var(--gx-ink); margin-top: 4px; line-height: 1.8; }
+.ink-word-stem { font-size: 0.78rem; color: var(--gx-ink-dim); margin-top: 6px; }
+/* 重点句 */
+.ink-key-text {
+  font-size: 1.12rem;
+  font-family: var(--f-kaiti), serif;
+  color: var(--gx-gold-bright);
+  letter-spacing: 1px;
+  line-height: 1.7;
+}
+.ink-key-trans { font-size: 0.88rem; color: var(--gx-ink); margin-top: 8px; line-height: 1.8; }
+/* 鉴赏 */
+.ink-analysis-text {
+  font-size: 0.88rem; color: var(--gx-ink);
+  line-height: 1.9; white-space: pre-line;
+}
+/* 随堂练习 */
+.ink-practice-card { background: linear-gradient(150deg, rgba(74, 143, 132, 0.14), rgba(19, 22, 30, 0.4)); }
+.ink-p-item { border-top: 1px dashed rgba(201, 164, 92, 0.25); padding: 10px 0; }
+.ink-p-item:first-of-type { border-top: none; }
+.ink-p-type { font-size: 0.66rem; font-weight: 700; color: var(--success-mid); letter-spacing: 1px; margin-bottom: 4px; }
+.ink-p-q { font-size: 0.9rem; color: var(--gx-ink); line-height: 1.7; }
+.ink-p-input-row { display: flex; gap: 8px; margin-top: 8px; }
+.ink-p-input {
+  flex: 1;
+  padding: 7px 12px;
+  border-radius: 10px;
+  border: 1px solid rgba(201, 164, 92, 0.4);
+  background: rgba(19, 22, 30, 0.7);
+  color: var(--gx-ink);
+  font-size: 0.85rem;
+}
+.ink-p-check {
+  flex: none;
+  padding: 7px 16px;
+  border-radius: 10px;
+  border: 1px solid var(--gx-gold);
+  background: rgba(201, 164, 92, 0.2);
+  color: var(--gx-gold-bright);
+  font-size: 0.82rem; font-weight: 700;
+  cursor: pointer;
+}
+.ink-p-check:hover { background: rgba(201, 164, 92, 0.32); }
+.ink-p-result { font-size: 0.82rem; margin-top: 6px; font-weight: 700; }
+.ink-p-result.ok { color: var(--success-mid); }
+.ink-p-result.bad { color: var(--error); }
+@keyframes ink-pop {
+  0% { opacity: 0; transform: translateY(12px) scale(0.96); }
+  100% { opacity: 1; transform: translateY(0) scale(1); }
+}
