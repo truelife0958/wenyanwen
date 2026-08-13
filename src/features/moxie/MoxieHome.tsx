@@ -41,7 +41,7 @@ export default function MoxieHome() {
           <div className="moxie-ring">
             <svg viewBox="0 0 64 64" className="ring-svg">
               <circle cx="32" cy="32" r="26" fill="none" stroke="#d9cdb8" strokeWidth="7" />
-              <circle cx="32" cy="32" r="26" fill="none" stroke="var(--primary)" strokeWidth="7"
+              <circle cx="32" cy="32" r="26" fill="none" stroke="var(--accent-brown)" strokeWidth="7"
                 strokeLinecap="round" strokeDasharray={`${2 * Math.PI * 26}`}
                 strokeDashoffset={`${2 * Math.PI * 26 * (1 - (totalItems ? doneCount / totalItems : 0))}`}
                 transform="rotate(-90 32 32)" style={{ transition: 'stroke-dashoffset 0.6s ease' }} />
@@ -89,7 +89,7 @@ export default function MoxieHome() {
                   <span className="ac-title">{g(article.title)}</span>
                   <span className="ac-meta">默诵 {p.total} 题 · {pct}%</span>
                   <span className="moxie-card-bar" aria-hidden="true">
-                    <i style={{ width: `${pct}%`, background: allPass ? 'var(--success)' : 'var(--primary)' }} />
+                    <i style={{ width: `${pct}%`, background: allPass ? "var(--success)" : "var(--accent-brown)" }} />
                   </span>
                   {allPass && <span className="ac-badge moxie-done">已通关</span>}
                 </Link>

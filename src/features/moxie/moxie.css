@@ -6,7 +6,7 @@
   align-items: center;
   justify-content: space-between;
   gap: var(--sp-lg);
-  background: linear-gradient(135deg, var(--primary-soft), var(--card-bg));
+  background: linear-gradient(135deg, var(--accent-soft), var(--card-bg));
   border: 1px solid var(--paper-border);
   border-radius: 16px;
   padding: 18px 20px;
@@ -20,7 +20,7 @@
 .moxie-ring .ring-svg { width: 64px; height: 64px; }
 .moxie-ring .ring-text {
   position: absolute; inset: 0; display: flex; align-items: center; justify-content: center;
-  font-size: 0.8rem; font-weight: 800; color: var(--primary-dark);
+  font-size: 0.8rem; font-weight: 800; color: var(--accent-brown);
 }
 .moxie-ring-wrap .ring-caption { font-size: 0.6rem; color: var(--ink-light); letter-spacing: 1px; }
 
@@ -48,11 +48,11 @@
 
 /* ===== 篇目练习页 ===== */
 .moxie-to-learn {
-  font-size: var(--f-size-sm); color: var(--primary); text-decoration: none;
-  padding: var(--sp-xs) 10px; border: 1px solid var(--primary); border-radius: var(--r-pill);
+  font-size: var(--f-size-sm); color: var(--accent-brown); text-decoration: none;
+  padding: var(--sp-xs) 10px; border: 1px solid var(--accent-brown); border-radius: var(--r-pill);
   white-space: nowrap;
 }
-.moxie-to-learn:hover { background: var(--primary-soft); }
+.moxie-to-learn:hover { background: var(--accent-soft); }
 
 .workspace-tabs button {
   min-height: 44px;
@@ -71,10 +71,10 @@
   transition: color 0.15s, border-color 0.15s;
   white-space: nowrap;
 }
-.workspace-tabs button:hover { color: var(--primary); }
+.workspace-tabs button:hover { color: var(--accent-brown); }
 .workspace-tabs button.active {
-  color: var(--primary);
-  border-bottom-color: var(--primary);
+  color: var(--accent-brown);
+  border-bottom-color: var(--accent-brown);
 }
 .workspace-tabs .ws-count {
   font-style: normal; font-size: 0.72rem; color: var(--ink-light); margin-left: var(--sp-xs);
@@ -92,7 +92,7 @@
 
 .mq-head { display: flex; align-items: baseline; gap: var(--sp-sm); margin-bottom: var(--sp-sm); }
 .mq-type {
-  font-size: 0.72rem; font-weight: 700; color: var(--primary-dark); background: var(--primary-soft);
+  font-size: 0.72rem; font-weight: 700; color: var(--accent-brown); background: var(--accent-soft);
   padding: 3px var(--sp-sm); border-radius: var(--r-pill);
 }
 .mq-blanks { font-size: 0.72rem; color: var(--ink-light); }
@@ -103,21 +103,21 @@
   text-wrap: pretty;
 }
 .moxie-blank {
-  display: inline-block; min-width: 3.2em; border-bottom: 2px solid var(--primary);
+  display: inline-block; min-width: 3.2em; border-bottom: 2px solid var(--accent-brown);
   color: transparent; margin: 0 2px; letter-spacing: 0.1em;
 }
 .moxie-word {
-  color: var(--primary-dark); border-bottom: 2px solid var(--accent); padding-bottom: 1px;
+  color: var(--accent-brown); border-bottom: 2px solid var(--accent); padding-bottom: 1px;
   font-weight: 600;
   margin: 0 2px;
 }
 
 .mq-reveal {
-  background: var(--primary-soft); color: var(--primary-dark);
-  border: 1px solid var(--primary); border-radius: var(--r-pill);
+  background: var(--accent-soft); color: var(--accent-brown);
+  border: 1px solid var(--accent-brown); border-radius: var(--r-pill);
   padding: 6px 18px; font-size: var(--f-size-sm); cursor: pointer;
 }
-.mq-reveal:hover { background: var(--primary); color: var(--card-bg); }
+.mq-reveal:hover { background: var(--accent-brown); color: var(--card-bg); }
 
 /* 答案区 */
 .mq-answer {
@@ -190,7 +190,7 @@
   background: transparent;
   font-family: inherit;
   font-size: 1rem;
-  color: var(--primary-dark);
+  color: var(--accent-brown);
   text-align: center;
   padding: 0 4px 1px;
   min-width: 4.5em;
@@ -199,7 +199,7 @@
   transition: border-color 0.15s ease, background 0.15s ease;
 }
 .moxie-blank-input::placeholder { color: var(--muted); font-size: 0.72rem; }
-.moxie-blank-input:focus { border-bottom-color: var(--primary); background: var(--primary-soft); }
+.moxie-blank-input:focus { border-bottom-color: var(--accent-brown); background: var(--accent-soft); }
 .moxie-blank-input:disabled { opacity: 1; }
 .moxie-blank-wrap.ok .moxie-blank-input { border-bottom-color: var(--success); color: var(--success-dark); background: var(--success-soft); }
 .moxie-blank-wrap.bad .moxie-blank-input { border-bottom-color: var(--error); color: var(--error); background: var(--error-soft); text-decoration: line-through; }
@@ -227,7 +227,7 @@
   cursor: pointer;
   transition: all 0.15s ease;
 }
-.mq-retry:hover { border-color: var(--primary); color: var(--primary); }
+.mq-retry:hover { border-color: var(--accent-brown); color: var(--accent-brown); }
 .mq-answer-row.ok .mq-answer-text { color: var(--success-dark); }
 .mq-answer-row.bad .mq-answer-text { color: var(--error); }
 .mq-wrong { color: var(--error); }
@@ -237,7 +237,7 @@
 .moxie-trainer { padding-top: 4px; }
 .mt-top { display: flex; align-items: center; justify-content: space-between; margin: 2px 0 10px; }
 .mt-progress {
-  font-size: 0.8rem; font-weight: 600; color: var(--primary-dark);
-  background: var(--primary-soft); border: 1px solid var(--primary);
+  font-size: 0.8rem; font-weight: 600; color: var(--accent-brown);
+  background: var(--accent-soft); border: 1px solid var(--accent-brown);
   padding: 4px 12px; border-radius: var(--r-pill);
 }

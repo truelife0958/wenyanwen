@@ -25,33 +25,51 @@ button { font-family: inherit; cursor: pointer; }
 .app-shell { min-height: 100vh; display: flex; flex-direction: column; }
 
 .app-header {
-  background: linear-gradient(150deg, var(--primary) 0%, var(--primary) 55%, var(--primary-dark) 100%);
-  color: var(--card-bg);
+  background: linear-gradient(160deg, var(--header-bg) 0%, var(--header-bg-deep) 100%);
+  color: var(--header-ink);
   padding: 14px var(--sp-lg) var(--sp-md);
   text-align: center;
   position: relative;
-  box-shadow: 0 2px 12px var(--red-deep-22);
+  box-shadow: 0 2px 14px rgba(10, 13, 22, 0.45);
 }
 .app-header::after {
   content: '';
   position: absolute;
   left: 0; right: 0; bottom: 0;
   height: 3px;
-  background: linear-gradient(90deg, transparent, var(--accent) 18%, var(--accent) 82%, transparent);
+  background: linear-gradient(90deg, transparent, var(--accent) 20%, var(--accent) 80%, transparent);
+  opacity: 0.75;
 }
 .app-header h1 {
   font-size: 1.28rem;
   letter-spacing: 4px;
   font-weight: 700;
   margin-bottom: 3px;
-  text-shadow: 0 1px 2px var(--black-18);
+  color: var(--header-ink);
+  text-shadow: 0 1px 2px rgba(0, 0, 0, 0.35);
+}
+/* 朱砂印章 logo (CSS 绘制, 不依赖字体图标) */
+.app-header h1::before {
+  content: '文';
+  display: inline-block;
+  width: 26px; height: 26px;
+  margin-right: 10px;
+  border-radius: 5px;
+  background: var(--seal-red);
+  color: var(--seal-ink);
+  font-size: 0.8rem;
+  font-weight: 700;
+  line-height: 26px;
+  text-align: center;
+  vertical-align: 4px;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.3), inset 0 0 0 1px rgba(255, 255, 255, 0.15);
 }
 .app-header .subtitle { font-size: 0.85rem; opacity: 0.9; }
 .app-header-info {
   display: block;
-  color: var(--ink-2);
+  color: var(--header-ink);
   font-size: 0.75rem;
-  opacity: 0.8;
+  opacity: 0.72;
 }
 
 .app-main {
@@ -621,7 +639,8 @@ h2 {
   white-space: nowrap;
 }
 /* 篇目页标题徽章: 语义配色与首页卡片徽章统一 (must=印章红, core=古铜棕) */
-.ac-badge-must { background: var(--primary); color: var(--card-bg); }
+/* 篇目页标题徽章: 语义配色与首页卡片徽章统一 (must=金褐印章感, core=古铜棕) */
+.ac-badge-must { background: var(--accent-brown); color: var(--card-bg); }
 .ac-badge-core { background: var(--bronze-deep); color: var(--card-bg); }
 
 /* 作答输入框 (VLM: 黑实线突兀 → 纸色描边) */
@@ -674,15 +693,15 @@ h2 {
   transition: all var(--dur-fast) var(--ease-out);
 }
 .tab-item .icon { display: block; }
-.tab-item:hover { color: var(--primary); background: var(--primary-soft); }
-.tab-item.active { color: var(--card-bg); background: var(--primary); font-weight: 700; }
+.tab-item:hover { color: var(--accent-brown); background: var(--accent-soft); }
+.tab-item.active { color: var(--header-ink); background: var(--tab-active); font-weight: 700; }
 .app-main { padding-bottom: 84px; }
 
 /* ===== 紧凑布局: 首屏尽量一屏放下, 减少纵向滚动 (2026-08) ===== */
 .app-header { padding: var(--sp-sm) var(--sp-lg) 6px; }
 .app-header h1 { font-size: 1.08rem; letter-spacing: 3px; margin-bottom: 2px; }
 .app-header .subtitle { font-size: 0.78rem; }
-.app-header-info { font-size: 0.76rem; color: var(--ink-2); }
+.app-header-info { font-size: 0.76rem; color: var(--header-ink); opacity: 0.72; }
 .app-main { padding-top: var(--sp-md); padding-bottom: 96px; }
 .app-footer { padding: var(--sp-sm); font-size: 0.72rem; }
 .tab-bar { padding: 5px 10px calc(5px + env(safe-area-inset-bottom)); }
@@ -691,8 +710,13 @@ h2 {
 /* ===== gemini 视觉审查修复 (2026-08) ===== */
 /* 1) 底部导航: 未选中项加深对比 (ink-2), 选中态红底白字统一 */
 .tab-item { color: var(--ink-2); }
-.tab-item.active { color: var(--card-bg); background: var(--primary); font-weight: 700; box-shadow: 0 2px 8px var(--red-25); }
-.tab-item:hover { color: var(--primary); background: var(--primary-soft); }
+.tab-item.active {
+  color: var(--header-ink);
+  background: var(--tab-active);
+  font-weight: 700;
+  box-shadow: inset 0 -2px 0 rgba(201, 164, 92, 0.55);
+}
+.tab-item:hover { color: var(--accent-brown); background: rgba(201, 164, 92, 0.1); }
 /* 2) 篇目卡片标签: 标题右侧预留标签空间, 彻底避免长标题与徽章重叠 */
 .article-card { padding-right: 14px; }
 .ac-badge { max-width: 44%; font-size: 0.58rem; padding: 1px 6px; }

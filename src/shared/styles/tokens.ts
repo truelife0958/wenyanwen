@@ -42,6 +42,13 @@ const tokens = {
   'must-orange': '#d9480f',
   'moss': '#6b7f5e',
   'moss-dark': '#55684a',
+  // ── 新中式墨色页头 / 导航 (2026-08-13 视觉重构) ──
+  'header-bg': '#171b26',
+  'header-bg-deep': '#10141c',
+  'header-ink': '#ece4d2',
+  'seal-red': '#a8483e',
+  'seal-ink': '#f5ecd8',
+  'tab-active': '#2a313d',
   // ── 半透明修饰色 (量化命名: 色-透明度%) ──
   'ink-4': 'rgba(43, 36, 28, 0.04)',
   'ink-25': 'rgba(43, 36, 28, 0.25)',
@@ -79,7 +86,6 @@ const tokens = {
   'moss-28': 'rgba(85, 104, 74, 0.28)',
   'border': '#e5ddd0',
   'border-soft': '#f0e9dd',
-  'seal-red': '#c4453c',
   'paper-border': '#e8dfd0',
 
   // ── 字体 ──

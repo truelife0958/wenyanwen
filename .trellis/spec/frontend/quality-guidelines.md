@@ -34,6 +34,6 @@ npm run validate   # 含段 8 raw 唯一性 / 段 9 真题重复 / 段 10 runtim
 - **游戏化术语映射（2026-08-13）**：UI 消灭"学习/默写"二字（学习→历练、默写→默诵）。数据 json 保持原值（题型"原文默写"、标题"默写效果检测"、考点"背诵默写"等），展示层统一走 `src/shared/lib/game-terms.ts` 的 `g()`/`moxieTypeLabel()`；静态 UI 文案直接改字。新增"默写/学习"文案必须经映射或直接禁用。
 - **关卡页结构**：篇目工作区 `/articles/:id/:tab` 是唯一关卡页（历练/鉴赏/考点/注释/默诵）；默诵 tab 内嵌共享训练组件 `src/features/moxie/MoxieTrainer.tsx`（题型 tab + 判分 + XP + 失误入库），判分副作用统一走 `saveMoxieResult`/`game.addResult`/`addWrong`。`/moxie/:id` 由懒组件 `MoxieRedirect` 重定向→关卡页默诵 tab。
 - **首屏性能**：`article-meta.json` counts 含 `moxieArticles/moxieQuestions`（build 生成）；首页/App 只从 counts 读默写统计，**禁止** import `data/moxie.ts`（会静态拉入 555KB moxie.json chunk）。需用默写数据的页面直接引 `data/moxie.ts`（路由懒加载生效）。
-- 主题切换走 `tokens.ts` 的 `applyTheme/initTheme`（localStorage `wyw_theme`），不要散落 CSS 覆盖。
+- **新中式视觉系统（2026-08-13 重构）**：全站"新中式·古风雅致"——墨青深底 + 哑金(`--gx-gold #c9a45c`/`--accent-brown`) + 青瓷(`--gx-jade #4a8f84` 取代荧光绿) + 朱砂印章(`--seal-red #a8483e` 仅印章/停止态点缀)。墨色页头(`--header-bg`/`--header-ink` + 印章伪元素)。禁荧光绿/荧光金/蓝紫霓虹。强调色用金褐(`--accent-brown`)不用 `--primary`(红只作朱砂点缀)。CSS 硬编码 hex 禁止(validate 段11 gate global/article/moxie.css)；game.css 不在检查列表但也要用 `--gx-*` 令牌。
 - `localStorage` 读取要处理 `null`（`Number(null)=0` 陷阱，见 ArticleReader loadSetting）。
 - 阅读工具条（语速/字号/主题）状态持久化 key：`wyw_tts_rate` / `wyw_font_scale`。

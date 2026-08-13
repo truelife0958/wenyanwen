@@ -11,18 +11,18 @@
   gap: var(--sp-sm);
   padding: 9px 18px;
   border-radius: var(--r-pill);
-  background: linear-gradient(135deg, var(--primary-dark), var(--primary-darker));
+  background: linear-gradient(135deg, var(--moss), var(--moss-dark));
   color: var(--card-bg);
   border: none;
   font-size: 0.9rem;
   font-weight: 600;
   cursor: pointer;
-  box-shadow: 0 2px 8px var(--red-22);
+  box-shadow: 0 2px 8px var(--moss-28);
   transition: all var(--dur-fast) var(--ease-out);
 }
-.read-btn:hover { box-shadow: 0 4px 14px var(--red-32); transform: translateY(-1px); }
+.read-btn:hover { box-shadow: 0 4px 14px var(--moss-28); transform: translateY(-1px); }
 .read-btn:hover { background: var(--accent-soft); }
-.read-btn.on { background: var(--primary); color: var(--card-bg); border-color: var(--primary); }
+.read-btn.on { background: var(--seal-red); color: var(--seal-ink); border-color: var(--seal-red); }
 
 /* ===== 朗读控制条 ===== */
 .read-bar {
@@ -933,7 +933,7 @@
 .annot-no {
   font-size: 0.62em;
   font-weight: 700;
-  color: var(--primary);
+  color: var(--accent-brown);
   vertical-align: super;
   margin-left: 1px;
   line-height: 1;
@@ -1241,14 +1241,14 @@
   margin: 0 0 14px;
   padding: 8px 16px;
   border-radius: 999px;
-  border: 1px solid rgba(245, 197, 66, 0.5);
-  background: linear-gradient(135deg, rgba(245, 197, 66, 0.18), rgba(245, 197, 66, 0.06));
+  border: 1px solid rgba(201, 164, 92, 0.5);
+  background: linear-gradient(135deg, rgba(201, 164, 92, 0.18), rgba(201, 164, 92, 0.06));
   color: var(--primary-dark);
   font-weight: 700; font-size: 0.85rem;
   cursor: pointer;
   transition: transform 0.15s ease, box-shadow 0.15s ease;
 }
-.lec-start:hover { transform: translateY(-1px); box-shadow: 0 4px 14px rgba(245, 197, 66, 0.25); }
+.lec-start:hover { transform: translateY(-1px); box-shadow: 0 4px 14px rgba(201, 164, 92, 0.25); }
 .lec-start:active { transform: scale(0.96); }
 @media (prefers-color-scheme: dark) {
   .lec-start { color: var(--gx-gold-bright); }
@@ -1256,7 +1256,7 @@
 .lec-overlay {
   position: fixed; inset: 0;
   z-index: 1200;
-  background: linear-gradient(170deg, rgba(9, 14, 40, 0.97), rgba(14, 10, 36, 0.98));
+  background: linear-gradient(170deg, rgba(19, 22, 30, 0.97), rgba(16, 20, 28, 0.98));
   display: flex; align-items: center; justify-content: center;
   padding: 18px;
 }
@@ -1264,16 +1264,16 @@
   width: 100%; max-width: 760px;
   height: min(88vh, 780px);
   display: flex; flex-direction: column;
-  background: linear-gradient(165deg, rgba(24, 32, 78, 0.92), rgba(10, 14, 38, 0.96));
-  border: 1px solid rgba(245, 197, 66, 0.35);
+  background: linear-gradient(165deg, rgba(26, 31, 41, 0.92), rgba(16, 20, 28, 0.96));
+  border: 1px solid rgba(201, 164, 92, 0.35);
   border-radius: 20px;
-  box-shadow: 0 0 60px rgba(245, 197, 66, 0.15), inset 0 0 40px rgba(245, 197, 66, 0.04);
+  box-shadow: 0 0 60px rgba(201, 164, 92, 0.15), inset 0 0 40px rgba(201, 164, 92, 0.04);
   overflow: hidden;
 }
 .lec-head {
   display: flex; align-items: center; gap: 12px;
   padding: 14px 18px;
-  border-bottom: 1px solid rgba(245, 197, 66, 0.2);
+  border-bottom: 1px solid rgba(201, 164, 92, 0.2);
 }
 .lec-title { flex: 1; font-weight: 800; font-size: 0.98rem; color: var(--gx-gold-bright); letter-spacing: 1px; }
 .lec-progress { font-size: 0.78rem; color: var(--gx-jade); font-weight: 700; }
@@ -1303,44 +1303,44 @@
 .lec-sentence:hover { background: rgba(255, 255, 255, 0.04); }
 .lec-sentence.read { color: var(--gx-ink-dim); }
 .lec-sentence.active {
-  background: linear-gradient(90deg, rgba(245, 197, 66, 0.3), rgba(245, 197, 66, 0.07));
+  background: linear-gradient(90deg, rgba(201, 164, 92, 0.3), rgba(201, 164, 92, 0.07));
   border-left: 4px solid var(--gx-gold);
   color: var(--gx-gold-bright);
   transform: scale(1.02);
-  box-shadow: 0 0 22px rgba(245, 197, 66, 0.22);
+  box-shadow: 0 0 22px rgba(201, 164, 92, 0.22);
   font-weight: 600;
 }
 .lec-s-no {
   flex: none; width: 22px; height: 22px; border-radius: 50%;
   display: grid; place-items: center;
   font-size: 0.66rem; font-weight: 700;
-  background: rgba(245, 197, 66, 0.15);
+  background: rgba(201, 164, 92, 0.15);
   color: var(--gx-gold-bright);
   transform: translateY(2px);
 }
 .lec-sentence.active .lec-s-no { background: var(--gx-gold); color: var(--gx-gold-dim); }
 .lec-trans {
   padding: 12px 18px;
-  border-top: 1px dashed rgba(245, 197, 66, 0.25);
-  background: rgba(245, 197, 66, 0.05);
+  border-top: 1px dashed rgba(201, 164, 92, 0.25);
+  background: rgba(201, 164, 92, 0.05);
 }
 .lec-trans-label { font-size: 0.68rem; font-weight: 700; color: var(--gx-gold-bright); letter-spacing: 2px; margin-bottom: 4px; }
 .lec-trans-text { font-size: 0.9rem; color: var(--gx-ink); line-height: 1.8; }
 .lec-controls {
   display: flex; align-items: center; gap: 10px;
   padding: 12px 18px;
-  border-top: 1px solid rgba(245, 197, 66, 0.2);
+  border-top: 1px solid rgba(201, 164, 92, 0.2);
 }
 .lec-btn {
   width: 40px; height: 40px; border-radius: 50%;
-  border: 1px solid rgba(245, 197, 66, 0.4);
-  background: rgba(245, 197, 66, 0.1);
+  border: 1px solid rgba(201, 164, 92, 0.4);
+  background: rgba(201, 164, 92, 0.1);
   color: var(--gx-gold-bright);
   font-size: 1rem; cursor: pointer;
   flex: none;
   transition: transform 0.15s ease, background 0.15s ease;
 }
-.lec-btn:hover { background: rgba(245, 197, 66, 0.22); }
+.lec-btn:hover { background: rgba(201, 164, 92, 0.22); }
 .lec-btn:active { transform: scale(0.9); }
 .lec-btn.lec-play { width: 48px; height: 48px; background: var(--gx-gold); color: var(--gx-gold-dim); font-size: 1.1rem; border-color: var(--gx-gold-bright); }
 .lec-btn.lec-rate { width: auto; min-width: 44px; padding: 0 8px; border-radius: 12px; font-size: 0.78rem; font-weight: 700; }
