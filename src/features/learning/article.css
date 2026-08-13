@@ -1456,4 +1456,51 @@
 @keyframes ink-pop {
   0% { opacity: 0; transform: translateY(12px) scale(0.96); }
   100% { opacity: 1; transform: translateY(0) scale(1); }
+
+}
+
+/* ── 讲解模式内联增强 (字词/重点句/鉴赏, 不占流程步骤) ── */
+.ink-key-badge {
+  display: inline-block;
+  margin-left: 8px;
+  padding: 1px 8px;
+  border-radius: 999px;
+  font-size: 0.6rem; font-weight: 700;
+  background: var(--seal-red);
+  color: var(--seal-ink);
+  vertical-align: 2px;
+  letter-spacing: 1px;
+}
+.ink-inline {
+  margin: 2px 0 8px 34px;
+  padding: 8px 12px;
+  border-radius: 10px;
+  border-left: 3px solid rgba(201, 164, 92, 0.6);
+  background: rgba(201, 164, 92, 0.08);
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+.ink-inline-word {
+  display: flex; align-items: baseline; gap: 8px;
+  font-size: 0.82rem; color: var(--gx-ink);
+  line-height: 1.6;
+}
+.ink-inline-word b {
+  color: var(--gx-gold-bright);
+  font-size: 1rem;
+  flex: none;
+}
+.ink-inline-key {
+  font-size: 0.8rem; color: var(--gx-ink-dim);
+  line-height: 1.7;
+}
+.ink-inline-analysis {
+  margin: 2px 0 10px 34px;
+  padding: 8px 12px;
+  border-radius: 10px;
+  border-left: 3px solid rgba(74, 143, 132, 0.5);
+  background: rgba(74, 143, 132, 0.08);
+  font-size: 0.76rem; color: var(--gx-ink-dim);
+  line-height: 1.7;
 }

@@ -111,12 +111,20 @@ await page.locator('.rg-close').click();
 // 讲解模式内容卡 (岳阳楼记: 有词义题/背诵句/鉴赏/练习)
 await page.locator('.lec-start').click();
 await page.waitForTimeout(700);
-check('重点字词卡', await page.locator('.ink-word-card').count() > 0);
-check('重点句卡', await page.locator('.ink-key-card').count() > 0);
-check('鉴赏卡', await page.locator('.ink-analysis-card').count() > 0);
-check('随堂练习卡', await page.locator('.ink-practice-card').count() === 1);
-await page.locator('.ink-practice-card').click();
+check('句子数>10', await page.locator('.lec-sentence').count() > 10);
+check('重点句徽章', await page.locator('.ink-key-badge').count() > 0);
+// 跳到第 2 句 (岳阳楼记含字词句)
+await page.locator('.lec-sentence').nth(1).click();
 await page.waitForTimeout(400);
+check('内联字词', await page.locator('.ink-inline-word').count() > 0);
+check('内联鉴赏', await page.locator('.ink-inline-analysis').count() > 0);
+// 推进到末尾 → 随堂练习
+const lastIdx = (await page.locator('.lec-sentence').count()) - 1;
+await page.locator('.lec-sentence').nth(lastIdx).click();
+await page.waitForTimeout(300);
+await page.locator('button[aria-label="下一句"]').click();
+await page.waitForTimeout(500);
+check('随堂练习卡', await page.locator('.ink-practice-card').count() === 1);
 const pInputs = await page.locator('.ink-p-input').count();
 check('练习输入框', pInputs > 0, `${pInputs} 个`);
 if (pInputs > 0) {
